@@ -1,0 +1,103 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: Nonstandard parsing of Subtags</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_159.html">Parent Topic</A> | <A HREF="ictags_161.html">Previous Topic</A> | <A HREF="ictags_163.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>A.3. Nonstandard parsing of Subtags</H2>
+<P>Subtags are parsed within the containing array-list or hash-list context created by the containing tag (see <A HREF="ictags_9.html#Looping tags and Sub-tags">Looping tags and Sub-tags</A>).</P>
+<UL>
+<LI>All subtags at an earlier precedence level are treated before any in the next level.
+<LI>Within the same level, tags are processed in the order the appear on the page.
+<LI>Any standard tags are processed during 'interpolate' (before) or 'reparse' (after) phases of processing the containing tag.</UL>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Technical note</STRONG></P>
+<P>Processing within a hash- or array-list is actually done as a series of global regular expression substitutions on the page. Each substitution replaces one tag with the output of the subroutine(s) associated with it.</P>
+<P><HR WIDTH="80%" ALIGN="Left"></P>
+<P>In array-list context, subtags are processed in the following order:</P>
+<OL>
+<LI>Check for PREFIX-<B>line</B> and prepare for it if present (does not process PREFIX-<B>line</B> at this time)
+<LI>PREFIX-<B>sub</B> definitions processed
+<LI><B>if</B>-PREFIX-<I>*</I> nesting resolved
+<LI>PREFIX-<B>alternate</B> processed
+<LI><B>if</B>-PREFIX-<B>param</B>  processed
+<LI><B>if</B>-PREFIX-<B>pos</B>  processed
+<LI>PREFIX-<B>pos</B>  processed
+<LI><B>if</B>-PREFIX-<B>field</B>  processed
+<LI>PREFIX-<B>line</B>  processed
+<LI>PREFIX-<B>increment</B>  processed
+<LI>PREFIX-<B>accessories</B>  processed
+<LI>PREFIX-<B>options</B>  processed
+<LI>PREFIX-<B>code</B>  processed
+<LI>PREFIX-<B>description</B>  processed
+<LI>PREFIX-<B>field</B>  processed
+<LI>PREFIX-<B>price</B>  processed
+<LI>PREFIX-<B>change</B>  processed
+<LI>PREFIX-<B>calc</B>  processed
+<LI>PREFIX-<B>exec</B>  processed
+<LI>PREFIX-<B>filter</B>  processed
+<LI>PREFIX-<B>last</B>  processed
+<LI>PREFIX-<B>next</B>  processed
+<LI>User's previous HTML widget SELECTED settings restored
+<LI>Reparse standard tags in output of above (if reparse enabled for the containing tag)</OL>
+<P>In hash-list context, subtags are processed in the following order:</P>
+<OL>
+<LI>PREFIX-<B>sub</B> definitions processed
+<LI><B>if</B>-PREFIX-<I>*</I> nesting resolved
+<LI>PREFIX-<B>alternate</B> processed
+<LI>PREFIX-<B>line</B>  processed
+<LI><B>if</B>-PREFIX-<B>param</B>  processed
+<LI><B>if</B>-PREFIX-<B>field</B>  processed
+<LI><B>if</B>-PREFIX-<B>modifier</B>  processed (<B>if</B>-PREFIX-<B>param</B> and <B>if</B>-PREFIX-<B>modifier</B> are functionally identical except for parse order)
+<LI>PREFIX-<B>increment</B>  processed
+<LI>PREFIX-<B>accessories</B>  processed
+<LI>PREFIX-<B>options</B>  processed
+<LI>PREFIX-<B>sku</B>  processed
+<LI>PREFIX-<B>code</B>  processed
+<LI>PREFIX-<B>quantity</B>  processed
+<LI>PREFIX-<B>modifier</B>  processed
+<LI>PREFIX-<B>param</B>  processed
+<LI>PREFIX-<B>quantity-name</B>  processed
+<LI>PREFIX-<B>modifier-name</B>  processed
+<LI>PREFIX-<B>subtotal</B>  processed
+<LI>PREFIX-<B>discount-subtotal</B>  processed
+<LI>PREFIX-<B>code</B>  processed again differently (operating on new instances of PREFIX-<B>code</B> in output of above?)
+<LI>PREFIX-<B>field</B>  processed
+<LI>PREFIX-<B>description</B>  processed
+<LI>PREFIX-<B>price</B>  processed
+<LI>PREFIX-<B>discount-price</B>  processed
+<LI>PREFIX-<B>difference</B>  processed
+<LI>PREFIX-<B>discount</B>  processed
+<LI>PREFIX-<B>change</B>  processed
+<LI>PREFIX-<B>tag</B>  processed (*** CHECK THIS TAG NAME ***)
+<LI>PREFIX-<B>calc</B>  processed
+<LI>PREFIX-<B>exec</B>  processed
+<LI>PREFIX-<B>filter</B>  processed
+<LI>PREFIX-<B>last</B>  processed
+<LI>PREFIX-<B>next</B>  processed
+<LI>User's previous HTML widget SELECTED settings restored
+<LI>Reparse standard tags in output of above (if reparse enabled for the containing tag)</OL>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_159.html">Parent Topic</A> | <A HREF="ictags_161.html">Previous Topic</A> | <A HREF="ictags_163.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

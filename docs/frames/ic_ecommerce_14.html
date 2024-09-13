@@ -1,0 +1,149 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Ecommerce Functions: Item Attributes</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ic_ecommerce_9.html">Parent Topic</A> | <A HREF="ic_ecommerce_13.html">Previous Topic</A> | <A HREF="ic_ecommerce_15.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>2.5. Item Attributes</H2>
+<P>Interchange allows item attributes to be set for each ordered item. This allows a size, color, or other modifier to be attached to a common part number. If multiple attributes are set, then they should be separated by commas. Previous attribute values can be saved by means of a hidden field on a form, and multiple attributes for each item can be <I>stacked</I> on top of each other.</P>
+<P>The configuration file directive <I>UseModifier</I> is used to set the name of the modifier or modifiers. For example</P>
+<PRE>
+    UseModifier        size,color
+</PRE>
+<P>will attach both a size and color attribute to each item code that is ordered.</P>
+<P><B>IMPORTANT NOTE:</B> You may not use the following names for attributes:</P>
+<PRE>
+    item  group  quantity  code  mv_ib  mv_mi  mv_si
+</PRE>
+<P>You can also set it in scratch with the mv_UseModifier scratch variable -- <TT>[set mv_UseModifier]size color[/set]</TT> has the same effect as above. This allows multiple options to be set for products. Whichever one is in effect at order time will be used. Be careful, you cannot set it more than once on the same page. Setting the <TT>mv_separate_items</TT> or global directive <I>SeparateItems</I> places each ordered item on a separate line, simplifying attribute handling. The scratch setting for <TT>mv_separate_items</TT> has the same effect.</P>
+<P>The modifier value is accessed in the <TT>[item-list]</TT> loop with the <TT>[item-modifier attribute]</TT> tag, and form input fields are placed with the <TT>[modifier-name attribute]</TT> tag. This is similar to the way that quantity is handled, except that attributes can be &quot;stacked&quot; by setting multiple values in an input form.</P>
+<P>You cannot define a modifier name of <I>code</I> or <I>quantity</I>, as they are already used. You must be sure that no fields in your forms have digits appended to their names if the variable is the same name as the attribute name you select, as the <TT>[modifier-name size]</TT> variables will be placed in the user session as the form variables size0, size1, size2, etc.</P>
+<P>You can use the <TT>[loop arg=&quot;item item item&quot;]</TT> list to reference multiple display or selection fields for modifiers, or you can use the built-in <TT>[PREFIX-accessories ...]</TT> tags available in most Interchange list operations. The modifier value can then be used to select data from an arbitrary database for attribute selection and display.</P>
+<P>Below is a fragment from a shopping basket display form which shows a selectable size with &quot;sticky&quot; setting. Note that this would always be contained within the <TT>[item_list]</TT> <TT>[/item-list]</TT> pair.</P>
+<PRE>
+    &lt;SELECT NAME=&quot;[modifier-name size]&quot;&gt;
+    &lt;OPTION  [selected [modifier-name size] S]&gt; S
+    &lt;OPTION  [selected [modifier-name size] M]&gt; M
+    &lt;OPTION  [selected [modifier-name size] L]&gt; L
+    &lt;OPTION [selected [modifier-name size] XL]&gt; XL
+    &lt;/SELECT&gt;
+</PRE>
+<P>It could just as easily be done with a radio button group combined with the <TT>[checked ...]</TT> tag.</P>
+<P>Interchange will automatically generate the above select box when the <TT>[accessories &lt;code</TT> size]&gt; or <TT>[item-accessories size]</TT> tags are called. They have the syntax:</P>
+<PRE>
+   [item_accessories attribute*, type*, field*, database*, name*, outboard*]
+
+   [accessories code attribute*, type*, field*, database*, name*, outboard*]
+</PRE>
+<P><B>code</B></P>
+<UL>
+Not needed for item-accessories, this is the product code of the item to reference.</UL>
+<P><B>attribute</B></P>
+<UL>
+The item attribute as specified in the UseModifier configuration directive. Typical are <TT>size</TT> or <TT>color</TT>.</UL>
+<P><B>type</B></P>
+<UL>
+The action to be taken. One of:</UL>
+<PRE>
+      select          Builds a dropdown &lt;SELECT&gt; menu for the attribute.
+                      NOTE: This is the default.
+    
+      multiple        Builds a multiple dropdown &lt;SELECT&gt; menu for the
+                      attribute.  The size is equal to the number of
+                      option choices.
+    
+      display         Shows the label text for *only the selected option*.
+    
+      show            Shows the option choices (no labels) for the option.
+    
+      radio           Builds a radio box group for the item, with spaces
+                      separating the elements.
+    
+      radio nbsp      Builds a radio box group for the item, with &amp;nbsp;
+                      separating the elements.
+    
+      radio left n    Builds a radio box group for the item, inside a
+                      table, with the checkbox on the left side. If &quot;n&quot;
+                      is present and is a digit from 2 to 9, it will align
+                      the options in that many columns.
+    
+      radio right n   Builds a radio box group for the item, inside a
+                      table, with the checkbox on the right side. If &quot;n&quot;
+                      is present and is a digit from 2 to 9, it will align
+                      the options in that many columns.
+    
+      check           Builds a checkbox group for the item, with spaces
+                      separating the elements.
+    
+      check nbsp      Builds a checkbox group for the item, with &amp;nbsp;
+                      separating the elements.
+    
+      check left n    Builds a checkbox group for the item, inside a
+                      table, with the checkbox on the left side. If &quot;n&quot;
+                      is present and is a digit from 2 to 9, it will align
+                      the options in that many columns.
+    
+      check right n   Builds a checkbox group for the item, inside a
+                      table, with the checkbox on the right side. If &quot;n&quot;
+                      is present and is a digit from 2 to 9, it will align
+                      the options in that many columns.
+</PRE>
+<UL>
+The default is 'select', which builds an HTML select form entry for the attribute.  Also recognized is 'multiple', which generates a multiple-selection drop down list, 'show', which shows the list of possible attributes, and 'display', which shows the label text for the selected option only.</UL>
+<P><B>field</B></P>
+<UL>
+The database field name to be used to build the entry (usually a field in the products database).  Defaults to a field named the same as the attribute.</UL>
+<P><B>database</B></P>
+<UL>
+The database to find <B>field</B> in, defaults to the first products file where the item code is found.</UL>
+<P><B>name</B></P>
+<UL>
+Name of the form variable to use if a form is being built. Defaults to mv_order_<B>attribute</B> -- i.e.  if the attribute is <B>size</B>, the form variable will be named <B>mv_order_size</B>.</UL>
+<P><B>outboard</B></P>
+<UL>
+If calling the item-accessories tag, and you wish to select from an outboard database, you can pass the key to use to find the accessory data.</UL>
+<P>When called with an attribute, the database is consulted and looks for a comma-separated list of attribute options. They take the form:</P>
+<PRE>
+    name=Label Text, name=Label Text*
+</PRE>
+<P>The label text is optional -- if none is given, the <B>name</B> will be used.</P>
+<P>If an asterisk is the last character of the label text, the item is the default selection. If no default is specified, the first will be the default. An example:</P>
+<PRE>
+    [item_accessories color]
+</PRE>
+<P>This will search the product database for a field named &quot;color&quot;. If an entry &quot;beige=Almond, gold=Harvest Gold, White*, green=Avocado&quot; is found, a select box like this will be built:</P>
+<PRE>
+    &lt;SELECT NAME=&quot;mv_order_color&quot;&gt;
+    &lt;OPTION VALUE=&quot;beige&quot;&gt;Almond
+    &lt;OPTION VALUE=&quot;gold&quot;&gt;Harvest Gold
+    &lt;OPTION SELECTED&gt;White
+    &lt;OPTION VALUE=&quot;green&quot;&gt;Avocado
+    &lt;/SELECT&gt;
+</PRE>
+<P>In combination with the <TT>mv_order_item</TT> and <TT>mv_order_quantity</TT> variables this can be used to allow entry of an attribute at time of order.</P>
+<P>If used in an item list, and the user has changed the value, the generated select box will automatically retain the current value the user has selected.</P>
+<P>The value can then be displayed with <TT>[item-modifier size]</TT> on the order report, order receipt, or any other page containing an <TT>[item-list]</TT>.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ic_ecommerce_9.html">Parent Topic</A> | <A HREF="ic_ecommerce_13.html">Previous Topic</A> | <A HREF="ic_ecommerce_15.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

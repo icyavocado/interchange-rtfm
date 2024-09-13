@@ -1,0 +1,36 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Configuration Reference: AddDirective *global*</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_3.html">Parent Topic</A> | <A HREF="icconfig_4.html">Previous Topic</A> | <A HREF="icconfig_6.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>2.2. AddDirective *global*</H2>
+<P>Adds a configuration directive that will be parsed for every <TT>catalog.cfg</TT> file. Accepts three parameters: the name of the directive, the name of the parser (if any), and the default value (if any). The following definition would add a directive &quot;Foo,&quot; with parser &quot;parse_bar,&quot; and a default value of &quot;Hello, world!&quot;:</P>
+<PRE>
+   AddDirective  Foo  bar &quot;Hello, world!&quot;
+</PRE>
+<P>If the parser is not defined, the directive value will be scalar and the same as what the user passes in the config file. If defined, the parser must be extant before it can be referenced, is always resident in Vend::Config, and begins with the string <TT>parse_</TT>. Examples can be found in the files in the distribution software directory <TT>compat/</TT>.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_3.html">Parent Topic</A> | <A HREF="icconfig_4.html">Previous Topic</A> | <A HREF="icconfig_6.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

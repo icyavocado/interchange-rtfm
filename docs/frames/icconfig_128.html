@@ -1,0 +1,70 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Configuration Reference: Pragma</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_70.html">Parent Topic</A> | <A HREF="icconfig_127.html">Previous Topic</A> | <A HREF="icconfig_129.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>3.58. Pragma</H2>
+<P>Sets the default value of an Interchange pragma. The directive is set like this:</P>
+<PRE>
+   Pragma my_pragma_name
+</PRE>
+<P>To enable a pragma for only a particular page, set it anywhere in the page:</P>
+<PRE>
+   [pragma my_pragma_name]
+</PRE>
+<P>To disable a pragma for a particular page, set it anywhere in the page:</P>
+<PRE>
+   [pragma my_pragma_name 0]
+</PRE>
+<P>Descriptions of each pragma follow.</P>
+<P><B>dynamic_variables</B></P>
+<P><B>dynamic_variables_file_only</B></P>
+<P><B>no_image_rewrite</B></P>
+<P>Prevents image locations in pages from being altered by Interchange. Added in Interchange 4.7.0.</P>
+<P>Interchange normally rewrites image locations to point to ImageDir. This applies to image locations mentioned in &lt;img src=&quot;...&quot;&gt;, &lt;input src=&quot;...&quot;&gt;, &lt;body background=&quot;...&quot;&gt;, &lt;table background=&quot;...&quot;&gt;, and &lt;tr/th/td background=&quot;...&quot;&gt;.</P>
+<P>When this pragma is <B>not</B> set, the following tag:</P>
+<PRE>
+   &lt;img src=&quot;fancy.gif&quot;&gt;
+</PRE>
+<P>Would, assuming an ImageDir set to /foundation/images, be transformed into:</P>
+<PRE>
+   &lt;img src=&quot;/foundation/images/fancy.gif&quot;&gt;
+</PRE>
+<P>When pragma no_image_rewrite <B>is</B> set, the &lt;img&gt; tag would remain unchanged.</P>
+<P><B>safe_data</B></P>
+<P>By default Interchange does not allow data returned from databases to be reparsed for Interchange tags. Setting the safe_data pragma eliminates this restriction.</P>
+<P>If for some reason you want to have tags in your database, for example, to use [page ...] for catalog-internal hyperlinks in your product descriptions, you need to enable safe_data. Some things to consider:</P>
+<OL>
+<LI>It may be better to use the safe_data attribute available to certain tags instead of the pragma, or perhaps to use [pragma] for a whole page or [tag pragma] ... [/tag] for a small block, instead of a catalog-wide Pragma directive.
+<LI>In any case it is strongly recommended that you surround the area with [restrict] ... [/restrict] tags to allow only the specific (hopefully relatively safe) set of tags you expect to appear, such as [page] or [area]. Expect security compromises if you allow [calc] or [perl], or other extremely powerful tags.
+<LI>Be certain that you know everywhere the data in your database will be used. Will it always be possible to reparse for tags? What about when it's used to create an emailed plain-text receipt -- will a literal '[page ...]' tag show up in the product description on the receipt? Would the desired output of '&lt;a href=&quot;...&quot;&gt;' be any better in a plaintext situation? What if you access your database from applications other than Interchange? You'll then have to decide what to do with such tags; perhaps you can simply strip them, but will the missing tag output cause you any trouble?</OL>
+<P>In short, safe_data is disabled by default for a reason, and you should be very careful if you decide to enable it.</P>
+<P>(Watch out for parse order with [tag pragma] or [restrict] when used with lists that retrieve data from the database, as in [PREFIX-*] and the flypage. Loops parse before regular tags like [tag] and [restrict], and thus aren't affected by it.)</P>
+<P><B>strip_white</B></P>
+<P>Set this to strip whitespace from the tops of HTML pages output by Interchange. Such whitespace usually comes from Interchange tags at the top of the page. The pragma's purpose is mostly to make 'view source' in the browser a slightly more tolerable experience.</P>
+<P>Default is off; whitespace is unchanged.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_70.html">Parent Topic</A> | <A HREF="icconfig_127.html">Previous Topic</A> | <A HREF="icconfig_129.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

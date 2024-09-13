@@ -1,0 +1,235 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: quantity-name</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_8.html">Previous Topic</A> | <A HREF="ictags_10.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H1>3. Looping tags and Sub-tags</H1>
+<P><A NAME="subtags"></A>Certain tags are not standalone; these are the ones that are interpreted as part of a surrounding looping tag like [<A HREF="ictags_79.html#loop">loop</A>], [<A HREF="ictags_76.html#item-list">item-list</A>], [<A HREF="ictags_91.html#query">query</A>], or [<A HREF="ictags_99.html#search-region">search-region</A>].</P>
+<UL>
+[<A HREF="ictags_10.html#PREFIX-accessories">PREFIX-accessories</A>]
+<BR>
+[<A HREF="ictags_11.html#PREFIX-alternate">PREFIX-alternate</A>]
+<BR>
+[<A HREF="ictags_12.html#PREFIX-calc">PREFIX-calc</A>]
+<BR>
+[<A HREF="ictags_13.html#PREFIX-change">PREFIX-change</A>]
+<BR>
+[<A HREF="ictags_14.html#PREFIX-code">PREFIX-code</A>]
+<BR>
+[<A HREF="ictags_15.html#PREFIX-data">PREFIX-data</A>]
+<BR>
+[<A HREF="ictags_16.html#PREFIX-description">PREFIX-description</A>] (Note <TT>safe-data</TT> and <TT>ed()</TT> escape)
+<BR>
+[<A HREF="ictags_17.html#PREFIX-discount">PREFIX-discount</A>]
+<BR>
+[<A HREF="ictags_18.html#PREFIX-discount-subtotal">PREFIX-discount-subtotal</A>]
+<BR>
+<TT>[if-PREFIX-exec]</TT>
+<BR>
+[<A HREF="ictags_19.html#PREFIX-field">PREFIX-field</A>] (Optimization note-- one query per field if you use this; we optimize around this if only one products table)
+<BR>
+<TT>[if-PREFIX-filter]</TT>
+<BR>
+[<A HREF="ictags_20.html#PREFIX-increment">PREFIX-increment</A>]
+<BR>
+[<A HREF="ictags_21.html#PREFIX-last">PREFIX-last</A>]
+<BR>
+[<A HREF="ictags_22.html#PREFIX-line">PREFIX-line</A>] (tab-delimited list of parameters returned)
+<BR>
+<TT>[if-PREFIX-match]</TT>
+<BR>
+[<A HREF="ictags_23.html#PREFIX-modifier">PREFIX-modifier</A>]
+<BR>
+[<A HREF="ictags_24.html#PREFIX-next">PREFIX-next</A>]
+<BR>
+<TT>[if-PREFIX-options]</TT>
+<BR>
+[<A HREF="ictags_25.html#PREFIX-param">PREFIX-param</A>]
+<BR>
+[<A HREF="ictags_26.html#PREFIX-pos">PREFIX-pos</A>]
+<BR>
+[<A HREF="ictags_27.html#PREFIX-price">PREFIX-price</A>]
+<BR>
+[<A HREF="ictags_28.html#PREFIX-quantity">PREFIX-quantity</A>]
+<BR>
+<TT>[if-PREFIX-sub]</TT>
+<BR>
+[<A HREF="ictags_29.html#PREFIX-subtotal">PREFIX-subtotal</A>]
+<BR>
+[<A HREF="ictags_30.html#if-PREFIX-data">if-PREFIX-data</A>]
+<BR>
+[<A HREF="ictags_31.html#if-PREFIX-field">if-PREFIX-field</A>]
+<BR>
+<TT>[if-PREFIX-modifier]</TT> (hash list only)
+<BR>
+<TT>[if-PREFIX-param]</TT>
+<BR>
+<TT>[if-PREFIX-pos]</TT>
+<BR>
+[<A HREF="ictags_32.html#modifier-name">modifier-name</A>]
+<BR>
+[<A HREF="ictags_33.html#quantity-name">quantity-name</A>]</UL>
+<P>PREFIX represents the prefix that is used in that looping tag. They are only interpreted within their container and only accept positional parameters. The default prefixes:</P>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD>
+<STRONG>Tag</STRONG>
+</TD>
+<TD>
+<STRONG>Prefix</STRONG>
+</TD>
+<TD>
+<STRONG>Examples</STRONG>
+</TD>
+</TR>
+<TR>
+<TD>
+[<A HREF="ictags_79.html#loop">loop</A>]
+</TD>
+<TD>
+loop
+</TD>
+<TD>
+[loop-code], [loop-field price], [loop-increment]
+</TD>
+</TR>
+<TR>
+<TD>
+[<A HREF="ictags_76.html#item-list">item-list</A>]
+</TD>
+<TD>
+item
+</TD>
+<TD>
+[item-code], [item-field price], [item-increment]
+</TD>
+</TR>
+<TR>
+<TD>
+[<A HREF="ictags_98.html#search-list">search-list</A>]
+</TD>
+<TD>
+item
+</TD>
+<TD>
+[item-code], [item-field price], [item-increment]
+</TD>
+</TR>
+<TR>
+<TD>
+[<A HREF="ictags_91.html#query">query</A>]
+</TD>
+<TD>
+sql
+</TD>
+<TD>
+[sql-code], [sql-field price], [sql-increment]
+</TD>
+</TR>
+</TABLE>
+
+<P>Sub-tag behavior is consistent among the looping tags. Subtags are parsed during evaluation of the enclosing loop, <I>before</I> any regular tags within the loop.</P>
+<P>There are two types of looping lists: ARRAY and HASH.</P>
+<P>An array list is the normal output of a [<A HREF="ictags_91.html#query">query</A>], a search, or a [<A HREF="ictags_79.html#loop">loop</A>] tag. It returns from 1 to N <TT>return fields</TT>, defined in the <TT>mv_return_fields</TT> or <TT>rf</TT> variable or implicitly by means of a SQL field list. The two queries below are essentially identical:</P>
+<PRE>
+    [query sql=&quot;select foo, bar from products&quot;]
+    [/query]
+
+    [loop search=&quot;
+                    ra=yes
+                    fi=products
+                    rf=foo,bar
+    &quot;]
+</PRE>
+<P>Both will return an array of arrays consisting of the <TT>foo</TT> column and the <TT>bar</TT> column. The Perl data structure would look like:</P>
+<PRE>
+    [
+        ['foo0', 'bar0'],
+        ['foo1', 'bar1'],
+        ['foo2', 'bar2'],
+        ['fooN', 'barN'],
+    ]
+</PRE>
+<P>A hash list is the normal output of the [item-list] tag. It returns the value of all return fields in an array of hashes. A normal [item-list] return might look like:</P>
+<PRE>
+    [
+        {
+            code     =&gt; '99-102',
+            quantity =&gt; 1,
+            size     =&gt; 'XL',
+            color    =&gt; 'blue',
+            mv_ib    =&gt; 'products',
+        },
+        {
+            code     =&gt; '00-341',
+            quantity =&gt; 2,
+            size     =&gt; undef,
+            color    =&gt; undef,
+            mv_ib    =&gt; 'products',
+        },
+
+    ]
+</PRE>
+<P>You can also return hash lists in queries:</P>
+<PRE>
+    [query sql=&quot;select foo, bar from products&quot; type=hashref]
+    [/query]
+</PRE>
+<P>Now the data structure will look like:</P>
+<PRE>
+    [
+        { foo =&gt; 'foo0', bar =&gt; 'bar0' },
+        { foo =&gt; 'foo1', bar =&gt; 'bar1' },
+        { foo =&gt; 'foo2', bar =&gt; 'bar2' },
+        { foo =&gt; 'fooN', bar =&gt; 'barN' },
+    ]
+</PRE>
+<P><A HREF="ictags_10.html">PREFIX-accessories</A></P>
+<P><A HREF="ictags_11.html">PREFIX-alternate</A></P>
+<P><A HREF="ictags_12.html">PREFIX-calc</A></P>
+<P><A HREF="ictags_13.html">PREFIX-change</A></P>
+<P><A HREF="ictags_14.html">PREFIX-code</A></P>
+<P><A HREF="ictags_15.html">PREFIX-data</A></P>
+<P><A HREF="ictags_16.html">PREFIX-description</A></P>
+<P><A HREF="ictags_17.html">PREFIX-discount</A></P>
+<P><A HREF="ictags_18.html">PREFIX-discount-subtotal</A></P>
+<P><A HREF="ictags_19.html">PREFIX-field</A></P>
+<P><A HREF="ictags_20.html">PREFIX-increment</A></P>
+<P><A HREF="ictags_21.html">PREFIX-last</A></P>
+<P><A HREF="ictags_22.html">PREFIX-line</A></P>
+<P><A HREF="ictags_23.html">PREFIX-modifier</A></P>
+<P><A HREF="ictags_24.html">PREFIX-next</A></P>
+<P><A HREF="ictags_25.html">PREFIX-param</A></P>
+<P><A HREF="ictags_26.html">PREFIX-pos</A></P>
+<P><A HREF="ictags_27.html">PREFIX-price</A></P>
+<P><A HREF="ictags_28.html">PREFIX-quantity</A></P>
+<P><A HREF="ictags_29.html">PREFIX-subtotal</A></P>
+<P><A HREF="ictags_30.html">if-PREFIX-data</A></P>
+<P><A HREF="ictags_31.html">if-PREFIX-field</A></P>
+<P><A HREF="ictags_32.html">modifier-name</A></P>
+<P><A HREF="ictags_33.html">quantity-name</A></P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_8.html">Previous Topic</A> | <A HREF="ictags_10.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

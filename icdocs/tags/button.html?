@@ -1,0 +1,680 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>button - RTFM</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="en-GB">
+    <meta http-equiv="Window-target" content="_top">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <meta http-equiv="X-Soup-Of-The-Day" content="Tomato">
+
+    <meta name="author" content="Kevin Walsh">
+    <meta name="publisher" content="Cursor Software Limited">
+    <meta name="copyright" content="2001-2012, Cursor Software Limited">
+    <meta name="licence" content="GPLv2+ (Unknown licence)">
+    <meta name="generator" content="Interchange 5.7.0 -- www.icdevgroup.org">
+    <meta name="robots" content="index,follow,noarchive,noimageindex">
+    <meta name="keywords" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="description" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="MSSmartTagsPreventParsing" content="TRUE">
+
+    <meta name="verify-v1" content="KqlU/bxZj9Y2ZdZ/3RwuzgVSMIrZ8XM2wqbjSaEo3O4=">
+
+    <meta name="y_key" content="e2dd60be5777fbc8">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
+    <link rel="search" type="application/opensearchdescription+xml" href="http://interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="stylesheet" href="/decor/css/website.css">
+    <link rel="stylesheet" href="/decor/css/wiki.css">
+    <link rel="stylesheet" href="/decor/css/neo.css">
+
+
+    <script type="text/javascript" language="JavaScript">
+    <!--
+	if (top != self){
+	    top.location = location;
+	}
+
+    // -->
+    </script>
+</head>
+<body>
+<!-- START VAR: LOGOBAR -->
+<table id="rtfmheader" cellpadding="0" cellspacing="0">
+    <tr>
+	<td><a href="http://interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+
+	<td width="100%" style="text-align: right; padding: 10px">
+
+	    <form action="http://interchange-rtfm.pullingshots.ca/search.html" method="POST">
+		<input type="hidden" name="mv_session_id" value="nsession">
+		<input type="hidden" name="mv_profile" value="cms_search">
+		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
+		<input type="submit" class="button" value="Search">
+	    </form>
+
+	</td>
+    </tr>
+</table>
+<table id="breadcrumbs" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+	<td>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a></span>
+	    <span class="nowrap">&gt; <span class="current">button</span></span>
+	</td>
+
+    </tr>
+</table>
+<!-- END VAR: LOGOBAR -->
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+
+	    <td id="leftside">
+<!-- START COMPONENT: navigation -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th>NAVIGATION</th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+
+<!-- END COMPONENT: navigation -->
+<!-- START COMPONENT: wiki_recent -->
+
+
+
+<!-- END COMPONENT: wiki_recent -->
+<!-- START COMPONENT: wiki_backlinks -->
+
+
+
+<!-- END COMPONENT: wiki_backlinks -->
+<!-- START COMPONENT: account -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+
+    <tr>
+	<th>ACCOUNT LOGIN</th>
+    </tr>
+
+    <tr>
+	<td class="first">
+	    <p>You are not logged in</p>
+	</td>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+	    </ul>
+	</td>
+    </tr>
+
+</table>
+
+
+
+<!-- END COMPONENT: account -->
+<!-- START COMPONENT: icpowered -->
+
+<div style="text-align: center; margin: 10px; margin-top: 0px">
+    <a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+</div>
+
+
+
+<!-- START COMPONENT: icpowered -->
+
+	    </td>
+
+	    <td id="bodytext">
+<!-- start of page text -->
+
+<!-- start page: wiki/display (tags/button) -->
+
+<div class="wikitext">
+<a name="button"></a>
+<h1>button</h1>
+<p>
+Creates a HTML form submit button.
+</p>
+<a name="Summary"></a>
+<h2>Summary</h2>
+
+<p>
+<ul>
+<li><span class="fixedwidth">&#91;button name src text] ... &#91;/button]</span></li>
+</ul>
+
+<br>
+<table width="100%" class="border">
+<tr valign="top">
+<th class="grid">Parameter
+</th>
+<th class="grid">Description
+</th>
+<th class="grid">Default
+</th>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#name" title="&quot;name&quot; heading on this page">name</a></td>
+<td class="grid">Button (HTML <span class="fixedwidth">&lt;input&gt;</span> field) name.</td>
+<td class="grid">mv_click
+</td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#src" title="&quot;src&quot; heading on this page">src</a></td>
+<td class="grid">Image file to use.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#text" title="&quot;text&quot; heading on this page">text</a></td>
+<td class="grid">Button text.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#alt" title="&quot;alt&quot; heading on this page">alt</a></td>
+<td class="grid">Alternate text for the image <a href="#src" title="&quot;src&quot; heading on this page">src</a>.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#anchor" title="&quot;anchor&quot; heading on this page">anchor</a></td>
+<td class="grid">HTML anchor name, if using an <a href="#src" title="&quot;src&quot; heading on this page">image</a> as the submit button.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#confirm" title="&quot;confirm&quot; heading on this page">confirm</a></td>
+<td class="grid">Text to use in a JavaScript button click confirmation dialog.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#extra" title="&quot;extra&quot; heading on this page">extra</a></td>
+<td class="grid">String containing attributes to be passed to the resulting HTML tag.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#form" title="&quot;form&quot; heading on this page">form</a></td>
+<td class="grid">The name of the form that this button will submit.</td>
+<td class="grid"><a href="#form" title="&quot;form&quot; heading on this page">See parameter description</a></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#getsize" title="&quot;getsize&quot; heading on this page">getsize</a></td>
+<td class="grid">Determine the image size automatically.</td>
+<td class="grid">No
+</td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#hidetext" title="&quot;hidetext&quot; heading on this page">hidetext</a></td>
+<td class="grid">Suppress the <a href="#text" title="&quot;text&quot; heading on this page">button text</a>.</td>
+<td class="grid">No
+</td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#wait_text" title="&quot;wait text&quot; heading on this page">wait_text</a></td>
+<td class="grid">Button text to show while the next page is being loaded.</td>
+<td class="grid">&nbsp;</td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#border" title="&quot;border&quot; heading on this page">border</a>, <a href="#height" title="&quot;height&quot; heading on this page">height</a>, <a href="#width" title="&quot;width&quot; heading on this page">width</a>, <a href="#hspace" title="&quot;hspace&quot; heading on this page">hspace</a>, <a href="#vspace" title="&quot;vspace&quot; heading on this page">vspace</a> and <a href="#align" title="&quot;align&quot; heading on this page">align</a></td>
+<td class="grid">Ordinary HTML attributes for the resulting HTML tag.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#id" title="&quot;id&quot; heading on this page">id</a>, <a href="#class" title="&quot;class&quot; heading on this page">class</a> and <a href="#style" title="&quot;style&quot; heading on this page">style</a></td>
+<td class="grid">Ordinary CSS attributes for the resulting HTML tag.</td>
+<td class="grid"><em>None</em>
+| <em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Universal_tag_attributes.html#hide" title="&quot;hide&quot; heading on the &quot;Universal tag attributes&quot; page">hide</a></td>
+<td class="grid"><p>
+Suppress any output text that would ordinarily be returned from this tag.&nbsp;
+(This universal parameter was introduced with Interchange version 5.5.2.)</td>
+<td class="grid">No
+</td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Universal_tag_attributes.html#interpolate" title="&quot;interpolate&quot; heading on the &quot;Universal tag attributes&quot; page">interpolate</a></td>
+<td class="grid"><p>
+Parse Interchange tags, included in the body text, before this container tag executes.</td>
+<td class="grid">No
+</td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Universal_tag_attributes.html#reparse" title="&quot;reparse&quot; heading on the &quot;Universal tag attributes&quot; page">reparse</a></td>
+<td class="grid"><p>
+Process any Interchange tags found in the text output from this tag.</td>
+<td class="grid">Yes
+</td>
+</tr>
+</table>
+
+<a name="Examples"></a>
+<h2>Examples</h2>
+<a name="Tag_expansion_example"></a>
+<h3>Tag expansion example</h3>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">button text</span><span class="def_Symbol">=</span><span class="def_String">&quot;Delete item&quot; </span><span class="def_Syntax">confirm</span><span class="def_Symbol">=</span><span class="def_String">&quot;Are you sure?&quot;</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Symbol">[</span><span class="def_Syntax">any</span><span class="def_Symbol">-</span><span class="def_Syntax">tag</span><span class="def_Symbol">] </span><span class="def_Syntax">use any Interchange tags </span><span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">any</span><span class="def_Symbol">-</span><span class="def_Syntax">tag</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Symbol">[</span><span class="def_Syntax">perl</span><span class="def_Symbol">] </span># <span class="def_Syntax">use Perl if you prefer </span><span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">perl</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">button</span><span class="def_Symbol">]</span><br>
+</span>
+</td>
+</tr>
+<tr>
+<td class="hr">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">set Delete item</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Symbol">[</span><span class="def_Syntax">any</span><span class="def_Symbol">-</span><span class="def_Syntax">tag</span><span class="def_Symbol">] </span><span class="def_Syntax">use any Interchange tags </span><span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">any</span><span class="def_Symbol">-</span><span class="def_Syntax">tag</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Symbol">[</span><span class="def_Syntax">perl</span><span class="def_Symbol">] </span># <span class="def_Syntax">use Perl if you prefer </span><span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">perl</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">set</span><span class="def_Symbol">]</span><br>
+<br>
+<span class="def_Symbol">&lt;</span><span class="def_Syntax">input type</span><span class="def_Symbol">=</span><span class="def_String">&quot;submit&quot; </span><span class="def_Syntax">name</span><span class="def_Symbol">=</span><span class="def_String">&quot;mv_click&quot; </span><span class="def_Syntax">value</span><span class="def_Symbol">=</span><span class="def_String">&quot;Delete item&quot; </span><span class="def_Syntax">onclick</span><span class="def_Symbol">=</span><span class="def_String">&quot;return confirm('Are you sure?')&quot;</span><span class="def_Symbol">&gt; 
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Perl_example"></a>
+<h3>Perl example</h3>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Tag</span><span class="perl_Symb def_Symbol">-&gt;</span>button<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span><br>
+&nbsp; &nbsp; name <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_Var def_Var">$name</span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; src <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_Var def_Var">$src</span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; text <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_Var def_Var">$text</span><span class="perl_Symb def_Symbol">,</span><br>
+<span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+or similarly with positional parameters:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Tag</span><span class="perl_Symb def_Symbol">-&gt;</span>button<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$name</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Var def_Var">$src</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Var def_Var">$text</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Var def_Var">$attribute_hash_reference</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Description"></a>
+<h2>Description</h2>
+<p>
+This tag can be used to render a standard HTML submit button,
+or a graphical button,
+to the page.
+</p>
+<p>
+Standard text-only submit buttons are created using the
+<span class="fixedwidth">&lt;input&gt;</span> HTML tag.
+</p>
+<p>
+Graphical buttons are created using the <span class="fixedwidth">&lt;a&gt;</span>
+and <span class="fixedwidth">&lt;img&gt;</span> HTML tags,
+along with a block of JavaScript to handle the submission.
+</p>
+<p>
+This tag has parameters that can be used to create button enhancements,
+such as a confirmation dialog.
+</p>
+<a name="Parameters"></a>
+<h2>Parameters</h2>
+<a name="name"></a>
+<h3>name</h3>
+<p>
+The name given to the HTML <span class="fixedwidth">&lt;input&gt;</span> field.&nbsp;
+The default is &quot;<span class="fixedwidth">mv_click</span>&quot;.
+</p>
+<a name="src"></a>
+<h3>src</h3>
+<p>
+If set to an image file that exists then this tag will generate
+JavaScript and HTML to allow the image to be used as a <em>submit</em>
+button.&nbsp;
+If the named image file does not exist,
+or is not readable,
+then the <a href="#text" title="&quot;text&quot; heading on this page">text</a> parameter will be used to build a standard HTML
+submit button.
+</p>
+<p>
+If the value starts with &quot;<span class="fixedwidth">http://</span>&quot; or &quot;<span class="fixedwidth">https://</span>&quot; then it will be used as-is and no existence checks will be performed.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="comment">The following tag call</span><br><br>
+[button text=&quot;Delete item&quot; confirm=&quot;Are you sure?&quot; src=&quot;delete<span class="html_htmlNumb def_Number">.</span>gif&quot;]<br>
+&nbsp; &nbsp; [any-tag] use any Interchange tags [/any-tag]<br>
+&nbsp; &nbsp; [perl] # use Perl if you prefer [/perl]<br>
+[/button]<br>
+</span>
+</td>
+</tr>
+<tr>
+<td class="hr">
+<span class="fixedwidth">
+<span class="comment">Would produce the following output</span><br><br>
+[set Delete item]<br>
+&nbsp; &nbsp; [any-tag] use any Interchange tags [/any-tag]<br>
+&nbsp; &nbsp; [perl] # use Perl if you prefer [/perl]<br>
+[/set]<br>
+<br>
+<span class="def_PairStrongStart def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;<span class="html_htmlOpenTag def_Keyword">script language=&quot;<span class="html_htmlString def_String">javascript1.2</span>&quot;</span>&gt;</span></span><br>
+<span class="def_Comment def_Syntax">&lt;!-- </span><br>
+&nbsp; &nbsp; <span class="def_Keyword">function </span><span class="def_Function def_Outlined def_Special">mv_click_map_unique</span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span>myform<span class="def_Symbol">, </span>clickname<span class="def_Symbol">, </span>clicktext<span class="def_Symbol"><span class="def_PairEnd def_Special">)</span> </span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span> </span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Keyword">for </span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="def_Keyword">var </span>i <span class="def_Symbol">= </span><span class="def_NumberDec def_Number">0</span><span class="def_SymbolStrong def_Symbol">; </span>i <span class="def_Symbol">&lt; </span>myform<span class="def_Symbol">.</span>length<span class="def_SymbolStrong def_Symbol">; </span>i<span class="def_Symbol">++</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span> </span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span> </span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Keyword">var </span>widget <span class="def_Symbol">= </span>myform<span class="def_Symbol">.</span>elements<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>i<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span></span><span class="def_SymbolStrong def_Symbol">; </span><br>
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Keyword">if </span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span>widget<span class="def_Symbol">.</span>type <span class="def_Symbol">== </span><span class="def_String">'hidden' </span><span class="def_Symbol">&amp;&amp; </span>widget<span class="def_Symbol">.</span>name <span class="def_Symbol">!= </span><span class="def_String">'mv_click_map' </span><span class="def_Symbol">&amp;&amp; </span>widget<span class="def_Symbol">.</span>name<span class="def_Symbol">.</span><span class="def_Keyword">indexOf</span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="def_String">'mv_click_'</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span> </span><span class="def_Symbol">== </span><span class="def_NumberDec def_Number">0</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; widget<span class="def_Symbol">.</span>value <span class="def_Symbol">= </span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span>widget<span class="def_Symbol">.</span>name <span class="def_Symbol">== </span>clickname<span class="def_Symbol"><span class="def_PairEnd def_Special">)</span> </span><span class="def_SymbolStrong def_Symbol">? </span>clicktext <span class="def_SymbolStrong def_Symbol">: </span><span class="def_String">''</span><span class="def_SymbolStrong def_Symbol">;</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Keyword">return </span><span class="def_BooleanConstant def_Constant def_Keyword">true</span><span class="def_SymbolStrong def_Symbol">;</span><br>
+&nbsp; &nbsp; <span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span> </span><br>
+&nbsp; &nbsp; document<span class="def_Symbol">.</span>write<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="def_String">'&lt;input type=<span class="def_StringContent def_String">\'</span>hidden<span class="def_StringContent def_String">\' </span>name=<span class="def_StringContent def_String">\'</span>mv_click_map<span class="def_StringContent def_String">\' </span>value=<span class="def_StringContent def_String">\'</span>Delete_item<span class="def_StringContent def_String">\'</span>&gt;&lt;input type=<span class="def_StringContent def_String">\'</span>hidden<span class="def_StringContent def_String">\' </span>name=<span class="def_StringContent def_String">\'</span>mv_click_Delete_item<span class="def_StringContent def_String">\' </span>value=<span class="def_StringContent def_String">\'</span><span class="def_StringContent def_String">\'</span>&gt;&lt;a href=&quot;javascript: void 0&quot; onMouseOver=&quot;window.status=<span class="def_StringContent def_String">\'</span>Delete item<span class="def_StringContent def_String">\'</span>&quot; onClick=&quot;confirm(<span class="def_StringContent def_String">\'</span>Are you sure?<span class="def_StringContent def_String">\'</span>) &amp;&amp; mv_click_map_unique(document.forms[0], <span class="def_StringContent def_String">\'</span>mv_click_Delete_item<span class="def_StringContent def_String">\'</span>, <span class="def_StringContent def_String">\'</span>Delete item<span class="def_StringContent def_String">\'</span>) &amp;&amp; forms[0].submit(); return(false);&quot; alt=&quot;Delete item&quot;&gt;&lt;img alt=&quot;Delete item&quot; src=&quot;delete.gif&quot; border=<span class="def_StringContent def_String">\'</span>0<span class="def_StringContent def_String">\' </span>align=<span class="def_StringContent def_String">\'</span>top<span class="def_StringContent def_String">\'</span>&gt;&lt;/a&gt;&lt;b&gt;Delete&amp;nbsp;item&lt;/b&gt; '</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="def_SymbolStrong def_Symbol">;</span><br>
+<span class="def_Comment def_Syntax">// --&gt; </span><br>
+<span class="def_PairStrongEnd def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/<span class="html_htmlCloseTag html_htmlOpenTag def_Keyword">script</span>&gt;</span></span><br>
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">noscript</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">input</span> </span><span class="html_htmlParam def_Parameter">type</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;submit&quot; </span><span class="html_htmlParam def_Parameter">name</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;mv_click&quot; </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;Delete item&quot; </span><span class="html_htmlParam def_Parameter">onclick</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;return confirm('Are you sure?')&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">noscript</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="text"></a>
+<h3>text</h3>
+<p>
+The label for the standard HTML <span class="fixedwidth">&lt;input&gt;</span> button,
+if a graphic filename or URI is not provided.&nbsp;
+See the <span class="fixedwidth"><a href="#src" title="&quot;src&quot; heading on this page">src</a></span> parameter.
+</p>
+<p>
+This text will be used as the name of the <a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a>
+variable that will hold the <a href="http://interchange-rtfm.pullingshots.ca/icdocs/Form_callback_functions.html" title="Form callback functions">callback</a> code
+associated with the button.&nbsp;
+Also see the <span class="fixedwidth"><a href="#wait_text" title="&quot;wait text&quot; heading on this page">wait_text</a></span> parameter.
+</p>
+<a name="alt"></a>
+<h3>alt</h3>
+<p>
+<em>Alternate text</em> for the browser to show if the
+<a href="#src" title="&quot;src&quot; heading on this page">image</a> can't be displayed,
+for whatever reason.&nbsp;
+This is also shown on the status bar and in tooltips,
+when the image is in focus.
+</p>
+<a name="anchor"></a>
+<h3>anchor</h3>
+<p>
+HTML <em>anchor</em> name,
+if using an <a href="#src" title="&quot;src&quot; heading on this page">image</a> as the submit button.
+</p>
+<a name="confirm"></a>
+<h3>confirm</h3>
+<p>
+If defined then the tag will produce a JavaScript confirmation
+dialog when the button is clicked.&nbsp;
+This parameter's value will be shown in the confirmation dialog.&nbsp;
+The form will only be submitted if the user confirms the click.
+</p>
+<a name="extra"></a>
+<h3>extra</h3>
+<p>
+Anything included in this parameter will be used verbatim
+as extra parameters to the generated HTML
+<span class="fixedwidth">&lt;img&gt;</span> tag (for image buttons) or
+<span class="fixedwidth">&lt;input&gt;</span> tag (for standard buttons).
+</p>
+<a name="form"></a>
+<h3>form</h3>
+<p>
+The name of the form that this button will submit.&nbsp;
+Defaults to the first form on the page.&nbsp;
+Naming forms is recommended to avoid unpredictable results.
+</p>
+<a name="getsize"></a>
+<h3>getsize</h3>
+<p>
+If this parameter is set <em>true</em>,
+and the <p>
+<a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fsearch%2ecpan%2eorg%2f%7erjray%2fImage%2dSize%2d3%2e01%2flib%2fImage%2fSize%2epm" title="http://search.cpan.org/~rjray/Image-Size-3.01/lib/Image/Size.pm" rel="nofollow">Image::Size</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page"> Perl module is installed,
+then this tag will use it to determine the image's <span class="fixedwidth"><a href="#height" title="&quot;height&quot; heading on this page">height</a></span>
+and <span class="fixedwidth"><a href="#width" title="&quot;width&quot; heading on this page">width</a></span>,
+so that they can be added to the resulting HTML
+<span class="fixedwidth">&lt;img&gt;</span> tag without having to be specified.
+</p>
+<p>
+This parameter will override the values specified using the
+<span class="fixedwidth"><a href="#height" title="&quot;height&quot; heading on this page">height</a></span> and <span class="fixedwidth"><a href="#width" title="&quot;width&quot; heading on this page">width</a></span> parameters.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_warning.gif" width="32" height="32" border="0" alt="Warning">
+</td>
+<td width="100%">
+<p class="title">Warning</p>
+<p style="margin-bottom: 0px">
+If you call this tag from local <a href="#Perl_example" title="&quot;Perl example&quot; heading on this page">embedded Perl</a>
+then you will not be able to use this parameter without also
+untrapping the &quot;<span class="fixedwidth">require</span>&quot; opcode.&nbsp;
+See the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SafeUntrap.html" title="SafeUntrap (config)">SafeUntrap</a></span> <em>global</em>
+configuration directive.
+</p>
+</td>
+</tr>
+</table>
+
+<p>
+This parameter will be ignored if the <span class="fixedwidth"><a href="#src" title="&quot;src&quot; heading on this page">src</a></span> parameter
+refers to an external URI.
+</p>
+<a name="hidetext"></a>
+<h3>hidetext</h3>
+<p>
+Set <em>true</em> to suppress the <span class="fixedwidth"><a href="#text" title="&quot;text&quot; heading on this page">text</a></span> output.
+</p>
+<a name="wait_text"></a>
+<h3>wait_text</h3>
+<p>
+Text to show while the next page is being loaded,
+to help prevent undesired multiple clicks on the button.
+</p>
+<p>
+If defined then this will be used,
+instead of the <span class="fixedwidth"><a href="#text" title="&quot;text&quot; heading on this page">text</a></span> parameter's value,
+to name the <a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variable that will hold the
+<a href="http://interchange-rtfm.pullingshots.ca/icdocs/Form_callback_functions.html" title="Form callback functions">callback</a> code associated with the button.
+</p>
+<a name="border"></a>
+<h3>border</h3>
+<p>
+Ordinary HTML attribute for the resulting HTML tag.
+</p>
+<a name="height"></a>
+<h3>height</h3>
+<p>
+Ordinary HTML attribute for the resulting HTML tag.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+This parameter's value will be ignored if the
+<span class="fixedwidth"><a href="#getsize" title="&quot;getsize&quot; heading on this page">getsize</a></span> parameter is set <em>true</em>.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="width"></a>
+<h3>width</h3>
+<p>
+Ordinary HTML attribute for the resulting HTML tag.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+This parameter's value will be ignored if the
+<span class="fixedwidth"><a href="#getsize" title="&quot;getsize&quot; heading on this page">getsize</a></span> parameter is set <em>true</em>.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="hspace"></a>
+<h3>hspace</h3>
+<p>
+Ordinary HTML attribute for the resulting HTML tag.
+</p>
+<a name="vspace"></a>
+<h3>vspace</h3>
+<p>
+Ordinary HTML attribute for the resulting HTML tag.
+</p>
+<a name="align"></a>
+<h3>align</h3>
+<p>
+Ordinary HTML attribute for the resulting HTML tag.
+</p>
+<a name="id"></a>
+<h3>id</h3>
+<p>
+Ordinary CSS attribute for the resulting HTML tag.
+</p>
+<a name="class"></a>
+<h3>class</h3>
+<p>
+Ordinary CSS attribute for the resulting HTML tag.
+</p>
+<a name="style"></a>
+<h3>style</h3>
+<p>
+Ordinary CSS attribute for the resulting HTML tag.
+</div>
+
+<!-- start of modification notice -->
+<div class="wikitext">
+    <table class="pageinfo" cellpadding="0" cellspacing="0">
+	<tr>
+	    <td>
+Category:&nbsp; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a>
+	    </td>
+	</tr>
+
+
+	<tr>
+	    <td>
+		
+		Last modified by: <a href="http://interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin">Kevin Walsh</a><br>
+		Modification date: Thursday 9 August 2007 at 5:02 PM (BST)
+	    </td>
+	</tr>
+    </table>
+</div>
+<!-- end of modification notice -->
+
+
+
+<!-- end page: wiki/display (tags/button) -->
+
+
+
+<!-- end of page text -->
+	    </td>
+
+	</tr>
+    </table>
+<!-- START VAR: FOOTER -->
+
+<table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+	<td>
+	    <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	</td>
+
+    </tr>
+</table>
+
+<!-- END VAR: FOOTER -->
+
+<!-- START VAR: COPYRIGHT -->
+
+
+    <div class="copyright">
+	Copyright &copy; 2001-2012
+	<a href="http://cursor.biz/index.html">Cursor Software Limited</a>.&nbsp;
+	All Rights Reserved.
+    </div>
+
+<!-- END VAR: COPYRIGHT -->
+
+</body>
+</html>

@@ -1,0 +1,1377 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>Interchange search engine - RTFM</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="en-GB">
+    <meta http-equiv="Window-target" content="_top">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <meta http-equiv="X-Soup-Of-The-Day" content="Tomato">
+
+    <meta name="author" content="Kevin Walsh">
+    <meta name="publisher" content="Cursor Software Limited">
+    <meta name="copyright" content="2001-2010, Cursor Software Limited">
+    <meta name="licence" content="GPLv2+ (Unknown licence)">
+    <meta name="generator" content="Interchange 5.7.0 -- www.icdevgroup.org">
+    <meta name="robots" content="index,follow,noarchive,noimageindex">
+    <meta name="keywords" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="description" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="MSSmartTagsPreventParsing" content="TRUE">
+
+    <meta name="verify-v1" content="KqlU/bxZj9Y2ZdZ/3RwuzgVSMIrZ8XM2wqbjSaEo3O4=">
+
+    <meta name="y_key" content="e2dd60be5777fbc8">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
+    <link rel="search" type="application/opensearchdescription+xml" href="http://www.interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="stylesheet" href="/decor/css/website.css">
+    <link rel="stylesheet" href="/decor/css/wiki.css">
+    <link rel="stylesheet" href="/decor/css/neo.css">
+
+
+    <script type="text/javascript" language="JavaScript">
+    <!--
+	if (top != self){
+	    top.location = location;
+	}
+
+    // -->
+    </script>
+</head>
+<body>
+<!-- START VAR: LOGOBAR -->
+<table id="rtfmheader" cellpadding="0" cellspacing="0">
+    <tr>
+	<td><a href="http://www.interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+
+	<td width="100%" style="text-align: right; padding: 10px">
+
+	    <form action="http://www.interchange-rtfm.pullingshots.ca/search.html" method="POST">
+		<input type="hidden" name="mv_session_id" value="nsession">
+		<input type="hidden" name="mv_profile" value="cms_search">
+		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
+		<input type="submit" class="button" value="Search">
+	    </form>
+
+	</td>
+    </tr>
+</table>
+<table id="breadcrumbs" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+	<td>
+	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_database.html">Interchange database</a></span>
+	    <span class="nowrap">&gt; <span class="current">Interchange search engine</span></span>
+	</td>
+
+    </tr>
+</table>
+<!-- END VAR: LOGOBAR -->
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+
+	    <td id="leftside">
+<!-- START COMPONENT: navigation -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th>NAVIGATION</th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+
+<!-- END COMPONENT: navigation -->
+<!-- START COMPONENT: wiki_recent -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th><span class="nowrap">RECENTLY VIEWED</span></th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Interchange_search_engine.html">Interchange search engine</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+<!-- END COMPONENT: wiki_recent -->
+<!-- START COMPONENT: wiki_backlinks -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th><span class="nowrap">PAGES THAT LINK HERE</span></th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/area.html">area</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Interchange_tag_introduction.html">Interchange tag introduction</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/loop.html">loop</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/more-list.html">more-list</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html">Search parameters</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/SearchProfile.html">SearchProfile</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+<!-- END COMPONENT: wiki_backlinks -->
+<!-- START COMPONENT: account -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+
+    <tr>
+	<th>ACCOUNT LOGIN</th>
+    </tr>
+
+    <tr>
+	<td class="first">
+	    <p>You are not logged in</p>
+	</td>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+	    </ul>
+	</td>
+    </tr>
+
+</table>
+
+
+
+<!-- END COMPONENT: account -->
+<!-- START COMPONENT: icpowered -->
+
+<div style="text-align: center; margin: 10px; margin-top: 0px">
+    <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+</div>
+
+
+
+<!-- START COMPONENT: icpowered -->
+
+	    </td>
+
+	    <td id="bodytext">
+<!-- start of page text -->
+
+<!-- start page: wiki/display (Interchange_search_engine) -->
+
+<div class="wikitext">
+<a name="Interchange_search_engine"></a>
+<h1>Interchange search engine</h1>
+<!-- start of toc --><div class="toc">
+<table>
+<tr valign="top">
+<th>Table of contents</th>
+</tr>
+<tr><td class="h2"><a href="#Introduction">1. Introduction</a></td></tr>
+<tr><td class="h2"><a href="#The_search_form">2. The search form</a></td></tr>
+<tr><td class="h2"><a href="#Coordinated_and_joined_searches">3. Coordinated and joined searches</a></td></tr>
+<tr><td class="h3"><a href="#Single_table_coordinated_search_example">3.1. Single table coordinated search example</a></td></tr>
+<tr><td class="h3"><a href="#Multiple_table_joined_coordinated_search_examples">3.2. Multiple table (joined) coordinated search examples</a></td></tr>
+<tr><td class="h2"><a href="#Custom_search_operators_using_SearchOp">4. Custom search operators (using SearchOp)</a></td></tr>
+<tr><td class="h2"><a href="#Specifying_a_search_with_SQL-style_syntax">5. Specifying a search with SQL-style syntax</a></td></tr>
+<tr><td class="h2"><a href="#One-click_searches">6. One-click searches</a></td></tr>
+<tr><td class="h3"><a href="#Original_syntax">6.1. Original syntax</a></td></tr>
+<tr><td class="h3"><a href="#Ampersand_syntax">6.2. Ampersand syntax</a></td></tr>
+<tr><td class="h3"><a href="#Multi-line_syntax">6.3. Multi-line syntax</a></td></tr>
+<tr><td class="h2"><a href="#Joined_Searches">7. Joined Searches</a></td></tr>
+<tr><td class="h2"><a href="#Setting_display_options_with_mv_value">8. Setting display options with mv_value</a></td></tr>
+<tr><td class="h2"><a href="#In-page_searches">9. In-page searches</a></td></tr>
+<tr><td class="h2"><a href="#Search_profiles">10. Search profiles</a></td></tr>
+<tr>
+<td class="spacer">&nbsp;</td>
+</tr>
+</table>
+</div><!-- end of toc -->
+<a name="Introduction"></a>
+<h2>Introduction</h2>
+<p>
+Interchange implements a search engine which will search the
+<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span>, or any other table, for items based
+upon user input.&nbsp;
+It uses either forms or link-based searches which are invoked using the
+&quot;<span class="fixedwidth">scan</span>&quot; <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/ActionMap.html" title="ActionMap (config)">ActionMap</a></span>.&nbsp;
+The search engine provides several Interchange tags and makes use of
+many variables.
+</p>
+<p>
+If the search is implemented in a link or in a form,
+it will always display formatted results on a separate results page,
+which is an Interchange page that uses some combination of the
+<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/search-region.html" title="search-region (tags)">search-region</a>]</span> tag, along with the
+<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/search-region.html" title="search-region (tags)">search-list</a>]</span>,
+<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/more-list.html" title="more-list (tags)">more-list</a>]</span>,
+<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/more-list.html#more" title="&quot;more&quot; heading on the &quot;more-list (tags)&quot; page">more</a>]</span> and other sub-tags,
+to format and display the results.
+</p>
+<p>
+A full list of <a href="#One-click_searches" title="&quot;One-click searches&quot; heading on this page">one-click search</a> variables,
+and their two-letter abbreviations, can be found on the
+<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html" title="Search parameters">Search parameters</a> page.
+</p>
+<a name="The_search_form"></a>
+<h2>The search form</h2>
+<p>
+A number of <span class="fixedwidth">&lt;form&gt;</span> variables can be defined to determine
+which type of search will be used, which columns in a table should be searched
+and what the search behaviour should be.
+</p>
+<p>
+Here is a simple search form:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">form</span> </span><span class="html_htmlParam def_Parameter">action</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;[area search]&quot; </span><span class="html_htmlParam def_Parameter">method</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;POST&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">input</span> </span><span class="html_htmlParam def_Parameter">type</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;text&quot; </span><span class="html_htmlParam def_Parameter">size</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;30&quot; </span><span class="html_htmlParam def_Parameter">name</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;mv_searchspec&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">input</span> </span><span class="html_htmlParam def_Parameter">type</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;submit&quot; </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;Search&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">form</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+When the &quot;Search&quot; button is pressed, Interchange will search the
+<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table(s) for the string entered into the
+&quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_searchspec_se" title="&quot;mv searchspec se&quot; heading on the &quot;Search parameters&quot; page">mv_searchspec</a></span>&quot; text field,
+and will make the results available
+for display on a <em>results</em> page.
+</p>
+<p>
+The same search for a fixed string (&quot;shirt&quot;, for instance) could be
+performed with the use of a hot link, using the <em>special</em> &quot;<span class="fixedwidth">scan</span>&quot; URI.&nbsp;
+For example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">a</span> </span><span class="html_htmlParam def_Parameter">href</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;[area search='se=shirt']&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span>See our shirt collection<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">a</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+This mechanism is referred to as a <em>one-click search</em> in this
+documentation.
+</p>
+<p>
+The default is to search every column in the table.&nbsp;
+To restrict the search to a &quot;<span class="fixedwidth">description</span>&quot; column,
+the search specification, in the above form, could be modified to
+add the following:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">input</span> </span><span class="html_htmlParam def_Parameter">type</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;hidden&quot; </span><span class="html_htmlParam def_Parameter">name</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;mv_search_field&quot; </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;description&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Or, in a <em>one-click</em> search:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">a</span> </span><span class="html_htmlParam def_Parameter">href</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;[area search=|<br>
+&nbsp; &nbsp; se=shirt<br>
+&nbsp; &nbsp; sf=description<br>
+|]&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span>See our shirt collection<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">a</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+You could use checkboxes or radio button fields to let the user decide on
+the search parameters, as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">input</span> </span><span class="html_htmlParam def_Parameter">type</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;checkbox&quot; </span><span class="html_htmlParam def_Parameter">name</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;mv_search_field&quot; </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;author&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span> </span>Search by author <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">br</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">input</span> </span><span class="html_htmlParam def_Parameter">type</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;checkbox&quot; </span><span class="html_htmlParam def_Parameter">name</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;mv_search_field&quot; </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;title&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span> </span>Search by title <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">br</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Search specifications can be <em>stacked</em>.&nbsp;
+If more than one checkbox is checked then all of the selected columns will
+be searched.
+</p>
+<a name="Coordinated_and_joined_searches"></a>
+<h2>Coordinated and joined searches</h2>
+<p>
+Interchange can perform a complete range of tests on individual columns in
+the target table.&nbsp;
+To use this function,
+set &quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_coordinate_co" title="&quot;mv coordinate co&quot; heading on the &quot;Search parameters&quot; page">mv_coordinate</a></span>&quot; to
+&quot;<span class="fixedwidth">Yes</span>&quot; (or &quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_coordinate_co" title="&quot;mv coordinate co&quot; heading on the &quot;Search parameters&quot; page">co</a>=yes</span>&quot; in the <em>one-click</em> syntax).&nbsp;
+In order to use <em>coordinated</em> searching,
+the number of search fields must equal the number of search strings.
+</p>
+<p>
+To make sure that is the case, you can use the &quot;<span class="fixedwidth">mv_search_map</span>&quot; variable,
+which allows variables to be mapped to others in the search specification.&nbsp;
+For example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">input</span> </span><span class="html_htmlParam def_Parameter">type</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;hidden&quot; </span><span class="html_htmlParam def_Parameter">name</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;mv_search_map&quot; </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;<br>
+&nbsp; &nbsp; mv_searchspec=search1<br>
+&nbsp; &nbsp; mv_searchspec=search2<br>
+&nbsp; &nbsp; mv_searchspec=search3<br>
+&quot;</span><span class="html_htmlUnknowTag def_Tag">&gt;<br>
+&lt;<span class="html_htmlOpenTag def_Keyword">input </span>type=&quot;hidden&quot; name=&quot;mv_search_field&quot; value=&quot;<span class="html_htmlOpenTag def_Keyword">title</span>&quot;&gt;<br>
+&lt;<span class="html_htmlOpenTag def_Keyword">input </span>type=&quot;hidden&quot; name=&quot;mv_search_field&quot; value=&quot;artist&quot;&gt;<br>
+&lt;<span class="html_htmlOpenTag def_Keyword">input </span>type=&quot;hidden&quot; name=&quot;mv_search_field&quot; value=&quot;category&quot;&gt;<br>
+<br>
+Artist: &lt;<span class="html_htmlOpenTag def_Keyword">input </span>name=&quot;search1&quot; value=&quot;&quot;&gt;&lt;<span class="html_htmlOpenTag def_Keyword">br</span>&gt;<br>
+<span class="html_htmlOpenTag def_Keyword">Title</span>:&nbsp; &lt;<span class="html_htmlOpenTag def_Keyword">input </span>name=&quot;search2&quot; value=&quot;&quot;&gt;&lt;<span class="html_htmlOpenTag def_Keyword">br</span>&gt;<br>
+Genre:&nbsp; &lt;<span class="html_htmlOpenTag def_Keyword">input </span>name=&quot;search3&quot; value=&quot;&quot;&gt;&lt;<span class="html_htmlOpenTag def_Keyword">br</span>&gt;</span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The search will work even if the user leaves one of the input fields blank.
+</p>
+<p>
+Leading/trailing whitespace is stripped from all lines in the
+&quot;<span class="fixedwidth">mv_search_map</span>&quot; variable, so it can be positioned as shown
+for convenience.
+</p>
+<p>
+Coordinated searches may be joined with the output of another table if
+one of the &quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_search_field_sf" title="&quot;mv search field sf&quot; heading on the &quot;Search parameters&quot; page">mv_search_field</a></span>&quot; values is set to a &quot;<span class="fixedwidth">table:column</span>&quot; pair.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p>
+Table joins will slow down large searches considerably unless there is
+another search specification,
+as the second table must be accessed for every row resulting from a search
+of the primary table.
+</p>
+<p style="margin-bottom: 0px">
+If there is a search field that qualifies for a regular expression search
+function,
+or you are conducting a binary search with
+<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_dict_look_dl" title="&quot;mv dict look dl&quot; heading on the &quot;Search parameters&quot; page">mv_dict_look</a></span>,
+or are not doing an <em>or search</em>,
+the penalty should not be too great,
+as only matching rows will trigger a table lookup.
+</p>
+</td>
+</tr>
+</table>
+
+<p>
+Individual column operations can be specified with the
+&quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_column_op_op" title="&quot;mv column op op&quot; heading on the &quot;Search parameters&quot; page">mv_column_op</a></span>&quot; (aka &quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_column_op_op" title="&quot;mv column op op&quot; heading on the &quot;Search parameters&quot; page">op</a></span>&quot;) parameter.&nbsp;
+The operations include the following:
+</p>
+<table class="border">
+<tr valign="top">
+<th class="grid">Name
+</th>
+<th class="grid">String column
+</th>
+<th class="grid">Numeric column
+</th>
+<th class="grid">Alternative operator
+</th>
+</tr>
+<tr valign="top">
+<td class="grid">Equal to
+</td>
+<td class="grid"><span class="fixedwidth">eq</span></td>
+<td class="grid"><span class="fixedwidth">==</span></td>
+<td class="grid"><span class="fixedwidth">=</span></td>
+</tr>
+<tr valign="top">
+<td class="grid">Not equal to
+</td>
+<td class="grid"><span class="fixedwidth">ne</span></td>
+<td class="grid"><span class="fixedwidth">!=</span></td>
+<td class="grid"><span class="fixedwidth">&lt;&gt;</span></td>
+</tr>
+<tr valign="top">
+<td class="grid">Greater than
+</td>
+<td class="grid"><span class="fixedwidth">gt</span></td>
+<td class="grid"><span class="fixedwidth">&gt;</span></td>
+<td class="grid">&nbsp;</td>
+</tr>
+<tr valign="top">
+<td class="grid">Less than
+</td>
+<td class="grid"><span class="fixedwidth">lt</span></td>
+<td class="grid"><span class="fixedwidth">&lt;</span></td>
+<td class="grid">&nbsp;</td>
+</tr>
+<tr valign="top">
+<td class="grid">Less than/equal to
+</td>
+<td class="grid"><span class="fixedwidth">le</span></td>
+<td class="grid"><span class="fixedwidth">&lt;=</span></td>
+<td class="grid">&nbsp;</td>
+</tr>
+<tr valign="top">
+<td class="grid">Greater than/equal to
+</td>
+<td class="grid"><span class="fixedwidth">ge</span></td>
+<td class="grid"><span class="fixedwidth">&gt;=</span></td>
+<td class="grid">&nbsp;</td>
+</tr>
+<tr valign="top">
+<td class="grid"><em>Regular expression</em> (match)</td>
+<td class="grid"><span class="fixedwidth">rm</span></td>
+<td class="grid">
+</td>
+<td class="grid"><span class="fixedwidth">=~</span></td>
+</tr>
+<tr valign="top">
+<td class="grid"><em>Regular expression</em> (not)</td>
+<td class="grid"><span class="fixedwidth">rn</span></td>
+<td class="grid">
+</td>
+<td class="grid"><span class="fixedwidth">!~</span></td>
+</tr>
+<tr valign="top">
+<td class="grid">Exact match
+</td>
+<td class="grid"><span class="fixedwidth">em</span></td>
+<td class="grid">&nbsp;</td>
+<td class="grid">&nbsp;</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">Text::Query::Advanced</span></td>
+<td class="grid"><span class="fixedwidth">aq</span></td>
+<td class="grid">&nbsp;</td>
+<td class="grid">&nbsp;</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">Text::Query::Simple</span></td>
+<td class="grid"><span class="fixedwidth">tq</span></td>
+<td class="grid">&nbsp;</td>
+<td class="grid">&nbsp;</td>
+</tr>
+</table>
+
+<p>
+The special &quot;<span class="fixedwidth">aq</span>&quot; and &quot;<span class="fixedwidth">tq</span>&quot; query operators only work if the
+<p>
+<a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fsearch%2ecpan%2eorg%2f%7eebohlman%2fText%2dQuery%2d0%2e07%2flib%2fText%2fQuery%2epm" title="http://search.cpan.org/~ebohlman/Text-Query-0.07/lib/Text/Query.pm" rel="nofollow">Text::Query</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page"> Perl module is installed.&nbsp;
+This allows <em>Altavista</em>-style searches on columns, using &quot;<span class="fixedwidth">AND</span>&quot;,
+&quot;<span class="fixedwidth">OR</span>&quot;, &quot;<span class="fixedwidth">NOT</span>&quot; and &quot;<span class="fixedwidth">NEAR</span>&quot;, with arbitrarily complex
+parentheses.
+</p>
+<p>
+A useful search form,
+using the &quot;<span class="fixedwidth">aq</span>&quot; operator,
+could be written as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">form</span> </span><span class="html_htmlParam def_Parameter">action</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;[area search]&quot; </span><span class="html_htmlParam def_Parameter">method</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;POST&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">input</span> </span><span class="html_htmlParam def_Parameter">type</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;hidden name=&quot;</span>mv_session_id<span class="html_htmlString def_String">&quot; value=&quot;</span>[<span class="html_htmlParam def_Parameter">data </span>session <span class="html_htmlParam def_Parameter">id</span>]<span class="html_htmlString def_String">&quot;&gt;<br>
+<br>
+&nbsp; &nbsp; &lt;input type=&quot;</span><span class="html_htmlParam def_Parameter">hidden</span><span class="html_htmlString def_String">&quot; name=&quot;</span>mv_searchtype<span class="html_htmlString def_String">&quot; value=&quot;</span>db<span class="html_htmlString def_String">&quot;&gt;<br>
+&nbsp; &nbsp; &lt;input type=&quot;</span><span class="html_htmlParam def_Parameter">hidden</span><span class="html_htmlString def_String">&quot; name=&quot;</span>mv_coordinate<span class="html_htmlString def_String">&quot; value=&quot;</span><span class="html_htmlNumb def_Number">1</span><span class="html_htmlString def_String">&quot;&gt;<br>
+&nbsp; &nbsp; &lt;input type=&quot;</span><span class="html_htmlParam def_Parameter">hidden</span><span class="html_htmlString def_String">&quot; name=&quot;</span>mv_min_string<span class="html_htmlString def_String">&quot; value=&quot;</span><span class="html_htmlNumb def_Number">2</span><span class="html_htmlString def_String">&quot;&gt;<br>
+<br>
+&nbsp; &nbsp; &lt;input type=&quot;</span><span class="html_htmlParam def_Parameter">hidden</span><span class="html_htmlString def_String">&quot; name=&quot;</span>mv_column_op<span class="html_htmlString def_String">&quot; value=&quot;</span>aq<span class="html_htmlString def_String">&quot;&gt;<br>
+&nbsp; &nbsp; &lt;input type=&quot;</span><span class="html_htmlParam def_Parameter">hidden</span><span class="html_htmlString def_String">&quot; name=&quot;</span>mv_search_field<span class="html_htmlString def_String">&quot; value=&quot;</span>:sku:description:comment:category<span class="html_htmlString def_String">&quot;&gt;<br>
+&nbsp; &nbsp; &lt;input name=&quot;</span>mv_searchspec<span class="html_htmlString def_String">&quot; type=&quot;</span><span class="html_htmlParam def_Parameter">text</span><span class="html_htmlString def_String">&quot; size=&quot;</span><span class="html_htmlNumb def_Number">20</span><span class="html_htmlString def_String">&quot;&gt;<br>
+<br>
+&nbsp; &nbsp; &lt;input type=&quot;</span>submit<span class="html_htmlString def_String">&quot; value=&quot;</span>Search<span class="html_htmlString def_String">&quot;&gt;<br>
+&lt;/form&gt;</span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+This searches the &quot;<span class="fixedwidth">sku</span>&quot;, &quot;<span class="fixedwidth">description</span>&quot;, &quot;<span class="fixedwidth">comment</span>&quot; and &quot;<span class="fixedwidth">category</span>&quot; columns in the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span>
+table(s) using the <p>
+<a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fsearch%2ecpan%2eorg%2f%7eebohlman%2fText%2dQuery%2d0%2e07%2flib%2fText%2fQuery%2epm" title="http://search.cpan.org/~ebohlman/Text-Query-0.07/lib/Text/Query.pm" rel="nofollow">Text::Query</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page"> syntax.&nbsp;
+A valid search string could be &quot;<span class="fixedwidth">painters NEAR set</span>&quot;.
+</p>
+<a name="Single_table_coordinated_search_example"></a>
+<h3>Single table coordinated search example</h3>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">&lt;</span><span class="def_Syntax">a href</span><span class="def_Symbol">=</span>&quot;<span class="def_Symbol">[</span><span class="def_Syntax">area search</span><span class="def_Symbol">=</span><span class="def_Symbol">|</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">co</span><span class="def_Symbol">=</span>yes<br>
+<br>
+&nbsp; &nbsp; <span class="def_Syntax">sf</span><span class="def_Symbol">=</span>title<br>
+&nbsp; &nbsp; <span class="def_Syntax">se</span><span class="def_Symbol">=</span>Sunflowers<br>
+&nbsp; &nbsp; <span class="def_Syntax">op</span><span class="def_Symbol">=</span>em<br>
+<br>
+&nbsp; &nbsp; <span class="def_Syntax">sf</span><span class="def_Symbol">=</span>artist<br>
+&nbsp; &nbsp; <span class="def_Syntax">se</span><span class="def_Symbol">=</span><span class="def_Syntax">Van </span>Gogh<br>
+&nbsp; &nbsp; <span class="def_Syntax">op</span><span class="def_Symbol">=</span>rm<br>
+<span class="def_Symbol">|</span><span class="def_Symbol">]</span>&quot;<span class="def_Symbol">&gt;</span><span class="def_Syntax">Sunflowers by Van </span>Gogh<span class="def_Symbol">&lt;</span><span class="def_Symbol">/</span>a<span class="def_Symbol">&gt;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Multiple_table_joined_coordinated_search_examples"></a>
+<h3>Multiple table (joined) coordinated search examples</h3>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">&lt;</span><span class="def_Syntax">a href</span><span class="def_Symbol">=</span>&quot;<span class="def_Symbol">[</span><span class="def_Syntax">area search</span><span class="def_Symbol">=</span><span class="def_Symbol">|</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">co</span><span class="def_Symbol">=</span>yes<br>
+<br>
+&nbsp; &nbsp; <span class="def_Syntax">sf</span><span class="def_Symbol">=</span>title<br>
+&nbsp; &nbsp; <span class="def_Syntax">se</span><span class="def_Symbol">=</span>Sunflowers<br>
+&nbsp; &nbsp; <span class="def_Syntax">nu</span><span class="def_Symbol">=</span><span class="def_Number">0</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">op</span><span class="def_Symbol">=</span><span class="def_Symbol">!</span><span class="def_Symbol">~</span><br>
+<br>
+&nbsp; &nbsp; <span class="def_Syntax">sf</span><span class="def_Symbol">=</span>artist<br>
+&nbsp; &nbsp; <span class="def_Syntax">se</span><span class="def_Symbol">=</span><span class="def_Syntax">Van </span>Gogh<br>
+&nbsp; &nbsp; <span class="def_Syntax">op</span><span class="def_Symbol">=</span>rm<br>
+&nbsp; &nbsp; <span class="def_Syntax">nu</span><span class="def_Symbol">=</span><span class="def_Number">0</span><br>
+<br>
+&nbsp; &nbsp; <span class="def_Syntax">sf</span><span class="def_Symbol">=</span>inventory<span class="def_Symbol">:</span>quantity<br>
+&nbsp; &nbsp; <span class="def_Syntax">se</span><span class="def_Symbol">=</span><span class="def_Number">1</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">op</span><span class="def_Symbol">=</span><span class="def_Symbol">&gt;</span><span class="def_Symbol">=</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">nu</span><span class="def_Symbol">=</span><span class="def_Number">1</span><br>
+<span class="def_Symbol">|</span><span class="def_Symbol">]</span>&quot;<span class="def_Symbol">&gt;</span><span class="def_Syntax">Any in stock except Sunflowers by Van </span>Gogh<span class="def_Symbol">&lt;</span><span class="def_Symbol">/</span>a<span class="def_Symbol">&gt;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Note that,
+&quot;<span class="fixedwidth">nu=0</span>&quot; must be specified in the joined search example,
+even though that is the default.&nbsp;
+To avoid having to do this, use the
+<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Interchange_tag_introduction.html#Attribute_arrays_and_hashes" title="&quot;Attribute arrays and hashes&quot; heading on the &quot;Interchange tag introduction&quot; page">attribute array</a>
+feature.&nbsp;
+For example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">&lt;</span><span class="def_Syntax">a href</span><span class="def_Symbol">=</span>&quot;<span class="def_Symbol">[</span><span class="def_Syntax">area search</span><span class="def_Number">.0</span><span class="def_Symbol">=</span><span class="def_Symbol">|</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">sf</span><span class="def_Symbol">=</span>title<br>
+&nbsp; &nbsp; <span class="def_Syntax">se</span><span class="def_Symbol">=</span>Sunflowers<br>
+&nbsp; &nbsp; <span class="def_Syntax">op</span><span class="def_Symbol">=</span><span class="def_Symbol">!</span><span class="def_Symbol">~</span><br>
+<span class="def_Symbol">|</span><br>
+<span class="def_Syntax">search</span><span class="def_Number">.1</span><span class="def_Symbol">=</span><span class="def_Symbol">|</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">sf</span><span class="def_Symbol">=</span>artist<br>
+&nbsp; &nbsp; <span class="def_Syntax">se</span><span class="def_Symbol">=</span><span class="def_Syntax">Van </span>Gogh<br>
+<span class="def_Symbol">|</span><br>
+<span class="def_Syntax">search</span><span class="def_Number">.2</span><span class="def_Symbol">=</span><span class="def_Symbol">|</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">sf</span><span class="def_Symbol">=</span>inventory<span class="def_Symbol">:</span>quantity<br>
+&nbsp; &nbsp; <span class="def_Syntax">se</span><span class="def_Symbol">=</span><span class="def_Number">1</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">op</span><span class="def_Symbol">=</span><span class="def_Symbol">&gt;</span><span class="def_Symbol">=</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">nu</span><span class="def_Symbol">=</span><span class="def_Number">1</span><br>
+<span class="def_Symbol">|</span><span class="def_Symbol">]</span>&quot;<span class="def_Symbol">&gt;</span><span class="def_Syntax">Any in stock except Sunflowers by Van </span>Gogh<span class="def_Symbol">&lt;</span><span class="def_Symbol">/</span>a<span class="def_Symbol">&gt;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The &quot;<span class="fixedwidth">co=yes</span>&quot; is assumed when using an
+<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Interchange_tag_introduction.html#Attribute_arrays_and_hashes" title="&quot;Attribute arrays and hashes&quot; heading on the &quot;Interchange tag introduction&quot; page">attribute array</a>
+to create a search specification.
+</p>
+<p>
+The multiple table search will check the product's stock status,
+provided there is an &quot;<span class="fixedwidth">inventory</span>&quot; table with a &quot;<span class="fixedwidth">quantity</span>&quot; column,
+as there is in the Interchange <em>Standard</em> ecommerce demo.&nbsp;
+If the &quot;<span class="fixedwidth">inventory</span>&quot; table's &quot;<span class="fixedwidth">quantity</span>&quot; column is numerically
+greater than or equal to 1 then the product will be selected,
+otherwise the product will be deemed to be out of stock and therefore
+not selected.&nbsp;
+The tables will be joined using their
+<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Database_reference_guide.html#KEY" title="&quot;KEY&quot; heading on the &quot;Database reference guide&quot; page">KEY</a></span> column.
+</p>
+<p>
+It always helps to have a &quot;<span class="fixedwidth">rm</span>&quot; type included in the search.&nbsp;
+This is used to pre-screen rows so that joining-table accesses only need be
+made for already-matching entries.&nbsp;
+If accesses must be made for every row, large searches could be quite slow.
+</p>
+<a name="Custom_search_operators_using_SearchOp"></a>
+<h2>Custom search operators (using SearchOp)</h2>
+<p>
+You can write your own search operator (known as a <span class="fixedwidth">SearchOp</span>)
+with Interchange's <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/CodeDef.html" title="CodeDef (config)">CodeDef</a></span> configuration directive.&nbsp;
+For example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">CodeDef&nbsp; eq</span><span class="def_Symbol">_</span><span class="def_Syntax">nopunc&nbsp; </span>SearchOp<br>
+<span class="def_Syntax">CodeDef&nbsp; eq</span><span class="def_Symbol">_</span><span class="def_Syntax">nopunc&nbsp; Routine&nbsp; </span><span class="def_Symbol">&lt;</span><span class="def_Symbol">&lt;</span>EOR<br>
+<span class="def_Syntax">sub </span><span class="def_Symbol">{</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">my </span><span class="def_Symbol">(</span>$<span class="def_Syntax">self</span><span class="def_Symbol">,</span>$i<span class="def_Symbol">,</span>$<span class="def_Syntax">pat</span><span class="def_Symbol">) </span><span class="def_Symbol">= </span>@<span class="def_Symbol">_</span><span class="def_Symbol">;</span><br>
+&nbsp; &nbsp; $<span class="def_Syntax">pat </span><span class="def_Symbol">=</span><span class="def_Symbol">~ </span>s<span class="def_Symbol">/</span><span class="def_Symbol">[</span><span class="def_Symbol">^</span>A<span class="def_Symbol">-</span><span class="def_Syntax">Za</span><span class="def_Symbol">-</span>z0<span class="def_Symbol">-</span><span class="def_Number">9</span><span class="def_Symbol">]</span><span class="def_Symbol">/</span><span class="def_Symbol">/</span>g<span class="def_Symbol">;</span><br>
+&nbsp; &nbsp; $<span class="def_Syntax">pat </span><span class="def_Symbol">= </span>qr<span class="def_Symbol">/</span>$pat<span class="def_Symbol">/</span>i<span class="def_Symbol">;</span><br>
+<br>
+&nbsp; &nbsp; <span class="def_Syntax">return sub </span><span class="def_Symbol">{</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Syntax">my </span>$<span class="def_Syntax">string </span><span class="def_Symbol">= </span><span class="def_Syntax">shift</span><span class="def_Symbol">;</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; $<span class="def_Syntax">string </span><span class="def_Symbol">=</span><span class="def_Symbol">~ </span>s<span class="def_Symbol">/</span><span class="def_Symbol">[</span><span class="def_Symbol">^</span>A<span class="def_Symbol">-</span><span class="def_Syntax">Za</span><span class="def_Symbol">-</span>z0<span class="def_Symbol">-</span><span class="def_Number">9</span><span class="def_Symbol">]</span><span class="def_Symbol">/</span><span class="def_Symbol">/</span>g<span class="def_Symbol">;</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Syntax">return </span>$<span class="def_Syntax">string </span><span class="def_Symbol">=</span><span class="def_Symbol">~ </span>$<span class="def_Syntax">pat</span><span class="def_Symbol">;</span><br>
+&nbsp; &nbsp; <span class="def_Symbol">}</span><span class="def_Symbol">;</span><br>
+<span class="def_Symbol">}</span><br>
+EOR
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The above custom operator would match &quot;O'Reily&quot; if the user searched
+for &quot;oreily&quot;, and &quot;12-34-56-78&quot; if the user searched for &quot;1234-5678&quot; etc.
+</p>
+<p>
+The parameters passed to the custom code are as follows:
+</p>
+
+<ol>
+<li>The search object (<span class="fixedwidth">&#36;self</span>).</li>
+<li>The index into the coordinated search array (<span class="fixedwidth">&#36;i</span>).</li>
+<li>The pattern to match.</li>
+<li>The name of the operator (&quot;<span class="fixedwidth">eq_nopunc</span>&quot;, in this case).</li>
+</ol>
+
+<p>
+The <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/CodeDef.html" title="CodeDef (config)">CodeDef</a></span> routine must return a reference to
+a Perl subroutine.&nbsp;
+The subroutine will be passed the string to match against,
+and must return <em>true</em> if a match is found, or <em>false</em>
+if no match is found.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+Custom search operators do not honour the &quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_negate_ne" title="&quot;mv negate ne&quot; heading on the &quot;Search parameters&quot; page">mv_negate</a></span>&quot; specification
+unless you code them to do so.
+</p>
+</td>
+</tr>
+</table>
+
+<p>
+With the above, you can do this:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">loop search</span><span class="def_Symbol">=</span><span class="def_Symbol">|</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">se</span><span class="def_Symbol">=</span>sretniap<br>
+&nbsp; &nbsp; <span class="def_Syntax">sf</span><span class="def_Symbol">=</span>description<br>
+&nbsp; &nbsp; <span class="def_Syntax">fi</span><span class="def_Symbol">=</span>products<br>
+&nbsp; &nbsp; <span class="def_Syntax">st</span><span class="def_Symbol">=</span>db<br>
+&nbsp; &nbsp; <span class="def_Syntax">co</span><span class="def_Symbol">=</span>yes<br>
+&nbsp; &nbsp; <span class="def_Syntax">rf</span><span class="def_Symbol">=</span><span class="def_Symbol">*</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">op</span><span class="def_Symbol">=</span><span class="def_Syntax">find</span><span class="def_Symbol">_</span>mirrored<br>
+<span class="def_Symbol">|</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Symbol">[</span><span class="def_Syntax">loop</span><span class="def_Symbol">-</span><span class="def_Syntax">code</span><span class="def_Symbol">] </span><span class="def_Symbol">= </span><span class="def_Symbol">[</span><span class="def_Syntax">loop</span><span class="def_Symbol">-</span><span class="def_Syntax">param description</span><span class="def_Symbol">]</span><span class="def_Symbol">&lt;</span>br<span class="def_Symbol">&gt;</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">loop</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+See <span class="fixedwidth">Vend::Search::create_text_query()</span>, in the Interchange source code,
+for an example of how to return a subroutine that can look into the search
+object for the associated search specification.
+</p>
+<a name="Specifying_a_search_with_SQL-style_syntax"></a>
+<h2>Specifying a search with SQL-style syntax</h2>
+<p>
+SQL syntax can be specified for Interchange searches.&nbsp;
+This is not the same as the external SQL database server search,
+treated separately below.&nbsp;
+The SQL-like syntax will act as a filter on the results of a
+<em>select everything</em> table dump,
+rather than being sent directly to the SQL server.
+</p>
+<p>
+This syntax allows this form setup:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Artist: <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">input</span> </span><span class="html_htmlParam def_Parameter">name</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;artist&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+Title:&nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">input</span> </span><span class="html_htmlParam def_Parameter">name</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;title&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">input</span> </span><span class="html_htmlParam def_Parameter">type</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;hidden&quot; </span><span class="html_htmlParam def_Parameter">name</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;mv_sql_query&quot; </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;<br>
+&nbsp; &nbsp; SELECT&nbsp; code<br>
+&nbsp; &nbsp; FROM&nbsp; &nbsp; products<br>
+&nbsp; &nbsp; WHERE&nbsp;&nbsp; artist LIKE artist<br>
+&nbsp; &nbsp; AND&nbsp; &nbsp;&nbsp; title LIKE title<br>
+&quot;</span><span class="html_htmlUnknowTag def_Tag">&gt;</span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+If the right hand side of an expression looks like a column (it is not quoted),
+then the appropriate form variable is substituted.&nbsp;
+If used in a <em>one-click</em>, the corresponding <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a>
+variable is used instead.&nbsp;
+The assumption is reversed for the left-hand side;&nbsp;
+If it is a quoted string then the column name is read from the passed values.&nbsp;
+Otherwise, the column name is taken literally.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">Search </span>for<span class="def_Symbol">: </span><span class="def_Symbol">&lt;</span><span class="def_Syntax">input name</span><span class="def_Symbol">=</span><span class="def_String">&quot;searchstring&quot;</span><span class="def_Symbol">&gt;</span><span class="def_Symbol">&lt;</span>br<span class="def_Symbol">&gt;</span><br>
+<span class="def_Syntax">Search </span>in<span class="def_Symbol">:&nbsp; </span><span class="def_Symbol">&lt;</span><span class="def_Syntax">input type</span><span class="def_Symbol">=</span><span class="def_String">&quot;radio&quot; </span><span class="def_Syntax">name</span><span class="def_Symbol">=</span><span class="def_String">&quot;column&quot; </span><span class="def_Syntax">value</span><span class="def_Symbol">=</span><span class="def_String">&quot;title&quot;</span><span class="def_Symbol">&gt; </span>title<br>
+<br>
+<span class="def_Symbol">&lt;</span><span class="def_Syntax">input type</span><span class="def_Symbol">=</span><span class="def_String">&quot;radio&quot; </span><span class="def_Syntax">name</span><span class="def_Symbol">=</span><span class="def_String">&quot;column&quot; </span><span class="def_Syntax">value</span><span class="def_Symbol">=</span><span class="def_String">&quot;artist&quot;</span><span class="def_Symbol">&gt; </span>artist<br>
+<span class="def_Symbol">&lt;</span><span class="def_Syntax">input type</span><span class="def_Symbol">=</span><span class="def_String">&quot;hidden&quot; </span><span class="def_Syntax">name</span><span class="def_Symbol">=</span><span class="def_String">&quot;mv_sql_query&quot; </span><span class="def_Syntax">value</span><span class="def_Symbol">=</span>&quot;<br>
+&nbsp; &nbsp; <span class="def_Syntax">SELECT&nbsp; </span>code<br>
+&nbsp; &nbsp; <span class="def_Syntax">FROM&nbsp; &nbsp; </span>products<br>
+&nbsp; &nbsp; <span class="def_Syntax">WHERE&nbsp;&nbsp; </span><span class="def_String">'column' </span><span class="def_Syntax">LIKE </span>searchstring<br>
+&quot;<span class="def_Symbol">&gt;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Once again, the query is not sent to the SQL server directly.&nbsp;
+Parentheses will have no effect, and &quot;<span class="fixedwidth">AND</span>&quot; and &quot;<span class="fixedwidth">OR</span>&quot; conditions will cause all conditions to be &quot;<span class="fixedwidth">OR</span>&quot;.&nbsp;
+The searches above would be similar to the following:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">area search</span><span class="def_Symbol">=</span><span class="def_Symbol">|</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">co</span><span class="def_Symbol">=</span>yes<br>
+&nbsp; &nbsp; <span class="def_Syntax">sf</span><span class="def_Symbol">=</span>artist<br>
+&nbsp; &nbsp; <span class="def_Syntax">op</span><span class="def_Symbol">=</span>rm<br>
+&nbsp; &nbsp; <span class="def_Syntax">se</span><span class="def_Symbol">=</span><span class="def_Symbol">[</span><span class="def_Syntax">value artist</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">sf</span><span class="def_Symbol">=</span>title<br>
+&nbsp; &nbsp; <span class="def_Syntax">op</span><span class="def_Symbol">=</span>rm<br>
+&nbsp; &nbsp; <span class="def_Syntax">se</span><span class="def_Symbol">=</span><span class="def_Symbol">[</span><span class="def_Syntax">value title</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">|</span><span class="def_Symbol">]</span>&quot;<span class="def_Symbol">&gt;</span><span class="def_Syntax">Search for </span><span class="def_Symbol">[</span><span class="def_Syntax">value artist</span><span class="def_Symbol">]</span><span class="def_Symbol">, </span><span class="def_Symbol">[</span><span class="def_Syntax">value title</span><span class="def_Symbol">]</span><span class="def_Symbol">&lt;</span><span class="def_Symbol">/</span>a<span class="def_Symbol">&gt;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">&lt;</span><span class="def_Syntax">a href</span><span class="def_Symbol">=</span>&quot;<span class="def_Symbol">[</span><span class="def_Syntax">area search</span><span class="def_Symbol">=</span><span class="def_Symbol">|</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">co</span><span class="def_Symbol">=</span>yes<br>
+&nbsp; &nbsp; <span class="def_Syntax">sf</span><span class="def_Symbol">=</span><span class="def_Symbol">[</span><span class="def_Syntax">value column</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">op</span><span class="def_Symbol">=</span>rm<br>
+&nbsp; &nbsp; <span class="def_Syntax">se</span><span class="def_Symbol">=</span><span class="def_Symbol">[</span><span class="def_Syntax">value searchstring</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">|</span><span class="def_Symbol">]</span>&quot;<span class="def_Symbol">&gt; </span><span class="def_Syntax">Search for </span><span class="def_Symbol">[</span><span class="def_Syntax">value searchstring</span><span class="def_Symbol">] </span><span class="def_Syntax">in </span><span class="def_Symbol">[</span><span class="def_Syntax">value column</span><span class="def_Symbol">] </span><span class="def_Symbol">&lt;</span><span class="def_Symbol">/</span>a<span class="def_Symbol">&gt;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="One-click_searches"></a>
+<h2>One-click searches</h2>
+<p>
+Interchange allows a search to be passed in a URI, as described above.&nbsp;
+The earlier examples looked a little like this:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">a</span> </span><span class="html_htmlParam def_Parameter">href</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;[area search=|<br>
+&nbsp; &nbsp; se=Impressionists<br>
+&nbsp; &nbsp; sf=category<br>
+|]&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span> </span>Impressionist Paintings <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">a</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+This is another way to do the same thing:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">a</span> </span><span class="html_htmlParam def_Parameter">href</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;[area scan se=Impressionists/sf=category]&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span> </span>Impressionist Paintings <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">a</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Assuming your <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/VendURL.html" title="VendURL (config)">VendURL</a></span> is
+&quot;<span class="fixedwidth">www.example.com/cgi-bin/vlink</span>&quot;,
+those links would translate to the following:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">a</span> </span><span class="html_htmlParam def_Parameter">href</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;http://www.example.com/cgi-bin/vlink/scan/se=Impressionists/sf=category&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span> </span>Impressionist Paintings <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">a</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Each of the search specification variables long name and an abbreviated name.&nbsp;
+For example, both
+&quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_searchspec_se" title="&quot;mv searchspec se&quot; heading on the &quot;Search parameters&quot; page">mv_searchspec</a></span>&quot; and
+&quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_searchspec_se" title="&quot;mv searchspec se&quot; heading on the &quot;Search parameters&quot; page">se</a></span>&quot; are equivalent.&nbsp;
+The abbreviations help to keep the length of one-click search URIs down,
+while the full names are easier to read in HTML forms.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+A full list of search variables, and their two-letter abbreviations,
+can be found on the <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html" title="Search parameters">Search parameters</a> page.
+</p>
+</td>
+</tr>
+</table>
+
+<p>
+A <em>one-click</em> search may be specified in three different ways,
+as follows:
+</p>
+<a name="Original_syntax"></a>
+<h3>Original syntax</h3>
+<p>
+If you want to create an &quot;OR&quot; search URI on the <span class="fixedwidth">category</span>
+and <span class="fixedwidth">artist</span> columns, for the strings &quot;<span class="fixedwidth">Surreal</span>&quot; and &quot;<span class="fixedwidth">Gogh</span>&quot;,
+while matching substrings, you could do the following:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">area scan se</span><span class="def_Symbol">=</span>Surreal<span class="def_Symbol">/</span><span class="def_Syntax">se</span><span class="def_Symbol">=</span>Gogh<span class="def_Symbol">/</span><span class="def_Syntax">os</span><span class="def_Symbol">=</span>yes<span class="def_Symbol">/</span><span class="def_Syntax">su</span><span class="def_Symbol">=</span>yes<span class="def_Symbol">/</span><span class="def_Syntax">sf</span><span class="def_Symbol">=</span>artist<span class="def_Symbol">/</span><span class="def_Syntax">sf</span><span class="def_Symbol">=</span><span class="def_Syntax">category</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+In this method of specification, to replace a slash (<span class="fixedwidth">/</span>)
+in a file name (for the <span class="fixedwidth">sp</span>, <span class="fixedwidth">bd</span> or <span class="fixedwidth">fi</span> parameters etc.)
+you must use the shorthand of ::&nbsp;
+(i.e. <span class="fixedwidth">sp=results::standard</span>).&nbsp;
+This may not work for some browsers, so you should probably either put the
+page in the main pages directory or define the page in a search profile instead.
+</p>
+<a name="Ampersand_syntax"></a>
+<h3>Ampersand syntax</h3>
+<p>
+You can substitute <span class="fixedwidth">&amp;</span> for <span class="fixedwidth">/</span> in the specification,
+and then be able to use <span class="fixedwidth">/</span> and quotes and spaces in the specification.&nbsp;
+For example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">area scan se</span><span class="def_Symbol">=</span><span class="def_String">&quot;Van Gogh&quot;</span><span class="def_Symbol">&amp;</span><span class="def_Syntax">sp</span><span class="def_Symbol">=</span>lists<span class="def_Symbol">/</span><span class="def_Syntax">surreal</span><span class="def_Symbol">&amp;</span><span class="def_Syntax">os</span><span class="def_Symbol">=</span><span class="def_Syntax">yes</span><span class="def_Symbol">&amp;</span><span class="def_Syntax">su</span><span class="def_Symbol">=</span><span class="def_Syntax">yes</span><span class="def_Symbol">&amp;</span><span class="def_Syntax">sf</span><span class="def_Symbol">=</span><span class="def_Syntax">artist</span><span class="def_Symbol">&amp;</span><span class="def_Syntax">sf</span><span class="def_Symbol">=</span><span class="def_Syntax">category</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Any &quot;unsafe&quot; characters on the resulting URI will be escaped.
+</p>
+<a name="Multi-line_syntax"></a>
+<h3>Multi-line syntax</h3>
+<p>
+You can specify parameters one per line, if you prefer, as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">area </span>scan<br>
+&nbsp; &nbsp; <span class="def_Syntax">se</span><span class="def_Symbol">=</span><span class="def_String">&quot;Van Gogh&quot;</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">sp</span><span class="def_Symbol">=</span>lists<span class="def_Symbol">/</span>surreal<br>
+&nbsp; &nbsp; <span class="def_Syntax">os</span><span class="def_Symbol">=</span>yes<br>
+&nbsp; &nbsp; <span class="def_Syntax">su</span><span class="def_Symbol">=</span>yes<br>
+&nbsp; &nbsp; <span class="def_Syntax">sf</span><span class="def_Symbol">=</span>artist<br>
+&nbsp; &nbsp; <span class="def_Syntax">sf</span><span class="def_Symbol">=</span>category<br>
+<span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Again, any &quot;unsafe&quot; characters in the resulting URI will be escaped.&nbsp;
+You may not search for trailing spaces using this method.
+</p>
+<a name="Joined_Searches"></a>
+<h2>Joined Searches</h2>
+<p>
+You can create a <em>joined</em> search using a
+<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Interchange_tag_introduction.html#Attribute_arrays_and_hashes" title="&quot;Attribute arrays and hashes&quot; heading on the &quot;Interchange tag introduction&quot; page">parameter array</a>.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">area href</span><span class="def_Symbol">=</span>scan<br>
+&nbsp; &nbsp; <span class="def_Syntax">search</span><span class="def_Number">.0</span><span class="def_Symbol">=</span><span class="def_Symbol">|</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Syntax">se</span><span class="def_Symbol">=</span>fragrant<br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Syntax">fi</span><span class="def_Symbol">=</span>products<br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Syntax">sf</span><span class="def_Symbol">=</span>smell<br>
+&nbsp; &nbsp; <span class="def_Symbol">|</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">search</span><span class="def_Number">.1</span><span class="def_Symbol">=</span><span class="def_Symbol">|</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Syntax">se</span><span class="def_Symbol">=</span>purple<br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Syntax">sf</span><span class="def_Symbol">=</span>color<br>
+&nbsp; &nbsp; <span class="def_Symbol">|</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">search</span><span class="def_Number">.2</span><span class="def_Symbol">=</span><span class="def_Symbol">|</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Syntax">se</span><span class="def_Symbol">=</span>perennial<br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Syntax">sf</span><span class="def_Symbol">=</span>type<br>
+&nbsp; &nbsp; <span class="def_Symbol">|</span><br>
+<span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The search routine called by the <span class="fixedwidth">&#91;area]</span> tag automatically
+adds the other relevant search specification elements,
+including the &quot;<span class="fixedwidth">co=yes</span>&quot; to indicate a combined search,
+as appropriate.
+</p>
+<a name="Setting_display_options_with_mv_value"></a>
+<h2>Setting display options with mv_value</h2>
+<p>
+You can encode an arbitrary <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/value.html" title="value (tags)">value</a></span> into the search URI,
+without having to use URI arguments, by making use of the
+&quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_value_va" title="&quot;mv value va&quot; heading on the &quot;Search parameters&quot; page">mv_value</a></span>&quot; search parameter.&nbsp;
+The &quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_value_va" title="&quot;mv value va&quot; heading on the &quot;Search parameters&quot; page">mv_value</a></span>&quot; search
+specification takes an argument of &quot;<span class="fixedwidth">var=value</span>&quot;.
+</p>
+<p>
+Actually &quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_value_va" title="&quot;mv value va&quot; heading on the &quot;Search parameters&quot; page">mv_value</a></span>&quot; is a misnomer,
+as it will almost never be used in a <span class="fixedwidth">&lt;form&gt;</span> where
+variable values can be set.&nbsp;
+It's a lot more useful in a <a href="#One-click_searches" title="&quot;One-click searches&quot; heading on this page">One-click search</a>.
+</p>
+<p>
+For example, the following will set a variable that can be displayed on
+the search results page using <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/value.html" title="value (tags)">value</a> category_name]</span>:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">a</span> </span><span class="html_htmlParam def_Parameter">href</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;[area href=scan arg=|<br>
+&nbsp; &nbsp; se=Renaissance<br>
+&nbsp; &nbsp; se=Impressionists<br>
+&nbsp; &nbsp; va=category_name=Renaissance and Impressionist Paintings<br>
+|]&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span>Renaissance and Impressionist Paintings<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">a</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="In-page_searches"></a>
+<h2>In-page searches</h2>
+<p>
+As well as creating search links and forms, you may also create a search
+from within a page, and display the results of that search on the same page.
+</p>
+<p>
+The <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/loop.html" title="loop (tags)">loop</a>]</span> tag accepts search parameters and allows you
+to loop through the results,
+using <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Looping_tags_and_sub-tags.html" title="Category - looping tags and sub-tags">PREFIX-*</a>]</span>
+tags to display the results.&nbsp;
+For example, to search for all products in the &quot;Americana&quot; and &quot;Contemporary&quot; categories:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">loop search</span><span class="def_Symbol">=</span><span class="def_Symbol">|</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">se</span><span class="def_Symbol">=</span>Americana<br>
+&nbsp; &nbsp; <span class="def_Syntax">se</span><span class="def_Symbol">=</span>Contemporary<br>
+&nbsp; &nbsp; <span class="def_Syntax">os</span><span class="def_Symbol">=</span>yes<br>
+&nbsp; &nbsp; <span class="def_Syntax">sf</span><span class="def_Symbol">=</span>category9<br>
+<span class="def_Symbol">|</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; Artist<span class="def_Symbol">: </span><span class="def_Symbol">[</span><span class="def_Syntax">loop</span><span class="def_Symbol">-</span><span class="def_Syntax">field artist</span><span class="def_Symbol">]</span><span class="def_Symbol">&lt;</span>BR<span class="def_Symbol">&gt;</span><br>
+&nbsp; &nbsp; Title<span class="def_Symbol">: </span><span class="def_Symbol">[</span><span class="def_Syntax">loop</span><span class="def_Symbol">-</span><span class="def_Syntax">field title</span><span class="def_Symbol">]</span><span class="def_Symbol">&lt;</span>P<span class="def_Symbol">&gt;</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">loop</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Search parameters are the same as for <a href="#One-click_searches" title="&quot;One-click searches&quot; heading on this page">One-click searches</a>, above.
+</p>
+<p>
+The advantage of the in-page search is that searches can be embedded within
+searches, and you can use an ordinary-looking HTML link to get to the page
+from any external website.
+</p>
+<p>
+To place an in-page search with the full range of display in a normal
+results page, you can use the <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/search-region.html" title="search-region (tags)">search-region</a>]</span> tag.&nbsp;
+This works in the same way as the <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/loop.html" title="loop (tags)">loop</a>]</span> tag, above,
+except that sub-tags such as
+<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/search-region.html" title="search-region (tags)">search-list</a>]</span>,
+<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/more-list.html" title="more-list (tags)">more-list</a>]</span> and
+<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/more-list.html#more" title="&quot;more&quot; heading on the &quot;more-list (tags)&quot; page">more</a>]</span> can be placed within the tag's results template.&nbsp;
+For example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">search</span><span class="def_Symbol">-</span>region<br>
+&nbsp; &nbsp; <span class="def_Syntax">more</span><span class="def_Symbol">=</span><span class="def_Number">1</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">search</span><span class="def_Symbol">=</span><span class="def_Symbol">|</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Syntax">se</span><span class="def_Symbol">=</span>Americana<br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Syntax">sf</span><span class="def_Symbol">=</span>category<br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Syntax">ml</span><span class="def_Symbol">=</span><span class="def_Number">2</span><br>
+<span class="def_Symbol">|</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">search</span><span class="def_Symbol">-</span><span class="def_Syntax">list</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Symbol">&lt;</span>p<span class="def_Symbol">&gt;</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Symbol">&lt;</span><span class="def_Syntax">a href</span><span class="def_Symbol">=</span><span class="def_String">&quot;[area href='[item-code]']&quot;</span><span class="def_Symbol">&gt;</span><span class="def_Symbol">[</span><span class="def_Syntax">item</span><span class="def_Symbol">-</span><span class="def_Syntax">field title</span><span class="def_Symbol">]</span><span class="def_Symbol">&lt;</span><span class="def_Symbol">/</span>a<span class="def_Symbol">&gt;</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Syntax">by </span><span class="def_Symbol">[</span><span class="def_Syntax">item</span><span class="def_Symbol">-</span><span class="def_Syntax">field artist</span><span class="def_Symbol">]</span><span class="def_Symbol">&lt;</span>br<span class="def_Symbol">&gt;</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Symbol">[</span><span class="def_Syntax">item</span><span class="def_Symbol">-</span><span class="def_Syntax">description</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Symbol">&lt;</span><span class="def_Symbol">/</span>p<span class="def_Symbol">&gt;</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">search</span><span class="def_Symbol">-</span><span class="def_Syntax">list</span><span class="def_Symbol">]</span><br>
+<br>
+<span class="def_Symbol">[</span><span class="def_Syntax">no</span><span class="def_Symbol">-</span><span class="def_Syntax">match</span><span class="def_Symbol">]</span><br>
+<span class="def_Syntax">Sorry</span><span class="def_Symbol">, </span><span class="def_Syntax">no matches for </span><span class="def_Symbol">[</span><span class="def_Syntax">value mv</span><span class="def_Symbol">_</span><span class="def_Syntax">searchspec</span><span class="def_Symbol">]</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">no</span><span class="def_Symbol">-</span><span class="def_Syntax">match</span><span class="def_Symbol">]</span><br>
+<br>
+<span class="def_Symbol">[</span><span class="def_Syntax">more</span><span class="def_Symbol">-</span><span class="def_Syntax">list</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">Results </span><span class="def_Symbol">[</span><span class="def_Syntax">matches</span><span class="def_Symbol">] </span><span class="def_Syntax">of </span><span class="def_Symbol">[</span><span class="def_Syntax">match</span><span class="def_Symbol">-</span><span class="def_Syntax">count</span><span class="def_Symbol">] </span>shown<span class="def_Symbol">&lt;</span>br<span class="def_Symbol">&gt;</span><br>
+&nbsp; &nbsp; <span class="def_Symbol">[</span><span class="def_Syntax">more</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">more</span><span class="def_Symbol">-</span><span class="def_Syntax">list</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">search</span><span class="def_Symbol">-</span><span class="def_Syntax">region</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Search_profiles"></a>
+<h2>Search profiles</h2>
+<p>
+An unlimited number of <em>search profiles</em> can be predefined that
+either reside in <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variables, or in
+files declared using the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/SearchProfile.html" title="SearchProfile (config)">SearchProfile</a></span> <em>local</em>
+configuration directive.
+</p>
+<p>
+A search profile can be created in a <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variable,
+as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+&#91;set artist_profile]<br>
+mv_search_field=artist<br>
+mv_search_field=category<br>
+mv_orsearch=yes<br>
+&#91;/set]
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+You can make use of the search profile by using the following,
+instead of a full search specification, on your search <span class="fixedwidth">&lt;form&gt;</span>:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">input</span> </span><span class="html_htmlParam def_Parameter">type</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;hidden&quot; </span><span class="html_htmlParam def_Parameter">name</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;mv_profile&quot; </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;artist_profile&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+or use the &quot;<span class="fixedwidth">mp</span>&quot; modifier in a one-click search, as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">a</span> </span><span class="html_htmlParam def_Parameter">href</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;[area scan se=Leonardo/mp=artist_profile]&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span> </span>A left-handed artist <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">a</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+As well as (or instead of) using <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variables,
+you can use the <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/SearchProfile.html" title="SearchProfile (config)">SearchProfile</a>]</span> directive to name
+files that will hold search profiles.
+</p>
+<p>
+The search profile is named by placing a name after a <span class="fixedwidth">__NAME__</span> token,
+in one of the listed <em>profile</em> files.&nbsp;
+Multiple profiles can reside in the same file, if separated by <span class="fixedwidth">__END__</span>
+tokens.
+</p>
+<p>
+As an added measure of control, the specification is evaluated with
+the Interchange tag syntax to provide conditional setting of search parameters.
+</p>
+<p>
+The special &quot;<span class="fixedwidth">mv_last</span>&quot; variable stops interpretation of any further
+search variables in the current profile, except for the
+&quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_dict_look_dl" title="&quot;mv dict look dl&quot; heading on the &quot;Search parameters&quot; page">mv_dict_look</a></span>&quot; and
+&quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_searchspec_se" title="&quot;mv searchspec se&quot; heading on the &quot;Search parameters&quot; page">mv_searchspec</a></span>&quot; variables,
+which are interpreted in any event.
+</div>
+
+<!-- start of modification notice -->
+<div class="wikitext">
+    <table class="pageinfo" cellpadding="0" cellspacing="0">
+	<tr>
+	    <td>
+Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_database.html">Interchange database</a>
+	    </td>
+	</tr>
+
+
+	<tr>
+	    <td>
+		
+		Last modified by: <a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin">Kevin Walsh</a><br>
+		Modification date: Wednesday 19 September 2007 at 9:53 PM (BST)
+	    </td>
+	</tr>
+    </table>
+</div>
+<!-- end of modification notice -->
+
+
+
+<!-- end page: wiki/display (Interchange_search_engine) -->
+
+
+
+<!-- end of page text -->
+	    </td>
+
+	</tr>
+    </table>
+<!-- START VAR: FOOTER -->
+
+<table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+	<td>
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	</td>
+
+    </tr>
+</table>
+
+<!-- END VAR: FOOTER -->
+
+<!-- START VAR: COPYRIGHT -->
+
+
+    <div class="copyright">
+	Copyright &copy; 2001-2010
+	<a href="http://www.cursor.biz/index.html">Cursor Software Limited</a>.&nbsp;
+	All Rights Reserved.
+    </div>
+
+<!-- END VAR: COPYRIGHT -->
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Databases: Search Profiles</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_25.html">Parent Topic</A> | <A HREF="icdatabase_33.html">Previous Topic</A> | <A HREF="icdatabase_35.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>5.9. Search Profiles</H2>
+<P>An unlimited number of search profiles can be predefined that reside in a file or files. To use this, make up a series of lines like:</P>
+<PRE>
+mv_search_field=artist
+mv_search_field=category
+mv_orsearch=yes
+</PRE>
+<P>These correspond to the Interchange search variables that can be set on a form. Set it right on the page that contains the search.</P>
+<PRE>
+[set artist_profile]
+mv_search_field=artist
+mv_search_field=category
+mv_orsearch=yes
+[/set]
+</PRE>
+<P>This is the same:</P>
+<PRE>
+[set artist_profile]
+sf=artist
+sf=category
+os=yes
+[/set]
+</PRE>
+<P>Then, in the search form, set a variable with the name of the profile:</P>
+<PRE>
+   &lt;INPUT TYPE=hidden NAME=mv_profile VALUE=artist_profile&gt;
+</PRE>
+<P>In a one-click search, use the <TT>mp</TT> modifier:</P>
+<PRE>
+[page scan se=Leonardo/mp=artist_profile]A left-handed artist&lt;/a&gt;
+</PRE>
+<P>They can also be placed in a file. Define the file name in the <TT>SearchProfile</TT> directive. The catalog must be reconfigured for Interchange to read it. The profile is named by placing a name following a __NAME__ pragma:</P>
+<PRE>
+ __NAME__ title_search
+</PRE>
+<P>The __NAME__ must begin the line, and be followed by whitespace and the name.</P>
+<P>The special variable <TT>mv_last</TT> stops interpretation of search variables. The following variables are always interpreted:</P>
+<PRE>
+   mv_dict_look
+   mv_searchspec
+</PRE>
+<P>Other than that, if <TT>mv_last</TT> is set in a search profile, and there are other variables on the search form, they will not be interpreted.</P>
+<P>To place multiple search profiles in the same file, separate them with __END__, which must be on a line by itself.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_25.html">Parent Topic</A> | <A HREF="icdatabase_33.html">Previous Topic</A> | <A HREF="icdatabase_35.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

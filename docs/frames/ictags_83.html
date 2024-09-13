@@ -1,0 +1,344 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: options</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_82.html">Previous Topic</A> | <A HREF="ictags_84.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.49. options</H2>
+<P>Builds HTML widgets as defined in the options table for selecting options associated with a given product. This tag handles simple, matrix or modular options.  See also the <A HREF="ictags_35.html#accessories">accessories</A> tag.</P>
+<P>Here is an illustrative example from the 'tools' sample data set of the foundation catalog:</P>
+<PRE>
+===
+    [options code=os28005]
+---
+    &lt;input type=hidden name=mv_item_option value=&quot;logo&quot;&gt;
+        &lt;SELECT NAME=&quot;mv_order_logo&quot;&gt;
+        &lt;OPTION VALUE=&quot;c&quot;&gt;Construct Something
+        &lt;OPTION VALUE=&quot;y&quot; SELECTED&gt;Your Logo&lt;/SELECT&gt;&lt;BR&gt;
+    &lt;input type=hidden name=mv_item_option value=&quot;color&quot;&gt;
+        &lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;mv_order_color&quot; VALUE=&quot;BLK&quot; &gt;&amp;nbsp;Black
+        &lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;mv_order_color&quot; VALUE=&quot;BEIGE&quot; &gt;&amp;nbsp;Beige
+        &lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;mv_order_color&quot; VALUE=&quot;WHITE&quot; &gt;&amp;nbsp;White&lt;BR&gt;
+    &lt;input type=hidden name=mv_item_option value=&quot;bristle&quot;&gt;
+        &lt;SELECT NAME=&quot;mv_order_bristle&quot;&gt;
+        &lt;OPTION VALUE=&quot;synthetic&quot;&gt;Synthetic
+        &lt;OPTION VALUE=&quot;camel&quot;&gt;Camel Hair&lt;/SELECT&gt;
+===
+</PRE>
+<H3><A NAME="Summary">4.49.1. Summary</A></H3>
+<PRE>
+    [<B>options</B> code]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_83.html#options_bold">bold</A>
+</TD>
+<TD VALIGN='Top'>
+Boldfaces the labels if the <TT>'label'</TT> option is set.
+<UL>
+<LI>Default: False</UL>
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_83.html#options_code">code</A>
+</TD>
+<TD VALIGN='Top'>
+Product key (usually sku).
+<UL>
+<LI>No default</UL>
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_83.html#options_joiner">joiner</A>
+</TD>
+<TD VALIGN='Top'>
+The joiner for the widgets.
+<UL>
+<LI>Default: &lt;BR&gt;</UL>
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_83.html#options_label">label</A>
+</TD>
+<TD VALIGN='Top'>
+Shows labels for the options with the widgets.
+<P>The following example (using another item from the 'tools' data) illustrates the price and label attributes:</P>
+<PRE>
+===
+   [options code=os28011 label=1 price=1]
+---
+   Handle&lt;BR&gt;
+     &lt;input type=hidden name=mv_item_option value=&quot;handle&quot;&gt;
+       &lt;SELECT NAME=&quot;mv_order_handle&quot;&gt;
+       &lt;OPTION VALUE=&quot;W&quot;&gt;Wood handle
+       &lt;OPTION VALUE=&quot;E&quot;&gt;Ebony handle ($20.00)&lt;/SELECT&gt;&lt;BR&gt;
+   Blade material&lt;BR&gt;
+     &lt;input type=hidden name=mv_item_option value=&quot;blade&quot;&gt;
+       &lt;SELECT NAME=&quot;mv_order_blade&quot;&gt;
+       &lt;OPTION VALUE=&quot;P&quot;&gt;Plastic blade ($-1.22)
+       &lt;OPTION VALUE=&quot;S&quot; SELECTED&gt;Steel blade
+       &lt;OPTION VALUE=&quot;T&quot;&gt;Titanium blade ($100.00)&lt;/SELECT&gt;
+===
+</PRE>
+<P>(again, the output has been reformatted to fit the page).</P>
+<UL>
+<LI>Default: False</UL>
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_83.html#options_price">price</A>
+</TD>
+<TD VALIGN='Top'>
+Boolean. If set and the options have prices, the HTML widget(s) will show the prices. This is like the <A HREF="ictags_35.html#accessories_price">price</A> attribute of the accessories tag.
+<UL>
+Note that the <A HREF="ictags_35.html#accessories_price_data">price_data</A> setting comes from the 'price' column of the options table.
+<BR>
+Technical note-- If your options table has different mappings, you can control this with $::Variable-&gt;{MV_OPTION_TABLE_MAP}</UL>
+</TD>
+<TD VALIGN='Top'>
+False
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_83.html#options_table">table</A>
+</TD>
+<TD VALIGN='Top'>
+Table to use for option attributes.
+<UL>
+<LI>Default: 'options'</UL>
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_83.html#options_td">td</A>
+</TD>
+<TD VALIGN='Top'>
+Results as table rows. For example, compare the following example from the 'tools' sample data set with the earlier example:
+<PRE>
+===
+   [options code=os28005 td=1]
+---
+   &lt;td&gt;&lt;input type=hidden name=mv_item_option value=&quot;logo&quot;&gt;
+      &lt;SELECT NAME=&quot;mv_order_logo&quot;&gt;
+      &lt;OPTION VALUE=&quot;c&quot;&gt;Construct Something
+      &lt;OPTION VALUE=&quot;y&quot; SELECTED&gt;Your Logo&lt;/SELECT&gt;&lt;/td&gt;
+   &lt;td&gt;&lt;input type=hidden name=mv_item_option value=&quot;color&quot;&gt;
+      &lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;mv_order_color&quot; VALUE=&quot;BLK&quot; &gt;&amp;nbsp;Black
+      &lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;mv_order_color&quot; VALUE=&quot;BEIGE&quot; &gt;&amp;nbsp;Beige
+      &lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;mv_order_color&quot; VALUE=&quot;WHITE&quot; &gt;&amp;nbsp;White&lt;/td&gt;
+   &lt;td&gt;&lt;input type=hidden name=mv_item_option value=&quot;bristle&quot;&gt;
+      &lt;SELECT NAME=&quot;mv_order_bristle&quot;&gt;
+      &lt;OPTION VALUE=&quot;synthetic&quot;&gt;Synthetic
+      &lt;OPTION VALUE=&quot;camel&quot;&gt;Camel Hair&lt;/SELECT&gt;&lt;/td&gt;
+===
+</PRE>
+<P>(Note that the output was reformatted to fit this page)</P>
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_interpolate">interpolate (reparse)</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>no</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Container tag
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Has Subtags
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Nests
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+    [options code]
+---
+    TODO: (tag result)
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+   $Tag-&gt;options(  { code =&gt; VALUE_code
+}, $body  );
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;options(code, $attribute_hash_reference, $body);
+</PRE>
+<H3><A NAME="Description">4.49.2. Description</A></H3>
+<P>NO DESCRIPTION SECTION</P>
+<H4><A NAME="options_bold"> </A>4.49.2.1. <A NAME="options_bold">bold</A></H4>
+<P>Boldfaces the labels if the <TT>'label'</TT> option is set.</P>
+<UL>
+<LI>Default: False</UL>
+<H4><A NAME="options_code"> </A>4.49.2.2. <A NAME="options_code">code</A></H4>
+<P>Product key (usually sku).</P>
+<UL>
+<LI>No default</UL>
+<H4><A NAME="options_joiner"> </A>4.49.2.3. <A NAME="options_joiner">joiner</A></H4>
+<P>The joiner for the widgets.</P>
+<UL>
+<LI>Default: &lt;BR&gt;</UL>
+<H4><A NAME="options_label"> </A>4.49.2.4. <A NAME="options_label">label</A></H4>
+<P>Shows labels for the options with the widgets.</P>
+<P>The following example (using another item from the 'tools' data) illustrates the price and label attributes:</P>
+<PRE>
+===
+   [options code=os28011 label=1 price=1]
+---
+   Handle&lt;BR&gt;
+     &lt;input type=hidden name=mv_item_option value=&quot;handle&quot;&gt;
+       &lt;SELECT NAME=&quot;mv_order_handle&quot;&gt;
+       &lt;OPTION VALUE=&quot;W&quot;&gt;Wood handle
+       &lt;OPTION VALUE=&quot;E&quot;&gt;Ebony handle ($20.00)&lt;/SELECT&gt;&lt;BR&gt;
+   Blade material&lt;BR&gt;
+     &lt;input type=hidden name=mv_item_option value=&quot;blade&quot;&gt;
+       &lt;SELECT NAME=&quot;mv_order_blade&quot;&gt;
+       &lt;OPTION VALUE=&quot;P&quot;&gt;Plastic blade ($-1.22)
+       &lt;OPTION VALUE=&quot;S&quot; SELECTED&gt;Steel blade
+       &lt;OPTION VALUE=&quot;T&quot;&gt;Titanium blade ($100.00)&lt;/SELECT&gt;
+===
+</PRE>
+<P>(again, the output has been reformatted to fit the page).</P>
+<UL>
+<LI>Default: False</UL>
+<H4><A NAME="options_price"> </A>4.49.2.5. <A NAME="options_price">price</A></H4>
+<P>Boolean. If set and the options have prices, the HTML widget(s) will show the prices. This is like the <A HREF="ictags_35.html#accessories_price">price</A> attribute of the accessories tag.</P>
+<UL>
+Note that the <A HREF="ictags_35.html#accessories_price_data">price_data</A> setting comes from the 'price' column of the options table.
+<BR>
+Technical note-- If your options table has different mappings, you can control this with $::Variable-&gt;{MV_OPTION_TABLE_MAP}
+<LI>Default: False</UL>
+<H4><A NAME="options_table"> </A>4.49.2.6. <A NAME="options_table">table</A></H4>
+<P>Table to use for option attributes.</P>
+<UL>
+<LI>Default: 'options'</UL>
+<H4><A NAME="options_td"> </A>4.49.2.7. <A NAME="options_td">td</A></H4>
+<P>Results as table rows. For example, compare the following example from the 'tools' sample data set with the earlier example:</P>
+<PRE>
+===
+   [options code=os28005 td=1]
+---
+   &lt;td&gt;&lt;input type=hidden name=mv_item_option value=&quot;logo&quot;&gt;
+      &lt;SELECT NAME=&quot;mv_order_logo&quot;&gt;
+      &lt;OPTION VALUE=&quot;c&quot;&gt;Construct Something
+      &lt;OPTION VALUE=&quot;y&quot; SELECTED&gt;Your Logo&lt;/SELECT&gt;&lt;/td&gt;
+   &lt;td&gt;&lt;input type=hidden name=mv_item_option value=&quot;color&quot;&gt;
+      &lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;mv_order_color&quot; VALUE=&quot;BLK&quot; &gt;&amp;nbsp;Black
+      &lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;mv_order_color&quot; VALUE=&quot;BEIGE&quot; &gt;&amp;nbsp;Beige
+      &lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;mv_order_color&quot; VALUE=&quot;WHITE&quot; &gt;&amp;nbsp;White&lt;/td&gt;
+   &lt;td&gt;&lt;input type=hidden name=mv_item_option value=&quot;bristle&quot;&gt;
+      &lt;SELECT NAME=&quot;mv_order_bristle&quot;&gt;
+      &lt;OPTION VALUE=&quot;synthetic&quot;&gt;Synthetic
+      &lt;OPTION VALUE=&quot;camel&quot;&gt;Camel Hair&lt;/SELECT&gt;&lt;/td&gt;
+===
+</PRE>
+<P>(Note that the output was reformatted to fit this page)</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_82.html">Previous Topic</A> | <A HREF="ictags_84.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

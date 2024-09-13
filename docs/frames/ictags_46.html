@@ -1,0 +1,190 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: cgi</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_45.html">Previous Topic</A> | <A HREF="ictags_47.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.12. cgi</H2>
+<P>Returns the the current value of the named CGI input variable. HTML-escapes Interchange tags in the result for security.</P>
+<P>Can also set a new CGI value within the current page.</P>
+<H3><A NAME="Summary">4.12.1. Summary</A></H3>
+<PRE>
+    [<B>cgi</B> name]
+    [<B>cgi</B> name=<I>cgi_var_name</I> <I>other_named_attributes</I>]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_46.html#cgi_name">name</A>
+</TD>
+<TD VALIGN='Top'>
+This is the name of the CGI variable whose value you want.
+</TD>
+<TD VALIGN='Top'>
+<I>None</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_46.html#cgi_set">set</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_46.html#cgi_hide">hide</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_46.html#cgi_filter">filter</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_46.html#cgi_keep">keep</A> (with filter)
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_46.html#cgi_enable_html">enable_html</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_interpolate">interpolate (reparse)</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<P>Assuming CGI variable 'foo' = 'bar',</P>
+<PRE>
+    [cgi foo]
+---
+    bar
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+    $Tag-&gt;cgi( { name =&gt; var_name } );
+
+    <I># or if you simply want the value:</I>
+    $CGI-&gt;{var_name};
+
+    <I># or:</I>
+    $CGI::values{var_name};
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;cgi($name, $attribute_hash_reference);
+</PRE>
+<H3><A NAME="Description">4.12.2. Description</A></H3>
+<P>Displays the value of a CGI variable <B>submitted to the current page</B>. This is similar to [<A HREF="ictags_120.html#value">value</A> ...], except it displays the transitory values that have been submitted with the current request.</P>
+<P>For instance, if you access the following URL:</P>
+<PRE>
+        http://VENDURL/pagename?foo=bar
+</PRE>
+<P><TT>bar</TT> will be substituted for <TT>[cgi foo]</TT>.</P>
+<P>This is the same as $CGI-&gt;{foo} in embedded Perl.</P>
+<H4><A NAME="cgi_name"> </A>4.12.2.1. <A NAME="cgi_name">name</A></H4>
+<P>This is the name of the CGI variable whose value you want.</P>
+<H4><A NAME="cgi_set"> </A>4.12.2.2. <A NAME="cgi_set">set</A></H4>
+<P>You can change a value with '<TT>set</TT>=<I>new_value</I>'. The tag will return the CGI value you set unless you also set the <A HREF="ictags_46.html#cgi_hide">hide</A>=1 attribute.</P>
+<P>Note that this is only available in new-style tags, for safety reasons.</P>
+<H4><A NAME="cgi_hide"> </A>4.12.2.3. <A NAME="cgi_hide">hide</A></H4>
+<P>Setting <TT>hide</TT>=1 suppresses the tag's return value, which can be useful with the <A HREF="ictags_46.html#cgi_set">set</A> attribute.</P>
+<H4><A NAME="cgi_filter"> </A>4.12.2.4. <A NAME="cgi_filter">filter</A></H4>
+<P>See the <A HREF="ictags_63.html#filter">filter</A> tag for a list of filters.</P>
+<P>Setting '<TT>filter</TT>=&quot;<I>filter</I>&quot;' modifies the named CGI variable with the specified filter.</P>
+<H4><A NAME="cgi_keep (with filter)"> </A>4.12.2.5. <A NAME="cgi_keep">keep</A> (with filter)</H4>
+<P>Set <TT>keep</TT>=1 if you want the tag to return a filtered result but do not want the filter to modify the CGI value itself in the $CGI::values hash.</P>
+<H4><A NAME="cgi_default"> </A>4.12.2.6. <A NAME="cgi_default">default</A></H4>
+<P>This sets a return value in case the named CGI variable is missing or otherwise false. The following will expand to &quot;Using default&quot;:</P>
+<PRE>
+    [cgi name=myname set=0 hide=1]
+    [cgi name=myname default=&quot;Using default&quot;]
+</PRE>
+<H4><A NAME="cgi_enable_html"> </A>4.12.2.7. <A NAME="cgi_enable_html">enable_html</A></H4>
+<P>Any '&lt;' characters will normally be converted into '&amp;lt;' for safety reasons. This conversion can be disabled using '<TT>enable_html</TT>=1'.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_45.html">Previous Topic</A> | <A HREF="ictags_47.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

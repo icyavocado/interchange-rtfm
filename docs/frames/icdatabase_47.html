@@ -1,0 +1,111 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Databases: Using more than one table</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_46.html">Previous Topic</A> | <A HREF="icdatabase_48.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H1>8. User Database</H1>
+<P>Interchange has a user database function which allows customers to save any pertinent values from their session. It also allows the setting of database or file access control lists for use in controlling access to pages and databases on a user-by-user basis.</P>
+<P>The database field names in the user database correspond with the form variable names in the user session. If there is a column named <TT>address</TT>, when the user logs in the contents of that field will be placed in the form variable <TT>address</TT>, and will be available for display with <TT>[value address]</TT>. Similarly, the database value is available with <TT>[data table=userdb column=address key=username]</TT>.</P>
+<P>The ASCII file for the database will not reflect changes unless the file is exported with <TT>[tag export userdb][/tag]</TT>. It is not advisable to edit the ASCII file, as it will overwrite the real data that is in the DBM table. User logins and changes would be lost. Note: This would not happen with SQL, but editing the ASCII file would have no effect. It is recommended that the NoImport configuration directive be set accordingly.</P>
+<P>The field names to be used are not set in concrete. They may be changed with options. Fields may be added or subtracted at any time. Most users will choose to keep the default demo fields for simplicity sake, as they cover most common needs. As distributed in the demo, the fields are:</P>
+<PRE>
+   code
+   accounts
+   acl
+   address
+   address_book
+   b_address
+   b_city
+   b_country
+   b_name
+   b_nickname
+   b_phone
+   b_state
+   b_zip
+   carts
+   city
+   country
+   db_acl
+   email
+   email_copy
+   fax
+   fax_order
+   file_acl
+   mv_credit_card_exp_month
+   mv_credit_card_exp_year
+   mv_credit_card_info
+   mv_credit_card_type
+   mv_shipmode
+   name
+   order_numbers
+   p_nickname
+   password
+   phone_day
+   phone_night
+   preferences
+   s_nickname
+   state
+   time
+   zip
+</PRE>
+<P>A few of those fields are special in naming, though all can be changed via an option. A couple of the fields are reserved for Interchange's use.</P>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>If not running with PGP or other encryption for credit card numbers, which is never recommended, it is important that the mv_credit_card_info field be removed from the database.
+<HR WIDTH="80%" ALIGN="Left"></P>
+<P>The special database fields are:</P>
+<PRE>
+   accounts         Storage for billing accounts book
+   address_book     Storage for shipping address book
+   b_nickname       Nickname of current billing account
+   carts            Storage for shopping carts
+   p_nickname       Nickname for current preferences
+   preferences      Storage for preferences
+   s_nickname       Nickname for current shipping address
+   db_acl           Storage for database access control lists
+   file_acl         Storage for file access control lists
+   acl              Storage for simple integrated access control
+</PRE>
+<P>If not defined, the corresponding capability is not available.</P>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>The fields <TT>accounts</TT>, <TT>address_book</TT>, <TT>carts</TT>, and <TT>preferences</TT> should be defined as a BLOB type, if using SQL. This is also suggested for the acl fields if those lists could be large.
+<HR WIDTH="80%" ALIGN="Left"></P>
+<P>Reserved fields include:</P>
+<PRE>
+   code        The username (key for the database)
+   password    Password storage
+   time        Last time of login
+</PRE>
+<P><A HREF="icdatabase_48.html">The [userdb ...] Tag</A></P>
+<P><A HREF="icdatabase_49.html">Setting Defaults with the UserDB Directive</A></P>
+<P><A HREF="icdatabase_50.html">User Database Functions</A></P>
+<P><A HREF="icdatabase_51.html">Address Book</A></P>
+<P><A HREF="icdatabase_52.html">Accounts Book</A></P>
+<P><A HREF="icdatabase_53.html">Preferences</A></P>
+<P><A HREF="icdatabase_54.html">Carts</A></P>
+<P><A HREF="icdatabase_55.html">Controlling Page Access With UserDB</A></P>
+<P><A HREF="icdatabase_56.html">Using more than one table</A></P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_46.html">Previous Topic</A> | <A HREF="icdatabase_48.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

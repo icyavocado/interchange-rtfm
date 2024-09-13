@@ -1,0 +1,107 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Template Guide: Embedding Perl Code</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_10.html">Parent Topic</A> | <A HREF="ictemplates_11.html">Previous Topic</A> | <A HREF="ictemplates_13.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.2. Embedding Perl Code</H2>
+<P>Perl code can be directly embedded in Interchange pages. The code is specified as:</P>
+<PRE>
+   [perl]
+       $name    = $Values-&gt;{name};
+       $browser = $Session-&gt;{browser};
+       return &quot;Hi, $name! How do you like your $browser?&quot;;
+   [/perl]
+</PRE>
+<P>ASP syntax can be used with:</P>
+<PRE>
+   [mvasp]
+       &lt;%
+       $name    = $Values-&gt;{name};
+       $browser = $Session-&gt;{browser};
+       %&gt;
+       Hi, &lt;%= $name %&gt;!
+       &lt;%
+           HTML &quot;How do you like your $browser?&quot;;
+       %&gt;
+   [/mvasp]
+</PRE>
+<P>The two examples above are essentially equivalent.  See the <A HREF="ictags_87.html#perl">perl</A> and  <A HREF="ictags_81.html#mvasp">mvasp</A> tags for usage details.</P>
+<P>The <TT>[<A HREF="ictags_87.html#perl">perl</A>]</TT> tag enforces <A HREF="http://www.perl.com/pub/doc/manual/html/lib/Safe.html">Safe.pm</A> checking, so many standard Perl operators are not available. This prevents user access to all files and programs on the system without the Interchange daemon's permissions. See <A HREF="icconfig_27.html#GlobalSub *global*">GlobalSub</A> and <A HREF="ictags_122.html#User-defined Tags">User-defined Tags</A> for ways to make external files and programs available to Interchange.</P>
+<UL>
+Named parameters:
+<BR>
+See the <A HREF="ictags_87.html#perl">perl</A> tag for a description of the tag parameters and attributes.  These include:</UL>
+<PRE>
+       [perl tables=&quot;tables-to-open&quot;*
+               subs=1*
+             global=1*
+          no_return=1*
+            failure=&quot;Return value in case of compile or runtime error&quot;*
+               file=&quot;include_file&quot;*]
+</PRE>
+<UL>
+Required parameters: none</UL>
+<P>Any Interchange tag (except ones using SQL) can be accessed using the <TT>$Tag</TT> object. If using SQL queries inside a Perl element, <TT>AllowGlobal</TT> permissions are required and and the <TT>global=1</TT> parameter must be set. Installing the module <TT>Safe::Hole</TT> along with sharing the database table with &lt;tables=tablename&gt; will enable SQL use.</P>
+<UL>
+For example:</UL>
+<PRE>
+           # If the item might contain a single quote
+           [perl]
+           $comments = $Values-&gt;{comments};
+           [/perl]
+</PRE>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Important Note: </STRONG>Global subroutines are not subject to the stringent security check from the <TT>Safe</TT> module. This means that the subroutine will be able to modify any variable in Interchange and will be able to write to read and write any file that the Interchange daemon has permission to write. Because of this, the subroutines should be used with caution. They are defined in the main <TT>interchange.cfg</TT> file and can't be reached by from individual users in a multi-catalog system.
+<HR WIDTH="80%" ALIGN="Left"></P>
+<P>Global subroutines are defined in <TT>interchange.cfg</TT> with the <TT>GlobalSub</TT> directive or in user catalogs which have been enabled through <TT>AllowGlobal</TT>. Catalog subroutines are defined in <TT>catalog.cfg</TT>, with the <TT>Sub</TT> directive and are subject to the stringent Safe.pm security restrictions that are controlled by the global directive <TT>SafeUntrap</TT>.</P>
+<P>The code can be as complex as you want them to be, but cannot be used by operators that modify the file system or use unsafe operations like &quot;system,&quot; &quot;exec,&quot; or backticks. These constraints are enforced with the default permissions of the standard Perl module <B>Safe</B>. Operations may be untrapped on a system-wide basis with the <TT>SafeUntrap</TT> directive.</P>
+<P>The result of this tag will be the result of the last expression evaluated, just as in a subroutine. If there is a syntax error or other problem with the code, there will be no output.</P>
+<P>Here is a simple one which does the equivalent of the classic hello.pl program:</P>
+<PRE>
+   [perl] my $tmp = &quot;Hello, world!&quot;; $tmp; [/perl]
+</PRE>
+<P>There is no need to set the variable. It is there only to show the capability.</P>
+<P>To echo the user's browser, but within some HTML tags:</P>
+<PRE>
+   [perl]
+   my $html = '&lt;H5&gt;';
+   $html .= $Session-&gt;{browser};
+   $html .= '&lt;/H5&gt;';
+   $html;
+   [/perl]
+</PRE>
+<P>To show the user their name and the current time:</P>
+<PRE>
+   [perl]
+
+   my $string = &quot;Hi, &quot; . $Values-&gt;{name} &quot;. The time is now &quot;;
+   $string .= $Tag-&gt;time();
+   $string;
+
+   [/perl]
+</PRE>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_10.html">Parent Topic</A> | <A HREF="ictemplates_11.html">Previous Topic</A> | <A HREF="ictemplates_13.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

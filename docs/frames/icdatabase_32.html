@@ -1,0 +1,40 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Databases: Setting Display Options with mv_value</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_25.html">Parent Topic</A> | <A HREF="icdatabase_31.html">Previous Topic</A> | <A HREF="icdatabase_33.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>5.7. Setting Display Options with mv_value</H2>
+<P>A value can be specified that will be set in the link with the <TT>mv_value</TT> parameter. It takes an argument of <TT>var=value</TT>, just as setting a normal variable in an Interchange profile. Actually <TT>mv_value</TT> is a misnomer, it will almost never be used in a form where variable values can be set. Always specify it in a one-click search with <TT>va=var=value</TT>. Example:</P>
+<PRE>
+   [page href=scan
+         arg=&quot;se=Renaissance
+              se=Impressionists
+              va=category_name=Renaissance and Impressionist Paintings
+              os=yes&quot;]Renaissance and Impressionist Paintings&lt;/a&gt;
+</PRE>
+<P>Display the appropriate category on the search results page with <TT>[value category_name]</TT>.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_25.html">Parent Topic</A> | <A HREF="icdatabase_31.html">Previous Topic</A> | <A HREF="icdatabase_33.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

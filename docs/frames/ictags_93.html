@@ -1,0 +1,148 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: restrict</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_92.html">Previous Topic</A> | <A HREF="ictags_94.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.59. restrict</H2>
+<P>Restrict tag execution in a region. If a restricted tag is encountered, it is simply output.</P>
+<H3><A NAME="Summary">4.59.1. Summary</A></H3>
+<PRE>
+    [<B>restrict</B> tag1 tag2]
+    [<B>restrict</B> policy=deny enable=&quot;page area value&quot;]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_93.html#restrict_policy">policy</A>
+</TD>
+<TD VALIGN='Top'>
+Whether to allow or deny by default.
+</TD>
+<TD VALIGN='Top'>
+<B>deny</B>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_93.html#restrict_enable">enable</A>
+</TD>
+<TD VALIGN='Top'>
+Tags to enable when default policy is deny.
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_93.html#restrict_disable">disable</A>
+</TD>
+<TD VALIGN='Top'>
+Tags to disable. Overrides enable.
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_interpolate">interpolate (reparse)</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Container tag
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Usage example:</B></P>
+<PRE>
+    [read-cookie name=MV_SESSION_ID]
+---
+    6CZ2whqo
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+    N/A. Cannot be called effectively.
+</PRE>
+<H3><A NAME="Description">4.59.2. Description</A></H3>
+<P>Restrict tag execution in a region. If a restricted tag is encountered, it is simply output. It can be used to allow certain tags in a user-editable region, while denying dangerous tags. Or it can be used to restrict all tag execution in a region.</P>
+<H4><A NAME="restrict_policy"> </A>4.59.2.1. <A NAME="restrict_policy">policy</A></H4>
+<P>Default is <TT>deny</TT>, which makes most sense. You then specifically enable certain ITL tags. If you set <TT>allow</TT> by default, you must be very careful that you really are disabling all of what you consider to be dangerous tags.</P>
+<H4><A NAME="restrict_enable"> </A>4.59.2.2. <A NAME="restrict_enable">enable</A></H4>
+<P>A space-separated or comma-separated list of tags to disable when the default policy is <TT>deny</TT>. Has no effect when the default policy is <TT>allow</TT>, and any tags passed in the disable parameter override the enable.</P>
+<H4><A NAME="restrict_disable"> </A>4.59.2.3. <A NAME="restrict_disable">disable</A></H4>
+<P>A space-separated or comma-separated list of tags to disable when the default policy is <TT>allow</TT>. If you have a list of tags that are enabled, perhaps stored in a scratch variable, you can disable some of those tags since this takes precedence over the enable.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_92.html">Previous Topic</A> | <A HREF="ictags_94.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

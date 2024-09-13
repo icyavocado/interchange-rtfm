@@ -1,0 +1,88 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Template Guide: Import</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_18.html">Parent Topic</A> | <A HREF="ictemplates_20.html">Previous Topic</A> | <A HREF="ictemplates_22.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>6.3. Import</H2>
+<UL>
+Named Parameters: [import table=table_name type=(TAB|PIPE|CSV|%%|LINE) continue=(NOTES|UNIX|DITTO) separator=c]
+<BR>
+Positional Parameters: [import table_name TAB]
+<BR>
+The attribute hash reference is passed after the parameters but before the container text argument. This may mean that there are parameters not shown here. Interpolates container text by default&gt;.
+<BR>
+This is a container tag, i.e., [import] FOO [/import].
+<BR>
+Nesting: NO
+<BR>
+Invalidates cache: YES.
+<BR>
+Called Routine:
+<BR>
+ASP/perl tag calls:</UL>
+<PRE>
+            $Tag-&gt;import(
+                {
+                 table =&gt; VALUE,
+                 type =&gt; VALUE,
+                },
+                BODY
+            )
+</PRE>
+<UL>
+OR</UL>
+<PRE>
+            $Tag-&gt;import($table, $type, $ATTRHASH, $BODY);
+</PRE>
+<UL>
+Attribute aliases:</UL>
+<PRE>
+                base ==&gt; table
+                database ==&gt; table
+</PRE>
+<UL>
+Description:
+<BR>
+Import one or more records into a database. The type is any of the valid Interchange delimiter types, with the default being defined by the setting of the database DELIMITER. The table must already be a defined Interchange database table; it cannot be created on-the-fly. (Use SQL for on-the-fly tables.)
+<BR>
+The type of LINE and continue setting of NOTES is particularly useful, for it allows the naming of fields so that the order in which they appear in the database will not have to be remembered. The following two imports are identical in effect:</UL>
+<PRE>
+            [import table=orders type=LINE continue=NOTES]
+            code: [value mv_order_number]
+            shipping_mode: [shipping-description]
+            status: pending
+            [/import]
+        
+            [import table=orders type=LINE continue=NOTES]
+            shipping_mode: [shipping-description]
+            status: pending
+            code: [value mv_order_number]
+            [/import]
+</PRE>
+<UL>
+The code or key must always be present, and is always named code. If NOTES mode is not used, import the fields in the same order as they appear in the ASCII source file. The [import ....] TEXT [/import] region may contain multiple records. If using NOTES mode, use a separator, which by default is a form-feed character (^L).</UL>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_18.html">Parent Topic</A> | <A HREF="ictemplates_20.html">Previous Topic</A> | <A HREF="ictemplates_22.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

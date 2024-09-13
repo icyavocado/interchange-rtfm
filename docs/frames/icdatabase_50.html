@@ -1,0 +1,225 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Databases: User Database Functions</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_47.html">Parent Topic</A> | <A HREF="icdatabase_49.html">Previous Topic</A> | <A HREF="icdatabase_51.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>8.3. User Database Functions</H2>
+<P>The user database features are implemented as a series of functions attached to the <TT>userdb</TT> tag. The functions are:</P>
+<P><B>login</B></P>
+<UL>
+Active parameters: username, password, crypt, pass_field, ignore_case, indirect_login
+<BR>
+Log in to Interchange. By default, the username is contained in the form variable <TT>mv_username</TT> and the password in <TT>mv_password</TT>. If the login is successful, the session value <TT>username</TT> (<TT>[data session username]</TT>) will be set to the user name. If <TT>indirect_login</TT> is used, it should be set to a field name which can be used as a lookup for the real username. This also causes a <TT>new_account</TT> operation to create a user account based on an assigned username, and <TT>assign_username</TT> should always be set when using indirect login.
+<BR>
+This will recall the values of all non-special fields in the user database and place them in their corresponding user form variables.
+<BR>
+The <TT>CookieLogin</TT> directive (catalog.cfg) allows users to save their username/password in a cookie. Expiration time is set by <TT>SaveExpire</TT>, renewed every time they log in. To cause the cookie to be generated originally, the form variable <TT>mv_cookie_password</TT> or <TT>mv_cookie_username</TT> must be set in the login form. The former causes both username and password to be saved, the latter just the username.</UL>
+<P><B>logout</B></P>
+<UL>
+Log out of Interchange. No additional parameters are needed.</UL>
+<P><B>new_account</B></P>
+<UL>
+Active parameters: username, password, verify, assign_username, username_mask, ignore_case,indirect_login
+<BR>
+Create a new account. It requires the <TT>username</TT>, <TT>password</TT>, and <TT>verify</TT> parameters, which are by default contained in the form variables <TT>mv_username</TT>, <TT>mv_password</TT>, <TT>mv_verify</TT> respectively.
+<BR>
+If the <TT>assign_username</TT> parameter is set, <TT>UserDB</TT> will assign a sequential username. The <TT>counter</TT> parameter can be used to set the filename (must be absolute), or the default of CATALOG_DIR/etc/username.counter can be accepted. The first username will be &quot;U0001&quot; if the counter doesn't exist already.
+<BR>
+If <TT>assign_username</TT> is used, you can choose to have a pseudo-username that is different from the real username. (Email address is commonly used.) The field name is contained in the <TT>indirect_login</TT> parameter. When the user logs in this field name will also be used to find the real username. The value must be unique in the database or a &quot;user already exists&quot; error will be thrown.
+<BR>
+The <TT>ignore_case</TT> parameter forces the username and password to lower case in the database, in effect rendering the username and password case-insensitive. This is recommended if using email address as a login.
+<BR>
+If <TT>username_mask</TT> is set to a valid Perl regular expression (without the surrounding / /), then any username containing a matching string will not be allowed for use. For example, to screen out order numbers from being used by a random user:</UL>
+<PRE>
+            [userdb function=new_account
+                    username_mask=&quot;^[A-Z]*[0-9]&quot;
+                    ]
+</PRE>
+<UL>
+The <TT>CookieLogin</TT> directive (catalog.cfg) allows users to save their username/password in a cookie. Expiration time is set by <TT>SaveExpire</TT>, renewed every time they log in. To cause the cookie to be generated originally, the form variable <TT>mv_cookie_password</TT> or <TT>mv_cookie_username</TT> must be set in the login form. The former causes both username and password to be saved, the latter just the username.
+<BR>
+To automatically create an account for every order, set the following in the <TT>OrderReport</TT> file:</UL>
+<PRE>
+            [userdb function=new_account
+                    username=&quot;[value mv_order_number]&quot;
+                    password=&quot;[value zip]&quot;
+                    verify=&quot;[value zip]&quot;
+                    database=&quot;orders&quot;
+                    ]
+</PRE>
+<UL>
+This would be coupled with a login form that asks for order number and zip code, thereupon allowing the display of the contents of a transaction database with (presumably updated) order status information or a shipping company tracking number.</UL>
+<P><B>change_pass</B></P>
+<UL>
+Active parameters: username, password, verify, oldpass
+<BR>
+Change the password on the currently logged-in account. It requires the <TT>username</TT>, <TT>password</TT>, <TT>verify</TT>, and <TT>oldpass</TT> parameters, which are by default contained in the form variables <TT>mv_username</TT>, <TT>mv_password</TT>, <TT>mv_verify</TT>, <TT>mv_password_old</TT> respectively.</UL>
+<P><B>set_shipping</B></P>
+<UL>
+Active parameters: nickname, shipping, ship_field
+<BR>
+Place an entry in the shipping Address book. For example:</UL>
+<PRE>
+            [userdb function=set_shipping nickname=Dad]
+</PRE>
+<UL>
+See Address Book below.</UL>
+<P><B>get_shipping</B></P>
+<UL>
+Active parameters: nickname, shipping, ship_field
+<BR>
+Recall an entry from the shipping Address book. For example:</UL>
+<PRE>
+            [userdb function=get_shipping nickname=Dad]
+</PRE>
+<UL>
+See Address Book below.</UL>
+<P><B>get_shipping_names</B></P>
+<UL>
+Active parameters: ship_field
+<BR>
+Gets the names of shipping address book entries and places them in the variable <TT>address_book</TT>. By default, it does not return the values. To have the values returned, set the parameter <TT>show</TT> to 1, as in:</UL>
+<PRE>
+            [set name=shipping_nicknames
+                 interpolate=1]
+              [userdb function=get_shipping_names show=1]
+            [/set]
+</PRE>
+<P><B>set_billing</B></P>
+<UL>
+Active parameters: nickname, billing, bill_field
+<BR>
+Place an entry in the billing accounts book. For example:</UL>
+<PRE>
+            [userdb function=set_billing nickname=discover]
+</PRE>
+<UL>
+See Accounts Book below.</UL>
+<P><B>get_billing</B></P>
+<UL>
+Active parameters: nickname, billing, bill_field
+<BR>
+Recall an entry from the billing accounts book. For example:</UL>
+<PRE>
+            [userdb function=get_billing nickname=visa]
+</PRE>
+<UL>
+See Accounts Book below.</UL>
+<P><B>save</B></P>
+<UL>
+Saves all non-special form values that have columns in the user database. If a field is defined as <TT>scratch</TT>, it retrieves the field from the Scratch storage area; otherwise from Values. If the field is one of the <TT>outboard</TT> fields, it will save it in the outboard table with the value of <TT>outboard_key_col</TT> as the key.</UL>
+<P><B>set_cart</B></P>
+<UL>
+Save the contents of a shopping cart.</UL>
+<PRE>
+            [userdb function=set_cart nickname=christmas]
+</PRE>
+<UL>
+See Carts below.</UL>
+<P><B>get_cart</B></P>
+<UL>
+Active parameters: nickname, carts_field, target
+<BR>
+Recall a saved shopping cart.</UL>
+<PRE>
+            [userdb function=get_cart nickname=mom_birthday]
+</PRE>
+<UL>
+Setting <TT>target</TT> saves to a different shopping cart than the default main cart. The <TT>carts_field</TT> controls the database field used for storage.</UL>
+<P><B>set_acl</B></P>
+<UL>
+Active parameters: location, acl_field, delete
+<BR>
+Set a simple acl. For example:</UL>
+<PRE>
+            [userdb function=set_acl location=cartcfg/editcart]
+</PRE>
+<UL>
+This allows the current user to access the page &quot;cartcfg/editcart&quot; if it is access-protected.
+<BR>
+To delete access, do:</UL>
+<PRE>
+            [userdb function=set_acl location=cartcfg/editcart delete=1]
+</PRE>
+<UL>
+To display the setting at the same time as setting, use the <TT>show</TT> attribute:</UL>
+<PRE>
+            [userdb function=set_acl location=cartcf/editcart show=1]
+</PRE>
+<P><B>check_acl</B></P>
+<UL>
+Active parameters: location, acl_field
+<BR>
+Checks the simple access control listing for a location, returning 1 if allowed and the empty string if not allowed.</UL>
+<PRE>
+            [if type=explicit
+                compare=&quot;[userdb
+                            function=check_acl
+                            location=cartcfg/editcart]&quot;
+            ]
+            [page cartcfg/editcart]Edit your cart configuration&lt;/a&gt;
+            [/if]
+</PRE>
+<P><B>set_file_acl, set_db_acl</B></P>
+<UL>
+Active parameters: location, mode, db_acl_field, file_acl_field, delete
+<BR>
+Sets a complex access control value. Takes the form:</UL>
+<PRE>
+            [userdb function=set_file_acl
+                    mode=rw
+                    location=products/inventory.txt]
+</PRE>
+<UL>
+where mode is any value to be checked with <TT>check_file_acl</TT>. As with the simple ACL, use delete=1 to delete the location entirely.</UL>
+<P><B>check_file_acl, check_db_acl</B></P>
+<UL>
+Active parameters: location, mode, db_acl_field, file_acl_field
+<BR>
+Checks a complex access control value and returns a true/false (1/0) value. Takes the form:</UL>
+<PRE>
+            [userdb function=check_db_acl
+                    mode=w
+                    location=inventory]
+</PRE>
+<UL>
+where mode is any value to be checked with <TT>check_file_acl</TT>. It will return true, if the mode string is contained within the entry for that location. For example:</UL>
+<PRE>
+            [if type=explicit
+                compare=&quot;[userdb
+                            function=check_db_acl
+                            mode=w
+                            location=inventory]&quot;
+            ]
+            [userdb function=set_acl location=cartcfg/edit_inventory]
+            [page cartcfg/edit_inventory]You may edit the inventory database&lt;/a&gt;
+            [else]
+            [userdb function=set_acl location=cartcfg/edit_inventory delete=1]
+            Sorry, you can't edit inventory.
+            [/if]
+</PRE>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_47.html">Parent Topic</A> | <A HREF="icdatabase_49.html">Previous Topic</A> | <A HREF="icdatabase_51.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

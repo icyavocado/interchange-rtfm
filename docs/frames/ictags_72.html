@@ -1,0 +1,476 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: if</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_71.html">Previous Topic</A> | <A HREF="ictags_73.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.38. if</H2>
+<H3><A NAME="Summary">4.38.1. Summary</A></H3>
+<P>Parameters: <B>type term op compare</B></P>
+<P>THIS TAG HAS SPECIAL POSITIONAL PARAMETER HANDLING.</P>
+<P>Pass attribute hash as last to subroutine: <B>no</B></P>
+<P>Must pass named parameter interpolate=1 to cause interpolation.</P>
+<P>This is a container tag, i.e. [if] FOO [/if]. Nesting: NO</P>
+<P>Invalidates cache: <B>YES</B></P>
+<P>Called Routine:</P>
+<P>Called Routine for positional:</P>
+<P><B>ASP-like Perl call:</B></P>
+<P>Not applicable. Any [if ...] call can be better and more efficiently done with Perl.</P>
+<P>Attribute aliases</P>
+<PRE>
+            base ==&gt; type
+            comp ==&gt; compare
+            condition ==&gt; compare
+            operator ==&gt; op
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_72.html#if_type">base</A>
+</TD>
+<TD VALIGN='Top'>
+Alias for type
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_72.html#if_compare">comp</A>
+</TD>
+<TD VALIGN='Top'>
+Alias for compare
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_72.html#if_compare">compare</A>
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_72.html#if_compare">condition</A>
+</TD>
+<TD VALIGN='Top'>
+Alias for compare
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_72.html#if_op">op</A>
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_72.html#if_op">operator</A>
+</TD>
+<TD VALIGN='Top'>
+Alias for op
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_72.html#if_term">term</A>
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_72.html#if_type">type</A>
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_interpolate">interpolate</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_reparse">reparse</A>
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>YES</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Container tag
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Has Subtags
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Nests
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+    [if type term op compare]
+---
+    TODO: (tag result)
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+   $Tag-&gt;if(  { compare =&gt; VALUE_compare
+                 op =&gt; VALUE_op
+                 term =&gt; VALUE_term
+                 type =&gt; VALUE_type
+}, $body  );
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;if(type,term,op,compare, $attribute_hash_reference, $body);
+</PRE>
+<H3><A NAME="Description">4.38.2. Description</A></H3>
+<P>Named call example: [if type=&quot;type&quot; term=&quot;field&quot; op=&quot;op&quot; compare=&quot;compare&quot;]</P>
+<P>Positional call example: [if type field op compare]</P>
+<P>negated: [if type=&quot;!type&quot; term=&quot;field&quot; op=&quot;op&quot; compare=&quot;compare&quot;]</P>
+<P>Positional call example: [if !type field op compare]</P>
+<P>Allows conditional building of HTML based on the setting of various Interchange session and database values. The general form is:</P>
+<PRE>
+    [if type term op compare]
+    [then]
+                                If true, this is printed on the document.
+                                The [then] [/then] is optional in most
+                                cases. If ! is prepended to the type
+                                setting, the sense is reversed and
+                                this will be output for a false condition.
+    [/then]
+    [elsif type term op compare]
+                                Optional, tested when if fails
+    [/elsif]
+    [else]
+                                Optional, printed when all above fail
+    [/else]
+    [/if]
+</PRE>
+<P>The [<A HREF="ictags_72.html#if">if</A>] tag can also have some variants:</P>
+<PRE>
+    [if type=explicit compare=`$perl_code`]
+        Displayed if valid Perl CODE returns a true value.
+    [/if]
+</PRE>
+<P>You can do some Perl-style regular expressions:</P>
+<PRE>
+    [if value name =~ /^mike/]
+                                This is the if with Mike.
+    [elsif value name =~ /^sally/]
+                                This is an elsif with Sally.
+    [/elsif]
+    [elsif value name =~ /^pat/]
+                                This is an elsif with Pat.
+    [/elsif]
+    [else]
+                                This is the else, no name I know.
+    [/else]
+    [/if]
+</PRE>
+<P>While named parameter tag syntax works for [<A HREF="ictags_72.html#if">if</A> ...], it is more convenient to use positional calls in most cases. The only exception is if you are planning on doing a test on the results of another tag sequence:</P>
+<PRE>
+    [if value name =~ /[value b_name]/]
+        Shipping name matches billing name.
+    [/if]
+</PRE>
+<P>Oops!  This will not work. You must do instead</P>
+<PRE>
+    [if base=value term=name op=&quot;=~&quot; compare=&quot;/[value b_name]/&quot;]
+        Shipping name matches billing name.
+    [/if]
+</PRE>
+<P>or better yet</P>
+<PRE>
+    [if type=explicit compare=`
+                        $Values-&gt;{name} =~ /$Values-&gt;{b_name}/
+                        `]
+        Shipping name matches billing name.
+    [/if]
+</PRE>
+<P>Interchange also supports a limited [and ...] and [or ...] capability:</P>
+<PRE>
+    [if value name =~ /Mike/]
+    [or value name =~ /Jean/]
+    Your name is Mike or Jean.
+    [/if]
+
+    [if value name =~ /Mike/]
+    [and value state =~ /OH/]
+    Your name is Mike and you live in Ohio.
+    [/if]
+</PRE>
+<P>If you wish to do very complex AND and OR operations, you will have to use [<A HREF="ictags_72.html#if">if</A> explicit] or better yet embedded Perl/ASP. This allows complex testing and parsing of values.</P>
+<P>There are many test targets available:</P>
+<H4><A NAME="if_config"> </A>4.38.2.1. <A NAME="if_config">config Directive</A></H4>
+<P>The Interchange configuration variables. These are set by the directives in your Interchange configuration file (or the defaults).</P>
+<PRE>
+    [if config CreditCardAuto]
+    Auto credit card validation is enabled.
+    [/if]
+</PRE>
+<H4><A NAME="if_data"> </A>4.38.2.2. <A NAME="if_data">data database::field::key</A></H4>
+<P>The Interchange databases. Retrieves a field in the database and returns true or false based on the value.</P>
+<PRE>
+    [if data products::size::99-102]
+    There is size information.
+    [else]
+    No size information.
+    [/else]
+    [/if]
+
+    [if data products::size::99-102 =~ /small/i]
+    There is a small size available.
+    [else]
+    No small size available.
+    [/else]
+    [/if]
+</PRE>
+<H4><A NAME="if_discount"> </A>4.38.2.3. <A NAME="if_discount">discount</A></H4>
+<P>Checks to see if a discount is present for an item.</P>
+<PRE>
+    [if discount 99-102]
+    Item is discounted.
+    [/if]
+</PRE>
+<H4><A NAME="if_explicit"> </A>4.38.2.4. <A NAME="if_explicit">explicit</A></H4>
+<P>A test for an explicit value. If perl code is placed between a [condition] [/condition] tag pair, it will be used to make the comparison. Arguments can be passed to import data from user space, just as with the [perl] tag.</P>
+<PRE>
+    [if explicit]
+    [condition]
+        $country = '[value country]';
+        return 1 if $country =~ /u\.?s\.?a?/i;
+        return 0;
+    [/condition]
+    You have indicated a US address.
+    [else]
+    You have indicated a non-US address.
+    [/else]
+    [/if]
+</PRE>
+<P>This example is a bit contrived, as the same thing could be accomplished with [if value country =~ /u\.?s\.?a?/i], but you will run into many situations where it is useful.</P>
+<P>This will work for <I>Variable</I> values:</P>
+<PRE>
+    [if type=explicit compare=&quot;__MYVAR__&quot;] .. [/if]
+</PRE>
+<H4><A NAME="if_file"> </A>4.38.2.5. <A NAME="if_file">file</A></H4>
+<P>Tests for existence of a file. Useful for placing image tags only if the image is present.</P>
+<PRE>
+    [if type=file term=&quot;/home/user/www/images/[item-code].gif&quot;]
+    &lt;IMG SRC=&quot;[item-code].gif&quot;&gt;
+    [/if]
+</PRE>
+<P>The <TT>file</TT> test requires that the <I>SafeUntrap</I> directive contains <TT>ftfile</TT> (which is the default).</P>
+<H4><A NAME="if_items"> </A>4.38.2.6. <A NAME="if_items">items</A></H4>
+<P>The Interchange shopping carts. If not specified, the cart used is the main cart. Usually used as a litmus test to see if anything is in the cart, for example:</P>
+<PRE>
+  [if items]You have items in your shopping cart.[/if]
+
+  [if items layaway]You have items on layaway.[/if]
+</PRE>
+<H4><A NAME="if_ordered"> </A>4.38.2.7. <A NAME="if_ordered">ordered</A></H4>
+<P>Order status of individual items in the Interchange shopping carts. If not specified, the cart used is the main cart. The following items refer to a part number of 99-102.</P>
+<PRE>
+  [if ordered 99-102] Item 99-102 is in your cart. [/if]
+    Checks the status of an item on order, true if item
+    99-102 is in the main cart.
+
+  [if ordered 99-102 layaway] ... [/if]
+    Checks the status of an item on order, true if item
+    99-102 is in the layaway cart.
+
+  [if ordered 99-102 main size] ... [/if]
+    Checks the status of an item on order in the main cart,
+    true if it has a size attribute.
+
+  [if ordered 99-102 main size =~ /large/i] ... [/if]
+    Checks the status of an item on order in the main cart,
+    true if it has a size attribute containing 'large'.
+
+    To make sure it is exactly large, you could use:
+
+  [if ordered 99-102 main size eq 'large'] ... [/if]
+</PRE>
+<H4><A NAME="if_pragma"> </A>4.38.2.8. <A NAME="if_pragma">pragma</A></H4>
+<P>The Interchange Pragma settings, set with the <A HREF="catalog.cfg.html">the catalog.cfg manpage</A> directive <TT>Pragma</TT> or with <TT>[pragma name]</TT>.</P>
+<PRE>
+    [if pragma dynamic_variables]
+    __THE_VARIABLE__
+    [else]
+    [data table=variable column=Variable key=THE_VARIABLE]
+    [/else]
+    [/if]
+</PRE>
+<H4><A NAME="if_scratch"> </A>4.38.2.9. <A NAME="if_scratch">scratch</A></H4>
+<P>The Interchange scratchpad variables, which can be set with the [set name]value[/set] element.</P>
+<PRE>
+    [if scratch mv_separate_items]
+    ordered items will be placed on a separate line.
+    [else]
+    ordered items will be placed on the same line.
+    [/else]
+    [/if]
+</PRE>
+<H4><A NAME="if_session"> </A>4.38.2.10. <A NAME="if_session">session</A></H4>
+<P>the Interchange session variables. of particular interest are <I>login</I>, <I>frames</I>, <I>secure</I>, and <I>browser</I>.</P>
+<H4><A NAME="if_validcc"> </A>4.38.2.11. <A NAME="if_validcc">validcc</A></H4>
+<P>a special case, takes the form [if validcc no type exp_date]. evaluates to true if the supplied credit card number, type of card, and expiration date pass a validity test. does a Luhn-10 calculation to weed out typos or phony card numbers. Uses the standard <TT>CreditCardAuto</TT> variables for targets if nothing else is passed.</P>
+<H4><A NAME="if_value"> </A>4.38.2.12. <A NAME="if_value">value</A></H4>
+<P>the Interchange user variables, typically set in search, control, or order forms. Variables beginning with <TT>mv_</TT> are Interchange special values, and should be tested/used with caution.</P>
+<P>The <I>field</I> term is the specifier for that area. For example, [if session logged_in] would return true if the <TT>logged_in</TT> session parameter was set.</P>
+<P>As an example, consider buttonbars for frame-based setups. It would be nice to display a different buttonbar (with no frame targets) for sessions that are not using frames:</P>
+<PRE>
+    [if scratch frames]
+        __BUTTONBAR_FRAMES__
+    [else]
+        __BUTTONBAR__
+    [/else]
+    [/if]
+</PRE>
+<P>Another example might be the when search matches are displayed. If you use the string '[value mv_match_count] titles found', it will display a plural for only one match. Use:</P>
+<PRE>
+    [if value mv_match_count != 1]
+        [value mv_match_count] matches found.
+    [else]
+        Only one match was found.
+    [/else]
+    [/if]
+</PRE>
+<P>The <I>op</I> term is the compare operation to be used. Compare operations are as in Perl:</P>
+<PRE>
+    ==  numeric equivalence
+    eq  string equivalence
+    &gt;   numeric greater-than
+    gt  string greater-than
+    &lt;   numeric less-than
+    lt  string less-than
+    !=  numeric non-equivalence
+    ne  string non-equivalence
+</PRE>
+<P>Any simple perl test can be used, including some limited regex matching. More complex tests are best done with [<A HREF="ictags_72.html#if">if</A> explicit].</P>
+<H4><A NAME="[then] text [/then]">4.38.2.13. [then] text [/then]</A></H4>
+<P>This is optional if you are not nesting if conditions, as the text immediately following the [if ..] tag is used as the conditionally substituted text. If nesting [if ...] tags you should use a [then][/then] on any outside conditions to ensure proper interpolation.</P>
+<H4><A NAME="[elsif type field op* compare*]">4.38.2.14. [elsif type field op* compare*]</A></H4>
+<P>named attributes: [elsif type=&quot;type&quot; term=&quot;field&quot; op=&quot;op&quot; compare=&quot;compare&quot;]</P>
+<P>Additional conditions for test, applied if the initial [<A HREF="ictags_72.html#if">if</A> ..] test fails.</P>
+<H4><A NAME="[else] text [/else]">4.38.2.15. [else] text [/else]</A></H4>
+<P>The optional else-text for an if or <TT>[if-field]</TT> conditional.</P>
+<H4><A NAME="[condition] text [/condition]">4.38.2.16. [condition] text [/condition]</A></H4>
+<P>Only used with the [if explicit] tag. Allows an arbitrary expression <B>in Perl</B> to be placed inside, with its return value interpreted as the result of the test. If arguments are added to [if explicit args], those will be passed as arguments are in the [<A HREF="ictags_87.html#perl">perl</A>] construct.</P>
+<H4><A NAME="if_compare"> </A>4.38.2.17. <A NAME="if_compare">compare</A></H4>
+<H4><A NAME="if_op"> </A>4.38.2.18. <A NAME="if_op">op</A></H4>
+<H4><A NAME="if_term"> </A>4.38.2.19. <A NAME="if_term">term</A></H4>
+<H4><A NAME="if_type"> </A>4.38.2.20. <A NAME="if_type">type</A></H4>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_71.html">Previous Topic</A> | <A HREF="ictags_73.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

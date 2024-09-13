@@ -1,0 +1,555 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>filter - RTFM</title>
+
+    <meta http-equiv="Content-Language" content="en-GB">
+    <meta http-equiv="Window-target" content="_top">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <meta http-equiv="X-Soup-Of-The-Day" content="Tomato">
+
+    <meta name="author" content="Kevin Walsh">
+    <meta name="publisher" content="Cursor Software Limited">
+    <meta name="copyright" content="2001-2019, Cursor Software Limited">
+    <meta name="licence" content="GPLv2+ (Unknown licence)">
+    <meta name="generator" content="Interchange 5.7.0 -- www.icdevgroup.org">
+    <meta name="robots" content="index,follow,noarchive,noimageindex">
+    <meta name="keywords" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="description" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="MSSmartTagsPreventParsing" content="TRUE">
+
+    <meta name="verify-v1" content="KqlU/bxZj9Y2ZdZ/3RwuzgVSMIrZ8XM2wqbjSaEo3O4=">
+
+    <meta name="y_key" content="e2dd60be5777fbc8">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
+    <link rel="search" type="application/opensearchdescription+xml" href="http://interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="stylesheet" href="/decor/css/website.css">
+    <link rel="stylesheet" href="/decor/css/wiki.css">
+    <link rel="stylesheet" href="/decor/css/neo.css">
+
+
+    <script type="text/javascript" language="JavaScript">
+    <!--
+	if (top != self){
+	    top.location = location;
+	}
+
+    // -->
+    </script>
+</head>
+<body>
+<!-- START VAR: LOGOBAR -->
+<table id="rtfmheader" cellpadding="0" cellspacing="0">
+    <tr>
+	<td><a href="http://interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+
+	<td width="100%" style="text-align: right; padding: 10px">
+
+	    <form action="http://interchange-rtfm.pullingshots.ca/search.html" method="POST">
+		<input type="hidden" name="mv_session_id" value="nsession">
+		<input type="hidden" name="mv_profile" value="cms_search">
+		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
+		<input type="submit" class="button" value="Search">
+	    </form>
+
+	</td>
+    </tr>
+</table>
+<table id="breadcrumbs" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+	<td>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_Perl_usage.html">Interchange Perl usage</a></span>
+	    <span class="nowrap">&gt; <span class="current">filter</span></span>
+	</td>
+
+    </tr>
+</table>
+<!-- END VAR: LOGOBAR -->
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+
+	    <td id="leftside">
+<!-- START COMPONENT: navigation -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th>NAVIGATION</th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+
+<!-- END COMPONENT: navigation -->
+<!-- START COMPONENT: wiki_recent -->
+
+
+
+<!-- END COMPONENT: wiki_recent -->
+<!-- START COMPONENT: wiki_backlinks -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th><span class="nowrap">PAGES THAT LINK HERE</span></th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/filters/cgi.html">cgi</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Filter.html">Filter</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Filters.html">Filters (Category)</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/pragma/filter_sql_no_backslash.html">filter_sql_no_backslash</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/get-url.html">get-url</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/if.html">if</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Interchange_Perl_objects.html">Interchange Perl objects</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest Interchange documentation</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/filters/loc.html">loc</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/links:tags/filter.html">(11 pages in total)</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+<!-- END COMPONENT: wiki_backlinks -->
+<!-- START COMPONENT: account -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+
+    <tr>
+	<th>ACCOUNT LOGIN</th>
+    </tr>
+
+    <tr>
+	<td class="first">
+	    <p>You are not logged in</p>
+	</td>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+	    </ul>
+	</td>
+    </tr>
+
+</table>
+
+
+
+<!-- END COMPONENT: account -->
+<!-- START COMPONENT: icpowered -->
+
+<div style="text-align: center; margin: 10px; margin-top: 0px">
+    <a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+</div>
+
+
+
+<!-- START COMPONENT: icpowered -->
+
+	    </td>
+
+	    <td id="bodytext">
+<!-- start of page text -->
+
+<!-- start page: wiki/display (tags/filter) -->
+
+<div class="wikitext">
+<a name="filter"></a>
+<h1>filter</h1>
+<p>
+Applies one or more of the Interchange text filters to an arbitrary value.
+</p>
+<p>
+See the <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Filters.html" title="Category - filters">filters category</a> for a list of standard filters.&nbsp;
+You may also create your own <a href="#Custom_filters" title="&quot;Custom filters&quot; heading on this page">custom filters</a>.
+</p>
+<a name="Summary"></a>
+<h2>Summary</h2>
+
+<p>
+<ul>
+<li><span class="fixedwidth">&#91;filter op] Text to transform &#91;/filter]</span></li>
+</ul>
+
+<br>
+<table width="100%" class="border">
+<tr valign="top">
+<th class="grid">Parameter
+</th>
+<th class="grid">Description
+</th>
+<th class="grid">Default
+</th>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#op" title="&quot;op&quot; heading on this page">op</a></td>
+<td class="grid">One or more filters to apply to the body text.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Universal_tag_attributes.html#interpolate" title="&quot;interpolate&quot; heading on the &quot;Universal tag attributes&quot; page">interpolate</a></td>
+<td class="grid">Parse Interchange tags, included in the body text, before this container tag executes.</td>
+<td class="grid">No
+</td>
+</tr>
+</table>
+
+<a name="Examples"></a>
+<h2>Examples</h2>
+<a name="Tag_expansion_example"></a>
+<h3>Tag expansion example</h3>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">filter uc</span><span class="def_Symbol">] </span><span class="def_Syntax">hello world </span><span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">filter</span><span class="def_Symbol">]</span><br>
+</span>
+</td>
+</tr>
+<tr>
+<td class="hr">
+<span class="fixedwidth">
+<span class="def_Syntax">HELLO </span>WORLD
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Perl_example"></a>
+<h3>Perl example</h3>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Tag</span><span class="perl_Symb def_Symbol">-&gt;</span>filter<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span><br>
+&nbsp; &nbsp; op <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_Var def_Var">$op</span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; body <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_Var def_Var">$text</span><span class="perl_Symb def_Symbol">,</span><br>
+<span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+or similarly with positional parameters:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Tag</span><span class="perl_Symb def_Symbol">-&gt;</span>filter<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$op</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Var def_Var">$text</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Description"></a>
+<h2>Description</h2>
+<p>
+This tag applies one or more of the Interchange
+<a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Filters.html" title="Category - filters">text filters</a> to its body text.&nbsp;
+You may use any of Interchange's standard filters,
+or you may <a href="#Custom_filters" title="&quot;Custom filters&quot; heading on this page">define your own</a>.&nbsp;
+You may specify as many filters as you need,
+and they will be applied to the input text in
+the requested sequence.
+</p>
+<p>
+For example, if you store the names of people in a database as
+&quot;LASTNAME, Firstname&quot;,
+so that they sort properly,
+you might want to display the names as &quot;Firstname Lastname&quot;.&nbsp;
+The following example shows the filter call and its results:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">filter op</span><span class="def_Symbol">=</span><span class="def_String">&quot;name namecase&quot;</span><span class="def_Symbol">]</span><span class="def_Syntax">WALSH</span><span class="def_Symbol">, </span><span class="def_Syntax">Kevin</span><span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">filter</span><span class="def_Symbol">]</span><br>
+</span>
+</td>
+</tr>
+<tr>
+<td class="hr">
+<span class="fixedwidth">
+<span class="def_Syntax">Kevin </span>Walsh
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">tmp country</span><span class="def_Symbol">]</span><span class="def_Syntax">UK</span><span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">tmp</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">filter op</span><span class="def_Symbol">=</span><span class="def_String">&quot;lookup.country.name&quot; </span><span class="def_Syntax">interpolate</span><span class="def_Symbol">=</span><span class="def_Number">1</span><span class="def_Symbol">]</span><span class="def_Symbol">[</span><span class="def_Syntax">scratch country</span><span class="def_Symbol">]</span><span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">filter</span><span class="def_Symbol">]</span><br>
+</span>
+</td>
+</tr>
+<tr>
+<td class="hr">
+<span class="fixedwidth">
+<span class="def_Syntax">United </span>Kingdom
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Some tags,
+such as <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/cgi.html" title="cgi (tags)">cgi</a>]</span>, <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/value.html" title="value (tags)">value</a>]</span>
+and <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/data.html" title="data (tags)">data</a>]</span> etc.,
+have a &quot;<span class="fixedwidth">filter</span>&quot; parameter that you can use instead of passing
+their output to this tag.&nbsp;
+For example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">data table</span><span class="def_Symbol">=</span><span class="def_String">&quot;products&quot; </span><span class="def_Syntax">column</span><span class="def_Symbol">=</span><span class="def_String">&quot;artist&quot; </span><span class="def_Syntax">key</span><span class="def_Symbol">=</span><span class="def_String">&quot;99-102&quot; </span><span class="def_Syntax">filter</span><span class="def_Symbol">=</span><span class="def_String">&quot;name namecase&quot;</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Custom_filters"></a>
+<h2>Custom filters</h2>
+<p>
+You can define your own filters in a <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/GlobalSub.html" title="GlobalSub (config)">GlobalSub</a></span>,
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Sub.html" title="Sub (config)">Sub</a></span> or <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ActionMap.html" title="ActionMap (config)">ActionMap</a></span>, but the
+easiest method is to use <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/CodeDef.html" title="CodeDef (config)">CodeDef</a></span> as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">CodeDef reverse </span>Filter<br>
+<span class="def_Syntax">CodeDef reverse Routine </span><span class="def_Symbol">&lt;</span><span class="def_Symbol">&lt;</span>EOR<br>
+<span class="def_Syntax">sub </span><span class="def_Symbol">{</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">my </span>$<span class="def_Syntax">val </span><span class="def_Symbol">= </span><span class="def_Syntax">shift</span><span class="def_Symbol">;</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">return scalar</span><span class="def_Symbol">(</span><span class="def_Syntax">reverse</span><span class="def_Symbol">(</span>$<span class="def_Syntax">val</span><span class="def_Symbol">)</span><span class="def_Symbol">)</span><span class="def_Symbol">;</span><br>
+<span class="def_Symbol">}</span><br>
+EOR
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The above will reverse the characters in the body text
+as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">filter reverse</span><span class="def_Symbol">]</span><span class="def_Syntax">Kevin Walsh</span><span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">filter</span><span class="def_Symbol">]</span><br>
+</span>
+</td>
+</tr>
+<tr>
+<td class="hr">
+<span class="fixedwidth">
+<span class="def_Syntax">hslaW </span>niveK
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The &quot;<span class="fixedwidth">&#36;val</span>&quot;, in the above <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/CodeDef.html" title="CodeDef (config)">CodeDef</a></span>,
+is the value to be filtered.&nbsp;
+You may filter the input in any
+way you see fit, and then and simply return the result to the caller.
+</p>
+<p>
+You may pass parameters to your custom filters too.&nbsp;
+The easiest way to explain is with an example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">CodeDef duplicate </span>Filter<br>
+<span class="def_Syntax">CodeDef duplicate Routine </span><span class="def_Symbol">&lt;</span><span class="def_Symbol">&lt;</span>EOR<br>
+<span class="def_Syntax">sub </span><span class="def_Symbol">{</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">my </span><span class="def_Symbol">(</span>$<span class="def_Syntax">val</span><span class="def_Symbol">, </span><span class="def_Syntax">undef</span><span class="def_Symbol">, </span>$<span class="def_Syntax">no</span><span class="def_Symbol">) </span><span class="def_Symbol">= </span>@<span class="def_Symbol">_</span><span class="def_Symbol">;</span><br>
+<br>
+&nbsp; &nbsp; <span class="def_Syntax">return </span>$<span class="def_Syntax">val x </span><span class="def_Symbol">(</span>$<span class="def_Syntax">no </span><span class="def_Symbol">|</span><span class="def_Symbol">| </span><span class="def_Number">1</span><span class="def_Symbol">)</span><span class="def_Symbol">;</span><br>
+<span class="def_Symbol">}</span><br>
+EOR
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The above will duplicate the body text the specified number of times,
+or default to one copy if no parameter is specified,
+as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">filter duplcate</span><span class="def_Number">.3</span><span class="def_Symbol">]</span><span class="def_Syntax">Kevin</span><span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">filter</span><span class="def_Symbol">]</span><br>
+</span>
+</td>
+</tr>
+<tr>
+<td class="hr">
+<span class="fixedwidth">
+KevinKevinKevin
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+See <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-filter.html" title="PREFIX-filter (tags)">PREFIX-filter</a>]</span> for a more efficient way of
+filtering values produced by
+<a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Looping_tags_and_sub-tags.html" title="Category - looping tags and sub-tags">looping sub-tags</a>.
+</p>
+<a name="Parameters"></a>
+<h2>Parameters</h2>
+<a name="op"></a>
+<h3>op</h3>
+<p>
+The name of one or more filters to apply to the body text.&nbsp;
+If you need to specify more than one filter,
+then do so by separating the names from one another with a space.
+</p>
+<a name="See_also"></a>
+<h2>See also</h2>
+<p>
+<ul>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Filter.html" title="Filter (config)">Filter configuration directive</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Filters.html" title="Category - filters">Filters category</a></li>
+</ul>
+</div>
+
+<!-- start of modification notice -->
+<div class="wikitext">
+    <table class="pageinfo" cellpadding="0" cellspacing="0">
+	<tr>
+	    <td>
+Categories:&nbsp; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_Perl_usage.html">Interchange Perl usage</a> | <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a>
+	    </td>
+	</tr>
+
+
+	<tr>
+	    <td>
+		
+		Last modified by: <a href="http://interchange-rtfm.pullingshots.ca/account/profile.html?user=thunder">Gert van der Spoel</a><br>
+		Modification date: Sunday 5 July 2009 at 2:58 PM (EDT)
+	    </td>
+	</tr>
+    </table>
+</div>
+<!-- end of modification notice -->
+
+
+
+<!-- end page: wiki/display (tags/filter) -->
+
+
+
+<!-- end of page text -->
+	    </td>
+
+	</tr>
+    </table>
+<!-- START VAR: FOOTER -->
+
+<table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+	<td>
+	    <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/donations.html">Donations</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	</td>
+
+    </tr>
+</table>
+
+<!-- END VAR: FOOTER -->
+
+<!-- START VAR: COPYRIGHT -->
+
+
+    <div class="copyright">
+	Copyright &copy; 2001-2019
+	<a href="http://cursor.biz/index.html">Cursor Software Limited</a>.&nbsp;
+	All Rights Reserved.
+    </div>
+
+<!-- END VAR: COPYRIGHT -->
+
+</body>
+</html>

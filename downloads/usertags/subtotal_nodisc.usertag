@@ -1,0 +1,81 @@
+#
+#	subtotal_nodisc.usertag
+#	-----------------------
+#	Kevin Walsh <kevin@cursor.biz>
+#
+#	Copyright (c) 2002, 2005 Cursor Software Limited.
+#	All Rights Reserved.
+#
+#	This program is free software; you can redistribute it and/or modify
+#	it under the terms of the GNU General Public License as published by
+#	the Free Software Foundation; either version 2 of the License, or
+#	(at your option) any later version.
+#
+#	This program is distributed in the hope that it will be useful,
+#	but WITHOUT ANY WARRANTY; without even the implied warranty of
+#	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#	GNU General Public License for more details.
+#
+#	You should have received a copy of the GNU General Public
+#	License along with this program; if not, write to the Free
+#	Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+#	MA  02111-1307  USA.
+#
+#	Summary:
+#
+#	    Returns the current subtotal with no discounts
+#	    applied.
+#
+#	Parameters:
+#
+#	    noformat:
+#		0 (Default) = Format the amount (ie. 1234.56 -> $1,234.56)
+#		1 = Get a "raw" amount (no currency formatting)
+#
+#	Usage example:
+#
+#	    Subtotal:                [subtotal-nodisc]<br>
+#	    Including your discount: [subtotal]<br>
+#
+#
+#	-----------------------------------------------------------------------
+#	UNMISSABLE NOTICE (hopefully)
+#
+#	THERE ARE TWO USERTAGS IN THIS FILE.
+#	ONLY INSTALL THE ONE THAT'S APPROPRIATE FOR YOUR INTERCHANGE VERSION.
+#	-----------------------------------------------------------------------
+#
+
+#
+#	This version works with Interchange < 5.3.1
+#
+UserTag subtotal_nodisc Order noformat
+UserTag subtotal_nodisc Routine <<EOR
+sub {
+	my $noformat = shift;
+
+	my $save = delete $Vend::Session->{discount};
+	my $subtotal = Vend::Interpolate::subtotal();
+	$Vend::Session->{discount} = $save if $save;
+
+	return $noformat =~ /^(yes|1)$/i ? $subtotal : Vend::Util::currency($subtotal);
+}
+EOR
+
+#
+#	This version works with Interchange >= 5.3.1
+#
+UserTag subtotal_nodisc Order noformat
+UserTag subtotal_nodisc Routine <<EOR
+sub {
+	my $noformat = shift;
+
+	my %save = %$::Discounts;
+	%$::Discounts = ();
+
+	my $subtotal = Vend::Interpolate::subtotal();
+	%$::Discounts = %save if %save;
+
+	return $noformat =~ /^(yes|1)$/i ? $subtotal : Vend::Util::currency($subtotal);
+}
+EOR

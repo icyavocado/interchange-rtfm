@@ -1,0 +1,69 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Upgrade Guide: form_mail.cfg</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<UL ALIGN="Center">
+<A HREF="icupgrade_29.html">Parent Topic</A> | <A HREF="icupgrade_31.html">Previous Topic</A> | <A HREF="icupgrade_33.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></UL>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>A.3. form_mail.cfg</H2>
+<PRE>
+    GlobalSub &lt;&lt;EndOfSub
+    <B>sub</B> form_mail {
+        <B>my</B>($to, $subject, $reply, $body) = @_;
+        <B>my</B>($ok);
+    
+        $subject = <TT>'&lt;no subject&gt;'</TT> <B>unless</B> <B>defined</B> $subject &amp;&amp; $subject;
+    
+        $reply = <TT>''</TT> <B>unless</B> <B>defined</B> $reply;
+        $reply = <TT>&quot;Reply-to: $reply\n&quot;</TT> <B>if</B> $reply;
+    
+        $ok = 0;
+        SEND: {
+            <B>open</B>(Vend::MAIL,<TT>&quot;|$Vend::Cfg-&gt;{'SendMailProgram'} -t&quot;</TT>) <B>or</B> <B>last</B> SEND;
+            <B>print</B> Vend::MAIL
+                <TT>&quot;To: $to\n&quot;</TT>,
+                $reply,
+                <TT>&quot;Subject: $subject\n&quot;</TT>,
+                <TT>&quot;Errors-To: $Vend::Cfg-&gt;{MailOrderTo}\n\n&quot;</TT>,
+                $body
+                <B>or</B> <B>last</B> SEND;
+            <B>close</B> Vend::MAIL <B>or</B> <B>last</B> SEND;
+            $ok = ($? == 0);
+        }
+    
+        <B>if</B> (!$ok) {
+            logError(<TT>&quot;Unable to send mail using $Vend::Cfg-&gt;{'SendMailProgram'}\n&quot;</TT> .
+                <TT>&quot;To '$to'\n&quot;</TT> .
+                <TT>&quot;With subject '$subject'\n&quot;</TT> .
+                <TT>&quot;With reply-to '$reply'\n&quot;</TT> .
+                <TT>&quot;And body:\n$body&quot;</TT>);
+        }
+        $ok;
+    }
+    EndOfSub
+</PRE>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<UL ALIGN="Center">
+<A HREF="icupgrade_29.html">Parent Topic</A> | <A HREF="icupgrade_31.html">Previous Topic</A> | <A HREF="icupgrade_33.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></UL>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

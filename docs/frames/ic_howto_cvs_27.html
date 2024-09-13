@@ -1,0 +1,65 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange + CVS HOWTO: CVS checkout into the catalog directory</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ic_howto_cvs_26.html">Parent Topic</A> | <A HREF="ic_howto_cvs_26.html">Previous Topic</A> | <A HREF="ic_howto_cvs_28.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.1. CVS checkout into the catalog directory</H2>
+<P>Now it is the time to replace the directories in your catalog that have counterparts in CVS with fresh checkouts from CVS (this is a preliminary action to allow CVS to update your catalog directory when a change is made to CVS).</P>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>Make sure interchange daemon is stopped and you have a good backup before continuing.
+<HR WIDTH="80%" ALIGN="Left"></P>
+<P><TT>tar czf ~/foundation.backup2.tgz /var/lib/interchange/foundation</TT></P>
+<P>Checkout a copy from CVS into a different directory (such as <TT>foundation_CVS</TT>).</P>
+<PRE>
+cd /var/lib/interchange/
+cvs co -d foundation_CVS foundation
+</PRE>
+<P>This should create the <TT>foundation_CVS/</TT> directory for you, so that it wont conflict with your existing <TT>foundation/</TT> directory.</P>
+<H3><A NAME="Add any needed files to checked-out catalog">4.1.1. Add any needed files to checked-out catalog</A></H3>
+<P>Note that empty directories are pruned, so they will need something in them for them to show up with a -P checkout. Often a zero-byte file called '.empty' is used.</P>
+<P>If you removed any directories during the streamlining step, we must first add those back so that the catalog is usable to Interchange.  In this document, we only removed unneeded files and left empty directories.</P>
+<P>This can also be the time to copy any &quot;data&quot; files such as orders/ logs/, etc. that might be needed if it is a live catalog.</P>
+<PRE>
+cd /var/lib/interchange/foundation
+cp -a &lt;NEEDED_FILES&gt; \
+        /var/lib/interchange/foundation_CVS
+</PRE>
+<H3><A NAME="Install and test the new catalog">4.1.2. Install and test the new catalog</A></H3>
+<P>Now lets move the old <TT>foundation</TT> out of the way and put the new <TT>foundation_CVS</TT> in its place.</P>
+<PRE>
+cd /var/lib/interchange/
+mv foundation foundation_old
+mv foundation_CVS foundation
+</PRE>
+<P>Now, link up the CVS images for use by Apache.</P>
+<PRE>
+cd /var/www/html/foundation/
+mv images images_old
+ln -s /var/lib/interchange/foundation/images images
+</PRE>
+<P>Now, you should have a working catalog again.  To make sure, start up Interchange and test the site with your browser.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ic_howto_cvs_26.html">Parent Topic</A> | <A HREF="ic_howto_cvs_26.html">Previous Topic</A> | <A HREF="ic_howto_cvs_28.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

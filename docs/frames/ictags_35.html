@@ -1,0 +1,980 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: accessories</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_34.html">Previous Topic</A> | <A HREF="ictags_36.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.1. accessories</H2>
+<P>A Swiss-army-knife widget builder, this provides access to Interchange's product option attributes (e.g., to choose or access product options such as a shirt's size or color).</P>
+<P>Can build selection objects (radio, check, select boxes, etc), forms or hyperlinks, or can simply return a value.</P>
+<P>Or more&nbsp;-- see also <A HREF="ictags_9.html#Looping tags and Sub-tags">Looping tags and Sub-tags</A>.</P>
+<H3><A NAME="Summary">4.1.1. Summary</A></H3>
+<PRE>
+    [<B>accessories</B> code arg]
+    [<B>accessories</B> code=os28044 arg=&quot;size, radio, ... &quot; <I>other_named_attributes</I>] <I>deprecated</I>
+    [<B>accessories</B> code=os28044 attribute=size type=radio ... <I>other_named_attributes</I>]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_code">code</A>
+</TD>
+<TD VALIGN='Top'>
+Value of the master key in the product (or specified other) table
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_arg">arg</A>
+</TD>
+<TD VALIGN='Top'>
+Positionally interpreted comma-delimited list of values for the following attributes:
+<UL>
+&quot;attribute, type, column, table, name, outboard, passed&quot;</UL>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_attribute">attribute</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_type">type</A>
+<UL>
+One of select, value, text, textarea, hidden, password, combo, move_combo, reverse_combo, show, options, labels, checkbox, radio, links</UL>
+</TD>
+<TD VALIGN='Top'>
+select
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_column">column</A>
+</TD>
+<TD VALIGN='Top'>
+<I>attribute</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_table">table</A>
+</TD>
+<TD VALIGN='Top'>
+products
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_name">name</A>
+</TD>
+<TD VALIGN='Top'>
+mv_order_<I>attribute</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_outboard">outboard</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_passed">passed</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_code">key</A> (alias for code)
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_code">row</A> (alias for code)
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_table">base</A> (alias for <TT>table</TT>)
+</TD>
+<TD VALIGN='Top'>
+products
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_table">database</A> (alias for <TT>table</TT>)
+</TD>
+<TD VALIGN='Top'>
+products
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_table">db</A> (alias for <TT>table</TT>)
+</TD>
+<TD VALIGN='Top'>
+products
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_column">col</A> (alias for <TT>column</TT>
+</TD>
+<TD VALIGN='Top'>
+<I>attribute</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_column">field</A> (alias for <TT>column</TT>
+</TD>
+<TD VALIGN='Top'>
+<I>attribute</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_delimiter">delimiter</A>
+</TD>
+<TD VALIGN='Top'>
+comma (',')
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_prepend">prepend</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_append">append</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_extra">extra</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_js">js</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_rows">rows</A>
+</TD>
+<TD VALIGN='Top'>
+<I>varies with </I><TT>type</TT><I>; often</I> 4
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_cols">cols</A>
+</TD>
+<TD VALIGN='Top'>
+<I>varies with </I><TT>type</TT><I>; often</I> 40
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_width">width</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_default">default</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_price">price</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_price_data">price_data</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_contains">contains</A> (<TT>type</TT>=radio or check)
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_joiner">joiner</A> (<TT>type</TT>=links)
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_href">href</A> (<TT>type</TT>=links)
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_template">template</A> (<TT>type</TT>=links)
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_form">form</A> (<TT>type</TT>=links)
+</TD>
+<TD VALIGN='Top'>
+<TT>mv_action=return</TT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_empty">empty</A> (<TT>type</TT>=links)
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_secure">secure</A> (<TT>type</TT>=links)
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_35.html#accessories_new">new</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_interpolate">interpolate</A> (reparse)
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Container tag
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Has Subtags
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+    [accessories os28044 size]
+---
+    &lt;SELECT NAME=&quot;mv_order_size&quot;&gt;&lt;OPTION VALUE=&quot;10oz&quot;&gt;10oz\
+    &lt;OPTION VALUE=&quot;15oz&quot;&gt;15oz&lt;OPTION VALUE=&quot;20oz&quot;&gt;20oz&lt;/SELECT&gt;
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+    $Tag-&gt;accessories(  { code   =&gt; <TT>'[[EXAMPLE_SKU]]'</TT>,
+                          arg    =&gt; <TT>'color, radio'</TT>
+                          table  =&gt; <TT>'special_products'</TT>, }  );
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;accessories($code, $arg, $attribute_hash_reference);
+</PRE>
+<H4><A NAME="See Also">4.1.1.1. See Also</A></H4>
+<P><A HREF="ictags_9.html#Looping tags and Sub-tags">Looping tags and Sub-tags</A>.</P>
+<H3><A NAME="Description">4.1.2. Description</A></H3>
+<P>This is the swiss-army-knife widget builder for providing access to Interchange's product option attributes (e.g., to choose or access product options such as a shirt's size or color).</P>
+<P>Interchange allows you to choose item attribute values for each ordered item&nbsp;-- you can attach a size, color, or other modifier to a line item in the shopping cart. You can also resubmit previous attribute values via hidden fields on a form.</P>
+<P>The <TT>catalog.cfg</TT> file directive <A HREF="icconfig_172.html#UseModifier">UseModifier</A> is used to set the name of the modifier or modifiers. For example</P>
+<PRE>
+    <A HREF="icconfig_172.html#UseModifier">UseModifier</A>        size color
+</PRE>
+<P>will attach both a size and color attribute to each item code that is ordered.</P>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Important Note -- </STRONG>You may not use the following names for attributes:</P>
+<P>item  group  quantity  code  mv_ib  mv_mi  mv_si</P>
+<P><HR WIDTH="80%" ALIGN="Left"></P>
+<P>You can also set modifier names with the mv_UseModifier scratch variable&nbsp;-- [<A HREF="ictags_101.html#set">set</A>&nbsp;mv_UseModifier] size color [/set] has the same effect as above. This allows multiple options to be set for products. Whichever one is in effect at order time will be used. Be careful; you cannot set it more than once on the same page. Setting the <TT>mv_separate_items</TT> or global directive <I>SeparateItems</I> places each ordered item on a separate line, simplifying attribute handling. The scratch setting for <TT>mv_separate_items</TT> has the same effect.</P>
+<P>The modifier value is accessed in the [<A HREF="ictags_76.html#item-list">item-list</A>] loop with the [<A HREF="ictags_25.html#PREFIX-param">item-param</A><TT> attribute</TT>] tag, and form input fields are placed with the [<A HREF="ictags_32.html#modifier-name">modifier-name</A><TT> attribute</TT>] tag. This is similar to the way that quantity is handled.</P>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>You must be sure that no fields in your forms have digits appended to their names if the variable is the same name as the attribute name you select, as the [<A HREF="ictags_32.html#modifier-name">modifier-name</A><TT> size</TT>] variables will be placed in the user session as the form variables size0, size1, size2, etc.</P>
+<P><HR WIDTH="80%" ALIGN="Left"></P>
+<P>Interchange will automatically generate the select boxes when the [<A HREF="ictags_35.html#accessories">accessories</A> <TT>code=</TT>&quot;os28044&quot;&nbsp;<TT>attribute=</TT>&quot;size&quot;] or [<A HREF="ictags_10.html#PREFIX-accessories">item-accessories</A><TT> size</TT>] tags are called. They have the syntax:</P>
+<PRE>
+    [item-accessories attribute, type, column, table, name, outboard, passed]
+
+    [accessories code=sku
+                attribute=modifier
+                type=select
+                column=db_table_column_name
+                table=db_table
+                name=varname
+                outboard=key
+                passed=&quot;value=label, value2*, value3=label 3&quot;]
+
+    [accessories js=| onChange=&quot;set_description(simple_options, variant)&quot;; |
+                type=select
+                name=&quot;[item-param o_group]&quot;
+                passed=&quot;=--choose--,[item-param o_value]&quot;]
+</PRE>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Notes: </STRONG></P>
+<OL>
+<LI>The '<A HREF="ictags_35.html#accessories_attribute">attribute</A>' attribute is required.
+<LI>See the <A HREF="ictags_35.html#accessories_type">type</A> attribute for a list of types.
+<LI>The trailing '*' in value2 will mark it as the default ('SELECTED') value in the select widget (see below).</OL>
+<P><HR WIDTH="80%" ALIGN="Left"></P>
+<P>When called with an attribute, the database is consulted and looks for a comma-separated list of item attribute options. They take the form:</P>
+<PRE>
+   name_a=Label Text1, default_name=Default Label Text*, name_b, <I>etc.</I>
+</PRE>
+<P>The label text is optional&nbsp;-- if none is given, the <B>name</B> will be used (as in 'name_b' above).</P>
+<P>If an asterisk is the last character of the label text, the item is the default selection. If no default is specified, the first will be the default. An example:</P>
+<PRE>
+    [item-accessories color]
+</PRE>
+<P>This will search the product database for a field named &quot;color&quot;. If an entry &quot;beige=Almond, gold=Harvest Gold, White*, green=Avocado&quot; is found, a select box like this will be built:</P>
+<PRE>
+    &lt;SELECT NAME=&quot;mv_order_color&quot;&gt;
+    &lt;OPTION VALUE=&quot;beige&quot;&gt;Almond
+    &lt;OPTION VALUE=&quot;gold&quot;&gt;Harvest Gold
+    &lt;OPTION SELECTED&gt;White
+    &lt;OPTION VALUE=&quot;green&quot;&gt;Avocado
+    &lt;/SELECT&gt;
+</PRE>
+<P>In combination with the <TT>mv_order_item</TT> and <TT>mv_order_quantity</TT> session variables, you can use this to allow a customer to enter an item attribute during an order.</P>
+<P>If used in an item list, and the user has changed the value, the generated select box will automatically retain the current value the user has selected.</P>
+<P>The value can then be displayed with [<A HREF="ictags_23.html#PREFIX-modifier">item-modifier</A> color] on the order report, order receipt, or any other page containing an [<A HREF="ictags_76.html#item-list">item-list</A>].</P>
+<H4><A NAME="Emulating with a loop">4.1.2.1. Emulating with a loop</A></H4>
+<P>You can also build widgets directly, without using the <TT>accessories</TT> tag. You may have to do so if you need more control of the content than the tag offers. Below is a fragment from a shopping basket display form which shows a selectable size with &quot;sticky&quot; setting and a price that changes based upon the modifier setting. (Note that this example would normally be contained within the [<A HREF="ictags_76.html#item-list">item-list</A>]<TT>[/item-list]</TT> pair.)</P>
+<PRE>
+    &lt;SELECT NAME=&quot;[modifier-name size]&quot;&gt;
+    [loop option=&quot;[modifier-name size]&quot; list=&quot;S, M, L, XL&quot;]
+    &lt;OPTION&gt; [loop-code] -- [price code=&quot;[item-code]&quot; size=&quot;[loop-code]&quot;]
+    [/loop]
+    &lt;/SELECT&gt;
+</PRE>
+<P>The output of the above would be similar to the output of [item-accessories size, select] if the product database field <TT>size</TT> contained the value <TT>S, M, L, XL</TT>. The difference is that the options in the loop emulation show the adjusted price in addition to the size within each option value.</P>
+<H4><A NAME="accessories_hash_lists E&lt;emdash&gt; Technical Note"> </A>4.1.2.2. <A NAME="accessories_hash_lists">Hash Lists</A> -- Technical Note</H4>
+<P>As a technical note, some of the features of this tag work differently depending upon whether it was called with an '$item' hash reference, for example, as [<TT>item-accessories</TT>] within an [<A HREF="ictags_76.html#item-list">item-list</A>].</P>
+<P>In this context, the tag will have access to ancillary data from the item (including, perhaps, a user's chosen item attribute value). For example, if building a TEXTAREA widget within an [<A HREF="ictags_76.html#item-list">item-list</A>], the widget will show the chosen item attribute value. On the other hand, within an array list such as a [<A HREF="ictags_98.html#search-list">search-list</A>] in a [<A HREF="ictags_99.html#search-region">search-region</A>], the widget would be empty.</P>
+<P>If you really know what you're doing, you can pass it the item hash reference within a [<A HREF="ictags_87.html#perl">perl</A>] tag like this:</P>
+<PRE>
+   $Tag-&gt;accessories( $code,
+                      <B>undef</B>,              <I># 'arg' parameter value</I>
+                      $named_attribute_hashref,
+                      $item_hashref );
+</PRE>
+<P>See also <A HREF="ictags_9.html#Looping tags and Sub-tags">Looping tags and Sub-tags</A> for information about hash-context and array-context in looping tags.</P>
+<H4><A NAME="accessories_code"> </A>4.1.2.3. <A NAME="accessories_code">code</A></H4>
+<P>This is the master key of the specified table (commonly sku in a product table). If no table is specified, the tag uses the products table by default.</P>
+<P>You should not specify a <TT>code</TT> when looping on [item_accessories] because it internally sets '<TT>code</TT>' to the key for the current item in the loop.</P>
+<H4><A NAME="accessories_arg"> </A>4.1.2.4. <A NAME="accessories_arg">arg</A></H4>
+<P><B>Deprecated after Interchange 4.6</B></P>
+<P>This allows you to pass values for some of the more commonly used attributes in the manner of the [<A HREF="ictags_10.html#PREFIX-accessories">item-accessories</A>] tag, as a comma-delimited positional list:</P>
+<PRE>
+  <B>arg</B>=&quot;attribute, type, column, table, name, outboard, passed&quot;
+</PRE>
+<P>Whitespace within the list is optional.</P>
+<P>If you leave out one or more of the above attributes, be sure to keep the comma(s) if you are setting anything after it in the list:</P>
+<PRE>
+  <B>arg</B>=&quot;attribute, type, , table&quot;
+</PRE>
+<P>The above examples show the attribute names for clarity; you would actually use the values. Hence, the previous example might actually be something like the following:</P>
+<PRE>
+  <B>arg</B>=&quot;color, radio, , products&quot;
+</PRE>
+<P>Although you must use such a comma-delimited list to pass attributes to the [<A HREF="ictags_10.html#PREFIX-accessories">item-accessories</A>] tag, please use named attributes instead for the [<A HREF="ictags_35.html#accessories">accessories</A>] tag. The '<TT>arg</TT>' attribute is deprecated.</P>
+<P>For detail about a specific attribute, please see its subheading below.</P>
+<H4><A NAME="accessories_attribute"> </A>4.1.2.5. <A NAME="accessories_attribute">attribute</A></H4>
+<P>Despite the name, this has nothing to do with tag attributes. You can set attributes for <I>items</I> in a database table (typically the products table) with the <A HREF="icconfig_172.html#UseModifier">UseModifier</A> configuration directive. Typical are <TT>size</TT> or <TT>color</TT>.</P>
+<P>This selects the item attribute the tag will work with.</P>
+<H4><A NAME="accessories_type"> </A>4.1.2.6. <A NAME="accessories_type">type</A></H4>
+<P>This determines the action to be taken. One of:</P>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Action</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+select
+</TD>
+<TD VALIGN='Top'>
+Builds a dropdown &lt;SELECT&gt; menu for the item attribute, with the default item attribute value SELECTED. The <TT>accessories</TT> tag builds a select widget by default if <TT>type</TT> is not set.
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+display
+</TD>
+<TD VALIGN='Top'>
+Shows the label text for *only the selected option* if called in <A HREF="ictags_35.html#accessories_hash_lists">Hash List</A> context (e.g., within an [<A HREF="ictags_76.html#item-list">item-list</A>]). Ignored otherwise (i.e., the tag will build the default &lt;SELECT&gt; menu).
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+show
+</TD>
+<TD VALIGN='Top'>
+Returns the list of possible attributes for the item (without labels or any HTML widget). For example, if sku os28044 is available in several sizes:
+<UL>
+[accessories os28044 size,show]
+<BR>
+-----------------------------------------
+<BR>
+Sm=10oz, Med=15oz*, Lg=20oz</UL>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+options
+</TD>
+<TD VALIGN='Top'>
+This shows the attribute options as a newline delimited list:
+<UL>
+[accessories os28044 size,options]
+<BR>
+-----------------------------------------
+<BR>
+Sm
+<BR>
+Med
+<BR>
+Lg</UL>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+labels
+</TD>
+<TD VALIGN='Top'>
+This shows the attribute option labels:
+<UL>
+[accessories os28044 size,options]
+<BR>
+-----------------------------------------
+<BR>
+10oz
+<BR>
+15oz*
+<BR>
+20oz</UL>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+radio
+</TD>
+<TD VALIGN='Top'>
+Builds a radio box group for the item, with spaces separating the elements.
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+radio nbsp
+</TD>
+<TD VALIGN='Top'>
+Builds a radio box group for the item, with &amp;nbsp; separating the elements.
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+radio break
+</TD>
+<TD VALIGN='Top'>
+Builds a radio box group for the item, with '&lt;br&gt;' separating the radio button/label pairs from one another.
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+radio left n
+</TD>
+<TD VALIGN='Top'>
+Builds a radio box group for the item, inside a table, with the checkbox on the left side. If &quot;n&quot; is present and is a digit from 2 to 9, it will align the options in that many columns.
+<P>You can also set FONT SIZE like this:</P>
+<PRE>
+  type=&quot;radio left <I>n</I> fontsize<I>m</I>&quot;
+</PRE>
+<P>where -9 &lt;= <I>m</I> &lt;= 9</P>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+radio right n
+</TD>
+<TD VALIGN='Top'>
+Builds a radio box group for the item, inside a table, with the checkbox on the right side. If &quot;n&quot; is present and is a digit from 2 to 9, it will align the options in that many columns.
+<P>You can also set FONT SIZE like this:</P>
+<PRE>
+  type=&quot;radio right <I>n</I> fontsize<I>m</I>&quot;
+</PRE>
+<P>where -9 &lt;= <I>m</I> &lt;= 9</P>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+check
+</TD>
+<TD VALIGN='Top'>
+Builds a checkbox group for the item, with spaces separating the elements.
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+check nbsp
+</TD>
+<TD VALIGN='Top'>
+Builds a checkbox group for the item, with '&amp;nbsp;' separating the checkbox/label pairs from one another.
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+check break
+</TD>
+<TD VALIGN='Top'>
+Builds a checkbox group for the item, with '&lt;br&gt;' separating the checkbox/label pairs from one another.
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+check left <I>n</I>
+</TD>
+<TD VALIGN='Top'>
+Builds a checkbox group for the item, inside a table, with the checkbox on the left side. If &quot;n&quot; is present and is a digit from 2 to 9, it will align the options in that many columns.
+<P>You can also set FONT SIZE like this:</P>
+<PRE>
+  type=&quot;check left <I>n</I> fontsize<I>m</I>&quot;
+</PRE>
+<P>where -9 &lt;= <I>m</I> &lt;= 9</P>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+check right n
+</TD>
+<TD VALIGN='Top'>
+Builds a checkbox group for the item, inside a table, with the checkbox on the right side. If &quot;n&quot; is present and is a digit from 2 to 9, it will align the options in that many columns.
+<P>You can also set FONT SIZE like this:</P>
+<PRE>
+  type=&quot;check right <I>n</I> fontsize<I>m</I>&quot;
+</PRE>
+<P>where -9 &lt;= <I>m</I> &lt;= 9</P>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+textarea_XX_YY
+</TD>
+<TD VALIGN='Top'>
+A textarea with XX columns and YY rows. The textarea will contain the selected item attribute value if used in <A HREF="ictags_35.html#accessories_hash_lists">Hash List</A> context (e.g., within an [<A HREF="ictags_76.html#item-list">item-list</A>]).
+<P>If you simply use '<TT>type</TT>=textarea', the size will default to 4 rows by 40 columns, unless you have set the <A HREF="ictags_35.html#accessories_rows">rows</A> or <A HREF="ictags_35.html#accessories_cols">cols</A> tag attributes.</P>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+text_YY
+</TD>
+<TD VALIGN='Top'>
+A text box with YY width in characters. The HTML tag's VALUE will be set to the selected item attribute value if used in <A HREF="ictags_35.html#accessories_hash_lists">Hash List</A> context (e.g., within an [<A HREF="ictags_76.html#item-list">item-list</A>]).
+<P>If you simply use '<TT>type</TT>=text', the width will default to 60, unless you have set the <A HREF="ictags_35.html#accessories_cols">cols</A> tag attribute.</P>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+combo
+</TD>
+<TD VALIGN='Top'>
+Special type, used with nullselect filter, for selecting from a list or inputting a new value
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+reverse_combo
+</TD>
+<TD VALIGN='Top'>
+Special type, used with last_non_null filter, for selecting from a list or inputting a new value&nbsp;-- differs from combo in order of presentation
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+move_combo
+</TD>
+<TD VALIGN='Top'>
+Special type, used with null_to_space or null_to_comma filter, for selecting multiple non-ordered values from a list or inputting into a textarea
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+links
+</TD>
+<TD VALIGN='Top'>
+Produces a series of links based on the option values. The base form value is passed via the form parameter, just like in an [area ...] or [page ...] tag, and the value is named with the passed NAME attribute.
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+value
+</TD>
+<TD VALIGN='Top'>
+Returns the selected value if called in <A HREF="ictags_35.html#accessories_hash_lists">Hash List</A> context (e.g., within an [<A HREF="ictags_76.html#item-list">item-list</A>]), or nothing otherwise.
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+hidden
+</TD>
+<TD VALIGN='Top'>
+Creates a hidden form field. The hidden field's VALUE will be set to the selected item attribute value if used in <A HREF="ictags_35.html#accessories_hash_lists">Hash List</A> context (e.g., within an [<A HREF="ictags_76.html#item-list">item-list</A>]).
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+password_YY
+</TD>
+<TD VALIGN='Top'>
+A password box with YY width in characters. The HTML tag's VALUE will be set to the selected item attribute value if used in <A HREF="ictags_35.html#accessories_hash_lists">Hash List</A> context (e.g., within an [<A HREF="ictags_76.html#item-list">item-list</A>]).
+<P>If you simply use '<TT>type</TT>=password', the width will default to 12, unless you have set the <A HREF="ictags_35.html#accessories_cols">cols</A> tag attribute.</P>
+</TD>
+</TR>
+</TABLE>
+
+<P>The default is 'select', which builds an HTML select form entry for the attribute.</P>
+<P>Some types build widgets that use the ROWS=<I>m</I>, COLS=<I>n</I>, or certain other HTML attributes. For these, you can define widget rows and columns within the string that sets the type; for example, <TT>type</TT>=&quot;textarea_6_33_wrap=virtual&quot; specifies a TEXTAREA widget with ROWS=6, COLS=33, and WRAP=virtual. You should resort to this only when you cannot use the named parameters, for example within an [<A HREF="ictags_10.html#PREFIX-accessories">item-accessories</A>] tag. Otherwise, use the <A HREF="ictags_35.html#accessories_rows">rows</A>=<I>m</I> and <A HREF="ictags_35.html#accessories_cols">cols</A>=<I>n</I> tag attributes instead.</P>
+<P>The result of setting conflicting values in the <A HREF="ictags_35.html#accessories_type">type</A> string and the <TT>rows</TT> or <TT>cols</TT> attributes is undefined.</P>
+<P>The following list shows syntax for type strings, where <I>rows</I> is the number of rows and <I>cols</I> is the number of columns.</P>
+<UL>
+<LI><B>text</B><UL>
+<LI>textarea   <I>(default is 4 rows, 40 columns, like 'textarea_4_40')</I>
+<LI>textarea_<I>rows</I>_<I>cols</I>
+<LI>text_<I>cols</I>
+<LI>textarea rows=<I>rows</I> cols=<I>cols</I> wrap=<I>WRAP value</I></UL>
+<LI><B>password</B><UL>
+<LI>password   <I>(default is 12 columns, like 'password_12')</I>
+<LI>password_<I>cols</I></UL>
+<LI><B>combo</B> (similarly for <B>reverse_combo</B> and <B>move_combo</B>)<UL>
+<LI>combo   <I>(default is 1 row, 16 columns, like 'combo_1_16')</I></UL></UL>
+<P>In any of the option building types, you can append the string <TT>ranges</TT> and a special option processing will be done -- any option matching the pattern [A-Za-z0-0]..[A-Za-z0-0] will be expanded into a comma separated range between the bounds. The same behavior is accomplished by passing the accessories tag option <TT>ranges</TT>. For example:</P>
+<PRE>
+
+    [accessories name=foo type=select ranges=1 &quot;A..C,1..5,10,20&quot;]
+      and
+    [accessories name=foo type=&quot;select ranges&quot; passed=&quot;A..C,1..5,10,20&quot;]
+
+      will both output:
+
+    &lt;select NAME=&quot;foo&quot;&gt;
+    &lt;option VALUE=&quot;A&quot;&gt;A
+    &lt;option VALUE=&quot;B&quot;&gt;B
+    &lt;option VALUE=&quot;C&quot;&gt;C
+    &lt;option VALUE=&quot;1&quot;&gt;1
+    &lt;option VALUE=&quot;2&quot;&gt;2
+    &lt;option VALUE=&quot;3&quot;&gt;3
+    &lt;option VALUE=&quot;4&quot;&gt;4
+    &lt;option VALUE=&quot;5&quot;&gt;5
+    &lt;option VALUE=&quot;10&quot;&gt;10
+    &lt;option VALUE=&quot;15&quot;&gt;15
+    &lt;option VALUE=&quot;20&quot;&gt;20
+    &lt;/select&gt;
+</PRE>
+<P>The above applies to any of the option building types -- <TT>check</TT>, <TT>combo</TT>, <TT>combo_move</TT>, <TT>labels</TT>, <TT>multiple</TT>, <TT>options</TT>, <TT>radio</TT>, <TT>reverse_combo</TT>, and <TT>select</TT>. It will refuse to produce more than 5000 options -- that limit can be changed with <TT>Limit option_list N</TT> in <TT>catalog.cfg</TT>, where N is an integer greater than 0.</P>
+<H4><A NAME="accessories_column"> </A>4.1.2.7. <A NAME="accessories_column">column</A></H4>
+<P>The column of the table corresponding to the attribute will traditionally have the same name as the attribute, though it need not.</P>
+<P>This specifies the table column that contains an item's attribute values. The tag will find item attribute names and values in a comma-delimited list of name=value pairs stored in this field of an item's table entry. If unspecified, the column name will default to the name given for the '<A HREF="ictags_35.html#accessories_attribute">attribute</A>' attribute.</P>
+<P>For example, if an item in the products table has a '<TT>size</TT>' attribute, and each item's comma-delimited list of available sizes is stored in the '<TT>how_big</TT>' column, then you would need to specify &quot;<TT>column=how_big</TT>&quot; because the tag's default column choice (<TT>size</TT>) would be missing or used for some other purpose.</P>
+<H4><A NAME="accessories_table"> </A>4.1.2.8. <A NAME="accessories_table">table</A></H4>
+<P>This is the database table containing the item's attribute values. It defaults to the first products file where the item code is found.</P>
+<P>If you have configured your database so that the attributes are kept in a different table from other item data, '<A HREF="ictags_35.html#accessories_code">code</A>' should be set to the master key in this table. See '<A HREF="ictags_35.html#accessories_outboard">outboard</A>') if you are using [<A HREF="ictags_10.html#PREFIX-accessories">item-accessories</A>] and cannot specify <TT>code=key</TT>.</P>
+<H4><A NAME="accessories_name"> </A>4.1.2.9. <A NAME="accessories_name">name</A></H4>
+<P>This sets the name of the form variable to use if appropriate for the widget being built. Defaults to 'mv_order_<B>attribute</B>'&nbsp;-- i.e. if the attribute is <B>size</B>, the form variable will be named <B>mv_order_size</B>.</P>
+<P>If the variable is set in the user session, the widget will &quot;remember&quot; its previous setting. In other words, [<A HREF="ictags_120.html#value">value</A> <I>name</I>] will contain the previous setting, which the widget will use as its default setting. See also the <A HREF="ictags_53.html#default">default</A> attribute.</P>
+<H4><A NAME="accessories_outboard"> </A>4.1.2.10. <A NAME="accessories_outboard">outboard</A></H4>
+<P>If calling the item-accessories tag, and you wish to select from an outboard database table whose master key is different from the item <A HREF="ictags_35.html#accessories_code">code</A>, you can pass the key the tag should use to find the accessory data.</P>
+<H4><A NAME="accessories_passed"> </A>4.1.2.11. <A NAME="accessories_passed">passed</A></H4>
+<P>You can use this to pass your own values to the widget the tag will build. If you have set <TT>passed</TT> to a list of widget options, then the tag will simply build a widget of the specified <A HREF="ictags_35.html#accessories_type">type</A> with your values instead of fetching an attribute value list from the database.</P>
+<P>For example, to generate a select box with a blank option (perhaps forcing a select), the value of <TT>blue</TT> with a label of <B>Blue</B>, and the value of <TT>green</TT> with a label of <B>Sea Green</B>, do:</P>
+<PRE>
+    [accessories type=select
+                 name=color
+               passed=&quot;=--select--*, blue=Blue, green=Sea Green&quot;]
+</PRE>
+<P>This will generate:</P>
+<PRE>
+    &lt;SELECT NAME=&quot;color&quot;&gt;&lt;OPTION VALUE=&quot;&quot; SELECTED&gt;--select--\
+    &lt;OPTION VALUE=&quot;blue&quot;&gt;Blue\
+    &lt;OPTION VALUE=&quot;green&quot;&gt;Sea Green&lt;/SELECT&gt;
+</PRE>
+<P>Note: trailing backslashes ('\') in the above example indicate line continuation and are not part of the tag output.</P>
+<H4><A NAME="accessories_delimiter"> </A>4.1.2.12. <A NAME="accessories_delimiter">delimiter</A></H4>
+<P>The list of attribute values will be a delimited string. This allows you to specify an alternative delimiter if the list is not comma-delimited (the default).</P>
+<H4><A NAME="accessories_prepend"> </A>4.1.2.13. <A NAME="accessories_prepend">prepend</A></H4>
+<P>You can set a string to prepend to the returned output of the tag. Note that this is <I>not</I> a list to prepend to the fetched <A HREF="ictags_35.html#accessories_attribute">attribute</A> value list, which is treated within the tag.</P>
+<P>For example,</P>
+<PRE>
+    [accessories code=os28044
+                 type=select
+            attribute=size
+               append=&quot;Append Me&lt;br&gt;&quot;
+              prepend=&quot;Prepend Me&quot;]
+---
+    Prepend Me&lt;SELECT NAME=&quot;mv_order_size&quot;&gt;\
+    &lt;OPTION VALUE=&quot;10oz&quot;&gt;10oz\
+    &lt;OPTION VALUE=&quot;15oz&quot;&gt;15oz\
+    &lt;OPTION VALUE=&quot;20oz&quot;&gt;20oz&lt;/SELECT&gt;<B>Append Me</B>&lt;br&gt;
+</PRE>
+<H4><A NAME="accessories_append"> </A>4.1.2.14. <A NAME="accessories_append">append</A></H4>
+<P>You can set a string to append to the returned output of the tag. Note that this is <I>not</I> a list to append to the fetched <A HREF="ictags_35.html#accessories_attribute">attribute</A> value list, which is treated within the tag.</P>
+<H4><A NAME="accessories_extra"> </A>4.1.2.15. <A NAME="accessories_extra">extra</A></H4>
+<P>Setting the '<TT>extra</TT>' attribute appends its value as the last attribute of the HTML output tag. The following example illustrates the <TT>append</TT>, <TT>extra</TT> and <TT>js</TT> options:</P>
+<PRE>
+    [accessories code=os28044
+                 type=select
+            attribute=size
+               append=&quot;Append Me&lt;br&gt;&quot;
+                extra=&quot;Last=Extra&quot;
+                   js=&quot;javascript_here&quot;]
+---
+    &lt;SELECT NAME=&quot;mv_order_size&quot; javascript_here Last=Extra&gt;\
+    &lt;OPTION VALUE=&quot;10oz&quot;&gt;10oz\
+    &lt;OPTION VALUE=&quot;15oz&quot;&gt;15oz\
+    &lt;OPTION VALUE=&quot;20oz&quot;&gt;20oz&lt;/SELECT&gt;Append Me&lt;br&gt;
+</PRE>
+<H4><A NAME="accessories_js"> </A>4.1.2.16. <A NAME="accessories_js">js</A></H4>
+<P>This allows you to place javascript within the start tag of the HTML output. See the example given above for <TT>extra</TT>.</P>
+<P><TT>js</TT> has no default, except when '<A HREF="ictags_35.html#accessories_type">type</A>=move_combo', where the default is:</P>
+<PRE>
+  onChange=&quot;addItem(this.form.X<I>name</I>,this.form.<I>name</I>)&quot;
+</PRE>
+<H4><A NAME="accessories_rows"> </A>4.1.2.17. <A NAME="accessories_rows">rows</A></H4>
+<P>The tag will pass the number you choose through to the HTML 'ROWS=<I>n</I>' attribute in HTML widgets that accept it.</P>
+<P>For some types, you can also define widget rows and columns within the string that sets the <A HREF="ictags_35.html#accessories_type">type</A>; for example, <A HREF="ictags_35.html#accessories_type">type</A>=&quot;textarea_6_33_wrap=virtual&quot; specifies a TEXTAREA widget with ROWS=6, COLS=33, and WRAP=virtual. You should resort to this only when you cannot use the named parameters, for example within an [<A HREF="ictags_10.html#PREFIX-accessories">item-accessories</A>] tag.</P>
+<P>The result of setting conflicting values in the <A HREF="ictags_35.html#accessories_type">type</A> string and the <TT>rows</TT>=<I>n</I> attribute is undefined.</P>
+<H4><A NAME="accessories_cols"> </A>4.1.2.18. <A NAME="accessories_cols">cols</A></H4>
+<P>The tag will pass the number you choose through to the HTML 'COLS=<I>n</I>' attribute in HTML widgets that accept it.</P>
+<P>See also '<A HREF="ictags_35.html#accessories_rows">rows</A>' above.</P>
+<H4><A NAME="accessories_width"> </A>4.1.2.19. <A NAME="accessories_width">width</A></H4>
+<P>This is a quasi-alias for '<A HREF="ictags_35.html#accessories_cols">cols</A>' that only works with the '<TT>text</TT>' and '&lt;password&gt;' types. Use '<A HREF="ictags_35.html#accessories_cols">cols</A>' instead.</P>
+<H4><A NAME="accessories_default"> </A>4.1.2.20. <A NAME="accessories_default">default</A></H4>
+<P>Sets the default attribute option in the widget returned by the tag. This will override a default indicated with a trailing '*' in the database or '<A HREF="ictags_35.html#accessories_passed">passed</A>' string. This will also override the default of a user's previous selection when the tag would otherwise have preserved it.</P>
+<P>For example the following selects blue by default rather than green as it would otherwise have done,</P>
+<PRE>
+    [accessories type=select
+                 name=color
+               passed=&quot;blue=blue, green=Sea Green*&quot;
+              default=&quot;blue&quot;]
+---
+    &lt;SELECT NAME=&quot;color&quot;&gt;&lt;OPTION VALUE=&quot;blue&quot; SELECTED&gt;blue\
+    &lt;OPTION VALUE=&quot;green&quot;&gt;Sea Green&lt;/SELECT&gt;
+---
+</PRE>
+<P>Obscure technical note: the tag ignores the '<TT>default</TT>' attribute if it has an item hash reference&nbsp;-- see <A HREF="ictags_35.html#accessories_hash_lists">Hash Lists</A> above.</P>
+<H4><A NAME="accessories_price"> </A>4.1.2.21. <A NAME="accessories_price">price</A></H4>
+<P>When combined with the <TT>price_data</TT> tag attribute, this allows you to force prices for item attributes. You probably do not want to use this; just let the tag pick up prices from your database table(s) when appropriate.</P>
+<P>If you are passing attribute values, you can use this to control the displayed price in the widget.</P>
+<PRE>
+    [accessories type=check
+                 name=color
+                price=1
+           price_data=&quot;blue=20, green=50&quot;
+               passed=&quot;blue=Blue, green=Sea Green*&quot;]
+---
+    &lt;INPUT TYPE=&quot;checkbox&quot; NAME=&quot;color&quot; VALUE=&quot;blue&quot; &gt;&amp;nbsp;Blue&amp;nbsp;($20.00)
+    &lt;INPUT TYPE=&quot;checkbox&quot; NAME=&quot;color&quot; VALUE=&quot;green&quot; CHECKED&gt;&amp;nbsp;Sea Green&amp;nbsp;($50.00)
+</PRE>
+<H4><A NAME="accessories_price_data"> </A>4.1.2.22. <A NAME="accessories_price_data">price_data</A></H4>
+<H4><A NAME="accessories_contains"> </A>4.1.2.23. <A NAME="accessories_contains">contains</A></H4>
+<P>Requires '<A HREF="ictags_35.html#accessories_type">type</A>=radio' or '<TT>type</TT>=check'.</P>
+<P>Used to determine whether a substring match of the value will cause a radio box or check box to be selected. If true, the match will happen whether the value is on a word boundary or not -- if false, the value must be on a word boundary. (When we speak of a word boundary, it is in the Perl sense -- a word character [A-Za-z0-9_] followed or preceded by a non-word character, or beginning or end of the string.)</P>
+<H4><A NAME="accessories_joiner"> </A>4.1.2.24. <A NAME="accessories_joiner">joiner</A></H4>
+<P>Requires '<A HREF="ictags_35.html#accessories_type">type</A>=links'.</P>
+<P>With <TT>type=links</TT>, the accessories tag returns a link for each option. This allows you to override the default string ('&lt;BR&gt;') that joins these links. You can use Perl's metacharacter escapes, such as '\n' for newline or '\t' for tab.</P>
+<H4><A NAME="accessories_href"> </A>4.1.2.25. <A NAME="accessories_href">href</A></H4>
+<P>Requires '<A HREF="ictags_35.html#accessories_type">type</A>=links'.</P>
+<P>This sets the base HREF for the link in a <TT>links</TT> type. Default is the current page.</P>
+<H4><A NAME="accessories_template"> </A>4.1.2.26. <A NAME="accessories_template">template</A></H4>
+<P>Requires '<A HREF="ictags_35.html#accessories_type">type</A>=links'.</P>
+<P>Allows you to override the standard Interchange template for a hyperlink. You probably don't need to use this&nbsp;-- grep the code to grok it if you do (see 'sub build_accessory_links').</P>
+<H4><A NAME="accessories_form"> </A>4.1.2.27. <A NAME="accessories_form">form</A></H4>
+<P>Requires '<A HREF="ictags_35.html#accessories_type">type</A>=links'.</P>
+<P>This sets the base value for the form in a <TT>links</TT> type. Default is <TT>mv_action=return</TT>, which will simply set the variable value in the link.</P>
+<P>For example, to generate a series of links&nbsp;-- one per item attribute value passed&nbsp;-- that set the variable &quot;color&quot; to the corresponding <A HREF="ictags_35.html#accessories_passed">passed</A> value (blank, blue, or green), do this:</P>
+<PRE>
+    [accessories type=links
+                 name=color
+               passed=&quot;=--select--, blue=Blue, green=Sea Green&quot;]
+</PRE>
+<P>This will generate something like the following:</P>
+<PRE>
+    &lt;A HREF=&quot;VENDURL/MV_PAGE?<B>mv_action=return</B>&amp;color=blue&quot;&gt;Blue&lt;/A&gt;&lt;BR&gt;
+    &lt;A HREF=&quot;VENDURL/MV_PAGE?<B>mv_action=return</B>&amp;color=green&quot;&gt;Sea Green&lt;/A&gt;
+</PRE>
+<P>where VENDURL is your Interchange URL for the catalog MV_PAGE is the current page.</P>
+<P>If you want the empty &quot;--select--&quot; option to show up, pass an empty=1 parameter.</P>
+<H4><A NAME="accessories_empty"> </A>4.1.2.28. <A NAME="accessories_empty">empty</A></H4>
+<P>Requires '<A HREF="ictags_35.html#accessories_type">type</A>=links'.</P>
+<P>Setting '<TT>empty=1</TT>' includes a hyperlink for the empty &quot;--select--&quot; option. See the example in <TT>form</TT> above; if <TT>empty=1</TT> had been specified, three links would have been generated.</P>
+<H4><A NAME="accessories_secure"> </A>4.1.2.29. <A NAME="accessories_secure">secure</A></H4>
+<P>Requires '<A HREF="ictags_35.html#accessories_type">type</A>=links'.</P>
+<P>Setting <TT>secure</TT>=1 causes the generated link(s) to point to your secure Interchange URL.</P>
+<H4><A NAME="accessories_new"> </A>4.1.2.30. <A NAME="accessories_new">new</A></H4>
+<P>Requires '<A HREF="ictags_35.html#accessories_type">type</A>=combo' or 'reverse_combo'.</P>
+<P>You can use this to set a value in place of the 'New' or 'Current' option in a combo box. For example, if item 'os28044' has size attribute values of &quot;Sm=10oz,&nbsp;Med=15oz,&nbsp;Lg=20oz&quot;:</P>
+<PRE>
+    [accessories code=os28044 attribute=size type=combo new=&quot;my_new_value&quot;]
+---
+    &lt;INPUT TYPE=text NAME=&quot;mv_order_size&quot; SIZE=16 VALUE=&quot;&quot;&gt;
+    &lt;SELECT NAME=&quot;mv_order_size&quot; SIZE=&quot;1&quot;&gt;
+    &lt;OPTION VALUE=&quot;my_new_value&quot;&gt;my_new_value
+    &lt;OPTION VALUE=&quot;Sm&quot;&gt;10oz
+    &lt;OPTION VALUE=&quot;Med&quot;&gt;15oz
+    &lt;OPTION VALUE=&quot;Lg&quot;&gt;20oz&lt;/SELECT&gt;
+</PRE>
+<P>Or, with the default new value:</P>
+<PRE>
+    [accessories code=os28044 attribute=size type=combo]
+---
+    &lt;INPUT TYPE=text NAME=&quot;mv_order_size&quot; SIZE=16 VALUE=&quot;&quot;&gt;
+    &lt;SELECT NAME=&quot;mv_order_size&quot; SIZE=&quot;1&quot;&gt;
+    &lt;OPTION VALUE=&quot;&quot;&gt;&amp;lt;-- New
+    &lt;OPTION VALUE=&quot;Sm&quot;&gt;10oz
+    &lt;OPTION VALUE=&quot;Med&quot;&gt;15oz
+    &lt;OPTION VALUE=&quot;Lg&quot;&gt;20oz&lt;/SELECT&gt;
+</PRE>
+<P>Default is no VALUE with option text set to '&amp;lt;-- New' for a combo box or 'Current --&amp;gt;' for a reverse_combo box.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_34.html">Previous Topic</A> | <A HREF="ictags_36.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

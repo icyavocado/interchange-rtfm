@@ -1,0 +1,312 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Databases: Search Reference</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_25.html">Parent Topic</A> | <A HREF="icdatabase_34.html">Previous Topic</A> | <A HREF="icdatabase_36.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>5.10. Search Reference</H2>
+<P>The supplied <TT>simple/srchform.html</TT> and <TT>simple/results.html</TT> pages show example search forms. Modify them to present the search in any way desired. Be careful to use the proper variable names for passing to Interchange. It is also necessary to copy the hidden variables as-is. They are required to interpret the request as a search.</P>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>The following definitions frequently refer to field name and column and column number. All are the references to the columns of a searched text file as separated by delimiter characters.
+<HR WIDTH="80%" ALIGN="Left"></P>
+<P>The field names can be specified in several ways.</P>
+<P><B>ProductFiles</B></P>
+<UL>
+If the file to be searched is left empty in the search form or definition (it is set with <TT>mv_search_file (fi)</TT>), the text files associated with the products databases will be searched, and field names are already available as named in the first line of the file(s). This is defined to be <TT>products.txt</TT> in the Interchange demo catalogs.
+<BR>
+Be careful if using SQL! If the database is changed and not exported with <TT>[tag export products][/tag]</TT>, searches will not be successful.</UL>
+<P><B>Other database files</B></P>
+<UL>
+If the file or files to be searched are ASCII delimited files, and have field names specified on the first line of the file, Interchange will read the first line (of the first file) and determine the field names.</UL>
+<P><B>Other files</B></P>
+<UL>
+If the file or files to be searched are ASCII delimited files, but don't have field names specified on the first line of the file, set the variable <TT>mv_field_names</TT> to a comma-separated list of field names as they will be referenced.</UL>
+<P>Fields can also always be specified by an integer column number, with 0 as the first column.</P>
+<P><B>mv_all_chars</B></P>
+<UL>
+Scan abbreviation: ac=[1|0]. Set this if searching is anticipated for lots of punctuation characters that might be special characters for Perl. The characters ()[]\$^ are included.</UL>
+<P><B>mv_base_directory</B></P>
+<UL>
+Scan abbreviation: bd=/directory/name. In the text search, set to the directory from which to base file searches. File names without leading / characters will be based from there. In the Glimpse search, passed to Glimpse with the <TT>-H</TT> option, and Glimpse will look for its indices there. Default is ProductDir.
+<BR>
+If an absolute path directory is used, for security enable it in the users session with:</UL>
+<PRE>
+            [set /directory/name]1[/set]
+</PRE>
+<UL>
+This prevents users from setting an arbitrary value and viewing arbitrary files.</UL>
+<P><B>mv_begin_string</B></P>
+<UL>
+If this is set, the string will only match if it is at the beginning of a field. The handling is a bit different for the default AND search compared to the OR search. With OR searches all words are searched for from the beginning of the field, with AND searches all are.
+<BR>
+This is a multiple parameter. If <TT>mv_coordinate</TT> is in force, it should be set as many times as necessary to match the field/searchstring combination. If set only once, it applies to all fields. If set more than once but not as many times as the fields, it will default to off.</UL>
+<P><B>mv_cache_key</B></P>
+<UL>
+Not normally set by the user. It is a value that provides a pointer to the search reference by the <TT>more</TT> function.</UL>
+<P><B>mv_case</B></P>
+<UL>
+If this item is set to <TT>No</TT>, the search will return items without regard to upper or lower case. This is the default. Set to <TT>Yes</TT> if case should be matched. Implement with a checkbox &lt;INPUT TYPE=CHECKBOX&gt; field.
+<BR>
+If stacked to match the <TT>mv_search_field</TT> and <TT>mv_searchspec</TT> variables, and <TT>mv_coordinate</TT> is set, it will operate only for the corresponding field.
+<BR>
+Scan abbreviation: cs</UL>
+<P><B>mv_column_op</B></P>
+<UL>
+In the coordinated search, the operation that will be performed to check the field for a search match. These operations are supported:</UL>
+<PRE>
+        !=              Not equal to
+        !~              Not matching regular expression
+        &lt;               Less than
+        &lt;=              Less than or equal to
+        &lt;&gt;              Not equal to
+        =               Equal to
+        ==              Equal to
+        =~              Matching regular expression
+        &gt;               Greater than
+        &gt;=              Greater than or equal to
+        em              Exact match
+        eq              Equal to
+        ge              Greater than or equal to
+        gt              Greater than
+        le              Less than or equal to
+        lt              Less than
+        ne              Not equal to
+        rm              Matching regular expression
+        rn              Not matching regular expression
+</PRE>
+<UL>
+If stacked to match the <TT>mv_search_field</TT> and <TT>mv_searchspec</TT> variables, and <TT>mv_coordinate</TT> is set, it will operate only for the corresponding field.</UL>
+<P>Note that several of the operators are the same. They do either numeric or string comparisons based on the status of <TT>mv_numeric</TT> (alias <TT>nu</TT>) for that column.</P>
+<P><B>mv_coordinate</B></P>
+<UL>
+If this item is set to <TT>Yes</TT>, and the number of search fields equals the number of search specs, the search will return only items that match field to spec. (The search specifications are set by stacked <TT>mv_searchspec</TT> and <TT>mv_search_field</TT> variables.)
+<BR>
+Case sensitivity, substring matching, and negation all work on a field-by field basis according to the following:<UL>
+If only one instance of the option is set, it will affect all fields.
+<BR>
+If the number of instances of the option is greater than or equal to the number of search specs, all will be used independently. Trailing instances will be ignored.
+<BR>
+If more than one instance of the options are set, but fewer than the number of search specifications, the default setting will be used for the trailing unset options.
+<BR>
+If a search specification is blank, it will be removed and all case-sensitivity/negation/substring options will be adjusted accordingly. If you need a blank string to match on, use quotes (<TT>&quot;&quot;</TT>).</UL></UL>
+<P><B>mv_dict_end</B></P>
+<UL>
+If the string at the beginning of a line lexically exceeds this value, matching will stop. Ignored without <TT>mv_dict_look</TT>.</UL>
+<P><B>mv_dict_fold</B></P>
+<UL>
+Make dictionary matching case-insensitive. Ignored without <TT>mv_dict_look</TT>.</UL>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>This is the reverse sense from <TT>mv_case</TT>.
+<HR WIDTH="80%" ALIGN="Left"></P>
+<P><B>mv_dict_limit</B></P>
+<UL>
+Automatically set the limiting string (mv_dict_end) to be one character greater than the mv_dict_look variable, at the character position specified. A value of 1, for instance, will set the limiting string to &quot;fprsythe&quot; if the value of <TT>mv_dict_look</TT> is &quot;forsythe&quot;. A useful value is -1, which will increment the last character (setting the mv_dict_end to &quot;forsythf&quot; in our example). This prevents having to scan the whole file once a unique match is found.</UL>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>The order of this and the <TT>mv_dict_end</TT> variable is significant. Each will overwrite the other.
+<HR WIDTH="80%" ALIGN="Left"></P>
+<UL>
+If this is set to a non-numeric value, an automatic mode is entered which looks for a dictionary-indexed file that corresponds to the file name plus <TT>.field</TT>, where <TT>field</TT> is whatever <TT>mv_dict_limit</TT> is set to. The actual value of mv_dict_limit is set to <TT>-1</TT>. If the file does not exist, the original file is silently used. Also, the value of <TT>mv_return_fields</TT> is set to <TT>1</TT> to correspond to the location of the key in the auto-indexed file.
+<BR>
+To illustrate:</UL>
+<PRE>
+            &lt;INPUT TYPE=hidden NAME=mv_dict_limit  VALUE=category&gt;
+            &lt;INPUT TYPE=hidden NAME=mv_search_file VALUE=&quot;products.txt&quot;&gt;
+</PRE>
+<UL>
+is equal to:</UL>
+<PRE>
+            &lt;INPUT TYPE=hidden NAME=mv_dict_limit    VALUE=&quot;-1&quot;&gt;
+            &lt;INPUT TYPE=hidden NAME=mv_search_file   VALUE=&quot;products.txt.category&quot;&gt;
+            &lt;INPUT TYPE=hidden NAME=mv_return_fields VALUE=&quot;1&quot;&gt;
+</PRE>
+<UL>
+The real utility would be in a form construct like</UL>
+<PRE>
+            Search for
+            &lt;SELECT NAME=mv_dict_limit&gt;
+            &lt;OPTION&gt; author
+            &lt;OPTION&gt; title
+            &lt;/SELECT&gt; beginning with &lt;INPUT NAME=mv_dictlook&gt;
+</PRE>
+<UL>
+which would allow automatic binary search file selection.
+<BR>
+Combined with the <TT>INDEX</TT> attribute to the Database directive, this allows fast binary search qualification combined with regular <TT>mv_searchspec</TT> text searches.</UL>
+<P><B>mv_dict_look</B></P>
+<UL>
+The string at which to begin matching at in a dictionary-based search. If not set, the <TT>mv_dict_end</TT>, <TT>mv_dict_fold</TT>, and <TT>mv_dict_case</TT> variables will be ignored. May be set in a search profile based on other form variables.</UL>
+<P><B>mv_dict_order</B></P>
+<UL>
+Make dictionary matching follow dictionary order, where only word characters and whitespace matter. Ignored without <TT>mv_dict_look</TT>.</UL>
+<P><B>mv_doit</B></P>
+<UL>
+This can be set to <TT>search</TT> to make a form with a <TT>process</TT> action be a search page by default. The <TT>mv_todo</TT> variable takes precedence.</UL>
+<P><B>mv_exact_match</B></P>
+<UL>
+Normally Interchange searches match words, as opposed to sentences. This behavior can be overridden with <TT>mv_exact_match</TT>, which when set will place quotes around any value in <TT>mv_searchspec</TT> or <TT>mv_dict_look</TT>.</UL>
+<P><B>mv_field_file</B></P>
+<UL>
+If you want to search a file which has no field header on the first line, you can specify a file to get the field names from. It expects a single line with the field names separated by TAB characters.</UL>
+<P><B>mv_field_names</B></P>
+<UL>
+Deprecated in favor of in-list sorting. Defines the field names for the file being searched. This guarantees that they will be available, and prevents a disk access if using named fields on a search file (that is not the product database ASCII source, where field names are already known). This must be exactly correct, or it will result in anomalous search operation. Usually passed in a hidden field or search profile as a comma-separated list.</UL>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>Use this on the product database only if planning on both pre-sorting with <TT>mv_sort_field</TT> and then post-sorting <TT>with [sort]field:opt[/sort]</TT>.
+<HR WIDTH="80%" ALIGN="Left"></P>
+<P><B>mv_first_match</B></P>
+<UL>
+Normally Interchange will return the first page of a search. If this variable is set, it will start the search return at the match specified, even if there is only one page. If set to a value greater than the number of matches, it will act as if no matches were found.</UL>
+<P><B>mv_head_skip</B></P>
+<UL>
+Normally Interchange searches all lines of an index/product file but the first. Set this to the number of lines to skip at the beginning of the index. Default is 1 for the text search, which skips the header line in the product file. Default is 0 for a Glimpse search.</UL>
+<P><B>mv_index_delim</B></P>
+<UL>
+Sets the delimiter for counting fields in a search index. The default is TAB. It should rarely be changed unless you are searching a pipe-delimited or colon-delimited file.</UL>
+<P><B>mv_like_field</B></P>
+<UL>
+Specifies a field in a database search which should be used for a screening function based on the SQL <TT>like</TT> function. Needs <TT>mv_like_spec</TT>.</UL>
+<P><B>mv_like_spec</B></P>
+<UL>
+The string that should be searched for in <TT>mv_like_field</TT>. The behavior of the % character and case-sensitivity depends on your SQL implementation.</UL>
+<P><B>mv_matchlimit</B></P>
+<UL>
+Function depends upon context. When the search results display is handled by one of the mechanisms which works with <TT>[more]</TT> lists (such as <TT>[search-region]</TT>), mv_matchlimit determines the number of results per page. If more matches than mv_matchlimit are found, the search paging mechanism will be employed if the proper <TT>[more-list]</TT> is present. When the search results are displayed as one continuous list (i.e.: with <TT>[loop search=&quot;...&quot;]</TT>), mv_matchlimit is equivalent in function to mv_max_matches.
+<BR>
+To have no matchlimit, use <B>none</B> instead of a number. <B>all</B> does the same thing (since returning &quot;all&quot; is just anothing way of looking at no matchlimit).
+<BR>
+If no matchlimit is provided, or an invalid setting (some other string or 0) the default is taken from catalog variable MV_DEFAULT_MATCHLIMIT, and if that's not set, is 50.</UL>
+<P><B>mv_max_matches</B></P>
+<UL>
+The maximum number of records that will be returned in a search. Default is unlimited. If search results paging with <TT>[more-list]</TT> is to be employed, Use <TT>mv_matchlimit</TT> to set the number of results per page.</UL>
+<P><B>mv_min_string</B></P>
+<UL>
+Sets the minimum size of a search string for a search operation. Default is 4 for the Glimpse search, and 1 for the text search.</UL>
+<P><B>mv_negate</B></P>
+<UL>
+Specifies that records NOT matching the search criteria will be returned. Default is no. It is not operative for the Glimpse search.
+<BR>
+If stacked to match the <TT>mv_search_field</TT> and <TT>mv_searchspec</TT> variables, and <TT>mv_coordinate</TT> is set, it will operate only for the corresponding field.</UL>
+<P><B>mv_orsearch</B></P>
+<UL>
+If this item is set to <TT>Yes</TT>, the search will return items matching any of the words in <TT>searchspec</TT>. The default is No.</UL>
+<P><B>mv_profile</B></P>
+<UL>
+Selects one of the pre-defined search specifications set by the <TT>SearchProfile</TT> directive. If the special variable within that file, <TT>mv_last</TT>, is defined, it will prevent the scanning of the form input for further search modifications. The values of <TT>mv_searchspec</TT> and <TT>mv_dict_look</TT> are always scanned, so specify this to do the equivalent of setting multiple checkboxes or radioboxes with one click, while still reading the search input text.</UL>
+<P><B>mv_record_delim</B></P>
+<UL>
+Sets the delimiter for counting records in a search index. The default is newline, which works for the products and most line-based index files.</UL>
+<P><B>mv_return_fields</B></P>
+<UL>
+The field(s) that should be returned by the match, specified either by field name or by column number, separated by commas. Do not list the same field more than once per search. Specify 0 as the first field to be returned if searching the products database, since that is the key for accessing database fields.</UL>
+<P>As with SQL queries, you can use the '*' shortcut to return all fields. For example:</P>
+<PRE>
+    [loop search=&quot;fi=nation/ra=yes/rf=*&quot;]
+</PRE>
+<P>when used with a hypothetical 'nation' table would be equivalent to:</P>
+<PRE>
+    [loop search=&quot;
+          fi=nation
+          ra=yes
+          rf=code,sorder,region,name,tax
+    &quot;]
+</PRE>
+<P>as well as:</P>
+<PRE>
+    [loop search=&quot;fi=nation/ra=yes/rf=0,1,2,3,4&quot;]
+</PRE>
+<P>and:</P>
+<PRE>
+    [query sql=&quot;select * from nation&quot;][/query]
+</PRE>
+<P>However, you probably rarely need to use every single field in a row. For maximum maintainability and execution speed the best practice is to list by name only the fields you want returned.</P>
+<P><B>mv_return_spec</B></P>
+<UL>
+Returns the string specified as the search (i.e., the value of <TT>mv_searchspec</TT>) as the one and only match. Typically used in a SKU/part number search.</UL>
+<P><B>mv_search_field</B></P>
+<UL>
+The field(s) to be searched, specified either by column name or by column number.
+<BR>
+If the number of instances matches the number of fields specified in the <TT>mv_searchspec</TT> variable and <TT>mv_coordinate</TT> is set to true, each search field (in order specified on the form) will be matched with each search spec (again in that order).</UL>
+<P><B>mv_search_file</B></P>
+<UL>
+In the text search, set this variable to the file(s) to be scanned for a match. The default, if not set, is to scan the default ProductFiles (i.e., products.txt). If set multiple times in a form (for a text search), will cause a search all the files. One file name per instance.
+<BR>
+In the Glimpse search, follows the Glimpse wildcard-based file name matching scheme. Use with caution and a liberal dose of the Glimpse man page.</UL>
+<P><B>mv_search_match_count</B></P>
+<UL>
+Set by the search to indicate the total number of matches found.</UL>
+<P><B>mv_search_page</B></P>
+<UL>
+The Interchange-style name of the page that should display the search results. This overrides the default value of <TT>search</TT>.</UL>
+<P><B>mv_searchspec</B></P>
+<UL>
+The actual search string that is typed in by the customer. It is a text INPUT TYPE=TEXT field, or can be put in a select (drop-down) list to enable category searches. If multiple instances are found, they will be concatenated just as if multiple words had been placed in a text field.
+<BR>
+The user can place quotes around words to specify that they match as a string. To enable this by default, use the <TT>mv_exact_match</TT> variable.
+<BR>
+If <TT>mv_dict_look</TT> has a value, and <TT>mv_searchspec</TT> does not, then <TT>mv_searchspec</TT> will be set to the value of <TT>mv_dict_look</TT>.
+<BR>
+If the number of instances matches the number of fields specified in the <TT>mv_search_field</TT> variable and <TT>mv_coordinate</TT> is set to true, each search field (in order specified on the form) will be matched with each search spec (again in that order).</UL>
+<P><B>mv_searchtype</B></P>
+<UL>
+If set to Glimpse, selects the Glimpse search (if Glimpse is defined).
+<BR>
+If set to db, iterates over every row of the database (not the associated text source file).
+<BR>
+If set to sql, same as <TT>db</TT>.
+<BR>
+If set to text, selects the text-based search.
+<BR>
+When using <TT>st=db</TT>, returned keys may be affected by <TT>TableRestrict</TT>. See <TT>CATALOG.CFG</TT>.
+<BR>
+Defaults to text if Glimpse is not defined; defaults to Glimpse if it is defined. This can allow use of both search types if that is desirable. For instance, searching for very common strings is better done by the text-based search. An example might be searching for categories of items instead of individual items.</UL>
+<P><B>mv_small_data</B></P>
+<P>Tells the search engine that there is a small amount of data in the file and that it should perform the search function on every line.</P>
+<P>Normally, when Interchange can find a fixed search expression it produces a &quot;screening&quot; function which will allow records to be quickly rejected when they don't match. If there are less than 50 records in the file or database, this may be counterproductive.</P>
+<P><B>mv_sort_field</B></P>
+<UL>
+The file field(s) the search is to be sorted on, specified in one of two ways. If the file(s) to be searched have a header line (the first line) that contains delimiter-separated field names, it can be specified by field name. It can also be specified by column number (the code or key is specified with a value of 0, for both types). These can be stacked if coming from a form or placed in a single specification separated by commas.</UL>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>If specifying a sort for the product database, <TT>mv_field_names</TT> must be specified if doing a fieldname-addressed post-sort.
+<HR WIDTH="80%" ALIGN="Left"></P>
+<P><B>mv_sort_option</B></P>
+<UL>
+The way that each field should be sorted. The flags are <TT>r</TT>, <TT>n</TT>, and <TT>f</TT>, reverse, numeric, and case-insensitive respectively. These can be stacked if coming from a form or placed in a single specification separated by commas. The stacked options will be applied to the sort fields as they are defined, presuming those are stacked.</UL>
+<P><B>mv_spelling_errors</B></P>
+<UL>
+The number of spelling errors that will be tolerated. Ignored unless using Glimpse. For a large table, limit this to two.</UL>
+<P><B>mv_substring_match</B></P>
+<UL>
+If <TT>mv_substring_match</TT> is set to <TT>Yes</TT>, matches on substrings as well as whole words. Typically set this for dictionary-based searches.
+<BR>
+If stacked to match the <TT>mv_search_field</TT> and <TT>mv_searchspec</TT> variables and <TT>mv_coordinate</TT> is set, it will operate only for the corresponding field.</UL>
+<P><B>mv_unique</B></P>
+<UL>
+If set to a true value, causes the sort to return only unique results. This operates on whatever the search return is, as defined by <TT>mv_return_fields</TT>.</UL>
+<P><B>mv_value</B></P>
+<UL>
+This is normally only used in the one-click search (va=var=value). It allows setting of a session variable based on the clicked link, which makes for easy definition of headers and other display choices. (If had trouble using <TT>mv_searchspec</TT> for this before, this is what is needed.)</UL>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_25.html">Parent Topic</A> | <A HREF="icdatabase_34.html">Previous Topic</A> | <A HREF="icdatabase_36.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

@@ -1,0 +1,976 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>Creating custom Interchange tags - RTFM</title>
+
+    <meta http-equiv="Content-Language" content="en-GB">
+    <meta http-equiv="Window-target" content="_top">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <meta http-equiv="X-Soup-Of-The-Day" content="Tomato">
+
+    <meta name="author" content="Kevin Walsh">
+    <meta name="publisher" content="Cursor Software Limited">
+    <meta name="copyright" content="2001-2020, Cursor Software Limited">
+    <meta name="licence" content="GPLv2+ (Unknown licence)">
+    <meta name="generator" content="Interchange 5.7.0 -- www.icdevgroup.org">
+    <meta name="robots" content="index,follow,noarchive,noimageindex">
+    <meta name="keywords" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="description" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="MSSmartTagsPreventParsing" content="TRUE">
+
+    <meta name="verify-v1" content="KqlU/bxZj9Y2ZdZ/3RwuzgVSMIrZ8XM2wqbjSaEo3O4=">
+
+    <meta name="y_key" content="e2dd60be5777fbc8">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
+    <link rel="search" type="application/opensearchdescription+xml" href="http://interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="stylesheet" href="/decor/css/website.css">
+    <link rel="stylesheet" href="/decor/css/wiki.css">
+    <link rel="stylesheet" href="/decor/css/neo.css">
+
+
+    <script type="text/javascript" language="JavaScript">
+    <!--
+	if (top != self){
+	    top.location = location;
+	}
+
+    // -->
+    </script>
+</head>
+<body>
+<!-- START VAR: LOGOBAR -->
+<table id="rtfmheader" cellpadding="0" cellspacing="0">
+    <tr>
+	<td><a href="http://interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+
+	<td width="100%" style="text-align: right; padding: 10px">
+
+	    <form action="http://interchange-rtfm.pullingshots.ca/search.html" method="POST">
+		<input type="hidden" name="mv_session_id" value="nsession">
+		<input type="hidden" name="mv_profile" value="cms_search">
+		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
+		<input type="submit" class="button" value="Search">
+	    </form>
+
+	</td>
+    </tr>
+</table>
+<table id="breadcrumbs" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+	<td>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_Perl_usage.html">Interchange Perl usage</a></span>
+	    <span class="nowrap">&gt; <span class="current">Creating custom Interchange tags</span></span>
+	</td>
+
+    </tr>
+</table>
+<!-- END VAR: LOGOBAR -->
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+
+	    <td id="leftside">
+<!-- START COMPONENT: navigation -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th>NAVIGATION</th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+
+<!-- END COMPONENT: navigation -->
+<!-- START COMPONENT: wiki_recent -->
+
+
+
+<!-- END COMPONENT: wiki_recent -->
+<!-- START COMPONENT: wiki_backlinks -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th><span class="nowrap">PAGES THAT LINK HERE</span></th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserTag.html">UserTag</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+<!-- END COMPONENT: wiki_backlinks -->
+<!-- START COMPONENT: account -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+
+    <tr>
+	<th>ACCOUNT LOGIN</th>
+    </tr>
+
+    <tr>
+	<td class="first">
+	    <p>You are not logged in</p>
+	</td>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+	    </ul>
+	</td>
+    </tr>
+
+</table>
+
+
+
+<!-- END COMPONENT: account -->
+<!-- START COMPONENT: icpowered -->
+
+<div style="text-align: center; margin: 10px; margin-top: 0px">
+    <a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+</div>
+
+
+
+<!-- START COMPONENT: icpowered -->
+
+	    </td>
+
+	    <td id="bodytext">
+<!-- start of page text -->
+
+<!-- start page: wiki/display (Creating_custom_Interchange_tags) -->
+
+<div class="wikitext">
+<a name="Creating_custom_Interchange_tags"></a>
+<h1>Creating custom Interchange tags</h1>
+<!-- start of toc --><div class="toc">
+<table>
+<tr valign="top">
+<th>Table of contents</th>
+</tr>
+<tr><td class="h2"><a href="#UserTag_introduction">1. UserTag introduction</a></td></tr>
+<tr><td class="h3"><a href="#General">1.1. General</a></td></tr>
+<tr><td class="h3"><a href="#Tag_aliases">1.2. Tag aliases</a></td></tr>
+<tr><td class="h3"><a href="#A_simple_UserTag">1.3. A simple UserTag</a></td></tr>
+<tr><td class="h3"><a href="#A_simple_container_tag">1.4. A simple container tag</a></td></tr>
+<tr><td class="h3"><a href="#A_longer_example">1.5. A longer example</a></td></tr>
+<tr><td class="h3"><a href="#UserTag_file_locations">1.6. UserTag file locations</a></td></tr>
+<tr><td class="h2"><a href="#UserTag_properties">2. UserTag properties</a></td></tr>
+<tr><td class="h3"><a href="#AddAttr">2.1. AddAttr</a></td></tr>
+<tr><td class="h3"><a href="#Alias">2.2. Alias</a></td></tr>
+<tr><td class="h3"><a href="#AttrAlias">2.3. AttrAlias</a></td></tr>
+<tr><td class="h3"><a href="#CanNest">2.4. CanNest</a></td></tr>
+<tr><td class="h3"><a href="#Description">2.5. Description</a></td></tr>
+<tr><td class="h3"><a href="#Documentation">2.6. Documentation</a></td></tr>
+<tr><td class="h3"><a href="#HasEndTag">2.7. HasEndTag</a></td></tr>
+<tr><td class="h3"><a href="#Implicit">2.8. Implicit</a></td></tr>
+<tr><td class="h3"><a href="#Interpolate">2.9. Interpolate</a></td></tr>
+<tr><td class="h3"><a href="#NoReparse">2.10. NoReparse</a></td></tr>
+<tr><td class="h3"><a href="#Order">2.11. Order</a></td></tr>
+<tr><td class="h3"><a href="#PosNumber">2.12. PosNumber</a></td></tr>
+<tr><td class="h3"><a href="#PosRoutine">2.13. PosRoutine</a></td></tr>
+<tr><td class="h3"><a href="#Routine">2.14. Routine</a></td></tr>
+<tr><td class="h3"><a href="#Version">2.15. Version</a></td></tr>
+<tr>
+<td class="spacer">&nbsp;</td>
+</tr>
+</table>
+</div><!-- end of toc -->
+<a name="UserTag_introduction"></a>
+<h2>UserTag introduction</h2>
+<a name="General"></a>
+<h3>General</h3>
+<p>
+To define a custom Interchange tag that is website-specific, you can place
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserTag.html" title="UserTag (config)">UserTag</a></span> directives in your <span class="fixedwidth">catalog.cfg</span> file.&nbsp;
+For server-wide tags, define your <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserTag.html" title="UserTag (config)">UserTags</a></span> in
+<span class="fixedwidth">interchange.cfg</span>.&nbsp;
+Website-specific tags take precedence if both are defined.&nbsp;
+In fact, you can use this facility to override the supplied Interchange tag
+set with your own custom code.&nbsp;
+The <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserTag.html" title="UserTag (config)">UserTag</a></span> directive takes the following form:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+UserTag tagname&nbsp; property&nbsp; value
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+
+<ul>
+<li><span class="fixedwidth">tagname</span> is the name of the custom tag.</li>
+<li><span class="fixedwidth">property</span> is the attribute (described below).</li>
+<li><span class="fixedwidth">value</span> is the value of the property for the tag.</li>
+</ul>
+
+<br>
+<p>
+The custom tags can either be based on Perl subroutines or just be aliases for existing tags.&nbsp;
+Some quick examples are below.
+</p>
+<a name="Tag_aliases"></a>
+<h3>Tag aliases</h3>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+UserTag product_name Alias data products title
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+This will alias <span class="fixedwidth">&#91;product_name 99-102]</span>
+into <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/data.html" title="data (tags)">data</a> products title 99-102]</span>,
+which will output the title column for product code &quot;99-102&quot;.&nbsp;
+Don't use this with <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-data.html" title="PREFIX-data (tags)">item-data</a>]</span>
+and <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-field.html" title="PREFIX-field (tags)">item-field</a>]</span>,
+as they are parsed separately.
+</p>
+<a name="A_simple_UserTag"></a>
+<h3>A simple UserTag</h3>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+UserTag company_name Routine &lt;&lt;EOR<br>
+sub {<br>
+&nbsp; &nbsp; return &quot;Your company name&quot;;<br>
+}<br>
+EOR
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+When you place a <span class="fixedwidth">&#91;company-name]</span> tag in an Interchange page,
+the text &quot;Your company name&quot; will be substituted.
+</p>
+<a name="A_simple_container_tag"></a>
+<h3>A simple container tag</h3>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+UserTag caps HasEndTag 1<br>
+UserTag caps Routine&nbsp;&nbsp; &lt;&lt;EOR<br>
+sub {<br>
+&nbsp; &nbsp; return uc(shift);<br>
+}<br>
+EOR
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The above would expand as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">caps</span><span class="def_Symbol">]</span><span class="def_Syntax">This text should be all upper case</span><span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">caps</span><span class="def_Symbol">]</span><br>
+</span>
+</td>
+</tr>
+<tr>
+<td class="hr">
+<span class="fixedwidth">
+<span class="def_Syntax">THIS TEXT SHOULD BE ALL UPPER </span>CASE
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="A_longer_example"></a>
+<h3>A longer example</h3>
+<p>
+Here is a useful one you might like to use:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+UserTag quick_table Order&nbsp; &nbsp; &nbsp;&nbsp; border<br>
+UserTag quick_table HasEndTag&nbsp;&nbsp; 1<br>
+UserTag quick_table Interpolate 1<br>
+UserTag quick_table Routine&nbsp; &nbsp;&nbsp; &lt;&lt;EOR<br>
+sub {<br>
+&nbsp; &nbsp; my (&#36;border,&#36;body) = @_;<br>
+&nbsp; &nbsp; &#36;border = qq{ border=&quot;&#36;border&quot;} if length(&#36;border);<br>
+<br>
+&nbsp; &nbsp; my &#36;out = qq{&lt;table align=&quot;left&quot;&#36;border&gt;};<br>
+&nbsp; &nbsp; my @rows = split(&quot;&#92;n+&quot;,&#36;body);<br>
+&nbsp; &nbsp; my (&#36;left,&#36;right);<br>
+<br>
+&nbsp; &nbsp; foreach (@rows) {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; (&#36;left,&#36;right) = split /&#92;s*:&#92;s*/, &#36;_, 2;<br>
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &#36;left =~ s/^&#92;s+//;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &#36;right =~ s/&#92;s+&#36;//;<br>
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &#36;out .= '&lt;tr&gt;&lt;td align=&quot;right&quot; valign=&quot;top&quot;&gt;';<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &#36;out .= '&lt;b&gt;' unless &#36;left =~ /&lt;/;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &#36;out .= &#36;left;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &#36;out .= '&lt;/b&gt;' unless &#36;left =~ /&lt;/;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &#36;out .= '&lt;/td&gt;&lt;td valign=&quot;top&quot;&gt;';<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &#36;out .= &#36;right;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &#36;out .= '&lt;/td&gt;&lt;/tr&gt;';<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &#36;out .= &quot;&#92;n&quot;;<br>
+&nbsp; &nbsp; }<br>
+&nbsp; &nbsp; return &quot;&#36;out&lt;/table&gt;&quot;;<br>
+}<br>
+EOR
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The above can be called like this:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">quick</span><span class="def_Symbol">-</span><span class="def_Syntax">table border</span><span class="def_Symbol">=</span><span class="def_Number">2</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; Name<span class="def_Symbol">: </span><span class="def_Symbol">[</span><span class="def_Syntax">value name</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; City<span class="def_Symbol">: </span><span class="def_Symbol">[</span><span class="def_Syntax">value city</span><span class="def_Symbol">]</span><span class="def_Symbol">[</span><span class="def_Syntax">if value state</span><span class="def_Symbol">]</span><span class="def_Symbol">, </span><span class="def_Symbol">[</span><span class="def_Syntax">value state</span><span class="def_Symbol">]</span><span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">] </span><span class="def_Symbol">[</span><span class="def_Syntax">value country</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">quick</span><span class="def_Symbol">_</span><span class="def_Syntax">table</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+As is the case with <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/perl.html" title="perl (tags)">perl</a>]</span> tag,
+user tags run under the Perl <span class="fixedwidth">Safe</span> module,
+with warnings disabled.&nbsp;
+Unlike <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/perl.html" title="perl (tags)">perl</a>]</span> tags, however, custom user tags use Perl's
+&quot;<span class="fixedwidth">strict</span>&quot; pragma.
+</p>
+<a name="UserTag_file_locations"></a>
+<h3>UserTag file locations</h3>
+<p>
+Local UserTags should be placed in a directory called &quot;<span class="fixedwidth">usertags</span>&quot;,
+under your website's home directory
+(as specified using the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Catalog.html" title="Catalog (config)">Catalog</a></span> directive,
+and where you'll find your &quot;<span class="fixedwidth">catalog.cfg</span>&quot; file).
+</p>
+<p>
+Global UserTags should be placed in a directory called &quot;<span class="fixedwidth">usertags</span>&quot;,
+under your interchange Instance's installation directory
+(where you'll find your &quot;<span class="fixedwidth">interchange.cfg</span>&quot; file).
+</p>
+<p>
+If you don't have these directories,
+then you can create them as and when required.
+</p>
+<p>
+To load your UserTags,
+you should ensure that your &quot;<span class="fixedwidth">interchange.cfg</span>&quot; and/or
+&quot;<span class="fixedwidth">catalog.cfg</span>&quot; file has a line that looks like the following:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">include </span>usertags<span class="def_Symbol">/</span><span class="def_Symbol">*</span>tag
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_warning.gif" width="32" height="32" border="0" alt="Warning">
+</td>
+<td width="100%">
+<p class="title">Warning</p>
+<p style="margin-bottom: 0px">
+Avoid the temptation to place custom UserTags in one of the directories
+under the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/RunDir.html" title="RunDir (config)">RunDir</a></span> (usually &quot;<span class="fixedwidth">code</span>&quot;) directory.&nbsp;
+The files in these directories are considered to be part of the Interchange
+core distribution,
+and may be overwritten whenever you upgrade.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="UserTag_properties"></a>
+<h2>UserTag properties</h2>
+<a name="AddAttr"></a>
+<h3>AddAttr</h3>
+<p>
+Setting this property <em>true</em> causes Interchange to append a hash
+reference to the <a href="#Routine" title="&quot;Routine&quot; heading on this page">tag subroutine's</a> argument list.&nbsp;
+The passed hash reference contains all of the parameters passed to the
+tag, whether they appear in the <a href="#Order" title="&quot;Order&quot; heading on this page">Order</a> list or not.&nbsp;
+This allows for on-the-fly parameters, and parameters that depend upon
+other parameters etc.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+UserTag tagname AddAttr 1
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Alias"></a>
+<h3>Alias</h3>
+<p>
+An alias for an existing (or other user-defined) tag.&nbsp;
+It takes the form:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+UserTag tagname Alias existing_tag parameters
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+An Alias is the only property that does not require a Routine to process the tag.
+</p>
+<a name="AttrAlias"></a>
+<h3>AttrAlias</h3>
+<p>
+An alias for an existing attribute for defined tag.&nbsp;
+It takes the form:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+UserTag tagname AttrAlias alias attr
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+As an example, the standard <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/value.html" title="value (tags)">value</a>]</span> tag takes a named
+parameter called <span class="fixedwidth">name</span>,
+meaning that <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/value.html" title="value (tags)">value</a> name=&quot;var&quot;]</span>
+will display the value of a form field called <span class="fixedwidth">var</span>.&nbsp;
+If you put this line in your <span class="fixedwidth">catalog.cfg</span> file:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+UserTag value AttrAlias identifier name
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+then <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/value.html" title="value (tags)">value</a> identifier=var]</span> will be an equivalent call.
+</p>
+<a name="CanNest"></a>
+<h3>CanNest</h3>
+<p>
+Notifies Interchange that this tag must be checked for nesting.&nbsp;
+This only applies to tags that have <span class="fixedwidth"><a href="#HasEndTag" title="&quot;HasEndTag&quot; heading on this page">HasEndTag</a></span> defined,
+of course.&nbsp;
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+UserTag tagname CanNest 1
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<br>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_warning.gif" width="32" height="32" border="0" alt="Warning">
+</td>
+<td width="100%">
+<p class="title">Warning</p>
+<p style="margin-bottom: 0px">
+Your routine must handle the subtleties of nesting,
+so don't use this unless you are quite conversant with parser code.&nbsp;
+See the <span class="fixedwidth">tag_loop_list()</span> and <span class="fixedwidth">tag_if()</span> subroutines in
+<span class="fixedwidth">lib/Vend/Interpolate.pm</span> for examples of nesting tags.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="Description"></a>
+<h3>Description</h3>
+<p>
+A short description for the tag.&nbsp;
+If you want to to provide a long description, then you should use the
+<a href="#Documentation" title="&quot;Documentation&quot; heading on this page">Documentation</a> property.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+UserTag tagname Descrption This is the tag's description
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Documentation"></a>
+<h3>Documentation</h3>
+<p>
+Some usage documentation for the tag.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+UserTag tagname Documentation &lt;&lt;EOD<br>
+<br>
+&nbsp; &nbsp; Usage: &#91;tagname foo=&quot;bar&quot;]<br>
+<br>
+&nbsp; &nbsp; Returns: Baz<br>
+<br>
+EOD
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="HasEndTag"></a>
+<h3>HasEndTag</h3>
+<p>
+This attribute marks your custom tag as a &quot;container&quot;.&nbsp;
+Calls to your tag will be expected to include an ending <span class="fixedwidth">&#91;/tagname]</span>
+marker.&nbsp;
+The text in between the beginning <span class="fixedwidth">&#91;tagname]</span> and ending
+<span class="fixedwidth">&#91;/tagname]</span> will be the last argument sent to the defined subroutine.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+UserTag tagname HasEndTag 1
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Implicit"></a>
+<h3>Implicit</h3>
+<p>
+This defines a parameter as having an implicit value,
+meaning that it can just be an attribute instead of an
+<span class="fixedwidth">attribute=value</span> pair.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+UserTag tagname Implicit attribute value
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+If you want to set a standard include file to a fixed value by default,
+but don't want to have to specify
+<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/include.html" title="include (tags)">include</a> file=&quot;/long/path/to/file&quot;]</span> every time,
+you can just use the following:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+UserTag include Implicit file file=/long/path/to/file
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+and <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/include.html" title="include (tags)">include</a> file]</span> will be the equivalent.&nbsp;
+You can still specify another value with
+<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/include.html" title="include (tags)">include</a> file=&quot;/another/path/to/file&quot;]</span>, of course.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_warning.gif" width="32" height="32" border="0" alt="Warning">
+</td>
+<td width="100%">
+<p class="title">Warning</p>
+<p style="margin-bottom: 0px">
+The definition must refer to an attribute that has been defined
+using the <a href="#Order" title="&quot;Order&quot; heading on this page">Order</a> property,
+otherwise there will be big problems.&nbsp;
+Use this facility with caution!
+</p>
+</td>
+</tr>
+</table>
+
+<a name="Interpolate"></a>
+<h3>Interpolate</h3>
+<p>
+The behaviour for this property depends upon whether the tag
+is a container (i.e. whether or not <span class="fixedwidth"><a href="#HasEndTag" title="&quot;HasEndTag&quot; heading on this page">HasEndTag</a></span> is defined).&nbsp;
+If the tag is not a container then the <span class="fixedwidth">Interpolate</span> property causes
+the resulting text from the UserTag to be re-parsed for more Interchange tags.&nbsp;
+If it is a container tag then <span class="fixedwidth">Interpolate</span> causes the contents of
+the tag body text to be parsed for further Interchange tags before the tag
+routine is run.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+UserTag tagname Interpolate 1
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Also see the <span class="fixedwidth"><a href="#NoReparse" title="&quot;NoReparse&quot; heading on this page">NoReparse</a></span> attribute.
+</p>
+<a name="NoReparse"></a>
+<h3>NoReparse</h3>
+<p>
+The text returned by container tags is usually re-parsed for Interchange tags.&nbsp;
+This is not always desirable, and can lead to unexpected results.&nbsp;
+To counter this, the <span class="fixedwidth">NoReparse</span> attribute can be used to switch
+off this facility for the current <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserTag.html" title="UserTag (config)">UserTag</a></span>, as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+UserTag tagname NoReparse 1
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Order"></a>
+<h3>Order</h3>
+<p>
+This property defines the order in which parameters will be passed to
+the <span class="fixedwidth">Routine</span>, and defines parameter names.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+UserTag tagname Order param1 param2
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+A tag that was defined using the above <span class="fixedwidth">Order</span> could be called like
+this:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">tagname </span>param1<span class="def_Symbol">=</span><span class="def_String">&quot;foo&quot; </span>param2<span class="def_Symbol">=</span><span class="def_String">&quot;bar&quot;</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="PosNumber"></a>
+<h3>PosNumber</h3>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_availability.gif" width="32" height="32" border="0" alt="Deprecation notice">
+</td>
+<td width="100%">
+<p class="title">Deprecation notice</p>
+<p style="margin-bottom: 0px">
+This property has been deprecated, as the number is automatically
+calculated from the <a href="#Order" title="&quot;Order&quot; heading on this page">Order</a> property.&nbsp;
+Please do not use this property as it may be removed,
+without warning,
+at any time.
+</p>
+</td>
+</tr>
+</table>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+UserTag tagname Order&nbsp; &nbsp;&nbsp; foo bar baz<br>
+UserTag tagname PosNumber 3
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="PosRoutine"></a>
+<h3>PosRoutine</h3>
+<p>
+Identical to the <a href="#Routine" title="&quot;Routine&quot; heading on this page">Routine</a> property.&nbsp;
+This defines a subroutine that will be called when positional,
+rather than named, parameters are used
+(i.e. <span class="fixedwidth">&#91;usertag value]</span> instead of
+<span class="fixedwidth">&#91;usertag parameter=value]</span>.&nbsp;
+If not defined then the <span class="fixedwidth">Routine</span> is used,
+and Interchange will usually do the right thing.&nbsp;
+There is no real reason to use this property - just use <span class="fixedwidth"><a href="#Routine" title="&quot;Routine&quot; heading on this page">Routine</a></span>.
+</p>
+<a name="Routine"></a>
+<h3>Routine</h3>
+<p>
+An inline Perl subroutine that will be used to process the tag.&nbsp;
+It must not be named, and will be allowed to access unsafe elements
+only if <span class="fixedwidth">AllowGlobal</span> is set for the website in the
+<span class="fixedwidth">interchange.cfg</span> file.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+UserTag tagname Routine &lt;&lt;EOR<br>
+sub {<br>
+&nbsp; &nbsp; # your Perl code here<br>
+}<br>
+EOR
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Parameters defined with the Order property will be sent to the
+subroutine first, followed by any encapsulated text
+(if <span class="fixedwidth"><a href="#HasEndTag" title="&quot;HasEndTag&quot; heading on this page">HasEndTag</a></span> is set).
+</p>
+<p>
+The <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserTag.html" title="UserTag (config)">UserTag</a></span> facility,
+combined with <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/AllowGlobal.html" title="AllowGlobal (config)">AllowGlobal</a></span>,
+allows the user to define tags just as powerful as the standard
+Interchange tags.&nbsp;
+This is not recommended for the novice, though.
+</p>
+<a name="Version"></a>
+<h3>Version</h3>
+<p>
+The tag's version number, expressed as a free-form text value.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+UserTag tagname Version 1.2
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+</div>
+
+<!-- start of modification notice -->
+<div class="wikitext">
+    <table class="pageinfo" cellpadding="0" cellspacing="0">
+	<tr>
+	    <td>
+Category:&nbsp; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_Perl_usage.html">Interchange Perl usage</a>
+	    </td>
+	</tr>
+
+
+	<tr>
+	    <td>
+		
+		Last modified by: <a href="http://interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin">Kevin Walsh</a><br>
+		Modification date: Tuesday 14 August 2007 at 11:26 AM (EDT)
+	    </td>
+	</tr>
+    </table>
+</div>
+<!-- end of modification notice -->
+
+
+
+<!-- end page: wiki/display (Creating_custom_Interchange_tags) -->
+
+
+
+<!-- end of page text -->
+	    </td>
+
+	</tr>
+    </table>
+<!-- START VAR: FOOTER -->
+
+<table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+	<td>
+	    <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/donations.html">Donations</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	</td>
+
+    </tr>
+</table>
+
+<!-- END VAR: FOOTER -->
+
+<!-- START VAR: COPYRIGHT -->
+
+
+    <div class="copyright">
+	Copyright &copy; 2001-2020
+	<a href="http://cursor.biz/index.html">Cursor Software Limited</a>.&nbsp;
+	All Rights Reserved.
+    </div>
+
+<!-- END VAR: COPYRIGHT -->
+
+</body>
+</html>

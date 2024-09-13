@@ -1,0 +1,82 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Databases: Text Source Files</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_1.html">Parent Topic</A> | <A HREF="icdatabase_1.html">Previous Topic</A> | <A HREF="icdatabase_3.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>1.1. Text Source Files</H2>
+<P>Interchange reads delimited text files to obtain data. However, the text files are not the database. They are the source information for the database tables.</P>
+<P>By default, all database source files are located in the <TT>products</TT> subdirectory of the catalog directory. The main products database is in the <TT>products/products.txt</TT> file in the supplied demo catalog.</P>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>If you are using one of the internal database methods, any changes made to the ASCII source file will be reflected in the database in the next user session. If the product database contains less than a thousand records, updates will be instantaneous. If the product database is larger, updates will take longer. Use the <TT>NoImport</TT> reference tag to stop auto updating.
+<HR WIDTH="80%" ALIGN="Left"></P>
+<P>In the following configuration directive:</P>
+<PRE>
+   Database  products  products.txt   TAB
+</PRE>
+<P>the <TT>products</TT> table will obtain its source information from the file <TT>products.txt</TT>. What is done with it depends on the type of underlying database being used. The different types and their behavior are described below:</P>
+<P><B>GDBM</B></P>
+<UL>
+The database source file is checked to see if it is newer than the actual database file, <TT>products.gdbm</TT>. If it is, the database table is re-imported from the file.
+<BR>
+This behavior can be changed in a few ways. If files should not be imported unless the <TT>.gdbm</TT> file disappears, set the <TT>NoImport</TT> directive:</UL>
+<PRE>
+            NoImport  products
+</PRE>
+<UL>
+If the database source file is only to be imported at catalog start-up time, use the IMPORT_ONCE modifier:</UL>
+<PRE>
+            Database products IMPORT_ONCE 1
+</PRE>
+<UL>
+GDBM is the default database type if the GDBM_File Perl module is installed (as it is on LINUX).</UL>
+<P><B>DB_File</B></P>
+<UL>
+The database source file is checked to see if it is newer than the actual database file, <TT>products.db</TT>. If it is, the database table is re-imported from the file. You can change this behavior in the same way as GDBM_File, described above.
+<BR>
+DB_File is the default database type if the GDBM_File Perl module is not installed. This is common on FreeBSD. To specify DB_File as your database type, set it in <TT>catalog.cfg</TT> with a Database directive:</UL>
+<PRE>
+           Database  products  DB_FILE   1
+</PRE>
+<P><B>DBI/SQL</B></P>
+<UL>
+If a file named <TT>products.sql</TT> is in the same directory as <TT>products.txt</TT>, the database table will not be imported from the ASCII source. If there is no <TT>products.sql</TT>, the following will occur:
+<BR>
+DBI/SQL imports will only happen at catalog configuration time.<UL>
+Interchange will connect to the SQL database using the specified DSN. (DBI parameter meaning &quot;Database Source Name&quot;.)
+<BR>
+The table will be dropped with &quot;DROP TABLE products;&quot;. This will occur without warning. NOTE: This can be prevented in several ways. See <TT>NoImport External</TT> or the SQL documentation for more information.
+<BR>
+The table will be created. If there are COLUMN_DEF specifications in <TT>catalog.cfg</TT>, they will be used. Otherwise, the key (first field in the text file by default) will be created with a <TT>char(16)</TT> type and all other fields will be created as <TT>char(128)</TT>. The table creation statement will be written to the <TT>error.log</TT> file.
+<BR>
+The text source file will be imported into the SQL database. Interchange will place the data in the columns. Data typing must be user-configured. This means that if &quot;none&quot; is placed in a field, and it is defined as a numeric type, the database import will not succeed. And if it does not succeed, the catalog will not become active.</UL></UL>
+<P><B>In-Memory</B></P>
+<UL>
+Every time the catalog is configured, the <TT>products.txt</TT> file is imported into memory and forms the database. Otherwise, the database is not changed. The in-memory database is the default database if there is no GDBM_File or DB_File Perl module installed; specify it with:</UL>
+<PRE>
+           Database   products   MEMORY   1
+</PRE>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_1.html">Parent Topic</A> | <A HREF="icdatabase_1.html">Previous Topic</A> | <A HREF="icdatabase_3.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

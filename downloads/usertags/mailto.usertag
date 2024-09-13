@@ -1,0 +1,83 @@
+UserTag mailto Documentation <<EOD
+
+    Simple email address munger to try to fool spambots.
+
+    Author: Kevin Walsh <kevin@cursor.biz>
+
+    Copyright (c) 2005 Cursor Software Limited.
+    All Rights Reserved.
+
+    ----------------------------------------------------------------------
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public
+    License along with this program; if not, write to the Free
+    Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+    MA  02111-1307  USA.
+
+    ----------------------------------------------------------------------
+
+    The idea behind this UserTag is that dumb spambots just look for "@"
+    characters on your pages.  If they find one then they try to extract
+    an email address from the surrounding text.  This UserTag converts "@"
+    into "%40" and "." into "%2e".  For good measure, it'll also encode
+    a subject parameter into the resulting "mailto:" URI.
+
+    Note that "clever" spambots will look for "%40" and "&#64;" as well
+    as "@".
+
+    Usage:
+	[mailto address="kevin@cursor.biz" subject="Testing 1 2 3"]
+
+    Example output:
+	mailto:kevin%40cursor%2ebiz?subject=testing%201%202%203
+
+    Use as follows:
+
+        <a href="[mailto ...]">This is a test</a>
+
+    Use the associated "encode_email" filter (available elsewhere) for
+    "displayable" email addresses.  Example:
+
+        [filter encode_email]kevin@cursor.biz[/filter]
+
+    Which will translate the text into:
+
+	kevin&#64;cusor&#46;biz
+
+
+    A complete mailto specification could look like this:
+
+	<a href="[mailto address='kevin@cursor.biz' subject='Testing 1 2 3']">[filter encode_email]kevin@cursor.biz[/filter]</a>
+
+    Which would translate to this:
+
+	<a href="mailto:kevin%40cursor%2ebiz?subject=testing%201%202%203">kevin&#64;cusor&#46;biz</a>
+
+EOD
+
+UserTag mailto Order address subject
+UserTag mailto Routine <<EOR
+sub {
+    my ($address,$subject) = @_;
+    return unless $address;
+
+    $address =~ s/@/%40/g;
+    $address =~ s/\./%2e/g;
+
+    if (defined($subject) && length($subject)) {
+	$subject =~ s/(\W)/sprintf('%%%02x',ord($1))/ge;
+	$address .= "?subject=$subject";
+    }
+    return "mailto:$address";
+}
+EOR

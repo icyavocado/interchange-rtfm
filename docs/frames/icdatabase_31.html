@@ -1,0 +1,160 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Databases: One-Click Searches</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_25.html">Parent Topic</A> | <A HREF="icdatabase_30.html">Previous Topic</A> | <A HREF="icdatabase_32.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>5.6. One-Click Searches</H2>
+<P>Interchange allows a search to be passed in a URL, as shown above. Just specify the search with the special page parameter search or special page <TT>scan</TT>. Here is an example:</P>
+<PRE>
+    [page search=&quot;
+               se=Impressionists
+               sf=category
+           &quot;]
+       Impressionist Paintings
+    &lt;/a&gt;
+</PRE>
+<P>This is the same:</P>
+<PRE>
+    [page scan se=Impressionists/sf=category]
+       Impressionist Paintings
+    &lt;/a&gt;
+</PRE>
+<P>Here is the same thing from a home page (assuming /cgi-bin/vlink is the CGI path for Interchange's vlink):</P>
+<PRE>
+    &lt;A HREF=&quot;/cgi-bin/vlink/scan/se=Impressionists/sf=category&quot;&gt;
+       Impressionist Paintings
+    &lt;/A&gt;
+</PRE>
+<P>The two-letter abbreviations are mapped with these letters:</P>
+<PRE>
+ ac  mv_all_chars
+ bd  mv_base_directory
+ bs  mv_begin_string
+ ck  mv_cache_key
+ co  mv_coordinate
+ cs  mv_case
+ cv  mv_verbatim_columns
+ de  mv_dict_end
+ df  mv_dict_fold
+ di  mv_dict_limit
+ dl  mv_dict_look
+ DL  mv_raw_dict_look
+ do  mv_dict_order
+ dr  mv_record_delim
+ em  mv_exact_match
+ er  mv_spelling_errors
+ ff  mv_field_file
+ fi  mv_search_file
+ fm  mv_first_match
+ fn  mv_field_names
+ hs  mv_head_skip
+ ix  mv_index_delim
+ lb  mv_search_label
+ lf  mv_like_field
+ lo  mv_list_only
+ lr  mv_search_line_return
+ ls  mv_like_spec
+ ma  mv_more_alpha
+ mc  mv_more_alpha_chars
+ md  mv_more_decade
+ ml  mv_matchlimit
+ mm  mv_max_matches
+ MM  mv_more_matches
+ mp  mv_profile
+ ms  mv_min_string
+ ne  mv_negate
+ ng  mv_negate
+ np  mv_nextpage
+ nu  mv_numeric
+ op  mv_column_op
+ os  mv_orsearch
+ pf  prefix
+ ra  mv_return_all
+ rd  mv_return_delim
+ rf  mv_return_fields
+ rn  mv_return_file_name
+ rr  mv_return_reference
+ rs  mv_return_spec
+ se  mv_searchspec
+ sf  mv_search_field
+ sg  mv_search_group
+ si  mv_search_immediate
+ sm  mv_start_match
+ sp  mv_search_page
+ sq  mv_sql_query
+ sr  mv_search_relate
+ st  mv_searchtype
+ su  mv_substring_match
+ tf  mv_sort_field
+ to  mv_sort_option
+ un  mv_unique
+ va  mv_value
+</PRE>
+<P>These can be treated just the same as form variables on the page, except that they can't contain a new line. If using the multi-line method of specification, the characters will automatically be escaped for a URL.</P>
+<P>IMPORTANT NOTE: An incompatibility in earlier Interchange catalogs is specifying <TT>[page scan/se=searchstring]</TT>. This is interpreted by the parser as <TT>[page scan/se=&quot;searchstring&quot;]</TT> and will cause a bad URL. Change this to <TT>[page scan se=searchstring]</TT>, or perhaps better yet:</P>
+<PRE>
+   [page search=&quot;
+                   se=searchstring
+           &quot;]
+</PRE>
+<P>A one-click search may be specified in three different ways.</P>
+<P><B>Original</B></P>
+<UL>
+To do an OR search on the fields category and artist for the strings &quot;Surreal&quot; and &quot;Gogh,&quot; while matching substrings, do:</UL>
+<PRE>
+         [page scan se=Surreal/se=Gogh/os=yes/su=yes/sf=artist/sf=category]
+            Van Gogh -- compare to surrealists
+         &lt;/a&gt;
+</PRE>
+<UL>
+In this method of specification, to replace a / (slash) in a file name (for the sp, bd, or fi parameter), the shorthand of :: must be used, i.e., sp=results::standard. (This may not work for some browsers, so put the page in the main pages directory or define the page in a search profile.)</UL>
+<P><B>Multi-Line</B></P>
+<UL>
+Specify parameters one to a line, as well.</UL>
+<PRE>
+            [page scan
+                se=&quot;Van Gogh&quot;
+                sp=lists/surreal
+                os=yes
+                su=yes
+                sf=artist
+                sf=category
+            ] Van Gogh -- compare to surrealists &lt;/a&gt;
+</PRE>
+<UL>
+Any &quot;unsafe&quot; characters will be escaped. To search for trailing spaces (unlikely), quote.</UL>
+<P><B>Ampersand</B></P>
+<UL>
+Substitute &amp; for / in the specification and be able to use / and quotes and spaces in the specification.</UL>
+<PRE>
+         [page href=scan se=&quot;Van Gogh&quot;&amp;sp=lists/surreal&amp;os=yes&amp;su=yes&amp;sf=artist&amp;sf=category]
+            Van Gogh -- compare to surrealists
+         &lt;/a&gt;
+</PRE>
+<UL>
+Any &quot;unsafe&quot; characters will be escaped.</UL>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_25.html">Parent Topic</A> | <A HREF="icdatabase_30.html">Previous Topic</A> | <A HREF="icdatabase_32.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

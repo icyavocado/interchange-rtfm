@@ -1,0 +1,251 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: log</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_77.html">Previous Topic</A> | <A HREF="ictags_79.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.44. log</H2>
+<P>Log contained text to specified file.</P>
+<H3><A NAME="Summary">4.44.1. Summary</A></H3>
+<PRE>
+    [<B>log</B> file <I>other_named_attributes</I>]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_78.html#log_file">arg</A>
+</TD>
+<TD VALIGN='Top'>
+Alias for file
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_78.html#log_create">create</A>
+</TD>
+<TD VALIGN='Top'>
+Set create=1 to create the file if not present
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_78.html#log_delim">delim</A>
+</TD>
+<TD VALIGN='Top'>
+Line delimiter
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_78.html#log_file">file</A>
+</TD>
+<TD VALIGN='Top'>
+name of file to log to. 'file=&quot;&gt;<I>filename</I>&quot;' also sets 'create' attribute.
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_78.html#log_hide">hide</A>
+</TD>
+<TD VALIGN='Top'>
+Suppress status otherwise returned by tag to the page.
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_78.html#log_process">process</A>
+</TD>
+<TD VALIGN='Top'>
+Processing (if any) to apply to the content while logging
+<UL>
+<LI>nostrip (don't strip leading/trailing whitespace and convert &quot;\r\n&quot; to &quot;\n&quot;</UL>
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_78.html#log_record_delim">record_delim</A>
+</TD>
+<TD VALIGN='Top'>
+Record delimiter
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_78.html#log_type">type</A>
+</TD>
+<TD VALIGN='Top'>
+Log type
+<UL>
+<LI>text (ordinary text file)
+<LI>quot (delimited entries)
+<LI>error (add Interchange error formatting and time/location stamps)</UL>
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_interpolate">interpolate</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_reparse">reparse</A>
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>no</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Container tag
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Has Subtags
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Nests
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+    [log file]
+---
+    TODO: (tag result)
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+   $Tag-&gt;log(  { file =&gt; VALUE_file
+}, $body  );
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;log(file, $attribute_hash_reference, $body);
+</PRE>
+<H3><A NAME="Description">4.44.2. Description</A></H3>
+<P>Log contained text to specified file.</P>
+<H4><A NAME="log_create"> </A>4.44.2.1. <A NAME="log_create">create</A></H4>
+<P>Set create=1 to create the file if not present</P>
+<H4><A NAME="log_delim"> </A>4.44.2.2. <A NAME="log_delim">delim</A></H4>
+<P>Line delimiter</P>
+<H4><A NAME="log_file"> </A>4.44.2.3. <A NAME="log_file">file</A></H4>
+<P>name of file to log to. 'file=&quot;&gt;<I>filename</I>&quot;' also sets 'create' attribute.</P>
+<H4><A NAME="log_hide"> </A>4.44.2.4. <A NAME="log_hide">hide</A></H4>
+<P>Suppress status otherwise returned by tag to the page.</P>
+<H4><A NAME="log_process"> </A>4.44.2.5. <A NAME="log_process">process</A></H4>
+<P>Processing (if any) to apply to the content while logging</P>
+<UL>
+<LI>nostrip (don't strip leading/trailing whitespace and convert &quot;\r\n&quot; to &quot;\n&quot;</UL>
+<H4><A NAME="log_record_delim"> </A>4.44.2.6. <A NAME="log_record_delim">record_delim</A></H4>
+<P>Record delimiter</P>
+<H4><A NAME="log_type"> </A>4.44.2.7. <A NAME="log_type">type</A></H4>
+<P>Log type</P>
+<UL>
+<LI>text (ordinary text file)
+<LI>quot (delimited entries)
+<LI>error (add Interchange error formatting and time/location stamps)</UL>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_77.html">Previous Topic</A> | <A HREF="ictags_79.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

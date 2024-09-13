@@ -1,0 +1,228 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: userdb</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_118.html">Previous Topic</A> | <A HREF="ictags_120.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.85. userdb</H2>
+<H3><A NAME="Summary">4.85.1. Summary</A></H3>
+<P>Parameters: <B>function</B></P>
+<P>Positional parameters in same order.</P>
+<P><B>The attribute hash reference is passed</B> to the subroutine after the parameters as the last argument. <B>This may mean that there are parameters not shown here.</B></P>
+<P>Invalidates cache: <B>YES</B></P>
+<P>Attribute aliases</P>
+<PRE>
+            name ==&gt; nickname
+            table ==&gt; db
+    [<B>userdb</B> function <I>other_named_attributes</I>]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_119.html#userdb_function">function</A>
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_119.html#userdb_nickname">name</A>
+</TD>
+<TD VALIGN='Top'>
+Alias for nickname
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_119.html#userdb_db">table</A>
+</TD>
+<TD VALIGN='Top'>
+Alias for db
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_interpolate">interpolate (reparse)</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>YES</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Container tag
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Has Subtags
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Nests
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+    [userdb function]
+---
+    TODO: (tag result)
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+   $Tag-&gt;userdb({
+       function =&gt; VALUE
+   });
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;userdb(function, $attribute_hash_reference);
+</PRE>
+<H3><A NAME="Description">4.85.2. Description</A></H3>
+<P>Interchange provides a <TT>[userdb ...]</TT> tag to access the UserDB functions.</P>
+<PRE>
+    [userdb
+        function=function_name
+        username=&quot;username&quot;*
+        password=&quot;password&quot;*
+        verify=&quot;password&quot;*
+        oldpass=&quot;old password&quot;*
+        shipping=&quot;fields for shipping save&quot;
+        billing=&quot;fields for billing save&quot;
+        preferences=&quot;fields for preferences save&quot;
+        force_lower=1
+        param1=value*
+        param2=value*
+        hide=1
+        show=1
+        ...
+    ]
+</PRE>
+<P>* Optional</P>
+<P>It is normally called in an <TT>mv_click</TT> or <TT>mv_check</TT> setting, as in:</P>
+<PRE>
+    [set Login]
+    mv_todo=return
+    mv_nextpage=welcome
+    [userdb function=login]
+    [/set]
+
+    &lt;FORM ACTION=&quot;[process]&quot; METHOD=POST&gt;
+    &lt;INPUT TYPE=hidden NAME=mv_click VALUE=Login&gt;
+    Username &lt;INPUT NAME=mv_username SIZE=10&gt;
+    Password &lt;INPUT NAME=mv_password SIZE=10&gt;
+    &lt;/FORM&gt;
+</PRE>
+<P>There are several global parameters that apply to any use of the <TT>userdb</TT> functions. Most importantly, by default the database table is set to be <I>userdb</I>. If you must use another table name, then you should include a <TT>database=table</TT> parameter with any call to <TT>userdb</TT>. The global parameters (default in parentheses):</P>
+<PRE>
+    database     Sets user database table (userdb)
+    hide         Hide the return value of certain functions
+                 (including login, new_account, save, load)
+    show         Show the return value of certain functions
+                 or the error message, if any (0)
+    force_lower  Force possibly upper-case database fields
+                 to lower case session variable names (0)
+    billing      Set the billing fields (see Accounts)
+    shipping     Set the shipping fields (see Address Book)
+    preferences  Set the preferences fields (see Preferences)
+    bill_field   Set field name for accounts (accounts)
+    addr_field   Set field name for address book (address_book)
+    pref_field   Set field name for preferences (preferences)
+    cart_field   Set field name for cart storage (carts)
+    pass_field   Set field name for password (password)
+    time_field   Set field for storing last login time (time)
+    expire_field Set field for expiration date (expire_date)
+    acl          Set field for simple access control storage (acl)
+    file_acl     Set field for file access control storage (file_acl)
+    db_acl       Set field for database access control storage (db_acl)
+</PRE>
+<H4><A NAME="userdb_function"> </A>4.85.2.1. <A NAME="userdb_function">function</A></H4>
+<H4><A NAME="userdb_nickname"> </A>4.85.2.2. <A NAME="userdb_nickname">name</A></H4>
+<H4><A NAME="userdb_db"> </A>4.85.2.3. <A NAME="userdb_db">table</A></H4>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_118.html">Previous Topic</A> | <A HREF="ictags_120.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

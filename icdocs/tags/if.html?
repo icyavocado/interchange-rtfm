@@ -1,0 +1,1962 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>if - RTFM</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+
+    <meta name="author" content="Kevin Walsh">
+    <meta name="publisher" content="Cursor Software Limited">
+    <meta name="copyright" content="2001-2009, Cursor Software Limited">
+    <meta name="licence" content="GPLv2+ (Unknown licence)">
+    <meta name="generator" content="Interchange 5.7.0 -- www.icdevgroup.org">
+    <meta name="robots" content="index,follow,noarchive">
+    <meta name="keywords" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="description" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+
+    <meta name="verify-v1" content="KqlU/bxZj9Y2ZdZ/3RwuzgVSMIrZ8XM2wqbjSaEo3O4=">
+
+    <meta name="y_key" content="e2dd60be5777fbc8">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
+    <link rel="search" type="application/opensearchdescription+xml" href="http://www.interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="stylesheet" href="/decor/css/website.css">
+    <link rel="stylesheet" href="/decor/css/wiki.css">
+    <link rel="stylesheet" href="/decor/css/neo.css">
+
+
+    <script type="text/javascript" language="JavaScript">
+    <!--
+	if (top != self){
+	    top.location = location;
+	}
+
+    -->
+    </script>
+</head>
+<body>
+<!-- START VAR: LOGOBAR -->
+<table id="rtfmheader" cellpadding="0" cellspacing="0">
+    <tr>
+	<td><a href="http://www.interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+
+	<td width="100%" style="text-align: right; padding: 10px">
+
+	    <form action="http://www.interchange-rtfm.pullingshots.ca/search.html" method="POST">
+		<input type="hidden" name="mv_session_id" value="nsession">
+		<input type="hidden" name="mv_profile" value="cms_search">
+		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
+		<input type="submit" class="button" value="Search">
+	    </form>
+
+	</td>
+    </tr>
+</table>
+<table id="breadcrumbs" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+	<td>
+	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a></span>
+	    <span class="nowrap">&gt; <span class="current">if</span></span>
+	</td>
+
+    </tr>
+</table>
+<!-- END VAR: LOGOBAR -->
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+
+	    <td id="leftside">
+<!-- START COMPONENT: navigation -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th>NAVIGATION</th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+
+<!-- END COMPONENT: navigation -->
+<!-- START COMPONENT: wiki_recent -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th><span class="nowrap">RECENTLY VIEWED</span></th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/if.html">if</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+<!-- END COMPONENT: wiki_recent -->
+<!-- START COMPONENT: wiki_backlinks -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th><span class="nowrap">PAGES THAT LINK HERE</span></th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/bounce.html">bounce</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/error.html">error</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Form_callback_functions.html">Form callback functions</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/NoAbsolute.html">NoAbsolute</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+<!-- END COMPONENT: wiki_backlinks -->
+<!-- START COMPONENT: account -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+
+    <tr>
+	<th>ACCOUNT LOGIN</th>
+    </tr>
+
+    <tr>
+	<td class="first">
+	    <p>You are not logged in</p>
+	</td>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+	    </ul>
+	</td>
+    </tr>
+
+</table>
+
+
+
+<!-- END COMPONENT: account -->
+<!-- START COMPONENT: icpowered -->
+
+<div style="text-align: center; margin: 10px; margin-top: 0px">
+    <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+</div>
+
+
+
+<!-- START COMPONENT: icpowered -->
+
+	    </td>
+
+	    <td id="bodytext">
+<!-- start of page text -->
+
+<!-- start page: wiki/display (tags/if) -->
+
+<div class="wikitext">
+<a name="if"></a>
+<h1>if</h1>
+<p>
+Allows conditional parsing based upon the setting of various Interchange
+session and database values.
+</p>
+<!-- start of toc --><div class="toc">
+<table>
+<tr valign="top">
+<th>Table of contents</th>
+</tr>
+<tr><td class="h2"><a href="#Summary">1. Summary</a></td></tr>
+<tr><td class="h2"><a href="#Examples">2. Examples</a></td></tr>
+<tr><td class="h3"><a href="#Tag_expansion_example_positional_parameters">2.1. Tag expansion example (positional parameters)</a></td></tr>
+<tr><td class="h3"><a href="#Tag_expansion_example_named_parameters">2.2. Tag expansion example (named parameters)</a></td></tr>
+<tr><td class="h2"><a href="#Description">3. Description</a></td></tr>
+<tr><td class="h2"><a href="#Test_types">4. Test types</a></td></tr>
+<tr><td class="h3"><a href="#config">4.1. config</a></td></tr>
+<tr><td class="h3"><a href="#cgi">4.2. cgi</a></td></tr>
+<tr><td class="h3"><a href="#data">4.3. data</a></td></tr>
+<tr><td class="h3"><a href="#discount">4.4. discount</a></td></tr>
+<tr><td class="h3"><a href="#errors">4.5. errors</a></td></tr>
+<tr><td class="h3"><a href="#explicit">4.6. explicit</a></td></tr>
+<tr><td class="h3"><a href="#field">4.7. field</a></td></tr>
+<tr><td class="h3"><a href="#file">4.8. file</a></td></tr>
+<tr><td class="h3"><a href="#file-A">4.9. file-A</a></td></tr>
+<tr><td class="h3"><a href="#file-B">4.10. file-B</a></td></tr>
+<tr><td class="h3"><a href="#file-d">4.11. file-d</a></td></tr>
+<tr><td class="h3"><a href="#file-e">4.12. file-e</a></td></tr>
+<tr><td class="h3"><a href="#file-f">4.13. file-f</a></td></tr>
+<tr><td class="h3"><a href="#file-l">4.14. file-l</a></td></tr>
+<tr><td class="h3"><a href="#file-M">4.15. file-M</a></td></tr>
+<tr><td class="h3"><a href="#file-r">4.16. file-r</a></td></tr>
+<tr><td class="h3"><a href="#file-s">4.17. file-s</a></td></tr>
+<tr><td class="h3"><a href="#file-T">4.18. file-T</a></td></tr>
+<tr><td class="h3"><a href="#file-w">4.19. file-w</a></td></tr>
+<tr><td class="h3"><a href="#file-x">4.20. file-x</a></td></tr>
+<tr><td class="h3"><a href="#global">4.21. global</a></td></tr>
+<tr><td class="h3"><a href="#items">4.22. items</a></td></tr>
+<tr><td class="h3"><a href="#ordered">4.23. ordered</a></td></tr>
+<tr><td class="h3"><a href="#pragma">4.24. pragma</a></td></tr>
+<tr><td class="h3"><a href="#scratch">4.25. scratch</a></td></tr>
+<tr><td class="h3"><a href="#scratchd">4.26. scratchd</a></td></tr>
+<tr><td class="h3"><a href="#session">4.27. session</a></td></tr>
+<tr><td class="h3"><a href="#validcc">4.28. validcc</a></td></tr>
+<tr><td class="h3"><a href="#value">4.29. value</a></td></tr>
+<tr><td class="h3"><a href="#variable">4.30. variable</a></td></tr>
+<tr><td class="h2"><a href="#Sub-tags">5. Sub-tags</a></td></tr>
+<tr><td class="h3"><a href="#then">5.1. &#91;then]</a></td></tr>
+<tr><td class="h3"><a href="#elsif_type_term_op_compare">5.2. &#91;elsif type term op compare]</a></td></tr>
+<tr><td class="h3"><a href="#else">5.3. &#91;else]</a></td></tr>
+<tr><td class="h3"><a href="#condition">5.4. &#91;condition]</a></td></tr>
+<tr><td class="h3"><a href="#and">5.5. &#91;and]</a></td></tr>
+<tr><td class="h3"><a href="#or">5.6. &#91;or]</a></td></tr>
+<tr><td class="h2"><a href="#Parameters">6. Parameters</a></td></tr>
+<tr><td class="h3"><a href="#type">6.1. type</a></td></tr>
+<tr><td class="h3"><a href="#term">6.2. term</a></td></tr>
+<tr><td class="h3"><a href="#op">6.3. op</a></td></tr>
+<tr><td class="h3"><a href="#compare">6.4. compare</a></td></tr>
+<tr>
+<td class="spacer">&nbsp;</td>
+</tr>
+</table>
+</div><!-- end of toc -->
+<a name="Summary"></a>
+<h2>Summary</h2>
+
+<p>
+<ul>
+<li><span class="fixedwidth">&#91;if type term op compare] ... &#91;/if]</span></li>
+</ul>
+
+<br>
+<table width="100%" class="border">
+<tr valign="top">
+<th class="grid">Parameter
+</th>
+<th class="grid">Description
+</th>
+<th class="grid">Default
+</th>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#type" title="&quot;type&quot; heading on this page">type</a></td>
+<td class="grid">The <a href="#Test_types" title="&quot;Test types&quot; heading on this page">type of test</a> you would like to perform.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#type" title="&quot;type&quot; heading on this page">base</a></td>
+<td class="grid">Alias for <a href="#type" title="&quot;type&quot; heading on this page">type</a>.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#term" title="&quot;term&quot; heading on this page">term</a></td>
+<td class="grid">Reference to a value, within the <a href="#type" title="&quot;type&quot; heading on this page">type</a> context.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#op" title="&quot;op&quot; heading on this page">op</a></td>
+<td class="grid">The comparison operator to be used.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#op" title="&quot;op&quot; heading on this page">operator</a></td>
+<td class="grid">Alias for <a href="#op" title="&quot;op&quot; heading on this page">op</a>.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#compare" title="&quot;compare&quot; heading on this page">compare</a></td>
+<td class="grid">Value to be compared with the <a href="#term" title="&quot;term&quot; heading on this page">term</a>.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#compare" title="&quot;compare&quot; heading on this page">comp</a></td>
+<td class="grid">Alias for <a href="#compare" title="&quot;compare&quot; heading on this page">compare</a>.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#compare" title="&quot;compare&quot; heading on this page">condition</a></td>
+<td class="grid">Alias for <a href="#compare" title="&quot;compare&quot; heading on this page">compare</a>.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Universal_tag_attributes.html#hide" title="&quot;hide&quot; heading on the &quot;Universal tag attributes&quot; page">hide</a></td>
+<td class="grid">Suppress any output text that would ordinarily be returned from this tag.&nbsp;
+(This universal parameter was introduced with Interchange version 5.5.2.)</td>
+<td class="grid">No
+</td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Universal_tag_attributes.html#interpolate" title="&quot;interpolate&quot; heading on the &quot;Universal tag attributes&quot; page">interpolate</a></td>
+<td class="grid">Parse Interchange tags, included in the body text, before this container tag executes.</td>
+<td class="grid">No
+</td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Universal_tag_attributes.html#reparse" title="&quot;reparse&quot; heading on the &quot;Universal tag attributes&quot; page">reparse</a></td>
+<td class="grid">Process any Interchange tags found in the text output from this tag.</td>
+<td class="grid">Yes
+</td>
+</tr>
+</table>
+
+<a name="Examples"></a>
+<h2>Examples</h2>
+<a name="Tag_expansion_example_positional_parameters"></a>
+<h3>Tag expansion example (positional parameters)</h3>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">tmpn foo</span><span class="def_Symbol">]</span><span class="def_Syntax">bar</span><span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">tmpn</span><span class="def_Symbol">]</span><br>
+<br>
+<span class="def_Symbol">[</span><span class="def_Syntax">if scratch foo eq </span><span class="def_String">&quot;bar&quot;</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">Correct </span><span class="def_Symbol">- </span><span class="def_Syntax">scratch foo is bar</span><span class="def_Symbol">.&nbsp; </span>I<span class="def_String">'</span>d <span class="def_Syntax">award you a prize if I had one</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">Bzzzt</span><span class="def_Symbol">!&nbsp; </span><span class="def_Syntax">WRONG</span><span class="def_Symbol">!&nbsp; </span><span class="def_Syntax">The correct answer is </span><span class="def_Symbol">[</span><span class="def_Syntax">scratch foo</span><span class="def_Symbol">]</span><span class="def_Symbol">.</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">You leave with nothing</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]</span><br>
+</span>
+</td>
+</tr>
+<tr>
+<td class="hr">
+<span class="fixedwidth">
+&nbsp; &nbsp; <span class="def_Syntax">Correct </span><span class="def_Symbol">- </span><span class="def_Syntax">scratch foo is bar</span><span class="def_Symbol">.&nbsp; </span>I<span class="def_String">'</span>d <span class="def_Syntax">award you a prize if I had one</span><span class="def_Symbol">.
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Tag_expansion_example_named_parameters"></a>
+<h3>Tag expansion example (named parameters)</h3>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">tmpn foo</span><span class="def_Symbol">]</span><span class="def_Syntax">bar</span><span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">tmpn</span><span class="def_Symbol">]</span><br>
+<br>
+<span class="def_Symbol">[</span><span class="def_Syntax">if type</span><span class="def_Symbol">=</span><span class="def_String">&quot;scratch&quot; </span><span class="def_Syntax">term</span><span class="def_Symbol">=</span><span class="def_String">&quot;foo&quot; </span><span class="def_Syntax">op</span><span class="def_Symbol">=</span><span class="def_String">&quot;eq&quot; </span><span class="def_Syntax">compare</span><span class="def_Symbol">=</span><span class="def_String">&quot;bar&quot;</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">Correct </span><span class="def_Symbol">- </span><span class="def_Syntax">scratch foo is bar</span><span class="def_Symbol">.&nbsp; </span><span class="def_Syntax">Well played</span><span class="def_Symbol">!</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">Bzzzt</span><span class="def_Symbol">!&nbsp; </span><span class="def_Syntax">WRONG</span><span class="def_Symbol">!&nbsp; </span><span class="def_Syntax">The correct answer is </span><span class="def_Symbol">[</span><span class="def_Syntax">scratch foo</span><span class="def_Symbol">]</span><span class="def_Symbol">.</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">You are the weakest link</span><span class="def_Symbol">.</span><span class="def_Symbol">.</span><span class="def_Symbol">.&nbsp; </span><span class="def_Syntax">Goodbye</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]</span><br>
+</span>
+</td>
+</tr>
+<tr>
+<td class="hr">
+<span class="fixedwidth">
+&nbsp; &nbsp; <span class="def_Syntax">Correct </span><span class="def_Symbol">- </span><span class="def_Syntax">scratch foo is bar</span><span class="def_Symbol">.&nbsp; </span><span class="def_Syntax">Well played</span><span class="def_Symbol">!
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Description"></a>
+<h2>Description</h2>
+<p>
+This tag allows the conditional building of HTML and/or Interchange tag regions,
+based upon the setting of various Interchange session and database values.&nbsp;
+The general form is as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if type term op compare</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">then</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">If true then this is shown as part of the document output</span><span class="def_Symbol">.</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">The </span><span class="def_String">&quot;then&quot; </span><span class="def_Syntax">container is optional in most cases</span><span class="def_Symbol">.&nbsp; </span><span class="def_Syntax">If </span><span class="def_Symbol">! </span><span class="def_Syntax">is </span>prepended<br>
+&nbsp; &nbsp; <span class="def_Syntax">to the type setting</span><span class="def_Symbol">, </span><span class="def_Syntax">the sense is reversed and this will be </span>output<br>
+&nbsp; &nbsp; <span class="def_Syntax">for a false condition</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">then</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">elsif type term op compare</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">Optional</span><span class="def_Symbol">, </span><span class="def_Syntax">tested if the initial </span><span class="def_String">&quot;if&quot; </span><span class="def_Syntax">test </span>fails<br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">elsif</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">Optional output when all other tests </span>fail<br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The <span class="fixedwidth">&#91;if]</span> tag can also have some variants:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if type</span><span class="def_Symbol">=</span><span class="def_Syntax">explicit compare</span><span class="def_Symbol">=</span>`$<span class="def_Syntax">perl</span><span class="def_Symbol">_</span>code`<span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">Output if valid Perl code block returns a true value when executed</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+You can also use the Perl regular expression match syntax:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if value fname </span><span class="def_Symbol">=</span><span class="def_Symbol">~ </span><span class="def_Symbol">/</span><span class="def_Symbol">^</span>mike<span class="def_Symbol">/</span>i<span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">This is the if with Mike</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">elsif value fname </span><span class="def_Symbol">=</span><span class="def_Symbol">~ </span><span class="def_Symbol">/</span><span class="def_Symbol">^</span>kevin<span class="def_Symbol">/</span>i<span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">This is an elsif with Kevin</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">elsif</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">elsif value fname </span><span class="def_Symbol">=</span><span class="def_Symbol">~ </span><span class="def_Symbol">/</span><span class="def_Symbol">^</span>racke<span class="def_Symbol">/</span>i<span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">This is an elsif with Racke</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">elsif</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">Imposter alert</span><span class="def_Symbol">!</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+While the named parameter tag syntax works for <span class="fixedwidth">&#91;if]</span>,
+it is more convenient to use positional calls in most cases.&nbsp;
+The only exception is if you are planning on doing a test on the results
+of another tag sequence:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if value lname </span><span class="def_Symbol">=</span><span class="def_Symbol">~ </span><span class="def_Symbol">/</span><span class="def_Symbol">[</span><span class="def_Syntax">value b</span><span class="def_Symbol">_</span><span class="def_Syntax">lname</span><span class="def_Symbol">]</span><span class="def_Symbol">/</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">Shipping name matches billing name</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Oops!&nbsp;
+That will not work.&nbsp;
+You must do this instead:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if type</span><span class="def_Symbol">=</span><span class="def_Syntax">value term</span><span class="def_Symbol">=</span><span class="def_Syntax">lname op</span><span class="def_Symbol">=</span><span class="def_String">&quot;=~&quot; </span><span class="def_Syntax">compare</span><span class="def_Symbol">=</span><span class="def_String">&quot;/[value b_lname]/&quot;</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">Shipping name matches billing name</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+or better still:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if type</span><span class="def_Symbol">=</span><span class="def_Syntax">explicit compare</span><span class="def_Symbol">=</span>`$<span class="def_Syntax">Values</span><span class="def_Symbol">-</span><span class="def_Symbol">&gt;</span><span class="def_Symbol">{</span><span class="def_Syntax">lname</span><span class="def_Symbol">} </span><span class="def_Symbol">=</span><span class="def_Symbol">~ </span><span class="def_Symbol">/</span>$<span class="def_Syntax">Values</span><span class="def_Symbol">-</span><span class="def_Symbol">&gt;</span><span class="def_Symbol">{</span>b<span class="def_Symbol">_</span><span class="def_Syntax">lname</span><span class="def_Symbol">}</span><span class="def_Symbol">/</span>`<span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">Shipping name matches billing name</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Interchange also supports a limited <span class="fixedwidth">[<a href="#and" title="&quot;and&quot; heading on this page">and</a>]</span> and <span class="fixedwidth">[<a href="#or" title="&quot;or&quot; heading on this page">or</a>]</span>
+capability:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if value fname </span><span class="def_Symbol">=</span><span class="def_Symbol">~ </span><span class="def_Symbol">/</span>Mike<span class="def_Symbol">/</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">or value fname </span><span class="def_Symbol">=</span><span class="def_Symbol">~ </span><span class="def_Symbol">/</span>Kevin<span class="def_Symbol">/</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">Your name is Mike or Kevin</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]</span><br>
+<br>
+<span class="def_Symbol">[</span><span class="def_Syntax">if value fname </span><span class="def_Symbol">=</span><span class="def_Symbol">~ </span><span class="def_Symbol">/</span>Mike<span class="def_Symbol">/</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">and value state </span><span class="def_Symbol">=</span><span class="def_Symbol">~ </span><span class="def_Symbol">/</span>OH<span class="def_Symbol">/</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">Your name is Mike and you live in Ohio</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+If you need to perform very complex <span class="fixedwidth">[<a href="#and" title="&quot;and&quot; heading on this page">and</a>]</span> and <span class="fixedwidth">[<a href="#or" title="&quot;or&quot; heading on this page">or</a>]</span>
+operations then you will be better off using <span class="fixedwidth">&#91;if <a href="#explicit" title="&quot;explicit&quot; heading on this page">explicit</a>]</span> or,
+better still, using embedded Perl.&nbsp;
+Either of these would allow more complex testing and parsing of values.
+</p>
+<a name="Test_types"></a>
+<h2>Test types</h2>
+<p>
+The test type is specified using the <span class="fixedwidth"><a href="#type" title="&quot;type&quot; heading on this page">type</a></span> parameter.&nbsp;
+Any of the types, listed in this section, can be used.
+</p>
+<a name="config"></a>
+<h3>config</h3>
+<p>
+The Interchange configuration variables.&nbsp;
+These are set by the directives in your Interchange configuration file
+(or the defaults).
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if config CreditCardAuto</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">Auto credit card validation is enabled</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="cgi"></a>
+<h3>cgi</h3>
+<p>
+Test CGI variable,
+posted into the page with a HTML form,
+or via a URI argument.
+</p>
+<p>
+For example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if cgi foo </span><span class="def_Symbol">= </span><span class="def_Number">1</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">You requested foo</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">Please ask for a foo next time</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="data"></a>
+<h3>data</h3>
+<p>
+The Interchange database tables.&nbsp;
+Retrieves a column in the named table and returns true or false,
+based upon the value.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if data </span>products<span class="def_Symbol">:</span><span class="def_Symbol">:</span>size<span class="def_Symbol">:</span><span class="def_Symbol">:</span><span class="def_Number">99</span><span class="def_Symbol">-</span><span class="def_Number">102</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">There is size information</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">No size information</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]</span><br>
+<br>
+<span class="def_Symbol">[</span><span class="def_Syntax">if data </span>products<span class="def_Symbol">:</span><span class="def_Symbol">:</span>size<span class="def_Symbol">:</span><span class="def_Symbol">:</span><span class="def_Number">99</span><span class="def_Symbol">-</span><span class="def_Number">102 </span><span class="def_Symbol">=</span><span class="def_Symbol">~ </span><span class="def_Symbol">/</span>small<span class="def_Symbol">/</span>i<span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">There is a small size available</span><span class="def_Symbol">.</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">You look more like a XXXXXXL to me</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="text_Section def_Outlined def_Special"><span class="def_Number">99</span><span class="def_Symbol">-</span><span class="def_Number">102 </span><span class="def_Syntax">is not available in small</span></span><span class="def_Symbol">.</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">Never mind</span><span class="def_Symbol">, </span><span class="def_Syntax">it </span>wouldn<span class="def_String">'</span>t <span class="def_Syntax">have fit you anyway</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="discount"></a>
+<h3>discount</h3>
+<p>
+Checks to see if a discount is present for an item.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if discount </span><span class="def_Number">99</span><span class="def_Symbol">-</span><span class="def_Number">102</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">Item is discounted</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="errors"></a>
+<h3>errors</h3>
+<p>
+Check to see whether there are any error/information
+messages associated with a named form value.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if errors fname</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">Please enter your first name</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="explicit"></a>
+<h3>explicit</h3>
+<p>
+A test for an explicit value.&nbsp;
+If Perl code is placed in a <span class="fixedwidth">[<a href="#condition" title="&quot;condition&quot; heading on this page">condition</a>]</span> container
+then the supplied code will be used to make the comparison.&nbsp;
+For example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if explicit</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">condition</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">return </span><span class="def_Number">1 </span><span class="def_Syntax">if </span>$<span class="def_Syntax">Values</span><span class="def_Symbol">-</span><span class="def_Symbol">&gt;</span><span class="def_Symbol">{</span><span class="def_Syntax">country</span><span class="def_Symbol">} </span><span class="def_Symbol">=</span><span class="def_Symbol">~ </span><span class="def_Symbol">/</span>u<span class="def_Symbol">\</span><span class="def_Symbol">.</span><span class="def_Symbol">?</span>s<span class="def_Symbol">\</span><span class="def_Symbol">.</span><span class="def_Symbol">?</span>a<span class="def_Symbol">?</span><span class="def_Symbol">/</span>i<span class="def_Symbol">;</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">return </span><span class="def_Number">0</span><span class="def_Symbol">;</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">condition</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">You have indicated a US address</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">You have indicated a non</span><span class="def_Symbol">-</span><span class="def_Syntax">US address</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The previous example was a bit contrived,
+as the same effect could be accomplished with the following:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if value country </span><span class="def_Symbol">=</span><span class="def_Symbol">~ </span><span class="def_Symbol">/</span>u<span class="def_Symbol">\</span><span class="def_Symbol">.</span><span class="def_Symbol">?</span>s<span class="def_Symbol">\</span><span class="def_Symbol">.</span><span class="def_Symbol">?</span>a<span class="def_Symbol">?</span><span class="def_Symbol">/</span>i<span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Symbol">.</span><span class="def_Symbol">.</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+but you will run into many situations where it is useful.
+</p>
+<p>
+This will work for <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span> values:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if type</span><span class="def_Symbol">=</span><span class="def_Syntax">explicit compare</span><span class="def_Symbol">=</span><span class="def_String">&quot;__MYVAR__&quot;</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Symbol">.</span><span class="def_Symbol">.</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Note that the <span class="fixedwidth"><a href="#compare" title="&quot;compare&quot; heading on this page">compare</a></span> parameter is equivalent to the
+<span class="fixedwidth">[<a href="#condition" title="&quot;condition&quot; heading on this page">condition</a>]</span> container, in that both evaluate as Perl code.&nbsp;
+That means you need to watch out when you put in user-supplied values,
+(so that users can't inject Perl code into your server)
+and data from your own variables or tables which may look different than
+you expected.
+</p>
+<p>
+For example, say you're in a loop,
+checking whether at least one of the fields &quot;foo&quot; and &quot;bar&quot; has a <em>true</em>
+value:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if type</span><span class="def_Symbol">=</span><span class="def_Syntax">explicit compare</span><span class="def_Symbol">=</span><span class="def_String">&quot;[loop-param foo][loop-param bar]&quot;</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Symbol">.</span><span class="def_Symbol">.</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Most of the time this will work fine.&nbsp;
+However, if &quot;foo&quot; contains a string beginning with '0',
+such as '0009',
+Perl will try to interpret it as an octal number,
+where the digit '9' is invalid,
+resulting in the following unexpected error in the website's
+<span class="fixedwidth">error.log</span> file:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Bad if 'explicit&nbsp;&nbsp; 0009': Illegal octal digit '9' at (eval 155) line 1, at end of line
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+A safer way to check is:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if type</span><span class="def_Symbol">=</span><span class="def_Syntax">explicit compare</span><span class="def_Symbol">=</span><span class="def_String">&quot;q{[loop-param foo][loop-param bar]}&quot;</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Symbol">.</span><span class="def_Symbol">.</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Although, in that case, your data must not contain a &quot;<span class="fixedwidth">}</span>&quot;.&nbsp;
+To be extra safe you can surround your interpolated data with a
+<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/filter.html" title="filter (tags)">filter</a>]</span> that's appropriate for the quoting method you've chosen.
+</p>
+<p>
+This code can be useful on a form submission page,
+especially if the user is sent back to the form to correct errors:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if type</span><span class="def_Symbol">=</span><span class="def_Syntax">explicit compare</span><span class="def_Symbol">=</span><span class="def_String">&quot;[error all=1 show_var=1 keep=1]&quot;</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Symbol">&lt;</span>b<span class="def_Symbol">&gt;</span><span class="def_Syntax">The following errors were detected in your form </span>submission<span class="def_Symbol">:</span><span class="def_Symbol">&lt;</span><span class="def_Symbol">/</span>b<span class="def_Symbol">&gt;</span><br>
+&nbsp; &nbsp; <span class="def_Symbol">&lt;</span>br<span class="def_Symbol">&gt;</span><br>
+&nbsp; &nbsp; <span class="def_Symbol">&lt;</span>blockquote<span class="def_Symbol">&gt;</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Symbol">[</span><span class="def_Syntax">error all</span><span class="def_Symbol">=</span><span class="def_Number">1 </span><span class="def_Syntax">keep</span><span class="def_Symbol">=</span><span class="def_Number">1 </span><span class="def_Syntax">show</span><span class="def_Symbol">_</span><span class="def_Syntax">error</span><span class="def_Symbol">=</span><span class="def_Number">1 </span><span class="def_Syntax">show</span><span class="def_Symbol">_</span><span class="def_Syntax">label</span><span class="def_Symbol">=</span><span class="def_Number">1 </span><span class="def_Syntax">joiner</span><span class="def_Symbol">=</span><span class="def_String">&quot;&lt;br&gt;&quot;</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Symbol">&lt;</span><span class="def_Symbol">/</span>blockquote<span class="def_Symbol">&gt;</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+See the <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/error.html" title="error (tags)">error</a>]</span> tag for more information.&nbsp;
+Also see the <span class="fixedwidth"><a href="#errors" title="&quot;errors&quot; heading on this page">errors</a></span> test, above.
+</p>
+<a name="field"></a>
+<h3>field</h3>
+<p>
+This is much like the <span class="fixedwidth"><a href="#data" title="&quot;data&quot; heading on this page">data</a></span> test type, listed above,
+except that it works on the the table(s) listed in the
+<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> <em>local</em> configuration directive.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if field </span>size<span class="def_Symbol">:</span><span class="def_Symbol">:</span><span class="def_Number">99</span><span class="def_Symbol">-</span><span class="def_Number">102</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">There is size information</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">No size information</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]</span><br>
+<br>
+<span class="def_Symbol">[</span><span class="def_Syntax">if field </span>size<span class="def_Symbol">:</span><span class="def_Symbol">:</span><span class="def_Number">99</span><span class="def_Symbol">-</span><span class="def_Number">102 </span><span class="def_Symbol">=</span><span class="def_Symbol">~ </span><span class="def_Symbol">/</span>small<span class="def_Symbol">/</span>i<span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">There is a small size available</span><span class="def_Symbol">.</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">You look more like a XXXXXXL to me</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="text_Section def_Outlined def_Special"><span class="def_Number">99</span><span class="def_Symbol">-</span><span class="def_Number">102 </span><span class="def_Syntax">is not available in small</span></span><span class="def_Symbol">.</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">Never mind</span><span class="def_Symbol">, </span><span class="def_Syntax">it </span>wouldn<span class="def_String">'</span>t <span class="def_Syntax">have fit you anyway</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="file"></a>
+<h3>file</h3>
+<p>
+Tests for the existence of a file.&nbsp;
+Useful for placing image tags only if the image is present.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if type</span><span class="def_Symbol">=</span><span class="def_Syntax">file term</span><span class="def_Symbol">=</span><span class="def_String">&quot;path/to/images/[item-code].gif&quot;</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Symbol">&lt;</span><span class="def_Syntax">img src</span><span class="def_Symbol">=</span><span class="def_String">&quot;/path/to/images/[item-code].gif&quot;</span><span class="def_Symbol">&gt;</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="file-A"></a>
+<h3>file-A</h3>
+<p>
+Compares against a file's access time (in days).
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if file</span><span class="def_Symbol">-</span><span class="def_Syntax">A foofile</span><span class="def_Number">.</span><span class="def_Syntax">ext </span><span class="def_Symbol">&gt; </span><span class="def_Number">1</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">foofile</span><span class="def_Number">.</span><span class="def_Syntax">ext has not been accessed in over a day</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+This is the same as Perl's <span class="fixedwidth">-A</span> test.
+</p>
+<a name="file-B"></a>
+<h3>file-B</h3>
+<p>
+Compares against a file's binary status.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if file</span><span class="def_Symbol">-</span><span class="def_Syntax">B foofile</span><span class="def_Number">.</span><span class="def_Syntax">ext</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">foofile</span><span class="def_Number">.</span><span class="def_Syntax">ext is a binary file</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+This is the same as Perl's <span class="fixedwidth">-B</span> test.&nbsp;
+Note that the test only examines the first 1000 bytes or so,
+and so it can be fooled.
+</p>
+<a name="file-d"></a>
+<h3>file-d</h3>
+<p>
+Tests whether a file is a directory.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if file</span><span class="def_Symbol">-</span>d foodir<span class="def_Symbol">/</span><span class="def_Syntax">bardir</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; foodir<span class="def_Symbol">/</span><span class="def_Syntax">bardir is a directory</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+This is the same as Perl's <span class="fixedwidth">-d</span> test.
+</p>
+<a name="file-e"></a>
+<h3>file-e</h3>
+<p>
+Tests whether the file (or directory) exists at all.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if file</span><span class="def_Symbol">-</span>e foo<span class="def_Symbol">/</span><span class="def_Syntax">bar</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; foo<span class="def_Symbol">/</span><span class="def_Syntax">bar </span>exists<br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+This is the same as Perl's <span class="fixedwidth">-e</span> test.
+</p>
+<a name="file-f"></a>
+<h3>file-f</h3>
+<p>
+Tests whether a file is a plain file (follows symbolic links).
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if file</span><span class="def_Symbol">-</span>f foo<span class="def_Symbol">/</span><span class="def_Syntax">bar</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; foo<span class="def_Symbol">/</span><span class="def_Syntax">bar is a file</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+This is the same as Perl's <span class="fixedwidth">-f</span> test,
+and is the default for <span class="fixedwidth">&#91;if <a href="#file" title="&quot;file&quot; heading on this page">file</a>]</span>.&nbsp;
+The following two examples are equivalent:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if file</span><span class="def_Symbol">-</span><span class="def_Syntax">f error</span><span class="def_Number">.</span><span class="def_Syntax">log</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">error</span><span class="def_Number">.</span><span class="def_Syntax">log is a file</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]</span><br>
+<br>
+<span class="def_Symbol">[</span><span class="def_Syntax">if file error</span><span class="def_Number">.</span><span class="def_Syntax">log</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">error</span><span class="def_Number">.</span><span class="def_Syntax">log is a file</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="file-l"></a>
+<h3>file-l</h3>
+<p>
+Tests whether a file is a symbolic link.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if file</span><span class="def_Symbol">-</span>l foo<span class="def_Symbol">/</span><span class="def_Syntax">bar</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; foo<span class="def_Symbol">/</span><span class="def_Syntax">bar is a symbolic link</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+This is the same as Perl's <span class="fixedwidth">-l</span> test.
+</p>
+<a name="file-M"></a>
+<h3>file-M</h3>
+<p>
+Tests against the number of days since the file was modified.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if file</span><span class="def_Symbol">-</span><span class="def_Syntax">M error</span><span class="def_Number">.</span><span class="def_Syntax">log </span><span class="def_Symbol">&gt; </span><span class="def_Number">0.5</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">There have been no errors in </span><span class="def_Number">12 </span><span class="def_Syntax">hours</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]</span><br>
+<br>
+<span class="def_Symbol">[</span><span class="def_Syntax">if file</span><span class="def_Symbol">-</span><span class="def_Syntax">M error</span><span class="def_Number">.</span><span class="def_Syntax">log </span><span class="def_Symbol">&lt; </span><span class="def_Number">1</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">There have been errors in the last day</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+This is the same as Perl's <span class="fixedwidth">-M</span> test.
+</p>
+<a name="file-r"></a>
+<h3>file-r</h3>
+<p>
+Tests whether file is readable by the Interchange user.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if file</span><span class="def_Symbol">-</span><span class="def_Syntax">r error</span><span class="def_Number">.</span><span class="def_Syntax">log</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">We can read the error</span><span class="def_Number">.</span><span class="def_Syntax">log</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+This is the same as Perl's <span class="fixedwidth">-r</span> test.
+</p>
+<a name="file-s"></a>
+<h3>file-s</h3>
+<p>
+Allows tests against the size of a file.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if file</span><span class="def_Symbol">-</span><span class="def_Syntax">s error</span><span class="def_Number">.</span><span class="def_Syntax">log </span><span class="def_Symbol">&gt; </span><span class="def_Number">1024</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">There have been more than a kilobyte of errors</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]</span><br>
+<br>
+<span class="def_Symbol">[</span><span class="def_Syntax">if file</span><span class="def_Symbol">-</span><span class="def_Syntax">s error</span><span class="def_Number">.</span><span class="def_Syntax">log </span><span class="def_Symbol">&lt; </span><span class="def_Number">100000</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">There have been than less than </span><span class="def_Number">100,000 </span><span class="def_Syntax">bytes of errors</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+This is the same as Perl's <span class="fixedwidth">-s</span> test.
+</p>
+<a name="file-T"></a>
+<h3>file-T</h3>
+<p>
+Tests whether a file is a plain text file.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if file</span><span class="def_Symbol">-</span><span class="def_Syntax">T error</span><span class="def_Number">.</span><span class="def_Syntax">log</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">error</span><span class="def_Number">.</span><span class="def_Syntax">log is a text file</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+This is the same as Perl's <span class="fixedwidth">-T</span> test.&nbsp;
+Note that the test only examines the first 1000 bytes or so,
+and so it can be fooled.
+</p>
+<a name="file-w"></a>
+<h3>file-w</h3>
+<p>
+Tests whether the file can be written to by the Interchange user.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if file</span><span class="def_Symbol">-</span><span class="def_Syntax">w error</span><span class="def_Number">.</span><span class="def_Syntax">log</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">We can log errors</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">We </span>can<span class="def_String">'</span>t <span class="def_Syntax">log errors</span><span class="def_Symbol">.&nbsp; </span><span class="def_Syntax">Call the Coast Guard</span><span class="def_Symbol">!</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+This is the same as Perl's <span class="fixedwidth">-w</span> test.
+</p>
+<a name="file-x"></a>
+<h3>file-x</h3>
+<p>
+Tests whether the file is executable by the Interchange user.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if file</span><span class="def_Symbol">-</span><span class="def_Syntax">x error</span><span class="def_Number">.</span><span class="def_Syntax">log</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">error</span><span class="def_Number">.</span><span class="def_Syntax">log is not executable </span><span class="def_Symbol">(</span><span class="def_Syntax">not that it needs to be</span><span class="def_Symbol">)</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]</span><br>
+<br>
+<span class="def_Symbol">[</span><span class="def_Syntax">if </span><span class="def_Symbol">!</span><span class="def_Syntax">file</span><span class="def_Symbol">-</span><span class="def_Syntax">x pages</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">There is no way to use a page in the pages directory</span><span class="def_Symbol">, </span><span class="def_Syntax">as it </span>is<br>
+&nbsp; &nbsp; <span class="def_Syntax">not searchable</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+This is the same as Perl's <span class="fixedwidth">-x</span> test.
+</p>
+<a name="global"></a>
+<h3>global</h3>
+<p>
+Configuration variables set using a <em>global</em>
+<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span> directive.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if global MV</span><span class="def_Symbol">_</span><span class="def_Syntax">PAGE eq </span><span class="def_String">'index'</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">You are on the index page</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">You are not in the index page</span><span class="def_Symbol">.</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">You are on </span>@@<span class="def_Syntax">MV</span><span class="def_Symbol">_</span>PAGE@@<span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+If you want to test a <em>local</em> <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span>,
+or a variable set using the <em>local</em> <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/VariableDatabase.html" title="VariableDatabase (config)">VariableDatabase</a></span>
+configuration directive,
+then use this tag's <span class="fixedwidth"><a href="#variable" title="&quot;variable&quot; heading on this page">variable</a></span> parameter.
+</p>
+<a name="items"></a>
+<h3>items</h3>
+<p>
+Usually used as a litmus test to see if anything is in the cart,
+for example:&nbsp;
+If no cart name is specified then &quot;main&quot; will be used.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if items</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">You have items in your shopping cart</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]</span><br>
+<br>
+<span class="def_Symbol">[</span><span class="def_Syntax">if items layaway</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">You have items on layaway</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="ordered"></a>
+<h3>ordered</h3>
+<p>
+Order status of individual items in the Interchange shopping carts.&nbsp;
+If no cart name is specified then &quot;main&quot; will be used.&nbsp;
+The following items refer to a part number of 99-102.
+</p>
+<p>
+Check the status of an item on order (using the default &quot;main&quot; cart).
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if ordered </span><span class="def_Number">99</span><span class="def_Symbol">-</span><span class="def_Number">102</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">Item </span><span class="def_Number">99</span><span class="def_Symbol">-</span><span class="def_Number">102 </span><span class="def_Syntax">is in your cart</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Check the status of an item on order (using the named &quot;layaway&quot; cart).
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if ordered </span><span class="def_Number">99</span><span class="def_Symbol">-</span><span class="def_Number">102 </span><span class="def_Syntax">layaway</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">Item </span><span class="def_Number">99</span><span class="def_Symbol">-</span><span class="def_Number">102 </span><span class="def_Syntax">is on layaway</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Check the status of an item on order in the main cart.&nbsp;
+Specifically, we are checking whether the ordered item has a &quot;size&quot; attribute.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if ordered </span><span class="def_Number">99</span><span class="def_Symbol">-</span><span class="def_Number">102 </span><span class="def_Syntax">main size</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">A size was specified for </span><span class="def_Number">99</span><span class="def_Symbol">-</span><span class="def_Number">102</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Check the status of an item on order in the main cart.&nbsp;
+Specifically, we are checking whether the ordered item's &quot;size&quot; attribute
+value contains the word &quot;large&quot;.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if ordered </span><span class="def_Number">99</span><span class="def_Symbol">-</span><span class="def_Number">102 </span><span class="def_Syntax">main size </span><span class="def_Symbol">=</span><span class="def_Symbol">~ </span><span class="def_Symbol">/</span>large<span class="def_Symbol">/</span>i<span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">The size attribute for </span><span class="def_Number">99</span><span class="def_Symbol">-</span><span class="def_Number">102 </span><span class="def_Syntax">contains </span><span class="def_String">&quot;large&quot;</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+To make sure it is exactly &quot;large&quot;, you could use:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if ordered </span><span class="def_Number">99</span><span class="def_Symbol">-</span><span class="def_Number">102 </span><span class="def_Syntax">main size eq </span><span class="def_String">&quot;large&quot;</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">The size attribute for </span><span class="def_Number">99</span><span class="def_Symbol">-</span><span class="def_Number">102 </span><span class="def_Syntax">is </span><span class="def_String">&quot;large&quot;</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="pragma"></a>
+<h3>pragma</h3>
+<p>
+Test a page <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Pragma.html" title="Pragma (config)">Pragma</a></span> value,
+set with the the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Pragma.html" title="Pragma (config)">Pragma</a></span> directive in the <span class="fixedwidth">catalog.cfg</span>
+file, or with the <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/pragma.html" title="pragma (tags)">pragma</a>]</span> tag.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if pragma dynamic</span><span class="def_Symbol">_</span><span class="def_Syntax">variables</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Symbol">_</span><span class="def_Symbol">_</span><span class="def_Syntax">THE</span><span class="def_Symbol">_</span><span class="def_Syntax">VARIABLE</span><span class="def_Symbol">_</span><span class="def_Symbol">_</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Symbol">[</span><span class="def_Syntax">data table</span><span class="def_Symbol">=</span><span class="def_Syntax">variable column</span><span class="def_Symbol">=</span><span class="def_Syntax">Variable key</span><span class="def_Symbol">=</span><span class="def_Syntax">THE</span><span class="def_Symbol">_</span><span class="def_Syntax">VARIABLE</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="scratch"></a>
+<h3>scratch</h3>
+<p>
+Test a scratchpad variables,
+previously set with
+[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/set.html" title="set (tags)">set</a>],
+[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/seti.html" title="seti (tags)">seti</a>],
+[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/tmp.html" title="tmp (tags)">tmp</a>] and
+[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/tmpn.html" title="tmpn (tags)">tmpn</a>]
+(or not set, as the case may be).
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if scratch mv</span><span class="def_Symbol">_</span><span class="def_Syntax">separate</span><span class="def_Symbol">_</span><span class="def_Syntax">items</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">ordered items will be placed on a separate line</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">ordered items will be placed on the same line</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="scratchd"></a>
+<h3>scratchd</h3>
+<p>
+This is the same as the &quot;<span class="fixedwidth"><a href="#scratch" title="&quot;scratch&quot; heading on this page">scratch</a></span>&quot; test type,
+except that the variable is deleted from the scratchpad after testing.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if scratchd foo </span><span class="def_Symbol">=</span><span class="def_Symbol">= </span><span class="def_Number">1</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">Foo was equal to </span><span class="def_Number">1</span><span class="def_Symbol">, </span><span class="def_Syntax">but has now been deleted</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">Foo was not equal to </span><span class="def_Number">1</span><span class="def_Symbol">.</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">It has been deleted now so </span>you<span class="def_String">'</span>l<span class="def_Syntax">l never know what the value actually was</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_availability.gif" width="32" height="32" border="0" alt="Availability">
+</td>
+<td width="100%">
+<p class="title">Availability</p>
+<p style="margin-bottom: 0px">
+This test type was introduced in version 5.5.1,
+and is therefore not available for use with any earlier Interchange version.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="session"></a>
+<h3>session</h3>
+<p>
+Test an Interchange session variable.&nbsp;
+Of particular interest are
+&quot;<span class="fixedwidth">logged_in</span>&quot;,
+&quot;<span class="fixedwidth">username</span>&quot;,
+&quot;<span class="fixedwidth">spider</span>&quot; and
+&quot;<span class="fixedwidth">browser</span>&quot;.&nbsp;
+Other session hash keys include the following:
+</p>
+<table class="border">
+<tr valign="top">
+<th class="grid">Name
+</th>
+<th class="grid">Description
+</th>
+</tr>
+<tr valign="top">
+<td class="grid">accesses
+</td>
+<td class="grid">The number of pare requests performed for this session within
+the last 30 seconds.</td>
+</tr>
+<tr valign="top">
+<td class="grid">arg
+</td>
+<td class="grid">The argument passed in an <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/area.html" title="area (tags)">area</a>]</span> tag.</td>
+</tr>
+<tr valign="top">
+<td class="grid">browser
+</td>
+<td class="grid">The identification value sent by the user agent.</td>
+</tr>
+<tr valign="top">
+<td class="grid">carts
+</td>
+<td class="grid">A reference to a Perl hash containing shopping carts.&nbsp;
+See <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Interchange_Perl_objects.html#Carts" title="&quot;Carts&quot; heading on the &quot;Interchange Perl objects&quot; page">&#36;Carts</a> for
+more information.</td>
+</tr>
+<tr valign="top">
+<td class="grid">host
+</td>
+<td class="grid">Interchange's note of the visitor's hostname
+(possibly modified by <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/DomainTail.html" title="DomainTail (config)">DomainTail</a></span>).&nbsp;
+If the hostname could not be looked up
+(<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/HostnameLookups.html" title="HostnameLookups (config)">HostnameLookups</a></span> switched off or
+DNS error etc.) then the visitor's IP address will be
+stored here instead.</td>
+</tr>
+<tr valign="top">
+<td class="grid">id
+</td>
+<td class="grid">The current session ID.</td>
+</tr>
+<tr valign="top">
+<td class="grid">last_error
+</td>
+<td class="grid">The last error or status message from the error logging routine.</td>
+</tr>
+<tr valign="top">
+<td class="grid">last_search
+</td>
+<td class="grid">The last non-SQL Interchange search specification invoked.</td>
+</tr>
+<tr valign="top">
+<td class="grid">last_url
+</td>
+<td class="grid">The current Interchange path_info.</td>
+</tr>
+<tr valign="top">
+<td class="grid">logged_in
+</td>
+<td class="grid">Will be <em>true</em> if the user is logged in.</td>
+</tr>
+<tr valign="top">
+<td class="grid">ohost
+</td>
+<td class="grid">Interchange's note of the visitor's IP address when using
+a non-SSL link.&nbsp;
+Also see <span class="fixedwidth">shost</span>.</td>
+</tr>
+<tr valign="top">
+<td class="grid">pageCount
+</td>
+<td class="grid">Number of unique URIs generated by Interchange for this session.</td>
+</tr>
+<tr valign="top">
+<td class="grid">payment_result
+</td>
+<td class="grid">A hash of result messages from payment module
+transaction attempts.&nbsp;
+See examples in the
+<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_payment_modules.html" title="Category - interchange payment modules">Interchange payment modules</a> documentation.</td>
+</tr>
+<tr valign="top">
+<td class="grid">prev_url
+</td>
+<td class="grid">The previous <span class="fixedwidth">path_info</span>.</td>
+</tr>
+<tr valign="top">
+<td class="grid">referer
+</td>
+<td class="grid"><span class="fixedwidth">HTTP_REFERER</span> string.</td>
+</tr>
+<tr valign="top">
+<td class="grid">ship_message
+</td>
+<td class="grid">The last error messages from shipping.</td>
+</tr>
+<tr valign="top">
+<td class="grid">shost
+</td>
+<td class="grid">Interchange's note of the visitor's IP address when using
+a SSL link.&nbsp;
+Also see <span class="fixedwidth">ohost</span>.</td>
+</tr>
+<tr valign="top">
+<td class="grid">spider
+</td>
+<td class="grid">Will be <em>true</em> if the user is a search engine spider.</td>
+</tr>
+<tr valign="top">
+<td class="grid">source
+</td>
+<td class="grid">Source of original entry to Interchange.</td>
+</tr>
+<tr valign="top">
+<td class="grid">teleport
+</td>
+<td class="grid">Date and time (in
+&quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/time.html#Time_format_tokens" title="&quot;Time format tokens&quot; heading on the &quot;time (tags)&quot; page">&#37;Y&#37;m&#37;d&#37;H&#37;M&#37;S</a></span>&quot; format) for use with the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/PageTables.html" title="PageTables (config)">PageTables</a></span>
+directive.</td>
+</tr>
+<tr valign="top">
+<td class="grid">time
+</td>
+<td class="grid">Time (seconds since 01 January 1970) of the last access.</td>
+</tr>
+<tr valign="top">
+<td class="grid">user
+</td>
+<td class="grid">The <span class="fixedwidth">REMOTE_USER</span> string.</td>
+</tr>
+<tr valign="top">
+<td class="grid">username
+</td>
+<td class="grid">Logged-in username.&nbsp;
+See the <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Interchange_user_database.html" title="Interchange user database">Interchange user database</a> page.</td>
+</tr>
+</table>
+<a name="validcc"></a>
+<h3>validcc</h3>
+<p>
+A special case which takes the form <span class="fixedwidth">&#91;if validcc no type exp_date]</span>.&nbsp;
+Evaluates to true if the supplied credit card number,
+type of card and expiration date pass a validity test.&nbsp;
+does a <em>LUHN-10</em> calculation to weed out typos or phony card numbers.&nbsp;
+Uses the standard <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/CreditCardAuto.html" title="CreditCardAuto (config)">CreditCardAuto</a></span> values for targets if
+nothing else is specified.
+</p>
+<a name="value"></a>
+<h3>value</h3>
+<p>
+Test a form value,
+previously set with <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/value.html" title="value (tags)">value</a>]</span>
+or via a previous HTML form post.
+</p>
+<p>
+An example might be the when search matches are displayed.&nbsp;
+If you use the string &quot;<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/value.html" title="value (tags)">value</a> mv_match_count]</span> titles found&quot;,
+the following will display a different message if only one match was found:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if value mv</span><span class="def_Symbol">_</span><span class="def_Syntax">match</span><span class="def_Symbol">_</span><span class="def_Syntax">count </span><span class="def_Symbol">!</span><span class="def_Symbol">= </span><span class="def_Number">1</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Symbol">[</span><span class="def_Syntax">value mv</span><span class="def_Symbol">_</span><span class="def_Syntax">match</span><span class="def_Symbol">_</span><span class="def_Syntax">count</span><span class="def_Symbol">] </span><span class="def_Syntax">matches found</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">Only one match was found</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="variable"></a>
+<h3>variable</h3>
+<p>
+Configuration variables set using a <em>local</em>
+<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span> or <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/VariableDatabase.html" title="VariableDatabase (config)">VariableDatabase</a></span>
+directive.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if variable FOO</span><span class="def_Symbol">_</span><span class="def_Syntax">ALLOWED</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">You may foo if you so wish</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">No foos here please</span><span class="def_Symbol">.</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">we are fed up with people fooing around</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">else</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+If you want to test a <em>global</em> <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span>
+then use this tag's <span class="fixedwidth"><a href="#global" title="&quot;global&quot; heading on this page">global</a></span> parameter.
+</p>
+<a name="Sub-tags"></a>
+<h2>Sub-tags</h2>
+<a name="then"></a>
+<h3>&#91;then]</h3>
+<p>
+This is optional if you are not nesting if conditions,
+as the text immediately following the <span class="fixedwidth">&#91;if]</span> tag is used
+as the conditionally substituted text.
+</p>
+<p>
+For a usage example, see the <a href="#Description" title="&quot;Description&quot; heading on this page">description</a>, above.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+It used to be the case that,
+when nesting <span class="fixedwidth">&#91;if]</span> tags,
+you needed to use a <span class="fixedwidth">&#91;then]&#91;/then]</span>
+container on any outside conditions to ensure proper interpolation.&nbsp;
+This is no longer the case with modern Interchange versions.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="elsif_type_term_op_compare"></a>
+<h3>&#91;elsif type term op compare]</h3>
+<p>
+This is an additional condition to test,
+which is applied if the initial <span class="fixedwidth">&#91;if]</span> test fails.
+</p>
+<p>
+For a usage example, see the <a href="#Description" title="&quot;Description&quot; heading on this page">description</a>, above.
+</p>
+<a name="else"></a>
+<h3>&#91;else]</h3>
+<p>
+This block is output if all other test fail.
+</p>
+<p>
+For a usage example, see the <a href="#Description" title="&quot;Description&quot; heading on this page">description</a>, above.
+</p>
+<a name="condition"></a>
+<h3>&#91;condition]</h3>
+<p>
+This is only used with the <span class="fixedwidth">&#91;if <a href="#explicit" title="&quot;explicit&quot; heading on this page">explicit</a>]</span> test type.&nbsp;
+It allows an arbitrary Perl expressions be placed inside,
+with its return value interpreted as the result of the test.&nbsp;
+See the <span class="fixedwidth"><a href="#explicit" title="&quot;explicit&quot; heading on this page">explicit</a></span> test type for a usage example.
+</p>
+<a name="and"></a>
+<h3>&#91;and]</h3>
+<p>
+This sub-tag can be used to add a simple &quot;and&quot; condition to the <span class="fixedwidth">&#91;if]</span>.&nbsp;
+For example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if value fname </span><span class="def_Symbol">=</span><span class="def_Symbol">~ </span><span class="def_Symbol">/</span>Mike<span class="def_Symbol">/</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">and value state </span><span class="def_Symbol">=</span><span class="def_Symbol">~ </span><span class="def_Symbol">/</span>OH<span class="def_Symbol">/</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">Your name is Mike and you live in Ohio</span><span class="def_Symbol">.</span><br>
+&nbsp; &nbsp; Don<span class="def_String">'</span>t <span class="def_Syntax">ask how I knew that</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="or"></a>
+<h3>&#91;or]</h3>
+<p>
+This sub-tag can be used to add a simple &quot;or&quot; condition to the <span class="fixedwidth">&#91;if]</span>.&nbsp;
+For example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">if value fname </span><span class="def_Symbol">=</span><span class="def_Symbol">~ </span><span class="def_Symbol">/</span>Mike<span class="def_Symbol">/</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">or value fname </span><span class="def_Symbol">=</span><span class="def_Symbol">~ </span><span class="def_Symbol">/</span>Kevin<span class="def_Symbol">/</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">Your name is either Mike or Kevin</span><span class="def_Symbol">.</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">if</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Parameters"></a>
+<h2>Parameters</h2>
+<a name="type"></a>
+<h3>type</h3>
+<p>
+This parameter is used to specify the type of test you would like to perform.&nbsp;
+Many <a href="#Test_types" title="&quot;Test types&quot; heading on this page">test types</a> are available.
+</p>
+<a name="term"></a>
+<h3>term</h3>
+<p>
+The value of this parameter is treated differently, depending upon the
+context provided by the <span class="fixedwidth"><a href="#type" title="&quot;type&quot; heading on this page">type</a></span> parameter.
+</p>
+<p>
+The value referenced by this parameter will be compared with the
+<span class="fixedwidth"><a href="#compare" title="&quot;compare&quot; heading on this page">compare</a></span> value.
+</p>
+<a name="op"></a>
+<h3>op</h3>
+<p>
+This parameter specifies the compare operator which is to be used.&nbsp;
+Compare operators are as in Perl:
+</p>
+<table class="border">
+<tr valign="top">
+<th class="grid">Symbol
+</th>
+<th class="grid">Description
+</th>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">==</span></td>
+<td class="grid">Numeric equivalence.</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">eq</span></td>
+<td class="grid">String equivalence.</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&gt;</span></td>
+<td class="grid">Numeric greater-than.</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&gt;=</span></td>
+<td class="grid">Numeric greater-than or equal to.</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">gt</span></td>
+<td class="grid">String greater-than.</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&lt;</span></td>
+<td class="grid">Numeric less-than.</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&lt;=</span></td>
+<td class="grid">Numeric less-than or equal to.</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">lt</span></td>
+<td class="grid">String less-than.</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">!=</span></td>
+<td class="grid">Numeric non-equivalence.</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">ne</span></td>
+<td class="grid">String non-equivalence.</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">=~</span></td>
+<td class="grid">Regular expression match.</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">!~</span></td>
+<td class="grid">Regular expression non-match.</td>
+</tr>
+</table>
+
+<p>
+Any simple Perl test can be used,
+including some limited regex matching.&nbsp;
+More complex tests are best done with <span class="fixedwidth">&#91;if <a href="#explicit" title="&quot;explicit&quot; heading on this page">explicit</a>]</span>.
+</p>
+<a name="compare"></a>
+<h3>compare</h3>
+<p>
+This value will be compared with the value referenced by the
+<span class="fixedwidth"><a href="#term" title="&quot;term&quot; heading on this page">term</a></span> parameter.
+</div>
+
+<!-- start of modification notice -->
+<div class="wikitext">
+    <table class="pageinfo" cellpadding="0" cellspacing="0">
+	<tr>
+	    <td>
+Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a>
+	    </td>
+	</tr>
+
+
+	<tr>
+	    <td>
+		
+		Last modified by: <a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=pj">Peter Ajamian</a><br>
+		Modification date: Monday 24 November 2008 at 10:13 PM (PST)
+	    </td>
+	</tr>
+    </table>
+</div>
+<!-- end of modification notice -->
+
+
+
+<!-- end page: wiki/display (tags/if) -->
+
+
+
+<!-- end of page text -->
+	    </td>
+
+	</tr>
+    </table>
+<!-- START VAR: FOOTER -->
+
+<table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+	<td>
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	</td>
+
+    </tr>
+</table>
+
+<!-- END VAR: FOOTER -->
+
+<!-- START VAR: COPYRIGHT -->
+
+
+    <div class="copyright">
+	Copyright &copy; 2001-2009
+	<a href="http://www.cursor.biz/index.html">Cursor Software Limited</a>.&nbsp;
+	All Rights Reserved.
+    </div>
+
+<!-- END VAR: COPYRIGHT -->
+
+</body>
+</html>

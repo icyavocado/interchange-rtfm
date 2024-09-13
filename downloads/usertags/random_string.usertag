@@ -1,0 +1,3 @@
+UserTag random_string Order length
+UserTag random_string PosNumber 1
+UserTag random_string MapRoutine Vend::Util::random_string

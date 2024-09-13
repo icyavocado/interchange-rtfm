@@ -1,0 +1,58 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Ecommerce Functions: Sales Tax -- simple salestax.asc table</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ic_ecommerce_16.html">Parent Topic</A> | <A HREF="ic_ecommerce_16.html">Previous Topic</A> | <A HREF="ic_ecommerce_18.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>3.1. Sales Tax -- simple salestax.asc table</H2>
+<P>Interchange allows calculation of sales tax on a straight percentage basis, with certain items allowed to be tax-exempt. To enable this feature, the directive <I>SalesTax</I> is initialized with the name of a field (or fields) on the order form. Commonly, this is zipcode and/or state:</P>
+<PRE>
+    SalesTax    zip,state
+</PRE>
+<P>This being done, Interchange assumes the presence of a file <TT>salestax.asc</TT>, which contains a database with the percentages. Each line of <TT>salestax.asc</TT> should be a code (again, usually a five-digit zip or a two letter state) followed by a tab, then a percentage. Example:</P>
+<PRE>
+        DEFAULT 0.0
+    45056   .0525
+    61821   .0725
+    61801   .075
+    IL      .0625
+    OH      .0525
+    VAT     .15
+    WA      .08
+</PRE>
+<P>Based on the user's entry of information in the order form, Interchange will look up (for our example SalesTax directive) first the zip, then the state, and apply the percentage to the SUBTOTAL of the order. The subtotal will include any taxable items, and will also include the shipping cost if the state/zip is included in the <I>TaxShipping</I> directive. It will add the percentage, then make that available with the <TT>[salestax]</TT> tag for display on the order form. If no match is found, the entry <TT>DEFAULT</TT> is applied -- it is normally zero.</P>
+<P>If business is being done on a national basis, it is now common to have to collect sales tax for multiple states. If you are doing so, it is possible to subscribe to a service which issues regular updates of the sales tax percentages -- usually by quarterly or monthly subscription. Such a database should be easily converted to Interchange format -- but some systems are rather convoluted, and it will be well to check and see if the program can export to a flat ASCII file format based on zip code.</P>
+<P>If some items are not taxable, then you must set up a field in your database which indicates that. You then place the <B>name</B> of that field in the <I>NonTaxableField</I> directive. If the field for that item evaluates true on a yes-no basis (i.e. is set to <TT>yes</TT>, <TT>y</TT>, 1, or the like), sales tax will not be applied to the item. If it evaluates false, it will be taxed.</P>
+<P>If your state taxes shipping, use the <I>TaxShipping</I> directive. Utah and Nevada are known to tax shipping -- there may be others.</P>
+<P>If you want to set a fixed tax for all orders, as might occur for VAT in some countries, just set the <I>SalesTax</I> directive to a value like <TT>tax_code</TT>, and define a variable in the user session to reflect the proper entry in the <TT>salestax.asc</TT> file.  To set it to 15% with the above <TT>salestax.asc</TT> file, you would put in a form:</P>
+<PRE>
+    &lt;INPUT TYPE=hidden NAME=tax_code VALUE=&quot;VAT&quot;&gt;
+</PRE>
+<P>or to do it without submitting a form:</P>
+<PRE>
+    [perl] $Values-&gt;{tax_code} = 'VAT'; return; [/perl]
+</PRE>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ic_ecommerce_16.html">Parent Topic</A> | <A HREF="ic_ecommerce_16.html">Previous Topic</A> | <A HREF="ic_ecommerce_18.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

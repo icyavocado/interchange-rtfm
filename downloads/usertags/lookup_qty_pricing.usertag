@@ -1,0 +1,99 @@
+From: "Ron Phipps" <rphipps@reliant-solutions.com>
+To: <interchange-users@interchange.redhat.com>
+Subject: [ic] UserTag to return correct price for a given quantity using new pricing table
+Message-ID: <003601c1e781$39f17f10$b002a8c0@takedownlt>
+Date: Fri, 19 Apr 2002 02:04:34 -0700
+
+
+Thanks to Kevin Walsh for the kick in the butt to do this solution the
+correct way and to everyone that submitted examples of how to use a
+query from within a UserTag.  This solution is a better way to solve the
+problem then the hack I was putting together.
+
+What it does:
+This tag will return the correct price for an item based on the quantity
+being ordered.  If the quantity being ordered falls between two break
+points then the last break point exceeded will be used.  This tag can be
+added to a CommonAdjust string and chained together with other lookup
+methods to come to a final price.  The tag is called with one parameter,
+the name of the pricing table and it returns a single number.  If no
+quantity pricing is found, 0 is returned, so the CommonAdjust string
+will move on to the next settor.
+
+The tag:
+
+UserTag lookup-qty-pricing Order table
+UserTag lookup-qty-pricing Routine <<EOR
+sub {
+		my ($price_db) = @_;
+		my $code = $item->{code};
+		my $qty = $item->{quantity};
+		
+		my $db = Vend::Data::database_exists_ref($price_db);
+		my $dbh = $db->[$Vend::Table::DBI::DBI];
+		my $sql = "SELECT price FROM " . $price_db . " WHERE
+sku='" . $code . "' AND quantity <= " . $qty . " ORDER BY quantity
+DESC";
+		my $sth = $dbh->prepare($sql);
+		$sth->execute();
+		
+		if ($sth) {
+         		my $sql_results = $sth->fetchrow_hashref();
+         		my $price = $$sql_results{price};
+         		
+         		if ($price eq '') {
+         			return 0;
+         		} else {
+         			return $price;
+         		}
+		}
+		else {
+         		return 0;
+		}
+}
+EOR
+
+The PostgreSQL table structure:
+
+Database  qty_pricing  qty_pricing.txt  __SQLDSN__
+ifdef SQLUSER
+Database  qty_pricing  USER         __SQLUSER__
+endif
+ifdef SQLPASS
+Database  qty_pricing  PASS         __SQLPASS__
+endif
+Database  qty_pricing  KEY          qty_pricing_id
+Database  qty_pricing  AUTO_NUMBER  1
+Database  qty_pricing  COLUMN_DEF   "qty_pricing_id=int NOT NULL PRIMARY
+KEY"
+Database  qty_pricing  COLUMN_DEF   "sku=VARCHAR(64)"
+Database  qty_pricing  COLUMN_DEF   "price_group=VARCHAR(12)"
+Database  qty_pricing  COLUMN_DEF   "quantity=int DEFAULT 0 NOT NULL"
+Database  qty_pricing  COLUMN_DEF   "price=VARCHAR(12)"
+Database  qty_pricing  INDEX         sku
+Database  qty_pricing  INDEX         price_group
+
+Example call in CommonAdjust:
+
+CommonAdjust   "[lookup-qty-pricing table='qty_pricing']", ;:sale_price,
+;:price, ==:options
+
+Future enhancements:
+Add price_group feature, if the product belongs to a price group then
+lookup based on both the sku and price_group and pick the lower of the
+two prices for the given quantity.
+
+Add flag to control break behavior, if a flag is set in the productdb
+then only return a price for an exact quantity being ordered and ignore
+the last exceeded break point.  (Emulate how the quantity lookup works
+out of the box)
+
+I hope someone else finds this useful. Thanks again for everyone's help
+:)
+-Ron
+
+
+_______________________________________________
+interchange-users mailing list
+interchange-users@interchange.redhat.com
+http://interchange.redhat.com/mailman/listinfo/interchange-users

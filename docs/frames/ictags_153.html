@@ -1,0 +1,320 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: table_organize</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_133.html">Parent Topic</A> | <A HREF="ictags_152.html">Previous Topic</A> | <A HREF="ictags_154.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>6.20. table_organize</H2>
+<P>Takes an unorganized set of table cells and organizes them into rows based on the number of columns.</P>
+<H3><A NAME="Summary">6.20.1. Summary</A></H3>
+<PRE>
+    [<B>table-organize</B> cols* <I>other_named_attributes</I>]
+             [loop ....] &lt;td&gt; [loop-tags] &lt;/td&gt; [/loop]
+        [/table-organize]
+
+    [<B>table-organize</B> cols=n* <I>other_named_attributes</I>]
+             [loop ....] &lt;td&gt; [loop-tags] &lt;/td&gt; [/loop]
+        [/table-organize]
+</PRE>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Positional parameters: </STRONG>The first line shows the usage with positional parameters (given in order). The second line shows usage with named parameters.</P>
+<P><HR WIDTH="80%" ALIGN="Left"></P>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_153.html#table_organize_cols">cols</A>
+</TD>
+<TD VALIGN='Top'>
+Number of columns.
+</TD>
+<TD VALIGN='Top'>
+2
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+columns
+</TD>
+<TD VALIGN='Top'>
+Alias for cols.
+</TD>
+<TD VALIGN='Top'>
+2
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_153.html#table_organize_caption">caption</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_153.html#table_organize_columnize">columnize</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_153.html#table_organize_embed">embed</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_153.html#table_organize_filler">filler</A>
+</TD>
+<TD VALIGN='Top'>
+&amp;nbsp;
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_153.html#table_organize_limit">limit</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_153.html#table_organize_pretty">pretty</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_153.html#table_organize_rows">rows</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_153.html#table_organize_table">table</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_153.html#table_organize_td">td</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_153.html#table_organize_tr">tr</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD>
+Invalidates cache
+</TD>
+<TD>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD>
+Macro
+</TD>
+<TD>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD>
+Has end tag
+</TD>
+<TD>
+[/table-organize]
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<P>This example produces a table that (1) alternates rows with background colors &quot;#EEEEEE&quot; and &quot;#FFFFFF&quot;, and (2) aligns the columns right, center, left:</P>
+<PRE>
+        [table-organize
+            cols=3
+            pretty=1
+            tr.0='bgcolor=&quot;#EEEEEE&quot;'
+            tr.1='bgcolor=&quot;#FFFFFF&quot;'
+            td.0='align=right'
+            td.1='align=center'
+            td.2='align=left'
+        ]
+            [loop list=&quot;1 2 3 1a 2a 3a 1b&quot;] &lt;td&gt; [loop-code] &lt;/td&gt; [/loop]
+        [/table-organize]
+---
+        &lt;tr bgcolor=&quot;#EEEEEE&quot;&gt;
+                &lt;td align=right&gt;1&lt;/td&gt;
+                &lt;td align=center&gt;2&lt;/td&gt;
+                &lt;td align=left&gt;3&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr bgcolor=&quot;#FFFFFF&quot;&gt;
+                &lt;td align=right&gt;1a&lt;/td&gt;
+                &lt;td align=center&gt;2a&lt;/td&gt;
+                &lt;td align=left&gt;3a&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr bgcolor=&quot;#EEEEEE&quot;&gt;
+                &lt;td align=right&gt;1b&lt;/td&gt;
+                &lt;td align=center&gt;&amp;nbsp;&lt;/td&gt;
+                &lt;td align=left&gt;&amp;nbsp;&lt;/td&gt;
+        &lt;/tr&gt;
+</PRE>
+<P>If the attribute columnize=1 is present, the result will look like:</P>
+<PRE>
+            &lt;tr bgcolor=&quot;#EEEEEE&quot;&gt;
+                    &lt;td align=right&gt;1&lt;/td&gt;
+                    &lt;td align=center&gt;1a&lt;/td&gt;
+                    &lt;td align=left&gt;1b&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr bgcolor=&quot;#FFFFFF&quot;&gt;
+                    &lt;td align=right&gt;2&lt;/td&gt;
+                    &lt;td align=center&gt;2a&lt;/td&gt;
+                    &lt;td align=left&gt;&amp;nbsp;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr bgcolor=&quot;#EEEEEE&quot;&gt;
+                    &lt;td align=right&gt;3&lt;/td&gt;
+                    &lt;td align=center&gt;3a&lt;/td&gt;
+                    &lt;td align=left&gt;&amp;nbsp;&lt;/td&gt;
+            &lt;/tr&gt;
+</PRE>
+<P>See the source for more ideas on how to extend this tag.</P>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+    $Tag-&gt;table_organize( { cols =&gt; 3,
+                            pretty =&gt; 1, }, $BODY );
+</PRE>
+<P>or similarly with positional parameters:</P>
+<PRE>
+    $Tag-&gt;table_organize( $cols, $attribute_hash_reference, $BODY );
+</PRE>
+<H4><A NAME="See Also">6.20.1.1. See Also</A></H4>
+<P>pages/flypage.html, pages/quantity.html, templates/components/best_horizontal, templates/components/cart, templates/components/cross_horizontal, templates/components/random, templates/components/random_vertical, templates/components/upsell</P>
+<H3><A NAME="Description">6.20.2. Description</A></H3>
+<P>Takes an unorganized set of table cells and organizes them into rows based on the number of columns; it will also break them into separate tables.</P>
+<P>If the number of cells are not on an even modulus of the number of columns, then &quot;filler&quot; cells are pushed on.</P>
+<H4><A NAME="table_organize_cols"> </A>6.20.2.1. <A NAME="table_organize_cols">cols (or columns)</A></H4>
+<P>Number of columns. This argument defaults to 2 if not present.</P>
+<H4><A NAME="table_organize_rows"> </A>6.20.2.2. <A NAME="table_organize_rows">rows</A></H4>
+<P>Optional number of rows. Implies &quot;table&quot; parameter.</P>
+<H4><A NAME="table_organize_table"> </A>6.20.2.3. <A NAME="table_organize_table">table</A></H4>
+<P>If present, will cause a surrounding &lt;TABLE&gt; &lt;/TABLE&gt; pair with the attributes specified in this option.</P>
+<H4><A NAME="table_organize_caption"> </A>6.20.2.4. <A NAME="table_organize_caption">caption</A></H4>
+<P>Table &lt;CAPTION&gt; container text, if any. Can be an array.</P>
+<H4><A NAME="table_organize_td"> </A>6.20.2.5. <A NAME="table_organize_td">td</A></H4>
+<P>Attributes for table cells. Can be an array.</P>
+<H4><A NAME="table_organize_tr"> </A>6.20.2.6. <A NAME="table_organize_tr">tr</A></H4>
+<P>Attributes for table rows. Can be an array.</P>
+<H4><A NAME="table_organize_columnize"> </A>6.20.2.7. <A NAME="table_organize_columnize">columnize</A></H4>
+<P>Will display cells in (newspaper) column order, i.e. rotated.</P>
+<H4><A NAME="table_organize_pretty"> </A>6.20.2.8. <A NAME="table_organize_pretty">pretty</A></H4>
+<P>Adds newline and tab characters to provide some reasonable indenting.</P>
+<H4><A NAME="table_organize_filler"> </A>6.20.2.9. <A NAME="table_organize_filler">filler</A></H4>
+<P>Contents to place in empty cells put on as filler. Defaults to &quot;&amp;nbsp;&quot;.</P>
+<H4><A NAME="table_organize_limit"> </A>6.20.2.10. <A NAME="table_organize_limit">limit</A></H4>
+<P>Maximum number of cells to use. Truncates extra cells silently.</P>
+<H4><A NAME="table_organize_embed"> </A>6.20.2.11. <A NAME="table_organize_embed">embed</A></H4>
+<P>If you want to embed other tables inside, make sure they are called with lower case &lt;td&gt; elements, then set the embed tag and make the cells you wish to organize be &lt;TD&gt; elements. To switch that sense, and make the upper-case or mixed case be the ignored cells, set the embed parameter to &quot;lc&quot;.</P>
+<PRE>
+    [table-organize embed=lc]
+                &lt;td&gt;
+                        &lt;TABLE&gt;
+                                &lt;TR&gt;
+                                &lt;TD&gt; something
+                                &lt;/TD&gt;
+                                &lt;/TR&gt;
+                        &lt;/TABLE&gt;
+                &lt;/td&gt;
+    [/table-organize]
+</PRE>
+<P>or</P>
+<PRE>
+    [table-organize embed=uc]
+                &lt;TD&gt;
+                        &lt;table&gt;
+                                &lt;tr&gt;
+                                &lt;td&gt; something
+                                &lt;/td&gt;
+                                &lt;/tr&gt;
+                        &lt;/table&gt;
+                &lt;/TD&gt;
+    [/table-organize]
+</PRE>
+<P>The &quot;tr&quot;, &quot;td&quot;, and &quot;caption&quot; attributes can be specified with indexes; if they are, then they will alternate according to the modulus.</P>
+<P>The &quot;td&quot; option array size should probably always equal the number of columns; if it is bigger, then trailing elements are ignored. If it is smaller, no attribute is used.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_133.html">Parent Topic</A> | <A HREF="ictags_152.html">Previous Topic</A> | <A HREF="ictags_154.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

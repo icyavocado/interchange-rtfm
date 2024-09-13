@@ -1,0 +1,49 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Upgrade Guide: [search-list]</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<UL ALIGN="Center">
+<A HREF="icupgrade_16.html">Parent Topic</A> | <A HREF="icupgrade_26.html">Previous Topic</A> | <A HREF="icupgrade_28.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></UL>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.11. [search-list]</H2>
+<UL>
+You must always surround [search-list] with [search-region] [/search-region].
+<BR>
+Embedded Perl changes quite a bit. While there are the $Safe{values} and other variable settings, they are automatically shared (no arg=&quot;values&quot;) and move to:</UL>
+<PRE>
+        $Safe{values}   --&gt;  $Values
+        $Safe{cgi}      --&gt;  $CGI
+        $Safe{carts}    --&gt;  $Carts
+        $Safe{items}    --&gt;  $Items
+        $Safe{config}   --&gt;  $Config
+        $Safe{scratch}  --&gt;  $Scratch
+</PRE>
+<UL>
+There are a number of other objects, see the docs.
+<BR>
+Most other issues have more to do with the catalog skeleton (i.e. simple or barry or basic or art) than they do the core. For instance, the &quot;basic&quot; catalog produced for MV3 ran unchanged except for the issues discussed above.</UL>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<UL ALIGN="Center">
+<A HREF="icupgrade_16.html">Parent Topic</A> | <A HREF="icupgrade_26.html">Previous Topic</A> | <A HREF="icupgrade_28.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></UL>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

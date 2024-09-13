@@ -1,0 +1,241 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: html-table</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_70.html">Previous Topic</A> | <A HREF="ictags_72.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.37. html-table</H2>
+<P>Builds an HTML table</P>
+<H3><A NAME="Summary">4.37.1. Summary</A></H3>
+<PRE>
+    [html-table <I>other_named_attributes</I>]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_71.html#html_table_columns">columns</A>
+</TD>
+<TD VALIGN='Top'>
+Whitespace-delimited list of columns
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_71.html#html_table_delimiter">delimiter</A>
+</TD>
+<TD VALIGN='Top'>
+Line delimiter to use if tag body is delimited text rather than an array reference (default &quot;\t&quot;)
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_71.html#html_table_fc">fc</A>
+</TD>
+<TD VALIGN='Top'>
+HTML attributes for &lt;TD&gt; in the first cell
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_71.html#html_table_fr">fr</A>
+</TD>
+<TD VALIGN='Top'>
+HTML attributes for &lt;TR&gt; in the first row
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_71.html#html_table_record_delim">record_delim</A>
+</TD>
+<TD VALIGN='Top'>
+Record delimiter to use if tag body is delimited text rather than an array reference (default &quot;\n&quot;)
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_71.html#html_table_td">td</A>
+</TD>
+<TD VALIGN='Top'>
+HTML attributes for &lt;TD&gt;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_71.html#html_table_th">th</A>
+</TD>
+<TD VALIGN='Top'>
+HTML attributes for &lt;TH&gt;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_71.html#html_table_tr">tr</A>
+</TD>
+<TD VALIGN='Top'>
+HTML attributes for &lt;TR&gt;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_interpolate">interpolate</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_reparse">reparse</A>
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>no</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Container tag
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Has Subtags
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Nests
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+    [html-table]
+---
+    TODO: (tag result)
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+   $Tag-&gt;html_table(  {
+}, $body  );
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;html_table(, $attribute_hash_reference, $body);
+</PRE>
+<H3><A NAME="Description">4.37.2. Description</A></H3>
+<P>Builds an HTML table</P>
+<H4><A NAME="html_table_columns"> </A>4.37.2.1. <A NAME="html_table_columns">columns</A></H4>
+<P>Whitespace-delimited list of columns</P>
+<H4><A NAME="html_table_delimiter"> </A>4.37.2.2. <A NAME="html_table_delimiter">delimiter</A></H4>
+<P>Line delimiter to use if tag body is delimited text rather than an array reference (default &quot;\t&quot;)</P>
+<H4><A NAME="html_table_fc"> </A>4.37.2.3. <A NAME="html_table_fc">fc</A></H4>
+<P>HTML attributes for &lt;TD&gt; in the first cell</P>
+<H4><A NAME="html_table_fr"> </A>4.37.2.4. <A NAME="html_table_fr">fr</A></H4>
+<P>HTML attributes for &lt;TR&gt; in the first row</P>
+<H4><A NAME="html_table_record_delim"> </A>4.37.2.5. <A NAME="html_table_record_delim">record_delim</A></H4>
+<P>Record delimiter to use if tag body is delimited text rather than an array reference (default &quot;\n&quot;)</P>
+<H4><A NAME="html_table_td"> </A>4.37.2.6. <A NAME="html_table_td">td</A></H4>
+<P>HTML attributes for &lt;TD&gt;</P>
+<H4><A NAME="html_table_th"> </A>4.37.2.7. <A NAME="html_table_th">th</A></H4>
+<P>HTML attributes for &lt;TH&gt;</P>
+<H4><A NAME="html_table_tr"> </A>4.37.2.8. <A NAME="html_table_tr">tr</A></H4>
+<P>HTML attributes for &lt;TR&gt;</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_70.html">Previous Topic</A> | <A HREF="ictags_72.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

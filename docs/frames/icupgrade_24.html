@@ -1,0 +1,55 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Upgrade Guide: Form data updates</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<UL ALIGN="Center">
+<A HREF="icupgrade_16.html">Parent Topic</A> | <A HREF="icupgrade_23.html">Previous Topic</A> | <A HREF="icupgrade_25.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></UL>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.8. Form data updates</H2>
+<UL>
+Added Scratch variable mv_data_enable to gate the update_data function. You must set it before doing a form update. Prior to this it was possible to update a SQL database willy-nilly.
+<BR>
+A quick fix like this will allow the update on a single page:</UL>
+<PRE>
+        [set update_database]
+        [set mv_data_enable]1[/set]
+        [/set]
+        &lt;INPUT TYPE=hidden NAME=mv_click VALUE=update_database&gt;
+</PRE>
+<UL>
+It will ensure at least that the user loads one form from you for each update. For best security, gate with a userdb entry like this:</UL>
+<PRE>
+        [set update_database]
+        [if type=data term=&quot;userdb::trusted::[data session username]&quot;]
+            [set mv_data_enable]1[/set]
+        [else]
+            [set mv_data_enable]0[/set]
+        [/else]
+        [/if]
+        [/set]
+</PRE>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<UL ALIGN="Center">
+<A HREF="icupgrade_16.html">Parent Topic</A> | <A HREF="icupgrade_23.html">Previous Topic</A> | <A HREF="icupgrade_25.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></UL>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

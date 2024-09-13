@@ -1,0 +1,40 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Configuration Reference: OnFly</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_70.html">Parent Topic</A> | <A HREF="icconfig_117.html">Previous Topic</A> | <A HREF="icconfig_119.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>3.48. OnFly</H2>
+<P>Enables on-the-fly item additions to the shopping cart. If set to the name of a valid UserTag, that tag definition will be used to parse and format the item with the following call:</P>
+<PRE>
+   $item = Vend::Parse::do_tag($Vend::Cfg-&gt;{OnFly},
+                                   $code,
+                                   $quantity,
+                                   $fly[$j],
+                               );
+</PRE>
+<P>$fly[$j] is the value of <TT>mv_order_fly</TT> for that item. An <TT>onfly</TT> tag is provided by Interchange. See &lt;On-the-fly&gt; ordering.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_70.html">Parent Topic</A> | <A HREF="icconfig_117.html">Previous Topic</A> | <A HREF="icconfig_119.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

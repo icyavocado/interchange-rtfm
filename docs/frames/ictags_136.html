@@ -1,0 +1,190 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: convert_date</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_133.html">Parent Topic</A> | <A HREF="ictags_135.html">Previous Topic</A> | <A HREF="ictags_137.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>6.3. convert_date</H2>
+<P>This tag converts a given date format into another format.</P>
+<H3><A NAME="Summary">6.3.1. Summary</A></H3>
+<PRE>
+    [<B>convert_date</B> day* <I>other_named_attributes</I>[/convert_date]
+    [<B>convert_date</B> day=n* <I>other_named_attributes</I>[/convert_date]
+</PRE>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Positional parameters: </STRONG>The first line shows the usage with positional parameters (given in order). The second line shows usage with named parameters.</P>
+<P><HR WIDTH="80%" ALIGN="Left"></P>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+days
+</TD>
+<TD VALIGN='Top'>
+The number of days from or before today
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_136.html#convert_date_format">format</A>
+</TD>
+<TD VALIGN='Top'>
+'%d-%b-%Y %I:%M%p' or '%d-%b-%Y'
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+fmt - Alias for format
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_136.html#convert_date_raw">raw</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_136.html#convert_date_zerofix">zerofix</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD>
+Invalidates cache
+</TD>
+<TD>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD>
+Macro
+</TD>
+<TD>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD>
+Has end tag
+</TD>
+<TD>
+[/convert_date]
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+  a. [convert-date][/convert-date]
+  b. [convert-date 1][/convert-date]
+  c. [convert-date -1][/convert-date]
+  d. [convert-date]2001-5-1[/convert-date]
+  e. [convert-date]2001-05-01[/convert-date]
+  f. [convert-date]20010515[/convert-date]
+  g. [convert-date raw=1]2001-05-18[/convert-date]
+  h. [convert-date fmt=&quot;%d-%m-%Y&quot;]2001-05-18[/convert-date]
+  i. [convert-date]200 1 -  --051 =9[/convert-date]
+  j. [convert-date]2001 -  --05 -20 11 1 5[/convert-date]
+  k. [convert-date raw=1]2001-05-21 11:15[/convert-date]
+---
+  a. 18-May-2001 03:15AM (todays day and time)
+  b. 19-May-2001 03:15AM (today + 1 day)
+  c. 17-May-2001 03:15AM (today - 1 day)
+  d. 01-May-2001
+  e. 01-May-2001
+  f. 15-May-2001
+  g. 20010518
+  h. 18-05-2001
+  i. 19-May-2001
+  j. 20-May-2001 11:15AM
+  k. 200105211115
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+    $Tag-&gt;convert_date( { days =&gt; 1 } );
+
+    $Tag-&gt;convert_date( { body =&gt; <TT>&quot;2001-05-19 15:35&quot;</TT>,
+                       <B>format</B> =&gt; <TT>&quot;%d-%m-%Y %H:%M&quot;</TT>, } );
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;convert_date( 1 );
+</PRE>
+<H3><A NAME="Description">6.3.2. Description</A></H3>
+<P>This tag converts almost any given date format into another, possibly user defined, format.</P>
+<H4><A NAME="convert_date_days"> </A>6.3.2.1. <A NAME="convert_date_days">days</A></H4>
+<P>Number of days from or before today's date and time. Will only be used if nothing is supplied between the tags.</P>
+<H4><A NAME="convert_date_format"> </A>6.3.2.2. <A NAME="convert_date_format">format</A></H4>
+<P>POSIX time format string of your choice. See Unix strftime(3) manpage for complete details.</P>
+<H4><A NAME="convert_date_raw"> </A>6.3.2.3. <A NAME="convert_date_raw">raw</A></H4>
+<P>If this option is set to true, will display given date in raw format, e.g. yyyymmdd or yyyymmddHHMM.</P>
+<H4><A NAME="convert_date_zerofix"> </A>6.3.2.4. <A NAME="convert_date_zerofix">zerofix</A></H4>
+<P>Strips leading zeroes from numbers.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_133.html">Parent Topic</A> | <A HREF="ictags_135.html">Previous Topic</A> | <A HREF="ictags_137.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

@@ -1,0 +1,73 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: Standard Parsing</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_159.html">Parent Topic</A> | <A HREF="ictags_159.html">Previous Topic</A> | <A HREF="ictags_161.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>A.1. Standard Parsing</H2>
+<P>Under normal circumstances, the template page containing tags and HTML is parsed in the following order:</P>
+<OL>
+<LI>Any content in MV_AUTOLOAD is prepended to the template page.<UL>
+<EM></EM></UL>
+<BR>
+<EM></EM>
+<LI>Any <TT>[pragma]</TT> tags anywhere in the text are processed, and the specified pragmas are set.<UL>
+<LI>Since <TT>[pragma]</TT> tags are preprocessed before any other content, <A HREF="ictags_6.html#attr_reparse">reparse</A> will not catch them, nor will they work if included in variables. Also, the specified pragma will apply to the entire template (not just the section after the tag).</UL><UL>
+<LI>If you want to apply a pragma with a variable or only to part of a document, you must use [<A HREF="ictags_110.html#tag">tag</A>&nbsp;pragma=&quot;...&quot;] instead.</UL>
+<BR>
+<EM></EM>
+<LI>Variables (macros) are processed in the following order:<OL>
+<LI>@@VARNAME@@ global variables
+<LI>@_VARNAME_@ local or global variables
+<LI>__VARNAME__ local variables</OL>
+<BR>
+<EM></EM>
+<LI>Interchange comments are stripped.<UL>
+<EM></EM></UL>
+<BR>
+<EM></EM>
+<LI>False-endtag macros are expanded (e.g., [<A HREF="ictags_86.html#page">/page</A>] and [<A HREF="ictags_85.html#order">/order</A>]).<UL>
+<EM></EM></UL>
+<BR>
+<EM></EM>
+<LI>'&lt;!--[tagname]--&gt;' escapes are converted to [tagname]<UL>
+<LI>This can be a convenience for your HTML editor if it has trouble with tags using the standard [tagname] syntax.</UL><UL>
+<LI>However, if you want to HTML-comment out an Interchange tag in content that will be fed raw to a browser, you must include whitespace between the HTML comment delimiters and the tag, like this, '&lt;!--&nbsp;&nbsp;[tagname]&nbsp;&nbsp;--&gt;'.</UL>
+<BR>
+<EM></EM>
+<LI>The main tag parser is called.<UL>
+<LI>Some tags parse recursively (depending upon <A HREF="ictags_6.html#attr_reparse">reparse</A> and <A HREF="ictags_6.html#attr_interpolate">interpolate</A> settings, of course).</UL><UL>
+<LI>Some tags (e.g., [<A HREF="ictags_79.html#loop">loop</A>]) process PREFIX-tags in their contained body text. Hence, the PREFIX-tags are not handled recursively.</UL><UL>
+<LI>Some tags are interpreted in the lib/Vend/Parse.pm:start routine. You cannot call them with the '$Tag-&gt;<I>tagname</I>()' syntax. They are:<UL>
+<LI>The [<A HREF="ictags_67.html#goto">goto</A>] tag. Note also that the [<A HREF="ictags_67.html#goto">goto</A>] tag handles the [<A HREF="ictags_77.html#label">label</A>] tag.</UL><UL>
+<LI>The [<A HREF="ictags_41.html#bounce">bounce</A>] tag.</UL></UL>
+<BR>
+<EM></EM>
+<LI>Image paths substitution on the HTML output occurs.<UL>
+<EM></EM></UL>
+<BR>
+<EM></EM></OL>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_159.html">Parent Topic</A> | <A HREF="ictags_159.html">Previous Topic</A> | <A HREF="ictags_161.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

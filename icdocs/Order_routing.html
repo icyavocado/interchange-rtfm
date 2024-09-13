@@ -1,0 +1,1010 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>Order routing - RTFM</title>
+
+    <meta http-equiv="Content-Language" content="en-GB">
+    <meta http-equiv="Window-target" content="_top">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <meta http-equiv="X-Soup-Of-The-Day" content="Tomato">
+
+    <meta name="author" content="Kevin Walsh">
+    <meta name="publisher" content="Cursor Software Limited">
+    <meta name="copyright" content="2001-2020, Cursor Software Limited">
+    <meta name="licence" content="GPLv2+ (Unknown licence)">
+    <meta name="generator" content="Interchange 5.7.0 -- www.icdevgroup.org">
+    <meta name="robots" content="index,follow,noarchive,noimageindex">
+    <meta name="keywords" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="description" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="MSSmartTagsPreventParsing" content="TRUE">
+
+    <meta name="verify-v1" content="KqlU/bxZj9Y2ZdZ/3RwuzgVSMIrZ8XM2wqbjSaEo3O4=">
+
+    <meta name="y_key" content="e2dd60be5777fbc8">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
+    <link rel="search" type="application/opensearchdescription+xml" href="http://interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="stylesheet" href="/decor/css/website.css">
+    <link rel="stylesheet" href="/decor/css/wiki.css">
+    <link rel="stylesheet" href="/decor/css/neo.css">
+
+
+    <script type="text/javascript" language="JavaScript">
+    <!--
+	if (top != self){
+	    top.location = location;
+	}
+
+    // -->
+    </script>
+</head>
+<body>
+<!-- START VAR: LOGOBAR -->
+<table id="rtfmheader" cellpadding="0" cellspacing="0">
+    <tr>
+	<td><a href="http://interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+
+	<td width="100%" style="text-align: right; padding: 10px">
+
+	    <form action="http://interchange-rtfm.pullingshots.ca/search.html" method="POST">
+		<input type="hidden" name="mv_session_id" value="nsession">
+		<input type="hidden" name="mv_profile" value="cms_search">
+		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
+		<input type="submit" class="button" value="Search">
+	    </form>
+
+	</td>
+    </tr>
+</table>
+<table id="breadcrumbs" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+	<td>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_ecommerce_functions.html">Interchange ecommerce functions</a></span>
+	    <span class="nowrap">&gt; <span class="current">Order routing</span></span>
+	</td>
+
+    </tr>
+</table>
+<!-- END VAR: LOGOBAR -->
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+
+	    <td id="leftside">
+<!-- START COMPONENT: navigation -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th>NAVIGATION</th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+
+<!-- END COMPONENT: navigation -->
+<!-- START COMPONENT: wiki_recent -->
+
+
+
+<!-- END COMPONENT: wiki_recent -->
+<!-- START COMPONENT: wiki_backlinks -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th><span class="nowrap">PAGES THAT LINK HERE</span></th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/AsciiTrack.html">AsciiTrack</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/OrderCounter.html">OrderCounter</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Route.html">Route</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html">Special form variables</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+<!-- END COMPONENT: wiki_backlinks -->
+<!-- START COMPONENT: account -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+
+    <tr>
+	<th>ACCOUNT LOGIN</th>
+    </tr>
+
+    <tr>
+	<td class="first">
+	    <p>You are not logged in</p>
+	</td>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+	    </ul>
+	</td>
+    </tr>
+
+</table>
+
+
+
+<!-- END COMPONENT: account -->
+<!-- START COMPONENT: icpowered -->
+
+<div style="text-align: center; margin: 10px; margin-top: 0px">
+    <a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+</div>
+
+
+
+<!-- START COMPONENT: icpowered -->
+
+	    </td>
+
+	    <td id="bodytext">
+<!-- start of page text -->
+
+<!-- start page: wiki/display (Order_routing) -->
+
+<div class="wikitext">
+<a name="Order_routing"></a>
+<h1>Order routing</h1>
+<!-- start of toc --><div class="toc">
+<table>
+<tr valign="top">
+<th>Table of contents</th>
+</tr>
+<tr><td class="h2"><a href="#Introduction">1. Introduction</a></td></tr>
+<tr><td class="h3"><a href="#The_master_route">1.1. The master route</a></td></tr>
+<tr><td class="h3"><a href="#Route_called_from_a_master_route">1.2. Route called from a master route</a></td></tr>
+<tr><td class="h3"><a href="#Route_specified_in_an_item">1.3. Route specified in an item</a></td></tr>
+<tr><td class="h3"><a href="#Route_set_in_the_mv_order_route_form_field">1.4. Route set in the mv_order_route form field</a></td></tr>
+<tr><td class="h3"><a href="#Route_defined_for_individual_cart_items">1.5. Route defined for individual cart items</a></td></tr>
+<tr><td class="h2"><a href="#Route_attributes">2. Route attributes</a></td></tr>
+<tr><td class="h3"><a href="#attach">2.1. attach</a></td></tr>
+<tr><td class="h3"><a href="#bcc">2.2. bcc</a></td></tr>
+<tr><td class="h3"><a href="#cascade">2.3. cascade</a></td></tr>
+<tr><td class="h3"><a href="#cc">2.4. cc</a></td></tr>
+<tr><td class="h3"><a href="#commit">2.5. commit</a></td></tr>
+<tr><td class="h3"><a href="#commit_tables">2.6. commit_tables</a></td></tr>
+<tr><td class="h3"><a href="#counter">2.7. counter</a></td></tr>
+<tr><td class="h3"><a href="#credit_card">2.8. credit_card</a></td></tr>
+<tr><td class="h3"><a href="#dynamic_routes">2.9. dynamic_routes</a></td></tr>
+<tr><td class="h3"><a href="#email">2.10. email</a></td></tr>
+<tr><td class="h3"><a href="#empty">2.11. empty</a></td></tr>
+<tr><td class="h3"><a href="#encrypt">2.12. encrypt</a></td></tr>
+<tr><td class="h3"><a href="#encrypt_program">2.13. encrypt_program</a></td></tr>
+<tr><td class="h3"><a href="#errors_to">2.14. errors_to</a></td></tr>
+<tr><td class="h3"><a href="#expandable">2.15. expandable</a></td></tr>
+<tr><td class="h3"><a href="#extended">2.16. extended</a></td></tr>
+<tr><td class="h3"><a href="#from">2.17. from</a></td></tr>
+<tr><td class="h3"><a href="#increment">2.18. increment</a></td></tr>
+<tr><td class="h3"><a href="#individual_track">2.19. individual_track</a></td></tr>
+<tr><td class="h3"><a href="#individual_track_ext">2.20. individual_track_ext</a></td></tr>
+<tr><td class="h3"><a href="#individual_track_mode">2.21. individual_track_mode</a></td></tr>
+<tr><td class="h3"><a href="#master">2.22. master</a></td></tr>
+<tr><td class="h3"><a href="#payment_mode">2.23. payment_mode</a></td></tr>
+<tr><td class="h3"><a href="#pgp_cc_key">2.24. pgp_cc_key</a></td></tr>
+<tr><td class="h3"><a href="#pgp_key">2.25. pgp_key</a></td></tr>
+<tr><td class="h3"><a href="#profile">2.26. profile</a></td></tr>
+<tr><td class="h3"><a href="#receipt">2.27. receipt</a></td></tr>
+<tr><td class="h3"><a href="#report">2.28. report</a></td></tr>
+<tr><td class="h3"><a href="#reply">2.29. reply</a></td></tr>
+<tr><td class="h3"><a href="#rollback">2.30. rollback</a></td></tr>
+<tr><td class="h3"><a href="#rollback_tables">2.31. rollback_tables</a></td></tr>
+<tr><td class="h3"><a href="#supplant">2.32. supplant</a></td></tr>
+<tr><td class="h3"><a href="#track">2.33. track</a></td></tr>
+<tr><td class="h3"><a href="#track_mode">2.34. track_mode</a></td></tr>
+<tr><td class="h3"><a href="#transactions">2.35. transactions</a></td></tr>
+<tr><td class="h2"><a href="#Order_routing_example">3. Order routing example</a></td></tr>
+<tr><td class="h3"><a href="#Execution_order">3.1. Execution order</a></td></tr>
+<tr><td class="h3"><a href="#Transactions">3.2. Transactions</a></td></tr>
+<tr><td class="h3"><a href="#Failure">3.3. Failure</a></td></tr>
+<tr><td class="h3"><a href="#Encryption">3.4. Encryption</a></td></tr>
+<tr><td class="h2"><a href="#Individual_item_routing">4. Individual item routing</a></td></tr>
+<tr>
+<td class="spacer">&nbsp;</td>
+</tr>
+</table>
+</div><!-- end of toc -->
+<a name="Introduction"></a>
+<h2>Introduction</h2>
+<p>
+Interchange can send order emails, and perform custom credit card charges
+and/or logging for each item ordered.&nbsp;
+The <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Route.html" title="Route (config)">Route</a></span> directive is used to control this behaviour,
+along with the
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html#mv_order_route" title="&quot;mv order route&quot; heading on the &quot;Special form variables&quot; page">mv_order_route</a></span>
+item attribute.
+</p>
+<p>
+If no <span class="fixedwidth">Route</span> is set up then Interchange will use a
+default &quot;mail out the order and show a receipt&quot; model.
+</p>
+<p>
+Here is an example <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Route.html" title="Route (config)">Route</a></span> definition:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">Route&nbsp; mail&nbsp; pgp</span><span class="def_Symbol">_</span><span class="def_Syntax">key&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>0x67798115<br>
+<span class="def_Syntax">Route&nbsp; mail&nbsp; email&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="def_EMail def_URI">orders@example.com</span><br>
+<span class="def_Syntax">Route&nbsp; mail&nbsp; reply&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="def_EMail def_URI">service@example.com</span><br>
+<span class="def_Syntax">Route&nbsp; mail&nbsp; encrypt&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="def_Number">1</span><br>
+<span class="def_Syntax">Route&nbsp; mail&nbsp; encrypt</span><span class="def_Symbol">_</span><span class="def_Syntax">program&nbsp; </span><span class="def_String">&quot;/usr/bin/pgpe -fat -q -r %s&quot;</span><br>
+<span class="def_Syntax">Route&nbsp; mail&nbsp; report&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span>etc<span class="def_Symbol">/</span><span class="def_Syntax">report</span><span class="def_Symbol">_</span>email
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+You can also use the Perl-style &quot;here document&quot; syntax, as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">Route&nbsp; mail&nbsp; </span><span class="def_Symbol">&lt;</span><span class="def_Symbol">&lt;</span>EOR<br>
+&nbsp; &nbsp; <span class="def_Syntax">pgp</span><span class="def_Symbol">_</span><span class="def_Syntax">key&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>0x67798115<br>
+&nbsp; &nbsp; <span class="def_Syntax">email&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="def_EMail def_URI">orders@example.com</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">reply&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="def_EMail def_URI">service@example.com</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">encrypt&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="def_Number">1</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">encrypt</span><span class="def_Symbol">_</span><span class="def_Syntax">program&nbsp; </span>&quot;<span class="def_Symbol">/</span>usr<span class="def_Symbol">/</span>bin<span class="def_Symbol">/</span><span class="def_Syntax">gpg </span><span class="def_Symbol">-</span><span class="def_Syntax">e </span><span class="def_Symbol">-</span><span class="def_Syntax">a </span><span class="def_Symbol">-</span>r <span class="def_String">'%s' </span><span class="def_Symbol">-</span><span class="def_Symbol">-</span>batch<br>
+&nbsp; &nbsp; <span class="def_Syntax">report&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span>etc<span class="def_Symbol">/</span><span class="def_Syntax">report</span><span class="def_Symbol">_</span>email<br>
+EOR
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+Values that contain whitespace must be quoted.
+</p>
+</td>
+</tr>
+</table>
+
+<p>
+This route would be used whenever &quot;<span class="fixedwidth">mail</span>&quot; is called using one
+of three possible methods, as follows:
+</p>
+<a name="The_master_route"></a>
+<h3>The master route</h3>
+<p>
+The last route defined becomes the <em>master</em> route.&nbsp;
+This is named <span class="fixedwidth">default</span> by convention.&nbsp;
+Besides setting the global behaviour of the routing mechanism,
+the <em>master</em> route provides some defaults for the other routes.&nbsp;
+For example, if <span class="fixedwidth">encrypt_program</span> is set in the <em>master</em> route,
+then the same value will be the default for all of the other routes.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+Most of the <em>master</em> route settings do not fall through
+to other routes.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="Route_called_from_a_master_route"></a>
+<h3>Route called from a master route</h3>
+<p>
+Called via the &quot;<span class="fixedwidth">cascade</span>&quot; parameter from the <em>master</em> route.&nbsp;
+This is the way that most routes are called in Interchange's <em>Standard</em>
+ecommerce demo.&nbsp;
+These routes treat the order as a whole.
+</p>
+<a name="Route_specified_in_an_item"></a>
+<h3>Route specified in an item</h3>
+<p>
+If an item in the shopping cart has its
+&quot;<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html#mv_order_route" title="&quot;mv order route&quot; heading on the &quot;Special form variables&quot; page">mv_order_route</a></span>&quot; attribute set to &quot;<span class="fixedwidth">mail</span>&quot; then it will be added to a group of
+one or more items that will be sent via that route.&nbsp;
+See the <a href="#Individual_item_routing" title="&quot;Individual item routing&quot; heading on this page">Individual item routing</a> section, below.
+</p>
+<a name="Route_set_in_the_mv_order_route_form_field"></a>
+<h3>Route set in the mv_order_route form field</h3>
+<p>
+By setting a value in a &quot;<span class="fixedwidth">mv_order_route</span>&quot; <span class="fixedwidth">&lt;form&gt;</span> field, you can specify one or more
+routes to run.&nbsp;
+Rows in the cart array may also contain a &quot;mv_order_route&quot; attribute.&nbsp;
+See the <a href="#Individual_item_routing" title="&quot;Individual item routing&quot; heading on this page">individual item routing</a> section,
+below.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_availability.gif" width="32" height="32" border="0" alt="Deprecation notice">
+</td>
+<td width="100%">
+<p class="title">Deprecation notice</p>
+<p>
+The
+&quot;<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html#mv_order_route" title="&quot;mv order route&quot; heading on the &quot;Special form variables&quot; page">mv_order_route</a></span>&quot; <span class="fixedwidth">&lt;form&gt;</span> field is the deprecated method of route
+selection,
+used in earlier Interchange 4.6.x and Minivend 4 routes.&nbsp;
+This method will still work fine for the time being but may
+be withdrawn in the future.
+</p>
+<p style="margin-bottom: 0px">
+The &quot;<span class="fixedwidth">mv_order_route</span>&quot; cart item attribute is not deprecated,
+and remains as valid method of route selection.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="Route_defined_for_individual_cart_items"></a>
+<h3>Route defined for individual cart items</h3>
+<p>
+See the <a href="#Individual_item_routing" title="&quot;Individual item routing&quot; heading on this page">individual item routing</a> section,
+below.
+</p>
+<a name="Route_attributes"></a>
+<h2>Route attributes</h2>
+<p>
+The attributes that can be set are listed in this section.
+</p>
+<a name="attach"></a>
+<h3>attach</h3>
+<p>
+This determines whether the order report should be attached to the
+order report email.&nbsp;
+This is useful if certain items must be printed separately from others,
+perhaps for a fax to a fulfilment house.&nbsp;
+Note that either <span class="fixedwidth"><a href="#attach" title="&quot;attach&quot; heading on this page">attach</a></span>, <span class="fixedwidth"><a href="#email" title="&quot;email&quot; heading on this page">email</a></span> or
+<span class="fixedwidth"><a href="#empty" title="&quot;empty&quot; heading on this page">empty</a></span> must be set for a route.
+</p>
+<a name="bcc"></a>
+<h3>bcc</h3>
+<p>
+The email address(es) where a BCC for the order report will be sent.
+</p>
+<a name="cascade"></a>
+<h3>cascade</h3>
+<p>
+A list of routes which should be pushed on the stack of routes to run,
+after all currently scheduled routes have finished.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_warning.gif" width="32" height="32" border="0" alt="Warning">
+</td>
+<td width="100%">
+<p class="title">Warning</p>
+<p style="margin-bottom: 0px">
+Cascades can cause endless loops, so only one setting
+(in the &quot;<span class="fixedwidth">default</span>&quot; route) is recommended.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="cc"></a>
+<h3>cc</h3>
+<p>
+The email address(es) where a CC for the order report will be sent.
+</p>
+<a name="commit"></a>
+<h3>commit</h3>
+<p>
+Perl code that should be executed on a route <em>commit</em>.&nbsp;
+Also see the <span class="fixedwidth"><a href="#rollback" title="&quot;rollback&quot; heading on this page">rollback</a></span> attribute.
+</p>
+<a name="commit_tables"></a>
+<h3>commit_tables</h3>
+<p>
+Tables that are to be pre-opened before running the Perl <span class="fixedwidth"><a href="#commit" title="&quot;commit&quot; heading on this page">commit</a></span>
+code.&nbsp;
+Also see the <span class="fixedwidth"><a href="#rollback_tables" title="&quot;rollback tables&quot; heading on this page">rollback_tables</a></span> attribute.
+</p>
+<a name="counter"></a>
+<h3>counter</h3>
+<p>
+The location of a <em>counter file</em> which should be used instead of
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/OrderCounter.html" title="OrderCounter (config)">OrderCounter</a></span> for this route.&nbsp;
+This is expected to generate a unique value for <span class="fixedwidth">mv_order_number</span>
+for the route.&nbsp;
+This parameter is normally used to provide unique order references for
+multi-vendor routing.
+</p>
+<a name="credit_card"></a>
+<h3>credit_card</h3>
+<p>
+Determines whether credit card encryption should be performed for this order.&nbsp;
+Either this or <span class="fixedwidth"><a href="#encrypt" title="&quot;encrypt&quot; heading on this page">encrypt</a></span> should always be set.
+</p>
+<a name="dynamic_routes"></a>
+<h3>dynamic_routes</h3>
+<p>
+If set in the the <em>master</em> route,
+this will cause the the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/RouteDatabase.html" class="nopage" title="RouteDatabase (config)">RouteDatabase</a></span>
+to be checked for a <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Route.html" title="Route (config)">Route</a></span>.&nbsp;
+If it exists, it will be read in and the database copy will be used instead
+of the static copy built when the website was (re)started.&nbsp;
+If set in a <span class="fixedwidth">subsidiary</span> route,
+that route will be ignored when the <span class="fixedwidth">catalog.cfg</span> is read,
+and <span class="fixedwidth"><a href="#dynamic_routes" title="&quot;dynamic routes&quot; heading on this page">dynamic_routes</a></span> must be active for it to be seen.
+</p>
+<a name="email"></a>
+<h3>email</h3>
+<p>
+The email address(es) where the order should be sent.&nbsp;
+This is set just like the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/MailOrderTo.html" title="MailOrderTo (config)">MailOrderTo</a></span> directive,
+which provides the default value for this attribute.&nbsp;
+Note that either <span class="fixedwidth"><a href="#attach" title="&quot;attach&quot; heading on this page">attach</a></span>, <span class="fixedwidth"><a href="#email" title="&quot;email&quot; heading on this page">email</a></span> or
+<span class="fixedwidth"><a href="#empty" title="&quot;empty&quot; heading on this page">empty</a></span> must be set for a route.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+If <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SendMailProgram.html" title="SendMailProgram (config)">SendMailProgram</a></span> is set to &quot;<span class="fixedwidth">none</span>&quot; then order notification emails will not be sent,
+and an error will be logged to the website's
+<a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ErrorFile.html" title="ErrorFile (config)">error log file</a>.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="empty"></a>
+<h3>empty</h3>
+<p>
+Set this if you do not want this route to send an email or attachment.&nbsp;
+Note that either <span class="fixedwidth"><a href="#attach" title="&quot;attach&quot; heading on this page">attach</a></span>, <span class="fixedwidth"><a href="#email" title="&quot;email&quot; heading on this page">email</a></span> or
+<span class="fixedwidth"><a href="#empty" title="&quot;empty&quot; heading on this page">empty</a></span> must be set for a route.
+</p>
+<a name="encrypt"></a>
+<h3>encrypt</h3>
+<p>
+Defines whether the entire order should be encrypted with the
+<span class="fixedwidth"><a href="#encrypt_program" title="&quot;encrypt program&quot; heading on this page">encrypt_program</a></span>.&nbsp;
+If <span class="fixedwidth"><a href="#credit_card" title="&quot;credit card&quot; heading on this page">credit_card</a></span> is set then the credit card details
+will be encrypted first followed by the whole of the rest of the order.
+</p>
+<a name="encrypt_program"></a>
+<h3>encrypt_program</h3>
+<p>
+The encryption program incantation that should be used.&nbsp;
+Set identically to the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/EncryptProgram.html" title="EncryptProgram (config)">EncryptProgram</a></span> directive,
+except that &quot;<span class="fixedwidth">&#37;s</span>&quot; will be replaced with the <span class="fixedwidth">pgp_key</span>.&nbsp;
+There is no default value.
+</p>
+<a name="errors_to"></a>
+<h3>errors_to</h3>
+<p>
+Sets the &quot;<span class="fixedwidth">Errors-To:</span>&quot; email header so that <em>bounced</em>
+order receipt emails will go to the specified address.&nbsp;
+The default is the same as <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/MailOrderTo.html" title="MailOrderTo (config)">MailOrderTo</a></span>.
+</p>
+<a name="expandable"></a>
+<h3>expandable</h3>
+<p>
+If set in the the <em>master</em>, then route settings will be
+interpolated for Interchange tags.&nbsp;
+This has no effect if the route is not the <em>master</em>.
+</p>
+<a name="extended"></a>
+<h3>extended</h3>
+<p>
+Extended route settings that take the form of an Interchange option list
+(normally a Perl hash reference that will be read).&nbsp;
+These settings always take precedence over any that currently exist,
+regardless of the order in which they are specified.&nbsp;
+For example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">Route&nbsp; default&nbsp; extended&nbsp; </span><span class="def_Symbol">{ </span><span class="def_Syntax">email </span><span class="def_Symbol">=</span><span class="def_Symbol">&gt; </span><span class="def_String">'kevin@example.com' </span><span class="def_Symbol">}</span><br>
+<span class="def_Syntax">Route&nbsp; default&nbsp; email&nbsp; &nbsp;&nbsp; </span><span class="def_EMail def_URI">walsh@example.com
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The ultimate setting of <span class="fixedwidth">email</span> will be kevin@example.com.
+</p>
+<a name="from"></a>
+<h3>from</h3>
+<p>
+The email address used for sending the order report email, if applicable.
+</p>
+<a name="increment"></a>
+<h3>increment</h3>
+<p>
+Specifies whether the order number should be incremented as a result of
+this route.&nbsp;
+The default is to not increment, as the order number should usually be
+the same for different routes within the same customer order.
+</p>
+<a name="individual_track"></a>
+<h3>individual_track</h3>
+<p>
+A directory where individual order tracking files will be placed.&nbsp;
+The file name will correspond to the value of <span class="fixedwidth">mv_order_number</span>.&nbsp;
+This can be useful for batching orders for download.
+</p>
+<a name="individual_track_ext"></a>
+<h3>individual_track_ext</h3>
+<p>
+The suffix that will be appended to the file name for
+<span class="fixedwidth"><a href="#individual_track" title="&quot;individual track&quot; heading on this page">individual_track</a></span>.&nbsp;
+Must contain a dot (<span class="fixedwidth">.</span>), if that is desired.&nbsp;
+For example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">Route&nbsp; foo&nbsp; individual</span><span class="def_Symbol">_</span><span class="def_Syntax">track</span><span class="def_Symbol">_</span><span class="def_Syntax">ext&nbsp; </span><span class="def_Symbol">.</span>pgp
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="individual_track_mode"></a>
+<h3>individual_track_mode</h3>
+<p>
+A number representing the permission mode for the
+<span class="fixedwidth"><a href="#individual_track" title="&quot;individual track&quot; heading on this page">individual_track</a></span> file.&nbsp;
+This is best expressed in <em>octal</em>, as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">Route&nbsp; foo&nbsp; individual</span><span class="def_Symbol">_</span><span class="def_Syntax">track</span><span class="def_Symbol">_</span><span class="def_Syntax">mode&nbsp; </span><span class="def_Number">0444
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="master"></a>
+<h3>master</h3>
+<p>
+If set, this route becomes the <em>master</em> route for <span class="fixedwidth">supplant</span>,
+<span class="fixedwidth">dynamic_routes</span>, <span class="fixedwidth">errors_to</span> and <span class="fixedwidth">expandable</span>,
+and supplies the setting for the <span class="fixedwidth">receipt</span> and the <span class="fixedwidth">attach</span>
+reports.&nbsp;
+Switching master mid-stream is unlikely to be successful;&nbsp;
+It should be the first route in a cascade.
+</p>
+<a name="payment_mode"></a>
+<h3>payment_mode</h3>
+<p>
+If this is set, it enables a payment mode for the route.&nbsp;
+(Payment modes are also set using the <a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Route.html" title="Route (config)">Route</a> directive.)
+</p>
+<a name="pgp_cc_key"></a>
+<h3>pgp_cc_key</h3>
+<p>
+The PGP/GnuPG key selector that is used to determine which public key is
+used for encryption of credit card details only.
+</p>
+<p>
+With PGP 5 and 6, see appropriate values by using
+&quot;<span class="fixedwidth">pgpk&nbsp;-l</span>&quot;.&nbsp;
+For GnuPG, use &quot;<span class="fixedwidth">gpg&nnsp;--list-keys</span>&quot;.&nbsp;
+Defaults to the value of the <span class="fixedwidth"><a href="#pgp_key" title="&quot;pgp key&quot; heading on this page">pgp_key</a></span> attribute.
+</p>
+<a name="pgp_key"></a>
+<h3>pgp_key</h3>
+<p>
+The PGP/GnuPG key selector that is used to determine which public key is
+used for encryption.&nbsp;
+If <span class="fixedwidth"><a href="#pgp_cc_key" title="&quot;pgp cc key&quot; heading on this page">pgp_cc_key</a></span> is set then that key will be used
+for credit card encryption instead of this value.
+</p>
+<p>
+With PGP 5 and 6, see appropriate values by using
+&quot;<span class="fixedwidth">pgpk&nbsp;-l</span>&quot;.&nbsp;
+For GnuPG, use &quot;<span class="fixedwidth">gpg&nnsp;--list-keys</span>&quot;.&nbsp;
+Defaults to the value of the <span class="fixedwidth"><a href="#pgp_key" title="&quot;pgp key&quot; heading on this page">pgp_key</a></span> attribute.
+</p>
+<a name="profile"></a>
+<h3>profile</h3>
+<p>
+The custom order profile which should be performed to check the order
+prior to actually running the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Route.html" title="Route (config)">Route</a></span>.&nbsp;
+If it fails then the route will not be used.&nbsp;
+See <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/OrderProfile.html" title="OrderProfile (config)">OrderProfile</a></span> and
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html#mv_order_profile" title="&quot;mv order profile&quot; heading on the &quot;Special form variables&quot; page">mv_order_profile</a></span>.
+</p>
+<a name="receipt"></a>
+<h3>receipt</h3>
+<p>
+The customer receipt page that should be used for this route.&nbsp;
+This only applies if <span class="fixedwidth"><a href="#supplant" title="&quot;supplant&quot; heading on this page">supplant</a></span> is set for the route,
+and that normally would only be in the <span class="fixedwidth">default</span> route.
+</p>
+<a name="report"></a>
+<h3>report</h3>
+<p>
+The merchant's report page that should be used for this route.&nbsp;
+If <span class="fixedwidth"><a href="#attach" title="&quot;attach&quot; heading on this page">attach</a></span> is defined then the contents of the report will
+be sent as a MIME attachment to the order report.
+</p>
+<a name="reply"></a>
+<h3>reply</h3>
+<p>
+The &quot;<span class="fixedwidth">Reply-To:</span>&quot; email header that should be set.&nbsp;
+Default is the same as the <span class="fixedwidth"><a href="#email" title="&quot;email&quot; heading on this page">email</a></span> attribute.&nbsp;
+If there are only word characters (A-Za-z0-9 and underscore),
+it describes an Interchange <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/value.html" title="value (tags)">value</a></span> name where the
+email address can be found.
+</p>
+<a name="rollback"></a>
+<h3>rollback</h3>
+<p>
+Perl code that should be performed on a route rollback.&nbsp;
+Also see the <span class="fixedwidth"><a href="#commit" title="&quot;commit&quot; heading on this page">commit</a></span> attribute.
+</p>
+<a name="rollback_tables"></a>
+<h3>rollback_tables</h3>
+<p>
+Tables that are to be pre-opened before running the Perl <span class="fixedwidth"><a href="#rollback" title="&quot;rollback&quot; heading on this page">rollback</a></span>
+code.&nbsp;
+Also see the <span class="fixedwidth"><a href="#commit_tables" title="&quot;commit tables&quot; heading on this page">commit_tables</a></span> attribute.
+</p>
+<a name="supplant"></a>
+<h3>supplant</h3>
+<p>
+Specify whether the <em>master</em> route should <em>supplant</em> the
+current route's order report.&nbsp;
+If set, the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/AsciiTrack.html" title="AsciiTrack (config)">AsciiTrack</a></span> operation will use this route
+and the normal Interchange order email sequence will not be used.&nbsp;
+This is normally set in the <em>master</em> route.
+</p>
+<a name="track"></a>
+<h3>track</h3>
+<p>
+The name of a file which should be used for tracking.&nbsp;
+If the <span class="fixedwidth"><a href="#supplant" title="&quot;supplant&quot; heading on this page">supplant</a></span> attribute is set then the normal order
+tracking mechanism will be used as well.
+</p>
+<a name="track_mode"></a>
+<h3>track_mode</h3>
+<p>
+A number representing the permission mode for the <span class="fixedwidth"><a href="#track" title="&quot;track&quot; heading on this page">track</a></span> file.&nbsp;
+This is best expressed in <em>octal</em>, as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">Route&nbsp; foo&nbsp; track</span><span class="def_Symbol">_</span><span class="def_Syntax">mode&nbsp; </span><span class="def_Number">0444
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="transactions"></a>
+<h3>transactions</h3>
+<p>
+A list of tables to put in <em>transactions mode</em> at the beginning of
+the route.&nbsp;
+This is used to ensure that orders get rolled back if another route fails.&nbsp;
+The first route to open a table must have this parameter,
+otherwise transactions will not work.&nbsp;
+If any route fails, other than routes marked with
+<span class="fixedwidth"><a href="#error_ok" title="&quot;error ok&quot; heading on this page">error_ok</a></span>, then a <em>rollback</em> will be performed
+on these tables.&nbsp;
+A <em>commit</em> will be performed at the end of all order routes if there
+were no errors.
+</p>
+<a name="Order_routing_example"></a>
+<h2>Order routing example</h2>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">Route&nbsp; hardware&nbsp; </span><span class="def_Symbol">&lt;</span><span class="def_Symbol">&lt;</span>EOR<br>
+&nbsp; &nbsp; <span class="def_Syntax">encrypt&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="def_Number">1</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">pgp</span><span class="def_Symbol">_</span><span class="def_Syntax">key&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>0x67798115<br>
+&nbsp; &nbsp; <span class="def_Syntax">email&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="def_EMail def_URI">hardgoods@example.com</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">reply&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="def_EMail def_URI">service@example.com</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">report&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span>etc<span class="def_Symbol">/</span><span class="def_Syntax">email</span><span class="def_Symbol">_</span>hardware<br>
+EOR<br>
+<br>
+<span class="def_Syntax">Route&nbsp; software&nbsp; </span><span class="def_Symbol">&lt;</span><span class="def_Symbol">&lt;</span>EOR<br>
+&nbsp; &nbsp; <span class="def_Syntax">empty&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="def_Number">1</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">email&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="def_String">&quot;&quot;</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">profile&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; create</span><span class="def_Symbol">_</span><span class="def_Syntax">download</span><span class="def_Symbol">_</span>link<br>
+EOR<br>
+<br>
+<span class="def_Syntax">Route&nbsp; log&nbsp; </span><span class="def_Symbol">&lt;</span><span class="def_Symbol">&lt;</span>EOR<br>
+&nbsp; &nbsp; <span class="def_Syntax">empty&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="def_Number">1</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">supplant&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="def_Number">0</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">encrypt&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="def_Number">0</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">increment&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="def_Number">0</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">report&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span>etc<span class="def_Symbol">/</span><span class="def_Syntax">log</span><span class="def_Symbol">_</span>transaction<br>
+&nbsp; &nbsp; <span class="def_Syntax">track&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>logs<span class="def_Symbol">/</span>log<br>
+&nbsp; &nbsp; <span class="def_Syntax">transactions&nbsp; &nbsp;&nbsp; </span><span class="def_String">&quot;transactions orderline inventory&quot;</span><br>
+EOR<br>
+<br>
+<span class="def_Syntax">Route&nbsp; merchant&nbsp; </span><span class="def_Symbol">&lt;</span><span class="def_Symbol">&lt;</span>EOR<br>
+&nbsp; &nbsp; <span class="def_Syntax">supplant&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="def_Number">1</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">attach&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="def_Number">0</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">credit</span><span class="def_Symbol">_</span><span class="def_Syntax">card&nbsp; &nbsp; &nbsp; </span><span class="def_Number">1</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">encrypt&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="def_Number">1</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">email&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="def_EMail def_URI">orders@example.com</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">pgp</span><span class="def_Symbol">_</span><span class="def_Syntax">key&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>0x67798115<br>
+&nbsp; &nbsp; <span class="def_Syntax">report&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span>etc<span class="def_Symbol">/</span><span class="def_Syntax">order</span><span class="def_Symbol">_</span><span class="def_Syntax">email</span><span class="def_Number">.</span>merchant<br>
+&nbsp; &nbsp; <span class="def_Syntax">receipt&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>etc<span class="def_Symbol">/</span><span class="def_Syntax">receipt</span><span class="def_Number">.</span>html<br>
+&nbsp; &nbsp; <span class="def_Syntax">track&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>logs<span class="def_Symbol">/</span><span class="def_Syntax">tracking</span><span class="def_Number">.</span>asc<br>
+&nbsp; &nbsp; <span class="def_Syntax">individual</span><span class="def_Symbol">_</span><span class="def_Syntax">track </span>orders<br>
+EOR<br>
+<br>
+<span class="def_Syntax">Route&nbsp; copy</span><span class="def_Symbol">_</span><span class="def_Syntax">user&nbsp; </span><span class="def_Symbol">&lt;</span><span class="def_Symbol">&lt;</span>EOR<br>
+&nbsp; &nbsp; <span class="def_Syntax">empty&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="def_Number">1</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">error</span><span class="def_Symbol">_</span><span class="def_Syntax">ok&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="def_Number">1</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">supplant&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="def_Number">0</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">encrypt&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="def_Number">0</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">increment&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="def_Number">0</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">report&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span>etc<span class="def_Symbol">/</span><span class="def_Syntax">order</span><span class="def_Symbol">_</span><span class="def_Syntax">email</span><span class="def_Number">.</span>user<br>
+&nbsp; &nbsp; <span class="def_Syntax">track&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>logs<span class="def_Symbol">/</span><span class="def_Syntax">tracking</span><span class="def_Number">.</span>asc<br>
+EOR<br>
+<br>
+<span class="def_Syntax">Route&nbsp; default&nbsp; </span><span class="def_Symbol">&lt;</span><span class="def_Symbol">&lt;</span>EOR<br>
+&nbsp; &nbsp; <span class="def_Syntax">master&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="def_Number">1</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">empty&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="def_Number">1</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">supplant&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="def_Number">1</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">cascade&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; log merchant copy</span><span class="def_Symbol">_</span>user<br>
+&nbsp; &nbsp; <span class="def_Syntax">email&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="def_EMail def_URI">orders@example.com</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">write</span><span class="def_Symbol">_</span><span class="def_Syntax">tables&nbsp; &nbsp;&nbsp; </span><span class="def_String">&quot;transactions orderline inventory userdb&quot;</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">transactions&nbsp; &nbsp;&nbsp; </span><span class="def_String">&quot;transactions orderline inventory&quot;</span><br>
+EOR
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The set of routes, above, will have the following behaviour:
+</p>
+<a name="Execution_order"></a>
+<h3>Execution order</h3>
+<p>
+The <em>master</em> order route is &quot;<span class="fixedwidth">default</span>&quot; because
+&quot;<span class="fixedwidth">default</span>&quot; was the last route defined.&nbsp;
+The &quot;<span class="fixedwidth">default</span> route <em>cascades</em> to the &quot;<span class="fixedwidth">log</span>&quot;,
+&quot;<span class="fixedwidth">merchant</span>&quot; and &quot;<span class="fixedwidth">copy_user</span>&quot; routes,
+which means they will run in that order on completion of the <span class="fixedwidth">default</span>
+route.&nbsp;
+The individual item routes, &quot;<span class="fixedwidth">hardware</span>&quot; and &quot;<span class="fixedwidth">software</span>&quot;,
+if applicable,
+will run before the routes described above.
+</p>
+<a name="Transactions"></a>
+<h3>Transactions</h3>
+<p>
+The &quot;<span class="fixedwidth">log</span>&quot; route specifies the tables that will be put in
+<em>transaction</em> mode.&nbsp;
+In this case, the tables are <span class="fixedwidth">transactions</span>, <span class="fixedwidth">orderline</span>
+and <span class="fixedwidth">inventory</span>.
+</p>
+<a name="Failure"></a>
+<h3>Failure</h3>
+<p>
+All order routes must succeed except &quot;<span class="fixedwidth">user</span>&quot;,
+which has its &quot;<span class="fixedwidth">error_ok</span>&quot; attribute set to &quot;<span class="fixedwidth">1</span>&quot;.
+</p>
+<a name="Encryption"></a>
+<h3>Encryption</h3>
+<p>
+The &quot;<span class="fixedwidth">merchant</span>&quot; and the &quot;<span class="fixedwidth">hardware</span>&quot; order routes will be
+sent by email,
+and encrypted against different GnuPG key IDs.&nbsp;
+They will get their &quot;<span class="fixedwidth">encrypt_program</span>&quot; setting from the
+<em>master</em> route.
+</p>
+<a name="Individual_item_routing"></a>
+<h2>Individual item routing</h2>
+<p>
+Individual item routing causes all items labelled with that route to be
+placed in a special sub-cart that will be used for the order report.&nbsp;
+This means that the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>] ... &#91;/item-list]</span> will only
+contain those items,
+allowing operations to be performed on subsets of the complete order.&nbsp;
+The <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/subtotal.html" title="subtotal (tags)">subtotal</a>]</span>, <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/salestax.html" title="salestax (tags)">salestax</a>]</span>,
+<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/shipping.html" title="shipping (tags)">shipping</a>]</span>, <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/handling.html" title="handling (tags)">handling</a>]</span> and
+<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/total-cost.html" title="total-cost (tags)">total-cost</a>]</span> tags are also affected.
+</p>
+<p>
+If items are to be routed individually then the the
+&quot;<span class="fixedwidth">mv_order_route</span>&quot; attribute must be set for each item.&nbsp;
+This could be set when item is placed in the cart,
+or there could be a database column called &quot;<span class="fixedwidth">goods_type</span>&quot; (for instance) set to an appropriate value.
+</p>
+<p>
+The following example uses Perl code to set the
+&quot;<span class="fixedwidth">mv_order_route</span>&quot; item attribute,
+based upon a <span class="fixedwidth">goods_type</span> column in the <span class="fixedwidth">products</span> table,
+for every item in the current cart:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>perl table<span class="perl_Symb def_Symbol">=</span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span>products<span class="def_PairEnd def_Special">&quot;</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">]</span></span><br>
+&nbsp; &nbsp; <span class="perl_Word def_Keyword">foreach </span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var"><span class="def_PairStart def_Special">@{</span><span class="perl_Var def_Var">$Items</span><span class="def_PairEnd def_Special">}</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span> </span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="perl_Var def_Var">$_</span><span class="perl_Symb def_Symbol">-&gt;</span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span>mv_order_route<span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span> </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$Tag</span><span class="perl_Symb def_Symbol">-&gt;</span>data<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; table <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>products<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; column <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>goods_type<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; key <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_Var def_Var">$_</span><span class="perl_Symb def_Symbol">-&gt;</span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span>code<span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+&nbsp; &nbsp; <span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><br>
+&nbsp; &nbsp; <span class="perl_WordFun perl_Word def_Keyword">undef</span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>/perl<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+After the above is run, the individual items will be labelled with a
+&quot;<span class="fixedwidth">mv_order_route</span>&quot; value,
+which causes their inclusion in the appropriate order route.
+</p>
+<p>
+Upon submission of the order form,
+any item labelled &quot;<span class="fixedwidth">hardware</span>&quot; will be accumulated and sent to the
+&quot;<span class="fixedwidth">hardgoods@example.com</span>&quot; <span class="fixedwidth"><a href="#email" title="&quot;email&quot; heading on this page">email</a></span> address,
+where the item will be pulled from inventory and shipped.
+</p>
+<p>
+Any item labelled &quot;<span class="fixedwidth">software</span>&quot; will be passed to the
+&quot;<span class="fixedwidth">create_download_link</span>&quot; profile, which will place it in a
+staging area for customer download.&nbsp;
+This would be supported by a link on the receipt, possibly by reading a value set in the profile.
+</p>
+<p>
+The code in the &quot;<span class="fixedwidth">create_download_link</span>&quot; profile has not been included
+in this example.
+</div>
+
+<!-- start of modification notice -->
+<div class="wikitext">
+    <table class="pageinfo" cellpadding="0" cellspacing="0">
+	<tr>
+	    <td>
+Category:&nbsp; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_ecommerce_functions.html">Interchange ecommerce functions</a>
+	    </td>
+	</tr>
+
+
+	<tr>
+	    <td>
+		
+		Last modified by: <a href="http://interchange-rtfm.pullingshots.ca/account/profile.html?user=pj">Peter Ajamian</a><br>
+		Modification date: Friday 16 January 2009 at 7:47 AM (EST)
+	    </td>
+	</tr>
+    </table>
+</div>
+<!-- end of modification notice -->
+
+
+
+<!-- end page: wiki/display (Order_routing) -->
+
+
+
+<!-- end of page text -->
+	    </td>
+
+	</tr>
+    </table>
+<!-- START VAR: FOOTER -->
+
+<table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+	<td>
+	    <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/donations.html">Donations</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	</td>
+
+    </tr>
+</table>
+
+<!-- END VAR: FOOTER -->
+
+<!-- START VAR: COPYRIGHT -->
+
+
+    <div class="copyright">
+	Copyright &copy; 2001-2020
+	<a href="http://cursor.biz/index.html">Cursor Software Limited</a>.&nbsp;
+	All Rights Reserved.
+    </div>
+
+<!-- END VAR: COPYRIGHT -->
+
+</body>
+</html>

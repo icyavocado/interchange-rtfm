@@ -1,0 +1,65 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Foundation Store: The Catalog Directory</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icfoundation_2.html">Previous Topic</A> | <A HREF="icfoundation_4.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H1>3. The Catalog Directory</H1>
+<P>Interchange pages are contained in the catalog directory. Each individual catalog has its own base directory. The catalog directory has the following structure by default:</P>
+<P><B>catalog.cfg</B></P>
+<UL>
+File containing configuration directives for a particular catalog. Configuration settings established in the catalog.cfg directory will not effect any other catalogs running under the version of Interchange you are using. Subcatalogs can have differing information in a file named for that subcatalog.</UL>
+<P><B>config</B></P>
+<UL>
+Directory that will be read when directives are set with the <TT>filename</TT> notation. For example, the file <TT>config/static.pages</TT> will be read when the following directive is encountered in the <TT>catalog.cfg</TT> file.</UL>
+<PRE>
+          StaticPage  &lt;static.pages
+</PRE>
+<UL>
+This directory also contains template information used with the <TT>makecat</TT> program.</UL>
+<P><B>error.log</B></P>
+<UL>
+File which contains catalog-specific errors. It is also where any syntax errors in embedded Perl code are shown.</UL>
+<P><B>etc</B></P>
+<UL>
+Directory normally used for tracking files, order profiles, and other configuration and log information.</UL>
+<P><B>pages</B></P>
+<UL>
+Directory that contains the pages of the catalog. This can be considered to be the &quot;document root&quot; of the catalog. Pages contained therein are called with the path information after the script name. For example:</UL>
+<PRE>
+        <TT>/cgi-bin/simple/products/gold</TT> will call the page in the file
+        <TT>pages/products/gold.html</TT>.
+</PRE>
+<P><B>products</B></P>
+<UL>
+Directory that contains database source files, including the special Interchange databases shipping.asc, pricing.asc (and other shipping database files).</UL>
+<P><B>session</B></P>
+<UL>
+Directory that contains session files.</UL>
+<P><B>tmp</B></P>
+<UL>
+The temporary or scratch directory used for various storage reasons, like retired ID numbers, search paging files, sort tests, import temporary files, etc. This is the default set by ScratchDir. It can be redefined to be located on another partition.</UL>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icfoundation_2.html">Previous Topic</A> | <A HREF="icfoundation_4.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

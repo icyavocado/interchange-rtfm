@@ -1,0 +1,36 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Configuration Reference: UpsZoneFile</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_70.html">Parent Topic</A> | <A HREF="icconfig_170.html">Previous Topic</A> | <A HREF="icconfig_172.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>3.101. UpsZoneFile</H2>
+<P>The file containing the UPS zone information, specified relative to the catalog directory unless it begins with a /. It can be in the format distributed by UPS or can be in a tab-delimited format, with the three-letter zip prefix of the customer used to determine the zone. It interpolates based on the value in <TT>mv_shipmode</TT>. A user database named the same as the mv_shipmode variable must be present or the lookup will return zero.</P>
+<P>IMPORTANT NOTE: Zone information and updated pricing from UPS must be obtained in order for this to work properly. The zone information is specific to a region!</P>
+<PRE>
+   UpsZoneFile         /usr/interchange/data/ups_zone.asc
+</PRE>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_70.html">Parent Topic</A> | <A HREF="icconfig_170.html">Previous Topic</A> | <A HREF="icconfig_172.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

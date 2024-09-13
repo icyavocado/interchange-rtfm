@@ -1,0 +1,47 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Programmer Reference: Session data structure</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icprogrammer_5.html">Parent Topic</A> | <A HREF="icprogrammer_11.html">Previous Topic</A> | <A HREF="icprogrammer_13.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>2.7. Session data structure</H2>
+<P>Each user session is a hash reference saved in some sort of data repository. By default it is file-based using <A HREF="Storable.html">the Storable manpage</A>, but it can reside in any Interchange database type as well.</P>
+<P>It is placed at the global variable location $Vend::Session, which for programming use in UserTag and GlobalSub routines is $Session (meaning $Vend::Interpolate::Session).</P>
+<P>The structure is initialized when the session is created (or canceled by the user). The initial form is described in <TT>Vend::Session::init_session</TT>:</P>
+<PRE>
+    $Vend::Session = {
+                'ohost'         =&gt; $CGI::remote_addr,
+                'arg'           =&gt; $Vend::Argument,
+                'browser'       =&gt; $CGI::useragent,
+                'referer'       =&gt; $CGI::referer,
+                'scratch'       =&gt; { %{$Vend::Cfg-&gt;{ScratchDefault}} },
+                'values'        =&gt; { %{$Vend::Cfg-&gt;{ValuesDefault}} },
+                'carts'         =&gt; {main =&gt; []},
+                'levies'        =&gt; {main =&gt; []},
+    };
+</PRE>
+<P>This structure is used as a repository for the transitory user session values like form values, scratch variable settings, payment transaction results, errors, and any other user-tied values. It is also possible to add code that can be run on a user-by-user basis with the Autoload, Filter, and Profile facilities.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icprogrammer_5.html">Parent Topic</A> | <A HREF="icprogrammer_11.html">Previous Topic</A> | <A HREF="icprogrammer_13.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

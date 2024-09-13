@@ -1,0 +1,82 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Databases: How can I use Interchange with Microsoft Access?</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_62.html">Parent Topic</A> | <A HREF="icdatabase_63.html">Previous Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>11.2. How can I use Interchange with Microsoft Access?</H2>
+<P>Though Interchange has ODBC capability, the Microsoft Access ODBC driver is not a network driver. You cannot access it on a PC from your ISP or UNIX system.</P>
+<P>However, you can turn it around.  Once you have created a MySQL or other SQL database on the UNIX machine, you may then obtain the Windows ODBC driver for the database (MySQL has a package called myODBC) and use the UNIX database as a data source for your PC-based database program.</P>
+<P>Here is a quick procedure that might get you started:</P>
+<UL>
+<LI>Get MySQL from:</UL>
+<PRE>
+            http://www.mysql.com/
+</PRE>
+<UL>
+Install it on your UNIX box. On LINUX, it is as easy as getting the RPM distribution:</UL>
+<PRE>
+            http://www.mysql.com/rpm/
+</PRE>
+<UL>
+You install it by typing, as root, <TT>rpm -i mysql-3.XX.XX.rpm</TT>. If you are not root, you will have to build the source distribution.
+<LI>To avoid permissions problems for your testing, stop the MySQL daemon and allow global read-write access with:</UL>
+<PRE>
+            mysqladmin shutdown
+            safe_mysqld --skip-grant-tables &amp;
+</PRE>
+<UL>
+Obviously, you will want to study MySQL permissions and set up some security pretty quickly. It has excellent capability in that area, and the FAQ will help you get over the hurdles.
+<LI>Set up a database for testing on the UNIX machine:</UL>
+<PRE>
+            mysqladmin create test_odbc
+            mysql test_odbc
+</PRE>
+<UL>
+Make an SQL query to set up a table, for example:</UL>
+<PRE>
+            mysql&gt; create table test_me ( code char(20), testdata char(20) );
+            Query OK, 0 rows affected (0.29 sec)
+        
+            mysql&gt; insert into test_me VALUES ('key1', 'data1');
+            Query OK, 1 rows affected (0.00 sec)
+        
+            mysql&gt; insert into test_me VALUES ('key2', 'data2');
+            Query OK, 1 rows affected (0.00 sec)
+        
+            mysql&gt;
+</PRE>
+<UL>
+<LI>Get and install myODBC, also from the MySQL site:</UL>
+<PRE>
+            http://www.mysql.com/
+</PRE>
+<UL>
+You install this package on your Windows 95 or NT box. It is a simple setup.exe process which leads you to the control panel for setting up an ODBC data source. Set up a data source named <TT>test_odbc</TT> that points to the database <TT>test_odbc</TT> on the UNIX box. You will need to know the host name and the port (usually 3306).
+<LI>With Microsoft Access, you can then open a blank database and select: File/Get External Data/Link Tables. Select File Type of 'ODBC databases' and the proper data source, and you should have access to the database residing on the UNIX side.</UL>
+<HR>
+<P>Copyright 2001-2002 Red Hat, Inc. Freely redistributable under terms of the GNU General Public License.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_62.html">Parent Topic</A> | <A HREF="icdatabase_63.html">Previous Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

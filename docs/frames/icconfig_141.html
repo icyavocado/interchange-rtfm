@@ -1,0 +1,57 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Configuration Reference: SalesTaxFunction</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_70.html">Parent Topic</A> | <A HREF="icconfig_140.html">Previous Topic</A> | <A HREF="icconfig_142.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>3.71. SalesTaxFunction</H2>
+<P>A Perl subroutine that will return a hash reference with the sales tax settings. This can be used to query a database for the tax for a particular vendor:</P>
+<PRE>
+   SalesTaxFunction  &lt;&lt;EOR
+         my $vendor_id = $Session-&gt;{source};
+       my $tax = $TextSearch-&gt;hash( {
+                           se =&gt; $vendor_id,
+                           fi =&gt; 'salestax.asc',
+                           sf =&gt; 'vendor_code',
+                           ml =&gt; 1000,
+                           } );
+       $tax = {} if ! $tax;
+       $tax-&gt;{DEFAULT} = 0.0;
+       return $tax;
+   EOR
+</PRE>
+<P>or simply produce a table:</P>
+<PRE>
+   SalesTaxFunction  &lt;&lt;EOR
+    return {
+        DEFAULT =&gt; 0.0,
+        IL =&gt; 0.075,
+        OH =&gt; 0.065,
+    };
+EOR
+</PRE>
+<P>A <TT>DEFAULT</TT> value must always be returned or the function will be ignored.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_70.html">Parent Topic</A> | <A HREF="icconfig_140.html">Previous Topic</A> | <A HREF="icconfig_142.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

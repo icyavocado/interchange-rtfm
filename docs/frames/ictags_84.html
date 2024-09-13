@@ -1,0 +1,238 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: or</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_83.html">Previous Topic</A> | <A HREF="ictags_85.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.50. or</H2>
+<H3><A NAME="Summary">4.50.1. Summary</A></H3>
+<P>Parameters: <B>type term op compare</B></P>
+<P>THIS TAG HAS SPECIAL POSITIONAL PARAMETER HANDLING.</P>
+<P>Pass attribute hash as last to subroutine: <B>no</B></P>
+<P>Must pass named parameter interpolate=1 to cause interpolation.</P>
+<P>Invalidates cache: <B>no</B></P>
+<P>Called Routine:</P>
+<P>Called Routine for positional:</P>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+    $Tag-&gt;or(
+        {
+         type =&gt; VALUE,
+         term =&gt; VALUE,
+         op =&gt; VALUE,
+         compare =&gt; VALUE,
+        }
+    )
+
+ OR
+
+    $Tag-&gt;or($type, $term, $op, $compare);
+</PRE>
+<P>Attribute aliases</P>
+<PRE>
+            base ==&gt; type
+            comp ==&gt; compare
+            operator ==&gt; op
+    [<B>or</B> type term op compare]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_84.html#or_type">base</A>
+</TD>
+<TD VALIGN='Top'>
+Alias for type
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_84.html#or_compare">comp</A>
+</TD>
+<TD VALIGN='Top'>
+Alias for compare
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_84.html#or_compare">compare</A>
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_84.html#or_op">op</A>
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_84.html#or_op">operator</A>
+</TD>
+<TD VALIGN='Top'>
+Alias for op
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_84.html#or_term">term</A>
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_84.html#or_type">type</A>
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_interpolate">interpolate (reparse)</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>no</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Container tag
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Has Subtags
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Nests
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+    [or type term op compare]
+---
+    TODO: (tag result)
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+   $Tag-&gt;or(  { compare =&gt; VALUE_compare
+                 op =&gt; VALUE_op
+                 term =&gt; VALUE_term
+                 type =&gt; VALUE_type
+}, $body  );
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;or(type,term,op,compare, $attribute_hash_reference, $body);
+</PRE>
+<H3><A NAME="Description">4.50.2. Description</A></H3>
+<P><B>NO Description</B></P>
+<H4><A NAME="or_compare"> </A>4.50.2.1. <A NAME="or_compare">compare</A></H4>
+<H4><A NAME="or_op"> </A>4.50.2.2. <A NAME="or_op">op</A></H4>
+<H4><A NAME="or_term"> </A>4.50.2.3. <A NAME="or_term">term</A></H4>
+<H4><A NAME="or_type"> </A>4.50.2.4. <A NAME="or_type">type</A></H4>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_83.html">Previous Topic</A> | <A HREF="ictags_85.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

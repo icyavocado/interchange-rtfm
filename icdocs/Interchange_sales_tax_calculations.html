@@ -1,0 +1,494 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>Interchange sales tax calculations - RTFM</title>
+
+    <meta http-equiv="Content-Language" content="en-GB">
+    <meta http-equiv="Window-target" content="_top">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <meta http-equiv="X-Soup-Of-The-Day" content="Tomato">
+
+    <meta name="author" content="Kevin Walsh">
+    <meta name="publisher" content="Cursor Software Limited">
+    <meta name="copyright" content="2001-2015, Cursor Software Limited">
+    <meta name="licence" content="GPLv2+ (Unknown licence)">
+    <meta name="generator" content="Interchange 5.7.0 -- www.icdevgroup.org">
+    <meta name="robots" content="index,follow,noarchive,noimageindex">
+    <meta name="keywords" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="description" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="MSSmartTagsPreventParsing" content="TRUE">
+
+    <meta name="verify-v1" content="KqlU/bxZj9Y2ZdZ/3RwuzgVSMIrZ8XM2wqbjSaEo3O4=">
+
+    <meta name="y_key" content="e2dd60be5777fbc8">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
+    <link rel="search" type="application/opensearchdescription+xml" href="http://interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="stylesheet" href="/decor/css/website.css">
+    <link rel="stylesheet" href="/decor/css/wiki.css">
+    <link rel="stylesheet" href="/decor/css/neo.css">
+
+
+    <script type="text/javascript" language="JavaScript">
+    <!--
+	if (top != self){
+	    top.location = location;
+	}
+
+    // -->
+    </script>
+</head>
+<body>
+<!-- START VAR: LOGOBAR -->
+<table id="rtfmheader" cellpadding="0" cellspacing="0">
+    <tr>
+	<td><a href="http://interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+
+	<td width="100%" style="text-align: right; padding: 10px">
+
+	    <form action="http://interchange-rtfm.pullingshots.ca/search.html" method="POST">
+		<input type="hidden" name="mv_session_id" value="nsession">
+		<input type="hidden" name="mv_profile" value="cms_search">
+		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
+		<input type="submit" class="button" value="Search">
+	    </form>
+
+	</td>
+    </tr>
+</table>
+<table id="breadcrumbs" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+	<td>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_ecommerce_functions.html">Interchange ecommerce functions</a></span>
+	    <span class="nowrap">&gt; <span class="current">Interchange sales tax calculations</span></span>
+	</td>
+
+    </tr>
+</table>
+<!-- END VAR: LOGOBAR -->
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+
+	    <td id="leftside">
+<!-- START COMPONENT: navigation -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th>NAVIGATION</th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+
+<!-- END COMPONENT: navigation -->
+<!-- START COMPONENT: wiki_recent -->
+
+
+
+<!-- END COMPONENT: wiki_recent -->
+<!-- START COMPONENT: wiki_backlinks -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th><span class="nowrap">PAGES THAT LINK HERE</span></th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/fly-tax.html">fly-tax</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SalesTax.html">SalesTax</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/salestax.html">salestax</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SalesTaxFunction.html">SalesTaxFunction</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/TaxShipping.html">TaxShipping</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+<!-- END COMPONENT: wiki_backlinks -->
+<!-- START COMPONENT: account -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+
+    <tr>
+	<th>ACCOUNT LOGIN</th>
+    </tr>
+
+    <tr>
+	<td class="first">
+	    <p>You are not logged in</p>
+	</td>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+	    </ul>
+	</td>
+    </tr>
+
+</table>
+
+
+
+<!-- END COMPONENT: account -->
+<!-- START COMPONENT: icpowered -->
+
+<div style="text-align: center; margin: 10px; margin-top: 0px">
+    <a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+</div>
+
+
+
+<!-- START COMPONENT: icpowered -->
+
+	    </td>
+
+	    <td id="bodytext">
+<!-- start of page text -->
+
+<!-- start page: wiki/display (Interchange_sales_tax_calculations) -->
+
+<div class="wikitext">
+<a name="Interchange_sales_tax_calculations"></a>
+<h1>Interchange sales tax calculations</h1>
+<p>
+Interchange allows you to calculate sales tax using a number of different
+methods.
+</p>
+<!-- start of toc --><div class="toc">
+<table>
+<tr valign="top">
+<th>Table of contents</th>
+</tr>
+<tr><td class="h2"><a href="#Simple_salestax_asc_method">1. Simple &quot;salestax.asc&quot; method</a></td></tr>
+<tr><td class="h2"><a href="#Fly_tax">2. Fly tax</a></td></tr>
+<tr><td class="h2"><a href="#Multi_VAT">3. Multi (VAT)</a></td></tr>
+<tr><td class="h2"><a href="#Levies_and_other_tax_schemes">4. Levies and other tax schemes</a></td></tr>
+<tr>
+<td class="spacer">&nbsp;</td>
+</tr>
+</table>
+</div><!-- end of toc -->
+<a name="Simple_salestax_asc_method"></a>
+<h2>Simple &quot;salestax.asc&quot; method</h2>
+<p>
+In this simple taxing method, the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SalesTax.html" title="SalesTax (config)">SalesTax</a></span> directive
+is set to <span class="fixedwidth">&lt;form&gt;</span> fields whose values will be used as
+keys to look up the tax rate in a &quot;<span class="fixedwidth">salestax.asc</span>&quot; file.&nbsp;
+The &quot;<span class="fixedwidth">salestax.asc</span>&quot; file is expected to be in the
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DataDir.html" title="DataDir (config)">DataDir</a></span> directory.
+</p>
+<p>
+Sales tax calculation in this simple scheme is performed on a straight
+percentage basis, with certain items allowed to be tax-exempt.&nbsp;
+Simply initialise the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SalesTax.html" title="SalesTax (config)">SalesTax</a></span> directive to the name
+of some lookup fields.&nbsp;
+Those lookup fields are the ones that are available on the final order
+form and indicate geographical locality.&nbsp;
+For instance, in the USA, you might use this:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+SalesTax&nbsp; zip, state
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Each line of the &quot;<span class="fixedwidth">salestax.asc</span> file should contain a <em>code</em>,
+representing the locality, followed by a one or more whitespace character,
+and then the desired tax rate.&nbsp;
+For example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+DEFAULT 0.0<br>
+45056&nbsp;&nbsp; .0525<br>
+61821&nbsp;&nbsp; .0725<br>
+61801&nbsp;&nbsp; .075<br>
+IL&nbsp; &nbsp; &nbsp; .0625<br>
+OH&nbsp; &nbsp; &nbsp; .0525<br>
+VAT&nbsp; &nbsp;&nbsp; .175<br>
+WA&nbsp; &nbsp; &nbsp; .08
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Based on information given in the user's order form,
+and given our sample <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SalesTax.html" title="SalesTax (config)">SalesTax</a></span> setting,
+Interchange will attempt a tax lookup by <span class="fixedwidth">zip</span> and <span class="fixedwidth">state</span>,
+in that order,
+and will apply the percentage (if found) to the subtotal of the order.&nbsp;
+The subtotal will include item prices and, if <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/TaxShipping.html" title="TaxShipping (config)">TaxShipping</a></span>
+is set up, the shipping costs.&nbsp;
+The tax amount will be available for display via the
+<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/salestax.html" title="salestax (tags)">salestax</a>]</span> tag, and will be added to the total order amount.&nbsp;
+If no match is found in the &quot;<span class="fixedwidth">salestax.asc</span>&quot; file,
+the &quot;<span class="fixedwidth">DEFAULT</span>&quot; (usually zero) will be applied.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_warning.gif" width="32" height="32" border="0" alt="Warning">
+</td>
+<td width="100%">
+<p class="title">Warning</p>
+<p style="margin-bottom: 0px">
+The &quot;<span class="fixedwidth">salestax.asc</span>&quot; must contain a &quot;<span class="fixedwidth">DEFAULT</span>&quot; value.&nbsp;
+All other values are optional.
+</p>
+</td>
+</tr>
+</table>
+
+<p>
+If some items are not taxable, then you must set up a field in your
+database to indicates the taxable status.&nbsp;
+The <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/NonTaxableField.html" title="NonTaxableField (config)">NonTaxableField</a></span> directive is used to declare the
+name you have chosen for your &quot;non taxable item&quot; column, in your products
+table.&nbsp;
+If the specified column for that item is set to a <em>true</em> value
+(not zero, not blank and not NULL),
+sales tax will not be applied to the item.
+</p>
+<p>
+If you want to set a fixed tax rate for all orders,
+then a <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SalesTax.html" title="SalesTax (config)">SalesTax</a></span> set to the zip or state codes
+would not be optimal.&nbsp;
+The solution could be to introduce an arbitrary variable that,
+unlike zip or state, does not change from user to user.&nbsp;
+Then, you would set that variable in user's session to point to a fixed
+entry in the &quot;<span class="fixedwidth">salestax.asc</span>&quot; file.
+</p>
+<a name="Fly_tax"></a>
+<h2>Fly tax</h2>
+<p>
+A series of Interchange Variable settings are read to develop a
+salestax rate for one or more geographical localities.
+</p>
+<p>
+With this method, you implement the simple <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SalesTax.html" title="SalesTax (config)">SalesTax</a></span>
+method explained above, put with only one entry in the
+&quot;<span class="fixedwidth">salestax.asc</span>&quot; file.&nbsp;
+<span class="fixedwidth">TAXRATE</span> and <span class="fixedwidth">TAXSHIPPING</span> <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">variables</a></span>
+would then be used to build the tax rates.
+</p>
+<p>
+The single entry in &quot;<span class="fixedwidth">salestax.asc</span>&quot; should be &quot;<span class="fixedwidth">default</span>&quot;,
+with a value of <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/fly-tax.html" title="fly-tax (tags)">fly-tax</a>]</span>, as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">DEFAULT </span><span class="def_Symbol">[</span><span class="def_Syntax">fly</span><span class="def_Symbol">-</span><span class="def_Syntax">tax</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Multi_VAT"></a>
+<h2>Multi (VAT)</h2>
+<p>
+With this method, country and state tables are used to create complex VAT
+or sales tax rate calculations,
+possibly with different rates based upon the product type.
+</p>
+<p>
+If the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SalesTax.html" title="SalesTax (config)">SalesTax</a></span> directive is set to &quot;<span class="fixedwidth">multi</span>&quot;,
+then the type of tax to apply will be read from the &quot;<span class="fixedwidth">country</span>&quot; table's
+&quot;<span class="fixedwidth">tax</span>&quot; column.&nbsp;
+You could display the British standard rate VAT like this:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">data table</span><span class="def_Symbol">=</span><span class="def_Syntax">country column</span><span class="def_Symbol">=</span><span class="def_Syntax">tax key</span><span class="def_Symbol">=</span><span class="def_Syntax">GB</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+We've mentioned some hard-coded values above (the &quot;<span class="fixedwidth">country</span>&quot; table
+and some column names etc.),
+but this is all configurable using various website
+<a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">variables</a>, such as
+<span class="fixedwidth">MV_COUNTRY_FIELD</span>,
+<span class="fixedwidth">MV_COUNTRY_TABLE</span>,
+<span class="fixedwidth">MV_COUNTRY_TAX_FIELD</span>,
+<span class="fixedwidth">MV_STATE_TABLE</span>,
+<span class="fixedwidth">MV_STATE_TAX_FIELD</span>,
+<span class="fixedwidth">MV_TAX_CATEGORY_FIELD</span> and
+<span class="fixedwidth">MV_TAX_TYPE_FIELD</span> etc.
+</p>
+<p>
+So, with this multi approach, Interchange first performs a lookup in the
+&quot;<span class="fixedwidth">country</span>&quot; table.&nbsp;
+The default key for the lookup is, of course, the value of the
+&quot;<span class="fixedwidth">country</span>&quot; variable on the order form
+(i.e. <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/value.html" title="value (tags)">value</a> country]</span>).&nbsp;
+The following rules are applied, based upon the <em>string</em> content of the
+&quot;<span class="fixedwidth">tax</span>&quot; column:
+</p>
+
+<ul>
+<li>If no string is found, the tax rate is <span class="fixedwidth">0.00</span>.</li>
+<li>If the string is &quot;<span class="fixedwidth">simple:COUNTRY_CODE</span>&quot; then <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/fly-tax.html" title="fly-tax (tags)">fly-tax</a>]</span> will be is used for the appropriate country.</li>
+<li><p>
+If the string is &quot;<span class="fixedwidth">state</span>&quot; then another lookup will be performed, along the lines of the following:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="sql_tsqlWord def_Keyword">SELECT&nbsp; </span>tax<br>
+<span class="sql_tsqlWord def_Keyword">FROM&nbsp; &nbsp; </span>state<br>
+<span class="sql_tsqlWord def_Keyword">WHERE&nbsp;&nbsp; </span>country <span class="sql_sqlSymb def_Symbol">= </span><span class="sql_sqlString def_String">'$Values-&gt;{country}'</span><br>
+<span class="sql_tsqlWord def_Keyword">AND&nbsp; &nbsp;&nbsp; </span>state <span class="sql_sqlSymb def_Symbol">= </span><span class="sql_sqlString def_String">'$Values-&gt;{state}'
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p style="margin-bottom: 0px">
+The value is then applied as explained in the following steps:
+</p>
+<ul>
+<li>If a pure (integer or decimal) number is found (such as <span class="fixedwidth">0.175</span>) then the rate is applied directly</li>
+<li>If a percentage is found (such as &quot;<span class="fixedwidth">17.5&#37;&quot;</span>) then the rate is applied as a percentage</li>
+</ul>
+</li>
+<li>If the string is &quot;<span class="fixedwidth">category = D&#37;, default = D&#37;</span>&quot; then the &quot;<span class="fixedwidth">tax_category</span>&quot; field in the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span> table is used to determine the tax rate (the default option will be applied if the <span class="fixedwidth">tax_category</span>&quot; for a product is zero or undefined).</li>
+</ul>
+
+<p>
+The &quot;<span class="fixedwidth">mv_shipping</span>&quot; field is used to set the tax rate for shipping,
+if shipping is to be taxed at all.&nbsp;
+If shipping is taxed only when taxable items are in the cart,
+as is the case with UK VAT,
+then use &quot;<span class="fixedwidth">mv_shipping_when_taxable</span>&quot; instead.
+</p>
+<a name="Levies_and_other_tax_schemes"></a>
+<h2>Levies and other tax schemes</h2>
+<p>
+Using <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Levies.html" class="nopage" title="Levies (config)">Levies</a></span> and <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Levy.html" class="nopage" title="Levy (config)">Levy</a></span> structure,
+any or all of the above methods are used in combination to implement
+the a taxing scheme of truly arbitrary complexity.
+</div>
+
+<!-- start of modification notice -->
+<div class="wikitext">
+    <table class="pageinfo" cellpadding="0" cellspacing="0">
+	<tr>
+	    <td>
+Category:&nbsp; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_ecommerce_functions.html">Interchange ecommerce functions</a>
+	    </td>
+	</tr>
+
+
+	<tr>
+	    <td>
+		
+		Last modified by: <a href="http://interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin">Kevin Walsh</a><br>
+		Modification date: Tuesday 29 January 2008 at 5:23 PM (GMT)
+	    </td>
+	</tr>
+    </table>
+</div>
+<!-- end of modification notice -->
+
+
+
+<!-- end page: wiki/display (Interchange_sales_tax_calculations) -->
+
+
+
+<!-- end of page text -->
+	    </td>
+
+	</tr>
+    </table>
+<!-- START VAR: FOOTER -->
+
+<table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+	<td>
+	    <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/donations.html">Donations</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	</td>
+
+    </tr>
+</table>
+
+<!-- END VAR: FOOTER -->
+
+<!-- START VAR: COPYRIGHT -->
+
+
+    <div class="copyright">
+	Copyright &copy; 2001-2015
+	<a href="http://cursor.biz/index.html">Cursor Software Limited</a>.&nbsp;
+	All Rights Reserved.
+    </div>
+
+<!-- END VAR: COPYRIGHT -->
+
+</body>
+</html>

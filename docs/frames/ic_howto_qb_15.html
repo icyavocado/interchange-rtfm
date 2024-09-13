@@ -1,0 +1,61 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange + QuickBooks HOWTO: Additional Variables</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ic_howto_qb_8.html">Parent Topic</A> | <A HREF="ic_howto_qb_14.html">Previous Topic</A> | <A HREF="ic_howto_qb_16.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.7. Additional Variables</H2>
+<P>Optionally, you may specify some variables that modify the behavior of the Quickbooks export feature.  Below is a command that will append the empty variables to your variable.txt file.</P>
+<PRE>
+cat &gt;&gt;/path/to/your/products/variable.txt  &lt;&lt;EOF
+QB_DISABLE_DOCNUM               Quickbooks
+QB_ITEM_PREFIX          Quickbooks
+QB_ITEM_LENGTH          Quickbooks
+QB_FILE_SUFFIX          Quickbooks
+QB_SHIPPING_ACCOUNT             Quickbooks
+QB_SHIPPING_ITEM                Quickbooks
+QB_DEFAULT_ACCOUNT              Quickbooks
+QB_SALES_TAX_ACCOUNT            Quickbooks
+QB_SALES_TAX_AGENCY             Quickbooks
+QB_SALES_TAX_ITEM               Quickbooks
+EOF
+</PRE>
+<P>Documentation for these variables is provided via item-specific meta data, which can be added to your mv_metadata.asc file in a similar way as above for automatic display by the Admin UI:</P>
+<PRE>
+cat &gt;&gt;/path/to/your/products/mv_metadata.asc  &lt;&lt;EOF
+variable::Variable::QB_DISABLE_DOCNUM   yesno                                                                           &lt;b&gt;Yes&lt;/b&gt; will cause the invoice number (AKA DOCNUM &amp; Document Number) to be blank.  No by default.  &lt;b&gt;No&lt;/b&gt; will cause etc/trans_quickbooks the use of the Interchange order number as the Quickbooks invoice number.  Some prefer to have the number left blank so as not to cause Quickbooks to change its auto-count.
+variable::Variable::QB_ITEM_PREFIX      text                                                                            A prefix applied to all product names (the unique identifier in Quickbooks).  Empty by default.  For example, some Quickbooks users may have a category for all the products sold on their website such as &quot;E-Commerce Products:&quot; (the colon is a category deliniator for Quickbooks).  Other Quickbooks users may use the same category scheme in in their Interchange store as they do in their Quickbooks item lists, in which case something to this effect would be applicable:  &quot;[item-field category]:&quot;
+variable::Variable::QB_ITEM_LENGTH      text                                                                            The item name maximum length for product line items (any characters past this length will be truncated).  30 by default.  Quickbooks versions 6.0 and 99 may have a problem with item names that are longer than 30 characters; however, lengths of 45 and longer have been known to work on Quickbooks 2000 and later version.  Please report any compatibility problems/information to the interchange-users@icdevgroup.org mailing list.
+variable::Variable::QB_FILE_SUFFIX      text                                                                            If left blank, the current date will be used and each order will be appended to the file.  &lt;BR&gt;&lt;BR&gt;Another option is to use [value mv_order_number] to cause the creation of a separate file for each order.
+variable::Variable::QB_SHIPPING_ACCOUNT text                                                                            The income account associated with shipping.  &quot;Other Income&quot; by default.
+variable::Variable::QB_SHIPPING_ITEM    text                                                                            The item name given for the shipping.  &quot;Shipping&quot; by default.
+variable::Variable::QB_DEFAULT_ACCOUNT  text                                                                            The income account associated with each product line item.  &quot;Other Income&quot; by default; however, the highest precence is 'account' field in the 'inventory' table.
+variable::Variable::QB_SALES_TAX_ACCOUNT        text                                                                            The liability account associated with sales tax.  &quot;Sales Tax Payable&quot; by default.
+variable::Variable::QB_SALES_TAX_AGENCY text                                                                            The name of the sales tax agency for your locality.  &quot;State Board of Equalization&quot; by default (the name given in the Quickbooks 2000 sample products based business).
+variable::Variable::QB_SALES_TAX_ITEM   text                                                                            The item name (Quickbooks unique identifier) for the sales tax.  &quot;Sales Tax Item&quot; by default (from Quickbooks 2000 sample products based business).
+EOF
+</PRE>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ic_howto_qb_8.html">Parent Topic</A> | <A HREF="ic_howto_qb_14.html">Previous Topic</A> | <A HREF="ic_howto_qb_16.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

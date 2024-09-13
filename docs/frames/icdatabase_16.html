@@ -1,0 +1,119 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Databases: SQL Support via DBI</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_15.html">Parent Topic</A> | <A HREF="icdatabase_15.html">Previous Topic</A> | <A HREF="icdatabase_17.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>2.1. SQL Support via DBI</H2>
+<P>The configuration of the DBI database is accomplished by setting attributes in additional Database directives after the initial defining line as described above. For example, the following defines the database <B>arbitrary</B> as a DBI database, sets the data source (DSN) to an appropriate value for an mSQL database named <TT>minivend</TT> on port 1114 of the local machine:</P>
+<PRE>
+   Database arbitrary arbitrary.asc SQL
+   Database arbitrary DSN           dbi:mSQL:minivend:localhost:1114
+</PRE>
+<P>As a shorthand method, include the DSN as the type:</P>
+<PRE>
+   Database arbitrary arbitrary.asc dbi:mSQL:minivend:localhost:1114
+</PRE>
+<P>Supported configuration attributes include (but are not limited to):</P>
+<P><B>DSN</B></P>
+<UL>
+A specification of the DBI driver and its data source. To use the DBD::mSQL driver for DBI, use:</UL>
+<PRE>
+            dbi:mSQL:minivend:othermachine.my.com:1112
+</PRE>
+<UL>
+where mSQL selects the driver (case IS important), <TT>minivend</TT> selects the database, <TT>othermachine.my.com</TT> selects the host, and 1112 is the port. On many systems, <TT>dbi:mSQL:minivend</TT> will work fine. Of course, the <TT>minivend</TT> database must already exist.
+<BR>
+This is the same as the DBI_DSN environment variable, if the DSN parameter is not set. Then, the value of DBI_DSN will be used to try and find the proper database to connect to.</UL>
+<P><B>USER</B></P>
+<UL>
+The user name used to log into the database. It is the same as the environment variable <B>DBI_USER</B>. If a user name is not needed, just don't set the USER directive.</UL>
+<P><B>PASS</B></P>
+<UL>
+The password used to log into the database. It is the same as the environment variable <B>DBI_PASS</B>. If a password is not needed, just don't set the PASS directive.</UL>
+<P><B>COLUMN_DEF</B></P>
+<UL>
+A comma-separated set of lines in the form NAME=TYPE(N), where NAME is the name of the field/column, TYPE is the SQL data type reference, and N is the length (if needed). Most Interchange fields should be the fixed-length character type, something like char(128). In fact, this is the default if a type is not chosen for a column. There can be as many lines as needed. This is not a DBI parameter, it is specific to Interchange.</UL>
+<P><B>NAME</B></P>
+<UL>
+A space-separated field of column names for a table. Normally not used. Interchange should resolve the column names properly upon query. Set this if a catalog errors out with &quot;dbi: can't find field names&quot; or the like. The first field should always be <B>code</B>. This is not a DBI parameter, it is specific to Interchange. All columns must be listed, in order of their position in the table.</UL>
+<P><B>NUMERIC</B></P>
+<UL>
+Tells Interchange not to quote values for this field. It allows numeric data types for SQL databases. It is placed as a comma-separated field of column names for a table, in no particular order. This should be defined if a numeric value is used because many DBD drivers do not yet support type queries.</UL>
+<P><B>UPPERCASE</B></P>
+<UL>
+Tells Interchange to force field names to UPPER case for row accesses using the <TT>[item-data ...]</TT>, <TT>[loop-data ...]</TT>, <TT>[item-field ...</TT>, etc. Typically used for Oracle and some other SQL implementations.</UL>
+<P><B>DELIMITER</B></P>
+<UL>
+A Interchange delimiter type, either TAB,CSV,PIPE,%%,LINE or the corresponding numeric type. The default for SQL databases is TAB. Use DELIMITER if another type will be used to import. This is not a DBI parameter. It is specific to Interchange.</UL>
+<P><B>KEY</B></P>
+<UL>
+The keying default of <TT>code</TT> in the first column of the database can be changed with the KEY directive. Don't use this unless prepared to alter all searches, imports, and exports accordingly. It is best to just accept the default and make the first column the key for any Interchange database.</UL>
+<P><B>ChopBlanks, LongReadLen, LongTruncOK, RaiseError, etc.</B></P>
+<UL>
+Sets the corresponding DBI attribute. Of particular interest is <TT>ChopBlanks</TT>, which should be set on drivers which by default return space-padded fixed-length character fields (Solid is an example).
+<BR>
+The supported list as of this release of Interchange is:</UL>
+<PRE>
+          ChopBlanks
+          CompatMode
+          LongReadLen
+          LongTruncOk
+          PrintError
+          RaiseError
+          Warn
+</PRE>
+<UL>
+Issue the shell command <TT>perldoc DBI</TT> for more information.</UL>
+<P>Here is an example of a completely set up DBI database on MySQL, using a comma-separated value input, setting the DBI attribute <TT>LongReadLen</TT> to retrieve an entire field, and changing some field definitions from the default char(128):</P>
+<PRE>
+ Database   products  products.csv  dbi:mysql:minivend
+ Database   products  USER          minivend
+ Database   products  PASS          nevairbe
+ Database   products  DELIMITER     CSV
+
+ # Set a DBI attribute
+ Database   products  LongReadLen   128
+
+ # change some fields from the default field type of char(128)
+ # Only applies if Interchange is importing from ASCII file
+ # If you set a field to a numeric type, you must set the
+ # NUMERIC attribute
+ Database   products  COLUMN_DEF    &quot;code=char(20) NOT NULL primary key&quot;
+ Database   products  COLUMN_DEF    price=float, discount=float
+ Database   products  COLUMN_DEF    author=char(40), title=char(64)
+ Database   products  COLUMN_DEF    nontaxable=char(3)
+ Database   products  NUMERIC       price
+ Database   products  NUMERIC       discount
+</PRE>
+<P>MySQL, DBI, and DBD::mysql must be completely installed and tested, and have created the database <TT>minivend</TT>, for this to work. Permissions are difficult on MySQL. if having trouble, try starting the MySQL daemon with <TT>safe_mysqld --skip-grant-tables &amp;</TT> for testing purposes.</P>
+<P>To change to ODBC, the only changes required might be:</P>
+<PRE>
+   Database products  DSN         dbi:ODBC:TCP/IP localhost 1313
+   Database products  ChopBlanks  1
+</PRE>
+<P>The DSN setting is specific to a ODBC setup. The <TT>ChopBlanks</TT> setting takes care of the space-padding in Solid and some other databases. It is not specific to ODBC. Once again, DBI, DBD::ODBC, and the appropriate ODBC driver must be installed and tested.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_15.html">Parent Topic</A> | <A HREF="icdatabase_15.html">Previous Topic</A> | <A HREF="icdatabase_17.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

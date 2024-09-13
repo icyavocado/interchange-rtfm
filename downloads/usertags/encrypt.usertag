@@ -1,0 +1,61 @@
+#
+# UserTag encrypt - see documentation for more information
+#
+# Copyright 2001 by Ed LaFrance <edl@newmediaems.com>
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public
+# License along with this program; if not, write to the Free
+# Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+# MA  02111-1307  USA.
+
+UserTag encrypt Order cmd
+UserTag encrypt HasEndTag 1
+UserTag encrypt Interpolate 1
+UserTag encryp  Documentation <<EOD
+
+usage: [encrypt cmd='/usr/bin/encryptprog -opts key'*]Stuff to
+encrypt[/encrypt]
+
+* = optional parameter
+
+Allows the encryption of arbitrary data.  The [encrypt][/encrypt] pair can
+be surrounded with [seti name][/seti] to store the results in a scratch
+variable,
+written to a database field, emailed etc. The cmd parameter is optional and
+can be used to specify a encryption command specifically for use with this tag;
+otherwise the value from the EncryptProgram or PGP catalog directives will
+be used.
+
+EOD
+UserTag encrypt Routine <<EOR
+sub {
+	my ($cmd, $body) = @_;
+	return 'Need something to encrypt!' unless $body;
+	$cmd = $Config->{EncryptProgram} || $Vend::Cfg->{PGP} unless $cmd;
+	return 'No encryption command found!' unless $cmd;
+	my $name = $Tag->data('session', 'id');
+	my $fpre = $Vend::Cfg->{ScratchDir} . "/pgp.$name";
+	open(PGP, "|$cmd >$fpre.out 2>$fpre.err")
+	or die "Couldn't fork: $!";
+	print PGP $body;
+	close PGP;
+	if($?) {
+		my $err = Vend::Util::readfile("$fpre.err");
+		return '<b>Encrypt failed:</b><br>' .  $err;
+	}
+	$body = Vend::Util::readfile("$fpre.out");
+	unlink "$fpre.out";
+	unlink "$fpre.err";
+	return $body;
+}
+EOR

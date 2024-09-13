@@ -1,0 +1,199 @@
+Interchange CyberCash Support
+       Vend::Payment::CyberCash $Revision: 2.1 $
+
+SYNOPSIS
+           &charge=cybercash
+
+               or
+
+           [charge mode=cybercash param1=value1 param2=value2]
+
+               or
+
+           $Tag->charge('cybercash', $opt);
+
+
+PREREQUISITES
+       CyberCash connection kit V3.2.0.4
+
+DESCRIPTION
+       The Vend::Payment::CyberCash module implements the
+       cybercash() routine for use with Interchange. It is
+       compatible on a call level with the other Interchange
+       payment modules -- in theory (and even usually in
+       practice) you could switch from Authorize.net to CyberCash
+       with a few configuration file changes.
+
+       To enable this module, place this directive in
+       interchange.cfg:
+
+           Require module Vend::Payment::CyberCash
+
+       This should be in interchange.cfg or a file included from
+       it, but it is actually in by default to maintain backward
+       compatibility with legacy CyberCash installations.
+
+       Make sure CreditCardAuto is off (default in Interchange
+       demos).
+
+       Make sure the CyberCash Merchant connection kit is
+       installed and working.  It requires the following steps:
+
+       1.  Obtain the CyberCash modules, prefereably version
+           3.2.0.4 though 3.2.0.5 and above should work if you
+           add "DebugFile /dev/null" in interchange.cfg. Ask
+           around on the list if you need older versions.
+
+       2.  Install the modules, then find the directory where
+           they are and copy them to /path_to_interchange/lib.
+           Include the following files:
+
+               CCMckDirectLib3_2.pm  CCMckLib3_2.pm  MCKencrypt
+               CCMckErrno3_2.pm      MCKdecrypt      computeMD5hash
+
+           Make sure the program files (non-.pm) are executable.
+
+       3.  Edit CC*.pm to adjust the paths for MCKencrypt,
+           MCKdecrypt, and computeMD5hash.
+
+             in CCMckDirectLib3_2.pm:
+               $MCKencrypt = "/path_to_interchange/lib/MCKencrypt";
+               $MCKdecrypt = "/path_to_interchange/lib/MCKdecrypt";
+
+             in CCMckLib3_2.pm:
+               $computehash = "/path_to_interchange/lib/computeMD5hash";
+
+
+       4.  Restart Interchange and make sure you get the message:
+
+               CyberCash module found (Version 3.x)
+
+
+       The mode can be named anything, but the gateway parameter
+       must be set to cybercash. To make it the default payment
+       gateway for all credit card transactions in a specific
+       catalog, you can set in catalog.cfg:
+
+           Variable   MV_PAYMENT_MODE  cybercash
+
+       It uses any of the applicable standard settings from
+       Interchange payment. Any time we speak of a setting, it is
+       obtained either first from the tag/call options, then from
+       an Interchange order Route named for the mode, then
+       finally a default global payment variable, For example,
+       the configfile parameter would be specified by:
+
+           [charge mode=cybercash configfile="/path/to/the/merchant_conf"]
+
+       or
+
+           Route cybercash configfile /path/to/the/merchant_conf
+
+       or
+
+           Variable MV_PAYMENT_CONFIGFILE    /path/to/the/merchant_conf
+
+       The active settings are:
+
+       configfile
+           Your CyberCash merchant_conf file, usually created
+           when you installed the MCK.  Global parameter is
+           MV_PAYMENT_CONFIGFILE.
+
+       precision
+           The number of decimal digits to be included in the
+           amount. Default is 2.
+
+       currency
+           The international currency code to use. Default is
+           usd. Must be supported by CyberCash.
+
+       Items supported, but never normally used, are:
+
+       host
+           The CyberCash host to use. Default is set in the
+           merchant_conf file, and is not normally changed by the
+           user. No global parameter is used for fear of conflict
+           with another payment gateway -- must be set in the
+           Route or direct option.
+
+       transaction
+           The type of transaction to be run. Valid values are:
+
+               Interchange mode    CyberCash mode
+               ----------------    -----------------
+               sale                mauthcapture
+               auth                mauthonly
+
+           IMPORTANT NOTE: In most cases, you cannot control your
+           transaction type, it is set at
+           http://amps.cybercash.com.
+
+       remap
+           This remaps the form variable names to the ones needed
+           by CyberCash. See the payment documentation for
+           details.
+
+       Troubleshooting
+
+       Try the instructions above, then enable test mode at
+       http://amps.cybercash.com.  A test order should complete.
+       Exam
+
+       Then try a sale with the card number 4111 1111 1111 1111
+       and a valid expiration date. The sale should be denied,
+       and the reason should be in [data session payment_error].
+
+       If nothing works:
+
+       o   Make sure you "Require"d the module in
+           interchange.cfg:
+
+               Require module Vend::Payment::CyberCash
+
+
+       o   Make sure the CyberCash Merchant connection kit is
+           installed and working. Test with CyberCash's supplied
+           routines.
+
+       o   Check the error logs, both catalog and global.
+
+       o   Make sure you set your payment parameters properly. At
+           the minimum, you will need:
+
+               Route  cybercash   configfile   /path/to/merchant_conf
+
+       o   Make sure you have a payment mode set if you are not
+           calling it with &charge=cybercash:
+
+               Variable  MV_PAYMENT_MODE  cybercash
+
+           Everything is case-sensitive, make sure values match.
+
+       o   Try an order, then put this code in a page:
+
+               <XMP>
+               [calc]
+                   my $string = $Tag->uneval( { ref => $Session->{payment_result} });
+                   $string =~ s/{/{\n/;
+                   $string =~ s/,/,\n/g;
+                   return $string;
+               [/calc]
+               </XMP>
+
+           That should show what happened.
+
+BUGS
+       There is actually nothing *in* Vend::Payment::CyberCash.
+       It changes packages to Vend::Payment and places things
+       there.
+
+AUTHORS
+       Mike Heins <mheins@redhat.com>
+
+CREDITS
+           Jeff Nappi <brage@cyberhighway.net>
+           Paul Delys <paul@gi.alaska.edu>
+           webmaster@nameastar.net
+           Ray Desjardins <ray@dfwmicrotech.com>
+           Nelson H. Ferrari <nferrari@ccsc.com>

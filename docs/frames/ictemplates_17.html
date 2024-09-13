@@ -1,0 +1,501 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Template Guide: Standard objects and variables</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_15.html">Parent Topic</A> | <A HREF="ictemplates_16.html">Previous Topic</A> | <A HREF="ictemplates_18.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>5.2. Standard objects and variables</H2>
+<P>The following is a list of Interchange Perl standard objects are:</P>
+<P><B>$CGI</B></P>
+<UL>
+This is a hash reference to <TT>%CGI::values</TT>, the value of user variables as submitted in the current page/form. To get the value of a variable submitted as</UL>
+<PRE>
+            &lt;INPUT TYPE=hidden NAME=foo VALUE=bar&gt;
+</PRE>
+<UL>
+use</UL>
+<PRE>
+            [perl]
+                        return &quot;Value of foo is $CGI-&gt;{foo}&quot;;
+                [/perl]
+</PRE>
+<P>Actually, you should not do that -- if someone sends you a value you should not output it willy-nilly for security reasons. Filter it first with the [filter] tag as accessed by the $Tag object:</P>
+<PRE>
+            [perl]
+                        my $val = $Tag-&gt;filter('encode_entities', $CGI-&gt;{foo});
+                        return &quot;Value of foo is $val&quot;;
+                [/perl]
+</PRE>
+<UL>
+Remember, multiple settings of the same variable are separated by a NULL character. To get the array value, use $CGI_array.</UL>
+<P><B>$CGI_array</B></P>
+<UL>
+This is a hash reference to <TT>%CGI::values_array</TT>, arrays containing the value or values of user variables as submitted in the current page/form. To get the value of a variable submitted as</UL>
+<PRE>
+            &lt;INPUT TYPE=hidden NAME=foo VALUE='bar'&gt;
+            &lt;INPUT TYPE=hidden NAME=foo VALUE='baz'&gt;
+</PRE>
+<UL>
+use</UL>
+<PRE>
+            &lt;% = &quot;The values of foo are&quot;, join (' and ', @{$CGI_array-&gt;{'foo'}}) %&gt;
+</PRE>
+<UL>
+Remember, multiple settings of the same variable are separated by a NULL character. To get the array value, use $CGI_array.</UL>
+<P><B>$Carts</B></P>
+<UL>
+A reference to the shopping cart hash $Vend::Session-&gt;{carts}. The normal default cart is &quot;main&quot;. A typical alias is $Items.
+<BR>
+Shopping carts are an array of hash references. Here is an example of a session cart array containing a <TT>main</TT> and a <TT>layaway</TT> cart.</UL>
+<PRE>
+            {
+                'main' =&gt; [
+                            {
+                                'code' =&gt; '00-0011',
+                                'mv_ib' =&gt; 'products',
+                                'quantity' =&gt; 1,
+                                'size' =&gt; undef,
+                                'color' =&gt; undef
+                            },
+                            {
+                                'code' =&gt; '99-102',
+                                'mv_ib' =&gt; 'products',
+                                'quantity' =&gt; 2,
+                                'size' =&gt; 'L',
+                                'color' =&gt; 'BLUE'
+                            }
+                        ],
+                'layaway' =&gt; [
+                            {
+                                'code' =&gt; '00-341',
+                                'mv_ib' =&gt; 'products',
+                                'quantity' =&gt; 1,
+                                'size' =&gt; undef,
+                                'color' =&gt; undef
+                            }
+                        ]
+            }
+</PRE>
+<UL>
+In this cart array, $Carts-&gt;{main}[1]{code} is equal to <TT>99-102</TT>. Normally, it would be equivalent to $Items-&gt;[1]{code}.</UL>
+<P><B>$Config</B></P>
+<UL>
+A reference to the $Vend::Cfg array. This is normally used with a large amount of the Interchange source code, but for simple things use something like:</UL>
+<PRE>
+    # Allow searching the User database this page only
+    $Config-&gt;{NoSearch} =~ s/\buserdb\b//;
+</PRE>
+<UL>
+Changes are not persistent -- they are reset upon the next page access.</UL>
+<P><B>%Db</B></P>
+<UL>
+A hash of databases shared with the <TT>[mvasp tables=&quot;foo&quot;]</TT> parameter to the tag call. Once the database is shared, it is open and can be accessed by any of its methods. This will not work with SQL unless AllowGlobal is set for the catalog.</UL>
+<P><B>NOTE</B>: This object is not present and the below will not work with [calc].</P>
+<UL>
+To get a reference to a particular table, specify its hash element:</UL>
+<PRE>
+            my $db = $Db{products};
+</PRE>
+<UL>
+The available methods are:</UL>
+<PRE>
+            # access an element of the table
+            $field = $db-&gt;field($key, $column);
+        
+            # set an element of the table
+            $db-&gt;set_field($key, $column_name, $value);
+        
+            # atomic increment of an element of the table
+            $db-&gt;inc_field($key, $column_name, 1);
+        
+            # Return a complete hash of the database row (minus the key)
+            $hashref = $db-&gt;row_hash($key);
+        
+            # Return some fields from a row
+            my @fields = qw/sku price description/;
+            $array_ref = $db-&gt;get_slice($key, \@fields);
+        
+            # Set some fields in a row (slice)
+            my $key = 'os28004';
+            my @fields = qw/price description/;
+            my @values = (5.95, &quot;Ergo Roller&quot;);
+            $array_ref = $db-&gt;set_slice($key, \@fields, \@values);
+        
+            # Alternate way to set slice
+            my $key = 'os28004';
+            my %fields = ( price =&gt; 5.95, description =&gt; &quot;Ergo Roller&quot;);
+            $array_ref = $db-&gt;set_slice($key, \%fields);
+        
+            # Perform a SQL query, returning an array of arrays
+            # (the equivalent of DBI $sth-&gt;fetchall_arrayref)
+            $ary = $db-&gt;query($sql);
+        
+            # Same as above, except receive
+            # hash reference of pointers to field positions and
+            # array reference containing list of fields
+            my $sql = 'select * from products';
+            ($ary, $index_hash, $name_ary) = $db-&gt;query($sql);
+            $fields_returned = join &quot;,&quot;, @$name_ary;
+            $pointer_to_price = $index_hash-&gt;{price};
+        
+            # Perform a SQL query, returning an array of hashes
+            $ary = $db-&gt;query({ sql =&gt; $sql, hashref =&gt; 1 });
+        
+            # see if element of the table is numeric
+            $is_numeric = $db-&gt;numeric($column_name);
+        
+            # Quote for SQL query purposes
+            $quoted = $db-&gt;quote($value, $column_name);
+        
+            # Check configuration of the database
+            $delimiter = $db-&gt;config('DELIMITER');
+        
+            # Find the names of the columns (not including the key)
+            @columns = $db-&gt;columns();
+            # Insert the key column name
+            unshift @columns, $db-&gt;config('KEY');
+        
+            # See if a column is in the table
+            $is_a_column = defined $db-&gt;test_column($column_name);
+        
+            # See if a row is in the table
+            $is_present = $db-&gt;record_exists($key);
+        
+            # Create a subroutine to return a single column from the table
+            $sub = $db-&gt;field_accessor($column);
+            for (@keys) {
+                push @values, $sub-&gt;($key);
+            }
+        
+            # Create a subroutine to set a single column in the database
+            $sub = $db-&gt;field_settor($column);
+            for (@keys) {
+                $sub-&gt;($key, $value);
+            }
+        
+            # Create a subroutine to set a slice of the database
+            $sub = $db-&gt;row_settor(@columns);
+            for (@keys) {
+                $sub-&gt;($key, @values);
+            }
+        
+            # Return a complete array of the database (minus the key)
+            @values = $db-&gt;row($key);
+        
+            # Delete a record/row from the table
+            $db-&gt;delete_record($key);
+</PRE>
+<P><B>%Sql</B></P>
+<UL>
+A hash of SQL databases that you shared with the <TT>[perl tables=&quot;foo&quot;]</TT> parameter to the tag call. It returns the DBI database handle, so operations like the following can be performed:</UL>
+<P><B>NOTE</B>: This object is not present and the below will not work with [calc].</P>
+<PRE>
+          [perl products]
+            my $dbh = $Sql{products}
+                or return &quot;Database not shared.&quot;;
+            my $sth = $dbh-&gt;prepare('select * from products')
+                or return &quot;Couldn't open database.&quot;;
+            $sth-&gt;execute();
+            my @record;
+            while(@record = $sth-&gt;fetchrow()) {
+                foo();
+            }
+            $sth = $dbh-&gt;prepare('select * from othertable')
+                or return &quot;Couldn't open database.&quot;;
+            $sth-&gt;execute();
+            while(@record = $sth-&gt;fetchrow()) {
+                bar();
+            }
+          [/perl]
+</PRE>
+<P><B>$DbSearch</B></P>
+<UL>
+A search object that will search a database without using the text file. It is the same as Interchange's <TT>db</TT> searchtype. Options are specified in a hash and passed to the object. All multiple-field options should be passed as array references. Before using the $DbSearch object, it must be told which table to search. For example, to use the table <TT>foo</TT>, it must have been shared with <TT>[mvasp foo]</TT>.
+<BR>
+There are three search methods: <TT>array</TT>, <TT>hash</TT> and <TT>list</TT>.</UL>
+<PRE>
+            array    Returns a reference to an array of arrays (best)
+            hash     Returns a reference to an array of hashes (slower)
+            list     Returns a reference to an array of tab-delimited lines
+</PRE>
+<UL>
+\Example:</UL>
+<PRE>
+            $DbSearch-&gt;{table} = $Db{foo};
+        
+            $search = {
+        
+                    mv_searchspec =&gt; 'Mona Lisa',
+                    mv_search_field =&gt; [ 'title', 'artist', 'price' ],
+                    mv_return_fields    =&gt; [ 'title' ]
+        
+                };
+        
+            my $ary = $DbSearch-&gt;array($search);
+        
+            if(! scalar @$ary) {
+                return HTML &quot;No match.\n&quot;;
+            }
+        
+            for(@$ary) {
+</PRE>
+<P><B>$Document</B></P>
+<P>This is an object which will allow you to write and manipulate the output of your embedded Perl. For instance, you can emulate a non-parsed-header program with:</P>
+<PRE>
+        [perl]
+                $Document-&gt;hot(1);
+                for(1 .. 20) {
+                        $Document-&gt;write(&quot;Counting to $_...&lt;br&gt;&quot;);
+                        $Document-&gt;write( &quot; &quot; x 4096);
+                        $Tag-&gt;sleep(1);
+                }
+                $Document-&gt;write(&quot;Finished counting!&quot;);
+                return;
+        [/perl]
+</PRE>
+<P>Note the write of 4096 spaces. Because Interchange's link program is parsed by default and your web server (and the link program) have buffers, you need to fill up the buffer to cause a write. You can do it without the extra padding if you set the link up as a non-parsed-header program -- see your web server documentation on how to do that.</P>
+<P>There are several methods associated with $Document:</P>
+<PRE>
+         HTML $foo;                     # Append $foo to the write buffer array
+         $Document-&gt;write($foo);        # object call to append $foo to the write
+                                        # buffer array
+         $Document-&gt;insert($foo);       # Insert $foo to front of write buffer array
+         $Document-&gt;header($foo, $opt); # Append $foo to page header
+         $Document-&gt;send();             # Send write buffer array to output, done
+                                        # automatically upon end of ASP, clears buffer
+                                        # and invalidates $Document-&gt;header()
+         $Document-&gt;hot(1);             # Cause writes to send immediately
+         $Document-&gt;hot(0);             # Stop immediate send
+         @ary = $Document-&gt;review();    # Place contents of write buffer in @ary
+         $Document-&gt;replace(@ary)       # Replace contents of write buffer with @ary
+         $ary_ref = $Document-&gt;ref();   # Return ref to output buffer
+</PRE>
+<P><B>$Document-&gt;write($foo)</B></P>
+<UL>
+Write $foo to the page in a buffered fashion. The buffer is an array containing the results of all previous <TT>$Document-</TT>&gt;<TT>write()</TT> operations. If $Document-&gt;hot(1) has been set, the output immediately goes to the user.</UL>
+<P><B>$Document-&gt;insert($foo)</B></P>
+<UL>
+Insert $foo to the page buffer. The following example will output &quot;123&quot;</UL>
+<PRE>
+            $Document-&gt;write(&quot;23&quot;);
+            $Document-&gt;insert(&quot;1&quot;);
+            $Document-&gt;send();
+</PRE>
+<UL>
+while this example will output &quot;231&quot;</UL>
+<PRE>
+            $Document-&gt;write(&quot;23&quot;);
+            $Document-&gt;write(&quot;1&quot;);
+            $Document-&gt;send();
+</PRE>
+<UL>
+will output &quot;231&quot;.</UL>
+<P><B>$Document-&gt;header($foo, $opt)</B></P>
+<UL>
+Add the header line $foo to the HTTP header. This is used to change the page content type, cache options or other attributes. The code below changes the content type (MIME type) to text/plain:</UL>
+<PRE>
+            $Document-&gt;header(&quot;Content-type: text/plain&quot;);
+</PRE>
+<UL>
+There is an optional hash that can be sent with the only valid value being &quot;replace.&quot; The code below scrubs all previous header lines:</UL>
+<PRE>
+            $Document-&gt;header(&quot;Content-type: text/plain&quot;, { replace =&gt; 1 } );
+</PRE>
+<UL>
+Once output has been sent with $Document-&gt;send(), this can no longer be done.</UL>
+<P><B>$Document-&gt;hot($foo)</B></P>
+<UL>
+If the value of $foo is true (in a Perl sense), then all $Document-&gt;write() operations will be immediately sent until a $Document-&gt;hot(0) is executed.</UL>
+<P><B>$Document-&gt;send()</B></P>
+<UL>
+Causes the document write buffer to be sent to the browser and empties the buffer. Any further $Document-&gt;header() calls will be ignored. Can be used to implement non-parsed-header operation.</UL>
+<P><B>$Document-&gt;review()</B></P>
+<UL>
+Returns the value of the write buffer.</UL>
+<PRE>
+            @ary = $Document-&gt;review();
+</PRE>
+<P><B>$Document-&gt;replace(@new)</B></P>
+<UL>
+Completely replaces the write buffer with the arguments.</UL>
+<P><B>$Document-&gt;ref()</B></P>
+<UL>
+Returns a reference to the write buffer.</UL>
+<PRE>
+            # Remove the first item in the write buffer
+            my $ary_ref = $Document-&gt;ref();
+            shift @$ary_ref;
+</PRE>
+<P><B>HTML</B></P>
+<UL>
+Writes a string (or list of strings) to the write buffer array. The call</UL>
+<PRE>
+            HTML $foo, $bar;
+</PRE>
+<UL>
+is exactly equivalent to</UL>
+<PRE>
+            $Document-&gt;write($foo, $bar);
+</PRE>
+<UL>
+Honors the $Document-&gt;hot() setting.</UL>
+<P><B>$Items</B></P>
+<UL>
+A reference to the current shopping cart. Unless an Interchange <TT>[cart ...]</TT> tag is used, it is normally the same as $Carts-&gt;{main}.</UL>
+<P><B>$Scratch</B></P>
+<UL>
+A reference to the scratch values ala <TT>[scratch foo]</TT>.</UL>
+<PRE>
+           &lt;% $Scratch-&gt;{foo} = 'bar'; %&gt;
+</PRE>
+<UL>
+is equivalent to:</UL>
+<PRE>
+            [set foo]bar[/set]
+</PRE>
+<P><B>$Session</B></P>
+<UL>
+A reference to the session values ala <TT>[data session username]</TT>.</UL>
+<PRE>
+            &lt;%
+                my $out = $Session-&gt;{browser};
+                $Document-&gt;write($out);
+            %&gt;
+</PRE>
+<UL>
+is equivalent to:</UL>
+<PRE>
+            [data session browser]
+</PRE>
+<UL>
+Values can also be set. If the value of <TT>[data session source]</TT> needed to be changed, for example, set:</UL>
+<PRE>
+            &lt;%
+                $Session-&gt;{source} = 'New_partner';
+            %&gt;
+</PRE>
+<P><B>$Tag</B></P>
+<UL>
+Using the $Tag object, any Interchange tag including user-defined tags can be accessed.</UL>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>IMPORTANT NOTE: </STRONG>If the tag will access a database that has not been previously opened, the table name must be passed in the ITL call. For example:
+<HR WIDTH="80%" ALIGN="Left"></P>
+<UL>
+Named parameters:</UL>
+<PRE>
+            [perl tables=&quot;products pricing&quot;]
+</PRE>
+<UL>
+or
+<BR>
+Positional parameters:</UL>
+<PRE>
+            [perl products pricing]
+</PRE>
+<UL>
+Any tag can be called.</UL>
+<PRE>
+            [perl]
+                my $user = $Session-&gt;{username};
+                return $Tag-&gt;data('userdb', 'name', $user );
+            [/perl]
+</PRE>
+<UL>
+is the same as:</UL>
+<PRE>
+            [data table=userdb column=name key=&quot;[data session username]&quot;]
+</PRE>
+<UL>
+If the tag has a dash (<TT>-</TT>) in it, use an underscore instead:</UL>
+<PRE>
+            # WRONG!!!
+            $Tag-&gt;shipping-desc('upsg');
+            # Right
+            $Tag-&gt;shipping_desc('upsg');
+</PRE>
+<UL>
+There are two ways of specifying parameters. Either use the positional parameters as documented (for an authoritative look at the parameters, see the %Routine value in Vend::Parse) or specify it all with an option hash parameter names as in any named parameters as specified in an Interchange tag. The calls</UL>
+<PRE>
+            $Tag-&gt;data('products', 'title', '00-0011');
+</PRE>
+<UL>
+and</UL>
+<PRE>
+            my $opt = {
+                            table   =&gt; 'products',
+                            column  =&gt; 'title',
+                            key     =&gt; '00-0011',
+                        };
+        
+            $Tag-&gt;data( $opt );
+</PRE>
+<UL>
+are equivalent for the <TT>data</TT> tag.
+<BR>
+If using the option hash method, and the tag has container text, either specify it in the hash parameter <TT>body</TT> or add it as the next argument. The two calls:</UL>
+<PRE>
+            $Tag-&gt;item_list( {
+                                'body' =&gt; &quot;[item-code] [item-field title]&quot;,
+                            });
+</PRE>
+<UL>
+and</UL>
+<PRE>
+            $Tag-&gt;item_list( { }, &quot;[item-code] [item-field title]&quot;)
+</PRE>
+<UL>
+are equivalent.
+<BR>
+Parameter names are ALWAYS lower case.</UL>
+<P><B>$Values</B></P>
+<UL>
+A reference to the user form values ala <TT>[value foo]</TT>.</UL>
+<PRE>
+            &lt;% $Document-&gt;write($Values-&gt;{foo}); %&gt;
+</PRE>
+<UL>
+is equivalent to:</UL>
+<PRE>
+            [value foo]
+</PRE>
+<P><B>&amp;Log</B></P>
+<UL>
+Send a message to the error log (same as ::logError in GlobalSub or global UserTag).</UL>
+<PRE>
+            &lt;%
+                Log(&quot;error log entry&quot;);
+            %&gt;
+</PRE>
+<UL>
+It prepends the normal timestamp with user and page information. To suppress that information, begin the message with a backslash (<TT>\</TT>).</UL>
+<PRE>
+            &lt;%
+                Log(&quot;\\error log entry without timestamp&quot;);
+                Log('\another error log entry without timestamp');
+                Log(&quot;error log entry with timestamp&quot;);
+            %&gt;
+</PRE>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_15.html">Parent Topic</A> | <A HREF="ictemplates_16.html">Previous Topic</A> | <A HREF="ictemplates_18.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

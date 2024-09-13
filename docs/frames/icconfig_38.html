@@ -1,0 +1,36 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Configuration Reference: MaxRequestsPerChild *global*</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_3.html">Parent Topic</A> | <A HREF="icconfig_37.html">Previous Topic</A> | <A HREF="icconfig_39.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>2.35. MaxRequestsPerChild *global*</H2>
+<P>The maximum number of requests a page server will handle before it commits suicide and asks for a replacement server.  This prevents runaway memory leaks.</P>
+<PRE>
+        MaxRequestsPerChild  100
+</PRE>
+<P>Default is 50. Only applies in <A HREF="icconfig_43.html#PreFork *global*">PreFork</A> mode.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_3.html">Parent Topic</A> | <A HREF="icconfig_37.html">Previous Topic</A> | <A HREF="icconfig_39.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

@@ -1,0 +1,59 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Template Guide: ASP-Like Perl</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_10.html">Parent Topic</A> | <A HREF="ictemplates_12.html">Previous Topic</A> | <A HREF="ictemplates_14.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.3. ASP-Like Perl</H2>
+<P>Interchange supports an ASP-like syntax using the [<A HREF="ictags_81.html#mvasp">mvasp</A>] tag.</P>
+<PRE>
+   [mvasp]
+   &lt;HTML&gt;&lt;BODY&gt;
+       This is HTML.&lt;BR&gt;
+
+   &lt;% HTML &quot;This is code&lt;BR&gt;&quot;; %&gt;
+       More HTML.&lt;BR&gt;
+   &lt;% $Document-&gt;write(&quot;Code again.&lt;BR&gt;&quot;) %&gt;
+   [/mvasp]
+</PRE>
+<P>If no closing <TT>[/mvasp]</TT> tag is present, the remainder of the page will also be seen as ASP.</P>
+<P>ASP is simple. Anything between &lt;% and %&gt; is code, and the string %&gt; can not occur anywhere inside. Anything not between those anchors is plain HTML that is placed unchanged on the page. Interchange variables, <TT>[L][/L]</TT> and <TT>[LC][/LC]</TT> areas will still be inserted, but any Interchange tags will not.</P>
+<P>There is a shorthand &lt;% = $foo %&gt;, which is equivalent to &lt;% $Document-&gt;write($foo); %&gt; or &lt;% HTML $foo; %&gt;</P>
+<PRE>
+   [mvasp]
+   &lt;HTML&gt;&lt;BODY&gt;
+       This is HTML.&lt;BR&gt;
+       [value name] will show up as &amp;#91;value name].&lt;BR&gt;
+
+       &amp;#95_VARIABLE__ value is equal to: __VARIABLE__
+
+   &lt;% = &quot;This is code&lt;BR&gt;&quot; %&gt;
+</PRE>
+<P>The <TT>__VARIABLE__</TT> will be replaced by the value of <TT>Variable VARIABLE</TT>, but [value name] will be shown unchanged.</P>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Important Note: </STRONG>If using the <TT>SQL::Statement</TT> module, the catalog must be set to <TT>AllowGlobal</TT> in <TT>interchange.cfg</TT>. It will not work in &quot;Safe&quot; mode due to the limitations of object creation in Safe. Also, the <TT>Safe::Hole</TT> module must be installed to have SQL databases work in Safe mode.</P>
+<P><HR WIDTH="80%" ALIGN="Left"></P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_10.html">Parent Topic</A> | <A HREF="ictemplates_12.html">Previous Topic</A> | <A HREF="ictemplates_14.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

@@ -1,0 +1,71 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: PREFIX-change</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_9.html">Parent Topic</A> | <A HREF="ictags_12.html">Previous Topic</A> | <A HREF="ictags_14.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>3.4. PREFIX-change</H2>
+<PRE>
+   [PREFIX-change][condition] ... [/condition] TEXT [/PREFIX-change]
+</PRE>
+<P>Sets up a breaking sequence that occurs when the contents of [condition] [/condition] change. The most common one is a category break to nest or place headers.</P>
+<P>The region is only output when a field or other repeating value between [condition] and [/condition] changes its value. This allows indented lists similar to database reports to be easily formatted. The repeating value must be a tag interpolated in the search process, such as [<A HREF="ictags_19.html#PREFIX-field">PREFIX-field</A>] or [<A HREF="ictags_19.html#PREFIX-field">PREFIX-field</A><TT> database field</TT>]. If you need access to ITL tags, you can use [<A HREF="ictags_12.html#PREFIX-calc">PREFIX-calc</A>] with a <TT>$Tag-</TT>foo()&gt; call.</P>
+<P>Of course, this will only work as you expect when the search results are properly sorted.</P>
+<P>The value to be tested is contained within a <TT>[condition]value[/condition]</TT> tag pair. The [<TT>PREFIX-change</TT>] tag also processes an <TT>[else] [/else]</TT> pair for output when the value does not change.</P>
+<P>Here is a simple example for a search list that has a field <TT>category</TT> and <TT>subcategory</TT> associated with each item:</P>
+<PRE>
+ &lt;TABLE&gt;
+ &lt;TR&gt;&lt;TH&gt;Category&lt;/TH&gt;&lt;TH&gt;Subcategory&lt;/TH&gt;&lt;TH&gt;Product&lt;/TH&gt;&lt;/TR&gt;
+ [search-list]
+ &lt;TR&gt;
+    &lt;TD&gt;
+         [item-change cat]
+
+         [condition][item-field category][/condition]
+
+                 [item-field category]
+         [else]
+                 &amp;nbsp;
+         [/else]
+         [/item-change cat]
+    &lt;/TD&gt;
+    &lt;TD&gt;
+         [item-change sub]
+
+         [condition][item-field subcategory][/condition]
+
+                 [item-field subcategory]
+         [else]
+                 &amp;nbsp;
+         [/else]
+         [/item-change sub]
+    &lt;/TD&gt;
+    &lt;TD&gt; [item-field name] &lt;/TD&gt;
+ [/search-list]
+ &lt;/TABLE&gt;
+</PRE>
+<P>The above should put out a table that only shows the category and subcategory once, while showing the name for every product. (The <TT>&amp;nbsp;</TT> will prevent blanked table cells if you use a border.)</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_9.html">Parent Topic</A> | <A HREF="ictags_12.html">Previous Topic</A> | <A HREF="ictags_14.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

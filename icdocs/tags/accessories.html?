@@ -1,0 +1,2211 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>accessories - RTFM</title>
+
+    <meta http-equiv="Content-Language" content="en-GB">
+    <meta http-equiv="Window-target" content="_top">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <meta http-equiv="X-Soup-Of-The-Day" content="Tomato">
+
+    <meta name="author" content="Kevin Walsh">
+    <meta name="publisher" content="Cursor Software Limited">
+    <meta name="copyright" content="2001-2016, Cursor Software Limited">
+    <meta name="licence" content="GPLv2+ (Unknown licence)">
+    <meta name="generator" content="Interchange 5.7.0 -- www.icdevgroup.org">
+    <meta name="robots" content="index,follow,noarchive,noimageindex">
+    <meta name="keywords" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="description" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="MSSmartTagsPreventParsing" content="TRUE">
+
+    <meta name="verify-v1" content="KqlU/bxZj9Y2ZdZ/3RwuzgVSMIrZ8XM2wqbjSaEo3O4=">
+
+    <meta name="y_key" content="e2dd60be5777fbc8">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
+    <link rel="search" type="application/opensearchdescription+xml" href="http://interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="stylesheet" href="/decor/css/website.css">
+    <link rel="stylesheet" href="/decor/css/wiki.css">
+    <link rel="stylesheet" href="/decor/css/neo.css">
+
+
+    <script type="text/javascript" language="JavaScript">
+    <!--
+	if (top != self){
+	    top.location = location;
+	}
+
+    // -->
+    </script>
+</head>
+<body>
+<!-- START VAR: LOGOBAR -->
+<table id="rtfmheader" cellpadding="0" cellspacing="0">
+    <tr>
+	<td><a href="http://interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+
+	<td width="100%" style="text-align: right; padding: 10px">
+
+	    <form action="http://interchange-rtfm.pullingshots.ca/search.html" method="POST">
+		<input type="hidden" name="mv_session_id" value="nsession">
+		<input type="hidden" name="mv_profile" value="cms_search">
+		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
+		<input type="submit" class="button" value="Search">
+	    </form>
+
+	</td>
+    </tr>
+</table>
+<table id="breadcrumbs" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+	<td>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a></span>
+	    <span class="nowrap">&gt; <span class="current">accessories</span></span>
+	</td>
+
+    </tr>
+</table>
+<!-- END VAR: LOGOBAR -->
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+
+	    <td id="leftside">
+<!-- START COMPONENT: navigation -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th>NAVIGATION</th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+
+<!-- END COMPONENT: navigation -->
+<!-- START COMPONENT: wiki_recent -->
+
+
+
+<!-- END COMPONENT: wiki_recent -->
+<!-- START COMPONENT: wiki_backlinks -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th><span class="nowrap">PAGES THAT LINK HERE</span></th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/AutoModifier.html">AutoModifier</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Item_attributes.html">Item attributes</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/loop.html">loop</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/perl.html">perl</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-accessories.html">PREFIX-accessories</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UseModifier.html">UseModifier</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+<!-- END COMPONENT: wiki_backlinks -->
+<!-- START COMPONENT: account -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+
+    <tr>
+	<th>ACCOUNT LOGIN</th>
+    </tr>
+
+    <tr>
+	<td class="first">
+	    <p>You are not logged in</p>
+	</td>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+	    </ul>
+	</td>
+    </tr>
+
+</table>
+
+
+
+<!-- END COMPONENT: account -->
+<!-- START COMPONENT: icpowered -->
+
+<div style="text-align: center; margin: 10px; margin-top: 0px">
+    <a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+</div>
+
+
+
+<!-- START COMPONENT: icpowered -->
+
+	    </td>
+
+	    <td id="bodytext">
+<!-- start of page text -->
+
+<!-- start page: wiki/display (tags/accessories) -->
+
+<div class="wikitext">
+<a name="accessories"></a>
+<h1>accessories</h1>
+<p>
+A &quot;Swiss Army Knife&quot; widget builder,
+this provides access to Interchange's product option attributes
+(e.g. to choose or access product options such as a shirt's size or colour).
+</p>
+<p>
+Can build selection objects
+(radio buttons, check boxes, select boxes, etc.),
+forms and hyperlinks,
+or can simply return a value.
+</p>
+<a name="Summary"></a>
+<h2>Summary</h2>
+
+<p>
+<ul>
+<li><span class="fixedwidth">&#91;accessories code arg]</span></li>
+<li><span class="fixedwidth">&#91;accessories code attribute type other_named_attributes]</span></li>
+<li><span class="fixedwidth">&#91;accessories code arg other_named_attributes]</span> <strong>*DEPRECATED*</strong></li>
+</ul>
+
+<br>
+<table width="100%" class="border">
+<tr valign="top">
+<th class="grid">Parameter
+</th>
+<th class="grid">Description
+</th>
+<th class="grid">Default
+</th>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#code" title="&quot;code&quot; heading on this page">code</a></td>
+<td class="grid">Value of the SKU code in the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span>
+(or specified other) <a href="#table" title="&quot;table&quot; heading on this page">table</a>.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#code" title="&quot;code&quot; heading on this page">key</a></td>
+<td class="grid">Alias for <a href="#code" title="&quot;code&quot; heading on this page">code</a>.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#code" title="&quot;code&quot; heading on this page">row</a></td>
+<td class="grid">Alias for <a href="#code" title="&quot;code&quot; heading on this page">code</a>.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#arg" title="&quot;arg&quot; heading on this page">arg</a></td>
+<td class="grid">Positionally interpreted comma-delimited list of values for the
+following attributes:&nbsp;
+attribute, type, column, table, name, outboard, passed.&nbsp;
+<strong>(Deprecated)</strong></td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#append" title="&quot;append&quot; heading on this page">append</a></td>
+<td class="grid">Specify a string to append to the returned output.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#attribute" title="&quot;attribute&quot; heading on this page">attribute</a></td>
+<td class="grid">The item attribute the tag will work with.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#cols" title="&quot;cols&quot; heading on this page">cols</a></td>
+<td class="grid">Specify a number to pass to the to the &quot;<span class="fixedwidth">cols</span>&quot; parameter in HTML widgets that accept it.</td>
+<td class="grid">Varies with <a href="#type" title="&quot;type&quot; heading on this page">type</a> (often 40)</td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#column" title="&quot;column&quot; heading on this page">column</a></td>
+<td class="grid">Specifies the column in the <a href="#table" title="&quot;table&quot; heading on this page">table</a> that contains an item's attribute values.</td>
+<td class="grid"><span class="fixedwidth">attribute</span></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#column" title="&quot;column&quot; heading on this page">col</a></td>
+<td class="grid">Alias for <a href="#column" title="&quot;column&quot; heading on this page">column</a>.</td>
+<td class="grid"><em>attribute</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#column" title="&quot;column&quot; heading on this page">field</a></td>
+<td class="grid">Alias for <a href="#column" title="&quot;column&quot; heading on this page">column</a>.</td>
+<td class="grid"><em>attribute</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#contains" title="&quot;contains&quot; heading on this page">contains</a></td>
+<td class="grid">Determine whether a substring match of the value will cause a radio box or check box to be selected..</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#default" title="&quot;default&quot; heading on this page">default</a></td>
+<td class="grid">Sets the default attribute option in the widget returned by this tag.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#delimiter" title="&quot;delimiter&quot; heading on this page">delimiter</a></td>
+<td class="grid">Specify the attribute parameter list delimiter.</td>
+<td class="grid">Comma (&quot;<span class="fixedwidth">,</span>&quot;)</td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#empty" title="&quot;empty&quot; heading on this page">empty</a></td>
+<td class="grid">Request that this tag should include a hyperlink for the empty &quot;<span class="fixedwidth">--select--</span>&quot; option, when <a href="#type" title="&quot;type&quot; heading on this page">type</a> is &quot;<span class="fixedwidth">links</span>&quot;.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#extra" title="&quot;extra&quot; heading on this page">extra</a></td>
+<td class="grid">Specify extra HTML tag attributes, such as &quot;<span class="fixedwidth">id</span>&quot; or &quot;<span class="fixedwidth">class</span>&quot; etc.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#form" title="&quot;form&quot; heading on this page">form</a></td>
+<td class="grid">Set the base value for the form, when <a href="#type" title="&quot;type&quot; heading on this page">type</a> is &quot;<span class="fixedwidth">links</span>&quot;.</td>
+<td class="grid"><span class="fixedwidth">mv_action=return</span></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#href" title="&quot;href&quot; heading on this page">href</a></td>
+<td class="grid">Sets the base href for the hyperlinks, when <a href="#type" title="&quot;type&quot; heading on this page">type</a> is &quot;<span class="fixedwidth">links</span>&quot;.</td>
+<td class="grid">Current page
+</td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#joiner" title="&quot;joiner&quot; heading on this page">joiner</a></td>
+<td class="grid">Override the default string (<span class="fixedwidth">&lt;br&gt;</span>) that joins the hyperlinks, when <a href="#type" title="&quot;type&quot; heading on this page">type</a> is &quot;<span class="fixedwidth">links</span>&quot;.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#js" title="&quot;js&quot; heading on this page">js</a></td>
+<td class="grid">Specify JavaScript to be placed within the start tag of the widget's HTML output.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#new" title="&quot;new&quot; heading on this page">new</a></td>
+<td class="grid">Sets a value in place of the &quot;<span class="fixedwidth">New</span>&quot; or &quot;<span class="fixedwidth">Current</span>&quot; option in a combo box, when <a href="#type" title="&quot;type&quot; heading on this page">type</a> is &quot;<span class="fixedwidth">combo</span>&quot; or &quot;<span class="fixedwidth">reverse_combo</span>&quot;</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#name" title="&quot;name&quot; heading on this page">name</a></td>
+<td class="grid">Sets the name of the form variable to use.</td>
+<td class="grid"><span class="fixedwidth">mv_order_attribute</span></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#outboard" title="&quot;outboard&quot; heading on this page">outboard</a></td>
+<td class="grid">Used with the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a>]</span>
+tag to specify the <a href="#table" title="&quot;table&quot; heading on this page">table</a> lookup value.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#passed" title="&quot;passed&quot; heading on this page">passed</a></td>
+<td class="grid">Used to pass custom values to the widget built by this tag.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#prepend" title="&quot;prepend&quot; heading on this page">prepend</a></td>
+<td class="grid">Specify a string to prepend to the returned output.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#price" title="&quot;price&quot; heading on this page">price</a></td>
+<td class="grid">Force prices to be displayed along with item attributes.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#price_data" title="&quot;price data&quot; heading on this page">price_data</a></td>
+<td class="grid">
+</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#rows" title="&quot;rows&quot; heading on this page">rows</a></td>
+<td class="grid">Specify a number to pass to the to the &quot;<span class="fixedwidth">rows</span>&quot; parameter in HTML widgets that accept it.</td>
+<td class="grid">Varies with <a href="#type" title="&quot;type&quot; heading on this page">type</a> (often 4)</td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#secure" title="&quot;secure&quot; heading on this page">secure</a></td>
+<td class="grid">Cause the generated link(s) to point to your <em>secure</em> (HTTPS/SSL) Interchange URI, when <a href="#type" title="&quot;type&quot; heading on this page">type</a> is &quot;<span class="fixedwidth">links</span>&quot;.</td>
+<td class="grid">No
+</td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#table" title="&quot;table&quot; heading on this page">table</a></td>
+<td class="grid">Specifies database table that contains the item's attribute values
+</td>
+<td class="grid">See <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#table" title="&quot;table&quot; heading on this page">base</a></td>
+<td class="grid">Alias for <a href="#table" title="&quot;table&quot; heading on this page">table</a>.</td>
+<td class="grid">See <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#table" title="&quot;table&quot; heading on this page">database</a></td>
+<td class="grid">Alias for <a href="#table" title="&quot;table&quot; heading on this page">table</a>.</td>
+<td class="grid">See <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#table" title="&quot;table&quot; heading on this page">db</a></td>
+<td class="grid">Alias for <a href="#table" title="&quot;table&quot; heading on this page">table</a>.</td>
+<td class="grid">See <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#template" title="&quot;template&quot; heading on this page">template</a></td>
+<td class="grid">Allows you to override the standard Interchange template for the hyperlinks, when <a href="#type" title="&quot;type&quot; heading on this page">type</a> is &quot;<span class="fixedwidth">links</span>&quot;.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#type" title="&quot;type&quot; heading on this page">type</a></td>
+<td class="grid">The <em>display widget</em> to use.</td>
+<td class="grid"><span class="fixedwidth">select</span></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#width" title="&quot;width&quot; heading on this page">width</a></td>
+<td class="grid">Quasi-alias for the <a href="#cols" title="&quot;cols&quot; heading on this page">cols</a> parameter that only works with the &quot;<span class="fixedwidth">text</span>&quot; and &quot;<span class="fixedwidth">password</span>&quot; widgets.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+</table>
+
+<a name="Examples"></a>
+<h2>Examples</h2>
+<a name="Tag_expansion_example"></a>
+<h3>Tag expansion example</h3>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>accessories os2<span class="perl_Numb def_Number">8044 </span>size<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span></span><br>
+</span>
+</td>
+</tr>
+<tr>
+<td class="hr">
+<span class="fixedwidth">
+<span class="perl_Symb def_Symbol">&lt;</span><span class="perl_WordFun perl_Word def_Keyword">select </span>name<span class="perl_Symb def_Symbol">=</span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span>mv_order_size<span class="def_PairEnd def_Special">&quot;</span></span><span class="perl_Symb def_Symbol">&gt;</span><br>
+&nbsp; &nbsp; <span class="perl_Symb def_Symbol">&lt;</span>option value<span class="perl_Symb def_Symbol">=</span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span>10oz<span class="def_PairEnd def_Special">&quot;</span></span><span class="perl_Symb def_Symbol">&gt;</span><span class="perl_Numb def_Number">10</span>oz<span class="perl_Symb def_Symbol">&lt;</span><span class="perl_Symb def_Symbol">/</span>option<span class="perl_Symb def_Symbol">&gt;</span><br>
+&nbsp; &nbsp; <span class="perl_Symb def_Symbol">&lt;</span>option value<span class="perl_Symb def_Symbol">=</span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span>15oz<span class="def_PairEnd def_Special">&quot;</span></span><span class="perl_Symb def_Symbol">&gt;</span><span class="perl_Numb def_Number">15</span>oz<span class="perl_Symb def_Symbol">&lt;</span><span class="perl_Symb def_Symbol">/</span>option<span class="perl_Symb def_Symbol">&gt;</span><br>
+&nbsp; &nbsp; <span class="perl_Symb def_Symbol">&lt;</span>option value<span class="perl_Symb def_Symbol">=</span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span>20oz<span class="def_PairEnd def_Special">&quot;</span></span><span class="perl_Symb def_Symbol">&gt;</span><span class="perl_Numb def_Number">20</span>oz<span class="perl_Symb def_Symbol">&lt;</span><span class="perl_Symb def_Symbol">/</span>option<span class="perl_Symb def_Symbol">&gt;</span><br>
+<span class="perl_Symb def_Symbol">&lt;</span><span class="perl_Symb def_Symbol">/</span><span class="perl_WordFun perl_Word def_Keyword">select</span><span class="perl_Symb def_Symbol">&gt;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Perl_example"></a>
+<h3>Perl example</h3>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Tag</span><span class="perl_Symb def_Symbol">-&gt;</span>accessories<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span><br>
+&nbsp; &nbsp; code&nbsp; <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>os28044<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; arg&nbsp;&nbsp; <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>colour, radio<span class="def_PairEnd def_Special">'</span></span><br>
+&nbsp; &nbsp; table <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>special_products<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><br>
+<span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+or similarly with positional parameters:&nbsp;
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Tag</span><span class="perl_Symb def_Symbol">-&gt;</span>accessories<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$code</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Var def_Var">$arg</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Var def_Var">$attribute_hash_reference</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Description"></a>
+<h2>Description</h2>
+<p>
+This is the &quot;Swiss Army Knife&quot; widget builder for providing access
+to Interchange's product option attributes
+(e.g., to choose or access product options such as a shirt's size or colour).
+</p>
+<p>
+Interchange allows you to choose item attribute values for each ordered item;&nbsp;
+You can attach a size, colour or any other modifier to a line item in the
+shopping cart.&nbsp;
+You can also resubmit previous attribute values via <em>hidden</em> form fields.
+</p>
+<p>
+The <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UseModifier.html" title="UseModifier (config)">UseModifier</a></span> <em>local</em> configuration directive
+is used to set the name of the modifier(s).&nbsp;
+For example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+UseModifier&nbsp; size colour
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+will attach both a size and colour attribute to each item code that is ordered.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_warning.gif" width="32" height="32" border="0" alt="Warning">
+</td>
+<td width="100%">
+<p class="title">Warning</p>
+<p style="margin-bottom: 0px">
+You may not use the following names for attributes:&nbsp;
+&quot;<span class="fixedwidth">item</span>&quot;,
+&quot;<span class="fixedwidth">group</span>&quot;,
+&quot;<span class="fixedwidth">quantity</span>&quot;,
+&quot;<span class="fixedwidth">code</span>&quot;,
+&quot;<span class="fixedwidth">mv_ib</span>&quot;,
+&quot;<span class="fixedwidth">mv_mi</span>&quot; or
+&quot;<span class="fixedwidth">mv_si</span>&quot;
+</p>
+</td>
+</tr>
+</table>
+
+<p>
+You can also set modifier names with the &quot;<span class="fixedwidth">mv_UseModifier</span>&quot; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/set.html" title="set (tags)">scratchpad</a> variable, as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+&#91;set mv_UseModifier] size colour &#91;/set]
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+which has the same effect as the above.
+</p>
+<p>
+This allows multiple options to be set for products.&nbsp;
+Whichever one is in effect at order time will be used.&nbsp;
+Be careful:&nbsp;
+You cannot set it more than once on the same page.&nbsp;
+Setting the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html#mv_separate_items" title="&quot;mv separate items&quot; heading on the &quot;Special form variables&quot; page">mv_separate_items</a></span>
+or the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SeparateItems.html" title="SeparateItems (config)">SeparateItems</a></span> directive places each ordered
+item on a separate line,
+simplifying attribute handling.&nbsp;
+The <a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/set.html" title="set (tags)">scratchpad</a> setting for
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html#mv_separate_items" title="&quot;mv separate items&quot; heading on the &quot;Special form variables&quot; page">mv_separate_items</a></span>
+has the same effect.
+</p>
+<p>
+The modifier value is accessed in the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span> loop,
+with the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-param.html" title="PREFIX-param (tags)">item-param</a> attribute]</span> tag,
+and form input fields are placed with the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-modifier-name.html" title="PREFIX-modifier-name (tags)">modifier-name</a> attribute]</span> tag.&nbsp;
+This is similar to the way quantities are handled.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+You must be sure that none of the fields in your forms have digits appended
+to their name if the variable is the same name as the attribute name you select.&nbsp;
+This is because the
+<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-modifier-name.html" title="PREFIX-modifier-name (tags)">modifier-name</a> size]</span> variables will
+be placed in the user session with names like <span class="fixedwidth">size0</span>,
+<span class="fixedwidth">size1</span> and <span class="fixedwidth">size2</span> etc.
+</p>
+</td>
+</tr>
+</table>
+
+<p>
+Interchange will automatically generate the <em>select</em> widgets
+when the
+<span class="fixedwidth">&#91;accessories code=&quot;os28044&quot; attribute=&quot;size&quot;]</span> or <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a> size]</span> tags are called.&nbsp;
+They have the following syntax:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">item</span><span class="def_Symbol">-</span><span class="def_Syntax">accessories attribute</span><span class="def_Symbol">, </span><span class="def_Syntax">type</span><span class="def_Symbol">, </span><span class="def_Syntax">column</span><span class="def_Symbol">, </span><span class="def_Syntax">table</span><span class="def_Symbol">, </span><span class="def_Syntax">name</span><span class="def_Symbol">, </span><span class="def_Syntax">outboard</span><span class="def_Symbol">, </span><span class="def_Syntax">passed</span><span class="def_Symbol">]</span><br>
+<br>
+<span class="def_Symbol">[</span><span class="def_Syntax">accessories code</span><span class="def_Symbol">=</span>sku<br>
+&nbsp; &nbsp; <span class="def_Syntax">attribute</span><span class="def_Symbol">=</span>modifier<br>
+&nbsp; &nbsp; <span class="def_Syntax">type</span><span class="def_Symbol">=</span>select<br>
+&nbsp; &nbsp; <span class="def_Syntax">column</span><span class="def_Symbol">=</span><span class="def_Syntax">db</span><span class="def_Symbol">_</span><span class="def_Syntax">table</span><span class="def_Symbol">_</span><span class="def_Syntax">column</span><span class="def_Symbol">_</span>name<br>
+&nbsp; &nbsp; <span class="def_Syntax">table</span><span class="def_Symbol">=</span><span class="def_Syntax">db</span><span class="def_Symbol">_</span>table<br>
+&nbsp; &nbsp; <span class="def_Syntax">name</span><span class="def_Symbol">=</span>varname<br>
+&nbsp; &nbsp; <span class="def_Syntax">outboard</span><span class="def_Symbol">=</span>key<br>
+&nbsp; &nbsp; <span class="def_Syntax">passed</span><span class="def_Symbol">=</span><span class="def_String">&quot;value=label, value2*, value3=label 3&quot;</span><br>
+<span class="def_Symbol">]</span><br>
+<br>
+<span class="def_Symbol">[</span>accessories<br>
+&nbsp; &nbsp; <span class="def_Syntax">js</span><span class="def_Symbol">=</span><span class="def_Symbol">| </span><span class="def_Syntax">onChange</span><span class="def_Symbol">=</span><span class="def_String">&quot;set_description(simple_options, variant)&quot;</span><span class="def_Symbol">; </span><span class="def_Symbol">|</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">type</span><span class="def_Symbol">=</span>select<br>
+&nbsp; &nbsp; <span class="def_Syntax">name</span><span class="def_Symbol">=</span><span class="def_String">&quot;[item-param o_group]&quot;</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">passed</span><span class="def_Symbol">=</span><span class="def_String">&quot;=--choose--,[item-param o_value]&quot;</span><br>
+<span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Notes:&nbsp;
+
+<ul>
+<li>The <a href="#attribute" title="&quot;attribute&quot; heading on this page">attribute</a> attribute is required.</li>
+<li>See the <a href="#type" title="&quot;type&quot; heading on this page">type</a> attribute for a list of types.</li>
+<li>The trailing &quot;*&quot; in value2 will mark it as the default (&quot;selected&quot;) value in the select widget (see below).</li>
+</ul>
+
+</p>
+<p>
+When called with an attribute,
+the database is consulted to find a comma-separated list of item attribute
+options,
+which take the following form:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+name_a=Label Text1, default_name=Default Label Text*, name_b, etc.
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The label text is optional.&nbsp;
+If no label is provided then the <span class="fixedwidth">name</span> will be used
+(as in the &quot;<span class="fixedwidth">name_b</span>&quot; in the above example).
+</p>
+<p>
+If an asterisk (<span class="fixedwidth">*</span>) is the last character of the label text,
+then the item will be the default selection.&nbsp;
+If no default is specified then the first item in the list will be the default.&nbsp;
+For example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>item<span class="perl_Symb def_Symbol">-</span>accessories colour<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+This will search the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span> table(s)
+for a column named &quot;<span class="fixedwidth">colours</span>&quot;.&nbsp;
+If an entry such as
+&quot;<span class="fixedwidth">beige=Almond, gold=Harvest Gold, White*, green=Avocado</span>&quot; is found then a <em>select</em> widget like the following will be built:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">select</span> </span><span class="html_htmlParam def_Parameter">name</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;mv_order_colours&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;beige&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span>Almond<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;gold&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span>Harvest Gold<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;white&quot; </span><span class="html_htmlParam def_Parameter">selected</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;selected&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span>White<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;green&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span>Avocado<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">select</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+You can use this in combination with the
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html#mv_order_item" title="&quot;mv order item&quot; heading on the &quot;Special form variables&quot; page">mv_order_item</a></span> and
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html#mv_order_quantity" title="&quot;mv order quantity&quot; heading on the &quot;Special form variables&quot; page">mv_order_quantity</a></span>
+session variables to allow a customer
+to enter an item attribute during an order.
+</p>
+<p>
+If used in an <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span>,
+and the user has changed the value,
+the generated <em>select</em> widget will automatically retain its
+current value&lt;/i&gt;,
+as selected by the user.&nbsp;
+The value can then be displayed with
+<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-modifier.html" title="PREFIX-modifier (tags)">item-modifier</a> colour]</span> on the order report,
+order receipt or any other page containing an <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span>
+tag.
+</p>
+<a name="Emulating_with_a_loop"></a>
+<h3>Emulating with a loop</h3>
+<p>
+You can also build widgets directly,
+without using the <span class="fixedwidth">&#91;accessories]</span> tag.&nbsp;
+You may have to do so if you need more control of the content than
+the tag offers.&nbsp;
+The following is a fragment from a shopping basket display form,
+which shows a selectable size with <em>sticky</em> setting,
+and a price that changes based upon the modifier setting.&nbsp;
+Note that this example would normally be contained within the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]&#91;/item-list]</span> pair.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">select</span> </span><span class="html_htmlParam def_Parameter">name</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;[loop-modifier-name size]&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+[loop option=&quot;[loop-modifier-name size]&quot; list=&quot;S, M, L, XL&quot;]<br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;[loop-code]&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span> </span>[loop-code] -- [price code=&quot;[item-code]&quot; size=&quot;[loop-code]&quot;]<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+[/loop]<br>
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">select</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The output of the above would be similar to the output of <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">item-accessories</a> size select]</span>
+if the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span> table's <span class="fixedwidth">size</span> column
+contained the value &quot;<span class="fixedwidth">S, M, L, XL</span>&quot;.&nbsp;
+The difference is that the options in the loop emulation show the
+adjusted price in addition to the size within each option value.
+</p>
+<a name="Hash_Lists_technical_note"></a>
+<h3>Hash Lists (technical note)</h3>
+<p>
+As a technical note, some of the features of this tag work differently
+depending upon whether it was called with a <span class="fixedwidth">&#36;Vend::Interpolate::item</span>
+hash reference.&nbsp;
+For example, when called as
+<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">item-accessories</a>]</span> within an
+<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span> container.
+</p>
+<p>
+In this context,
+the tag will have access to ancillary data from the item
+(including, perhaps, a user's chosen item attribute value).&nbsp;
+For example,
+if building a <em>textarea</em> widget within an [<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>],
+the widget will show the chosen item attribute value.&nbsp;
+On the other hand,
+within an array list such as a <span class="fixedwidth">&#91;search-list]</span> block in a
+<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/search-region.html" title="search-region (tags)">search-region</a>]</span>,
+the widget would be empty.
+</p>
+<p>
+If you really know what you're doing,
+you can pass an <em>item</em> hash reference,
+within a <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/perl.html" title="perl (tags)">perl</a>]</span> tag,
+like this:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Tag</span><span class="perl_Symb def_Symbol">-&gt;</span>accessories<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><br>
+&nbsp; &nbsp; <span class="perl_Var def_Var">$code</span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; <span class="perl_WordFun perl_Word def_Keyword">undef</span><span class="perl_Symb def_Symbol">,&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="perl_Comment def_Comment def_Syntax"># deprecated &quot;arg&quot; parameter</span><br>
+&nbsp; &nbsp; <span class="perl_Var def_Var">$named_attribute_hashref</span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; <span class="perl_Var def_Var">$item_hashref</span><br>
+<span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Also see the <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Looping_tags_and_sub-tags.html" title="Category - looping tags and sub-tags">Looping tags and sub-tags</a> category for
+information about hash-context and array-context in looping tags.
+</p>
+<a name="Parameters"></a>
+<h2>Parameters</h2>
+<a name="code"></a>
+<h3>code</h3>
+<p>
+This is the primary key in the specified <span class="fixedwidth"><a href="#table" title="&quot;table&quot; heading on this page">table</a></span>
+(commonly named &quot;<span class="fixedwidth">sku</span>&quot; in a <em>products</em> table).&nbsp;
+If no <span class="fixedwidth"><a href="#table" title="&quot;table&quot; heading on this page">table</a></span> is specified then this tag defaults to the table(s)
+defined with the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span> <em>local</em> configuration
+directive which,
+in turn,
+defaults to &quot;<span class="fixedwidth">products</span>&quot;.
+</p>
+<p>
+You should not specify a <span class="fixedwidth">code</span> parameter when looping on
+<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a>]</span>,
+as it internally sets the &quot;<span class="fixedwidth">code</span>&quot; to the key for the current
+item in the loop.&nbsp;
+See the <span class="fixedwidth"><a href="#outboard" title="&quot;outboard&quot; heading on this page">outboard</a></span> parameter.
+</p>
+<a name="arg"></a>
+<h3>arg</h3>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_availability.gif" width="32" height="32" border="0" alt="Deprecation notice">
+</td>
+<td width="100%">
+<p class="title">Deprecation notice</p>
+<p style="margin-bottom: 0px">
+The <span class="fixedwidth">arg</span> parameter was deprecated in Interchange 4.6.&nbsp;
+Please do not make use of this parameter as it may be removed,
+without warning,
+at any time.
+</p>
+</td>
+</tr>
+</table>
+
+<p>
+This parameter allows you to pass values for some of the more commonly
+used attributes,
+in the manner of the
+<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a>]</span> tag,
+as a comma-delimited positional list.&nbsp;
+For instance:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+arg<span class="perl_Symb def_Symbol">=</span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span>attribute, type, column, table, name, outboard, passed<span class="def_PairEnd def_Special">&quot;</span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Whitespace within the list is optional.
+</p>
+<p>
+If you leave out one or more of the above attributes,
+and are setting anything after it in the list,
+then be sure to keep the comma(s).&nbsp;
+For instance:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+&nbsp; &nbsp; <span class="def_Syntax">arg</span><span class="def_Symbol">=</span><span class="def_String">&quot;attribute, type, , table&quot;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The above example shows the attribute names for clarity.&nbsp;
+You would probably want actually use the values,
+so the previous example might actually be something like
+the following:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+&nbsp; &nbsp; <span class="def_Syntax">arg</span><span class="def_Symbol">=</span><span class="def_String">&quot;colour, radio, , products&quot;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+Although you must use such a comma-delimited list to pass attributes to the
+<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a>]</span> tag,
+please use named attributes instead for the <span class="fixedwidth">&#91;accessories]</span> tag.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="append"></a>
+<h3>append</h3>
+<p>
+You can set a string to append to the returned output of the tag.&nbsp;
+Note that this is not a list to append to the fetched attribute value list,
+which is treated within the tag.
+</p>
+<a name="attribute"></a>
+<h3>attribute</h3>
+<p>
+You can set attributes for items in a <span class="fixedwidth"><a href="#table" title="&quot;table&quot; heading on this page">table</a></span>,
+usually the &quot;<span class="fixedwidth">products</span>&quot; table,
+with the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UseModifier.html" title="UseModifier (config)">UseModifier</a></span> configuration directive.&nbsp;
+Typical attributes are &quot;<span class="fixedwidth">size</span>&quot; and &quot;<span class="fixedwidth">colour</span>&quot;.
+</p>
+<p>
+This parameter selects the item attribute upon which this tag will operate.&nbsp;
+Also see the <span class="fixedwidth"><a href="#column" title="&quot;column&quot; heading on this page">column</a></span> parameter, below.
+</p>
+<a name="cols"></a>
+<h3>cols</h3>
+<p>
+The tag will pass the number you choose through to the HTML
+&quot;<span class="fixedwidth">cols=<em>X</em></span>&quot; parameter in HTML widgets that accept it.
+</p>
+<p>
+See also <span class="fixedwidth"><a href="#rows" title="&quot;rows&quot; heading on this page">rows</a></span>, above.
+</p>
+<a name="column"></a>
+<h3>column</h3>
+<p>
+This specifies the column in the <span class="fixedwidth"><a href="#table" title="&quot;table&quot; heading on this page">table</a></span> that contains an
+item's attribute values.&nbsp;
+This tag will look for item attribute names and values in a
+comma-delimited list of &quot;<span class="fixedwidth">name=value</span>&quot; pairs,
+stored in this column of an item's row in the <span class="fixedwidth"><a href="#table" title="&quot;table&quot; heading on this page">table</a></span>.
+</p>
+<p>
+The column,
+in the <span class="fixedwidth"><a href="#table" title="&quot;table&quot; heading on this page">table</a></span>,
+corresponding to the attribute will
+traditionally have the same name as the attribute.&nbsp;
+That does not need to be the case,
+but you may find it to be confusing if you use different names.&nbsp;
+If unspecified,
+the column name will default to the name specified with the
+<span class="fixedwidth"><a href="#attribute" title="&quot;attribute&quot; heading on this page">attribute</a></span> parameter.
+</p>
+<p>
+For example,
+if an item in the &quot;<span class="fixedwidth">products</span>&quot; table has a &quot;<span class="fixedwidth">size</span>&quot; attribute,
+and each item's comma-delimited list of available sizes is stored in the
+&quot;<span class="fixedwidth">how_big</span>&quot; column,
+then you would need to specify &quot;<span class="fixedwidth">column=how_big</span>&quot; because the
+tag's default column choice (<span class="fixedwidth">size</span>) would be missing,
+or used for some other purpose.
+</p>
+<a name="contains"></a>
+<h3>contains</h3>
+<p>
+Requires <a href="#type" title="&quot;type&quot; heading on this page">type</a> to be &quot;<span class="fixedwidth">radio</span>&quot; or &quot;<span class="fixedwidth">check</span>&quot;.
+</p>
+<p>
+This is used to determine whether a substring match of the value will
+cause a radio box or check box to be selected.&nbsp;
+If <em>true</em> then the match will happen whether the value is on a word
+boundary or not.&nbsp;
+If <em>false</em> then the value must be on a word boundary.&nbsp;
+When we speak of a word boundary, it is in the Perl sense.&nbsp;
+I.e. a <em>word</em> character (<span class="fixedwidth">&#91;A-Za-z0-9_]</span>) followed by or
+preceded by a <em>non-word</em> character,
+or the beginning or the end of the string.
+</p>
+<a name="default"></a>
+<h3>default</h3>
+<p>
+Sets the default attribute option in the widget returned by this tag.&nbsp;
+This will override a default indicated with a trailing asterisk (<span class="fixedwidth">*</span>)
+in the database or a &quot;<span class="fixedwidth">passed</span>&quot; string.&nbsp;
+This will also override the default of a user's previous selection when
+it would have otherwise been preserved.
+</p>
+<p>
+For example the following selects &quot;<span class="fixedwidth">blue</span>&quot; by default,
+rather than &quot;<span class="fixedwidth">green</span>&quot; as it would otherwise have done.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span>accessories<br>
+&nbsp; &nbsp; <span class="def_Syntax">type</span><span class="def_Symbol">=</span>select<br>
+&nbsp; &nbsp; <span class="def_Syntax">name</span><span class="def_Symbol">=</span>colour<br>
+&nbsp; &nbsp; <span class="def_Syntax">passed</span><span class="def_Symbol">=</span><span class="def_String">&quot;blue=blue, green=Sea Green*&quot;</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">default</span><span class="def_Symbol">=</span><span class="def_String">&quot;blue&quot;</span><br>
+<span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+which will generate:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">select</span> </span><span class="html_htmlParam def_Parameter">name</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;colour&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;blue&quot; </span><span class="html_htmlParam def_Parameter">selected</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;selected&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span>blue<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;green&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span>Sea Green<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">select</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Obscure technical note">
+</td>
+<td width="100%">
+<p class="title">Obscure technical note</p>
+<p style="margin-bottom: 0px">
+the tag will ignore the &quot;<span class="fixedwidth">default</span>&quot; parameter
+if it has an item hash reference.&nbsp;
+See <a href="#Hash_Lists_technical_note" title="&quot;Hash Lists technical note&quot; heading on this page">Hash Lists</a>, above.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="delimiter"></a>
+<h3>delimiter</h3>
+<p>
+The list of attribute values will be a delimited string.&nbsp;
+This parameter allows you to specify an alternative delimiter
+if the list is not comma-delimited (the default).
+</p>
+<a name="empty"></a>
+<h3>empty</h3>
+<p>
+Requires <a href="#type" title="&quot;type&quot; heading on this page">type</a> to be &quot;<span class="fixedwidth">links</span>&quot;.
+</p>
+<p>
+Setting this parameter <em>true</em> requests that this tag should include
+a hyperlink for the empty &quot;<span class="fixedwidth">--select--</span>&quot; option.&nbsp;
+In the <span class="fixedwidth"><a href="#form" title="&quot;form&quot; heading on this page">form</a></span> example, above, if &quot;<span class="fixedwidth">empty=1</span>&quot; had been specified then three links would have been generated.
+</p>
+<a name="extra"></a>
+<h3>extra</h3>
+<p>
+The value of this parameter will be appended to the list of attributes
+attached to the widget's HTML tag.&nbsp;
+The following example illustrates the <span class="fixedwidth"><a href="#append" title="&quot;append&quot; heading on this page">append</a></span>,
+<span class="fixedwidth">extra</span> and <span class="fixedwidth"><a href="#js" title="&quot;js&quot; heading on this page">js</a></span> parameters:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span>accessories<br>
+&nbsp; &nbsp; <span class="def_Syntax">code</span><span class="def_Symbol">=</span>os28044<br>
+&nbsp; &nbsp; <span class="def_Syntax">type</span><span class="def_Symbol">=</span>select<br>
+&nbsp; &nbsp; <span class="def_Syntax">attribute</span><span class="def_Symbol">=</span>size<br>
+&nbsp; &nbsp; <span class="def_Syntax">append</span><span class="def_Symbol">=</span><span class="def_String">&quot;Append this text&lt;br&gt;&quot;</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">extra</span><span class="def_Symbol">=</span><span class="def_String">'id=&quot;foo&quot;'</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">js</span><span class="def_Symbol">=</span><span class="def_String">'onchange=&quot;foo()&quot;'</span><br>
+<span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+which will generate:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">select</span> </span><span class="html_htmlParam def_Parameter">name</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;mv_order_size&quot; </span>onchange<span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;foo()&quot; </span><span class="html_htmlParam def_Parameter">id</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;foo&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;10oz&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><span class="html_htmlNumb def_Number">10</span>oz<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;15oz&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><span class="html_htmlNumb def_Number">15</span>oz<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;20oz&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><span class="html_htmlNumb def_Number">20</span>oz<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">select</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span>Append this text<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">br</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="form"></a>
+<h3>form</h3>
+<p>
+Requires <a href="#type" title="&quot;type&quot; heading on this page">type</a> to be &quot;<span class="fixedwidth">links</span>&quot;.
+</p>
+<p>
+This sets the base value for the <em>form</em> in a &quot;<span class="fixedwidth">links</span> widget.&nbsp;
+The default is &quot;<span class="fixedwidth">mv_action=return</span>&quot;,
+which will simply set the variable value in the link.
+</p>
+<p>
+For example,
+to generate a series of links (one per item attribute value passed),
+that sets the variable &quot;<span class="fixedwidth">colour</span>&quot; to the corresponding passed
+value (<em>blank</em>, &quot;<span class="fixedwidth">blue</span>&quot;, or &quot;<span class="fixedwidth">green</span>&quot;),
+do this:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span>accessories<br>
+&nbsp; &nbsp; <span class="def_Syntax">type</span><span class="def_Symbol">=</span>links<br>
+&nbsp; &nbsp; <span class="def_Syntax">name</span><span class="def_Symbol">=</span>colour<br>
+&nbsp; &nbsp; <span class="def_Syntax">passed</span><span class="def_Symbol">=</span><span class="def_String">&quot;=--select--, blue=Blue, green=Sea Green&quot;</span><br>
+<span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+This will generate something like the following:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">a</span> </span><span class="html_htmlParam def_Parameter">href</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;http://www.example.com/somepage.html?mv_action=return&amp;colour=blue&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span>Blue<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">a</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">a</span> </span><span class="html_htmlParam def_Parameter">href</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;http://www.example.com/somepage.html?mv_action=return&amp;colour=green&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span>Sea Green<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">a</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+If you want the empty &quot;<span class="fixedwidth">--select--</span>&quot; option to show up then
+pass an <span class="fixedwidth"><a href="#empty" title="&quot;empty&quot; heading on this page">empty</a>=1</span> parameter to this tag.
+</p>
+<a name="href"></a>
+<h3>href</h3>
+<p>
+Requires <a href="#type" title="&quot;type&quot; heading on this page">type</a> to be &quot;<span class="fixedwidth">links</span>&quot;.
+</p>
+<p>
+This sets the base <em>href</em> for the link in a links type.&nbsp;
+The default is the current page.
+</p>
+<a name="joiner"></a>
+<h3>joiner</h3>
+<p>
+Requires <a href="#type" title="&quot;type&quot; heading on this page">type</a> to be &quot;<span class="fixedwidth">links</span>&quot;.
+</p>
+<p>
+With &quot;<span class="fixedwidth">type=links</span>&quot;,
+this tag returns a link for each option.&nbsp;
+This allows you to override the default string (<span class="fixedwidth">&lt;br&gt;</span>)
+that joins these links.&nbsp;
+You can use Perl's meta-character escapes, such as &quot;<span class="fixedwidth">&#92;n</span>&quot; for newline or
+&quot;<span class="fixedwidth">&#92;t</span>&quot; for tab.
+</p>
+<a name="js"></a>
+<h3>js</h3>
+<p>
+This parameter allows you to place JavaScript within the start tag of
+the widget's HTML output.
+</p>
+<p>
+See the <span class="fixedwidth"><a href="#extra" title="&quot;extra&quot; heading on this page">extra</a></span> parameter for a usage example.
+</p>
+<p>
+The &quot;<span class="fixedwidth">js</span>&quot; parameter has no default,
+except when &quot;<span class="fixedwidth">type=move_combo</span>&quot;,
+where the default is:&nbsp;
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">onchange</span><span class="def_Symbol">=</span><span class="def_String">&quot;addItem(this.form.Xname,this.form.name)&quot;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="new"></a>
+<h3>new</h3>
+<p>
+Requires <a href="#type" title="&quot;type&quot; heading on this page">type</a> to be &quot;<span class="fixedwidth">combo</span>&quot; or &quot;<span class="fixedwidth">reverse_combo</span>&quot;.
+</p>
+<p>
+You can use this to set a value in place of the &quot;<span class="fixedwidth">New</span>&quot; or
+&quot;<span class="fixedwidth">Current</span>&quot; option in a combo box.&nbsp;
+For example,
+if item &quot;<span class="fixedwidth">os28044</span>&quot; has &quot;<span class="fixedwidth">size</span>&quot; attribute values of
+&quot;<span class="fixedwidth">Sm=10oz, Med=15oz, Lg=20oz</span>&quot;:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span>accessories<br>
+&nbsp; &nbsp; <span class="def_Syntax">code</span><span class="def_Symbol">=</span>os28044<br>
+&nbsp; &nbsp; <span class="def_Syntax">attribute</span><span class="def_Symbol">=</span>size<br>
+&nbsp; &nbsp; <span class="def_Syntax">type</span><span class="def_Symbol">=</span>combo<br>
+&nbsp; &nbsp; <span class="def_Syntax">new</span><span class="def_Symbol">=</span><span class="def_String">&quot;my_new_value&quot;</span><br>
+<span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+will generate:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">input</span> </span><span class="html_htmlParam def_Parameter">type</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlParam def_Parameter">text </span><span class="html_htmlParam def_Parameter">name</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;mv_order_size&quot; </span><span class="html_htmlParam def_Parameter">size</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlNumb def_Number">16 </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">select</span> </span><span class="html_htmlParam def_Parameter">name</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;mv_order_size&quot; </span><span class="html_htmlParam def_Parameter">size</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;1&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;my_new_value&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span>my_new_value<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;Sm&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><span class="html_htmlNumb def_Number">10</span>oz<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;Med&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><span class="html_htmlNumb def_Number">15</span>oz<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;Lg&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><span class="html_htmlNumb def_Number">20</span>oz<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">select</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Or, with the default &quot;<span class="fixedwidth">new</span>&quot; value:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">accessories code</span><span class="def_Symbol">=</span>os28044 <span class="def_Syntax">attribute</span><span class="def_Symbol">=</span><span class="def_Syntax">size type</span><span class="def_Symbol">=</span><span class="def_Syntax">combo</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+will generate:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">input</span> </span><span class="html_htmlParam def_Parameter">type</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlParam def_Parameter">text </span><span class="html_htmlParam def_Parameter">name</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;mv_order_size&quot; </span><span class="html_htmlParam def_Parameter">size</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlNumb def_Number">16 </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">select</span> </span><span class="html_htmlParam def_Parameter">name</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;mv_order_size&quot; </span><span class="html_htmlParam def_Parameter">size</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;1&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><span class="xml_EntityRef def_ParameterStrong def_Parameter"><span class="xml_CharRef def_Parameter">&amp;</span><span class="xml_CharRef def_Parameter">lt</span><span class="xml_CharRef def_Parameter">;</span></span>-- New<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;Sm&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><span class="html_htmlNumb def_Number">10</span>oz<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;Med&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><span class="html_htmlNumb def_Number">15</span>oz<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;Lg&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><span class="html_htmlNumb def_Number">20</span>oz<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">select</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The default is no <em>value</em> with option text set to
+&quot;<span class="fixedwidth">&lt;-- New</span>&quot; if <span class="fixedwidth"><a href="#type" title="&quot;type&quot; heading on this page">type</a></span> is &quot;<span class="fixedwidth">combo</span>&quot;,
+or &quot;<span class="fixedwidth">Current --&gt;</span>&quot; if <span class="fixedwidth"><a href="#type" title="&quot;type&quot; heading on this page">type</a></span> is &quot;<span class="fixedwidth">reverse_combo</span>&quot;.
+</p>
+<a name="name"></a>
+<h3>name</h3>
+<p>
+This sets the name of the form variable to use,
+if appropriate for the widget being built.&nbsp;
+This defaults to &quot;<span class="fixedwidth">mv_order_<em>attribute</em></span>&quot;.&nbsp;
+I.e. if the attribute is named &quot;<span class="fixedwidth">size</span>&quot; then the form variable
+will be named &quot;<span class="fixedwidth">mv_order_size</span>&quot;.
+</p>
+<p>
+If the variable is set in the user's session
+then the widget will retain its previous setting.&nbsp;
+In other words, <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/value.html" title="value (tags)">value</a> name]</span> will contain the
+previous setting and the widget will use it as its default setting.&nbsp;
+Also see the <span class="fixedwidth"><a href="#default" title="&quot;default&quot; heading on this page">default</a></span> parameter.
+</p>
+<a name="outboard"></a>
+<h3>outboard</h3>
+<p>
+If you need to select from a database <span class="fixedwidth"><a href="#table" title="&quot;table&quot; heading on this page">table</a></span>
+who's primary key is different from the product's SKU code,
+then you can use this parameter to pass the key value that should
+can be used to find the accessory data.
+</p>
+<p>
+This is especially useful when using <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a>]</span>,
+as that loop sub-tag cannot be passed a <span class="fixedwidth"><a href="#code" title="&quot;code&quot; heading on this page">code</a></span> parameter.
+</p>
+<a name="passed"></a>
+<h3>passed</h3>
+<p>
+You can use this to pass your own values to the widget built by this tag.&nbsp;
+If you have set <span class="fixedwidth"><a href="#passed" title="&quot;passed&quot; heading on this page">passed</a></span> to a list of widget options,
+then this tag will simply build a widget,
+of the specified type,
+with your values - instead of fetching an attribute value list from the database.
+</p>
+<p>
+For example,
+to generate a <em>select</em> widget with a blank option
+(perhaps forcing a select),
+the value of &quot;<span class="fixedwidth">blue</span>&quot; with a label of &quot;<span class="fixedwidth">Blue</span>&quot; and the value of &quot;<span class="fixedwidth">green</span>&quot; with a label of &quot;<span class="fixedwidth">Sea Green</span>&quot;,
+use the following:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span>accessories<br>
+&nbsp; &nbsp; <span class="def_Syntax">type</span><span class="def_Symbol">=</span>select<br>
+&nbsp; &nbsp; <span class="def_Syntax">name</span><span class="def_Symbol">=</span>colour<br>
+&nbsp; &nbsp; <span class="def_Syntax">passed</span><span class="def_Symbol">=</span><span class="def_String">&quot;=--select--*, blue=Blue, green=Sea Green&quot;</span><br>
+<span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Which will generate:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">select</span> </span><span class="html_htmlParam def_Parameter">name</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;colour&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;&quot; </span><span class="html_htmlParam def_Parameter">selected</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;selected&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span>--select--<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;blue&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span>Blue<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;green&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span>Sea Green<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">select</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="prepend"></a>
+<h3>prepend</h3>
+<p>
+You can set a string to prepend to the returned output of the tag.&nbsp;
+Note that this is not a list to prepend to the fetched attribute value list,
+which is treated within the tag.
+</p>
+<p>
+For example,
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+&nbsp; &nbsp; <span class="def_Symbol">[</span>accessories<br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Syntax">code</span><span class="def_Symbol">=</span>os28044<br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Syntax">type</span><span class="def_Symbol">=</span>select<br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Syntax">attribute</span><span class="def_Symbol">=</span>size<br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Syntax">append</span><span class="def_Symbol">=</span><span class="def_String">&quot;Append Me&lt;br&gt;&quot;</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Syntax">prepend</span><span class="def_Symbol">=</span><span class="def_String">&quot;Prepend Me&quot;</span><br>
+&nbsp; &nbsp; <span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+will generate:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Prepend Me<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">select</span> </span><span class="html_htmlParam def_Parameter">name</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;mv_order_size&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span>\<br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;10oz&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><span class="html_htmlNumb def_Number">10</span>oz<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;15oz&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><span class="html_htmlNumb def_Number">15</span>oz<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;20oz&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><span class="html_htmlNumb def_Number">20</span>oz<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">select</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span>Append Me<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">br</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="price"></a>
+<h3>price</h3>
+<p>
+When combined with the <span class="fixedwidth"><a href="#price_data" title="&quot;price data&quot; heading on this page">price_data</a></span> parameter,
+this allows you to force prices for item attributes.&nbsp;
+You probably do not want to use this;&nbsp;
+Just let the
+tag pick up prices from your database, as appropriate.
+</p>
+<p>
+If you're passing attribute values,
+you can use this parameter to control the displayed price in the widget,
+as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span>accessories<br>
+&nbsp; &nbsp; <span class="def_Syntax">type</span><span class="def_Symbol">=</span>check<br>
+&nbsp; &nbsp; <span class="def_Syntax">name</span><span class="def_Symbol">=</span>colour<br>
+&nbsp; &nbsp; <span class="def_Syntax">price</span><span class="def_Symbol">=</span><span class="def_Number">1</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">price</span><span class="def_Symbol">_</span><span class="def_Syntax">data</span><span class="def_Symbol">=</span><span class="def_String">&quot;blue=20, green=50&quot;</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">passed</span><span class="def_Symbol">=</span><span class="def_String">&quot;blue=Blue, green=Sea Green*&quot;</span><br>
+<span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+which will generate:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">input</span> </span><span class="html_htmlParam def_Parameter">type</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;checkbox&quot; </span><span class="html_htmlParam def_Parameter">name</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;colour&quot; </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;blue&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><span class="xml_EntityRef def_ParameterStrong def_Parameter"><span class="xml_CharRef def_Parameter">&amp;</span><span class="xml_CharRef def_Parameter">nbsp</span><span class="xml_CharRef def_Parameter">;</span></span>Blue<span class="xml_EntityRef def_ParameterStrong def_Parameter"><span class="xml_CharRef def_Parameter">&amp;</span><span class="xml_CharRef def_Parameter">nbsp</span><span class="xml_CharRef def_Parameter">;</span></span>($<span class="html_htmlNumb def_Number">20.00</span>)<br>
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">input</span> </span><span class="html_htmlParam def_Parameter">type</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;checkbox&quot; </span><span class="html_htmlParam def_Parameter">name</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;colour&quot; </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;green&quot; </span><span class="html_htmlParam def_Parameter">checked</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;checked&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><span class="xml_EntityRef def_ParameterStrong def_Parameter"><span class="xml_CharRef def_Parameter">&amp;</span><span class="xml_CharRef def_Parameter">nbsp</span><span class="xml_CharRef def_Parameter">;</span></span>Sea Green<span class="xml_EntityRef def_ParameterStrong def_Parameter"><span class="xml_CharRef def_Parameter">&amp;</span><span class="xml_CharRef def_Parameter">nbsp</span><span class="xml_CharRef def_Parameter">;</span></span>($<span class="html_htmlNumb def_Number">50.00</span>)
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="price_data"></a>
+<h3>price_data</h3>
+<a name="rows"></a>
+<h3>rows</h3>
+<p>
+This tag will pass the number you choose through to the HTML
+&quot;<span class="fixedwidth">rows=<em>Y</em></span>&quot; parameter in HTML widgets that accept it.
+</p>
+<p>
+For some types,
+you can also define widget rows and columns within the string that sets the type.&nbsp;
+For example, <span class="fixedwidth">type=&quot;textarea_6_33_wrap=virtual&quot;</span> specifies
+a <span class="fixedwidth">&lt;textarea&gt;</span> widget with &quot;<span class="fixedwidth">rows=6</span>&quot;,
+&quot;<span class="fixedwidth">cols=33</span>&quot; and &quot;<span class="fixedwidth">wrap=virtual</span>&quot;.&nbsp;
+You should resort to this only when you cannot use the named parameters,
+for example within the
+<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a>]</span> tag.
+</p>
+<p>
+The result of setting conflicting values in the type string and the
+&quot;<span class="fixedwidth">rows=Y</span>&quot; attribute is undefined.
+</p>
+<p>
+See also <span class="fixedwidth"><a href="#cols" title="&quot;cols&quot; heading on this page">cols</a></span>, below.
+</p>
+<a name="secure"></a>
+<h3>secure</h3>
+<p>
+Requires <a href="#type" title="&quot;type&quot; heading on this page">type</a> to be &quot;<span class="fixedwidth">links</span>&quot;.
+</p>
+<p>
+Setting this parameter <em>true</em> will cause the generated link(s)
+to point to your <em>secure</em> (HTTPS/SSL) Interchange URI.&nbsp;
+See the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SecureURL.html" title="SecureURL (config)">SecureURL</a></span> <em>local</em> configuration directive.
+</p>
+<a name="table"></a>
+<h3>table</h3>
+<p>
+This is the database table containing the item's attribute values.&nbsp;
+It defaults to the first of the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span>
+tables,
+found to contain a matching SKU.
+</p>
+<p>
+If you have configured your database so that the attributes are kept in a different
+table from other item data,
+then the primary key should be named &quot;<span class="fixedwidth">code</span>&quot; and contain product SKUs.&nbsp;
+If you're using
+&quot;<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a>]</span>&quot; and cannot
+Specify &quot;<span class="fixedwidth">code=key</span>&quot; then use the <a href="#outboard" title="&quot;outboard&quot; heading on this page">outboard</a> parameter instead.
+</p>
+<a name="template"></a>
+<h3>template</h3>
+<p>
+Requires <a href="#type" title="&quot;type&quot; heading on this page">type</a> to be &quot;<span class="fixedwidth">links</span>&quot;.
+</p>
+<p>
+Allows you to override the standard Interchange template for a hyperlink.&nbsp;
+You probably don't need to use this.&nbsp;
+Grep the Interchange core code to grok it if you do
+(find the &quot;<span class="fixedwidth">build_accessory_links</span>&quot; subroutine in the core).
+</p>
+<a name="type"></a>
+<h3>type</h3>
+<p>
+This parameter may be used to select a <em>display widget</em>
+from the following list:
+</p>
+<table width="100%" class="border">
+<tr valign="top">
+<th class="grid">Action
+</th>
+<th class="grid">Description
+</th>
+<th class="grid">Versions
+</th>
+</tr>
+<tr valign="top">
+<td class="grid">select
+</td>
+<td class="grid">Builds a drop-down &lt;select&gt; menu for the item attribute,
+with the default item attribute value selected.&nbsp;
+The accessories tag builds a <em>select</em> widget by default if
+a <span class="fixedwidth"><a href="#type" title="&quot;type&quot; heading on this page">type</a></span> is not specified.</td>
+<td class="grid">All
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">display
+</td>
+<td class="grid">Shows the <em>label text</em> for <strong>only the selected option</strong>
+if called in <em>hash list</em> context,
+such as within an <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span>.&nbsp;
+This parameter is ignored otherwise,
+and the tag will build the default &lt;select&gt; menu.</td>
+<td class="grid">All
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">show
+</td>
+<td class="grid">Returns the list of possible attributes for the item,
+without labels or a HTML widget.&nbsp;
+For example, if SKU &quot;<span class="fixedwidth">os28044</span>&quot; is available in several sizes:&nbsp;
+</p>
+<!-- start of code block -->
+<div class="code">
+<table class="light">
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">accessories </span>os28044 <span class="def_Syntax">size</span><span class="def_Number">,</span><span class="def_Syntax">show</span><span class="def_Symbol">]</span><br>
+</span>
+</td>
+</tr>
+<tr>
+<td class="hr">
+<span class="fixedwidth">
+<span class="def_Syntax">Sm</span><span class="def_Symbol">=</span>10<span class="def_Syntax">oz</span><span class="def_Symbol">, </span><span class="def_Syntax">Med</span><span class="def_Symbol">=</span>15oz<span class="def_Symbol">*</span><span class="def_Symbol">, </span><span class="def_Syntax">Lg</span><span class="def_Symbol">=</span>20oz
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p></td>
+<td class="grid">All
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">options
+</td>
+<td class="grid">This shows the attribute options as a newline-delimited list:&nbsp;
+</p>
+<!-- start of code block -->
+<div class="code">
+<table class="light">
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">accessories </span>os28044 <span class="def_Syntax">size</span><span class="def_Number">,</span><span class="def_Syntax">options</span><span class="def_Symbol">]</span><br>
+</span>
+</td>
+</tr>
+<tr>
+<td class="hr">
+<span class="fixedwidth">
+Sm<br>
+Med<br>
+Lg
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p></td>
+<td class="grid">All
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">labels
+</td>
+<td class="grid">This shows the attribute option labels:&nbsp;
+</p>
+<!-- start of code block -->
+<div class="code">
+<table class="light">
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">accessories </span>os28044 <span class="def_Syntax">size</span><span class="def_Number">,</span><span class="def_Syntax">options</span><span class="def_Symbol">]</span><br>
+</span>
+</td>
+</tr>
+<tr>
+<td class="hr">
+<span class="fixedwidth">
+10oz<br>
+15oz<span class="def_Symbol">*</span><br>
+20oz
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p></td>
+<td class="grid">All
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">radio
+</td>
+<td class="grid">Builds a <em>radio button</em> group for the item,
+with spaces separating the elements.</td>
+<td class="grid">All
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">radio_nbsp
+</td>
+<td class="grid">Builds a radio box group for the item, with <span class="fixedwidth">&amp;nbsp;</span> separating
+the elements.</td>
+<td class="grid">All
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">radio_break
+</td>
+<td class="grid">Builds a <em>radio button</em> group for the item,
+with <span class="fixedwidth">&lt;br&gt;</span> separating the radio button/label pairs
+from one another.</td>
+<td class="grid">All
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">radio_left_<em>n</em></td>
+<td class="grid">Builds a <em>radio button</em> group for the item,
+inside a table,
+with the <em>radio buttons</em> on the left hand side.&nbsp;
+If <em>n</em> is present,
+and is a digit from 2 through 9,
+then it will align the options in that many columns.&nbsp;
+<br><br>
+You can also set the font size like this:&nbsp;
+</p>
+<!-- start of code block -->
+<div class="code">
+<table class="light">
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">type</span><span class="def_Symbol">=</span><span class="def_String">&quot;radio left n fontsizeX&quot;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+where <em>X</em> is in the range of -9 through 9.</td>
+<td class="grid">All
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">radio_right_&lt;i&gt;n&lt;/n&gt;</td>
+<td class="grid">Builds a <em>radio button</em> group for the item,
+inside a table,
+with the
+checkbox on the right hand side.&nbsp;
+If <em>n</em> is present,
+and is a digit from 2 through 9,
+then it will align the options in that many columns.&nbsp;
+<br><br>
+You can also set the font size like this:&nbsp;
+</p>
+<!-- start of code block -->
+<div class="code">
+<table class="light">
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">type</span><span class="def_Symbol">=</span><span class="def_String">&quot;radio right n fontsizeX&quot;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+where <em>X</em> is in the range of -9 through 9.</td>
+<td class="grid">All
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">check
+</td>
+<td class="grid">Builds a <em>checkbox</em> group for the item,
+with spaces separating the elements.</td>
+<td class="grid">All
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">check_nbsp
+</td>
+<td class="grid">Builds a <em>checkbox</em> group for the item,
+with <span class="fixedwidth">&amp;nbsp;</span> separating the checkbox/label pairs
+from one another.</td>
+<td class="grid">All
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">check_break
+</td>
+<td class="grid">Builds a <em>checkbox</em> group for the item,
+with <span class="fixedwidth">&lt;br&gt;</span> separating the checkbox/label
+pairs from one another.</td>
+<td class="grid">All
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">check_left_<em>n</em></td>
+<td class="grid">Builds a <em>checkbox</em> group for the item,
+inside a table, with the <em>checkbox</em> on the left hand side.&nbsp;
+If <em>n</em> is present,
+and is a digit from 2 through 9,
+then it will align the options in that many columns.&nbsp;
+<br><br>
+You can also set the font size like this:&nbsp;
+</p>
+<!-- start of code block -->
+<div class="code">
+<table class="light">
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">type</span><span class="def_Symbol">=</span><span class="def_String">&quot;check left n fontsizeX&quot;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+where <em>X</em> is in the range of -9 through 9.</td>
+<td class="grid">All
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">check_right_<em>n</em></td>
+<td class="grid">Builds a <em>checkbox</em> group for the item,
+inside a table,
+with the <em>checkbox</em> on the right hand side.&nbsp;
+If &quot;n&quot; is present,
+and is a digit from 2 through 9,
+then it will align the options in that many columns.&nbsp;
+<br><br>
+You can also set the font size like this:&nbsp;
+</p>
+<!-- start of code block -->
+<div class="code">
+<table class="light">
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">type</span><span class="def_Symbol">=</span><span class="def_String">&quot;check right n fontsizeX&quot;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+where <em>X</em> is in the range of -9 through 9.</td>
+<td class="grid">All
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">textarea
+</td>
+<td class="grid">Builds a <em>textarea</em> with the selected item attribute
+value if used in Hash List context,
+such as within an <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span> tag.&nbsp;
+<br><br>
+the <em>textarea</em> will be built with 4 rows and 40 columns,
+unless you specify a <span class="fixedwidth"><a href="#rows" title="&quot;rows&quot; heading on this page">rows</a></span> or <span class="fixedwidth"><a href="#cols" title="&quot;cols&quot; heading on this page">cols</a></span>
+parameter.</td>
+<td class="grid">All
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">textarea_<em>Y</em>_<em>X</em></td>
+<td class="grid">Builds a <em>textarea</em> with
+<em>Y</em> rows and <em>X</em> columns.&nbsp;
+The <em>textarea</em> will contain the selected item attribute value
+if used in Hash List context,
+such as within an <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span> tag.</td>
+<td class="grid">All
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">text
+</td>
+<td class="grid">Builds a <em>text input</em> widget.&nbsp;
+The widget's value will be set to the selected item attribute
+value if used in Hash List context,
+such as within an <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span> tag.&nbsp;
+<br><br>
+The <em>text input</em> widget will be built to be 60 characters
+wide unless you specify a <span class="fixedwidth"><a href="#cols" title="&quot;cols&quot; heading on this page">cols</a></span> parameter.</td>
+<td class="grid">All
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">text_<em>X</em></td>
+<td class="grid">Builds a <em>text input</em> widget,
+<em>X</em> characters wide.&nbsp;
+The widget's value will be set to the selected item attribute
+value if used in Hash List context,
+such as within an <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span> tag.</td>
+<td class="grid">All
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">combo
+</td>
+<td class="grid">Special type,
+used with nullselect filter,
+for selecting from a list or inputting a new value.</td>
+<td class="grid">All
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">reverse_combo
+</td>
+<td class="grid">Special type,
+used with the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/filters/last_non_null.html" title="last non null (filters)">last_non_null</a></span> filter,
+for selecting from a list or inputting a new value.&nbsp;
+This differs from <span class="fixedwidth">combo</span> in the order of presentation.</td>
+<td class="grid">All
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">move_combo
+</td>
+<td class="grid">Special type,
+used with <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/filters/null_to_space.html" title="null to space (filters)">null_to_space</a></span>
+or <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/filters/null_to_comma.html" title="null to comma (filters)">null_to_comma</a></span> filters,
+for selecting multiple non-ordered values from a list,
+or inputting into a <em>textarea</em>.</td>
+<td class="grid">All
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">links
+</td>
+<td class="grid">Produces a series of links based upon the option values.&nbsp;
+The base form value is passed via the <span class="fixedwidth"><a href="#form" title="&quot;form&quot; heading on this page">form</a></span> parameter,
+just like in an <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/area.html" title="area (tags)">area</a>]</span> or <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/page.html" title="page (tags)">page</a>]</span> tag,
+and the value is named with the passed <span class="fixedwidth"><a href="#name" title="&quot;name&quot; heading on this page">name</a></span> attribute.</td>
+<td class="grid">All
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">value
+</td>
+<td class="grid">Returns the selected value if called in hash list
+context,
+such as within an <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span> tag.&nbsp;
+Otherwise it returns nothing at all.</td>
+<td class="grid">All
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">hidden
+</td>
+<td class="grid">Creates a <em>hidden</em> form field.&nbsp;
+The <em>hidden</em> field's value will be set to the selected item
+attribute's value if used in hash list context,
+such as within an <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span> tag.</td>
+<td class="grid">All
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">password
+</td>
+<td class="grid">A <em>password input</em> widget.&nbsp;
+The widget's value will be set to the selected item attribute
+value if used in Hash List context,
+such as within an <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span> tag.&nbsp;
+<br><br>
+The <em>password input</em> widget will be built to be 12 characters
+wide unless you specify a <span class="fixedwidth"><a href="#cols" title="&quot;cols&quot; heading on this page">cols</a></span> parameter.</td>
+<td class="grid">All
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">password_<em>X</em></td>
+<td class="grid">A <em>password input</em> widget,
+<em>X</em> characters wide.&nbsp;
+The widget's value will be set to the selected item attribute
+value if used in Hash List context,
+such as within an <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span> tag.</td>
+<td class="grid">All
+</td>
+</tr>
+</table>
+
+<p>
+The default is &quot;<span class="fixedwidth">select</span>&quot;, which builds a HTML
+<span class="fixedwidth">&lt;select&gt;</span> form entry widget for the attribute.
+</p>
+<p>
+<p style="margin-bottom: 0px">
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_availability.gif" width="32" height="32" border="0" alt="Availability">
+</td>
+<td width="100%">
+<p class="title">Availability</p>
+<p style="margin-bottom: 0px">
+&quot;All versions&quot; refers to Interchange 5.0.0 and above,
+as 5.0.0 is the baseline for the documentation on
+this website.&nbsp;
+Most of the parameters marked &quot;All&quot; were available long before
+version 5.0.0 was released.
+</p>
+</td>
+</tr>
+</table>
+<p>
+Some types build widgets that use <span class="fixedwidth">rows=Y</span>,
+<span class="fixedwidth">cols=X</span>,
+or certain other HTML attributes.&nbsp;
+For these,
+you can define widget rows and columns within the
+string that sets the type.&nbsp;
+For example, <span class="fixedwidth">type=&quot;textarea_6_33_wrap=virtual&quot;</span>
+specifies a <span class="fixedwidth">&lt;textarea&gt;</span> widget with &quot;<span class="fixedwidth">rows=6</span>&quot;,
+&quot;<span class="fixedwidth">cols=33</span>&quot; and &quot;<span class="fixedwidth">wrap=virtual</span>&quot;.&nbsp;
+You should resort to this only when you cannot use the named parameters.&nbsp;
+For example within an <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a>]</span>
+tag.&nbsp;
+Otherwise pass the <span class="fixedwidth"><a href="#rows" title="&quot;rows&quot; heading on this page">rows</a>=Y</span> and <span class="fixedwidth"><a href="#cols" title="&quot;cols&quot; heading on this page">cols</a>=X</span> parameters
+to this tag instead.
+</p>
+<p>
+The result of setting conflicting values in the type string and the
+<span class="fixedwidth"><a href="#rows" title="&quot;rows&quot; heading on this page">rows</a></span> and <span class="fixedwidth"><a href="#cols" title="&quot;cols&quot; heading on this page">cols</a></span> attributes is undefined.
+</p>
+<p>
+The following list shows syntax for type strings,
+where <em>X</em> is the number of columns and <em>Y</em> is the number of rows.
+</p>
+
+<ul>
+<li>text
+<ul>
+<li>textarea (default is 4 rows and 40 columns, like &quot;<span class="fixedwidth">textarea_4_40</span>&quot;)</li>
+<li>textarea_<em>Y</em>_<em>X</em></li>
+<li>text_cols</li>
+<li>textarea rows=<em>Y</em> cols=<em>X</em> wrap=<em>W</em> value</li>
+</ul>
+</li>
+<li>password
+<ul>
+<li>password (default is 12 columns, like &quot;<span class="fixedwidth">password_12</span>&quot;)</li>
+<li>password_<em>X</em></li>
+</ul>
+</li>
+<li>combo (similarly for reverse_combo and move_combo)
+<ul>
+<li>combo (default is 1 row and 16 columns, like 'combo_1_16')</li>
+</ul>
+</li>
+</ul>
+
+<p>
+In any of the option building types, you can append the string ranges and a
+special option processing will be done -- any option matching the pattern
+<span class="fixedwidth">&#91;A-Za-z0-0]..&#91;A-Za-z0-0]</span> will be expanded into a comma separated range
+between the bounds.&nbsp;
+The same behaviour is accomplished by passing the accessories tag option ranges.&nbsp;
+For example:&nbsp;
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">accessories name</span><span class="def_Symbol">=</span><span class="def_Syntax">foo type</span><span class="def_Symbol">=</span><span class="def_Syntax">select ranges</span><span class="def_Symbol">=</span><span class="def_Number">1 </span><span class="def_String">&quot;A..C,1..5,10,20&quot;</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+and
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">accessories name</span><span class="def_Symbol">=</span><span class="def_Syntax">foo type</span><span class="def_Symbol">=</span><span class="def_String">&quot;select ranges&quot; </span><span class="def_Syntax">passed</span><span class="def_Symbol">=</span><span class="def_String">&quot;A..C,1..5,10,20&quot;</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+will both output:&nbsp;
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">select</span> </span><span class="html_htmlParam def_Parameter">name</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;foo&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;A&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span>A<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;B&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span>B<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;C&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span>C<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;1&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><span class="html_htmlNumb def_Number">1</span><span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;2&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><span class="html_htmlNumb def_Number">2</span><span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;3&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><span class="html_htmlNumb def_Number">3</span><span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;4&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><span class="html_htmlNumb def_Number">4</span><span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;5&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><span class="html_htmlNumb def_Number">5</span><span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;10&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><span class="html_htmlNumb def_Number">10</span><span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;15&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><span class="html_htmlNumb def_Number">15</span><span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span> </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;20&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><span class="html_htmlNumb def_Number">20</span><span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">option</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">select</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The above applies to any of the option building types:&nbsp;
+<span class="fixedwidth">check</span>, <span class="fixedwidth">combo</span>, <span class="fixedwidth">combo_move</span>, <span class="fixedwidth">labels</span>,
+<span class="fixedwidth">multiple</span>, <span class="fixedwidth">options</span>, <span class="fixedwidth">radio</span>,
+<span class="fixedwidth">reverse_combo</span> and <span class="fixedwidth">select</span>.&nbsp;
+It will refuse to produce more than 5000 options, by default,
+but that limit can be changed using &quot;<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Limit.html" title="Limit (config)">Limit</a> option_list <em>N</em></span>&quot; in the <em>local</em> (<span class="fixedwidth">catalog.cfg</span>) configuration,
+where <em>N</em> is an integer greater than 0.
+</p>
+<a name="width"></a>
+<h3>width</h3>
+<p>
+This is a quasi-alias for the <span class="fixedwidth"><a href="#cols" title="&quot;cols&quot; heading on this page">cols</a></span> parameter that only
+works with the &quot;<span class="fixedwidth">text</span>&quot; and &quot;<span class="fixedwidth">password</span>&quot; widgets.&nbsp;
+Use the &quot;<span class="fixedwidth"><a href="#cols" title="&quot;cols&quot; heading on this page">cols</a></span>&quot; parameter instead.
+</p>
+<a name="See_also"></a>
+<h2>See also</h2>
+<p>
+<ul>
+<li>The <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/AutoModifier.html" title="AutoModifier (config)">AutoModifier</a></span> <em>local</em> configuration directive</li>
+<li>The <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UseModifier.html" title="UseModifier (config)">UseModifier</a></span> <em>local</em> configuration directive</li>
+<li>The <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a>]</span> loop sub-tag</li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Item_attributes.html" title="Item attributes">Item attributes</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Looping_tags_and_sub-tags.html" title="Category - looping tags and sub-tags">Looping tags and sub-tags</a></li>
+</ul>
+</div>
+
+<!-- start of modification notice -->
+<div class="wikitext">
+    <table class="pageinfo" cellpadding="0" cellspacing="0">
+	<tr>
+	    <td>
+Category:&nbsp; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a>
+	    </td>
+	</tr>
+
+
+	<tr>
+	    <td>
+		
+		Last modified by: <a href="http://interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin">Kevin Walsh</a><br>
+		Modification date: Tuesday 14 August 2007 at 4:27 PM (BST)
+	    </td>
+	</tr>
+    </table>
+</div>
+<!-- end of modification notice -->
+
+
+
+<!-- end page: wiki/display (tags/accessories) -->
+
+
+
+<!-- end of page text -->
+	    </td>
+
+	</tr>
+    </table>
+<!-- START VAR: FOOTER -->
+
+<table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+	<td>
+	    <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/donations.html">Donations</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	</td>
+
+    </tr>
+</table>
+
+<!-- END VAR: FOOTER -->
+
+<!-- START VAR: COPYRIGHT -->
+
+
+    <div class="copyright">
+	Copyright &copy; 2001-2016
+	<a href="http://cursor.biz/index.html">Cursor Software Limited</a>.&nbsp;
+	All Rights Reserved.
+    </div>
+
+<!-- END VAR: COPYRIGHT -->
+
+</body>
+</html>

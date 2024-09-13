@@ -1,0 +1,65 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange + CVS HOWTO: Testing manual CVS updates on Interchange catalogs</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ic_howto_cvs_26.html">Parent Topic</A> | <A HREF="ic_howto_cvs_27.html">Previous Topic</A> | <A HREF="ic_howto_cvs_29.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.2. Testing manual CVS updates on Interchange catalogs</H2>
+<P>Next, lets again update the checkout we made a while back before importing our catalog.  (Alternatively, one could use a visual CVS client detailed above).</P>
+<PRE>
+cd ~/src
+cvs -q up -d foundation # -q for quiet, -d for directory prune/update
+</PRE>
+<P>Additionally, you might test making a change to one of your checked-out source files, saving it, then committing it.</P>
+<PRE>
+<B>index.html:</B>
+&lt;!--this is a test comment at the top of index.html--&gt;
+</PRE>
+<P>Now commit the change</P>
+<PRE>
+cvs commit index.html
+</PRE>
+<P>Your changed version will now be resident in the repository.  Again, CVS documentation is in the <A HREF="ic_howto_cvs_47.html">Resources</A> Appendix.</P>
+<P>This time, we can allow the changes to take effect on the code being used by Interchange to serve pages. To do so, one must run a <TT>cvs update</TT> on the catalog directory:</P>
+<PRE>
+cd /var/lib/interchange/foundation
+cvs -q up -d    #up is the shortened version of &quot;update&quot;
+</PRE>
+<P>That should notify you of the new version it downloaded with something like:</P>
+<P>U pages/index.html</P>
+<P>You may also get something like the following:</P>
+<PRE>
+M catalog.cfg
+M etc/status.foundation
+M ...
+? orders/000001
+? ...
+</PRE>
+<P>The <TT>?</TT> lines in the above example mean that the CVS server has never heard of the listed directories or files (they are in your local source dir but not in the CVS source dir).  It is harmless, but sometimes annoying, and can be taken care of with CVSIGNORE.</P>
+<P>The <TT>M</TT> means that the file has been modified on your local copy, and is out of sync with the remote CVS version (e.g. when Interchange runs it updates <TT>etc/status.foundation</TT>).  Normally this is corrected by uploading your &quot;modified&quot; version to the server, but in this case, the modification was done by Interchange instead of the programmer, and wasn't meant to be committed back to the CVS repository.  These types of messages can be handled with <TT>$CVSIGNORE</TT> and <TT>$CVSROOT/CVSROOT/cvsignore</TT>.</P>
+<P>Now, check to make sure that your change has taken effect by refreshing the homepage on the site.  To see the comment, use <TT>View-&gt;Page Source</TT> or whatever the relevant command for your browser is.</P>
+<P>At this point, its obvious that it would be time consuming to manually run 'cvs up' every time you make a change to the source code, so the next step is to setup CVS to automatically update the catalog whenever you commit something to CVS.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ic_howto_cvs_26.html">Parent Topic</A> | <A HREF="ic_howto_cvs_27.html">Previous Topic</A> | <A HREF="ic_howto_cvs_29.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

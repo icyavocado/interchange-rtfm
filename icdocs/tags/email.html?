@@ -1,0 +1,797 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>email - RTFM</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="en-GB">
+    <meta http-equiv="Window-target" content="_top">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <meta http-equiv="X-Soup-Of-The-Day" content="Tomato">
+
+    <meta name="author" content="Kevin Walsh">
+    <meta name="publisher" content="Cursor Software Limited">
+    <meta name="copyright" content="2001-2010, Cursor Software Limited">
+    <meta name="licence" content="GPLv2+ (Unknown licence)">
+    <meta name="generator" content="Interchange 5.7.0 -- www.icdevgroup.org">
+    <meta name="robots" content="index,follow,noarchive,noimageindex">
+    <meta name="keywords" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="description" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="MSSmartTagsPreventParsing" content="TRUE">
+
+    <meta name="verify-v1" content="KqlU/bxZj9Y2ZdZ/3RwuzgVSMIrZ8XM2wqbjSaEo3O4=">
+
+    <meta name="y_key" content="e2dd60be5777fbc8">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
+    <link rel="search" type="application/opensearchdescription+xml" href="http://www.interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="stylesheet" href="/decor/css/website.css">
+    <link rel="stylesheet" href="/decor/css/wiki.css">
+    <link rel="stylesheet" href="/decor/css/neo.css">
+
+
+    <script type="text/javascript" language="JavaScript">
+    <!--
+	if (top != self){
+	    top.location = location;
+	}
+
+    // -->
+    </script>
+</head>
+<body>
+<!-- START VAR: LOGOBAR -->
+<table id="rtfmheader" cellpadding="0" cellspacing="0">
+    <tr>
+	<td><a href="http://www.interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+
+	<td width="100%" style="text-align: right; padding: 10px">
+
+	    <form action="http://www.interchange-rtfm.pullingshots.ca/search.html" method="POST">
+		<input type="hidden" name="mv_session_id" value="nsession">
+		<input type="hidden" name="mv_profile" value="cms_search">
+		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
+		<input type="submit" class="button" value="Search">
+	    </form>
+
+	</td>
+    </tr>
+</table>
+<table id="breadcrumbs" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+	<td>
+	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a></span>
+	    <span class="nowrap">&gt; <span class="current">email</span></span>
+	</td>
+
+    </tr>
+</table>
+<!-- END VAR: LOGOBAR -->
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+
+	    <td id="leftside">
+<!-- START COMPONENT: navigation -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th>NAVIGATION</th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+
+<!-- END COMPONENT: navigation -->
+<!-- START COMPONENT: wiki_recent -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th><span class="nowrap">RECENTLY VIEWED</span></th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/email.html">email</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+<!-- END COMPONENT: wiki_recent -->
+<!-- START COMPONENT: wiki_backlinks -->
+
+
+
+<!-- END COMPONENT: wiki_backlinks -->
+<!-- START COMPONENT: account -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+
+    <tr>
+	<th>ACCOUNT LOGIN</th>
+    </tr>
+
+    <tr>
+	<td class="first">
+	    <p>You are not logged in</p>
+	</td>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+	    </ul>
+	</td>
+    </tr>
+
+</table>
+
+
+
+<!-- END COMPONENT: account -->
+<!-- START COMPONENT: icpowered -->
+
+<div style="text-align: center; margin: 10px; margin-top: 0px">
+    <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+</div>
+
+
+
+<!-- START COMPONENT: icpowered -->
+<!-- START COMPONENT: icpowered -->
+
+<div style="text-align: center; margin: 10px; margin-top: 0px">
+    <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+</div>
+
+
+
+<!-- START COMPONENT: icpowered -->
+
+	    </td>
+
+	    <td id="bodytext">
+<!-- start of page text -->
+
+<!-- start page: wiki/display (tags/email) -->
+
+<div class="wikitext">
+<a name="email"></a>
+<h1>email</h1>
+<p>
+Generate and send email with the option of adding attachments.
+</p>
+<a name="Summary"></a>
+<h2>Summary</h2>
+
+<p>
+<ul>
+<li><span class="fixedwidth">&#91;email to subject reply from extra]</span></li>
+</ul>
+
+<br>
+<table width="100%" class="border">
+<tr valign="top">
+<th class="grid">Parameter
+</th>
+<th class="grid">Description
+</th>
+<th class="grid">Default
+</th>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#to" title="&quot;to&quot; heading on this page">to</a></td>
+<td class="grid">Valid email address(es) of the recipient(s).&nbsp;
+This parameter is required.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#from" title="&quot;from&quot; heading on this page">from</a></td>
+<td class="grid">Email address identifying the sender of the message.</td>
+<td class="grid">First <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/MailOrderTo.html" title="MailOrderTo (config)">MailOrderTo</a></span> address</td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#subject" title="&quot;subject&quot; heading on this page">subject</a></td>
+<td class="grid">Short text describing the content of the message.</td>
+<td class="grid"><span class="fixedwidth">&lt;no subject&gt;</span></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#reply" title="&quot;reply&quot; heading on this page">reply</a></td>
+<td class="grid">Email address to be used in the &quot;<span class="fixedwidth">Reply-to:</span>&quot; SMTP header.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#extra" title="&quot;extra&quot; heading on this page">extra</a></td>
+<td class="grid">Extra SMTP headers to be included in the email.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#attach" title="&quot;attach&quot; heading on this page">attach</a></td>
+<td class="grid">Attach files or data to this email.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#hide" title="&quot;hide&quot; heading on this page">hide</a></td>
+<td class="grid">Hide this tag's return code
+</td>
+<td class="grid">No
+</td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#html" title="&quot;html&quot; heading on this page">html</a></td>
+<td class="grid">Create a &quot;<span class="fixedwidth">multipart/alternate</span>&quot; email, with &quot;<span class="fixedwidth">text/plain</span>&quot; and &quot;<span class="fixedwidth">text/html</span>&quot; parts.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Universal_tag_attributes.html#interpolate" title="&quot;interpolate&quot; heading on the &quot;Universal tag attributes&quot; page">interpolate</a></td>
+<td class="grid"><p>
+Parse Interchange tags, included in the body text, before this container tag executes.</td>
+<td class="grid">Yes
+</td>
+</tr>
+</table>
+
+<a name="Examples"></a>
+<h2>Examples</h2>
+<a name="Tag_usage_example"></a>
+<h3>Tag usage example</h3>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span>email<br>
+&nbsp; &nbsp; <span class="def_Syntax">to</span><span class="def_Symbol">=</span><span class="def_String">&quot;Kevin Walsh &lt;kevin@cursor.biz&gt;&quot;</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">from</span><span class="def_Symbol">=</span><span class="def_String">&quot;Foobar &lt;foobar@example.com&gt;&quot;</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">reply</span><span class="def_Symbol">=</span><span class="def_String">&quot;foobar@example.com&quot;</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">subject</span><span class="def_Symbol">=</span><span class="def_String">&quot;Hello Kevin&quot;</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">extra</span><span class="def_Symbol">=</span><span class="def_Symbol">|</span><br>
+X<span class="def_Symbol">-</span>Mailer<span class="def_Symbol">: </span>@@<span class="def_Syntax">MV</span><span class="def_Symbol">_</span>PAGE@@<br>
+X<span class="def_Symbol">-</span><span class="def_Syntax">Session</span><span class="def_Symbol">-</span>ID<span class="def_Symbol">: </span><span class="def_Symbol">[</span><span class="def_Syntax">data session id</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">|</span><span class="def_Symbol">]</span><br>
+<span class="def_Syntax">Hello Kevin</span><span class="def_Symbol">.</span><br>
+<br>
+<span class="def_Syntax">Stop slacking and create more docs</span><span class="def_Symbol">!</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">email</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Perl_example"></a>
+<h3>Perl example</h3>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Tag</span><span class="perl_Symb def_Symbol">-&gt;</span>email<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span><br>
+&nbsp; &nbsp; to <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>Kevin Walsh &lt;kevin@cursor.biz&gt;<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; from <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>Foobar &lt;foobar@example.com&gt;<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; reply <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>foobar@example.com<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; subject <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>Hello Kevin<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; extra <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span>X-Mailer: @<span class="perl_Var def_Var">@MV_PAGE</span>@@<span class="regexp_Symbol def_StringContent def_String">\n</span>X-Session-ID: <span class="perl_Var def_Var">$Session<span class="perl_Var def_Var">-&gt;<span class="def_PairStart def_Special">{</span>id<span class="def_PairEnd def_Special">}</span></span></span><span class="def_PairEnd def_Special">&quot;</span></span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; body <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span>Hello Kevin.<span class="regexp_Symbol def_StringContent def_String">\n</span><span class="regexp_Symbol def_StringContent def_String">\n</span>Stop slacking and create more docs!<span class="regexp_Symbol def_StringContent def_String">\n</span><span class="def_PairEnd def_Special">&quot;</span></span><span class="perl_Symb def_Symbol">,</span><br>
+<span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+or similarly with positional parameters:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Tag</span><span class="perl_Symb def_Symbol">-&gt;</span>email<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$to</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Var def_Var">$subject</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Var def_Var">$reply</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Var def_Var">$from</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Var def_Var">$extra</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Var def_Var">$attribute_hash_reference</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Var def_Var">$body</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Description"></a>
+<h2>Description</h2>
+<p>
+This tag generates and sends an email article,
+and sends it out via the method specified with the
+<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/SendMailProgram.html" title="SendMailProgram (config)">SendMailProgram</a></span> configuration directive.
+</p>
+<p>
+The <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/SendMailProgram.html" title="SendMailProgram (config)">SendMailProgram</a></span> should either be set up to
+send mail via a Sendmail-style executable,
+should (preferably) be set up to make use of the
+<p>
+<a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fsearch%2ecpan%2eorg%2f%7egbarr%2flibnet%2d1%2e19%2fNet%2fSMTP%2epm" title="http://search.cpan.org/~gbarr/libnet-1.19/Net/SMTP.pm" rel="nofollow">Net::SMTP</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page"> Perl module.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+If <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/SendMailProgram.html" title="SendMailProgram (config)">SendMailProgram</a></span> is set to &quot;<span class="fixedwidth">none</span>&quot; then your email will not be sent,
+and an error will be logged to the website's
+<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/ErrorFile.html" title="ErrorFile (config)">error log file</a>.
+</p>
+</td>
+</tr>
+</table>
+
+<p>
+The email (SMTP) headers are generated using the parameters passed to
+this tag.&nbsp;
+The only required parameter is &quot;<span class="fixedwidth"><a href="#to" title="&quot;to&quot; heading on this page">to</a></span>&quot;,
+which is used to specify the destination address for the email.&nbsp;
+The
+All of the other parameters have reasonable defaults,
+as listed below:
+</p>
+<p>
+If the <p>
+<a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fsearch%2ecpan%2eorg%2f%7eyves%2fMIME%2dLite%2d3%2e01%2flib%2fMIME%2fLite%2epm" title="http://search.cpan.org/~yves/MIME-Lite-3.01/lib/MIME/Lite.pm" rel="nofollow">Mime::Lite</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page"> Perl module is installed
+and operational then email attachments may be specified using this
+tag's &quot;<span class="fixedwidth"><a href="#attach" title="&quot;attach&quot; heading on this page">attach</a></span>&quot; and &quot;<span class="fixedwidth"><a href="#html" title="&quot;html&quot; heading on this page">html</a></span>&quot; parameters.
+</p>
+<p>
+Don't use this facility to send spam or we'll come and get you.
+</p>
+<a name="Parameters"></a>
+<h2>Parameters</h2>
+<a name="to"></a>
+<h3>to</h3>
+<p>
+The recipient's email address, which can be specified either as a
+simple email address
+(i.e. &quot;<span class="fixedwidth">kevin@cursor.biz</span>&quot;),
+ or as a name and an email address
+(i.e. &quot;<span class="fixedwidth">Kevin Walsh &lt;kevin@cursor.biz&gt;</span>&quot;).
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+This parameter is required.&nbsp;
+The email cannot be sent if it is not addressed to at least
+one recipient.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="from"></a>
+<h3>from</h3>
+<p>
+Email address identifying the sender of the message.
+</p>
+<p>
+Just as with the &quot;<span class="fixedwidth"><a href="#to" title="&quot;to&quot; heading on this page">to</a></span>&quot; address, this address can be
+specified either as a simple email address
+(i.e. &quot;<span class="fixedwidth">kevin@cursor.biz</span>&quot;),
+or as a name and an email address
+(i.e. &quot;<span class="fixedwidth">Kevin Walsh &lt;kevin@cursor.biz&gt;</span>&quot;).
+</p>
+<p>
+If this parameter is not supplied then the first email address set up
+using the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/MailOrderTo.html" title="MailOrderTo (config)">MailOrderTo</a></span> <em>local</em> configuration
+directive will be used.
+</p>
+<a name="subject"></a>
+<h3>subject</h3>
+<p>
+Short text describing the content of the message.&nbsp;
+The string &quot;<span class="fixedwidth">&lt;no subject&gt;</span>&quot; will be used if this
+parameter is not supplied.
+</p>
+<a name="reply"></a>
+<h3>reply</h3>
+<p>
+Email address to be used in the &quot;<span class="fixedwidth">Reply-to:</span>&quot; SMTP header.&nbsp;
+No &quot;<span class="fixedwidth">Reply-to:</span>&quot; header line will be present if this parameter
+is not supplied.
+</p>
+<a name="extra"></a>
+<h3>extra</h3>
+<p>
+Extra SMTP headers to be included in the email.
+</p>
+<p>
+If multiple &quot;<span class="fixedwidth">extra</span>&quot; header lines need to be specified then
+they must be separated using an ASCII LF (<span class="fixedwidth">&#92;n</span>) character.&nbsp;
+There must be no white space at the start of any of the &quot;<span class="fixedwidth">extra</span>&quot; header lines.&nbsp;
+See the <a href="#Tag_usage_example" title="&quot;Tag usage example&quot; heading on this page">tag usage example</a>,
+above.
+</p>
+<a name="attach"></a>
+<h3>attach</h3>
+<p>
+This parameter allows you to create a &quot;<span class="fixedwidth">multipart/mixed</span>&quot; email,
+with whatever attachments you need.&nbsp;
+The MIME content type and disposition of the parts will be automatically
+set for you,
+unless you specify otherwise,
+and a valid multipart email will be sent.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p>
+This parameter requires that the <p style="margin-bottom: 0px">
+<a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fsearch%2ecpan%2eorg%2f%7eyves%2fMIME%2dLite%2d3%2e01%2flib%2fMIME%2fLite%2epm" title="http://search.cpan.org/~yves/MIME-Lite-3.01/lib/MIME/Lite.pm" rel="nofollow">Mime::Lite</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page"> Perl module is
+installed and operational.
+</p>
+</td>
+</tr>
+</table>
+
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_availability.gif" width="32" height="32" border="0" alt="Availability">
+</td>
+<td width="100%">
+<p class="title">Availability</p>
+<p>
+<p style="margin-bottom: 0px">
+This parameter was introduced in version 5.4.0,
+and is therefore not available for use with any earlier Interchange version.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="To_add_a_single_file_as_an_attachment"></a>
+<h4>To add a single file as an attachment</h4>
+<p>
+The &quot;<span class="fixedwidth">attach</span>&quot; parameter can be used as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span>email<br>
+&nbsp; &nbsp; <span class="def_Syntax">to</span><span class="def_Symbol">=</span><span class="def_String">&quot;Kevin Walsh &lt;kevin@cursor.biz&gt;&quot;</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">from</span><span class="def_Symbol">=</span><span class="def_String">&quot;Foobar &lt;foobar@example.com&gt;&quot;</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">subject</span><span class="def_Symbol">=</span><span class="def_String">&quot;Email with an attachment&quot;</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">attach</span><span class="def_Symbol">=</span><span class="def_String">&quot;images/foo.gif&quot;</span><br>
+<span class="def_Symbol">]</span><span class="def_Syntax">This email has an attachment</span><span class="def_Symbol">.</span><span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">email</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="To_attach_multiple_files_to_the_email"></a>
+<h4>To attach multiple files to the email</h4>
+<p>
+Multiple &quot;<span class="fixedwidth">attach</span>&quot; parameters can be specified
+as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span>email<br>
+&nbsp; &nbsp; <span class="def_Syntax">to</span><span class="def_Symbol">=</span><span class="def_String">&quot;Kevin Walsh &lt;kevin@cursor.biz&gt;&quot;</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">from</span><span class="def_Symbol">=</span><span class="def_String">&quot;Foobar &lt;foobar@example.com&gt;&quot;</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">subject</span><span class="def_Symbol">=</span><span class="def_String">&quot;Email with an attachment&quot;</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">attach</span><span class="def_Number">.0</span><span class="def_Symbol">=</span><span class="def_String">&quot;images/foo.gif&quot;</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">attach</span><span class="def_Number">.1</span><span class="def_Symbol">=</span><span class="def_String">&quot;images/bar.gif&quot;</span><br>
+<span class="def_Symbol">]</span><span class="def_Syntax">This email has two attachments</span><span class="def_Symbol">.</span><span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">email</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+Interchange does not impose a limit on the number of attachments
+that can be specified in this way.&nbsp;
+The limit will be determined by the size of the attachments and
+the amount of memory and swap space available on your server.&nbsp;
+You probably shouldn't attach multi-gigabyte ISO images to
+your emails.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="For_more_control_over_the_attachments"></a>
+<h4>For more control over the attachments</h4>
+<p>
+Each &quot;<span class="fixedwidth">attach</span>&quot; parameter can be specified as a Perl hash,
+as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span>email<br>
+&nbsp; &nbsp; <span class="def_Syntax">to</span><span class="def_Symbol">=</span><span class="def_String">&quot;Kevin Walsh &lt;kevin@cursor.biz&gt;&quot;</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">from</span><span class="def_Symbol">=</span><span class="def_String">&quot;Foobar &lt;foobar@example.com&gt;&quot;</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">subject</span><span class="def_Symbol">=</span><span class="def_String">&quot;Email with two attachments&quot;</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">attach</span><span class="def_Number">.0</span><span class="def_Symbol">=</span>`<span class="def_Symbol">{</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Syntax">type </span><span class="def_Symbol">=</span><span class="def_Symbol">&gt; </span><span class="def_String">'image/gif'</span><span class="def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Syntax">path </span><span class="def_Symbol">=</span><span class="def_Symbol">&gt; </span><span class="def_String">'images/foo.gif'</span><span class="def_Symbol">,</span><br>
+&nbsp; &nbsp; <span class="def_Symbol">}</span>`<br>
+&nbsp; &nbsp; <span class="def_Syntax">attach</span><span class="def_Number">.1</span><span class="def_Symbol">=</span>`<span class="def_Symbol">{</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Syntax">type </span><span class="def_Symbol">=</span><span class="def_Symbol">&gt; </span><span class="def_String">'image/jpeg'</span><span class="def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Syntax">data </span><span class="def_Symbol">=</span><span class="def_Symbol">&gt; </span>$<span class="def_Syntax">Tag</span><span class="def_Symbol">-</span><span class="def_Symbol">&gt;</span><span class="def_Syntax">file</span><span class="def_Symbol">(</span><span class="def_String">'images/foo.jpeg'</span><span class="def_Symbol">) </span><span class="def_Symbol">|</span><span class="def_Symbol">| </span>$<span class="def_Syntax">Tag</span><span class="def_Symbol">-</span><span class="def_Symbol">&gt;</span><span class="def_Syntax">file</span><span class="def_Symbol">(</span><span class="def_String">'images/broken.jpg'</span><span class="def_Symbol">)</span><span class="def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Syntax">filename </span><span class="def_Symbol">=</span><span class="def_Symbol">&gt; </span><span class="def_String">'attachment_name.jpg'</span><span class="def_Symbol">,</span><br>
+&nbsp; &nbsp; <span class="def_Symbol">}</span>`<br>
+<span class="def_Symbol">]</span><span class="def_Syntax">This email has two attachments</span><span class="def_Symbol">.</span><span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">email</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The &quot;<span class="fixedwidth">attach</span>&quot; parameter can also be specified as a Perl array,
+as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span>email<br>
+&nbsp; &nbsp; <span class="def_Syntax">to</span><span class="def_Symbol">=</span><span class="def_String">&quot;Kevin Walsh &lt;kevin@cursor.biz&gt;&quot;</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">from</span><span class="def_Symbol">=</span><span class="def_String">&quot;Foobar &lt;foobar@example.com&gt;&quot;</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">subject</span><span class="def_Symbol">=</span><span class="def_String">&quot;Email with two attachments&quot;</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">attach</span><span class="def_Symbol">=</span>`<span class="def_Symbol">[</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Symbol">{</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Syntax">type </span><span class="def_Symbol">=</span><span class="def_Symbol">&gt; </span><span class="def_String">'image/gif'</span><span class="def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Syntax">path </span><span class="def_Symbol">=</span><span class="def_Symbol">&gt; </span><span class="def_String">'images/foo.gif'</span><span class="def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Syntax">filename </span><span class="def_Symbol">=</span><span class="def_Symbol">&gt; </span><span class="def_String">'different_name.gif'</span><span class="def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Symbol">}</span><span class="def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Symbol">{</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Syntax">type </span><span class="def_Symbol">=</span><span class="def_Symbol">&gt; </span><span class="def_String">'image/jpeg'</span><span class="def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Syntax">data </span><span class="def_Symbol">=</span><span class="def_Symbol">&gt; </span>$<span class="def_Syntax">Tag</span><span class="def_Symbol">-</span><span class="def_Symbol">&gt;</span><span class="def_Syntax">file</span><span class="def_Symbol">(</span><span class="def_String">'images/foo.jpeg'</span><span class="def_Symbol">) </span><span class="def_Symbol">|</span><span class="def_Symbol">| </span>$<span class="def_Syntax">Tag</span><span class="def_Symbol">-</span><span class="def_Symbol">&gt;</span><span class="def_Syntax">file</span><span class="def_Symbol">(</span><span class="def_String">'images/broken.jpg'</span><span class="def_Symbol">)</span><span class="def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Syntax">filename </span><span class="def_Symbol">=</span><span class="def_Symbol">&gt; </span><span class="def_String">'attachment_name.jpg'</span><span class="def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_Symbol">}</span><span class="def_Symbol">,</span><br>
+&nbsp; &nbsp; <span class="def_Symbol">]</span>`<br>
+<span class="def_Symbol">]</span><span class="def_Syntax">This email has two attachments</span><span class="def_Symbol">.</span><span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">email</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Both of the above examples also show that the &quot;<span class="fixedwidth">data</span>&quot; hash key
+can be used to attach arbitrary data to the email.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_warning.gif" width="32" height="32" border="0" alt="Warning">
+</td>
+<td width="100%">
+<p class="title">Warning</p>
+<p style="margin-bottom: 0px">
+The &quot;<span class="fixedwidth">type</span>&quot; key must match the &quot;<span class="fixedwidth">data</span>&quot; content to
+give the attachment some chance of being handled correctly by the
+email recipient(s).
+</p>
+</td>
+</tr>
+</table>
+
+<a name="hide"></a>
+<h3>hide</h3>
+<p>
+This tag normally returns a <em>true</em> value if the email was sent,
+and a <em>false</em> value otherwise.&nbsp;
+If this parameter is <em>true</em> then no value will be returned.
+</p>
+<a name="html"></a>
+<h3>html</h3>
+<p>
+This parameter allows you to create a &quot;<span class="fixedwidth">multipart/alternate</span>&quot; email,
+with &quot;<span class="fixedwidth">text/plain</span>&quot; and &quot;<span class="fixedwidth">text/html</span>&quot; parts.&nbsp;
+The MIME content type and disposition of the parts will be automatically
+set for you, and a valid text-and-HTML email will be sent.
+</p>
+<p>
+The &quot;<span class="fixedwidth">text/plain</span>&quot; part goes into the tag body, as usual.&nbsp;
+The &quot;<span class="fixedwidth">text/html</span>&quot; part is gathered from the &quot;<span class="fixedwidth">html</span>&quot; parameter's value.&nbsp;
+For example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span>email<br>
+&nbsp; &nbsp; <span class="def_Syntax">to</span><span class="def_Symbol">=</span><span class="def_String">&quot;Kevin Walsh &lt;kevin@cursor.biz&gt;&quot;</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">from</span><span class="def_Symbol">=</span><span class="def_String">&quot;Foobar &lt;foobar@example.com&gt;&quot;</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">subject</span><span class="def_Symbol">=</span><span class="def_String">&quot;Multipart email&quot;</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">html</span><span class="def_Symbol">=</span><span class="def_String">&quot;[scratchd eeew_nasty_html_part_in_here]&quot;</span><br>
+<span class="def_Symbol">]</span><span class="def_Syntax">This is the nice plain text part</span><span class="def_Symbol">.</span><span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">email</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p>
+This parameter requires that the <p style="margin-bottom: 0px">
+<a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fsearch%2ecpan%2eorg%2f%7eyves%2fMIME%2dLite%2d3%2e01%2flib%2fMIME%2fLite%2epm" title="http://search.cpan.org/~yves/MIME-Lite-3.01/lib/MIME/Lite.pm" rel="nofollow">Mime::Lite</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+Perl module is installed and operational.
+</p>
+</td>
+</tr>
+</table>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_availability.gif" width="32" height="32" border="0" alt="Availability">
+</td>
+<td width="100%">
+<p class="title">Availability</p>
+<p>
+<p style="margin-bottom: 0px">
+This parameter was introduced in version 5.4.0,
+and is therefore not available for use with any earlier Interchange version.
+</p>
+</td>
+</tr>
+</table>
+</div>
+
+<!-- start of modification notice -->
+<div class="wikitext">
+    <table class="pageinfo" cellpadding="0" cellspacing="0">
+	<tr>
+	    <td>
+Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a>
+	    </td>
+	</tr>
+
+
+	<tr>
+	    <td>
+		
+		Last modified by: <a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin">Kevin Walsh</a><br>
+		Modification date: Friday 4 May 2007 at 3:28 PM (BST)
+	    </td>
+	</tr>
+    </table>
+</div>
+<!-- end of modification notice -->
+
+
+
+<!-- end page: wiki/display (tags/email) -->
+
+
+
+<!-- end of page text -->
+	    </td>
+
+	    <td id="rightside">
+<!-- START COMPONENT: sponsors -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th>SPONSORS</th>
+    </tr>
+
+    <tr><td class="sponsor"><a href="http://www.cursor.biz/index.html" title="Cursor Software: Expert Interchange consultancy"><img src="/decor/images/sponsor_logos/cursor_logo_small.gif" width="131" height="37" alt="Cursor Software: Expert Interchange consultancy"></a></td></tr>
+    <tr><td class="sponsor"><a href="http://www.webmaint.net/interchange/hosting.html" title="Webmaint.net: UK Interchange business hosting"><img src="/decor/images/sponsor_logos/ukicbizhost.gif" width="140" height="56" alt="Webmaint.net: UK Interchange business hosting"></a></td></tr>
+
+
+    <tr><td class="first"><div class="bullet"><a href="http://www.interchange-rtfm.pullingshots.ca/donations.html">Donations and sponsorship</a></div></td></tr>
+</table>
+
+<!-- END COMPONENT: sponsors -->
+
+	    </td>
+
+	</tr>
+    </table>
+<!-- START VAR: FOOTER -->
+
+<table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+	<td>
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	</td>
+
+    </tr>
+</table>
+
+<!-- END VAR: FOOTER -->
+
+<!-- START VAR: COPYRIGHT -->
+
+
+    <div class="copyright">
+	Copyright &copy; 2001-2010
+	<a href="http://www.cursor.biz/index.html">Cursor Software Limited</a>.&nbsp;
+	All Rights Reserved.
+    </div>
+
+<!-- END VAR: COPYRIGHT -->
+
+</body>
+</html>

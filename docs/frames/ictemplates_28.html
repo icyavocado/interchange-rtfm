@@ -1,0 +1,136 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Template Guide: Item Lists</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_18.html">Parent Topic</A> | <A HREF="ictemplates_27.html">Previous Topic</A> | <A HREF="ictemplates_29.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>6.10. Item Lists</H2>
+<P>Within any page, the <TT>[item-list cart*]</TT> element shows a list of all the items ordered by the customer so far. It works by repeating the source between <TT>[item-list]</TT> and <TT>[/item-list]</TT> once for each item ordered.</P>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>The special tags that reference item within the list are not normal Interchange tags, do not take named attributes and cannot be contained in an HTML tag (other than to substitute for one of its values or provide a conditional container). They are interpreted only inside their corresponding list container. Normal Interchange tags can be interspersed, though they will be interpreted <I>after</I> all of the list-specific tags.
+<HR WIDTH="80%" ALIGN="Left"></P>
+<P>Between the item_list markers the following elements will return information for the current item:</P>
+<P><B>[if-item-data table column]</B></P>
+<UL>
+If the database field <TT>column</TT> in table <I>table</I> is non-blank, the following text up to the <TT>[/if-item-data]</TT> tag is substituted. This can be used to substitute IMG or other tags only if the corresponding source item is present. Also accepts a <TT>[else]else text[/else]</TT> pair for the opposite condition.</UL>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>This tag does not nest with other <TT>[if-item-data ...]</TT> tags.
+<HR WIDTH="80%" ALIGN="Left"></P>
+<P><B>[if-item-data table column]</B></P>
+<UL>
+Reverses sense for <TT>[if-item-data]</TT>.</UL>
+<P><B>[/if-item-data]</B></P>
+<UL>
+Terminates an <TT>[if-item-data table column]</TT> element.</UL>
+<P><B>[if-item-field fieldname]</B></P>
+<UL>
+If the products database field fieldname is non-blank, the following text up to the <TT>[/if-item-field]</TT> tag is substituted. If there are more than one products database table (see ProductFiles), it will check them in order until a matching key is found. This can be used to substitute IMG or other tags only if the corresponding source item is present. Also accepts a <TT>[else]else text[/else]</TT> pair for the opposite condition.</UL>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>This tag does not nest with other <TT>[if-item-field ...]</TT> tags.
+<HR WIDTH="80%" ALIGN="Left"></P>
+<P><B>[if-item-field fieldname]</B></P>
+<UL>
+Reverses sense for <TT>[if-item-field]</TT>.</UL>
+<P><B>[/if-item-field]</B></P>
+<UL>
+Terminates an <TT>[if-item-field fieldname]</TT> element.</UL>
+<P><B>[item-accessories attribute*, type*, field*, database*, name*]</B></P>
+<UL>
+Evaluates to the value of the Accessories database entry for the item. If passed any of the optional arguments, initiates special processing of item attributes based on entries in the product database.</UL>
+<P><B>[item-alternate N] DIVISIBLE [else] NOT DIVISIBLE [/else][/item-alternate]</B></P>
+<UL>
+Sets up an alternation sequence. If the item-increment is divisible by <TT>N</TT>, the text will be displayed. If an <TT>[else]NOT DIVISIBLE TEXT[/else]</TT> is present, the NOT DIVISIBLE TEXT will be displayed.
+<BR>
+For example:</UL>
+<PRE>
+            [item-alternate 2]EVEN[else]ODD[/else][/item-alternate]
+            [item-alternate 3]BY 3[else]NOT by 3[/else][/item-alternate]
+</PRE>
+<P><B>[/item-alternate]</B></P>
+<UL>
+Terminates the alternation area.</UL>
+<P><B>[item-code]</B></P>
+<UL>
+Evaluates to the product code for the current item.</UL>
+<P><B>[item-data database fieldname]</B></P>
+<UL>
+Evaluates to the field name fieldname in the arbitrary database table database for the current item.</UL>
+<P><B>[item-description]</B></P>
+<UL>
+Evaluates to the product description (from the products file) for the current item.</UL>
+<P><B>[item-field fieldname]</B></P>
+<UL>
+The [item-field ...] tag is special in that it looks in any of the tables defined as <TT>ProductFiles</TT>, in that order, for the data, returning the value only if that key is defined. In most catalogs, where <TT>ProductFiles</TT> is not defined (i.e., the demo), <TT>[item-field title]</TT> is equivalent to <TT>[item-data products title]</TT>.
+<BR>
+Evaluates to the field name fieldname in the products database for the current item. If the item is not found in the first of the ProductFiles, all will be searched in sequence.</UL>
+<P><B>[item-increment]</B></P>
+<UL>
+Evaluates to the number of the item in the match list. Used for numbering search matches or order items in the list.</UL>
+<P><B>[item-last]tags[/item-last]</B></P>
+<UL>
+Evaluates the output of the Interchange tags encased inside the tags. If it evaluates to a numerical non-zero number (i.e., 1, 23, or -1), the list iteration will terminate. If the evaluated number is negative, the item itself will be skipped. If the evaluated number is positive, the item itself will be shown but will be last on the list.</UL>
+<PRE>
+              [item-last][calc]
+                return -1 if '[item-field weight]' eq '';
+                return 1 if '[item-field weight]' &lt; 1;
+                return 0;
+                [/calc][/item-last]
+</PRE>
+<UL>
+If this is contained in the <TT>[item-list]</TT> (or <TT>[search-list]</TT> or flypage) and the weight field is empty, a numerical <TT>-1</TT> will be output from the <TT>[calc][/calc]</TT> tags; the list will end and the item will <B>not</B> be shown. If the product's weight field is less than 1, a numerical 1 is output. The item will be shown, but will be the last item shown. (If it is an <TT>[item-list]</TT>, any price for the item will still be added to the subtotal.) NOTE: there is no equivalent HTML style.</UL>
+<P><B>[item-modifier attribute]</B></P>
+<UL>
+Evaluates to the modifier value of <TT>attribute</TT> for the current item.</UL>
+<P><B>[item-next]tags[/item_next]</B></P>
+<UL>
+Evaluates the output of the Interchange tags encased inside. If it evaluates to a numerical non-zero number (i.e., 1, 23, or -1), the item will be skipped with no output. Example:</UL>
+<PRE>
+              [item-next][calc][item-field weight] &lt; 1[/calc][/item-next]
+</PRE>
+<UL>
+If this is contained in the <TT>[item-list]</TT> (or <TT>[search-list]</TT> or flypage) and the product's weight field is less than 1, a numerical <TT>1</TT> will be output from the [calc][/calc] operation. The item will not be shown. (If it is an <TT>[item-list]</TT>, any price for the item will still be added to the subtotal.)</UL>
+<P><B>[item-price n* noformat*]</B></P>
+<UL>
+Evaluates to the price for quantity <TT>n</TT> (from the products file) of the current item, with currency formatting. If the optional &quot;noformat&quot; is set, currency formatting will not be applied.</UL>
+<P><B>[discount-price n* noformat*]</B></P>
+<UL>
+Evaluates to the discount price for quantity <TT>n</TT> (from the products file) of the current item, with currency formatting. If the optional &quot;noformat&quot; is set, currency formatting will not be applied. Returns regular price if not discounted.</UL>
+<P><B>[item-discount]</B></P>
+<UL>
+Returns the difference between the regular price and the discounted price.</UL>
+<P><B>[item-quantity]</B></P>
+<UL>
+Evaluates to the quantity ordered for the current item.</UL>
+<P><B>[item-subtotal]</B></P>
+<UL>
+Evaluates to the subtotal (quantity * price) for the current item. Quantity price breaks are taken into account.</UL>
+<P><B>[modifier-name attribute]</B></P>
+<UL>
+Evaluates to the name to give an input box in which the customer can specify the modifier to the ordered item.</UL>
+<P><B>[quantity-name]</B></P>
+<UL>
+Evaluates to the name to give an input box in which the customer can enter the quantity to order.</UL>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_18.html">Parent Topic</A> | <A HREF="ictemplates_27.html">Previous Topic</A> | <A HREF="ictemplates_29.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

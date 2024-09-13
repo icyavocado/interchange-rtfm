@@ -1,0 +1,99 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Configuration Reference: Directive syntax</TITLE>
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_1.html">Parent Topic</A> | <A HREF="icconfig_1.html">Previous Topic</A> | <A HREF="icconfig_3.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Catalog</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>1.1. Directive syntax</H2>
+<P>Configuration directives are normally specified with the directive as the first word on the line, with its value or values following. Capitalization of the directive name is not signifigant. Leading and trailing whitespace is stripped from the line.</P>
+<P><B>Including files in directives</B></P>
+<P>Additional files may be called with an include file notation like this:</P>
+<PRE>
+DirectiveName &lt;includefile
+</PRE>
+<P>Files included from interchange.cfg are relative to the Interchange software directory. Files included from catalog.cfg are relative to the catalog directory.</P>
+<UL>
+Here documents</UL>
+<P>A &quot;here document&quot; can be used to spread directive values over several lines, with the usual Perl &lt;&lt;MARKER syntax. No semicolon is used to terminate the marker. The closing marker must be the only thing on the line. No leading or trailing characters are allowed, not even whitespace. Here is a hypothetical directive using a here document:</P>
+<PRE>
+        DirectiveName &lt;&lt;EOD
+            setting1
+            setting2
+            setting3
+        EOD
+</PRE>
+<P>That is equivalent to:</P>
+<PRE>
+        DirectiveName setting1 setting2 setting3
+</PRE>
+<P><B>Include single setting from file</B></P>
+<UL>
+Value can be pulled from a file with &lt;file:</UL>
+<PRE>
+        Variable MYSTUFF &lt;file
+</PRE>
+<UL>
+This works well for includes that must be of the highest possible performance. They can be simply placed in a page with __VARIABLE__.</UL>
+<P><B>include</B></P>
+<UL>
+Other configuration files can be included in the current one. For example, common settings can be set in one file:</UL>
+<PRE>
+        include common.cfg
+</PRE>
+<UL>
+Or all files in one directory:</UL>
+<PRE>
+        include usertag/*
+</PRE>
+<P><B>ifdef and ifndef</B></P>
+<UL>
+ifdef/endif and ifndef/endif pairs can be used:</UL>
+<PRE>
+        Variable ORDERS_TO email_address
+        
+        ifdef ORDERS_TO
+        ParseVariables Yes
+        MailOrderTo __ORDERS_TO__
+        ParseVariables No
+        endif
+        
+        ifdef ORDERS_TO =~ /foo.com/
+        # Send all orders at foo.com to one place now
+        # Set ORDERS_TO to stop default setting
+        Variable  ORDERS_TO  1
+        MailOrderTo   orders@foo.com
+        endif
+        
+        ifdef ORDERS_TO eq 'nobody@nowhere.com'
+        # Better change to something else, set ORDERS_TO to stop default
+        Variable  ORDERS_TO  1
+        MailOrderTo   someone@somewhere.com
+        endif
+        
+        ifndef ORDERS_TO
+        #Needs to go somewhere....
+        MailOrderTo  webmaster@localhost
+        endif
+</PRE>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_1.html">Parent Topic</A> | <A HREF="icconfig_1.html">Previous Topic</A> | <A HREF="icconfig_3.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Catalog</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

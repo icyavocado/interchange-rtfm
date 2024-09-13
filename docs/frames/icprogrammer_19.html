@@ -1,0 +1,78 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Programmer Reference: CGI</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icprogrammer_16.html">Parent Topic</A> | <A HREF="icprogrammer_18.html">Previous Topic</A> | <A HREF="icprogrammer_20.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.3. CGI</H2>
+<P>CGI variables are the raw data which comes from the user.</P>
+<UL>
+WARNING: It is a security risk to use these variables for display in the page.</UL>
+<P>You can use them for testing without worry, though you should never set their value into a database or display on the page unless you have processed them first, as they can have arbitrary values. The most common security risk is displaying HTML code, which allows remote scripting exploits like cookie-stealing.</P>
+<PRE>
+    [calc]
+        ####  DO NOT DO THIS!!!!
+        my $out = $CGI-&gt;{varname};
+        return $out;
+    [/calc]
+</PRE>
+<P>That will transform the value. If you wish to output a safe value but keep the actual value intact, do:</P>
+<PRE>
+    [calc]
+        ####  This is safe, makes value safe for rest of page
+        my $out = $Tag-&gt;cgi( { name =&gt; 'varname', filter =&gt; 'entities' } );
+        ####  This is safe too, doesn't transform value
+        my $other = $Tag-&gt;filter($CGI-&gt;{varname}, 'entities');
+
+        ### Now you can return stuff to the page
+        return $out . $other;
+    [/calc]
+</PRE>
+<P>The access methods are:</P>
+<PRE>
+  Access in ITL with                 Attributes
+  -----------------------            -------------------
+  [cgi varname]                      Doesn't stop ITL code, don't use!
+  [cgi name=varname filter=entities] Use this for safety
+
+  Embedded Perl                From
+  -----------------------      -------------------
+  $CGI-&gt;{varname}              Don't use for output values!
+</PRE>
+<P>They can be set as well.</P>
+<PRE>
+  Set in ITL with                       Attributes
+  -----------------------               -------------------
+  [cgi name=varname set=&quot;VAL&quot;]          Sets to VAL, VAL can be ITL, shows VAL
+  [cgi name=varname set=&quot;VAL&quot; hide=1]   Sets to VAL, VAL can be ITL, no output
+
+  Embedded Perl                From
+  -----------------------      -------------------
+  $CGI-&gt;{varname} = 'VAL';     Sets to VAL, next access to [cgi varname]
+                               shows new value
+
+</PRE>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icprogrammer_16.html">Parent Topic</A> | <A HREF="icprogrammer_18.html">Previous Topic</A> | <A HREF="icprogrammer_20.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

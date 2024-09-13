@@ -1,0 +1,273 @@
+div.wikitext a:link, div.wikitext a:active, div.wikitext a:visited {
+    color: #0000CC;
+    text-decoration: none;
+}
+div.wikitext a:hover {
+    color: #BF7000;
+    text-decoration: underline;
+}
+div.wikitext a.nopage:link, div.wikitext a.nopage:active, div.wikitext a.nopage:visited {
+    color: #FF0000;
+}
+div.wikitext a.nopage:hover {
+    color: #BF7000;
+}
+
+div.wikitext table {
+    background-color: #F6FAFF;
+    line-height: 1.4em;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+div.wikitext table.light {
+    background-color: #FFFFFF;
+}
+div.wikitext table.border {
+    border: 1px solid #0E83B9;
+}
+div.wikitext tr.alternate {
+    background-color: #E9F0FF;
+}
+div.wikitext th {
+    background-color: #0E83B9;
+    color: #FFFF00;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+div.wikitext td {
+    line-height: 1.4em;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 10px;
+    margin: 0px;
+}
+div.wikitext td.title {
+    background-color: #0E83B9;
+    color: #FFFF00;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+div.wikitext td.title_above_header {
+    background-color: #0E83B9;
+    color: #FFFF00;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 1px solid #F6FAFF;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+div.wikitext td.grid {
+    border: 1px solid #0E83B9;
+}
+
+div.wikitext table.categorytoc {
+    background-color: #FFFFFF;
+    border: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+div.wikitext table.categorytoc td {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 20px;
+}
+div.wikitext table.categorytoc span.index {
+    color: #004284;
+    font-family: arial,verdana,tahoma,helvetica,sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    padding-left: 5px;
+}
+div.wikitext table.categorytoc ul {
+    margin-top: 0.2em;
+    margin-bottom: 0.6em;
+}
+
+div.wikitext h1 {
+    color: #004284;
+    font-family: verdana,tahoma,arial,helvetica,sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+div.wikitext h2 {
+    color: #0E83B9;
+    font-family: verdana,tahoma,arial,helvetica,sans-serif;
+    font-size: 14pt;
+    font-weight: normal;
+    border-bottom: 2px solid #0E83B9;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+div.wikitext h3 {
+    color: #0E83B9;
+    font-family: arial,verdana,tahoma,helvetica,sans-serif;
+    font-size: 14pt;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+div.wikitext h4 {
+    color: #0E83B9;
+    font-family: arial,verdana,tahoma,helvetica,sans-serif;
+    font-size: 13pt;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+div.wikitext h5 {
+    color: #0E83B9;
+    font-family: arial,verdana,tahoma,helvetica,sans-serif;
+    font-size: 11pt;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+div.wikitext h6 {
+    color: #0E83B9;
+    font-family: arial,verdana,tahoma,helvetica,sans-serif;
+    font-size: 11pt;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.wikitext div.toc table {
+    background-color: #F6FAFF;
+    border: 1px solid #0E83B9;
+}
+div.wikitext div.toc table.right {
+    margin-left: 1em;
+}
+div.wikitext div.toc th {
+    color: #004284;
+    background-color: #F6FAFF;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.7em;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 5px;
+}
+div.wikitext div.toc td {
+    white-space: nowrap;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 1em;
+}
+div.wikitext div.toc td.h2 {
+    padding-left: 1em;
+}
+div.wikitext div.toc td.h3 {
+    padding-left: 3em;
+}
+div.wikitext div.toc td.h4 {
+    padding-left: 5em;
+}
+div.wikitext div.toc td.h5 {
+    padding-left: 7em;
+}
+div.wikitext div.toc td.h2_nonumbers {
+    padding-left: 1em;
+}
+div.wikitext div.toc td.h3_nonumbers {
+    padding-left: 3em;
+}
+div.wikitext div.toc td.h4_nonumbers {
+    padding-left: 5em;
+}
+div.wikitext div.toc td.h5_nonumbers {
+    padding-left: 7em;
+}
+div.wikitext div.toc td.spacer {
+    font-size: 0.4em;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+div.wikitext div.code{
+    padding: 0px;
+    margin: 0px;
+}
+div.wikitext div.code table {
+    background-color: #F6FAFF;
+    border: 1px solid #0E83B9;
+    border-left: 4px solid #0E83B9;
+}
+div.wikitext div.code table.light {
+    background-color: #FFFFFF;
+}
+div.wikitext div.code table.right {
+    margin-left: 1em;
+}
+div.wikitext div.code th {
+    background-color: #0E83B9;
+    color: #FFFF00;
+    font-weight: bold;
+    text-align: left;
+    white-space: nowrap;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+div.wikitext div.code td {
+    line-height: 1.3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+div.wikitext div.code td.hr {
+    line-height: 1.3em;
+    border-top: 1px dashed #0E83B9;
+}
+div.wikitext div.code ol {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 3em;
+    margin: 0px;
+}
+div.wikitext div.code span.comment {
+    color: #FFFF00;
+    background-color: #0E83B9;
+    font-family: verdana,tahoma,arial,helvetica,sans-serif;
+    font-weight: bold;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+div.wikitext table.note {
+    width: 100%;
+    background-color: #FFFFDD;
+    border: 1px solid #AAAAAA;
+}
+div.wikitext table.note td {
+    padding-bottom: 1em;
+    padding-right: 1em;
+}
+div.wikitext table.note td.icon {
+    padding: 20px;
+}
+div.wikitext table.note p.title {
+    font-size: 1.5em;
+    margin-bottom: 0.3em;
+}

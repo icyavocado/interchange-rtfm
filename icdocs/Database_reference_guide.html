@@ -1,0 +1,2338 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>Database reference guide - RTFM</title>
+
+    <meta http-equiv="Content-Language" content="en-GB">
+    <meta http-equiv="Window-target" content="_top">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <meta http-equiv="X-Soup-Of-The-Day" content="Tomato">
+
+    <meta name="author" content="Kevin Walsh">
+    <meta name="publisher" content="Cursor Software Limited">
+    <meta name="copyright" content="2001-2020, Cursor Software Limited">
+    <meta name="licence" content="GPLv2+ (Unknown licence)">
+    <meta name="generator" content="Interchange 5.7.0 -- www.icdevgroup.org">
+    <meta name="robots" content="index,follow,noarchive,noimageindex">
+    <meta name="keywords" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="description" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="MSSmartTagsPreventParsing" content="TRUE">
+
+    <meta name="verify-v1" content="KqlU/bxZj9Y2ZdZ/3RwuzgVSMIrZ8XM2wqbjSaEo3O4=">
+
+    <meta name="y_key" content="e2dd60be5777fbc8">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
+    <link rel="search" type="application/opensearchdescription+xml" href="http://interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="stylesheet" href="/decor/css/website.css">
+    <link rel="stylesheet" href="/decor/css/wiki.css">
+    <link rel="stylesheet" href="/decor/css/neo.css">
+
+
+    <script type="text/javascript" language="JavaScript">
+    <!--
+	if (top != self){
+	    top.location = location;
+	}
+
+    // -->
+    </script>
+</head>
+<body>
+<!-- START VAR: LOGOBAR -->
+<table id="rtfmheader" cellpadding="0" cellspacing="0">
+    <tr>
+	<td><a href="http://interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+
+	<td width="100%" style="text-align: right; padding: 10px">
+
+	    <form action="http://interchange-rtfm.pullingshots.ca/search.html" method="POST">
+		<input type="hidden" name="mv_session_id" value="nsession">
+		<input type="hidden" name="mv_profile" value="cms_search">
+		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
+		<input type="submit" class="button" value="Search">
+	    </form>
+
+	</td>
+    </tr>
+</table>
+<table id="breadcrumbs" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+	<td>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_database.html">Interchange database</a></span>
+	    <span class="nowrap">&gt; <span class="current">Database reference guide</span></span>
+	</td>
+
+    </tr>
+</table>
+<!-- END VAR: LOGOBAR -->
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+
+	    <td id="leftside">
+<!-- START COMPONENT: navigation -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th>NAVIGATION</th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+
+<!-- END COMPONENT: navigation -->
+<!-- START COMPONENT: wiki_recent -->
+
+
+
+<!-- END COMPONENT: wiki_recent -->
+<!-- START COMPONENT: wiki_backlinks -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th><span class="nowrap">PAGES THAT LINK HERE</span></th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Database.html">Database</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DatabaseAuto.html">DatabaseAuto</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DatabaseDefault.html">DatabaseDefault</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Interchange_search_engine.html">Interchange search engine</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/NoImport.html">NoImport</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+<!-- END COMPONENT: wiki_backlinks -->
+<!-- START COMPONENT: account -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+
+    <tr>
+	<th>ACCOUNT LOGIN</th>
+    </tr>
+
+    <tr>
+	<td class="first">
+	    <p>You are not logged in</p>
+	</td>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+	    </ul>
+	</td>
+    </tr>
+
+</table>
+
+
+
+<!-- END COMPONENT: account -->
+<!-- START COMPONENT: icpowered -->
+
+<div style="text-align: center; margin: 10px; margin-top: 0px">
+    <a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+</div>
+
+
+
+<!-- START COMPONENT: icpowered -->
+
+	    </td>
+
+	    <td id="bodytext">
+<!-- start of page text -->
+
+<!-- start page: wiki/display (Database_reference_guide) -->
+
+<div class="wikitext">
+<a name="Database_reference_guide"></a>
+<h1>Database reference guide</h1>
+<!-- start of toc --><div class="toc">
+<table>
+<tr valign="top">
+<th>Table of contents</th>
+</tr>
+<tr><td class="h2"><a href="#Introduction">1. Introduction</a></td></tr>
+<tr><td class="h2"><a href="#Text_source_files">2. Text source files</a></td></tr>
+<tr><td class="h3"><a href="#Column_delimiters_in_text_files">2.1. Column delimiters in text files</a></td></tr>
+<tr><td class="h4"><a href="#TAB">2.1.1. TAB</a></td></tr>
+<tr><td class="h4"><a href="#PIPE">2.1.2. PIPE</a></td></tr>
+<tr><td class="h4"><a href="#CSV">2.1.3. CSV</a></td></tr>
+<tr><td class="h3"><a href="#Database-specific_text_file_import_differences">2.2. Database-specific text file import differences</a></td></tr>
+<tr><td class="h4"><a href="#GDBM_File">2.2.1. GDBM_File</a></td></tr>
+<tr><td class="h4"><a href="#DB_File">2.2.2. DB_File</a></td></tr>
+<tr><td class="h4"><a href="#DBISQL">2.2.3. DBI/SQL</a></td></tr>
+<tr><td class="h4"><a href="#LDAP">2.2.4. LDAP</a></td></tr>
+<tr><td class="h4"><a href="#MEMORY">2.2.5. MEMORY</a></td></tr>
+<tr><td class="h2"><a href="#Database_attributes">3. Database attributes</a></td></tr>
+<tr><td class="h3"><a href="#AUTO_NUMBER">3.1. AUTO_NUMBER</a></td></tr>
+<tr><td class="h3"><a href="#AUTO_NUMBER_FILE">3.2. AUTO_NUMBER_FILE</a></td></tr>
+<tr><td class="h3"><a href="#CONTINUE">3.3. CONTINUE</a></td></tr>
+<tr><td class="h4"><a href="#NONE">3.3.1. NONE</a></td></tr>
+<tr><td class="h4"><a href="#UNIX">3.3.2. UNIX</a></td></tr>
+<tr><td class="h4"><a href="#DITTO">3.3.3. DITTO</a></td></tr>
+<tr><td class="h4"><a href="#LINE">3.3.4. LINE</a></td></tr>
+<tr><td class="h4"><a href="#NOTES">3.3.5. NOTES</a></td></tr>
+<tr><td class="h3"><a href="#DBISQL_2">3.4. DBI/SQL</a></td></tr>
+<tr><td class="h4"><a href="#ALTERNATE_DSN">3.4.1. ALTERNATE_DSN</a></td></tr>
+<tr><td class="h4"><a href="#ALTERNATE_PASS">3.4.2. ALTERNATE_PASS</a></td></tr>
+<tr><td class="h4"><a href="#ALTERNATE_USER">3.4.3. ALTERNATE_USER</a></td></tr>
+<tr><td class="h4"><a href="#AUTO_SEQUENCE">3.4.4. AUTO_SEQUENCE</a></td></tr>
+<tr><td class="h4"><a href="#AUTO_SEQUENCE_MAXVAL">3.4.5. AUTO_SEQUENCE_MAXVAL</a></td></tr>
+<tr><td class="h4"><a href="#AUTO_SEQUENCE_MINVAL">3.4.6. AUTO_SEQUENCE_MINVAL</a></td></tr>
+<tr><td class="h4"><a href="#AUTO_SEQUENCE_START">3.4.7. AUTO_SEQUENCE_START</a></td></tr>
+<tr><td class="h4"><a href="#DSN">3.4.8. DSN</a></td></tr>
+<tr><td class="h4"><a href="#COLUMN_DEF">3.4.9. COLUMN_DEF</a></td></tr>
+<tr><td class="h4"><a href="#COMPOSITE_KEY">3.4.10. COMPOSITE_KEY</a></td></tr>
+<tr><td class="h4"><a href="#CREATE_SQL">3.4.11. CREATE_SQL</a></td></tr>
+<tr><td class="h4"><a href="#HAS_LIMIT">3.4.12. HAS_LIMIT</a></td></tr>
+<tr><td class="h4"><a href="#HAS_TRANSACTIONS">3.4.13. HAS_TRANSACTIONS</a></td></tr>
+<tr><td class="h4"><a href="#INDEX">3.4.14. INDEX</a></td></tr>
+<tr><td class="h4"><a href="#NUMERIC">3.4.15. NUMERIC</a></td></tr>
+<tr><td class="h4"><a href="#PASS">3.4.16. PASS</a></td></tr>
+<tr><td class="h4"><a href="#POSTCREATE">3.4.17. POSTCREATE</a></td></tr>
+<tr><td class="h4"><a href="#PRECREATE">3.4.18. PRECREATE</a></td></tr>
+<tr><td class="h4"><a href="#TABLE_COMMENT">3.4.19. TABLE_COMMENT</a></td></tr>
+<tr><td class="h4"><a href="#TABLE_TYPE">3.4.20. TABLE_TYPE</a></td></tr>
+<tr><td class="h4"><a href="#USER">3.4.21. USER</a></td></tr>
+<tr><td class="h4"><a href="#Miscellaneous_DBI_driver_attributes">3.4.22. Miscellaneous DBI driver attributes</a></td></tr>
+<tr><td class="h3"><a href="#DELIMITER">3.5. DELIMITER</a></td></tr>
+<tr><td class="h3"><a href="#EXCEL">3.6. EXCEL</a></td></tr>
+<tr><td class="h3"><a href="#HIDE_AUTO_FILES">3.7. HIDE_AUTO_FILES</a></td></tr>
+<tr><td class="h3"><a href="#HIDE_FIELD">3.8. HIDE_FIELD</a></td></tr>
+<tr><td class="h3"><a href="#IMPORT_ONCE">3.9. IMPORT_ONCE</a></td></tr>
+<tr><td class="h3"><a href="#INDEX_2">3.10. INDEX</a></td></tr>
+<tr><td class="h4"><a href="#DBM_files">3.10.1. DBM files</a></td></tr>
+<tr><td class="h4"><a href="#Tables_in_a_SQL_database">3.10.2. Tables in a SQL database</a></td></tr>
+<tr><td class="h3"><a href="#KEY">3.11. KEY</a></td></tr>
+<tr><td class="h3"><a href="#LARGE">3.12. LARGE</a></td></tr>
+<tr><td class="h3"><a href="#MEMORY_2">3.13. MEMORY</a></td></tr>
+<tr><td class="h3"><a href="#MIRROR">3.14. MIRROR</a></td></tr>
+<tr><td class="h3"><a href="#NAME">3.15. NAME</a></td></tr>
+<tr><td class="h3"><a href="#NO_ASCII_INDEX">3.16. NO_ASCII_INDEX</a></td></tr>
+<tr><td class="h3"><a href="#NO_SEARCH">3.17. NO_SEARCH</a></td></tr>
+<tr><td class="h3"><a href="#REAL_NAME">3.18. REAL_NAME</a></td></tr>
+<tr><td class="h3"><a href="#UPPERCASE">3.19. UPPERCASE</a></td></tr>
+<tr><td class="h3"><a href="#WRITE_CONTROL">3.20. WRITE_CONTROL</a></td></tr>
+<tr><td class="h2"><a href="#Examples">4. Examples</a></td></tr>
+<tr><td class="h2"><a href="#The_products_tables">5. The products table(s)</a></td></tr>
+<tr><td class="h2"><a href="#Global_tables">6. Global tables</a></td></tr>
+<tr>
+<td class="spacer">&nbsp;</td>
+</tr>
+</table>
+</div><!-- end of toc -->
+<a name="Introduction"></a>
+<h2>Introduction</h2>
+<p>
+Interchange is database-independent,
+and perhaps more so than almost any other powerful content management system.
+</p>
+<p>
+Interchange can use <span class="fixedwidth"><a href="#GDBM_File" title="&quot;GDBM File&quot; heading on this page">GDBM_File</a></span>,
+<span class="fixedwidth"><a href="#DB_File" title="&quot;DB File&quot; heading on this page">DB_File</a></span>, <span class="fixedwidth"><a href="#DBISQL" title="&quot;DBISQL&quot; heading on this page">DBI/SQL</a></span> (various flavours),
+<span class="fixedwidth"><a href="#LDAP" title="&quot;LDAP&quot; heading on this page">LDAP</a></span> and <span class="fixedwidth"><a href="#MEMORY" title="&quot;MEMORY&quot; heading on this page">MEMORY</a></span> data sources.&nbsp;
+In most cases, these different sources should operate in the same manner when
+called by Interchange's access methods.
+</p>
+<p>
+Most all of Interchange's core functions do not use hard-coded column names;&nbsp;
+Almost every column can have a configurable name.
+</p>
+<p>
+Interchange does not require an external SQL server.&nbsp;
+If you have a small data set and do not want to integrate your own tool set,
+you could use Interchange's internal database.&nbsp;
+However, the order management functions of Interchange will be slower,
+and not as robust without an SQL server.&nbsp;
+SQL is strongly recommended for at least the &quot;<span class="fixedwidth">state</span>,
+&quot;<span class="fixedwidth">country</span>&quot;, &quot;<span class="fixedwidth">orderline</span>&quot;, &quot;<span class="fixedwidth">transactions</span>&quot; and
+&quot;<span class="fixedwidth">userdb</span>&quot; tables.&nbsp;
+Any other tables that will have programmatic updates,
+such as &quot;<span class="fixedwidth">inventory</span>&quot;, will also be best managed by an SQL server.
+</p>
+<p>
+If you plan on using the Interchange ecommerce <em>Admin UI</em>,
+you should make the move to SQL.&nbsp;
+Using an SQL server also makes it easier to integrate Interchange with other
+external tools and systems.
+</p>
+<a name="Text_source_files"></a>
+<h2>Text source files</h2>
+<p>
+Interchange reads delimited text files to obtain its initial data.&nbsp;
+The text files are not the database;&nbsp;
+They are the initial source of data for the database tables.
+</p>
+<p>
+All database source files are located in the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DataDir.html" title="DataDir (config)">DataDir</a></span>
+directory.&nbsp;
+In the supplied <em>Standard</em> Interchange ecommerce demo website,
+the text source for the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> is called
+&quot;<span class="fixedwidth">products.txt</span>.
+</p>
+<p>
+If you are using one of the internal DBM database methods
+(<span class="fixedwidth"><a href="#GDBM_File" title="&quot;GDBM File&quot; heading on this page">GDBM_File</a></span> or <span class="fixedwidth"><a href="#DB_File" title="&quot;DB File&quot; heading on this page">DB_File</a></span>),
+any changes made to an ASCII <em>source</em> data file will be reflected
+in the <em>target</em> table in the next user session.&nbsp;
+If the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table contains less than a
+thousand records, updates will be instantaneous.&nbsp;
+If that table is larger, updates will take longer.&nbsp;
+You can use the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/NoImport.html" title="NoImport (config)">NoImport</a></span> directive to prevent auto
+updates from the ASCII <em>source</em> data file to the <em>target</em> table.
+</p>
+<p>
+All of the ASCII <em>source</em> data files are kept in the
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DataDir.html" title="DataDir (config)">DataDir</a></span> directory,
+The ASCII files can include &quot;<span class="fixedwidth">^M</span>&quot; (carriage return) characters,
+but must have a line feed character at the end of each line.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_warning.gif" width="32" height="32" border="0" alt="Warning">
+</td>
+<td width="100%">
+<p class="title">Warning</p>
+<p style="margin-bottom: 0px">
+Non-UNIX/Linux users uploading files must use ASCII mode, not binary mode,
+when uploading ASCII files to the Interchange server.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="Column_delimiters_in_text_files"></a>
+<h3>Column delimiters in text files</h3>
+<p>
+Columns in the ASCII data files must be separated using a defined delimiter
+style.&nbsp;
+The default column delimiter is a single tab character.
+</p>
+<p>
+The available delimiter styles are listed below:
+</p>
+<a name="TAB"></a>
+<h4>TAB</h4>
+<p>
+Columns are separated from one another with a single tab (<span class="fixedwidth">^I</span>)
+character.&nbsp;
+No whitespace is allowed at the beginning of the line.&nbsp;
+For example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+code^Idescription^Iprice^Iimage<br>
+SH543^IMen's fine cotton shirt^I14.95^Ishirts.jpg
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="PIPE"></a>
+<h4>PIPE</h4>
+<p>
+Columns are separated from one another with a single pipe (<span class="fixedwidth">|</span>)
+character.&nbsp;
+No whitespace is allowed at the beginning of the line.&nbsp;
+For example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+code|description|price|image<br>
+SH543|Men's fine cotton shirt|14.95|shirts.jpg
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="CSV"></a>
+<h4>CSV</h4>
+<p>
+Columns are enclosed in quotes and separated from one another with a
+single comma (<span class="fixedwidth">,</span>).&nbsp;
+No whitespace is allowed at the beginning of the line.&nbsp;
+For example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+&quot;code&quot;,&quot;description&quot;,&quot;price&quot;,&quot;image&quot;<br>
+&quot;SH543&quot;,&quot;Men's fine cotton shirt&quot;,&quot;14.95&quot;,&quot;shirts.jpg&quot;
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Database-specific_text_file_import_differences"></a>
+<h3>Database-specific text file import differences</h3>
+<p>
+In the following configuration directive:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Database&nbsp; tablename&nbsp; tablename.txt&nbsp;&nbsp; TAB
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+the &quot;<span class="fixedwidth">tablename</span>&quot; table will obtain its source data from the
+&quot;<span class="fixedwidth">tablename.txt</span>&quot; file, in the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DataDir.html" title="DataDir (config)">DataDir</a></span> directory.&nbsp;
+What is done with the data depends upon the type of underlying database
+being used.
+</p>
+<p>
+The different database types, and their treatment of ASCII <em>source</em>
+data files, are described below:
+</p>
+<a name="GDBM_File"></a>
+<h4>GDBM_File</h4>
+<p>
+The table's source file is checked to see if it is newer than the actual
+database file (<span class="fixedwidth">tablename.gdbm</span>).&nbsp;
+If it is newer then the database table is re-imported from the file.
+</p>
+<p>
+This behaviour can be changed in a few ways:&nbsp;
+If files should not be imported unless the .gdbm file disappears then
+set the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/NoImport.html" title="NoImport (config)">NoImport</a></span> directive:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+NoImport&nbsp; tablename
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+If the source data file is only to be imported at when Interchange is
+(re)started, or the website is reconfigured,
+then use the <span class="fixedwidth"><a href="#IMPORT_ONCE" title="&quot;IMPORT ONCE&quot; heading on this page">IMPORT_ONCE</a></span> attribute:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Database&nbsp; tablename&nbsp; IMPORT_ONCE&nbsp; 1
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+GDBM is the default table type if the <span class="fixedwidth">GDBM_File</span> Perl module is
+installed (as it should be on Linux).
+</p>
+<a name="DB_File"></a>
+<h4>DB_File</h4>
+<p>
+The table's source file is checked to see if it is newer than the actual
+database file (<span class="fixedwidth">tablename.db</span>).&nbsp;
+If it is newer then the database table is re-imported from the file.
+</p>
+<p>
+You can change this behaviour in the same way as described in the
+<span class="fixedwidth"><a href="#GDBM_File" title="&quot;GDBM File&quot; heading on this page">GDBM_File</a></span> section, above.
+</p>
+<p>
+DB_File is the default database type if the <span class="fixedwidth"><a href="#GDBM_File" title="&quot;GDBM File&quot; heading on this page">GDBM_File</a></span>
+Perl module is not installed.&nbsp;
+This is common on FreeBSD.
+</p>
+<p>
+You can request a <span class="fixedwidth">DB_File</span> table type with the following:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">Database&nbsp; tablename&nbsp; DB</span><span class="def_Symbol">_</span><span class="def_Syntax">FILE&nbsp; </span><span class="def_Number">1
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="DBISQL"></a>
+<h4>DBI/SQL</h4>
+<p>
+If a file named &quot;<span class="fixedwidth">tablename.sql</span>&quot; is in the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DataDir.html" title="DataDir (config)">DataDir</a></span>
+directory then the database table will not be imported from the ASCII data
+source file.
+</p>
+<p>
+If there is no &quot;<span class="fixedwidth">tablename.sql</span>&quot; file then the following will occur:
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+The &quot;<span class="fixedwidth">tablename.sql</span>&quot; file will be prefixed with a dot if the
+<span class="fixedwidth"><a href="#HIDE_AUTO_FILES" title="&quot;HIDE AUTO FILES&quot; heading on this page">HIDE_AUTO_FILES</a></span> attribute is set <em>true</em>.
+</p>
+</td>
+</tr>
+</table>
+
+
+<ul>
+<li>DBI/SQL imports will only happen when Interchange is (re)started,
+or the website is reconfigured.</li>
+<li>Interchange will connect to the SQL server using the specified <span class="fixedwidth">DSN</span>,
+which is a <em>DBI</em> parameter meaning &quot;Database Source Name&quot;.</li>
+<li>The table will be dropped with &quot;<span class="fixedwidth">DROP TABLE tablename</span>&quot;.&nbsp;
+This will occur without warning and can be prevented in several ways - see
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/NoImportExternal.html" title="NoImportExternal (config)">NoImportExternal</a></span>.</li>
+<li>The table will be created.&nbsp;
+If there are <span class="fixedwidth">COLUMN_DEF</span> specifications, in <em>local</em> configuration,
+then they will be used.&nbsp;
+Otherwise, the <em>key</em> (the first column in the text file, by default)
+will be created with a <span class="fixedwidth">CHAR(16)</span> datatype and all other columns will
+be created using <span class="fixedwidth">CHAR(128)</span>.&nbsp;
+The table creation statement will be written to the error logfile.</li>
+<li>If there are any <span class="fixedwidth"><a href="#INDEX" title="&quot;INDEX&quot; heading on this page">INDEX</a></span> specifications then Interchange will
+send the appropriate &quot;<span class="fixedwidth">CREATE INDEX</span>&quot; SQL commands to the database
+server.</li>
+<li>The text source file will be imported into the SQL database server,
+placing the data in the appropriate columns in the named table.&nbsp;
+Data typing must be user-configured, which means that if &quot;<span class="fixedwidth">Kevin</span>&quot; is placed in a column which is defined with a <em>numeric</em> datatype,
+then the table import will fail.&nbsp;
+If an import for a critical table (such as <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span>)
+does not succeed then the website will not become active.</li>
+</ul>
+
+<a name="LDAP"></a>
+<h4>LDAP</h4>
+<p>
+LDAP is supported by Interchange.&nbsp;
+This will be documented later.
+</p>
+<a name="MEMORY"></a>
+<h4>MEMORY</h4>
+<p>
+Every time Interchange starts, or the website is reconfigured, the
+&quot;<span class="fixedwidth">tablename.txt</span>&quot; file will be imported into memory, which is treated
+as the table.&nbsp;
+Otherwise, the database is not changed.&nbsp;
+<span class="fixedwidth">MEMORY</span> is the default database type if both the
+<span class="fixedwidth"><a href="#GDBM_File" title="&quot;GDBM File&quot; heading on this page">GDBM_File</a></span> and <span class="fixedwidth"><a href="#DB_File" title="&quot;DB File&quot; heading on this page">DB_File</a></span>
+Perl modules are not installed.
+</p>
+<p>
+You can request a <span class="fixedwidth">MEMORY</span> table type with the following:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Database&nbsp; tablename&nbsp;&nbsp; MEMORY&nbsp;&nbsp; 1
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Database_attributes"></a>
+<h2>Database attributes</h2>
+<p>
+There are certain functions, especially in SQL databases,
+that can be set with additional table attributes.
+</p>
+<a name="AUTO_NUMBER"></a>
+<h3>AUTO_NUMBER</h3>
+<p>
+This attribute will be used to initialise a autonumber counter file.&nbsp;
+Whenever a row is added to the table without a <a href="#KEY" title="&quot;KEY&quot; heading on this page">primary key</a> value,
+the sequence number contained in the file will be used and incremented.
+</p>
+<p>
+By default,
+the sequence number file will be named &quot;<span class="fixedwidth"><em>tablename</em>.autonumber</span>&quot;,
+where &quot;<span class="fixedwidth">tablename</span>&quot; is the name of the table.&nbsp;
+If the <span class="fixedwidth"><a href="#HIDE_AUTO_FILES" title="&quot;HIDE AUTO FILES&quot; heading on this page">HIDE_AUTO_FILES</a></span> attribute is set <em>true</em>
+then the file will be <em>hidden</em> by prefixing the filename with
+a dot (i.e. &quot;<span class="fixedwidth">.<em>tablename</em>.autonumber</span>&quot;).
+</p>
+<p>
+If the <span class="fixedwidth"><a href="#AUTO_NUMBER_FILE" title="&quot;AUTO NUMBER FILE&quot; heading on this page">AUTO_NUMBER_FILE</a></span> attribute is set then the autonumber
+file will be named as specified there.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_warning.gif" width="32" height="32" border="0" alt="Warning">
+</td>
+<td width="100%">
+<p class="title">Warning</p>
+<p>
+A primary key sequence number will not be generated if you use direct
+SQL to insert rows into the table.
+</p>
+<p style="margin-bottom: 0px">
+If you are using a <a href="#DBISQL" title="&quot;DBISQL&quot; heading on this page">DBI/SQL</a> database then you will probably find it
+preferable to use the <span class="fixedwidth"><a href="#AUTO_SEQUENCE" title="&quot;AUTO SEQUENCE&quot; heading on this page">AUTO_SEQUENCE</a></span> attribute
+as this will work with direct SQL as well as with the facilities provided
+by Interchange's
+<a href="http://interchange-rtfm.pullingshots.ca/icdocs/Interchange_Perl_objects.html#Database_access_methods" title="&quot;Database access methods&quot; heading on the &quot;Interchange Perl objects&quot; page">database access methods</a>.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="AUTO_NUMBER_FILE"></a>
+<h3>AUTO_NUMBER_FILE</h3>
+<p>
+You can use this attribute to either modify the name or location of the
+<span class="fixedwidth"><a href="#AUTO_NUMBER" title="&quot;AUTO NUMBER&quot; heading on this page">AUTO_NUMBER</a></span> file,
+or you can allow a single <span class="fixedwidth"><a href="#AUTO_NUMBER" title="&quot;AUTO NUMBER&quot; heading on this page">AUTO_NUMBER</a></span> file to be shared
+between multiple tables.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_availability.gif" width="32" height="32" border="0" alt="Availability">
+</td>
+<td width="100%">
+<p class="title">Availability</p>
+<p style="margin-bottom: 0px">
+This attribute was introduced in version 5.5.1,
+and is therefore not available for use with any earlier Interchange version.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="CONTINUE"></a>
+<h3>CONTINUE</h3>
+<p>
+For text import, the <span class="fixedwidth"><a href="#CONTINUE" title="&quot;CONTINUE&quot; heading on this page">CONTINUE</a></span> extended table import
+attribute allows additional control over the format of imported text.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+<span class="fixedwidth"><a href="#CONTINUE" title="&quot;CONTINUE&quot; heading on this page">CONTINUE</a></span> applies to all types except CSV.&nbsp;
+Do not use <span class="fixedwidth"><a href="#NOTES" title="&quot;NOTES&quot; heading on this page">NOTES</a></span> unless using type <span class="fixedwidth"><a href="#LINE" title="&quot;LINE&quot; heading on this page">LINE</a></span>.
+</p>
+</td>
+</tr>
+</table>
+
+<p>
+This can be set to one of <span class="fixedwidth"><a href="#NONE" title="&quot;NONE&quot; heading on this page">NONE</a></span>, <span class="fixedwidth"><a href="#UNIX" title="&quot;UNIX&quot; heading on this page">UNIX</a></span>,
+<span class="fixedwidth"><a href="#DITTO" title="&quot;DITTO&quot; heading on this page">DITTO</a></span>, <span class="fixedwidth"><a href="#LINE" title="&quot;LINE&quot; heading on this page">LINE</a></span> and <span class="fixedwidth"><a href="#NOTES" title="&quot;NOTES&quot; heading on this page">NOTES</a></span>,
+as listed below:
+</p>
+<a name="NONE"></a>
+<h4>NONE</h4>
+<p>
+The default (<span class="fixedwidth">NONE</span>) is to simply split the line/row/record,
+according to the preferred <a href="#Column_delimeters_in_text_files" title="&quot;Column delimeters in text files&quot; heading on this page">delimiter</a>,
+with no possible spanning of records.
+</p>
+<a name="UNIX"></a>
+<h4>UNIX</h4>
+<p>
+Setting <span class="fixedwidth">CONTINUE</span> to <span class="fixedwidth">UNIX</span> appends the next line to the
+current when it encounters a backslash character (<span class="fixedwidth">&#92;</span>) at the end of
+a line, just like many UNIX commands and shells.
+</p>
+<a name="DITTO"></a>
+<h4>DITTO</h4>
+<p>
+<span class="fixedwidth">DITTO</span> is invoked when the <span class="fixedwidth">key</span> column (the first column)
+is blank.&nbsp;
+It adds the contents of following columns to the one above,
+separated by a new line character.&nbsp;
+This allows additional text to be added to a field beyond the 255
+characters available with most spreadsheets and flat-file databases.
+</p>
+<p>
+Example <em>local</em> configuration:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Database&nbsp; tablename&nbsp; tablename.txt&nbsp;&nbsp; TAB<br>
+Database&nbsp; tablename&nbsp; CONTINUE&nbsp; DITTO
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The associated &quot;<span class="fixedwidth">tablename.asc</span>&quot; file is as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+code&nbsp; &nbsp;&nbsp; price&nbsp; &nbsp;&nbsp; description<br>
+00-0011&nbsp; 500000&nbsp; &nbsp; The Mona Lisa, one of the worlds great masterpieces.<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Now at a reduced price!
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The description for the <span class="fixedwidth">00-0011</span> product will contain the content
+of the <span class="fixedwidth">description</span> column on both lines, separated by a new line.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+The columns in the above example are lined up for readability.&nbsp;
+You should note that they would really be tab-separated in this case.
+</p>
+</td>
+</tr>
+</table>
+
+<p>
+This will work for multiple columns on the same line.&nbsp;
+If the column contains a non-empty value, it will be appended.
+</p>
+<a name="LINE"></a>
+<h4>LINE</h4>
+<p>
+<span class="fixedwidth">LINE</span> is a special setting so a multi-line column can be used.&nbsp;
+Normally, when using the <span class="fixedwidth">LINE</span> type,
+there is only data on one line separated by one blank line.&nbsp;
+When using <span class="fixedwidth">CONTINUE LINE</span>,
+there may be a number of columns which are each on a line,
+while the last one spans multiple lines up until the first blank line.
+</p>
+<p>
+Example <em>local</em> configuration:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Database&nbsp; tablename&nbsp; tablename.txt&nbsp; LINE<br>
+Database&nbsp; tablename&nbsp; CONTINUE&nbsp; &nbsp; &nbsp;&nbsp; LINE
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The associated &quot;<span class="fixedwidth">tablename.asc</span>&quot; file is as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+code<br>
+price<br>
+description<br>
+<br>
+00-0011<br>
+500000<br>
+The Mona Lisa, one of the worlds great masterpieces.<br>
+Now at a reduced price!<br>
+<br>
+00-0011a<br>
+1000<br>
+A special frame for the Mona Lisa.
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="NOTES"></a>
+<h4>NOTES</h4>
+<p>
+<span class="fixedwidth">NOTES</span> reads a Lotus Notes <em>structured text</em> file.&nbsp;
+The format is any number of fields, all except one of which must have a
+field name followed by a colon (<span class="fixedwidth">:</span>) and then the data.&nbsp;
+Whitespace after the colon is optional.
+</p>
+<p>
+Records are separated with a settable delimiting character which goes on
+a line by itself, much like a Perl &quot;here document&quot;.&nbsp;
+By default, the delimiter is a form feed character (<span class="fixedwidth">^L</span>).&nbsp;
+The final field begins at the first blank line and continues until the end
+of the record.&nbsp;
+This final field is named &quot;<span class="fixedwidth">notes_field</span>&quot;,
+unless set as described below.
+</p>
+<p>
+Interchange reads the field names from the first paragraph of the file.&nbsp;
+The key field should be first, followed by other fields in any order.&nbsp;
+If one (and only one) field name has whitespace then its name is used for
+the &quot;<span class="fixedwidth">notes_field</span>&quot;.&nbsp;
+Any characters after a space or tab are used as the record delimiter.&nbsp;
+If there are none, then the delimiter returns to the default form feed
+(<span class="fixedwidth">^L</span>) and the field name reverts to &quot;<span class="fixedwidth">notes_field</span>&quot;.&nbsp;
+The field in question will be discarded, but a second field with whitespace
+will cause an import error.&nbsp;
+Following records are then read by name, and only fields with data in them
+need be set.
+</p>
+<p>
+Only the &quot;<span class="fixedwidth">notes_field</span>&quot; may contain a new line.&nbsp;
+It is always the last field in the record, and begins at the first blank line.
+</p>
+<p>
+The following example sets the delimiter to a tilde (<span class="fixedwidth">~</span>) and renames
+the &quot;<span class="fixedwidth">notes_field</span>&quot; to &quot;<span class="fixedwidth">description</span>&quot;.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Database&nbsp; tablename&nbsp; tablename.txt&nbsp; LINE<br>
+Database&nbsp; tablename&nbsp; CONTINUE&nbsp; &nbsp; &nbsp;&nbsp; NOTES
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The associated &quot;<span class="fixedwidth">tablename.asc</span>&quot; file is as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+code<br>
+title<br>
+price<br>
+image<br>
+description ~<br>
+size<br>
+color<br>
+<br>
+title: Mona Lisa<br>
+price: 500000<br>
+code: 00-0011<br>
+image: 00-0011.jpg<br>
+<br>
+The Mona Lisa, one of the worlds great masterpieces.<br>
+Now at a reduced price!<br>
+~<br>
+title: The Art Store T-Shirt<br>
+code: 99-102<br>
+size: Medium, Large*, XL=Extra Large<br>
+color: Green, Blue, Red, White*, Black<br>
+price: 2000<br>
+<br>
+Extra large 1.00 extra.<br>
+~
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="DBISQL_2"></a>
+<h3>DBI/SQL</h3>
+<a name="ALTERNATE_DSN"></a>
+<h4>ALTERNATE_DSN</h4>
+<p>
+If the primary <span class="fixedwidth"><a href="#DSN" title="&quot;DSN&quot; heading on this page">DSN</a></span> is unavailable then try this alternate DSN,
+along with the <span class="fixedwidth"><a href="#ALTERNATE_USER" title="&quot;ALTERNATE USER&quot; heading on this page">ALTERNATE_USER</a></span>
+and <span class="fixedwidth"><a href="#ALTERNATE_PASS" title="&quot;ALTERNATE PASS&quot; heading on this page">ALTERNATE_PASS</a></span> values.
+</p>
+<a name="ALTERNATE_PASS"></a>
+<h4>ALTERNATE_PASS</h4>
+<p>
+Password to use with the <span class="fixedwidth"><a href="#ALTERNATE_DSN" title="&quot;ALTERNATE DSN&quot; heading on this page">ALTERNATE_DSN</a></span> .
+</p>
+<a name="ALTERNATE_USER"></a>
+<h4>ALTERNATE_USER</h4>
+<p>
+Username to use with the <span class="fixedwidth"><a href="#ALTERNATE_DSN" title="&quot;ALTERNATE DSN&quot; heading on this page">ALTERNATE_DSN</a></span> .
+</p>
+<a name="AUTO_SEQUENCE"></a>
+<h4>AUTO_SEQUENCE</h4>
+<p>
+Tells Interchange to use a SQL sequence to number new rows inserted into
+the table.
+</p>
+<p>
+If you need Interchange to create the table and the sequence,
+then you will need the following:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Database&nbsp; tablename&nbsp; tablename.txt&nbsp; dbi:mysql:rtfm_ic<br>
+Database&nbsp; tablename&nbsp; AUTO_SEQUENCE&nbsp; tablename_seq
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Then on MySQL, PostgreSQL or Oracle, Interchange will create an INTEGER
+key type and a sequence (called <span class="fixedwidth">AUTO_INCREMENT</span> in MySQL) to
+maintain the count.
+</p>
+<a name="AUTO_SEQUENCE_MAXVAL"></a>
+<h4>AUTO_SEQUENCE_MAXVAL</h4>
+<p>
+Sets the maximum value allowed in an <span class="fixedwidth"><a href="#AUTO_SEQUENCE" title="&quot;AUTO SEQUENCE&quot; heading on this page">AUTO_SEQUENCE</a></span>
+counter:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Database tablename AUTO_SEQUENCE_MAXVAL&nbsp; 1000000
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="AUTO_SEQUENCE_MINVAL"></a>
+<h4>AUTO_SEQUENCE_MINVAL</h4>
+<p>
+Sets the minimum value allowed in an <span class="fixedwidth"><a href="#AUTO_SEQUENCE" title="&quot;AUTO SEQUENCE&quot; heading on this page">AUTO_SEQUENCE</a></span>
+counter:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Database tablename AUTO_SEQUENCE_MINVAL&nbsp; 10
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="AUTO_SEQUENCE_START"></a>
+<h4>AUTO_SEQUENCE_START</h4>
+<p>
+Sets the starting value for an <span class="fixedwidth"><a href="#AUTO_SEQUENCE" title="&quot;AUTO SEQUENCE&quot; heading on this page">AUTO_SEQUENCE</a></span>
+counter:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Database tablename AUTO_SEQUENCE_START&nbsp; 1000
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="DSN"></a>
+<h4>DSN</h4>
+<p>
+A specification of the DBI driver and its data source.&nbsp;
+It is beyond the scope of this document to describe this in detail.
+</p>
+<p>
+Normally this is set as the type in the initial Database configuration line.&nbsp;
+For instance:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Database&nbsp; tablename&nbsp; tablename.txt&nbsp; dbi:mysql:rtfm_ic
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The following has the same effect:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">Database&nbsp; tablename&nbsp; tablename</span><span class="def_Number">.</span><span class="def_Syntax">txt&nbsp; </span>SQL<br>
+<span class="def_Syntax">Database&nbsp; tablename&nbsp; DSN&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>dbi<span class="def_Symbol">:</span>mysql<span class="def_Symbol">:</span><span class="def_Syntax">rtfm</span><span class="def_Symbol">_</span>ic
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Some other examples of <span class="fixedwidth">DSN</span> specs:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Database&nbsp; tablename&nbsp; DSN&nbsp; dbi:mysql:host=db.example.com;database=foobase<br>
+Database&nbsp; bar&nbsp; DSN&nbsp; dbi:Pg:dbname=barbase<br>
+Database&nbsp; baz&nbsp; DSN&nbsp; dbi:Oracle:host=db.example.com;sid=ORCL
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="COLUMN_DEF"></a>
+<h4>COLUMN_DEF</h4>
+<p>
+A comma-separated set of lines in the form <span class="fixedwidth">NAME=TYPE(N)</span>,
+where <span class="fixedwidth">NAME</span> is the name of the column, <span class="fixedwidth">TYPE</span> is the SQL
+datatype and <span class="fixedwidth">N</span> is the length (if required).&nbsp;
+Most Interchange columns should be a character type, along the lines of
+<span class="fixedwidth">VARCHAR(255)</span>.&nbsp;
+<span class="fixedwidth">CHAR(128)</span> this is the default if a datatype is not specified for a
+column.&nbsp;
+There can be as many <span class="fixedwidth">COLUM_DEF</span> specifiers as needed to define all
+of the columns.&nbsp;
+This is not a DBI parameter;&nbsp;
+It is specific to Interchange.
+</p>
+<a name="COMPOSITE_KEY"></a>
+<h4>COMPOSITE_KEY</h4>
+<p>
+If you are using a DBI table with composite keys,
+where two or more columns combine to make a unique identifier for a row,
+you must tell Interchange so that it can request, update and delete data
+correctly.&nbsp;
+For example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Database&nbsp; product_spec&nbsp; product_spec.txt&nbsp; dbi:mysql:rtfm_ic<br>
+Database&nbsp; product_spec&nbsp; COLUMN_DEF&nbsp; &nbsp; &nbsp; &nbsp; &quot;sku=varchar(32)&quot;<br>
+Database&nbsp; product_spec&nbsp; COLUMN_DEF&nbsp; &nbsp; &nbsp; &nbsp; &quot;feature=varchar(128)&quot;<br>
+Database&nbsp; product_spec&nbsp; COMPOSITE_KEY&nbsp; &nbsp;&nbsp; &quot;sku feature&quot;
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+If you don't specify a <span class="fixedwidth"><a href="#POSTCREATE" title="&quot;POSTCREATE&quot; heading on this page">POSTCREATE</a></span> or <span class="fixedwidth"><a href="#INDEX" title="&quot;INDEX&quot; heading on this page">INDEX</a></span>
+attribute for the table then Interchange will create a unique index,
+with all of the composite key elements,
+when it creates the table.
+</p>
+<a name="CREATE_SQL"></a>
+<h4>CREATE_SQL</h4>
+<p>
+You may specify the SQL that you want to use to create this table,
+rather than let Interchange work it out for you.
+</p>
+<p>
+For instance:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="sql_sqlWord def_Keyword">Database&nbsp; </span>tablename&nbsp; CREATE_SQL&nbsp; <span class="sql_sqlSymb def_Symbol">&lt;</span><span class="sql_sqlSymb def_Symbol">&lt;</span>EOS<br>
+&nbsp; &nbsp; <span class="sql_tsqlWord def_Keyword">CREATE </span><span class="sql_tsqlWord def_Keyword">TABLE </span><span class="sql_ObjectOutline def_Outlined def_Special">tablename <span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span></span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; code <span class="sql_tsqlWord def_Keyword">INTEGER </span><span class="sql_tsqlWord def_Keyword">NOT </span><span class="sql_tsqlWord def_Keyword">NULL </span><span class="sql_tsqlWord def_Keyword">DEFAULT </span><span class="sql_sqlString def_String">''</span><span class="sql_sqlSymb def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; foo <span class="sql_tsqlWord def_Keyword">VARCHAR</span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="def_NumberDec def_Number">100</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span> </span><span class="sql_tsqlWord def_Keyword">NOT </span><span class="sql_tsqlWord def_Keyword">NULL </span><span class="sql_tsqlWord def_Keyword">DEFAULT </span><span class="sql_sqlString def_String">''</span><span class="sql_sqlSymb def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; bar <span class="sql_tsqlWord def_Keyword">VARCHAR</span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="def_NumberDec def_Number">100</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span> </span><span class="sql_tsqlWord def_Keyword">NOT </span><span class="sql_tsqlWord def_Keyword">NULL </span><span class="sql_tsqlWord def_Keyword">DEFAULT </span><span class="sql_sqlString def_String">''</span><span class="sql_sqlSymb def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="sql_tsqlWord def_Keyword">PRIMARY </span><span class="sql_tsqlWord def_Keyword">KEY </span>tablename_code <span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span>code<span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="sql_sqlSymb def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="sql_tsqlWord def_Keyword">KEY </span>tablename_foo <span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span>foo<span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="sql_sqlSymb def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="sql_tsqlWord def_Keyword">KEY </span>tablename_bar <span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span>bar<span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><br>
+&nbsp; &nbsp; <span class="def_Symbol"><span class="def_PairEnd def_Special">)</span> </span>ENGINE<span class="sql_sqlSymb def_Symbol">=</span>MyISAM <span class="sql_tsqlWord def_Keyword">DEFAULT </span>CHARSET<span class="sql_sqlSymb def_Symbol">=</span>utf8<br>
+EOS
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="HAS_LIMIT"></a>
+<h4>HAS_LIMIT</h4>
+<p>
+Informs Interchange that the SQL database server in use has as the
+<span class="fixedwidth">LIMIT</span> extension to SQL to limit rows returned from queries.&nbsp;
+Should be set properly, by default, for MySQL, PostgreSQL and Oracle.
+</p>
+<a name="HAS_TRANSACTIONS"></a>
+<h4>HAS_TRANSACTIONS</h4>
+<p>
+Informs Interchange that the SQL database server in use has <span class="fixedwidth">COMMIT</span>
+and <span class="fixedwidth">ROLLBACK</span> capability for transactions.&nbsp;
+For PostgreSQL and Oracle this will default to <span class="fixedwidth">true</span>
+For MySQL and other databases you can specify this attribute when appropriate
+for the table type in use.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_warning.gif" width="32" height="32" border="0" alt="Warning">
+</td>
+<td width="100%">
+<p class="title">Warning</p>
+<p style="margin-bottom: 0px">
+If you're using MySQL then you must ensure that you select a table
+type that supports transactions
+(such as &quot;<span class="fixedwidth">InnoDB</span>&quot;).&nbsp;
+See the <span class="fixedwidth"><a href="#TABLE_TYPE" title="&quot;TABLE TYPE&quot; heading on this page">TABLE_TYPE</a></span> attribute.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="INDEX"></a>
+<h4>INDEX</h4>
+<p>
+<a href="#Tables_in_a_SQL_database" title="&quot;Tables in a SQL database&quot; heading on this page">See below</a>.
+</p>
+<a name="NUMERIC"></a>
+<h4>NUMERIC</h4>
+<p>
+This tells Interchange not to <em>quote</em> values for this column,
+which allows for <em>numeric</em> datatypes, such as <em>INTEGER</em>.&nbsp;
+This can be specified as a comma-separated list of column names for a table,
+in no particular order, or can be specified multiple times.
+</p>
+<a name="PASS"></a>
+<h4>PASS</h4>
+<p>
+The password used to log into the database server.&nbsp;
+This is the same as the <span class="fixedwidth">DBI_PASS</span> environment variable.&nbsp;
+If a password is not required for access to the server then you don't
+need to set the <span class="fixedwidth">PASS</span> attribute.&nbsp;
+Also see the <span class="fixedwidth"><a href="#USER" title="&quot;USER&quot; heading on this page">USER</a></span> attribute.
+</p>
+<a name="POSTCREATE"></a>
+<h4>POSTCREATE</h4>
+<p>
+You can use this attribute to specify one or more SQL statements that should
+be performed after Interchange creates a table.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Database&nbsp; tablename&nbsp; POSTCREATE&nbsp; &quot;CREATE INDEX foo_idx ON tablename(foo)&quot;<br>
+Database&nbsp; tablename&nbsp; POSTCREATE&nbsp; &quot;CREATE UNIQUE INDEX foo_bar_idx ON tablename(foo,bar)&quot;
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="PRECREATE"></a>
+<h4>PRECREATE</h4>
+<p>
+You can use this attribute to specify one or more SQL statements that should
+be performed before Interchange creates a table.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">Database&nbsp; tablename&nbsp; PRECREATE&nbsp; </span><span class="def_String">&quot;DROP TABLE tablename_backup&quot;</span><br>
+<span class="def_Syntax">Database&nbsp; tablename&nbsp; PRECREATE&nbsp; </span><span class="def_String">&quot;ALTER TABLE tablename RENAME TO tablename_backup&quot;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="TABLE_COMMENT"></a>
+<h4>TABLE_COMMENT</h4>
+<p>
+You can use this attribute to instruct Interchange to attach a short
+comment to the table it creates.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">Database&nbsp; tablename&nbsp; TABLE</span><span class="def_Symbol">_</span><span class="def_Syntax">COMMENT&nbsp; </span><span class="def_String">&quot;This comment will be attached to the table&quot;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_availability.gif" width="32" height="32" border="0" alt="Availability">
+</td>
+<td width="100%">
+<p class="title">Availability</p>
+<p style="margin-bottom: 0px">
+This attribute was introduced in version 5.5.0,
+and is therefore not available for use with any earlier Interchange version.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="TABLE_TYPE"></a>
+<h4>TABLE_TYPE</h4>
+<p>
+You can use this attribute to specify the type of table that Interchange
+should create.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+This attribute will be ignored if the target database server is not MySQL.
+</p>
+</td>
+</tr>
+</table>
+
+<p>
+Valid MySQL table types are as follows:
+</p>
+
+<ul>
+<li>MyISAM (MySQL default table type)</li>
+<li>MERGE</li>
+<li>ISAM</li>
+<li>HEAP</li>
+<li>InnoDB (Necessary if <span class="fixedwidth"><a href="#HAS_TRANSACTIONS" title="&quot;HAS TRANSACTIONS&quot; heading on this page">HAS_TRANSACTIONS</a></span> is in use)</li>
+<li>BerkeleyDB or BDB (Support for this table type was dropped from MySQL version 5.1)</li>
+</ul>
+
+<a name="USER"></a>
+<h4>USER</h4>
+<p>
+The user name used to log into the database server.&nbsp;
+This is the same as the <span class="fixedwidth">DBI_USER</span> environment variable.&nbsp;
+If a user name is not required for access to the server then you don't
+need to set the <span class="fixedwidth">USER</span> attribute.&nbsp;
+Also see the <span class="fixedwidth"><a href="#PASS" title="&quot;PASS&quot; heading on this page">PASS</a></span> attribute.
+</p>
+<a name="Miscellaneous_DBI_driver_attributes"></a>
+<h4>Miscellaneous DBI driver attributes</h4>
+<p>
+You can set miscellaneous DBI attributes by name.&nbsp;
+One attribute of particular interest is &quot;<span class="fixedwidth">ChopBlanks</span>&quot;,
+which should be set for DBI drivers (such as PostgreSQL) which,
+by default,
+return space-padded fixed-length character columns.&nbsp;
+For example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">Database&nbsp; tablename&nbsp; ChopBlanks&nbsp; </span><span class="def_Number">1
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The supported DBI driver attribute list,
+as of the latest Interchange 0.0.0 (development) version,
+is:
+</p>
+<!-- start of list --><table class="categorytoc" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="50%">
+<ul>
+<li>AutoCommit</li>
+<li>ChopBlanks</li>
+<li>CompatMode</li>
+<li>InactiveDestroy</li>
+<li>LongReadLen</li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li>LongTruncOk</li>
+<li>PrintError</li>
+<li>RaiseError</li>
+<li>Warn</li>
+</ul>
+</td>
+</tr>
+</table><!-- end of list -->
+
+<a name="DELIMITER"></a>
+<h3>DELIMITER</h3>
+<p>
+An Interchange delimiter type for ASCII data files
+can be either <span class="fixedwidth"><a href="#TAB" title="&quot;TAB&quot; heading on this page">TAB</a></span>, <span class="fixedwidth"><a href="#PIPE" title="&quot;PIPE&quot; heading on this page">PIPE</a></span> or <span class="fixedwidth"><a href="#CSV" title="&quot;CSV&quot; heading on this page">CSV</a></span>.&nbsp;
+The default for SQL databases is <span class="fixedwidth"><a href="#TAB" title="&quot;TAB&quot; heading on this page">TAB</a></span>.&nbsp;
+Use <span class="fixedwidth">DELIMITER</span> if another type will be used to import.&nbsp;
+This is not a DBI parameter;&nbsp;
+It is specific to Interchange.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">Database&nbsp; tablename&nbsp; tablename</span><span class="def_Number">.</span><span class="def_Syntax">txt&nbsp; </span>dbi<span class="def_Symbol">:</span>mysql<span class="def_Symbol">:</span><span class="def_Syntax">rtfm</span><span class="def_Symbol">_</span>ic<br>
+<span class="def_Syntax">Database&nbsp; tablename&nbsp; DELIMITER&nbsp; &nbsp; &nbsp; </span>CSV
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="EXCEL"></a>
+<h3>EXCEL</h3>
+<p>
+Microsoft Excel is a widely-used tool to maintain Interchange tables,
+for some reason,
+but has several problems with its standard tab-delimited export.&nbsp;
+Problems include enclosing fields containing commas in quotes,
+generating extra carriage returns embedded in records,
+and not including trailing blank fields.&nbsp;
+To avoid problems, use a text-qualifier of <span class="fixedwidth"><a href="#NONE" title="&quot;NONE&quot; heading on this page">NONE</a></span>.
+</p>
+<p>
+You can set the <span class="fixedwidth">EXCEL</span> attribute to <span class="fixedwidth">1</span> to avoid these problems
+on import, as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Database&nbsp; tablename&nbsp; EXCEL&nbsp; 1
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+This is normally used only with tab-delimited files.
+</p>
+<a name="HIDE_AUTO_FILES"></a>
+<h3>HIDE_AUTO_FILES</h3>
+<p>
+Normally, files with suffixes like
+&quot;<span class="fixedwidth">.autonumber</span>&quot;,
+&quot;<span class="fixedwidth">.numeric</span>&quot; and
+&quot;<span class="fixedwidth">.sql</span>&quot; are automatically created in the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DataDir.html" title="DataDir (config)">DataDir</a></span> directory.&nbsp;
+These files contain information that Interchange uses to keep track
+of certain table information.
+</p>
+<p>
+For instance,
+the &quot;<span class="fixedwidth">.sql</span>&quot; files are empty &quot;marker&quot; files that tell Interchange
+that a table should not be dropped and recreated when Interchange starts
+up.
+</p>
+<p>
+If the <span class="fixedwidth">HIDE_AUTO_FILES</span> attribute is set <em>true</em> for a table
+then these &quot;automatic&quot; files will be prefixed with a dot (&quot;<span class="fixedwidth">.</span>&quot;),
+thereby &quot;hiding&quot; the files and keeping the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DataDir.html" title="DataDir (config)">DataDir</a></span>
+directory relatively clean.
+</p>
+<p>
+You can,
+of course,
+set a default <span class="fixedwidth">HIDE_AUTO_FILES</span> value for all tables by using
+the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DatabaseDefault.html" title="DatabaseDefault (config)">DatabaseDefault</a></span> directive,
+or may set this for only specific tables by using the
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Database.html" title="Database (config)">Database</a></span> directive.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_warning.gif" width="32" height="32" border="0" alt="Warning">
+</td>
+<td width="100%">
+<p class="title">Warning</p>
+<p>
+If you set <span class="fixedwidth">HIDE_AUTO_FILES</span> attribute <em>true</em>,
+where it was previously either <em>false</em> or unspecified,
+then be sure to rename all of the appropriate <em>automatic</em>
+files,
+listed above.&nbsp;
+If <span class="fixedwidth">HIDE_AUTO_FILES</span> is toggled <em>true</em> then the
+<em>automatic</em> files must be renamed so that they are prefixed
+with a dot (&quot;<span class="fixedwidth">.</span>&quot;).&nbsp;
+Similarly, if <span class="fixedwidth">HIDE_AUTO_FILES</span> is toggled <em>false</em>
+then the dot prefix must be removed from the appropriate
+<em>automatic</em> files.
+</p>
+<p style="margin-bottom: 0px">
+If you fail,
+for instance,
+to rename the &quot;<span class="fixedwidth">.sql</span>&quot; file(s) then you may find that Interchange
+will drop and recreate your table(s), and possibly import default data
+from the matching &quot;<span class="fixedwidth">.txt</span>&quot; file.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="HIDE_FIELD"></a>
+<h3>HIDE_FIELD</h3>
+<p>
+Normally, Interchange will return all rows that match the search specification.&nbsp;
+The <span class="fixedwidth">HIDE_FIELD</span> attribute will prevent rows from being returned if
+they have a <em>true</em> (non-zero and non-blank) value in the named column.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Database&nbsp; tablename&nbsp; HIDE_FIELD&nbsp; inactive
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_warning.gif" width="32" height="32" border="0" alt="Warning">
+</td>
+<td width="100%">
+<p class="title">Warning</p>
+<p style="margin-bottom: 0px">
+Results from direct SQL queries, using tags such as <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/query.html" title="query (tags)">query</a>]</span>,
+will be unaffected by this attribute.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="IMPORT_ONCE"></a>
+<h3>IMPORT_ONCE</h3>
+<p>
+The <span class="fixedwidth">IMPORT_ONCE</span> attribute tells Interchange not to re-import
+the table's data from the ASCII data file every time the file changes.&nbsp;
+Normally, Interchange does a comparison of the DBM-based table file's
+modification time with the ASCII data file every time it is accessed.&nbsp;
+If the ASCII source data file is newer it will re-import the file.
+</p>
+<p>
+<span class="fixedwidth">IMPORT_ONCE</span> instructs Interchange to only to import data
+when Interchange is (re)restarted or the website is reconfigured.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Database&nbsp; tablename&nbsp; tablename.txt&nbsp; TAB<br>
+Database&nbsp; tablename&nbsp; IMPORT_ONCE&nbsp; &nbsp; 1
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+SQL databases don't normally need this.&nbsp;
+They will only be imported once in normal operation.&nbsp;
+Also see <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/NoImport.html" title="NoImport (config)">NoImport</a></span> and <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/NoImportExternal.html" title="NoImportExternal (config)">NoImportExternal</a></span>
+<em>local</em> configuration directives for a way to guarantee that the table
+will never be imported.
+</p>
+<p>
+<span class="fixedwidth">IMPORT_ONCE</span> is always in effect for <span class="fixedwidth"><a href="#MEMORY" title="&quot;MEMORY&quot; heading on this page">MEMORY</a></span> tables.&nbsp;
+A website reconfiguration, or Interchange restart,
+is required to force an import.
+</p>
+<a name="INDEX_2"></a>
+<h3>INDEX</h3>
+<a name="DBM_files"></a>
+<h4>DBM files</h4>
+<p>
+Interchange will automatically build index files for a fast binary search
+of an individual column.&nbsp;
+This type of search is useful for looking up the author of a book based
+upon the beginning of their last name, a book title based on its beginning
+or other similar situations.
+</p>
+<p>
+Such a search requires a dictionary ordered index with the column to be
+searched contained in the first field and the table key
+(product code or whatever) in the second field.&nbsp;
+If the <span class="fixedwidth">INDEX</span> field attribute is specified then Interchange will
+build the index upon database import:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Database&nbsp; tablename&nbsp; tablename.txt&nbsp; TAB<br>
+Database&nbsp; tablename&nbsp; INDEX&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; title
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+If the &quot;<span class="fixedwidth">title</span>&quot; field is the fourth column in the
+&quot;<span class="fixedwidth">tablename</span>&quot; table,
+then a file called &quot;<span class="fixedwidth">tablename.txt.4</span>&quot; (or &quot;<span class="fixedwidth">.tablename.txt.4</span>&quot; if the <span class="fixedwidth"><a href="#HIDE_AUTO_FILES" title="&quot;HIDE AUTO FILES&quot; heading on this page">HIDE_AUTO_FILES</a></span>
+attribute is set <em>true</em>)
+will be built
+containing two tab-separated fields.&nbsp;
+For example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+American Gothic&nbsp;&nbsp; 19-202<br>
+Mona Lisa&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 00-0011<br>
+Sunflowers&nbsp; &nbsp; &nbsp; &nbsp; 00-342<br>
+The Starry Night&nbsp; 00-343
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Options can be appended to the column name, after a colon character
+(<span class="fixedwidth">:</span>).&nbsp;
+The most useful option is &quot;<span class="fixedwidth">f</span>&quot;, which does a case-insensitive sort.&nbsp;
+The &quot;<span class="fixedwidth">mv_dict_fold</span>&quot; option must be added to any search, in this case.
+</p>
+<p>
+Another option is &quot;<span class="fixedwidth">c</span>&quot;, which stands for &quot;comma index&quot;.&nbsp;
+Use this option to index on comma-separated sub-fields contained within
+a column.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Database&nbsp; tablename&nbsp; tablename.txt&nbsp; TAB<br>
+Database&nbsp; tablename&nbsp; INDEX&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; category:c
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+This can get slow for larger tables and columns.&nbsp;
+Interchange will split the field on a comma (stripping surrounding whitespace)
+and make index entries for each one.&nbsp;
+This allows multiple categories in one column while retaining the fast category
+search mechanism.&nbsp;
+It might also be useful for a <em>keywords</em> column.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+There is currently no facility to create <em>unique</em> indices on
+columns in non-SQL tables.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="Tables_in_a_SQL_database"></a>
+<h4>Tables in a SQL database</h4>
+<p>
+If you are using a <a href="#DBISQL" title="&quot;DBISQL&quot; heading on this page">DBI/SQL-based</a> database server for your table
+then indexing will be handled by your database server.
+</p>
+<p>
+All you need to do is define which columns you want to index and Interchange
+will send the appropriate &quot;<span class="fixedwidth">CREATE INDEX</span>&quot; SQL to the database
+server after it has created the table.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Database&nbsp; tablename&nbsp; tablename.txt&nbsp; dbi:mysql:rtfm_ic<br>
+Database&nbsp; tablename&nbsp; INDEX&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; category<br>
+Database&nbsp; tablename&nbsp; INDEX&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;UNIQUE ean&quot;
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+In the above example,
+Interchange will send &quot;<span class="fixedwidth">CREATE UNIQUE INDEX</span>&quot; SQL to the database,
+instead of the default &quot;<span class="fixedwidth">CREATE INDEX</span>&quot; SQL,
+to create a <em>unique</em> index for the &quot;<span class="fixedwidth">ean</span>&quot; column.&nbsp;
+The &quot;<span class="fixedwidth">category</span>&quot; column will get a default
+(non-unique) index.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="KEY"></a>
+<h3>KEY</h3>
+<p>
+By default, the primary key column is expected to be named &quot;<span class="fixedwidth">code</span>&quot;.&nbsp;
+If a different column name is required then the <span class="fixedwidth">KEY</span> attribute can
+be used to specify the column to use.&nbsp;
+Don't use this unless you are prepared to alter all searches,
+imports and exports accordingly.&nbsp;
+It is best to just accept the default and make the first column the key for
+any Interchange table.&nbsp;
+If you are creating your own tables, rather than modifying the
+<em>Standard</em> ecommerce demo, then you can do whatever you like, of course.
+</p>
+<a name="LARGE"></a>
+<h3>LARGE</h3>
+<p>
+Interchange tables containing many rows can result in a noticeable slowdown
+when displayed by the Interchange Admin UI.
+</p>
+<p>
+You can set the <span class="fixedwidth">LARGE</span> attribute to <span class="fixedwidth">1</span> to avoid this problem,
+as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Database transactions LARGE 1
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+In this case the Interchange Admin UI supplies only input boxes to search
+rows in the database, instead of selecting all of the rows from the table,
+sorting them and then creating more lists.
+</p>
+<a name="MEMORY_2"></a>
+<h3>MEMORY</h3>
+<p>
+Interchange's memory-based tables are the fastest possible way to organise
+and store frequently used data.&nbsp;
+To force a database to be built in memory instead of DBM or SQL etc.,
+use the <span class="fixedwidth">MEMORY</span> attribute:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Database&nbsp; country&nbsp; country.asc&nbsp; TAB<br>
+Database&nbsp; country&nbsp; MEMORY&nbsp; &nbsp; &nbsp;&nbsp; 1
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Obviously, large tables will use a great deal of memory,
+and the data will need to be re-imported from the ASCII source file every time
+Interchange is (re)started or the website is reconfigured.&nbsp;
+The big advantage of using <span class="fixedwidth">MEMORY</span> is that the table remains open at
+all times and does not need to be reinitialised upon every connect.&nbsp;
+Use it for smaller tables that will be frequently accessed.
+</p>
+<p>
+In-memory tables are read only.&nbsp;
+The <span class="fixedwidth">MEMORY</span> attribute forces <span class="fixedwidth"><a href="#IMPORT_ONCE" title="&quot;IMPORT ONCE&quot; heading on this page">IMPORT_ONCE</a></span>.
+</p>
+<p>
+Also see the <span class="fixedwidth"><a href="#MIRROR" title="&quot;MIRROR&quot; heading on this page">MIRROR</a></span> attribute.
+</p>
+<a name="MIRROR"></a>
+<h3>MIRROR</h3>
+<p>
+If you are using a <span class="fixedwidth"><a href="#MEMORY" title="&quot;MEMORY&quot; heading on this page">MEMORY</a></span> table then you might like to
+define two tables at once, as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Database&nbsp; country_memory&nbsp; country_memory.txt&nbsp; TAB<br>
+Database&nbsp; country_memory&nbsp; MIRROR&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; country<br>
+Database&nbsp; country_memory&nbsp; MEMORY&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+In the above example, the &quot;<span class="fixedwidth">country_memory</span>&quot; table could be used
+for quick in-memory data access, and the &quot;<span class="fixedwidth">country</span>&quot; table could
+be used for updates.&nbsp;
+Updates wouldn't be reflected in the in-memory side of the mirror
+until either the website is reconfigured or Interchange is restarted.
+</p>
+<a name="NAME"></a>
+<h3>NAME</h3>
+<p>
+A space-separated field of column names for a table.&nbsp;
+This is normally not used;&nbsp;
+Interchange should resolve the column names properly upon query,
+Set this if a website throws an error along the lines of
+&quot;<span class="fixedwidth">dbi: can't find field names</span>&quot;.&nbsp;
+The first column should be named &quot;<span class="fixedwidth">code</span>&quot;,
+but that name can be overridden using the <span class="fixedwidth"><a href="#KEY" title="&quot;KEY&quot; heading on this page">KEY</a></span> setting.&nbsp;
+This is not a DBI parameter;&nbsp;
+It is specific to Interchange.&nbsp;
+If this specifier is used then all columns must be listed,
+in order of their position in the table.
+</p>
+<a name="NO_ASCII_INDEX"></a>
+<h3>NO_ASCII_INDEX</h3>
+<p>
+See the <span class="fixedwidth"><a href="#INDEX" title="&quot;INDEX&quot; heading on this page">INDEX</a></span> attribute will create an ASCII index file,
+as described in the section, above.
+</p>
+<p>
+ASCII index files are not useful when using SQL database servers,
+so this attribute can be used to prevent Interchange from creating them.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Database&nbsp; tablename&nbsp; NO_ASCII_INDEX&nbsp; 1
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+For more information, type &quot;<span class="fixedwidth">perldoc DBI</span>&quot; at a shell prompt.
+</p>
+<a name="NO_SEARCH"></a>
+<h3>NO_SEARCH</h3>
+<p>
+Normally, Interchange will allow you to search any table.&nbsp;
+The <span class="fixedwidth">NO_SEARCH</span> attribute indicates that the table should not be
+searchable by default.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Database&nbsp; userdb&nbsp; NO_SEARCH&nbsp; 1
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_warning.gif" width="32" height="32" border="0" alt="Warning">
+</td>
+<td width="100%">
+<p class="title">Warning</p>
+<p style="margin-bottom: 0px">
+Results from direct SQL queries, using tags such as <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/query.html" title="query (tags)">query</a>]</span>,
+will be unaffected by this attribute.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="REAL_NAME"></a>
+<h3>REAL_NAME</h3>
+<p>
+Sometimes it may be convenient to have a table named with a consistent
+value in Interchange, despite its name in the underlying database server.&nbsp;
+For instance, two divisions of a company may share orders but have different
+<em>products</em> tables.&nbsp;
+You can tell Interchange to name the table &quot;<span class="fixedwidth">products</span>&quot; for its
+purposes, but use the &quot;<span class="fixedwidth">real_products</span>&quot; table for SQL statements:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Database&nbsp; products&nbsp; REAL_NAME&nbsp; real_products
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Of course if you have SQL queries that are passed verbatim to Interchange
+(when using the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/query.html" title="query (tags)">query</a></span> tag, for instance) you must use
+the <span class="fixedwidth">REAL_NAME</span> in those.
+</p>
+<a name="UPPERCASE"></a>
+<h3>UPPERCASE</h3>
+<p>
+Tells Interchange to force column names to UPPER CASE when using
+the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-data.html" title="PREFIX-data (tags)">item-data</a>]</span> and
+<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-field.html" title="PREFIX-field (tags)">item-field</a>]</span> etc. This is typically used for Oracle, and some other SQL implementations.&nbsp;
+It is not necessary when using MySQL or PostgreSQL.
+</p>
+<a name="WRITE_CONTROL"></a>
+<h3>WRITE_CONTROL</h3>
+<p>
+Interchange tables can be written in the normal course of events,
+either using the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/import.html" title="import (tags)">import</a>]</span> tag, or with a tag such as
+<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/data.html" title="data (tags)">data</a> table=table column=column key=key value=&quot;new value&quot;]</span>.&nbsp;
+To control writing of a global table,
+or to restrict writes to a certain website within a series of
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SubCatalog.html" title="SubCatalog (config)">SubCatalogs</a></span>,
+or make one read only, see the following:
+</p>
+<p>
+To enable write control:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Database&nbsp; tablename&nbsp; WRITE_CONTROL&nbsp; 1
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Once this is done, to make a table read-only, which won't allow writing
+even if <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/tag.html" class="nopage" title="tag (tags)">tag</a> flag write]tablename&#91;/tag]</span> is specified:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">Database&nbsp; tablename&nbsp; READ</span><span class="def_Symbol">_</span><span class="def_Syntax">ONLY&nbsp; </span><span class="def_Number">1
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+To have control with <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/tag.html" class="nopage" title="tag (tags)">tag</a> flag write]tablename&#91;/tag]</span>:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">Database&nbsp; tablename&nbsp; WRITE</span><span class="def_Symbol">_</span><span class="def_Syntax">TAGGED&nbsp; </span><span class="def_Number">1
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+To limit write access to certain websites, set:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">Database&nbsp; tablename&nbsp; WRITE</span><span class="def_Symbol">_</span><span class="def_Syntax">CATALOG&nbsp; rtfm</span><span class="def_Symbol">_</span><span class="def_Syntax">ic</span><span class="def_Symbol">=</span><span class="def_Number">0</span><span class="def_Symbol">, </span><span class="def_Syntax">cursor</span><span class="def_Symbol">=</span><span class="def_Number">1
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+In the above example, the &quot;<span class="fixedwidth">rtfm_ic</span>&quot; website will not be allowed to
+update the &quot;<span class="fixedwidth">tablename</span>&quot; table, while &quot;<span class="fixedwidth">cursor</span>&quot; website will
+if <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/tag.html" class="nopage" title="tag (tags)">tag</a> flag write]tablename&#91;/tag]</span> is enabled.&nbsp;
+If a table is to always be writable, without having to use
+<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/tag.html" class="nopage" title="tag (tags)">tag</a> flag write]...&#91;/tag]</span>, then define the following:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">Database&nbsp; tablename&nbsp; WRITE</span><span class="def_Symbol">_</span><span class="def_Syntax">ALWAYS&nbsp; </span><span class="def_Number">1
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The default behaviour of <span class="fixedwidth"><a href="#DBISQL" title="&quot;DBISQL&quot; heading on this page">SQL</a></span> tables is equivalent to
+<span class="fixedwidth">WRITE_ALWAYS</span>,
+while the default for <span class="fixedwidth"><a href="#GDBM_File" title="&quot;GDBM File&quot; heading on this page">GDBM_File</a></span>,
+<span class="fixedwidth"><a href="#DB_File" title="&quot;DB File&quot; heading on this page">DB_File</a></span> and <span class="fixedwidth"><a href="#MEMORY" title="&quot;MEMORY&quot; heading on this page">MEMORY</a></span> tables is equivalent to:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Database&nbsp; tablename&nbsp; WRITE_CONTROL 1<br>
+Database&nbsp; tablename&nbsp; WRITE_TAGGED&nbsp; 1
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Examples"></a>
+<h2>Examples</h2>
+<p>
+Here is an example of a DBI database table set up on a MySQL server.&nbsp;
+This example sets up a few columns,
+a couple of indexes and some comment text for the table.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Database&nbsp; products&nbsp; products.txt&nbsp;&nbsp; dbi:mysql:rtfm_ic<br>
+Database&nbsp; products&nbsp; USER&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; interchange<br>
+Database&nbsp; products&nbsp; PASS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; secret<br>
+Database&nbsp; products&nbsp; COLUMN_DEF&nbsp; &nbsp;&nbsp; &quot;code=VARCHAR(20) NOT NULL PRIMARY KEY&quot;<br>
+Database&nbsp; products&nbsp; COLUMN_DEF&nbsp; &nbsp;&nbsp; &quot;price=DECIMAL(12,2) DEFAULT '0.00' NOT NULL&quot;<br>
+Database&nbsp; products&nbsp; COLUMN_DEF&nbsp; &nbsp;&nbsp; &quot;discount=DECIMAL(12,2) DEFAULT '0.00' NOT NULL&quot;<br>
+Database&nbsp; products&nbsp; COLUMN_DEF&nbsp; &nbsp;&nbsp; &quot;author=VARCHAR(50) DEFAULT '' NOT NULL&quot;<br>
+Database&nbsp; products&nbsp; COLUMN_DEF&nbsp; &nbsp;&nbsp; &quot;title=VARCHAR(255) DEFAULT '' NOT NULL&quot;<br>
+Database&nbsp; products&nbsp; COLUMN_DEF&nbsp; &nbsp;&nbsp; &quot;nontaxable=CHAR(1) DEFAULT 'N' NOT NULL&quot;<br>
+Database&nbsp; products&nbsp; NUMERIC&nbsp; &nbsp; &nbsp; &nbsp; price<br>
+Database&nbsp; products&nbsp; NUMERIC&nbsp; &nbsp; &nbsp; &nbsp; discount<br>
+Database&nbsp; products&nbsp; INDEX&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; author<br>
+Database&nbsp; products&nbsp; INDEX&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; title<br>
+Database&nbsp; products&nbsp; TABLE_COMMENT&nbsp; &quot;Products table&quot;
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+MySQL and the <span class="fixedwidth">DBI</span> and <span class="fixedwidth">DBD::mysql</span> Perl modules must be
+completely installed and tested, and the &quot;<span class="fixedwidth">rtfm_ic</span>&quot; database
+must be available to the &quot;<span class="fixedwidth">interchange</span>&quot; user for this to work.
+</p>
+<p>
+To change to ODBC, the only changes required are most likely to be:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+Database&nbsp; products&nbsp; DSN&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; dbi:ODBC:TCP/IP localhost 1313<br>
+Database&nbsp; products&nbsp; ChopBlanks&nbsp; 1
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The <span class="fixedwidth">DSN</span> setting is specific to a ODBC setup.&nbsp;
+The <span class="fixedwidth">ChopBlanks</span> DBI attribute takes care of the space-padding
+issues in <em>Solid</em>,
+and some other databases,
+and is not specific to ODBC.&nbsp;
+Once again <span class="fixedwidth">DBI</span>, <span class="fixedwidth">DBD::ODBC</span> and the appropriate ODBC driver
+must be installed and tested before you an expect Interchange to connect to
+a database server via an ODBC link.
+</p>
+<a name="The_products_tables"></a>
+<h2>The products table(s)</h2>
+<p>
+In an ecommerce environment, each product being sold should be given a
+product code, usually referred to as an SKU.&nbsp;
+A SKU (Stock Unit) is a short code that uniquely identifies a product.&nbsp;
+The text file associated with each of the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span>
+table(s) is an ASCII-delimited list of all the product codes,
+along with an arbitrary number of columns, which must contain at least the
+<span class="fixedwidth">description</span> and <span class="fixedwidth">price</span> (as named using the
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/PriceField.html" title="PriceField (config)">PriceField</a></span> and <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DescriptionField.html" title="DescriptionField (config)">DescriptionField</a></span>
+<em>local</em> configuration directives).&nbsp;
+Any additional data can be placed in any arbitrary column.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+Column names may be case-sensitive,
+depending upon the underlying database type.
+</p>
+</td>
+</tr>
+</table>
+
+<p>
+The product code, or SKU, must be the first column in the line,
+and must be unique.&nbsp;
+Product codes must only contain <span class="fixedwidth">A-Z</span>, <span class="fixedwidth">a-z</span> and
+<span class="fixedwidth">0-9</span>, along with hyphen (<span class="fixedwidth">-</span>), underscore (<span class="fixedwidth">_</span>),
+hash (<span class="fixedwidth">#</span>), slash (<span class="fixedwidth">/</span>) and period (<span class="fixedwidth">.</span>) characters.&nbsp;
+Note that slash (<span class="fixedwidth">/</span>) will interfere with on-the-fly page references,
+so it's best to avoid using that character in product codes.
+</p>
+<p>
+Columns should be separated by one of the defined delimiting schemes
+(<span class="fixedwidth"><a href="#TAB" title="&quot;TAB&quot; heading on this page">TAB</a></span>, <span class="fixedwidth"><a href="#PIPE" title="&quot;PIPE&quot; heading on this page">PIPE</a></span> or <span class="fixedwidth"><a href="#CSV" title="&quot;CSV&quot; heading on this page">CSV</a></span>),
+and are case-sensitive in some cases.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_warning.gif" width="32" height="32" border="0" alt="Warning">
+</td>
+<td width="100%">
+<p class="title">Warning</p>
+<p style="margin-bottom: 0px">
+Column names must be on the first line of the ASCII text file.&nbsp;
+These names must exactly match the column names used by any
+<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-field.html" title="PREFIX-field (tags)">item-field</a>]</span> tags in your pages,
+otherwise Interchange will not be able to access them properly.&nbsp;
+Column names must only contain <span class="fixedwidth">A-Z</span>, <span class="fixedwidth">a-z</span>,
+<span class="fixedwidth">0-9</span> and underscore (<span class="fixedwidth">_</span>) characters.
+</p>
+</td>
+</tr>
+</table>
+
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_warning.gif" width="32" height="32" border="0" alt="Warning">
+</td>
+<td width="100%">
+<p class="title">Warning</p>
+<p style="margin-bottom: 0px">
+Some SQL databases have reserved words which cannot be used as column names.&nbsp;
+Interchange's other (non-SQL database) table types do not have this restriction.
+</p>
+</td>
+</tr>
+</table>
+
+<p>
+More than one table may be used as a <em>products database</em>.&nbsp;
+If the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span> <em>local</em> configuration directive
+is set to a space-separated list of valid Interchange table identifiers,
+then those tables will be searched (in the order specified) for any products
+to be displayed or ordered, as well as for product information accessed via
+tags such as <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/price.html" title="price (tags)">price</a>]</span> and
+<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Looping_tags_and_sub-tags.html" title="Category - looping tags and sub-tags">PREFIX-*</a>]</span> etc.
+</p>
+<p>
+The <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span> table(s) don't have to be used
+for products.&nbsp;
+They could be used for anything.&nbsp;
+In a CMS (content management system),
+the table(s) could be used to store page text,
+or any other information you'd like to access and display via
+the <em>flypage</em> mechanism.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p>
+If you're not using Interchange to handle products
+(this RTFM website is powered by Interchange and doesn't handle products),
+then it's best to use the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> directive
+(introduced with Interchange 5.4.0) instead.
+</p>
+<p style="margin-bottom: 0px">
+The <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span> and <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span>
+directives are aliases of one another,
+and therefore do the same job.&nbsp;
+Using one directive or the other,
+depending upon the website type,
+helps keep your &quot;<span class="fixedwidth">catalog.cfg</span>&quot; configuration looking clean and
+fit for purpose.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="Global_tables"></a>
+<h2>Global tables</h2>
+<p>
+If a table is to be available to all websites on the Interchange server,
+then it may be defined in the <em>global</em> (<span class="fixedwidth">interchange.cfg</span>)
+configuration.&nbsp;
+Any website running under that Interchange instance will be able to use
+any global tables.&nbsp;
+Global tables will be writable by any website unless
+<span class="fixedwidth"><a href="#WRITE_CONTROL" title="&quot;WRITE CONTROL&quot; heading on this page">WRITE_CONTROL</a></span> is used.
+</div>
+
+<!-- start of modification notice -->
+<div class="wikitext">
+    <table class="pageinfo" cellpadding="0" cellspacing="0">
+	<tr>
+	    <td>
+Category:&nbsp; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_database.html">Interchange database</a>
+	    </td>
+	</tr>
+
+
+	<tr>
+	    <td>
+		
+		Last modified by: <a href="http://interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin">Kevin Walsh</a><br>
+		Modification date: Wednesday 12 March 2008 at 7:32 PM (EDT)
+	    </td>
+	</tr>
+    </table>
+</div>
+<!-- end of modification notice -->
+
+
+
+<!-- end page: wiki/display (Database_reference_guide) -->
+
+
+
+<!-- end of page text -->
+	    </td>
+
+	</tr>
+    </table>
+<!-- START VAR: FOOTER -->
+
+<table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+	<td>
+	    <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/donations.html">Donations</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	</td>
+
+    </tr>
+</table>
+
+<!-- END VAR: FOOTER -->
+
+<!-- START VAR: COPYRIGHT -->
+
+
+    <div class="copyright">
+	Copyright &copy; 2001-2020
+	<a href="http://cursor.biz/index.html">Cursor Software Limited</a>.&nbsp;
+	All Rights Reserved.
+    </div>
+
+<!-- END VAR: COPYRIGHT -->
+
+</body>
+</html>

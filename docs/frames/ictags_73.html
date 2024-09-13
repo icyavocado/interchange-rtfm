@@ -1,0 +1,231 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: import</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_72.html">Previous Topic</A> | <A HREF="ictags_74.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.39. import</H2>
+<H3><A NAME="Summary">4.39.1. Summary</A></H3>
+<P>Parameters: <B>table type</B></P>
+<P>Positional parameters in same order.</P>
+<P><B>The attribute hash reference is passed</B> after the parameters but before the container text argument. <B>This may mean that there are parameters not shown here.</B></P>
+<P>Interpolates <B>container text</B> by default.</P>
+<P>This is a container tag, i.e. [import] FOO [/import]. Nesting: NO</P>
+<P>Invalidates cache: <B>YES</B></P>
+<P>Called Routine:</P>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+    $Tag-&gt;import(
+        {
+         table =&gt; VALUE,
+         type =&gt; VALUE,
+        },
+        BODY
+    )
+
+ OR
+
+    $Tag-&gt;import($table, $type, $ATTRHASH, $BODY);
+</PRE>
+<P>Attribute aliases</P>
+<PRE>
+            base ==&gt; table
+            database ==&gt; table
+    [<B>import</B> table type <I>other_named_attributes</I>]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_73.html#import_table">base</A>
+</TD>
+<TD VALIGN='Top'>
+Alias for table
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_73.html#import_table">database</A>
+</TD>
+<TD VALIGN='Top'>
+Alias for table
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_73.html#import_table">table</A>
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_73.html#import_type">type</A>
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_interpolate">interpolate</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_reparse">reparse</A>
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>YES</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Container tag
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Has Subtags
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Nests
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+    [import table type]
+---
+    TODO: (tag result)
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+   $Tag-&gt;import(  { table =&gt; VALUE_table
+                     type =&gt; VALUE_type
+}, $body  );
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;import(table,type, $attribute_hash_reference, $body);
+</PRE>
+<H3><A NAME="Description">4.39.2. Description</A></H3>
+<P>Named attributes:</P>
+<PRE>
+    [import table=table_name
+            type=(TAB|PIPE|CSV|%%|LINE)
+            continue=(NOTES|UNIX|DITTO)
+            separator=c]
+</PRE>
+<P>Import one or more records into a database. The <TT>type</TT> is any of the valid Interchange delimiter types, with the default being defined by the setting of the database <I>DELIMITER</I>. The table must already be a defined Interchange database table; it cannot be created on the fly. (If you need that, it is time to use SQL.)</P>
+<P>The <TT>type</TT> of <TT>LINE</TT> and <TT>continue</TT> setting of <TT>NOTES</TT> is particularly useful, for it allows you to name your fields and not have to remember the order in which they appear in the database. The following two imports are identical in effect:</P>
+<PRE>
+    [import table=orders]
+    code: [value mv_order_number]
+    shipping_mode: [shipping-description]
+    status: pending
+    [/import]
+
+    [import table=orders]
+    shipping_mode: [shipping-description]
+    status: pending
+    code: [value mv_order_number]
+    [/import]
+</PRE>
+<P>The <TT>code</TT> or key must always be present, and is always named <TT>code</TT>.</P>
+<P>If you do not use <TT>NOTES</TT> mode, you must import the fields in the same order as they appear in the ASCII source file.</P>
+<P>The <TT>[import ....] TEXT [/import]</TT> region may contain multiple records. If using <TT>NOTES</TT> mode, you must use a separator, which by default is a form-feed character (^L).</P>
+<H4><A NAME="import_table"> </A>4.39.2.1. <A NAME="import_table">table</A></H4>
+<H4><A NAME="import_type"> </A>4.39.2.2. <A NAME="import_type">type</A></H4>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_72.html">Previous Topic</A> | <A HREF="ictags_74.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

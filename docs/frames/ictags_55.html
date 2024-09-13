@@ -1,0 +1,218 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: discount</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_54.html">Previous Topic</A> | <A HREF="ictags_56.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.21. discount</H2>
+<H3><A NAME="Summary">4.21.1. Summary</A></H3>
+<P>Parameters: <B>code</B></P>
+<P>Positional parameters in same order.</P>
+<P>Pass attribute hash as last to subroutine: <B>no</B></P>
+<P>Must pass named parameter interpolate=1 to cause interpolation.</P>
+<P>This is a container tag, i.e. [discount] FOO [/discount]. Nesting: NO</P>
+<P>Invalidates cache: <B>YES</B></P>
+<P>Called Routine:</P>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+    $Tag-&gt;discount(
+        {
+         code =&gt; VALUE,
+        },
+        BODY
+    )
+
+ OR
+
+    $Tag-&gt;discount($code, $BODY);
+    [<B>discount</B> code]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_55.html#discount_code">code</A>
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_interpolate">interpolate</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_reparse">reparse</A>
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>YES</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Container tag
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Has Subtags
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Nests
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+    [discount code]
+---
+    TODO: (tag result)
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+   $Tag-&gt;discount(  { code =&gt; VALUE_code
+}, $body  );
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;discount(code, $attribute_hash_reference, $body);
+</PRE>
+<H3><A NAME="Description">4.21.2. Description</A></H3>
+<P>Product discounts can be set upon display of any page. The discounts apply only to the customer receiving them, and are of one of three types:</P>
+<PRE>
+    1. A discount for one particular item code (code/key is the item-code)
+    2. A discount applying to all item codes (code/key is ALL_ITEMS)
+    3. A discount applied after all items are totaled
+       (code/key is ENTIRE_ORDER)
+</PRE>
+<P>The discounts are specified via a formula. The formula is scanned for the variables $q and $s, which are substituted for with the item <I>quantity</I> and <I>subtotal</I> respectively. In the case of the item and all items discount, the formula must evaluate to a new subtotal for all items <I>of that code</I> that are ordered. The discount for the entire order is applied to the entire order, and would normally be a monetary amount to subtract or a flat percentage discount.</P>
+<P>Discounts are applied to the effective price of the product, including any quantity discounts.</P>
+<P>To apply a straight 20% discount to all items:</P>
+<PRE>
+    [discount ALL_ITEMS] $s * .8 [/discount]
+</PRE>
+<P>or with named attributes:</P>
+<PRE>
+    [discount code=ALL_ITEMS] $s * .8 [/discount]
+</PRE>
+<P>To take 25% off of only item 00-342:</P>
+<PRE>
+    [discount 00-342] $s * .75 [/discount]
+</PRE>
+<P>To subtract $5.00 from the customer's order:</P>
+<PRE>
+    [discount ENTIRE_ORDER] $s - 5 [/discount]
+</PRE>
+<P>To reset a discount, set it to the empty string:</P>
+<PRE>
+    [discount ALL_ITEMS][/discount]
+</PRE>
+<P>Perl code can be used to apply the discounts. Here is an example of a discount for item code 00-343 which prices the <I>second</I> one ordered at 1 cent:</P>
+<PRE>
+    [discount 00-343]
+    return $s if $q == 1;
+    my $p = $s/$q;
+    my $t = ($q - 1) * $p;
+    $t .= 0.01;
+    return $t;
+    [/discount]
+</PRE>
+<P>If you want to display the discount amount, use the [item-discount] tag.</P>
+<PRE>
+    [item-list]
+    Discount for [item-code]: [item-discount]
+    [/item-list]
+</PRE>
+<P>Finally, if you want to display the discounted subtotal in a way that doesn't correspond to a standard Interchange tag, you can use the [calc] tag:</P>
+<PRE>
+    [item-list]
+    Discounted subtotal for [item-code]: [currency][calc]
+                                            [item-price noformat] * [item-quantity]
+                                            [/calc][/currency]
+    [/item-list]
+</PRE>
+<H4><A NAME="discount_code"> </A>4.21.2.1. <A NAME="discount_code">code</A></H4>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_54.html">Previous Topic</A> | <A HREF="ictags_56.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

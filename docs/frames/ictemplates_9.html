@@ -1,0 +1,293 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Template Guide: if</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_4.html">Parent Topic</A> | <A HREF="ictemplates_8.html">Previous Topic</A> | <A HREF="ictemplates_10.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>3.5. if</H2>
+<P><B>[<A HREF="ictags_72.html#if">if</A><TT> type field op* compare*</TT>]</B></P>
+<P>The Interchange Tags Reference has more information on the [<A HREF="ictags_72.html#if">if</A>] tag.</P>
+<UL>
+named attributes: <TT>[if type=&quot;type&quot; term=&quot;field&quot; op=&quot;op&quot; compare=&quot;compare&quot;]</TT></UL>
+<P><B>[if !type field op* compare*]</B></P>
+<UL>
+named attributes: <TT>[if type=&quot;!type&quot; term=&quot;field&quot; op=&quot;op&quot; compare=&quot;compare&quot;]</TT></UL>
+<P>Allows the conditional building of HTML based on the setting of various Interchange session and database values. The general form is:</P>
+<PRE>
+        [if type term op compare]
+        [then]
+                                    If true, this text is printed on the document.
+                                    The [then] [/then] is optional in most
+                                    cases. If ! is prepended to the type
+                                    setting, the sense is reversed and
+                                    this text will be output for a false condition.
+        [/then]
+        [elsif type term op compare]
+                                    Optional, tested when if fails.
+        [/elsif]
+        [else]
+                                    Optional, printed on the document when all above fail.
+        [/else]
+        [/if]
+</PRE>
+<P>The [<A HREF="ictags_72.html#if">if</A>] tag can also have some variants:</P>
+<PRE>
+        [if explicit]
+        [condition] CODE [/condition]
+                                    Displayed if valid Perl CODE returns a true value.
+        [/if]
+</PRE>
+<P>Some Perl-style regular expressions can be written:</P>
+<PRE>
+        [if value name =~ /^mike/i]
+                                    This is the if with Mike.
+        [elsif value name =~ /^sally/i]
+                                    This is an elsif with Sally.
+        [/elsif]
+        [elsif value name =~ /^barb/i]
+        [or value name =~ /^mary/i]
+                                    This is an elsif with Barb or Mary.
+        [elsif value name =~ /^pat/i]
+        [and value othername =~ /^mike/i]
+                                    This is an elsif with Pat and Mike.
+        [/elsif]
+        [else]
+                                    This is the else, no name I know.
+        [/else]
+        [/if]
+</PRE>
+<P>While the named parameter tag syntax works for <TT>[if ...]</TT>, it is more convenient to use the positional syntax in most cases. The only exception is when you are planning to do a test on the results of another tag sequence:</P>
+<P>This will not work:</P>
+<PRE>
+   [if value name =~ /[value b_name]/]
+       Shipping name matches billing name.
+   [/if]
+</PRE>
+<P>Do this instead:</P>
+<PRE>
+   [if type=value term=name op=&quot;=~&quot; compare=&quot;/[value b_name]/&quot;]
+       Shipping name matches billing name.
+   [/if]
+</PRE>
+<P>As an alternative:</P>
+<PRE>
+   [if type=value term=high_water op=&quot;&lt;&quot; compare=&quot;[shipping noformat=1]&quot;]
+       The shipping cost is too high, charter a truck.
+   [/if]
+</PRE>
+<P>There are many test targets available. The following is a list of some of the available test targets.</P>
+<P><B>config Directive</B></P>
+<UL>
+The Interchange configuration variables. These are set by the directives in the Interchange configuration file.</UL>
+<PRE>
+            [if config CreditCardAuto]
+            Auto credit card validation is enabled.
+            [/if]
+</PRE>
+<P><B>data  database::field::key</B></P>
+<UL>
+The Interchange databases. Retrieves a field in the database and returns true or false based on the value.</UL>
+<PRE>
+            [if data products::size::99-102]
+            There is size information.
+            [else]
+            No size information.
+            [/else]
+            [/if]
+        
+            [if data products::size::99-102 =~ /small/i]
+            There is a small size available.
+            [else]
+            No small size available.
+            [/else]
+            [/if]
+</PRE>
+<UL>
+If another tag is needed to select the key, and it is not a looping tag construct, named parameters must be used:</UL>
+<PRE>
+            [set code]99-102[/set]
+            [if type=data term=&quot;products::size::[scratch code]&quot;]
+            There is size information.
+            [else]
+            No size information.
+            [/else]
+            [/if]
+</PRE>
+<P><B>discount</B></P>
+<UL>
+Checks to see if a discount is present for an item.</UL>
+<PRE>
+            [if discount 99-102]
+            This item is discounted.
+            [/if]
+</PRE>
+<P><B>explicit</B></P>
+<UL>
+A test for an explicit value. If Perl code is placed between a <TT>[condition]</TT> <TT>[/condition]</TT> tag pair, it will be used to make the comparison. Arguments can be passed to import data from user space, just as with the [<A HREF="ictags_87.html#perl">perl</A>] tag.</UL>
+<PRE>
+            [if explicit]
+            [condition]
+                $country = $ values =~{country};
+                return 1 if $country =~ /u\.?s\.?a?/i;
+                return 0;
+            [/condition]
+            You have indicated a US address.
+            [else]
+            You have indicated a non-US address.
+            [/else]
+            [/if]
+</PRE>
+<UL>
+The same thing could be accomplished with <TT>[if value country =~ /u\.?s\.?a?/i]</TT>, but there are many situations where this example could be useful.</UL>
+<P><B>file</B></P>
+<UL>
+Tests for the existence of a file. This is useful for placing image tags only if the image is present.</UL>
+<PRE>
+            [if file /home/user/www/images/[item-code].gif]
+            &lt;IMG SRC=&quot;[item-code].gif&quot;&gt;
+            [/if]
+        
+            or
+        
+            [if type=file term=&quot;/home/user/www/images/[item-code].gif&quot;]
+            &lt;IMG SRC=&quot;[item-code].gif&quot;&gt;
+            [/if]
+</PRE>
+<UL>
+The <TT>file</TT> test requires that the SafeUntrap directive contain <TT>ftfile</TT> (which is the default).</UL>
+<P><B>items</B></P>
+<UL>
+The Interchange shopping carts. If not specified, the cart used is the main cart. This is usually used to test to see if anything is in the cart. For example:</UL>
+<PRE>
+          [if items]You have items in your shopping cart.[/if]
+        
+          [if items layaway]You have items on layaway.[/if]
+</PRE>
+<P><B>ordered</B></P>
+<UL>
+Order status of individual items in the Interchange shopping carts. Unless otherwise specified, the cart used is the main cart. The following items refer to a part number of 99-102.</UL>
+<PRE>
+          <STRONG>[if ordered 99-102] ... [/if]</STRONG>
+            Checks the status of an item on order, true if item
+            99-102 is in the main cart.
+        
+          <STRONG>[if ordered 99-102 layaway] ... [/if]</STRONG>
+            Checks the status of an item on order, true if item
+            99-102 is in the layaway cart.
+        
+          <STRONG>[if ordered 99-102 main size] ... [/if]</STRONG>
+            Checks the status of an item on order in the main cart,
+            true if it has a size attribute.
+        
+          <STRONG>[if ordered 99-102 main size =~ /large/i] ... [/if]</STRONG>
+            Checks the status of an item on order in the main cart,
+            true if it has a size attribute containing 'large'.
+            THE CART NAME IS REQUIRED IN THE OLD SYNTAX. The new
+            syntax for that one would be:
+        
+            [if type=ordered term=&quot;99-102&quot; compare=&quot;size =~ /large/i&quot;]
+        
+            To make sure it is the size that is large and not another attribute, you could use:
+        
+            [if ordered 99-102 main size eq 'large'] ... [/if]
+        
+          <STRONG>[if ordered 99-102 main lines] ... [/if]</STRONG>
+              Special case -- counts the lines that the item code is
+              present on. (Only useful, of course, when mv_separate_items
+              or SeparateItems is defined.)
+</PRE>
+<P><B>scratch</B></P>
+<UL>
+The Interchange scratchpad variables, which can be set with the <TT>[set name] value [/set]</TT> element.</UL>
+<PRE>
+            [if scratch mv_separate_items]
+            Ordered items will be placed on a separate line.
+            [else]
+            Ordered items will be placed on the same line.
+            [/else]
+            [/if]
+</PRE>
+<P><B>session</B></P>
+<UL>
+The Interchange session variables. Of particular interest are logged_in, source, browser and username.</UL>
+<P><B>validcc</B></P>
+<UL>
+A special case, it takes the form <TT>[if validcc no type exp_date]</TT>. Evaluates to true if the supplied credit card number, type of card and expiration date pass a validity test. It performs a LUHN-10 calculation to weed out typos or phony card numbers.</UL>
+<P><B>value</B></P>
+<UL>
+The Interchange user variables, typically set in search, control or order forms. Variables beginning with <TT>mv_</TT> are Interchange special values and should be tested and used with caution.</UL>
+<P><B>variable</B></P>
+<UL>
+See Interchange <I>Variable</I> values.</UL>
+<P>The field term is the specifier for that area. For example, <TT>[if session frames]</TT> would return true if the <TT>frames</TT> session parameter was set.</P>
+<P>As an example, consider buttonbars for frame-based setups. You might decide to display a different buttonbar with no frame targets for sessions that are not using frames:</P>
+<PRE>
+   [if session frames]
+       [buttonbar 1]
+   [else]
+       [buttonbar 2]
+   [/else]
+   [/if]
+</PRE>
+<P>Another example might be the when search matches are displayed. If using the string <TT>[value mv_match_count] titles found</TT>, it will display a plural result even if there is only one match. Use:</P>
+<PRE>
+   [if value mv_match_count != 1]
+       [value mv_match_count] matches found.
+   [else]
+       Only one match was found.
+   [/else]
+   [/if]
+</PRE>
+<P>The op term is the compare operation to be used. Compare operations are the same as they are in Perl:</P>
+<PRE>
+   ==  numeric equivalence
+   eq  string equivalence
+   &gt;   numeric greater-than
+   gt  string greater-than
+   &lt;   numeric less-than
+   lt  string less-than
+   !=  numeric non-equivalence
+   ne  string equivalence
+</PRE>
+<P>Any simple Perl test can be used, including some limited regex matching. More complex tests should be done with <TT>[if explicit]</TT>.</P>
+<P><B>[then] text [/then]</B></P>
+<UL>
+This is optional if not nesting &quot;if&quot; conditions. The text immediately following the <TT>[if ..]</TT> tag is used as the conditionally substituted text. If nesting <TT>[if ...]</TT> tags, use <TT>[then][/then]</TT> on any outside conditions to ensure proper interpolation.</UL>
+<P><B>[elsif type field op* compare*]</B></P>
+<UL>
+named attributes: <TT>[elsif type=&quot;type&quot; term=&quot;field&quot; op=&quot;op&quot; compare=&quot;compare&quot;]</TT>
+<BR>
+Additional conditions for test, applied if the initial <TT>[if ..]</TT> test fails.</UL>
+<P><B>[else] text [/else]</B></P>
+<UL>
+The optional else-text for an if or if-item-field conditional.</UL>
+<P><B>[condition] text [/condition]</B></P>
+<UL>
+Only used with the <TT>[if explicit]</TT> tag. Allows an arbitrary expression <B>in Perl</B> to be placed inside, with its return value interpreted as the result of the test. If arguments are added to <TT>[if explicit args]</TT>, those will be passed as arguments in the [<A HREF="ictags_87.html#perl">perl</A>] construct.</UL>
+<P><B>[/if]</B></P>
+<UL>
+Terminates an if conditional.</UL>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_4.html">Parent Topic</A> | <A HREF="ictemplates_8.html">Previous Topic</A> | <A HREF="ictemplates_10.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

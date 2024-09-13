@@ -1,0 +1,36 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Configuration Reference: LockType *global*</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_3.html">Parent Topic</A> | <A HREF="icconfig_35.html">Previous Topic</A> | <A HREF="icconfig_37.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>2.33. LockType *global*</H2>
+<P>Allows selection of file locking method used throughout Interchange. Options are 'flock', 'fcntl', and 'none'. Added in 4.7.0. Please note that due to a bug this directive only works in Interchange 4.8.6 and above.</P>
+<P>Default is flock. See the flock(2) manpage for details.</P>
+<P>The fcntl setting is needed for NFS filesystems; for NFS-based locking to work, the NFS lock daemon (lockd) must be enabled and running on both the NFS client and server. Locking with fcntl works on Linux and should work on Solaris, but is not guaranteed to work on all OSes.</P>
+<P>The none setting turns off file locking entirely, but that is never recommended. It might be useful to check if locking is causing hangs on the system.</P>
+<P>If you are only accessing sessions on an NFS-mounted directory but the rest of Interchange is on the local filesystem, you can instead set the SessionType catalog directive to 'NFS', which enables fcntl locking for sessions only on a per-catalog basis.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_3.html">Parent Topic</A> | <A HREF="icconfig_35.html">Previous Topic</A> | <A HREF="icconfig_37.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

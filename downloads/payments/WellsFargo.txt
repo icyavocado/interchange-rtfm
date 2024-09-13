@@ -1,0 +1,241 @@
+Interchange WellsFargo Support
+       Vend::Payment::WellsFargo $Revision: 1.2 $
+
+SYNOPSIS
+           &charge=wellsfargo
+
+               or
+
+           [charge mode=wellsfargo param1=value1 param2=value2]
+
+
+PREREQUISITES
+         Net::SSLeay
+
+           or
+
+         LWP::UserAgent and Crypt::SSLeay
+
+       Only one of these need be present and working.
+
+DESCRIPTION
+       The Vend::Payment::WellsFargo module implements the
+       wellsfargo() routine for use with Interchange. It is
+       compatible on a call level with the other Interchange
+       payment modules -- in theory (and even usually in
+       practice) you could switch from CyberCash to WellsFargo
+       with a few configuration file changes.
+
+       To enable this module, place this directive in
+       interchange.cfg:
+
+           Require module Vend::Payment::WellsFargo
+
+       This must be in interchange.cfg or a file included from
+       it.
+
+       Make sure CreditCardAuto is off (default in Interchange
+       demos).
+
+       The mode can be named anything, but the gateway parameter
+       must be set to wellsfargo. To make it the default payment
+       gateway for all credit card transactions in a specific
+       catalog, you can set in catalog.cfg:
+
+           Variable   MV_PAYMENT_MODE  wellsfargo
+
+       It uses several of the standard settings from Interchange
+       payment. Any time we speak of a setting, it is obtained
+       either first from the tag/call options, then from an
+       Interchange order Route named for the mode, then finally a
+       default global payment variable, For example, the id
+       parameter would be specified by:
+
+           [charge mode=wellsfargo id=YourWellsFargoID]
+
+       or
+
+           Route wellsfargo id YourWellsFargoID
+
+       or
+
+           Variable MV_PAYMENT_ID      YourWellsFargoID
+
+       The active settings are:
+
+       id  Your WellsFargo merchant_id (ioc_merchant_id),
+           supplied by WellsFargo when you sign up.
+
+           Global parameter is MV_PAYMENT_ID.
+
+       transaction
+           Type of transaction to execute. May be:
+
+             authorize - Perform authorization only (default)
+             sale      - Authorize and settle (requires two separate requests)
+             settle    - Perform settlement only on previously authorized transaction
+             return    - Make a refund on previously settled transaction
+
+           Global parameter is MV_PAYMENT_TRANSACTION
+
+       referer
+           The url of the web page you are posting from, required
+           by WellsFargo Global parameter is MV_PAYMENT_REFERER
+
+       accept
+           The return codes for which you consider a credit card
+           acceptable, comma separated.  Codes are:
+
+
+             -1   "Faith" authorization.
+              0    Order authorized.
+              1    Some other failure. Try again.
+              2    Card Declined.  Do not accept the order.
+              3    No response from issuing institution.  Try again.
+              4    Bad card.  Do not accept the order. Merchant should call shopper
+              5    Error in transfer amount.
+              6    Credit card expired.
+              7    Transaction is invalid.
+              8    Unknown system error.
+              9    Duplicate request.  This transaction was completed earlier.
+              >=10 Other error.  Contact you merchant bank representative.
+
+           Default is to accept for return code <= 0.  'accept'
+           codes only valid on authorize transaction. All others
+           only successful with return code of 0.
+
+           Global parameter is MV_PAYMENT_ACCEPT
+
+                   Ex: Variable MV_PAYMENT_ACCEPT -1,0,1,3,8,10
+
+       timeout_error
+           The error displayed if WellsFargo is not responding,
+           or is down.  Default is "Credit card processor not
+           responding. Please try again later or call our
+           customer service directly".
+
+           Global parameter is MV_PAYMENT_TIMEOUT_ERROR
+
+       custom_query
+           Key of scratch hash containing additional name/value
+           pairs. Use for any optional fields you wish to pass to
+           the gateway (optional as defined by developer docs).
+           For example, to "close an order" on a settlement, you
+           can pass the IOC_close_flag parameter to the gateway.
+           So, to utilize this feature, set a scratch hash, keyed
+           by param custom_query.
+
+           For mode config:
+             Route  wellsfargo  custom_query  my_cust_query
+
+           Before calling wellsfargo(), set in scratch:
+
+             $Scratch->{my_cust_query} = {
+                   IOC_close_flag => 'Yes'
+             };
+
+           Keys in custom_query will also supersede any pre-
+           existing parameters, if needed. Thus, if you wish to
+           collect and pass the actual Card Verification Number
+           from customer cards, with a form field named
+           cc_verification_number:
+
+             $Scratch->{my_cust_query} = {
+                   Ecom_payment_card_verification => $Values->{cc_verification_number}
+             };
+
+           Care should be taken not to accidentally overwrite
+           desired pre-existing parameters.
+
+           custom_query hash will be deleted from scratch space
+           after each call to wellsfargo().
+
+           Note: since a sale operation is actually two
+           independent requests to the gateway, with each having
+           different queries for the most part, be aware that any
+           defined custom_query will be sent in both
+           requests--and override any same-named parameters in
+           both.
+
+       username
+           Valid API-user userid set in Back Office (not needed
+           for authorization only)
+
+           Global parameter is MV_PAYMENT_USERNAME
+
+       secret
+           password for same API-user (not needed for
+           authorization only)
+
+           Global parameter is MV_PAYMENT_SECRET
+
+       Troubleshooting
+
+       Try the instructions above, then enable test mode in the
+       online account manager. A test order should complete.
+
+       Disable test mode, then test in various WellsFargo error
+       modes by using the credit card number 4222 2222 2222 2222.
+
+       Then try a sale with the card number 4111 1111 1111 1111
+       and a valid expiration date. The sale should be denied,
+       and the reason should be in [data session payment_error].
+
+       If nothing works:
+
+       o       Make sure you "Require"d the module in
+               interchange.cfg:
+
+                   Require module Vend::Payment::WellsFargo
+
+
+       o       Make sure either Net::SSLeay or Crypt::SSLeay and
+               LWP::UserAgent are installed and working. You can
+               test to see whether your Perl thinks they are:
+
+                   perl -MNet::SSLeay -e 'print "It works\n"'
+
+               or
+
+                   perl -MLWP::UserAgent -MCrypt::SSLeay -e 'print "It works\n"'
+
+               If either one prints "It works." and returns to
+               the prompt you should be OK (presuming they are in
+               working order otherwise).
+
+       o       Check the error logs, both catalog and global.
+
+       o       Make sure you set your payment parameters
+               properly.
+
+       o       Try an order, then put this code in a page:
+
+                   <XMP>
+                   [calc]
+                       my $string = $Tag->uneval( { ref => $Session->{payment_result} });
+                       $string =~ s/{/{\n/;
+                       $string =~ s/,/,\n/g;
+                       return $string;
+                   [/calc]
+                   </XMP>
+
+               That should show what happened.
+
+       o       If all else fails, Red Hat and other consultants
+               are available to help with integration for a fee.
+
+BUGS
+       There is actually nothing *in* Vend::Payment::WellsFargo.
+       It changes packages to Vend::Payment and places things
+       there.
+
+AUTHORS
+       Mark Johnson <markj@redhat.com>, based on original code by
+       Mike Heins <mheins@redhat.com>.
+
+CREDITS
+           Jeff Nappi <brage@cyberhighway.net>
+           Paul Delys <paul@gi.alaska.edu>
+           webmaster@nameastar.net
+           Ray Desjardins <ray@dfwmicrotech.com>
+           Nelson H. Ferrari <nferrari@ccsc.com>

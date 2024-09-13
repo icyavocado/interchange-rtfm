@@ -1,0 +1,2463 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>Interchange Perl objects - RTFM</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="en-GB">
+    <meta http-equiv="Window-target" content="_top">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <meta http-equiv="X-Soup-Of-The-Day" content="Tomato">
+
+    <meta name="author" content="Kevin Walsh">
+    <meta name="publisher" content="Cursor Software Limited">
+    <meta name="copyright" content="2001-2011, Cursor Software Limited">
+    <meta name="licence" content="GPLv2+ (Unknown licence)">
+    <meta name="generator" content="Interchange 5.7.0 -- www.icdevgroup.org">
+    <meta name="robots" content="index,follow,noarchive,noimageindex">
+    <meta name="keywords" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="description" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="MSSmartTagsPreventParsing" content="TRUE">
+
+    <meta name="verify-v1" content="KqlU/bxZj9Y2ZdZ/3RwuzgVSMIrZ8XM2wqbjSaEo3O4=">
+
+    <meta name="y_key" content="e2dd60be5777fbc8">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
+    <link rel="search" type="application/opensearchdescription+xml" href="http://interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="stylesheet" href="/decor/css/website.css">
+    <link rel="stylesheet" href="/decor/css/wiki.css">
+    <link rel="stylesheet" href="/decor/css/neo.css">
+
+
+    <script type="text/javascript" language="JavaScript">
+    <!--
+	if (top != self){
+	    top.location = location;
+	}
+
+    // -->
+    </script>
+</head>
+<body>
+<!-- START VAR: LOGOBAR -->
+<table id="rtfmheader" cellpadding="0" cellspacing="0">
+    <tr>
+	<td><a href="http://interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+
+	<td width="100%" style="text-align: right; padding: 10px">
+
+	    <form action="http://interchange-rtfm.pullingshots.ca/search.html" method="POST">
+		<input type="hidden" name="mv_session_id" value="nsession">
+		<input type="hidden" name="mv_profile" value="cms_search">
+		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
+		<input type="submit" class="button" value="Search">
+	    </form>
+
+	</td>
+    </tr>
+</table>
+<table id="breadcrumbs" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+	<td>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_database.html">Interchange database</a></span>
+	    <span class="nowrap">&gt; <span class="current">Interchange Perl objects</span></span>
+	</td>
+
+    </tr>
+</table>
+<!-- END VAR: LOGOBAR -->
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+
+	    <td id="leftside">
+<!-- START COMPONENT: navigation -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th>NAVIGATION</th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+
+<!-- END COMPONENT: navigation -->
+<!-- START COMPONENT: wiki_recent -->
+
+
+
+<!-- END COMPONENT: wiki_recent -->
+<!-- START COMPONENT: wiki_backlinks -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th><span class="nowrap">PAGES THAT LINK HERE</span></th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ActionMap.html">ActionMap</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/calc.html">calc</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/calcn.html">calcn</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/CartTrigger.html">CartTrigger</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/CartTriggerQuantity.html">CartTriggerQuantity</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/cgi.html">cgi</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/data.html">data</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Database_reference_guide.html">Database reference guide</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/GlobalSub.html">GlobalSub</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/links:Interchange_Perl_objects.html">(28 pages in total)</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+<!-- END COMPONENT: wiki_backlinks -->
+<!-- START COMPONENT: account -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+
+    <tr>
+	<th>ACCOUNT LOGIN</th>
+    </tr>
+
+    <tr>
+	<td class="first">
+	    <p>You are not logged in</p>
+	</td>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+	    </ul>
+	</td>
+    </tr>
+
+</table>
+
+
+
+<!-- END COMPONENT: account -->
+<!-- START COMPONENT: icpowered -->
+
+<div style="text-align: center; margin: 10px; margin-top: 0px">
+    <a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+</div>
+
+
+
+<!-- START COMPONENT: icpowered -->
+
+	    </td>
+
+	    <td id="bodytext">
+<!-- start of page text -->
+
+<!-- start page: wiki/display (Interchange_Perl_objects) -->
+
+<div class="wikitext">
+<a name="Interchange_Perl_objects"></a>
+<h1>Interchange Perl objects</h1>
+<!-- start of toc --><div class="toc">
+<table>
+<tr valign="top">
+<th>Table of contents</th>
+</tr>
+<tr><td class="h2"><a href="#Carts">1. &#36;Carts</a></td></tr>
+<tr><td class="h2"><a href="#CGI">2. &#36;CGI</a></td></tr>
+<tr><td class="h2"><a href="#CGI_array">3. &#36;CGI_array</a></td></tr>
+<tr><td class="h2"><a href="#Config">4. &#36;Config</a></td></tr>
+<tr><td class="h2"><a href="#Db">5. &#37;Db</a></td></tr>
+<tr><td class="h3"><a href="#Keys">5.1. Keys</a></td></tr>
+<tr><td class="h4"><a href="#Key_for_a_normal_table_with_one_primary_key">5.1.1. Key for a normal table with one primary key</a></td></tr>
+<tr><td class="h4"><a href="#Array_reference_key_for_a_COMPOSITE_KEY_table">5.1.2. Array reference key for a COMPOSITE_KEY table</a></td></tr>
+<tr><td class="h4"><a href="#Alternate_hash_reference_key_for_a_COMPOSITE_KEY_table">5.1.3. Alternate hash reference key for a COMPOSITE_KEY table</a></td></tr>
+<tr><td class="h4"><a href="#Alternate_null-separated_key_for_a_COMPOSITE_KEY_table">5.1.4. Alternate null-separated key for a COMPOSITE_KEY table</a></td></tr>
+<tr><td class="h3"><a href="#Database_access_methods">5.2. Database access methods</a></td></tr>
+<tr><td class="h4"><a href="#Get_a_specific_rowcolumn_from_the_table">5.2.1. Get a specific row/column from the table</a></td></tr>
+<tr><td class="h4"><a href="#Set_a_specific_rowcolumn_in_the_table">5.2.2. Set a specific row/column in the table</a></td></tr>
+<tr><td class="h4"><a href="#Atomic_increment_of_an_element_of_the_table">5.2.3. Atomic increment of an element of the table</a></td></tr>
+<tr><td class="h4"><a href="#Return_a_complete_hash_of_the_database_row_minus_the_key">5.2.4. Return a complete hash of the database row (minus the key)</a></td></tr>
+<tr><td class="h4"><a href="#Return_some_columns_from_a_row">5.2.5. Return some columns from a row</a></td></tr>
+<tr><td class="h4"><a href="#Set_some_columns_in_a_row_slice">5.2.6. Set some columns in a row (slice)</a></td></tr>
+<tr><td class="h4"><a href="#Alternate_method_for_setting_a_slice">5.2.7. Alternate method for setting a slice</a></td></tr>
+<tr><td class="h4"><a href="#Specifying_INSERT_or_UPDATE">5.2.8. Specifying INSERT or UPDATE</a></td></tr>
+<tr><td class="h4"><a href="#Perform_a_SQL_query_returning_an_array_of_arrays">5.2.9. Perform a SQL query, returning an array of arrays</a></td></tr>
+<tr><td class="h4"><a href="#Perform_a_SQL_query_returning_an_array_of_hashes">5.2.10. Perform a SQL query, returning an array of hashes</a></td></tr>
+<tr><td class="h4"><a href="#See_if_a_columns_datatype_is_numeric">5.2.11. See if a column's datatype is numeric</a></td></tr>
+<tr><td class="h4"><a href="#Quote_a_value_for_SQL_query_purposes">5.2.12. Quote a value for SQL query purposes</a></td></tr>
+<tr><td class="h4"><a href="#Check_configuration_of_the_database">5.2.13. Check configuration of the database</a></td></tr>
+<tr><td class="h4"><a href="#Find_the_names_of_the_columns_not_including_the_key">5.2.14. Find the names of the columns (not including the key)</a></td></tr>
+<tr><td class="h4"><a href="#Check_whether_a_column_is_in_the_table">5.2.15. Check whether a column is in the table</a></td></tr>
+<tr><td class="h4"><a href="#Check_whether_a_key_is_in_the_table">5.2.16. Check whether a key is in the table</a></td></tr>
+<tr><td class="h4"><a href="#Create_a_subroutine_to_return_a_single_column_from_the_table">5.2.17. Create a subroutine to return a single column from the table</a></td></tr>
+<tr><td class="h4"><a href="#Create_a_subroutine_to_set_a_single_column_in_the_database">5.2.18. Create a subroutine to set a single column in the database</a></td></tr>
+<tr><td class="h4"><a href="#Create_a_subroutine_to_set_a_slice_of_the_database">5.2.19. Create a subroutine to set a slice of the database</a></td></tr>
+<tr><td class="h4"><a href="#Return_a_complete_array_of_the_database_minus_the_key">5.2.20. Return a complete array of the database (minus the key)</a></td></tr>
+<tr><td class="h4"><a href="#Delete_a_row_from_the_table">5.2.21. Delete a row from the table</a></td></tr>
+<tr><td class="h2"><a href="#DbSearch">6. &#36;DbSearch</a></td></tr>
+<tr><td class="h2"><a href="#Document">7. &#36;Document</a></td></tr>
+<tr><td class="h3"><a href="#header">7.1. header</a></td></tr>
+<tr><td class="h3"><a href="#hot">7.2. hot</a></td></tr>
+<tr><td class="h3"><a href="#insert">7.3. insert</a></td></tr>
+<tr><td class="h3"><a href="#ref">7.4. ref</a></td></tr>
+<tr><td class="h3"><a href="#replace">7.5. replace</a></td></tr>
+<tr><td class="h3"><a href="#review">7.6. review</a></td></tr>
+<tr><td class="h3"><a href="#send">7.7. send</a></td></tr>
+<tr><td class="h3"><a href="#write">7.8. write</a></td></tr>
+<tr><td class="h2"><a href="#Items">8. &#36;Items</a></td></tr>
+<tr><td class="h2"><a href="#Scratch">9. &#36;Scratch</a></td></tr>
+<tr><td class="h2"><a href="#Session">10. &#36;Session</a></td></tr>
+<tr><td class="h2"><a href="#Sql">11. &#37;Sql</a></td></tr>
+<tr><td class="h2"><a href="#Sub">12. &#36;Sub</a></td></tr>
+<tr><td class="h2"><a href="#Tag">13. &#36;Tag</a></td></tr>
+<tr><td class="h2"><a href="#Tmp">14. &#36;Tmp</a></td></tr>
+<tr><td class="h2"><a href="#Values">15. &#36;Values</a></td></tr>
+<tr><td class="h2"><a href="#Variable">16. &#36;Variable</a></td></tr>
+<tr><td class="h2"><a href="#Subroutines">17. Subroutines</a></td></tr>
+<tr><td class="h3"><a href="#Debug">17.1. Debug</a></td></tr>
+<tr><td class="h3"><a href="#HTML">17.2. HTML</a></td></tr>
+<tr><td class="h3"><a href="#Log">17.3. Log</a></td></tr>
+<tr><td class="h3"><a href="#errmsg">17.4. errmsg</a></td></tr>
+<tr><td class="h3"><a href="#uneval">17.5. uneval</a></td></tr>
+<tr>
+<td class="spacer">&nbsp;</td>
+</tr>
+</table>
+</div><!-- end of toc -->
+<a name="Carts"></a>
+<h2>&#36;Carts</h2>
+<p>
+This is a reference to the <span class="fixedwidth"><a href="#Session" title="&quot;Session&quot; heading on this page">&#36;Session-&gt;{carts}</a></span> shopping cart hash.&nbsp;
+The default cart is &quot;<span class="fixedwidth">main</span>&quot;.&nbsp;
+Shopping carts are stored as an array of hash references.&nbsp;
+Here is an example of a session cart array, containing a <em>main</em> and a <em>layaway</em> cart.&nbsp;
+<span class="fixedwidth"><a href="#Items" title="&quot;Items&quot; heading on this page">&#36;Items</a></span> is an alias to the current cart,
+within the <span class="fixedwidth">&#37;&#36;Carts</span> hash.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span><br>
+&nbsp; &nbsp; <span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>main<span class="def_PairEnd def_Special">'</span> </span><span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>code<span class="def_PairEnd def_Special">'</span> </span><span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>00-0011<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>mv_ib<span class="def_PairEnd def_Special">'</span> </span><span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>products<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>quantity<span class="def_PairEnd def_Special">'</span> </span><span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_Numb def_Number">1</span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>size<span class="def_PairEnd def_Special">'</span> </span><span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_WordFun perl_Word def_Keyword">undef</span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>color<span class="def_PairEnd def_Special">'</span> </span><span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_WordFun perl_Word def_Keyword">undef</span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>code<span class="def_PairEnd def_Special">'</span> </span><span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>99-102<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>mv_ib<span class="def_PairEnd def_Special">'</span> </span><span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>products<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>quantity<span class="def_PairEnd def_Special">'</span> </span><span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_Numb def_Number">2</span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>size<span class="def_PairEnd def_Special">'</span> </span><span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>L<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>color<span class="def_PairEnd def_Special">'</span> </span><span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>BLUE<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; <span class="def_Symbol"><span class="def_PairEnd def_Special">]</span></span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; <span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>layaway<span class="def_PairEnd def_Special">'</span> </span><span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>code<span class="def_PairEnd def_Special">'</span> </span><span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>00-341<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>mv_ib<span class="def_PairEnd def_Special">'</span> </span><span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>products<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>quantity<span class="def_PairEnd def_Special">'</span> </span><span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_Numb def_Number">1</span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>size<span class="def_PairEnd def_Special">'</span> </span><span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_WordFun perl_Word def_Keyword">undef</span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>color<span class="def_PairEnd def_Special">'</span> </span><span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_WordFun perl_Word def_Keyword">undef</span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; <span class="def_Symbol"><span class="def_PairEnd def_Special">]</span></span><span class="perl_Symb def_Symbol">,</span><br>
+<span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+In this cart array, &quot;<span class="fixedwidth">&#36;Carts-&gt;{main}-&gt;&#91;1]-&gt;{code}</span>&quot; is equal to
+&quot;<span class="fixedwidth">99-102</span>&quot;.&nbsp;
+This would be equivalent to the shorter
+&quot;<span class="fixedwidth"><a href="#Items" title="&quot;Items&quot; heading on this page">&#36;Items-&gt;&#91;1]-&gt;{code}</a></span>&quot;,
+unless the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/cart.html" title="cart (tags)">cart</a>]</span> tag has been used to make
+a cart other than &quot;<span class="fixedwidth">main</span>&quot; the default.
+</p>
+<p style="margin-bottom: 0px">
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Global context">
+</td>
+<td width="100%">
+<p class="title">Global context</p>
+<p style="margin-bottom: 0px">
+You cannot use this object in a global context,
+such as from within a global <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserTag.html" title="UserTag (config)">UserTag</a></span> or a
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/GlobalSub.html" title="GlobalSub (config)">GlobalSub</a></span> etc. Use the &quot;<span class="fixedwidth">&#36;::Carts</span>&quot; hashref instead.
+</p>
+</td>
+</tr>
+</table>
+<a name="CGI"></a>
+<h2>&#36;CGI</h2>
+<p>
+This is a hash reference to <span class="fixedwidth">&#37;CGI::values</span>,
+which contains the value of user variables submitted in the current page or form.
+</p>
+<p>
+To get the value of a variable submitted as:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">input</span> </span><span class="html_htmlParam def_Parameter">type</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;hidden&quot; </span><span class="html_htmlParam def_Parameter">name</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;foo&quot; </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;bar&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+You would use:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>perl<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span></span><br>
+&nbsp; &nbsp; <span class="perl_Word def_Keyword">return </span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span>Value of foo is <span class="perl_Var def_Var">$CGI<span class="perl_Var def_Var">-&gt;<span class="def_PairStart def_Special">{</span>foo<span class="def_PairEnd def_Special">}</span></span></span><span class="def_PairEnd def_Special">&quot;</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>/perl<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Actually, you should not do that.&nbsp;
+If someone sends you a value you should not output it willy-nilly,
+for security reasons.&nbsp;
+Filter it first with the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/filter.html" title="filter (tags)">filter</a>]</span> tag,
+which may be accessed via the <span class="fixedwidth"><a href="#Tag" title="&quot;Tag&quot; heading on this page">&#36;Tag</a></span> object, as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>perl<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span></span><br>
+&nbsp; &nbsp; <span class="perl_Word def_Keyword">my </span><span class="perl_Var def_Var">$val </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$Tag</span><span class="perl_Symb def_Symbol">-&gt;</span>filter<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>encode_entities<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><span class="perl_Var def_Var">$CGI</span><span class="perl_Symb def_Symbol">-&gt;</span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span>foo<span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+&nbsp; &nbsp; <span class="perl_Word def_Keyword">return </span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span>Value of foo is <span class="perl_Var def_Var">$val</span><span class="def_PairEnd def_Special">&quot;</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>/perl<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Remember, multiple settings of the same variable are separated by an
+ASCII <span class="fixedwidth">NUL</span> character.&nbsp;
+To get an array value, use <span class="fixedwidth"><a href="#CGI_array" title="&quot;CGI array&quot; heading on this page">&#36;CGI_array</a></span>.
+</p>
+<p style="margin-bottom: 0px">
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Global context">
+</td>
+<td width="100%">
+<p class="title">Global context</p>
+<p style="margin-bottom: 0px">
+You cannot use this object in a global context,
+such as from within a global <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserTag.html" title="UserTag (config)">UserTag</a></span> or a
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/GlobalSub.html" title="GlobalSub (config)">GlobalSub</a></span> etc. Use the &quot;<span class="fixedwidth">&#37;CGI::values</span>&quot; hash (not hashref) instead.
+</p>
+</td>
+</tr>
+</table>
+<a name="CGI_array"></a>
+<h2>&#36;CGI_array</h2>
+<p>
+This is a hash reference to the <span class="fixedwidth">&#37;CGI::values_array</span>, arrays containing the value (or values) of user variables as submitted in the current page or form.&nbsp;
+To get the value of a variable submitted as:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">input</span> </span><span class="html_htmlParam def_Parameter">type</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;hidden&quot; </span><span class="html_htmlParam def_Parameter">name</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;foo&quot; </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;bar&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">input</span> </span><span class="html_htmlParam def_Parameter">type</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;hidden&quot; </span><span class="html_htmlParam def_Parameter">name</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;foo&quot; </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;baz&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+You would use:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>perl<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span></span><br>
+&nbsp; &nbsp; <span class="perl_Word def_Keyword">return </span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span>The values of foo are <span class="def_PairEnd def_Special">&quot;</span> </span><span class="perl_Symb def_Symbol">. </span><span class="perl_WordFun perl_Word def_Keyword">join</span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>, <span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><span class="perl_Var def_Var"><span class="def_PairStart def_Special">@{</span><span class="perl_Var def_Var">$CGI_array</span><span class="perl_Symb def_Symbol">-&gt;</span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>foo<span class="def_PairEnd def_Special">'</span></span><span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><span class="def_PairEnd def_Special">}</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>/perl<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+<p style="margin-bottom: 0px">
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Global context">
+</td>
+<td width="100%">
+<p class="title">Global context</p>
+<p style="margin-bottom: 0px">
+You cannot use this object in a global context,
+such as from within a global <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserTag.html" title="UserTag (config)">UserTag</a></span> or a
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/GlobalSub.html" title="GlobalSub (config)">GlobalSub</a></span> etc. Use the &quot;<span class="fixedwidth">&#37;CGI::values_array</span>&quot; hash (not hashref) instead.
+</p>
+</td>
+</tr>
+</table>
+<a name="Config"></a>
+<h2>&#36;Config</h2>
+<p>
+This points at the <span class="fixedwidth">&#36;Vend::Cfg</span> hashref,
+and can be used to look up or set website configuration values.&nbsp;
+For instance:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Comment def_Comment def_Syntax">#</span><br>
+<span class="perl_Comment def_Comment def_Syntax">#&nbsp; &nbsp; allow searches of the userdb table on this page only</span><br>
+<span class="perl_Comment def_Comment def_Syntax">#</span><br>
+<span class="perl_Var def_Var">$Config</span><span class="perl_Symb def_Symbol">-&gt;</span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span>NoSearch<span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span> </span><span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">~ </span><span class="perl_String def_String"><span class="perl_String def_String"><span class="def_PairStart def_Special"><span class="perl_ReType perl_Word def_Keyword">s</span><span class="perl_StringEdge regexp_SpecQuote def_StringEdge def_String">/</span></span><span class="regexp_Symbol def_StringContent def_String">\b</span>userdb<span class="regexp_Symbol def_StringContent def_String">\b</span><span class="perl_StringEdge regexp_SpecQuote def_StringEdge def_String">/</span></span><span class="def_PairEnd def_Special"><span class="perl_StringEdge regexp_SpecQuote def_StringEdge def_String">/</span></span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Changes are not persistent;&nbsp;
+They are reset upon the next page access.
+</p>
+<p style="margin-bottom: 0px">
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Global context">
+</td>
+<td width="100%">
+<p class="title">Global context</p>
+<p style="margin-bottom: 0px">
+You cannot use this object in a global context,
+such as from within a global <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserTag.html" title="UserTag (config)">UserTag</a></span> or a
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/GlobalSub.html" title="GlobalSub (config)">GlobalSub</a></span> etc. Use the &quot;<span class="fixedwidth">&#36;Vend::Cfg</span>&quot; hashref instead.
+</p>
+</td>
+</tr>
+</table>
+<a name="Db"></a>
+<h2>&#37;Db</h2>
+<p>
+A hash of database tables, shared with the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/perl.html" title="perl (tags)">perl</a>]</span> tag's
+<span class="fixedwidth">tables=&quot;foo&quot;</span> parameter.&nbsp;
+Once a table is shared, it is open and can be accessed by any of its methods.&nbsp;
+This will not work with SQL unless the
+<a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fsearch%2ecpan%2eorg%2f%7eseyn%2fSafe%2dHole%2d0%2e10%2fHole%2epm:id=iaRj46P4" title="http://search.cpan.org/~seyn/Safe-Hole-0.10/Hole.pm" rel="nofollow">Safe::Hole</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page"> module is installed,
+or <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/AllowGlobal.html" title="AllowGlobal (config)">AllowGlobal</a></span> is set for the website.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+This object is not available when using the
+<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/calc.html" title="calc (tags)">calc</a>]</span>,
+<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/calcn.html" title="calcn (tags)">calcn</a>]</span> and
+<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-calc.html" title="PREFIX-calc (tags)">PREFIX-calc</a>]</span> tags.
+</p>
+</td>
+</tr>
+</table>
+
+<p>
+You can use the following to get a reference to a particular table:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Word def_Keyword">my </span><span class="perl_Var def_Var">$db </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$Db</span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span>tablename<span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+If you want to access a table from withing a <em>local</em>
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserTag.html" title="UserTag (config)">UserTag</a></span> then your tag code may need to call
+&quot;<span class="fixedwidth">&#36;Tag-&gt;perl({ table =&gt; &quot;tablename&quot; });</span>&quot; in order to initialize
+&quot;<span class="fixedwidth">&#36;Db{tablename}</span>&quot;.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="Keys"></a>
+<h3>Keys</h3>
+<p>
+The examples that follow make use of a &quot;<span class="fixedwidth">&#36;key</span>&quot; which can be one of the following:
+</p>
+<a name="Key_for_a_normal_table_with_one_primary_key"></a>
+<h4>Key for a normal table with one primary key</h4>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$key </span><span class="perl_Symb def_Symbol">= </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>foo<span class="def_PairEnd def_Special">'</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Array_reference_key_for_a_COMPOSITE_KEY_table"></a>
+<h4>Array reference key for a COMPOSITE_KEY table</h4>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$composite_array_key </span><span class="perl_Symb def_Symbol">= </span><span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>foo<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>bar<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>baz<span class="def_PairEnd def_Special">'</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">]</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Alternate_hash_reference_key_for_a_COMPOSITE_KEY_table"></a>
+<h4>Alternate hash reference key for a COMPOSITE_KEY table</h4>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$composite_hash_key </span><span class="perl_Symb def_Symbol">= </span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span> </span>key1 <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>foo<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">, </span>key2 <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>bar<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">, </span>key3 <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>baz<span class="def_PairEnd def_Special">'</span></span><span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Alternate_null-separated_key_for_a_COMPOSITE_KEY_table"></a>
+<h4>Alternate null-separated key for a COMPOSITE_KEY table</h4>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$composite_nullsep_key </span><span class="perl_Symb def_Symbol">= </span><span class="perl_WordFun perl_Word def_Keyword">join</span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span>\<span class="def_NumberDec def_Number">0</span><span class="def_PairEnd def_Special">&quot;</span></span><span class="perl_Symb def_Symbol">, </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>foo<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">, </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>bar<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">, </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>baz<span class="def_PairEnd def_Special">'</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Database_access_methods"></a>
+<h3>Database access methods</h3>
+<p>
+The available methods are as follows:
+</p>
+<a name="Get_a_specific_rowcolumn_from_the_table"></a>
+<h4>Get a specific row/column from the table</h4>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$value </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$db</span><span class="perl_Symb def_Symbol">-&gt;</span>field<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$key</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Var def_Var">$column_name</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Set_a_specific_rowcolumn_in_the_table"></a>
+<h4>Set a specific row/column in the table</h4>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$db</span><span class="perl_Symb def_Symbol">-&gt;</span>set_field<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$key</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Var def_Var">$column_name</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Var def_Var">$value</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Atomic_increment_of_an_element_of_the_table"></a>
+<h4>Atomic increment of an element of the table</h4>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$db</span><span class="perl_Symb def_Symbol">-&gt;</span>inc_field<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$key</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Var def_Var">$column_name</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Numb def_Number">1</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Return_a_complete_hash_of_the_database_row_minus_the_key"></a>
+<h4>Return a complete hash of the database row (minus the key)</h4>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$hashref </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$db</span><span class="perl_Symb def_Symbol">-&gt;</span>row_hash<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$key</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Return_some_columns_from_a_row"></a>
+<h4>Return some columns from a row</h4>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Word def_Keyword">my </span><span class="perl_Var def_Var">@columns </span><span class="perl_Symb def_Symbol">= </span><span class="perl_String def_String"><span class="def_PairStart def_Special"><span class="perl_ReType perl_Word def_Keyword">qw</span><span class="perl_StringEdge regexp_SpecQuote def_StringEdge def_String">/</span></span>sku price description<span class="def_PairEnd def_Special"><span class="perl_StringEdge regexp_SpecQuote def_StringEdge def_String">/</span></span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="perl_Var def_Var">@values </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$db</span><span class="perl_Symb def_Symbol">-&gt;</span>get_slice<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$key</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Symb def_Symbol">\</span><span class="perl_Var def_Var">@columns</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Set_some_columns_in_a_row_slice"></a>
+<h4>Set some columns in a row (slice)</h4>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Word def_Keyword">my </span><span class="perl_Var def_Var">$key </span><span class="perl_Symb def_Symbol">= </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>os28004<span class="def_PairEnd def_Special">'</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="perl_Word def_Keyword">my </span><span class="perl_Var def_Var">@columns </span><span class="perl_Symb def_Symbol">= </span><span class="perl_String def_String"><span class="def_PairStart def_Special"><span class="perl_ReType perl_Word def_Keyword">qw</span><span class="perl_StringEdge regexp_SpecQuote def_StringEdge def_String">/</span></span>price description<span class="def_PairEnd def_Special"><span class="perl_StringEdge regexp_SpecQuote def_StringEdge def_String">/</span></span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="perl_Word def_Keyword">my </span><span class="perl_Var def_Var">@values </span><span class="perl_Symb def_Symbol">= </span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Numb def_Number">5.</span><span class="perl_Numb def_Number">95</span><span class="perl_Symb def_Symbol">, </span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span>Ergo Roller<span class="def_PairEnd def_Special">&quot;</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="perl_Var def_Var">$array_ref </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$db</span><span class="perl_Symb def_Symbol">-&gt;</span>set_slice<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$key</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Symb def_Symbol">\</span><span class="perl_Var def_Var">@columns</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Symb def_Symbol">\</span><span class="perl_Var def_Var">@values</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Alternate_method_for_setting_a_slice"></a>
+<h4>Alternate method for setting a slice</h4>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Word def_Keyword">my </span><span class="perl_Var def_Var">$key </span><span class="perl_Symb def_Symbol">= </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>os28004<span class="def_PairEnd def_Special">'</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="perl_Word def_Keyword">my </span><span class="perl_Var def_Var">%columns </span><span class="perl_Symb def_Symbol">= </span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span> </span>price <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_Numb def_Number">5.</span><span class="perl_Numb def_Number">95</span><span class="perl_Symb def_Symbol">, </span>description <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span>Ergo Roller<span class="def_PairEnd def_Special">&quot;</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="perl_Var def_Var">$array_ref </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$db</span><span class="perl_Symb def_Symbol">-&gt;</span>set_slice<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$key</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Symb def_Symbol">\</span><span class="perl_Var def_Var">%columns</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Specifying_INSERT_or_UPDATE"></a>
+<h4>Specifying INSERT or UPDATE</h4>
+<p>
+Either:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Word def_Keyword">my </span><span class="perl_Var def_Var">$key </span><span class="perl_Symb def_Symbol">= </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>os28004<span class="def_PairEnd def_Special">'</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="perl_Word def_Keyword">my </span><span class="perl_Var def_Var">%columns </span><span class="perl_Symb def_Symbol">= </span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span> </span>price <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_Numb def_Number">5.</span><span class="perl_Numb def_Number">95</span><span class="perl_Symb def_Symbol">, </span>description <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span>Ergo Roller<span class="def_PairEnd def_Special">&quot;</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="perl_Word def_Keyword">my </span><span class="perl_Var def_Var">%opt </span><span class="perl_Symb def_Symbol">= </span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span> </span>dml <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>insert<span class="def_PairEnd def_Special">'</span> </span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="perl_Var def_Var">$array_ref </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$db</span><span class="perl_Symb def_Symbol">-&gt;</span>set_slice<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span><span class="perl_Symb def_Symbol">\</span><span class="perl_Var def_Var">%opt</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Var def_Var">$key</span><span class="def_Symbol"><span class="def_PairEnd def_Special">]</span></span><span class="perl_Symb def_Symbol">, </span><span class="perl_Symb def_Symbol">\</span><span class="perl_Var def_Var">%columns</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+or:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Word def_Keyword">my </span><span class="perl_Var def_Var">$key </span><span class="perl_Symb def_Symbol">= </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>os28004<span class="def_PairEnd def_Special">'</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="perl_Word def_Keyword">my </span><span class="perl_Var def_Var">%columns </span><span class="perl_Symb def_Symbol">= </span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span> </span>price <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_Numb def_Number">5.</span><span class="perl_Numb def_Number">95</span><span class="perl_Symb def_Symbol">, </span>description <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span>Ergo Roller<span class="def_PairEnd def_Special">&quot;</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="perl_Word def_Keyword">my </span><span class="perl_Var def_Var">%opt </span><span class="perl_Symb def_Symbol">= </span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span> </span>dml <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>insert<span class="def_PairEnd def_Special">'</span> </span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="perl_Var def_Var">$array_ref </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$db</span><span class="perl_Symb def_Symbol">-&gt;</span>set_slice<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span><span class="perl_Symb def_Symbol">\</span><span class="perl_Var def_Var">%opt</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Var def_Var">$key</span><span class="def_Symbol"><span class="def_PairEnd def_Special">]</span></span><span class="perl_Symb def_Symbol">, </span><span class="perl_Symb def_Symbol">\</span><span class="perl_Var def_Var">%columns</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The &quot;<span class="fixedwidth">dml</span>&quot; option may be set to either &quot;<span class="fixedwidth">insert</span>&quot;,
+&quot;<span class="fixedwidth">update</span>&quot; or may be left unset.&nbsp;
+If unset then the default will be to insert a new row or update
+an existing rows,
+as appropriate.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_availability.gif" width="32" height="32" border="0" alt="Availability">
+</td>
+<td width="100%">
+<p class="title">Availability</p>
+<p style="margin-bottom: 0px">
+This facility was introduced in version 5.5.2,
+and is therefore not available for use with any earlier Interchange version.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="Perform_a_SQL_query_returning_an_array_of_arrays"></a>
+<h4>Perform a SQL query, returning an array of arrays</h4>
+<p>
+This is the equivalent of DBI <span class="fixedwidth">&#36;sth-&gt;fetchall_arrayref</span>.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$ary </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$db</span><span class="perl_Symb def_Symbol">-&gt;</span>query<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$sql</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The following is the same, except that it also obtains hash reference of
+pointers to column positions and array reference containing list of columns:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Word def_Keyword">my </span><span class="perl_Var def_Var">$sql </span><span class="perl_Symb def_Symbol">= </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>select * from products<span class="def_PairEnd def_Special">'</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$ary</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Var def_Var">$index_hash</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Var def_Var">$name_ary</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span> </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$db</span><span class="perl_Symb def_Symbol">-&gt;</span>query<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$sql</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="perl_Var def_Var">$columns_returned </span><span class="perl_Symb def_Symbol">= </span><span class="perl_WordFun perl_Word def_Keyword">join </span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span>,<span class="def_PairEnd def_Special">&quot;</span></span><span class="perl_Symb def_Symbol">, </span>@<span class="perl_Var def_Var">$name_ary</span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="perl_Var def_Var">$pointer_to_price </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$index_hash</span><span class="perl_Symb def_Symbol">-&gt;</span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span>price<span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Perform_a_SQL_query_returning_an_array_of_hashes"></a>
+<h4>Perform a SQL query, returning an array of hashes</h4>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$ary </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$db</span><span class="perl_Symb def_Symbol">-&gt;</span>query<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span> </span>sql <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_Var def_Var">$sql</span><span class="perl_Symb def_Symbol">, </span>hashref <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_Numb def_Number">1 </span><span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="See_if_a_columns_datatype_is_numeric"></a>
+<h4>See if a column's datatype is numeric</h4>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$is_numeric </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$db</span><span class="perl_Symb def_Symbol">-&gt;</span>numeric<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$column_name</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Quote_a_value_for_SQL_query_purposes"></a>
+<h4>Quote a value for SQL query purposes</h4>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$quoted </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$db</span><span class="perl_Symb def_Symbol">-&gt;</span>quote<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$value</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Var def_Var">$column_name</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Check_configuration_of_the_database"></a>
+<h4>Check configuration of the database</h4>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$delimiter </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$db</span><span class="perl_Symb def_Symbol">-&gt;</span>config<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>DELIMITER<span class="def_PairEnd def_Special">'</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Find_the_names_of_the_columns_not_including_the_key"></a>
+<h4>Find the names of the columns (not including the key)</h4>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">@columns </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$db</span><span class="perl_Symb def_Symbol">-&gt;</span>columns<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<br>
+<span class="perl_Comment def_Comment def_Syntax">#</span><br>
+<span class="perl_Comment def_Comment def_Syntax">#&nbsp; &nbsp; insert the key column name</span><br>
+<span class="perl_Comment def_Comment def_Syntax">#</span><br>
+<span class="perl_WordFun perl_Word def_Keyword">unshift </span><span class="perl_Var def_Var">@columns</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Var def_Var">$db</span><span class="perl_Symb def_Symbol">-&gt;</span>config<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>KEY<span class="def_PairEnd def_Special">'</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Check_whether_a_column_is_in_the_table"></a>
+<h4>Check whether a column is in the table</h4>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$is_a_column </span><span class="perl_Symb def_Symbol">= </span><span class="perl_WordFun perl_Word def_Keyword">defined </span><span class="perl_Var def_Var">$db</span><span class="perl_Symb def_Symbol">-&gt;</span>test_column<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$column_name</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Check_whether_a_key_is_in_the_table"></a>
+<h4>Check whether a key is in the table</h4>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$is_present </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$db</span><span class="perl_Symb def_Symbol">-&gt;</span>record_exists<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$key</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Create_a_subroutine_to_return_a_single_column_from_the_table"></a>
+<h4>Create a subroutine to return a single column from the table</h4>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$sub </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$db</span><span class="perl_Symb def_Symbol">-&gt;</span>field_accessor<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$column</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="perl_Word def_Keyword">for </span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">@keys</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span> </span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span><br>
+&nbsp; &nbsp; <span class="perl_WordFun perl_Word def_Keyword">push </span><span class="perl_Var def_Var">@values</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Var def_Var">$sub</span><span class="perl_Symb def_Symbol">-&gt;</span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$key</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Create_a_subroutine_to_set_a_single_column_in_the_database"></a>
+<h4>Create a subroutine to set a single column in the database</h4>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$sub </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$db</span><span class="perl_Symb def_Symbol">-&gt;</span>field_settor<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$column</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="perl_Word def_Keyword">for </span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">@keys</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span> </span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span><br>
+&nbsp; &nbsp; <span class="perl_Var def_Var">$sub</span><span class="perl_Symb def_Symbol">-&gt;</span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$key</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Var def_Var">$value</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Create_a_subroutine_to_set_a_slice_of_the_database"></a>
+<h4>Create a subroutine to set a slice of the database</h4>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$sub </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$db</span><span class="perl_Symb def_Symbol">-&gt;</span>row_settor<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">@columns</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="perl_Word def_Keyword">for </span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">@keys</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span> </span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span><br>
+&nbsp; &nbsp; <span class="perl_Var def_Var">$sub</span><span class="perl_Symb def_Symbol">-&gt;</span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$key</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Var def_Var">@values</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Return_a_complete_array_of_the_database_minus_the_key"></a>
+<h4>Return a complete array of the database (minus the key)</h4>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">@values </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$db</span><span class="perl_Symb def_Symbol">-&gt;</span>row<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$key</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Delete_a_row_from_the_table"></a>
+<h4>Delete a row from the table</h4>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$db</span><span class="perl_Symb def_Symbol">-&gt;</span>delete_record<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$key</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="DbSearch"></a>
+<h2>&#36;DbSearch</h2>
+<p>
+This is a search object that will search a database table.&nbsp;
+It is the same as Interchange's <span class="fixedwidth">db</span>
+<a href="http://interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_searchtype_st" title="&quot;mv searchtype st&quot; heading on the &quot;Search parameters&quot; page">searchtype</a>.&nbsp;
+Options are specified in a hash and passed to the object.&nbsp;
+All multiple column options should be passed as array references.&nbsp;
+Before using the <span class="fixedwidth">&#36;DbSearch</span> object,
+it must be told which table to search.
+</p>
+<p>
+To use the &quot;<span class="fixedwidth">foo</span>&quot; table,
+it must first have been shared with <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/perl.html" title="perl (tags)">perl</a> tables=foo]</span>.
+</p>
+<p>
+There are three search methods, as follows:
+</p>
+<table class="border">
+<tr valign="top">
+<th class="grid">Method
+</th>
+<th class="grid">Description
+</th>
+</tr>
+<tr valign="top">
+<td class="grid">array
+</td>
+<td class="grid">Returns a reference to an array of arrays (best).</td>
+</tr>
+<tr valign="top">
+<td class="grid">hash
+</td>
+<td class="grid">Returns a reference to an array of hashes (slower).</td>
+</tr>
+<tr valign="top">
+<td class="grid">list
+</td>
+<td class="grid">Returns a reference to an array of tab-delimited lines.</td>
+</tr>
+</table>
+
+<p>
+For example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$DbSearch</span><span class="perl_Symb def_Symbol">-&gt;</span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span>table<span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span> </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$Db</span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span>foo<span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<br>
+<span class="perl_Var def_Var">$search </span><span class="perl_Symb def_Symbol">= </span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span><br>
+&nbsp; &nbsp; mv_searchspec <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>Mona Lisa<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; mv_search_field <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="def_Symbol"><span class="def_PairStart def_Special">[</span> </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>title<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">, </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>artist<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">, </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>price<span class="def_PairEnd def_Special">'</span> </span><span class="def_Symbol"><span class="def_PairEnd def_Special">]</span></span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; mv_return_fields <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="def_Symbol"><span class="def_PairStart def_Special">[</span> </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>title<span class="def_PairEnd def_Special">'</span> </span><span class="def_Symbol"><span class="def_PairEnd def_Special">]</span></span><br>
+<span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<br>
+<span class="perl_Word def_Keyword">my </span><span class="perl_Var def_Var">$ary </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$DbSearch</span><span class="perl_Symb def_Symbol">-&gt;</span>array<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$search</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<br>
+<span class="perl_Word def_Keyword">return </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>No match.<span class="def_PairEnd def_Special">'</span> </span><span class="perl_Word def_Keyword">unless </span><span class="perl_WordFun perl_Word def_Keyword">scalar</span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span>@<span class="perl_Var def_Var">$ary</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<br>
+<span class="perl_Word def_Keyword">foreach </span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span>@<span class="perl_Var def_Var">$ary</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span> </span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span><br>
+&nbsp; &nbsp; do_something<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$_</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+<p style="margin-bottom: 0px">
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Global context">
+</td>
+<td width="100%">
+<p class="title">Global context</p>
+<p style="margin-bottom: 0px">
+You cannot use this object in a global context,
+such as from within a global <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserTag.html" title="UserTag (config)">UserTag</a></span> or a
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/GlobalSub.html" title="GlobalSub (config)">GlobalSub</a></span> etc. Use the &quot;<span class="fixedwidth">&#36;Vend::DbSearch</span>&quot; hashref instead.
+</p>
+</td>
+</tr>
+</table>
+<a name="Document"></a>
+<h2>&#36;Document</h2>
+<p>
+This is an object which will allow you to write and manipulate the output of
+your embedded Perl.&nbsp;
+For instance, you can emulate a non-parsed-header program with the following:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>perl<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span></span><br>
+&nbsp; &nbsp; <span class="perl_Var def_Var">$Document</span><span class="perl_Symb def_Symbol">-&gt;</span>hot<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Numb def_Number">1</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<br>
+&nbsp; &nbsp; <span class="perl_Word def_Keyword">foreach </span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Numb def_Number">1 </span><span class="perl_Symb def_Symbol">.. </span><span class="perl_Numb def_Number">20</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span> </span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="perl_Var def_Var">$Document</span><span class="perl_Symb def_Symbol">-&gt;</span><span class="perl_WordFun perl_Word def_Keyword">write</span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span>Counting to <span class="perl_Var def_Var">$_</span>...&lt;br&gt;<span class="def_PairEnd def_Special">&quot;</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="perl_Var def_Var">$Document</span><span class="perl_Symb def_Symbol">-&gt;</span><span class="perl_WordFun perl_Word def_Keyword">write</span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span> </span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot; </span><span class="def_PairEnd def_Special">&quot;</span> </span><span class="perl_WordFun perl_Word def_Keyword">x </span><span class="perl_Numb def_Number">4096</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="perl_Var def_Var">$Tag</span><span class="perl_Symb def_Symbol">-&gt;</span><span class="perl_WordFun perl_Word def_Keyword">sleep</span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Numb def_Number">1</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+&nbsp; &nbsp; <span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><br>
+&nbsp; &nbsp; <span class="perl_Var def_Var">$Document</span><span class="perl_Symb def_Symbol">-&gt;</span><span class="perl_WordFun perl_Word def_Keyword">write</span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span>Finished counting!<span class="def_PairEnd def_Special">&quot;</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+&nbsp; &nbsp; <span class="perl_WordFun perl_Word def_Keyword">undef</span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>/perl<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Note the write of 4096 spaces.&nbsp;
+Because Interchange's link program is parsed by default and your web server
+(and the link program) have buffers,
+you need to fill up the buffer to cause a write.&nbsp;
+You can do it without the extra padding if you set the link up as a
+non-parsed-header program.&nbsp;
+See your web server documentation on how to do that.
+</p>
+<p>
+There are several methods associated with the <span class="fixedwidth">&#36;Document</span>
+object, as follows:
+</p>
+<p style="margin-bottom: 0px">
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Global context">
+</td>
+<td width="100%">
+<p class="title">Global context</p>
+<p style="margin-bottom: 0px">
+You cannot use this object in a global context,
+such as from within a global <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserTag.html" title="UserTag (config)">UserTag</a></span> or a
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/GlobalSub.html" title="GlobalSub (config)">GlobalSub</a></span> etc. Use the &quot;<span class="fixedwidth">&#36;Vend::Document</span>&quot; hashref instead.
+</p>
+</td>
+</tr>
+</table>
+<a name="header"></a>
+<h3>header</h3>
+<p>
+Add a line to the HTTP header:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Document</span><span class="perl_Symb def_Symbol">-&gt;</span>header<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$foo</span><span class="perl_Symb def_Symbol">,</span><span class="perl_Var def_Var">$opt</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+This can be used to change the page content type,
+cache options or other attributes.&nbsp;
+The code below changes the content type (MIME type) to text/plain:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Document</span><span class="perl_Symb def_Symbol">-&gt;</span>header<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span>Content-type: text/plain<span class="def_PairEnd def_Special">&quot;</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+There is an optional hash that can be sent,
+with the only valid value being &quot;replace&quot; The code below scrubs all previous header lines:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Document</span><span class="perl_Symb def_Symbol">-&gt;</span>header<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span>Content-type: text/plain<span class="def_PairEnd def_Special">&quot;</span></span><span class="perl_Symb def_Symbol">,</span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span> </span>replace <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_Numb def_Number">1 </span><span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Once output has been sent with <a href="#send" title="&quot;send&quot; heading on this page">&#36;Document-&gt;send()</a>,
+the <span class="fixedwidth">&#36;Document-&gt;header()</span> method no longer has any effect.
+</p>
+<a name="hot"></a>
+<h3>hot</h3>
+<p>
+If the parameter is true (in the Perl sense),
+then all <a href="#write" title="&quot;write&quot; heading on this page">&#36;Document-&gt;write()</a> operations will be immediately sent,
+until a &#36;Document-&gt;hot(0) is called.
+</p>
+<p>
+For instance,
+the following causes <a href="#write" title="&quot;write&quot; heading on this page">writes</a> to be sent to the user's browser immediately:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Document</span><span class="perl_Symb def_Symbol">-&gt;</span>hot<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Numb def_Number">1</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Stop immediate <a href="#write" title="&quot;write&quot; heading on this page">writes</a>:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Document</span><span class="perl_Symb def_Symbol">-&gt;</span>hot<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Numb def_Number">0</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="insert"></a>
+<h3>insert</h3>
+<p>
+Insert a value to front of write buffer array:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Document</span><span class="perl_Symb def_Symbol">-&gt;</span>insert<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$foo</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The following example will output &quot;123&quot;:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Document</span><span class="perl_Symb def_Symbol">-&gt;</span><span class="perl_WordFun perl_Word def_Keyword">write</span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span><span class="def_NumberDec def_Number">23</span><span class="def_PairEnd def_Special">&quot;</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="perl_Var def_Var">$Document</span><span class="perl_Symb def_Symbol">-&gt;</span>insert<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span><span class="def_NumberDec def_Number">1</span><span class="def_PairEnd def_Special">&quot;</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="perl_Var def_Var">$Document</span><span class="perl_Symb def_Symbol">-&gt;</span><span class="perl_WordFun perl_Word def_Keyword">send</span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+while this example will output &quot;231&quot; </p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Document</span><span class="perl_Symb def_Symbol">-&gt;</span><span class="perl_WordFun perl_Word def_Keyword">write</span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span><span class="def_NumberDec def_Number">23</span><span class="def_PairEnd def_Special">&quot;</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="perl_Var def_Var">$Document</span><span class="perl_Symb def_Symbol">-&gt;</span><span class="perl_WordFun perl_Word def_Keyword">write</span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span><span class="def_NumberDec def_Number">1</span><span class="def_PairEnd def_Special">&quot;</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="perl_Var def_Var">$Document</span><span class="perl_Symb def_Symbol">-&gt;</span><span class="perl_WordFun perl_Word def_Keyword">send</span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="ref"></a>
+<h3>ref</h3>
+<p>
+Get a reference to output buffer:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$ary_ref </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$Document</span><span class="perl_Symb def_Symbol">-&gt;</span><span class="perl_WordFun perl_Word def_Keyword">ref</span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="replace"></a>
+<h3>replace</h3>
+<p>
+Replace contents of the write buffer with the contents of a supplied array:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Document</span><span class="perl_Symb def_Symbol">-&gt;</span>replace<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">@ary</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="review"></a>
+<h3>review</h3>
+<p>
+Return the contents of the write buffer as an array:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Word def_Keyword">my </span><span class="perl_Var def_Var">@ary </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$Document</span><span class="perl_Symb def_Symbol">-&gt;</span>review<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="send"></a>
+<h3>send</h3>
+<p>
+Flush the write buffer array to the output,
+done automatically upon the end of the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/perl.html" title="perl (tags)">perl</a>]</span> call.&nbsp;
+This also clears the buffer and invalidates
+<span class="fixedwidth"><a href="#header" title="&quot;header&quot; heading on this page">&#36;Document-&gt;header()</a></span>.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Document</span><span class="perl_Symb def_Symbol">-&gt;</span><span class="perl_WordFun perl_Word def_Keyword">send</span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="write"></a>
+<h3>write</h3>
+<p>
+Append a value to the write buffer array
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Document</span><span class="perl_Symb def_Symbol">-&gt;</span><span class="perl_WordFun perl_Word def_Keyword">write</span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$foo</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The above will write &#36;foo to the page in a buffered fashion.&nbsp;
+The buffer is an array containing the results of all previous
+<span class="fixedwidth">&#36;Document-&gt;write()</span> operations.&nbsp;
+If <span class="fixedwidth"><a href="#hot" title="&quot;hot&quot; heading on this page">&#36;Document-&gt;hot(1)</a></span> has been set then the output will
+immediately be sent to the user's browser.
+</p>
+<p>
+Also see the <span class="fixedwidth"><a href="#HTML" title="&quot;HTML&quot; heading on this page">HTML</a></span> subroutine.
+</p>
+<a name="Items"></a>
+<h2>&#36;Items</h2>
+<p>
+This is a reference to the current shopping cart array.&nbsp;
+This will normally be the same as <span class="fixedwidth"><a href="#Carts" title="&quot;Carts&quot; heading on this page">&#36;Carts-&gt;{main}</a></span>,
+unless the Interchange <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/cart.html" title="cart (tags)">cart</a>]</span> tag has been used
+to make a cart other than &quot;<span class="fixedwidth">main</span>&quot; the default.
+</p>
+<p>
+See the <span class="fixedwidth"><a href="#Carts" title="&quot;Carts&quot; heading on this page">&#36;Carts</a></span> section for an example of the
+array structure.
+</p>
+<p style="margin-bottom: 0px">
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Global context">
+</td>
+<td width="100%">
+<p class="title">Global context</p>
+<p style="margin-bottom: 0px">
+You cannot use this object in a global context,
+such as from within a global <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserTag.html" title="UserTag (config)">UserTag</a></span> or a
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/GlobalSub.html" title="GlobalSub (config)">GlobalSub</a></span> etc. Use the &quot;<span class="fixedwidth">&#36;Vend::Items</span>&quot; arrayref instead.
+</p>
+</td>
+</tr>
+</table>
+<a name="Scratch"></a>
+<h2>&#36;Scratch</h2>
+<p>
+A reference to the scratchpad values ala <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/scratch.html" title="scratch (tags)">scratch</a> foo]</span>.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Scratch</span><span class="perl_Symb def_Symbol">-&gt;</span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span>foo<span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span> </span><span class="perl_Symb def_Symbol">= </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>bar<span class="def_PairEnd def_Special">'</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+is equivalent to:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">set foo</span><span class="def_Symbol">]</span><span class="def_Syntax">bar</span><span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">set</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+<p style="margin-bottom: 0px">
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Global context">
+</td>
+<td width="100%">
+<p class="title">Global context</p>
+<p style="margin-bottom: 0px">
+You cannot use this object in a global context,
+such as from within a global <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserTag.html" title="UserTag (config)">UserTag</a></span> or a
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/GlobalSub.html" title="GlobalSub (config)">GlobalSub</a></span> etc. Use the &quot;<span class="fixedwidth">&#36;::Scratch</span>&quot; hashref instead.
+</p>
+</td>
+</tr>
+</table>
+<a name="Session"></a>
+<h2>&#36;Session</h2>
+<p>
+A reference to the session hash maintained for the current user.
+</p>
+<p>
+The following two blocks of code are equivalent:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="comment">Using Perl</span><br><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">calcn</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">return </span>$<span class="def_Syntax">Session</span><span class="def_Symbol">-</span><span class="def_Symbol">&gt;</span><span class="def_Symbol">{</span><span class="def_Syntax">browser</span><span class="def_Symbol">}</span><span class="def_Symbol">;</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">calcn</span><span class="def_Symbol">]</span><br>
+</span>
+</td>
+</tr>
+<tr>
+<td class="hr">
+<span class="fixedwidth">
+<span class="comment">Using the [data] tag</span><br><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">data session browser</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Session values can also be set.&nbsp;
+For instance, if the value of <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/data.html" title="data (tags)">data</a> session source]</span>
+needs to be changed, for some reason, then you could use the following:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Session</span><span class="perl_Symb def_Symbol">-&gt;</span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span>source<span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span> </span><span class="perl_Symb def_Symbol">= </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>New_partner<span class="def_PairEnd def_Special">'</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The following keys are available in the <span class="fixedwidth">&#36;Session</span> hash reference.
+</p>
+<table class="border">
+<tr valign="top">
+<th class="grid">Name
+</th>
+<th class="grid">Description
+</th>
+</tr>
+<tr valign="top">
+<td class="grid">accesses
+</td>
+<td class="grid">The number of pare requests performed for this session within
+the last 30 seconds.</td>
+</tr>
+<tr valign="top">
+<td class="grid">arg
+</td>
+<td class="grid">The argument passed in an <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/area.html" title="area (tags)">area</a>]</span> tag.</td>
+</tr>
+<tr valign="top">
+<td class="grid">browser
+</td>
+<td class="grid">The identification value sent by the user agent.</td>
+</tr>
+<tr valign="top">
+<td class="grid">carts
+</td>
+<td class="grid">A reference to a Perl hash containing shopping carts.&nbsp;
+See <a href="http://interchange-rtfm.pullingshots.ca/icdocs/Interchange_Perl_objects.html#Carts" title="&quot;Carts&quot; heading on the &quot;Interchange Perl objects&quot; page">&#36;Carts</a> for
+more information.</td>
+</tr>
+<tr valign="top">
+<td class="grid">host
+</td>
+<td class="grid">Interchange's note of the visitor's hostname
+(possibly modified by <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DomainTail.html" title="DomainTail (config)">DomainTail</a></span>).&nbsp;
+If the hostname could not be looked up
+(<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/HostnameLookups.html" title="HostnameLookups (config)">HostnameLookups</a></span> switched off or
+DNS error etc.) then the visitor's IP address will be
+stored here instead.</td>
+</tr>
+<tr valign="top">
+<td class="grid">id
+</td>
+<td class="grid">The current session ID.</td>
+</tr>
+<tr valign="top">
+<td class="grid">last_error
+</td>
+<td class="grid">The last error or status message from the error logging routine.</td>
+</tr>
+<tr valign="top">
+<td class="grid">last_search
+</td>
+<td class="grid">The last non-SQL Interchange search specification invoked.</td>
+</tr>
+<tr valign="top">
+<td class="grid">last_url
+</td>
+<td class="grid">The current Interchange path_info.</td>
+</tr>
+<tr valign="top">
+<td class="grid">logged_in
+</td>
+<td class="grid">Will be <em>true</em> if the user is logged in.</td>
+</tr>
+<tr valign="top">
+<td class="grid">ohost
+</td>
+<td class="grid">Interchange's note of the visitor's IP address when using
+a non-SSL link.&nbsp;
+Also see <span class="fixedwidth">shost</span>.</td>
+</tr>
+<tr valign="top">
+<td class="grid">pageCount
+</td>
+<td class="grid">Number of unique URIs generated by Interchange for this session.</td>
+</tr>
+<tr valign="top">
+<td class="grid">payment_result
+</td>
+<td class="grid">A hash of result messages from payment module
+transaction attempts.&nbsp;
+See examples in the
+<a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_payment_modules.html" title="Category - interchange payment modules">Interchange payment modules</a> documentation.</td>
+</tr>
+<tr valign="top">
+<td class="grid">prev_url
+</td>
+<td class="grid">The previous <span class="fixedwidth">path_info</span>.</td>
+</tr>
+<tr valign="top">
+<td class="grid">referer
+</td>
+<td class="grid"><span class="fixedwidth">HTTP_REFERER</span> string.</td>
+</tr>
+<tr valign="top">
+<td class="grid">ship_message
+</td>
+<td class="grid">The last error messages from shipping.</td>
+</tr>
+<tr valign="top">
+<td class="grid">shost
+</td>
+<td class="grid">Interchange's note of the visitor's IP address when using
+a SSL link.&nbsp;
+Also see <span class="fixedwidth">ohost</span>.</td>
+</tr>
+<tr valign="top">
+<td class="grid">spider
+</td>
+<td class="grid">Will be <em>true</em> if the user is a search engine spider.</td>
+</tr>
+<tr valign="top">
+<td class="grid">source
+</td>
+<td class="grid">Source of original entry to Interchange.</td>
+</tr>
+<tr valign="top">
+<td class="grid">teleport
+</td>
+<td class="grid">Date and time (in
+&quot;<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/time.html#Time_format_tokens" title="&quot;Time format tokens&quot; heading on the &quot;time (tags)&quot; page">&#37;Y&#37;m&#37;d&#37;H&#37;M&#37;S</a></span>&quot; format) for use with the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/PageTables.html" title="PageTables (config)">PageTables</a></span>
+directive.</td>
+</tr>
+<tr valign="top">
+<td class="grid">time
+</td>
+<td class="grid">Time (seconds since 01 January 1970) of the last access.</td>
+</tr>
+<tr valign="top">
+<td class="grid">user
+</td>
+<td class="grid">The <span class="fixedwidth">REMOTE_USER</span> string.</td>
+</tr>
+<tr valign="top">
+<td class="grid">username
+</td>
+<td class="grid">Logged-in username.&nbsp;
+See the <a href="http://interchange-rtfm.pullingshots.ca/icdocs/Interchange_user_database.html" title="Interchange user database">Interchange user database</a> page.</td>
+</tr>
+</table>
+<p style="margin-bottom: 0px">
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Global context">
+</td>
+<td width="100%">
+<p class="title">Global context</p>
+<p style="margin-bottom: 0px">
+You cannot use this object in a global context,
+such as from within a global <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserTag.html" title="UserTag (config)">UserTag</a></span> or a
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/GlobalSub.html" title="GlobalSub (config)">GlobalSub</a></span> etc. Use the &quot;<span class="fixedwidth">&#36;Vend::Session</span>&quot; hashref instead.
+</p>
+</td>
+</tr>
+</table>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_warning.gif" width="32" height="32" border="0" alt="Warning">
+</td>
+<td width="100%">
+<p class="title">Warning</p>
+<p style="margin-bottom: 0px">
+Make sure you know what you're doing before you start monkeying about
+with the values stored in the <span class="fixedwidth">&#36;Session</span> hashref.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="Sql"></a>
+<h2>&#37;Sql</h2>
+<p>
+A hash of SQL tables that you shared with <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/perl.html" title="perl (tags)">perl</a> tables=&quot;foo&quot;]</span>.&nbsp;
+It returns the DBI database handle,
+so operations like the following can be performed:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>perl tables<span class="perl_Symb def_Symbol">=</span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span>products<span class="def_PairEnd def_Special">&quot;</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">]</span></span><br>
+&nbsp; &nbsp; <span class="perl_Word def_Keyword">my </span><span class="perl_Var def_Var">$dbh </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$Sql</span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span>products<span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span> </span><span class="perl_Symb def_Symbol">or </span><span class="perl_Word def_Keyword">return </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>Table is not defined<span class="def_PairEnd def_Special">'</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+&nbsp; &nbsp; <span class="perl_Word def_Keyword">my </span><span class="perl_Var def_Var">$sth </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$dbh</span><span class="perl_Symb def_Symbol">-&gt;</span>prepare<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_String def_String"><span class="def_PairStart def_Special"><span class="perl_ReType perl_Word def_Keyword">q</span><span class="perl_StringEdge regexp_SpecQuote def_StringEdge def_String">{</span></span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; SELECT&nbsp; sku, price<br>
+&nbsp; &nbsp; &nbsp; &nbsp; FROM&nbsp; &nbsp; products<br>
+&nbsp; &nbsp; <span class="def_PairEnd def_Special"><span class="perl_StringEdge regexp_SpecQuote def_StringEdge def_String">}</span></span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span> </span><span class="perl_Symb def_Symbol">or </span><span class="perl_Word def_Keyword">return </span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span>Couldn't prepare query <span class="def_NumberDec def_Number">1</span><span class="def_PairEnd def_Special">&quot;</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<br>
+&nbsp; &nbsp; <span class="perl_Var def_Var">$sth</span><span class="perl_Symb def_Symbol">-&gt;</span>execute<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span> </span><span class="perl_Symb def_Symbol">or </span><span class="perl_Word def_Keyword">return </span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span>Couldn't execute query <span class="def_NumberDec def_Number">1</span><span class="def_PairEnd def_Special">&quot;</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<br>
+&nbsp; &nbsp; <span class="perl_Word def_Keyword">my </span><span class="perl_Var def_Var">@row</span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+&nbsp; &nbsp; <span class="perl_Word def_Keyword">while </span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">@row </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$sth</span><span class="perl_Symb def_Symbol">-&gt;</span>fetchrow<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span> </span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; do_something<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Symb def_Symbol">\</span><span class="perl_Var def_Var">@row</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+&nbsp; &nbsp; <span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><br>
+<br>
+&nbsp; &nbsp; <span class="perl_Var def_Var">$sth </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$dbh</span><span class="perl_Symb def_Symbol">-&gt;</span>prepare<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_String def_String"><span class="def_PairStart def_Special"><span class="perl_ReType perl_Word def_Keyword">q</span><span class="perl_StringEdge regexp_SpecQuote def_StringEdge def_String">{</span></span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; SELECT&nbsp; foo, bar<br>
+&nbsp; &nbsp; &nbsp; &nbsp; FROM&nbsp; &nbsp; sometable<br>
+&nbsp; &nbsp; <span class="def_PairEnd def_Special"><span class="perl_StringEdge regexp_SpecQuote def_StringEdge def_String">}</span></span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span> </span><span class="perl_Symb def_Symbol">or </span><span class="perl_Word def_Keyword">return </span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span>Couldn't prepare query <span class="def_NumberDec def_Number">2</span><span class="def_PairEnd def_Special">&quot;</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<br>
+&nbsp; &nbsp; <span class="perl_Var def_Var">$sth</span><span class="perl_Symb def_Symbol">-&gt;</span>execute<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span> </span><span class="perl_Symb def_Symbol">or </span><span class="perl_Word def_Keyword">return </span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span>Couldn't execute query <span class="def_NumberDec def_Number">2</span><span class="def_PairEnd def_Special">&quot;</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<br>
+&nbsp; &nbsp; <span class="perl_Word def_Keyword">while </span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">@row </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$sth</span><span class="perl_Symb def_Symbol">-&gt;</span>fetchrow<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span> </span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; do_something_else<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Symb def_Symbol">\</span><span class="perl_Var def_Var">@row</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+&nbsp; &nbsp; <span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><br>
+&nbsp; &nbsp; <span class="perl_WordFun perl_Word def_Keyword">undef</span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>/perl<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+<br>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+This object is not available when using the
+<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/calc.html" title="calc (tags)">calc</a>]</span>,
+<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/calcn.html" title="calcn (tags)">calcn</a>]</span> and
+<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-calc.html" title="PREFIX-calc (tags)">PREFIX-calc</a>]</span> tags.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="Sub"></a>
+<h2>&#36;Sub</h2>
+<p>
+The <span class="fixedwidth">&#36;Sub</span> allows access to any <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Sub.html" title="Sub (config)">Sub</a></span> or
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/GlobalSub.html" title="GlobalSub (config)">GlobalSub</a></span> subroutines you may have defined.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+<a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fsearch%2ecpan%2eorg%2f%7ergarcia%2fSafe%2d2%2e11%2fSafe%2epm:id=iaRj46P4" title="http://search.cpan.org/~rgarcia/Safe-2.11/Safe.pm" rel="nofollow">Safe</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page"> mode will be in operation during the
+subroutine call,
+so unsafe operations will be trapped as usual.
+</p>
+</td>
+</tr>
+</table>
+
+<p>
+Usage example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>perl<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span></span><br>
+&nbsp; &nbsp; <span class="perl_Word def_Keyword">my </span><span class="perl_Var def_Var">$result </span><span class="perl_Symb def_Symbol">= </span><span class="perl_Var def_Var">$Sub</span><span class="perl_Symb def_Symbol">-&gt;</span>mysub<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>arg1<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>arg2<span class="def_PairEnd def_Special">'</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+&nbsp; &nbsp; <span class="perl_Word def_Keyword">return </span><span class="perl_Var def_Var">$result</span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>/perl<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+<p style="margin-bottom: 0px">
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Global context">
+</td>
+<td width="100%">
+<p class="title">Global context</p>
+<p style="margin-bottom: 0px">
+You cannot use this object in a global context,
+such as from within a global <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserTag.html" title="UserTag (config)">UserTag</a></span> or a
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/GlobalSub.html" title="GlobalSub (config)">GlobalSub</a></span> etc. Use the &quot;<span class="fixedwidth">Vend::Subs</span>&quot; object instead.
+</p>
+</td>
+</tr>
+</table>
+<a name="Tag"></a>
+<h2>&#36;Tag</h2>
+<p>
+Using the <span class="fixedwidth">&#36;Tag</span> object,
+most standard Interchange tags,
+and all user-defined tags can be accessed.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+If the tag will access a database that has not been previously opened,
+the table name must be passed in the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/perl.html" title="perl (tags)">perl</a>]</span> call.
+</p>
+</td>
+</tr>
+</table>
+
+<p>
+Usage example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>perl table<span class="perl_Symb def_Symbol">=</span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span>userdb<span class="def_PairEnd def_Special">&quot;</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">]</span></span><br>
+&nbsp; &nbsp; <span class="perl_Word def_Keyword">return </span><span class="perl_Var def_Var">$Tag</span><span class="perl_Symb def_Symbol">-&gt;</span>data<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; table <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>userdb<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; column <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>name<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; key <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_Var def_Var">$Session</span><span class="perl_Symb def_Symbol">-&gt;</span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span>username<span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; <span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>/perl<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+is the same as:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>data table<span class="perl_Symb def_Symbol">=</span>userdb column<span class="perl_Symb def_Symbol">=</span>name key<span class="perl_Symb def_Symbol">=</span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span>[data session username]<span class="def_PairEnd def_Special">&quot;</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">]</span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+If the tag has a dash (<span class="fixedwidth">-</span>) in its name
+then use an underscore instead:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="comment">WRONG!!!</span><br><br>
+<span class="perl_Var def_Var">$Tag</span><span class="perl_Symb def_Symbol">-&gt;</span>shipping<span class="perl_Symb def_Symbol">-</span>desc<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>upsg<span class="def_PairEnd def_Special">'</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<br>
+<span class="comment">Right</span><br><br>
+<span class="perl_Var def_Var">$Tag</span><span class="perl_Symb def_Symbol">-&gt;</span>shipping_desc<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>upsg<span class="def_PairEnd def_Special">'</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+There are two ways of specifying parameters.&nbsp;
+Either use the positional parameters,
+shown in the specific tag's documentation,
+or specify all parameters with a single option hash.
+</p>
+<p>
+For instance, the calls:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Tag</span><span class="perl_Symb def_Symbol">-&gt;</span>data<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>products<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>title<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>00-0011<span class="def_PairEnd def_Special">'</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+and:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Tag</span><span class="perl_Symb def_Symbol">-&gt;</span>data<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span><br>
+&nbsp; &nbsp; table <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>products<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; column <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>title<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; key <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>00-0011<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><br>
+<span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+are equivalent for the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/data.html" title="data (tags)">data</a>]</span> tag.
+</p>
+<p>
+If using the option hash method,
+and the tag has container text,
+either specify it in the hash parameter body or add it as the next argument.
+</p>
+<p>
+For instance, the calls:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Tag</span><span class="perl_Symb def_Symbol">-&gt;</span>tmpn<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span><br>
+&nbsp; &nbsp; <span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>name<span class="def_PairEnd def_Special">'</span> </span><span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>foo<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; <span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>body<span class="def_PairEnd def_Special">'</span> </span><span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>bar<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><br>
+<span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+and:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Tag</span><span class="perl_Symb def_Symbol">-&gt;</span>tmpn<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>foo<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span><span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><span class="perl_Symb def_Symbol">,</span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>bar<span class="def_PairEnd def_Special">'</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+are equivalent for the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/tmpn.html" title="tmpn (tags)">tmpn</a>]</span> tag.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+Names in the parameter hash are ALWAYS lower case.
+</p>
+</td>
+</tr>
+</table>
+
+<p>
+See the <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html" title="Category - interchange tags">Interchange tags</a> category for documentation
+on each of the standard Interchange markup language tags,
+along with a list of the named and positional parameters that
+can be passed to each of the tags.
+</p>
+<p style="margin-bottom: 0px">
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Global context">
+</td>
+<td width="100%">
+<p class="title">Global context</p>
+<p style="margin-bottom: 0px">
+You cannot use this object in a global context,
+such as from within a global <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserTag.html" title="UserTag (config)">UserTag</a></span> or a
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/GlobalSub.html" title="GlobalSub (config)">GlobalSub</a></span> etc. Use the &quot;<span class="fixedwidth">Vend::Tags</span>&quot; object instead.
+</p>
+</td>
+</tr>
+</table>
+<a name="Tmp"></a>
+<h2>&#36;Tmp</h2>
+<p>
+A reference to query results gathered by the current page.&nbsp;
+See <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/query.html" title="query (tags)">query</a>]</span>.
+</p>
+<a name="Values"></a>
+<h2>&#36;Values</h2>
+<p>
+A reference to the user form values,
+ala <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/value.html" title="value (tags)">value</a> foo]</span>.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>calcn<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span></span><br>
+<span class="perl_Var def_Var">$Values</span><span class="perl_Symb def_Symbol">-&gt;</span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span>foo<span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>/calcn<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+is equivalent to:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>value foo<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+<p style="margin-bottom: 0px">
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Global context">
+</td>
+<td width="100%">
+<p class="title">Global context</p>
+<p style="margin-bottom: 0px">
+You cannot use this object in a global context,
+such as from within a global <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserTag.html" title="UserTag (config)">UserTag</a></span> or a
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/GlobalSub.html" title="GlobalSub (config)">GlobalSub</a></span> etc. Use the &quot;<span class="fixedwidth">&#36;::Values</span>&quot; hashref instead.
+</p>
+</td>
+</tr>
+</table>
+<a name="Variable"></a>
+<h2>&#36;Variable</h2>
+<p>
+A reference to the website's variables,
+as configured using the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span> and
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Variabledatabase.html" title="Variabledatabase (config)">Variabledatabase</a></span> <em>local</em> configuration
+directives.
+</p>
+<p>
+A variable that can be accessed like this:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">_</span><span class="def_Symbol">_</span><span class="def_Syntax">FOO</span><span class="def_Symbol">_</span><span class="def_Symbol">_
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+can also be accessed like this:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>calcn<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span></span><br>
+<span class="perl_Var def_Var">$Variable</span><span class="perl_Symb def_Symbol">-&gt;</span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span>FOO<span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>/calcn<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+<p style="margin-bottom: 0px">
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Global context">
+</td>
+<td width="100%">
+<p class="title">Global context</p>
+<p style="margin-bottom: 0px">
+You cannot use this object in a global context,
+such as from within a global <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserTag.html" title="UserTag (config)">UserTag</a></span> or a
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/GlobalSub.html" title="GlobalSub (config)">GlobalSub</a></span> etc. Use the &quot;<span class="fixedwidth">&#36;::Variable</span>&quot; hashref instead.
+</p>
+</td>
+</tr>
+</table>
+<a name="Subroutines"></a>
+<h2>Subroutines</h2>
+<a name="Debug"></a>
+<h3>Debug</h3>
+<p>
+Create a new entry in the <em>global</em> <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DebugFile.html" title="DebugFile (config)">DebugFile</a></span>,
+if defined.&nbsp;
+This is the same as calling <span class="fixedwidth">::logDebug()</span> in a
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/GlobalSub.html" title="GlobalSub (config)">GlobalSub</a></span> or a <em>global</em> <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserTag.html" title="UserTag (config)">UserTag</a></span>.
+</p>
+<p>
+For instance:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>perl<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span></span><br>
+&nbsp; &nbsp; <span class="perl_packages perl_WordExt def_KeywordStrong def_Keyword">Debug</span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>Debug log entry<span class="def_PairEnd def_Special">'</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+&nbsp; &nbsp; <span class="perl_WordFun perl_Word def_Keyword">undef</span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>/perl<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="HTML"></a>
+<h3>HTML</h3>
+<p>
+Append a value to the write buffer array.&nbsp;
+This is exactly the same as the <span class="fixedwidth"><a href="#write" title="&quot;write&quot; heading on this page">&#36;Document-&gt;write()</a></span> method,
+described above.&nbsp;
+For example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+HTML <span class="perl_Var def_Var">$foo</span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Log"></a>
+<h3>Log</h3>
+<p>
+Send a message to the <em>local</em> <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ErrorFile.html" title="ErrorFile (config)">ErrorFile</a></span>.&nbsp;
+This is the same as calling <span class="fixedwidth">::logError()</span> in a
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/GlobalSub.html" title="GlobalSub (config)">GlobalSub</a></span> or a <em>global</em> <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserTag.html" title="UserTag (config)">UserTag</a></span>.
+</p>
+<p>
+For instance:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>perl<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span></span><br>
+&nbsp; &nbsp; Log<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>Error log entry<span class="def_PairEnd def_Special">'</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+&nbsp; &nbsp; <span class="perl_WordFun perl_Word def_Keyword">undef</span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>/perl<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+This prepends the normal timestamp with user and page information.&nbsp;
+To suppress that information,
+begin the message with a backslash (<span class="fixedwidth">&#92;</span>).
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>perl<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span></span><br>
+&nbsp; &nbsp; Log<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>\Error log entry without timestamp<span class="def_PairEnd def_Special">'</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+&nbsp; &nbsp; Log<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_String def_String"><span class="def_PairStart def_Special">&quot;</span><span class="perl_Slash def_StringContent def_String">\\</span>Another error log entry without timestamp<span class="def_PairEnd def_Special">&quot;</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+&nbsp; &nbsp; Log<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>Error log entry with timestamp<span class="def_PairEnd def_Special">'</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+&nbsp; &nbsp; <span class="perl_WordFun perl_Word def_Keyword">undef</span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>/perl<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span>
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+<br>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+The second <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/Log.html" title="Log (tags)">Log</a>]</span>, in the example above, used a double-backslash
+(<span class="fixedwidth">&#92;&#92;</span>) because double-quotes were used to enclose the message string.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="errmsg"></a>
+<h3>errmsg</h3>
+<p>
+Translate the text provided as the first parameter according to
+the transformation text provided in your website's locale table,
+or in the global translation table provided by the Interchange
+admin system.&nbsp;
+The return value will be either the translated text or,
+if no translation is found,
+the original text verbatim.
+</p>
+<p>
+Usage example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>calcn<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span></span><br>
+&nbsp; &nbsp; errmsg<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>Your session ID is <span class="perl_Var2 def_VarStrong def_Var">%s</span><span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">,</span><span class="perl_Var def_Var">$Session</span><span class="perl_Symb def_Symbol">-&gt;</span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span>id<span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>/calcn<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span> 
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="uneval"></a>
+<h3>uneval</h3>
+<p>
+Encode a Perl hash/array reference into a string representation of
+the code used to build the reference.&nbsp;
+This is the same as calling the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/uneval.html" title="uneval (tags)">uneval</a>]</span> tag.
+</p>
+<p>
+Usage example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>calcn<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span></span><br>
+&nbsp; &nbsp; <span class="perl_Var def_Var">$someref </span><span class="perl_Symb def_Symbol">= </span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; foo <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="def_Symbol"><span class="def_PairStart def_Special">[</span> </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>bar<span class="def_PairEnd def_Special">'</span></span><span class="perl_Symb def_Symbol">, </span><span class="perl_String def_String"><span class="def_PairStart def_Special">'</span>baz<span class="def_PairEnd def_Special">'</span> </span><span class="def_Symbol"><span class="def_PairEnd def_Special">]</span></span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; <span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+&nbsp; &nbsp; uneval<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$someref</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;</span><br>
+<span class="def_Symbol"><span class="def_PairStart def_Special">[</span></span>/calcn<span class="def_Symbol"><span class="def_PairEnd def_Special">]</span> 
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+</div>
+
+<!-- start of modification notice -->
+<div class="wikitext">
+    <table class="pageinfo" cellpadding="0" cellspacing="0">
+	<tr>
+	    <td>
+Categories:&nbsp; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_Perl_usage.html">Interchange Perl usage</a> | <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_database.html">Interchange database</a>
+	    </td>
+	</tr>
+
+
+	<tr>
+	    <td>
+		
+		Last modified by: <a href="http://interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin">Kevin Walsh</a><br>
+		Modification date: Friday 16 May 2008 at 4:10 AM (BST)
+	    </td>
+	</tr>
+    </table>
+</div>
+<!-- end of modification notice -->
+
+
+
+<!-- end page: wiki/display (Interchange_Perl_objects) -->
+
+
+
+<!-- end of page text -->
+	    </td>
+
+	</tr>
+    </table>
+<!-- START VAR: FOOTER -->
+
+<table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+	<td>
+	    <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	</td>
+
+    </tr>
+</table>
+
+<!-- END VAR: FOOTER -->
+
+<!-- START VAR: COPYRIGHT -->
+
+
+    <div class="copyright">
+	Copyright &copy; 2001-2011
+	<a href="http://cursor.biz/index.html">Cursor Software Limited</a>.&nbsp;
+	All Rights Reserved.
+    </div>
+
+<!-- END VAR: COPYRIGHT -->
+
+</body>
+</html>

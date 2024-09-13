@@ -1,0 +1,42 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Programmer Reference: Talking to Interchange via socket</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icprogrammer_5.html">Parent Topic</A> | <A HREF="icprogrammer_8.html">Previous Topic</A> | <A HREF="icprogrammer_10.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>2.4. Talking to Interchange via socket</H2>
+<P>Interchange can run in any of several modes:</P>
+<P><B>Foreground</B></P>
+<P>The foreground, meaning the same Interchange server listens for connections and then runs the tasks those connections cause.</P>
+<P><B>Forking mode</B></P>
+<P>One master Interchange listens for connections, then forks instances to handle the tasks those connections cause. The forked instance terminates at the end of the task.</P>
+<P><B>Prefork mode</B></P>
+<P>Similar to the way Apache does, Interchange can fork off a number of instances that all listen to the sockets open for connections. The first one to answer gets the task, runs it, then returns to listen again. After MaxChildRequests requests, it dies and causes another new instance to take its place.</P>
+<P><B>mod_perl mode</B></P>
+<P>Interchange can be loaded into <A HREF="http://perl.apache.org">mod_perl</A>. See the documentation in <TT>scripts/ic_mod_perl.PL</TT> for information.</P>
+<P><B>SOAP mode</B></P>
+<P>Interchange can listen to a socket designed to accept a SOAP connection -- those always run in prefork mode. This mode can co-exist with other modes, so the same Interchange server can serve both page and SOAP requests.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icprogrammer_5.html">Parent Topic</A> | <A HREF="icprogrammer_8.html">Previous Topic</A> | <A HREF="icprogrammer_10.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

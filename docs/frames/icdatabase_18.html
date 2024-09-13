@@ -1,0 +1,61 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Databases: Importing from an ASCII File</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_15.html">Parent Topic</A> | <A HREF="icdatabase_17.html">Previous Topic</A> | <A HREF="icdatabase_19.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>2.3. Importing from an ASCII File</H2>
+<P>When importing a file for SQL, Interchange by default uses the first column of the ASCII file as the primary key, with a <TT>char(16)</TT> type, and assigns all other columns a <TT>char (128)</TT> definition. These definitions can be changed by placing the proper definitions in COLUMN_DEF Database directive attribute:</P>
+<PRE>
+ Database  products  COLUMN_DEF  price=char(20), nontaxable=char(3)
+</PRE>
+<P>This can be set as many times as desired, if it will not fit on the line.</P>
+<PRE>
+ Database  products  COLUMN_DEF  price=char(20), nontaxable=char(3)
+ Database  products  COLUMN_DEF  description=char(254)
+</PRE>
+<P>To create an index automatically, append the information when the value is in quotes:</P>
+<PRE>
+ Database  products  COLUMN_DEF  &quot;code=char(14) primary key&quot;
+</PRE>
+<P>The field delimiter to use is TAB by default, but can be changed with the Database DELIMITER directive:</P>
+<PRE>
+ Database  products products.csv dbi:mSQL:minivend:localhost:1114
+ Database  products DELIMITER  CSV
+</PRE>
+<P>To create other secondary keys to speed sorts and searches, do so in the COLUMN_DEF:</P>
+<PRE>
+ Database  products COLUMN_DEF  &quot;author=char(64) secondary key&quot;
+</PRE>
+<P>Or use external database tools. NOTE: Not all SQL databases use the same index commands.</P>
+<P>To use an existing SQL database instead of importing, set the NoImport directive in catalog.cfg to include any database identifiers not to be imported:</P>
+<PRE>
+   NoImport  products inventory
+</PRE>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>WARNING: </STRONG>If Interchange has write permission on the products database, be careful to set the NoImport directive or create the proper .sql file. If that is not done, and the database source file is changed, the SQL database could be overwritten. In any case, always back up the database before enabling it for use by Interchange.
+<HR WIDTH="80%" ALIGN="Left"></P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_15.html">Parent Topic</A> | <A HREF="icdatabase_17.html">Previous Topic</A> | <A HREF="icdatabase_19.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

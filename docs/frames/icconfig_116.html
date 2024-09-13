@@ -1,0 +1,38 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Configuration Reference: NoSearch</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_70.html">Parent Topic</A> | <A HREF="icconfig_115.html">Previous Topic</A> | <A HREF="icconfig_117.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>3.46. NoSearch</H2>
+<P>Here you can provide one or more filename fragments that will be matched against the file name used in any attempted search (the mv_search_file or 'fi' attribute). You may separate multiple match strings with whitespace, and may include shell-style wildcards.</P>
+<P>The default setting is 'userdb', which means that by default you cannot use Interchange-style searches on the userdb table. (Pure SQL searches still work with it, however.)</P>
+<P>For example, consider this setting:</P>
+<PRE>
+   NoSearch  userdb  .*  *.secret
+</PRE>
+<P>In this case any search file with 'userdb' in its name, or beginning with a dot, or ending in '.secret', will not be searchable.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_70.html">Parent Topic</A> | <A HREF="icconfig_115.html">Previous Topic</A> | <A HREF="icconfig_117.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

@@ -1,0 +1,203 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: value-extended</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_120.html">Previous Topic</A> | <A HREF="ictags_122.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.87. value-extended</H2>
+<H3><A NAME="Summary">4.87.1. Summary</A></H3>
+<P>Parameters: <B>name</B></P>
+<P>Positional parameters in same order.</P>
+<P><B>The attribute hash reference is passed</B> to the subroutine after the parameters as the last argument. <B>This may mean that there are parameters not shown here.</B></P>
+<P>Must pass named parameter interpolate=1 to cause interpolation.</P>
+<P>Invalidates cache: <B>YES</B></P>
+<P>Called Routine:</P>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+    $Tag-&gt;value_extended(
+        {
+         name =&gt; VALUE,
+        }
+    )
+
+ OR
+
+    $Tag-&gt;value_extended($name, $ATTRHASH);
+    [value-extended name <I>other_named_attributes</I>]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_121.html#value_extended_name">name</A>
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_121.html#value_extended_umask">umask</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_interpolate">interpolate (reparse)</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>YES</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Container tag
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Has Subtags
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Nests
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+    [value-extended name]
+---
+    TODO: (tag result)
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+   $Tag-&gt;value_extended(  { name =&gt; VALUE_name
+}, $body  );
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;value_extended(name, $attribute_hash_reference, $body);
+</PRE>
+<H3><A NAME="Description">4.87.2. Description</A></H3>
+<P>Named call example:</P>
+<PRE>
+   [value-extended
+            name=formfield
+            outfile=filename*
+            umask=octal*
+            ascii=1*
+            yes=&quot;Yes&quot;*
+            no=&quot;No&quot;*
+            joiner=&quot;char|string&quot;*
+            test=&quot;isfile|length|defined&quot;*
+            index=&quot;N|N..N|*&quot;
+            file_contents=1*
+            elements=1*
+   ]
+</PRE>
+<P>Expands into the current value of the customer/form input field named by field. If there are multiple elements of that variable, it will return the value at <TT>index</TT>; by default all joined together with a space.</P>
+<P>If the variable is a file variable coming from a multipart/form-data file upload, then the contents of that upload can be returned to the page or optionally written to the <TT>outfile</TT>.</P>
+<H4><A NAME="tree_name"> </A>4.87.2.1. <A NAME="tree_name">name</A></H4>
+<P>The form variable NAME. If no other parameters are present, then the value of the variable will be returned. If there are multiple elements, then by default they will all be returned joined by a space. If <TT>joiner</TT> is present, then they will be joined by its value.</P>
+<P>In the special case of a file upload, the value returned is the name of the file as passed for upload.</P>
+<H4><A NAME="tree_joiner"> </A>4.87.2.2. <A NAME="tree_joiner">joiner</A></H4>
+<P>The character or string that will join the elements of the array. Will accept string literals such as &quot;\n&quot; or &quot;\r&quot;.</P>
+<H4><A NAME="tree_test"> </A>4.87.2.3. <A NAME="tree_test">test</A></H4>
+<P>Three tests&nbsp;-- <TT>isfile</TT> returns true if the variable is a file upload. <TT>length</TT> returns the length. <TT>defined</TT> returns whether the value has ever been set at all on a form.</P>
+<H4><A NAME="tree_index"> </A>4.87.2.4. <A NAME="tree_index">index</A></H4>
+<P>The index of the element to return if not all are wanted. This is useful especially for pre-setting multiple search variables. If set to <TT>*</TT>, will return all (joined by <TT>joiner</TT>). If a range, such as <TT>0 .. 2</TT>, will return multiple elements.</P>
+<H4><A NAME="tree_file_contents"> </A>4.87.2.5. <A NAME="tree_file_contents">file_contents</A></H4>
+<P>Returns the contents of a file upload if set to a non-blank, non-zero value. If the variable is not a file, returns nothing.</P>
+<H4><A NAME="tree_outfile"> </A>4.87.2.6. <A NAME="tree_outfile">outfile</A></H4>
+<P>Names a file to write the contents of a file upload to. It will not accept an absolute file name; the name must be relative to the catalog directory. If you wish to write images or other files that would go to HTML space, you must use the HTTP server's <TT>Alias</TT> facilities or make a symbolic link.</P>
+<H4><A NAME="tree_outfile"> </A>4.87.2.7. <A NAME="tree_outfile">umask</A></H4>
+<P>Permission mask (in octal) to apply to the uploaded file's permission bits. You may want to set this to make a file world-readable, or to keep it from being group-readable. See the UNIX chmod(1) manpage for details.</P>
+<H4><A NAME="tree_ascii"> </A>4.87.2.8. <A NAME="tree_ascii">ascii</A></H4>
+<P>To do an auto-ASCII translation before writing the <TT>outfile</TT>, set the <TT>ascii</TT> parameter to a non-blank, non-zero value. Default is no translation.</P>
+<H4><A NAME="tree_yes"> </A>4.87.2.9. <A NAME="tree_yes">yes</A></H4>
+<P>The value that will be returned if a test is true or a file is written successfully. Defaults to <TT>1</TT> for tests and the empty string for uploads.</P>
+<H4><A NAME="tree_no"> </A>4.87.2.10. <A NAME="tree_no">no</A></H4>
+<P>The value that will be returned if a test is false or a file write fails. Defaults to the empty string.</P>
+<H4><A NAME="value_extended_umask"> </A>4.87.2.11. <A NAME="value_extended_umask">umask</A></H4>
+<H4><A NAME="value_extended_name"> </A>4.87.2.12. <A NAME="value_extended_name">name</A></H4>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_120.html">Previous Topic</A> | <A HREF="ictags_122.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

@@ -1,0 +1,99 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Databases: More On UPS-Style Lookup</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_38.html">Parent Topic</A> | <A HREF="icdatabase_42.html">Previous Topic</A> | <A HREF="icdatabase_44.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>7.5. More On UPS-Style Lookup</H2>
+<P>The UPS-style lookup uses two files for its purposes, both of which need to be in a format like UPS distributes for US shippers.</P>
+<P>The zone file is a file that is usually specific to the originating location. For US shippers shipping to US locations, it is named for the first three digits of the originating zip code with a CSV extension. For example, <TT>450.csv</TT>.</P>
+<P>It has a format similar to:</P>
+<PRE>
+   low - high, zone,zone,zone,zone
+</PRE>
+<P>The <TT>low</TT> entry is the low bound of the geographic location; <TT>high</TT> is the high bound. (By geographic location, the zip code is meant.) If the first digits of the zip code, compared alphanumerically, fall between the low and high values, that zone is used as the column name for a lookup in the rate database. The weight is used as the row key.</P>
+<P>The first operative row of the zone file (one without leading quotes) is used to determine the zone column name. In the US, it looks something like:</P>
+<P>Dest. ZIP,Ground,3 Day Select,2nd Day Air,2nd Day Air A.M.,Next Day Air Saver,Next Day Air</P>
+<P>Interchange strips all non-alpha characters and comes up with:</P>
+<P>DestZIP,Ground,3DaySelect,2ndDayAir,2ndDayAirAM,NextDayAirSaver,NextDayAir</P>
+<P>Therefore, the zone column (shipping type) that would be used for UPS ground would be &quot;Ground,&quot; and that is what the database should be named. To support the above, use a <TT>shipping.asc</TT> line that reads:</P>
+<PRE>
+   upsg  UPS Ground  weight  0  150  u Ground [default zip 983]
+</PRE>
+<P>and a <TT>catalog.cfg</TT> database callout of:</P>
+<PRE>
+   Database  Ground  Ground.csv  CSV
+</PRE>
+<P>These column names can be changed as long as they correspond to the <TT>identifier</TT> of the rate database.</P>
+<P>The rate database is a standard Interchange database. For U.S. shippers, UPS distributes their rates in a fairly standard comma-separated value format, with weight being the first (or key) column and the remainder of the columns corresponding to the zone which was obtained from the lookup in the zone file.</P>
+<P>To adapt other shipper zone files to Interchange's lookup, they will need to fit the UPS US format. (Most of the UPS international files don't follow the U.S. format). For example, the 1998 Ohio-US to Canada file begins:</P>
+<PRE>
+   Canada Standard Zone Charts from Ohio
+   Locate the zone by cross-referencing the first three
+   characters of the destination Postal Code in the Postal
+   Range column.
+
+   Postal Range  Zone
+   A0A  A9Z      54
+   B0A  B9Z      54
+   C0A  C9Z      54
+   E0A  E9Z      54
+   G0A  G0A      51
+   G0B  G0L      54
+   G0M  G0S      51
+   G0T  G0W      54
+</PRE>
+<P>It will need to be changed to:</P>
+<PRE>
+   Destination,canstnd
+   A0A-A9Z, 54
+   B0A-B9Z, 54
+   C0A-C9Z, 54
+   E0A-E9Z, 54
+   G0A-G0A, 51
+   G0B-G0L, 54
+   G0M-G0S, 51
+   G0T-G0W, 54
+</PRE>
+<P>Match it with a <TT>canstnd</TT> CSV database that looks like this:</P>
+<PRE>
+   Weight,51,52,53,54,55,56
+   1,7.00,7.05,7.10,11.40,11.45,11.50
+   2,7.55,7.65,7.75,11.95,12.05,12.10
+   3,8.10,8.15,8.40,12.60,12.70,12.85
+   4,8.65,8.70,9.00,13.20,13.30,13.55
+   5,9.20,9.25,9.75,13.85,13.85,14.20
+   6,9.70,9.85,10.35,14.45,14.50,14.90
+   7,10.25,10.40,11.10,15.15,15.15,15.70
+   8,10.80,10.95,11.70,15.70,15.75,16.35
+   9,11.35,11.55,12.30,16.40,16.45,17.20
+</PRE>
+<P>It is called out in catalog.cfg with:</P>
+<PRE>
+   Database canstnd canstnd.csv CSV
+</PRE>
+<P>With the above, a 4-pound shipment to postal code E5C 4TL would yield a cost of 13.20.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_38.html">Parent Topic</A> | <A HREF="icdatabase_42.html">Previous Topic</A> | <A HREF="icdatabase_44.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

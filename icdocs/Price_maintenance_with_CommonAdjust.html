@@ -1,0 +1,917 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>Price maintenance with CommonAdjust - RTFM</title>
+
+    <meta http-equiv="Content-Language" content="en-GB">
+    <meta http-equiv="Window-target" content="_top">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <meta http-equiv="X-Soup-Of-The-Day" content="Tomato">
+
+    <meta name="author" content="Kevin Walsh">
+    <meta name="publisher" content="Cursor Software Limited">
+    <meta name="copyright" content="2001-2015, Cursor Software Limited">
+    <meta name="licence" content="GPLv2+ (Unknown licence)">
+    <meta name="generator" content="Interchange 5.7.0 -- www.icdevgroup.org">
+    <meta name="robots" content="index,follow,noarchive,noimageindex">
+    <meta name="keywords" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="description" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="MSSmartTagsPreventParsing" content="TRUE">
+
+    <meta name="verify-v1" content="KqlU/bxZj9Y2ZdZ/3RwuzgVSMIrZ8XM2wqbjSaEo3O4=">
+
+    <meta name="y_key" content="e2dd60be5777fbc8">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
+    <link rel="search" type="application/opensearchdescription+xml" href="http://interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="stylesheet" href="/decor/css/website.css">
+    <link rel="stylesheet" href="/decor/css/wiki.css">
+    <link rel="stylesheet" href="/decor/css/neo.css">
+
+
+    <script type="text/javascript" language="JavaScript">
+    <!--
+	if (top != self){
+	    top.location = location;
+	}
+
+    // -->
+    </script>
+</head>
+<body>
+<!-- START VAR: LOGOBAR -->
+<table id="rtfmheader" cellpadding="0" cellspacing="0">
+    <tr>
+	<td><a href="http://interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+
+	<td width="100%" style="text-align: right; padding: 10px">
+
+	    <form action="http://interchange-rtfm.pullingshots.ca/search.html" method="POST">
+		<input type="hidden" name="mv_session_id" value="nsession">
+		<input type="hidden" name="mv_profile" value="cms_search">
+		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
+		<input type="submit" class="button" value="Search">
+	    </form>
+
+	</td>
+    </tr>
+</table>
+<table id="breadcrumbs" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+	<td>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_ecommerce_functions.html">Interchange ecommerce functions</a></span>
+	    <span class="nowrap">&gt; <span class="current">Price maintenance with CommonAdjust</span></span>
+	</td>
+
+    </tr>
+</table>
+<!-- END VAR: LOGOBAR -->
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+
+	    <td id="leftside">
+<!-- START COMPONENT: navigation -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th>NAVIGATION</th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+
+<!-- END COMPONENT: navigation -->
+<!-- START COMPONENT: wiki_recent -->
+
+
+
+<!-- END COMPONENT: wiki_recent -->
+<!-- START COMPONENT: wiki_backlinks -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th><span class="nowrap">PAGES THAT LINK HERE</span></th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/CommonAdjust.html">CommonAdjust</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/price.html">price</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+<!-- END COMPONENT: wiki_backlinks -->
+<!-- START COMPONENT: account -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+
+    <tr>
+	<th>ACCOUNT LOGIN</th>
+    </tr>
+
+    <tr>
+	<td class="first">
+	    <p>You are not logged in</p>
+	</td>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+	    </ul>
+	</td>
+    </tr>
+
+</table>
+
+
+
+<!-- END COMPONENT: account -->
+<!-- START COMPONENT: icpowered -->
+
+<div style="text-align: center; margin: 10px; margin-top: 0px">
+    <a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+</div>
+
+
+
+<!-- START COMPONENT: icpowered -->
+
+	    </td>
+
+	    <td id="bodytext">
+<!-- start of page text -->
+
+<!-- start page: wiki/display (Price_maintenance_with_CommonAdjust) -->
+
+<div class="wikitext">
+<a name="Price_maintenance_with_CommonAdjust"></a>
+<h1>Price maintenance with CommonAdjust</h1>
+<!-- start of toc --><div class="toc">
+<table>
+<tr valign="top">
+<th>Table of contents</th>
+</tr>
+<tr><td class="h2"><a href="#Introduction">1. Introduction</a></td></tr>
+<tr><td class="h2"><a href="#General_rules">2. General rules</a></td></tr>
+<tr><td class="h3"><a href="#Rule_1">2.1. Rule 1</a></td></tr>
+<tr><td class="h3"><a href="#Rule_2">2.2. Rule 2</a></td></tr>
+<tr><td class="h3"><a href="#Rule_3">2.3. Rule 3</a></td></tr>
+<tr><td class="h3"><a href="#Rule_4">2.4. Rule 4</a></td></tr>
+<tr><td class="h3"><a href="#Rule_5">2.5. Rule 5</a></td></tr>
+<tr><td class="h2"><a href="#Price_adjustments">3. Price adjustments</a></td></tr>
+<tr><td class="h2"><a href="#Atom_syntax">4. Atom syntax</a></td></tr>
+<tr><td class="h3"><a href="#N_NN_or_-N_NN">4.1. N.NN or -N.NN</a></td></tr>
+<tr><td class="h3"><a href="#N_NN">4.2. N.NN&#37;</a></td></tr>
+<tr><td class="h3"><a href="#tablecolumnkey">4.3. table:column:key</a></td></tr>
+<tr><td class="h3"><a href="#tablecol1_col5col10key">4.4. table:col1..col5,col10:key</a></td></tr>
+<tr><td class="h3"><a href="#attributetablecolumnkey">4.5. ==attribute:table:column:key</a></td></tr>
+<tr><td class="h3"><a href="#CODE">4.6. &amp; CODE</a></td></tr>
+<tr><td class="h3"><a href="#Interchange-tag_or_VARIABLE">4.7. &#91;Interchange-tag] or __VARIABLE__</a></td></tr>
+<tr><td class="h3"><a href="#_">4.8. &#36;</a></td></tr>
+<tr><td class="h3"><a href="#word">4.9. &gt;&gt;word</a></td></tr>
+<tr><td class="h3"><a href="#word_2">4.10. word</a></td></tr>
+<tr><td class="h3"><a href="#setter">4.11. (setter)</a></td></tr>
+<tr><td class="h2"><a href="#Examples">5. Examples</a></td></tr>
+<tr><td class="h3"><a href="#Adjusting_an_item_price_based_on_an_attribute">5.1. Adjusting an item price based on an attribute</a></td></tr>
+<tr><td class="h3"><a href="#Adjusting_an_item_price_based_on_more_than_one_attribute">5.2. Adjusting an item price based on more than one attribute</a></td></tr>
+<tr><td class="h3"><a href="#Adjusting_the_price_based_upon_a_common_value">5.3. Adjusting the price based upon a common value</a></td></tr>
+<tr><td class="h3"><a href="#Quantity_pricing">5.4. Quantity pricing</a></td></tr>
+<tr><td class="h3"><a href="#Mix_and_match_quantity_pricing">5.5. &quot;Mix and match&quot; quantity pricing</a></td></tr>
+<tr>
+<td class="spacer">&nbsp;</td>
+</tr>
+</table>
+</div><!-- end of toc -->
+<a name="Introduction"></a>
+<h2>Introduction</h2>
+<p>
+The <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/CommonAdjust.html" title="CommonAdjust (config)">CommonAdjust</a></span> directive allows you to implement
+a flexible chained pricing scheme.&nbsp;
+Prices can be adjusted based upon the quantity of items in the cart,
+by attribute value, with a table lookup, with a call to Interchange
+tags or <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserTag.html" title="UserTag (config)">UserTags</a></span> or even with a block of
+Perl code.
+</p>
+<p>
+Different <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/CommonAdjust.html" title="CommonAdjust (config)">CommonAdjust</a></span> directive settings can be
+specified for different classes of logged-in user,
+depending upon defined user <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Profile.html" title="Profile (config)">Profiles</a></span>.
+</p>
+<a name="General_rules"></a>
+<h2>General rules</h2>
+<p>
+This section lists the five simple rules that are followed by
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/CommonAdjust.html" title="CommonAdjust (config)">CommonAdjust</a></span> when calculating a price value.
+</p>
+<a name="Rule_1"></a>
+<h3>Rule 1</h3>
+<p>
+If <span class="fixedwidth">CommonAdjust</span> is set to any value, valid or not,
+extended price adjustments are enabled.&nbsp;
+It may also hold the default pricing scheme.
+</p>
+<a name="Rule_2"></a>
+<h3>Rule 2</h3>
+<p>
+The item's <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/PriceField.html" title="PriceField (config)">PriceField</a></span> column may also hold a
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/CommonAdjust.html" title="CommonAdjust (config)">CommonAdjust</a></span> <em>atom</em> string,
+which takes precedence over the default.
+</p>
+<a name="Rule_3"></a>
+<h3>Rule 3</h3>
+<p>
+If <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/CommonAdjust.html" title="CommonAdjust (config)">CommonAdjust</a></span> directive is set,
+and the item's <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/PriceField.html" title="PriceField (config)">PriceField</a></span> column is empty
+(or specifically <span class="fixedwidth">0</span>), then it will be used to set the price
+of the item.
+</p>
+<a name="Rule_4"></a>
+<h3>Rule 4</h3>
+<p>
+If no <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/CommonAdjust.html" title="CommonAdjust (config)">CommonAdjust</a></span> <em>atoms</em> are found,
+then the price will be zero, subject to any later discounts.
+</p>
+<a name="Rule_5"></a>
+<h3>Rule 5</h3>
+<p>
+If another <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/CommonAdjust.html" title="CommonAdjust (config)">CommonAdjust</a></span> <em>atom</em>
+is found as the result of an operation,
+it will be re-parsed and the result applied.&nbsp;
+Chaining is retained;&nbsp;
+a fall-back may be passed and will take effect.
+</p>
+<a name="Price_adjustments"></a>
+<h2>Price adjustments</h2>
+<p>
+Prices may be adjusted in several ways,
+and the individual actions are referred to <em>atoms</em>.&nbsp;
+Price atoms may be <em>final</em>, <em>chained</em>, or <em>fallback</em>.&nbsp;
+A <em>final atom</em> is always applied if it does not evaluate
+to zero.&nbsp;
+A <em>chained atom</em> is subject to further adjustment.&nbsp;
+A <em>fallback atom</em> is skipped if a previous <em>chained</em> price was
+not zero.
+</p>
+<p>
+<em>Atoms</em> are separated by whitespace, and may be quoted
+(although there should not normally be whitespace in a setting).&nbsp;
+A <em>chained atom</em> ends with a comma.&nbsp;
+A <em>fallback atom</em> has a leading semi-colon.&nbsp;
+<em>Final atoms</em> have no comma appended or semi-colon prepended.
+</p>
+<p>
+A setter is the means by which the price is set.&nbsp;
+There are eight different types of price setters.&nbsp;
+All setters can then yield another <span class="fixedwidth">CommonAdjust</span> <em>atom</em>.
+</p>
+<p>
+It is quite possible to create endless loops,
+so the maximum number of initial <span class="fixedwidth">CommonAdjust</span> <em>atoms</em>
+is set to 16,
+and there may be only 32 iterations by default before the price will
+return zero on an error.&nbsp;
+The maximum number of iterations can be overridden with the
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Limit.html" title="Limit (config)">Limit</a></span> directive's &quot;<span class="fixedwidth">chained_cost_levels</span>&quot; setting.
+</p>
+<a name="Atom_syntax"></a>
+<h2>Atom syntax</h2>
+<p>
+Optional <em>atoms</em>, below, have an asterisk appended.&nbsp;
+The asterisk should not be used in the actual string.&nbsp;
+An optional table always defaults to the active <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span>
+table(s).&nbsp;
+The optional table key defaults to the item code,
+except in a special case for the attribute-based lookup.&nbsp;
+The field name is not optional except in the case of an attribute lookup.
+</p>
+<a name="N_NN_or_-N_NN"></a>
+<h3>N.NN or -N.NN</h3>
+<p>
+Where N is a digit.&nbsp;
+A number which is applied as an adjustment to the current price
+value.&nbsp;
+For instance, if the price is 10 and -2 is applied,
+then the next price value will be 8.&nbsp;
+The value be a positive or negative number.
+</p>
+<a name="N_NN"></a>
+<h3>N.NN&#37;</h3>
+<p>
+Where N is a digit.&nbsp;
+A number which is applied as a percentage of the current price value.&nbsp;
+May be a positive or negative number.&nbsp;
+For example, if the price is 10, and -8&#37; is applied,
+then the next price value will be 9.20.
+</p>
+<a name="tablecolumnkey"></a>
+<h3>table:column:key</h3>
+<p>
+Causes a straight lookup in a database table.&nbsp;
+The optional &quot;<span class="fixedwidth">table</span>&quot; name defaults to the main
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span> table(s) for the item.&nbsp;
+The column must always be present.&nbsp;
+The optional <span class="fixedwidth">key</span> defaults to the item code,
+except in a special case for the attribute-based lookup.&nbsp;
+The return value is then re-parsed as another <em>atom</em>.
+</p>
+<a name="tablecol1_col5col10key"></a>
+<h3>table:col1..col5,col10:key</h3>
+<p>
+Causes a quantity lookup in the named database &quot;<span class="fixedwidth">table</span>&quot;,
+which defaults to the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span> table(s),
+with a set of comma-separated fields looked up by the optional <span class="fixedwidth">key</span>.&nbsp;
+The optional <span class="fixedwidth">key</span> defaults to the item code.&nbsp;
+If ranges are specified with &quot;<span class="fixedwidth">..</span>&quot;,
+each column in the sequence will be used.&nbsp;
+For instance:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+pricing:p1,p2,p3,p4,p5,p10:
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+is the same as
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+pricing:p1..p5,p10:
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Leading non-digits are stripped and the item quantity is compared with
+the numerical portion of the column name.&nbsp;
+The price is set to the value of the table's column (numeric portion)
+that is at least equal to it but doesn't yet reach the next price break.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_warning.gif" width="32" height="32" border="0" alt="Warning">
+</td>
+<td width="100%">
+<p class="title">Warning</p>
+<p style="margin-bottom: 0px">
+If the field at the appropriate quantity level is blank,
+a zero cost will be returned from the <em>atom</em>.&nbsp;
+It is important that you either populate all columns with a non-zero,
+non-blank values or you define a <em>fallback</em> atom.&nbsp;
+See <a href="#Quantity_pricing" title="&quot;Quantity pricing&quot; heading on this page">quantity pricing</a>.
+</p>
+</td>
+</tr>
+</table>
+
+<p>
+This atom can also be used to implement a
+<a href="#Mix_and_match_quantity_pricing" title="&quot;Mix and match quantity pricing&quot; heading on this page">&quot;mix and match&quot; quantity pricing</a>
+scheme, where the quantity of all items in the named <em>price group</em>
+are taken into account when determining which of the price breaks to use.
+</p>
+<a name="attributetablecolumnkey"></a>
+<h3>==attribute:table:column:key</h3>
+<p>
+Does an attribute-based adjustment.&nbsp;
+The attribute is looked up in the named &quot;<span class="fixedwidth">table</span>&quot;,
+which defaults to the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span> table(s),
+with the optional <span class="fixedwidth">column</span> defaulting to the same name as the
+value of the attribute.&nbsp;
+If the &quot;<span class="fixedwidth">key</span>&quot; is blank and the &quot;<span class="fixedwidth">column</span>&quot; is not blank
+then the &quot;<span class="fixedwidth">key</span>&quot; will default to the value of the attribute.
+</p>
+<a name="CODE"></a>
+<h3>&amp; CODE</h3>
+<p>
+The leading &quot;<span class="fixedwidth">&amp;</span>&quot; symbol is stripped and the code is passed to the
+equivalent of a <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/calcn.html" title="calcn (tags)">calcn</a>]</span> tag.&nbsp;
+No Interchange tags may be used unless called using &quot;<span class="fixedwidth">&#36;Tag-&gt;tagname()</span>&quot;.
+</p>
+<p>
+The current value of the <span class="fixedwidth">price</span> and <span class="fixedwidth">quantity</span> will be
+available as <span class="fixedwidth">&#36;s</span> and <span class="fixedwidth">&#36;q</span>,
+respectively,
+and the current item (<span class="fixedwidth">code</span>, <span class="fixedwidth">quantity</span> and any attributes)
+will be available in a hashref named <span class="fixedwidth">&#36;item</span>.&nbsp;
+All of these variables will be forced to the <span class="fixedwidth">Vend::Interpolate</span>
+<em>namespace</em>.
+</p>
+<p>
+The <span class="fixedwidth">&#36;item</span> hashref will contain at least the following keys:
+</p>
+<table class="border">
+<tr valign="top">
+<th class="grid">Name
+</th>
+<th class="grid">Description
+</th>
+</tr>
+<tr valign="top">
+<td class="grid">&#36;item
+</td>
+<td class="grid">Reference to the current item's hash.</td>
+</tr>
+<tr valign="top">
+<td class="grid">&#36;item-&gt;{code}
+</td>
+<td class="grid">The current item's SKU code
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">&#36;item-&gt;{quantity}
+</td>
+<td class="grid">Quantity of the current item placed in the cart.</td>
+</tr>
+<tr valign="top">
+<td class="grid">&#36;item-&gt;{mv_ib}
+</td>
+<td class="grid">The name of the table in which this item can be found.</td>
+</tr>
+</table>
+
+<p>
+User defined attributes can also be found in the <span class="fixedwidth">&#36;item</span> hashref.&nbsp;
+For instance, the &quot;<span class="fixedwidth">colour</span>&quot; attribute (if defined) could be found
+using <span class="fixedwidth">&#36;item-&gt;{colour}</span>.
+</p>
+<a name="Interchange-tag_or_VARIABLE"></a>
+<h3>&#91;Interchange-tag] or __VARIABLE__</h3>
+<p>
+If the <em>atom</em> begins with a square bracket (<span class="fixedwidth">&#91;</span>) or
+an underscore (<span class="fixedwidth">_</span>),
+it will be parsed for Interchange tags and <a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">variables</a>
+(but with no <a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Locale.html" class="nopage" title="Locale (config)">Locale</a>-related substitution).&nbsp;
+One use for this is to make use of a price defined in a
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span>.&nbsp;
+Another would be to call a custom <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserTag.html" title="UserTag (config)">UserTag</a></span>.&nbsp;
+The value returned by the tag or <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span>
+will be re-submitted as an <em>atom</em>,
+so that it may yield yet another setter.
+</p>
+<p>
+The current value of the <span class="fixedwidth">price</span> and <span class="fixedwidth">quantity</span> will be
+available to <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserTag.html" title="UserTag (config)">UserTags</a></span> as <span class="fixedwidth">&#36;s</span> and
+<span class="fixedwidth">&#36;q</span>,
+respectively,
+and the current item (<span class="fixedwidth">code</span>, <span class="fixedwidth">quantity</span> and any attributes)
+will be available in a hashref named <span class="fixedwidth">&#36;item</span>.&nbsp;
+All of these variables will be forced to the <span class="fixedwidth">Vend::Interpolate</span>
+<em>namespace</em>.&nbsp;
+See the &quot;<span class="fixedwidth"><a href="#CODE" title="&quot;CODE&quot; heading on this page">&amp; CODE</a></span>&quot; <em>atom</em> description for more information
+about the &quot;<span class="fixedwidth">&#36;item</span>&quot; hashref.
+</p>
+<a name="_"></a>
+<h3>&#36;</h3>
+<p>
+Tells Interchange to look in the <span class="fixedwidth">mv_price</span> attribute in the
+item's row in the current shopping cart and, if it exists,
+to apply that price as the <em>final</em> price.&nbsp;
+The attribute must be a numerical value.
+</p>
+<a name="word"></a>
+<h3>&gt;&gt;word</h3>
+<p>
+Tells the routine to return the <span class="fixedwidth">word</span> directly as the result.&nbsp;
+This is not useful in pricing, as it will evaluate to zero.&nbsp;
+But when <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/CommonAdjust.html" title="CommonAdjust (config)">CommonAdjust</a></span> is used for shipping,
+it is a way of re-directing shipping modes.
+</p>
+<a name="word_2"></a>
+<h3>word</h3>
+<p>
+The <span class="fixedwidth">word</span> value , which must not match any of the other
+<em>atoms</em>, is made available as a key for the next lookup (only).&nbsp;
+If the next <em>atom</em> is a database lookup,
+and it contains a dollar sign (<span class="fixedwidth">&#36;</span>) then the <span class="fixedwidth">word</span> will be
+substituted (i.e. &quot;<span class="fixedwidth">table:column:&#36;</span>&quot; will become
+&quot;<span class="fixedwidth">table:column:<em>word</em></span>&quot;).
+</p>
+<a name="setter"></a>
+<h3>(setter)</h3>
+<p>
+The <em>word</em> returned returned by <span class="fixedwidth">setter</span> will be used as a key
+for the next lookup (only).&nbsp;
+If the next <em>atom</em> is a database lookup,
+and it contains a dollar sign (<span class="fixedwidth">&#36;</span>) then the <span class="fixedwidth">word</span> will be
+substituted (i.e. <span class="fixedwidth">&quot;table:column:&#36;</span>&quot; will become
+&quot;<span class="fixedwidth">table:column:<em>word</em></span>&quot;).
+</p>
+<a name="Examples"></a>
+<h2>Examples</h2>
+<p>
+Most of the following examples use a table called &quot;<span class="fixedwidth">pricing</span>&quot;.&nbsp;
+This is not a hard-coded requirement;&nbsp;
+Any valid table, including the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span> table(s)
+may be used instead.
+</p>
+<p>
+The examples in this section will refer to the following pricing table:
+</p>
+<table class="border">
+<tr valign="top">
+<th class="grid">sku
+</th>
+<th class="grid">common
+</th>
+<th class="grid">price_group
+</th>
+<th class="grid">q5
+</th>
+<th class="grid">q10
+</th>
+<th class="grid">q25
+</th>
+<th class="grid">XL
+</th>
+<th class="grid">S
+</th>
+<th class="grid">red
+</th>
+</tr>
+<tr valign="top">
+<td class="grid">99-102
+</td>
+<td class="grid">
+</td>
+<td class="grid">
+</td>
+<td class="grid">9
+</td>
+<td class="grid">8
+</td>
+<td class="grid">7
+</td>
+<td class="grid">1
+</td>
+<td class="grid">-0.50
+</td>
+<td class="grid">0.75
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">00-343
+</td>
+<td class="grid">
+</td>
+<td class="grid">
+</td>
+<td class="grid">
+</td>
+<td class="grid">
+</td>
+<td class="grid">
+</td>
+<td class="grid">2
+</td>
+<td class="grid">
+</td>
+<td class="grid">&nbsp;</td>
+</tr>
+<tr valign="top">
+<td class="grid">00-0010
+</td>
+<td class="grid">
+</td>
+<td class="grid">group_a
+</td>
+<td class="grid">10
+</td>
+<td class="grid">9
+</td>
+<td class="grid">8
+</td>
+<td class="grid">
+</td>
+<td class="grid">
+</td>
+<td class="grid">&nbsp;</td>
+</tr>
+<tr valign="top">
+<td class="grid">00-0020
+</td>
+<td class="grid">
+</td>
+<td class="grid">group_a
+</td>
+<td class="grid">20
+</td>
+<td class="grid">18
+</td>
+<td class="grid">17
+</td>
+<td class="grid">
+</td>
+<td class="grid">
+</td>
+<td class="grid">&nbsp;</td>
+</tr>
+<tr valign="top">
+<td class="grid">red
+</td>
+<td class="grid">0.75
+</td>
+<td class="grid">
+</td>
+<td class="grid">
+</td>
+<td class="grid">
+</td>
+<td class="grid">
+</td>
+<td class="grid">
+</td>
+<td class="grid">
+</td>
+<td class="grid">&nbsp;</td>
+</tr>
+</table>
+
+<a name="Adjusting_an_item_price_based_on_an_attribute"></a>
+<h3>Adjusting an item price based on an attribute</h3>
+<p>
+The simplest case is a straight lookup on an attribute.&nbsp;
+Size, in the following example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+10.00, ==size:pricing
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+With this value in the price column,
+a base price of <span class="fixedwidth">10.00</span> will be adjusted with the value of the
+<span class="fixedwidth">size</span> attribute.&nbsp;
+If size for the item <span class="fixedwidth">99-102</span> is set to <span class="fixedwidth">XL</span> then <span class="fixedwidth">1.00</span>
+will be added to make a total price of <span class="fixedwidth">11.00</span>.&nbsp;
+If the <span class="fixedwidth">size</span> is <span class="fixedwidth">S</span> then <span class="fixedwidth">0.50</span> will be subtracted
+to make a total price of <span class="fixedwidth">9.50</span>
+For any other <span class="fixedwidth">size</span> value, no further adjustment would be made.&nbsp;
+Item code <span class="fixedwidth">00-343</span> would be adjusted up <span class="fixedwidth">2.00</span> only for
+<span class="fixedwidth">XL</span>.
+</p>
+<a name="Adjusting_an_item_price_based_on_more_than_one_attribute"></a>
+<h3>Adjusting an item price based on more than one attribute</h3>
+<p>
+Let's say we had an item from previous example,
+and we wanted to define a pricing adjustment based on the <span class="fixedwidth">colour</span>
+attribute as well as the <span class="fixedwidth">size</span>.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+10.00, ==size:pricing, ==colour:pricing
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+This is the same as the previous example, except that both <span class="fixedwidth">size</span>
+and <span class="fixedwidth">colour</span> are adjusted for.&nbsp;
+A <span class="fixedwidth">colour</span> value of <span class="fixedwidth">red</span> for item code <span class="fixedwidth">99-102</span>
+would add <span class="fixedwidth">0.75</span> to the price.&nbsp;
+Item <span class="fixedwidth">00-343</span> would not be affected by the <span class="fixedwidth">colour</span>.
+</p>
+<a name="Adjusting_the_price_based_upon_a_common_value"></a>
+<h3>Adjusting the price based upon a common value</h3>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+10.00, ==size:pricing, ==colour:pricing:common
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Here, price is set based on a common column,
+keyed by the value of the <span class="fixedwidth">colour</span> attribute.&nbsp;
+Any item with a <span class="fixedwidth">colour</span> value of <span class="fixedwidth">red</span> would have
+<span class="fixedwidth">0.75</span> added to the base price.
+</p>
+<a name="Quantity_pricing"></a>
+<h3>Quantity pricing</h3>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+pricing:q1,q5,q10:, ;10.00, ==size:pricing, ==colour:pricing:common
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Here is a <span class="fixedwidth">quantity</span> price lookup, with a <em>fallback</em>
+price setting.&nbsp;
+If there is a valid price found at a <span class="fixedwidth">quantity</span> of <span class="fixedwidth">1</span>,
+<span class="fixedwidth">5</span> or <span class="fixedwidth">10</span>, depending upon the item quantity,
+then it will be used.&nbsp;
+The fall-back of <span class="fixedwidth">10.00</span> only applies if no non-zero and non-blank
+price was found in the <span class="fixedwidth">quantity</span> lookup.&nbsp;
+In either case, the <span class="fixedwidth">size</span> and <span class="fixedwidth">colour</span> adjustment is applied.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+pricing:q1,q5,q10:, ;10.00 ==size:pricing, ==colour:pricing:common
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+Removing the comma from the end of the <em>fallback</em> string stops the
+colour/size lookup if it reaches that point.&nbsp;
+If a <span class="fixedwidth">quantity</span> price was found, then size and colour are chained.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+pricing:q1,q5,q10:, ;products:list_price, ==size:pricing, ==colour:pricing
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The value of the <span class="fixedwidth">list_price</span> column is used as a <em>fallback</em>,
+instead of the fixed <span class="fixedwidth">10.00</span> value.&nbsp;
+The above value might be a nice one to use as the default for a typical
+retail website that has products defined with differing colours and sizes.
+</p>
+<a name="Mix_and_match_quantity_pricing"></a>
+<h3>&quot;Mix and match&quot; quantity pricing</h3>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+pricing:price_group,q5,q10,q25
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+You can add the quantities of different items together to determine
+the price break.
+</p>
+<p>
+For instance,
+with the above example, the price for ten &quot;<span class="fixedwidth">00-0010</span>&quot; items
+would be &#36;9.00 each, as usual.&nbsp;
+If you add three &quot;<span class="fixedwidth">00-0020</span>&quot; items to the cart,
+then those items will all be priced at &#36;18.00 each.&nbsp;
+This is because both of the SKUs are members of the same
+&quot;<span class="fixedwidth">price_group</span>&quot;,
+and so the quantities are summed to determine the price break.
+</p>
+<p>
+If you now add five &quot;<span class="fixedwidth">99-102</span>&quot; items to the cart then,
+as those items are not a member of the same &quot;<span class="fixedwidth">price_group</span>&quot; the &quot;<span class="fixedwidth">q5</span>&quot; price break will be used for those items.&nbsp;
+The 13 &quot;<span class="fixedwidth">00-0010</span>&quot; and &quot;<span class="fixedwidth">00-0020</span>&quot; items will continue
+to use the &quot;<span class="fixedwidth">q10</span>&quot; price break, of course.
+</div>
+
+<!-- start of modification notice -->
+<div class="wikitext">
+    <table class="pageinfo" cellpadding="0" cellspacing="0">
+	<tr>
+	    <td>
+Category:&nbsp; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_ecommerce_functions.html">Interchange ecommerce functions</a>
+	    </td>
+	</tr>
+
+
+	<tr>
+	    <td>
+		
+		Last modified by: <a href="http://interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin">Kevin Walsh</a><br>
+		Modification date: Tuesday 29 April 2008 at 10:18 PM (BST)
+	    </td>
+	</tr>
+    </table>
+</div>
+<!-- end of modification notice -->
+
+
+
+<!-- end page: wiki/display (Price_maintenance_with_CommonAdjust) -->
+
+
+
+<!-- end of page text -->
+	    </td>
+
+	</tr>
+    </table>
+<!-- START VAR: FOOTER -->
+
+<table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+	<td>
+	    <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/donations.html">Donations</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	</td>
+
+    </tr>
+</table>
+
+<!-- END VAR: FOOTER -->
+
+<!-- START VAR: COPYRIGHT -->
+
+
+    <div class="copyright">
+	Copyright &copy; 2001-2015
+	<a href="http://cursor.biz/index.html">Cursor Software Limited</a>.&nbsp;
+	All Rights Reserved.
+    </div>
+
+<!-- END VAR: COPYRIGHT -->
+
+</body>
+</html>

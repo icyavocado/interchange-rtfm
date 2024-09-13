@@ -1,0 +1,44 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Template Guide: FILE and INCLUDE</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_18.html">Parent Topic</A> | <A HREF="ictemplates_24.html">Previous Topic</A> | <A HREF="ictemplates_26.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>6.7. FILE and INCLUDE</H2>
+<P>These elements read a file from the disk and insert the contents in the location of the tag. <TT>[include ...]</TT> will allow insertion of Interchange variables and ITL tags.</P>
+<P><B>[file ...]</B></P>
+<UL>
+named: [file name=&quot;name&quot; type=&quot;dos|mac|unix&quot;*]
+<BR>
+positional: [file name]
+<BR>
+Inserts the contents of the named file. The file should normally be relative to the catalog directory. File names beginning with / or .. are only allowed if the Interchange server administrator has disabled NoAbsolute. The optional <TT>type</TT> parameter will do an appropriate ASCII translation on the file before it is sent.</UL>
+<P><B>[include file]</B></P>
+<UL>
+named attributes: <TT>[include file=&quot;name&quot;]</TT>
+<BR>
+Same as <TT>[file name]</TT> except interpolates for all Interchange tags and variables.</UL>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_18.html">Parent Topic</A> | <A HREF="ictemplates_24.html">Previous Topic</A> | <A HREF="ictemplates_26.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

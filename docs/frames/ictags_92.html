@@ -1,0 +1,132 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: read-cookie</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_91.html">Previous Topic</A> | <A HREF="ictags_93.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.58. read-cookie</H2>
+<P>Returns the value of the named cookie. Returns nothing if the cookie does not exist.</P>
+<H3><A NAME="Summary">4.58.1. Summary</A></H3>
+<PRE>
+    [read-cookie name]
+    [read-cookie name=mycookie]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_92.html#read_cookie_name">name</A>
+</TD>
+<TD VALIGN='Top'>
+The name of the cookie whose value you want
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_interpolate">interpolate (reparse)</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Container tag
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Usage example:</B></P>
+<PRE>
+    [read-cookie name=MV_SESSION_ID]
+---
+    6CZ2whqo
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+    $Tag-&gt;read_cookie(  { name =&gt; $name, }  );
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;read_cookie( $name );
+</PRE>
+<H3><A NAME="Description">4.58.2. Description</A></H3>
+<P>This tag expands to the value of the named cookie (or nothing if the cookie does not exist).</P>
+<P>See the Netscape specification at <A HREF="http://www.netscape.com/newsref/std/cookie_spec.html">http://www.netscape.com/newsref/std/cookie_spec.html</A> if you need more cookie-specific detail.</P>
+<H4><A NAME="read_cookie_name"> </A>4.58.2.1. <A NAME="read_cookie_name">name</A></H4>
+<P>This is the name of the cookie whose value you want to retrieve.</P>
+<H4><A NAME="read_cookie_HTTP_COOKIE"> </A>4.58.2.2. <A NAME="read_cookie_HTTP_COOKIE">Parsing an HTTP_COOKIE string</A></H4>
+<P>If you pass this tag a second parameter within a Perl call, it will use your value as the HTTP_COOKIE string (ignoring the real one). This only applies if you pass the values positionally within a perl call since there is no name for the HTTP_COOKIE string input:</P>
+<PRE>
+  $Tag-&gt;read_cookie(<TT>'MV_SESSION_ID'</TT>, <TT>&quot;MV_SESSION_ID=UnHyaDQj:127.0.0.1; ...&quot;</TT>);
+</PRE>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_91.html">Previous Topic</A> | <A HREF="ictags_93.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

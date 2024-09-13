@@ -1,0 +1,205 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: error</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_58.html">Previous Topic</A> | <A HREF="ictags_60.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.25. error</H2>
+<H3><A NAME="Summary">4.25.1. Summary</A></H3>
+<P>Parameters: <B>name</B></P>
+<P>Positional parameters in same order.</P>
+<P><B>The attribute hash reference is passed</B> to the subroutine after the parameters as the last argument. <B>This may mean that there are parameters not shown here.</B></P>
+<P>Must pass named parameter interpolate=1 to cause interpolation.</P>
+<P>Invalidates cache: <B>no</B></P>
+<P>Called Routine:</P>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+    $Tag-&gt;error(
+        {
+         name =&gt; VALUE,
+        }
+    )
+
+ OR
+
+    $Tag-&gt;error($name, $ATTRHASH);
+    [<B>error</B> name <I>other_named_attributes</I>]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_59.html#error_name">name</A>
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_interpolate">interpolate (reparse)</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>no</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Container tag
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Has Subtags
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Nests
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+    [error name]
+---
+    TODO: (tag result)
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+   $Tag-&gt;error(  { name =&gt; VALUE_name
+}, $body  );
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;error(name, $attribute_hash_reference, $body);
+</PRE>
+<H3><A NAME="Description">4.25.2. Description</A></H3>
+<PRE>
+    [error var options]
+        var is the error name, e.g. &quot;session&quot;
+</PRE>
+<P>The [error ...] tag is designed to manage form variable checking for the Interchange <TT>submit</TT> form processing action. It works in conjunction with the definition set in <TT>mv_order_profile</TT>, and can generate error messages in any format you desire.</P>
+<P>If the variable in question passes order profile checking, it will output a label, by default <B>bold</B> text if the item is required, or normal text if not (controlled by the &lt;require&gt; parameter. If the variable fails one or more order checks, the error message will be substituted into a template and the error cleared from the user's session.</P>
+<P>(Below is as of 4.03, the equivalent in 4.02 is [if type=explicit compare=&quot;[error all=1 keep=1]&quot;] ... [/if].)</P>
+<P>To check errors without clearing them, you can use the idiom:</P>
+<PRE>
+    [if errors]
+    &lt;FONT SIZE=&quot;+1&quot; COLOR=RED&gt;
+        There were errors in your form submission.
+    &lt;/FONT&gt;
+    &lt;BLOCKQUOTE&gt;
+        [error all=1 show_error=1 joiner=&quot;&lt;BR&gt;&quot;]
+    &lt;/BLOCKQUOTE&gt;
+    [/if]
+</PRE>
+<P>The options are:</P>
+<H4><A NAME="error_all"> </A>4.25.2.1. <A NAME="error_all">all=1</A></H4>
+<P>Display all error messages, not just the one referred to by &lt;var&gt;. The default is only display the error message assigned to &lt;var&gt;.</P>
+<P>text=&lt;optional string to embed the error message(s) in&gt;</P>
+<P>place a &quot;%s&quot; somewhere in 'text' to mark where you want the error message placed, otherwise it's appended on the end. This option also implies show_error.</P>
+<H4><A NAME="error_joiner"> </A>4.25.2.2. <A NAME="error_joiner">joiner=</A><I>char</I></H4>
+<P>Character used to join multiple error messages. Default is '\n', a newline.</P>
+<H4><A NAME="error_keep"> </A>4.25.2.3. <A NAME="error_keep">keep=1</A></H4>
+<P>keep=1 means don't delete the error messages after copy; anything else deletes them.</P>
+<H4><A NAME="error_show_error"> </A>4.25.2.4. <A NAME="error_show_error">show_error=1</A></H4>
+<P>show_error=1 means return the error message text; otherwise just the number of errors found is returned.</P>
+<H4><A NAME="error_show_label"> </A>4.25.2.5. <A NAME="error_show_label">show_label=1</A></H4>
+<P>show_label=1 causes the field label set by a previous [error] tag's std_label attribute (see below) to be included as part of the error message, like this:</P>
+<PRE>
+First Name: blank
+</PRE>
+<P>If no std_label was set, the variable name will be used instead. This can also be used in combination with show_var to show both the label and the variable name.</P>
+<P>show_label was added in 4.7.0.</P>
+<H4><A NAME="error_show_var"> </A>4.25.2.6. <A NAME="error_show_var">show_var=1</A></H4>
+<P>show_var=1 includes the name of the variable the error was found in as part of the error message, like this:</P>
+<PRE>
+email: 'bob#nothing,net' not a valid email address
+</PRE>
+<H4><A NAME="error_std_label"> </A>4.25.2.7. <A NAME="error_std_label">std_label</A></H4>
+<P>std_label=&lt;label string for error message&gt;</P>
+<P>used with 'required' to display a standardized error format. The HTML formatting can be set via the global variable MV_ERROR_STD_LABEL with the default being:</P>
+<PRE>
+        &lt;FONT COLOR=RED&gt;{LABEL}&lt;SMALL&gt;&lt;I&gt;(%s)&lt;/I&gt;&lt;/SMALL&gt;&lt;/FONT&gt;
+</PRE>
+<P>where {LABEL} is what you set std_label to and %s is substituted with the error message. This option can not be used with the text= option.</P>
+<H4><A NAME="error_required"> </A>4.25.2.8. <A NAME="error_required">required=1</A></H4>
+<P>Specifies that this is a required field for formatting purposes. In the std_label format, it means the field will be bolded. If you specify your own label string, it will insert HTML anywhere you have {REQUIRED: HTML}, but only when the field is required.</P>
+<H4><A NAME="error_name"> </A>4.25.2.9. <A NAME="error_name">name</A></H4>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_58.html">Previous Topic</A> | <A HREF="ictags_60.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

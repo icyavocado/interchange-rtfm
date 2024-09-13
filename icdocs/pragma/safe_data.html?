@@ -1,0 +1,350 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>safe_data - RTFM</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="en-GB">
+    <meta http-equiv="Window-target" content="_top">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <meta http-equiv="X-Soup-Of-The-Day" content="Tomato">
+
+    <meta name="author" content="Kevin Walsh">
+    <meta name="publisher" content="Cursor Software Limited">
+    <meta name="copyright" content="2001-2010, Cursor Software Limited">
+    <meta name="licence" content="GPLv2+ (Unknown licence)">
+    <meta name="generator" content="Interchange 5.7.0 -- www.icdevgroup.org">
+    <meta name="robots" content="index,follow,noarchive,noimageindex">
+    <meta name="keywords" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="description" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="MSSmartTagsPreventParsing" content="TRUE">
+
+    <meta name="verify-v1" content="KqlU/bxZj9Y2ZdZ/3RwuzgVSMIrZ8XM2wqbjSaEo3O4=">
+
+    <meta name="y_key" content="e2dd60be5777fbc8">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
+    <link rel="search" type="application/opensearchdescription+xml" href="http://www.interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="stylesheet" href="/decor/css/website.css">
+    <link rel="stylesheet" href="/decor/css/wiki.css">
+    <link rel="stylesheet" href="/decor/css/neo.css">
+
+
+    <script type="text/javascript" language="JavaScript">
+    <!--
+	if (top != self){
+	    top.location = location;
+	}
+
+    // -->
+    </script>
+</head>
+<body>
+<!-- START VAR: LOGOBAR -->
+<table id="rtfmheader" cellpadding="0" cellspacing="0">
+    <tr>
+	<td><a href="http://www.interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+
+	<td width="100%" style="text-align: right; padding: 10px">
+
+	    <form action="http://www.interchange-rtfm.pullingshots.ca/search.html" method="POST">
+		<input type="hidden" name="mv_session_id" value="nsession">
+		<input type="hidden" name="mv_profile" value="cms_search">
+		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
+		<input type="submit" class="button" value="Search">
+	    </form>
+
+	</td>
+    </tr>
+</table>
+<table id="breadcrumbs" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+	<td>
+	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_pragmas.html">Interchange pragmas</a></span>
+	    <span class="nowrap">&gt; <span class="current">safe_data</span></span>
+	</td>
+
+    </tr>
+</table>
+<!-- END VAR: LOGOBAR -->
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+
+	    <td id="leftside">
+<!-- START COMPONENT: navigation -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th>NAVIGATION</th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+
+<!-- END COMPONENT: navigation -->
+<!-- START COMPONENT: wiki_recent -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th><span class="nowrap">RECENTLY VIEWED</span></th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/pragma/safe_data.html">safe_data</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+<!-- END COMPONENT: wiki_recent -->
+<!-- START COMPONENT: wiki_backlinks -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th><span class="nowrap">PAGES THAT LINK HERE</span></th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/data.html">data</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+<!-- END COMPONENT: wiki_backlinks -->
+<!-- START COMPONENT: account -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+
+    <tr>
+	<th>ACCOUNT LOGIN</th>
+    </tr>
+
+    <tr>
+	<td class="first">
+	    <p>You are not logged in</p>
+	</td>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+	    </ul>
+	</td>
+    </tr>
+
+</table>
+
+
+
+<!-- END COMPONENT: account -->
+<!-- START COMPONENT: icpowered -->
+
+<div style="text-align: center; margin: 10px; margin-top: 0px">
+    <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+</div>
+
+
+
+<!-- START COMPONENT: icpowered -->
+
+	    </td>
+
+	    <td id="bodytext">
+<!-- start of page text -->
+
+<!-- start page: wiki/display (pragma/safe_data) -->
+
+<div class="wikitext">
+<a name="safe_data"></a>
+<h1>safe_data</h1>
+<p>
+Allow loop sub-tags to return Interchange tags and variables verbatim.
+</p>
+<a name="Valid_values"></a>
+<h2>Valid values</h2>
+<p>
+Valid values are <span class="fixedwidth">0</span> and <span class="fixedwidth">1</span>.&nbsp;
+The default is <span class="fixedwidth">0</span>.
+</p>
+<a name="Description"></a>
+<h2>Description</h2>
+<p>
+By default, Interchange does not allow data returned from the database
+to be interpolated (all &quot;<span class="fixedwidth">&#91;</span>&quot; characters are converted to the
+&quot;<span class="fixedwidth">&amp;#91;</span>&quot; HTML entity and displayed literally).&nbsp;
+Setting this <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/pragma.html" title="pragma (tags)">pragma</a> lifts this restriction,
+allowing tags to return &quot;<span class="fixedwidth">&#91;</span>&quot; characters verbatim.
+</p>
+<p>
+If you want to have Interchange tags in your database and display them in
+Interchange pages (perhaps to use the [<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/area.html" title="area (tags)">area</a>] tag to generate
+internal URIs for use in links inside product description text),
+then you need to enable this pragma.
+</p>
+<p>
+It is always better to use the <span class="fixedwidth">safe_data</span> attribute,
+available to certain tags,
+or perhaps the <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/pragma.html" title="pragma (tags)">pragma</a>&nbsp;safe_data]</span>
+(for a whole page),
+or even <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/tag.html" class="nopage" rel="nofollow" title="tag (tags)">tag</a> pragma safe_data]...&#91;/tag]</span>
+(for a small block of Interchange tag code on a page),
+rather than setting a website-wide <span class="fixedwidth">safe_data</span> <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Pragma.html" title="Pragma (config)">Pragma</a></span>.
+</p>
+<p>
+It is strongly recommended that you surround affected code with a
+<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/restrict.html" title="restrict (tags)">restrict</a>]</span> tag to only allow specific ICML tags to
+be interpolated.&nbsp;
+You risk security compromises if you allow <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/calc.html" title="calc (tags)">calc</a>]</span>,
+<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/perl.html" title="perl (tags)">perl</a>]</span> or any other similarly powerful tags.
+</p>
+<p>
+Be certain that you absolutely know how the data got into your databases,
+and where it will be used.&nbsp;
+Consider the following:
+</p>
+
+<ul>
+<li>Will it always be possible to interpolate?</li>
+<li>What about e-mailed plain-text receipts?&nbsp;
+Will literal <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/area.html" title="area (tags)">area</a>]</span> tags show up in product descriptions in the receipt?</li>
+<li>Would the desired output of <span class="fixedwidth">&lt;a href=&quot;...&quot;&gt;</span> be any better than a simple plain text?</li>
+<li>What if you access your database from applications other than Interchange?&nbsp;
+You'd then have to decide what to do with such tags.&nbsp;
+Perhaps you could simply strip them, but will the missing output cause trouble?</li>
+</ul>
+
+<br>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_warning.gif" width="32" height="32" border="0" alt="Warning">
+</td>
+<td width="100%">
+<p class="title">Warning</p>
+<p>
+Watch out for parse order with <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/tag.html" class="nopage" rel="nofollow" title="tag (tags)">tag</a> pragma]</span> or
+<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/restrict.html" title="restrict (tags)">restrict</a>]</span>, when used with lists that retrieve data from
+the database, such as <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Looping_tags_and_sub-tags.html" title="Category - looping tags and sub-tags">PREFIX-*</a>]</span>
+and the <span class="fixedwidth">flypage</span>.&nbsp;
+Loops parse before ordinary tags, such as <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/tag.html" class="nopage" rel="nofollow" title="tag (tags)">tag</a>]</span> and
+<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/restrict.html" title="restrict (tags)">restrict</a>]</span>, and are therefore not affected by them.&nbsp;
+You can resolve this by enclosing the entire loop tag with
+<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/tag.html" class="nopage" rel="nofollow" title="tag (tags)">tag</a>]</span> or <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/restrict.html" title="restrict (tags)">restrict</a>]</span> etc.
+</p>
+<p style="margin-bottom: 0px">
+See the <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Interchange_tag_introduction.html#Interchange_tag_parsing_order" title="&quot;Interchange tag parsing order&quot; heading on the &quot;Interchange tag introduction&quot; page">Interchange tag parsing order</a>
+documentation for more information.
+</p>
+</td>
+</tr>
+</table>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_warning.gif" width="32" height="32" border="0" alt="Warning">
+</td>
+<td width="100%">
+<p class="title">Warning</p>
+<p style="margin-bottom: 0px">
+<span class="fixedwidth">safe_data</span> is disabled, by default, for a very good reason.&nbsp;
+You should be very careful if you decide to enable it.
+</p>
+</td>
+</tr>
+</table>
+</div>
+
+<!-- start of modification notice -->
+<div class="wikitext">
+    <table class="pageinfo" cellpadding="0" cellspacing="0">
+	<tr>
+	    <td>
+Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_pragmas.html">Interchange pragmas</a>
+	    </td>
+	</tr>
+
+
+	<tr>
+	    <td>
+		
+		Last modified by: <a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin">Kevin Walsh</a><br>
+		Modification date: Tuesday 3 July 2007 at 4:46 AM (BST)
+	    </td>
+	</tr>
+    </table>
+</div>
+<!-- end of modification notice -->
+
+
+
+<!-- end page: wiki/display (pragma/safe_data) -->
+
+
+
+<!-- end of page text -->
+	    </td>
+
+	</tr>
+    </table>
+<!-- START VAR: FOOTER -->
+
+<table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+	<td>
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	</td>
+
+    </tr>
+</table>
+
+<!-- END VAR: FOOTER -->
+
+<!-- START VAR: COPYRIGHT -->
+
+
+    <div class="copyright">
+	Copyright &copy; 2001-2010
+	<a href="http://www.cursor.biz/index.html">Cursor Software Limited</a>.&nbsp;
+	All Rights Reserved.
+    </div>
+
+<!-- END VAR: COPYRIGHT -->
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: bar_button</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_133.html">Parent Topic</A> | <A HREF="ictags_133.html">Previous Topic</A> | <A HREF="ictags_135.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>6.1. bar_button</H2>
+<P>Displays content based on current page. Could be used for building e.g. menu bars.</P>
+<H3><A NAME="Summary">6.1.1. Summary</A></H3>
+<PRE>
+    [<B>bar-button</B> page current]...[selected]...[/selected][/bar-button]
+    [<B>bar-button</B> page=page current=current-page]...[selected]...[/selected][/bar-button]
+</PRE>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Positional parameters: </STRONG>The first line shows the usage with positional parameters (given in order). The second line shows usage with named parameters.</P>
+<P><HR WIDTH="80%" ALIGN="Left"></P>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_134.html#bar_button_page">page</A>
+</TD>
+<TD VALIGN='Top'>
+Name of page for which this bar-button is defined
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_134.html#bar_button_current">current</A>
+</TD>
+<TD VALIGN='Top'>
+Name of the current page
+</TD>
+<TD VALIGN='Top'>
+Current page: MV_PAGE
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD>
+Invalidates cache
+</TD>
+<TD>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD>
+Macro
+</TD>
+<TD>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD>
+Has end tag
+</TD>
+<TD>
+[/bar-button]
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<P>To build a simple '3-button' menu bar one could put the following on each of the pages. The results of this code for page2 are shown below.</P>
+<PRE>
+        &lt;table&gt;&lt;tr&gt;
+        [bar-button page=page1]
+        &lt;TD&gt;&lt;A HREF=&quot;[area page1]&quot;&gt;PAGE-1&lt;/A&gt;&lt;/TD&gt;
+        [selected]
+        &lt;TD bgcolor=&quot;red&quot;&gt;&lt;A HREF=&quot;[area page1]&quot;&gt;&lt;B&gt;PAGE-1-selected&lt;/B&gt;&lt;/A&gt;&lt;/TD&gt;
+        [/selected]
+        [/bar-button]
+        [bar-button page=page2]
+        &lt;TD&gt;&lt;A HREF=&quot;[area page2]&quot;&gt;PAGE-2&lt;/A&gt;&lt;/TD&gt;
+        [selected]
+        &lt;TD bgcolor=&quot;red&quot;&gt;&lt;A HREF=&quot;[area page2]&quot;&gt;&lt;B&gt;PAGE-2-selected&lt;/B&gt;&lt;/A&gt;&lt;/TD&gt;
+        [/selected]
+        [/bar-button]
+        [bar-button page=page3]
+        &lt;TD&gt;&lt;A HREF=&quot;[area page3]&quot;&gt;PAGE-3&lt;/A&gt;&lt;/TD&gt;
+        [selected]
+        &lt;TD bgcolor=&quot;red&quot;&gt;&lt;A HREF=&quot;[area page3]&quot;&gt;&lt;B&gt;PAGE-3-selected&lt;/B&gt;&lt;/A&gt;&lt;/TD&gt;
+        [/selected]
+        [/bar-button]
+        &lt;/tr&gt;&lt;/table&gt;
+---
+        PAGE-1    PAGE-2-selected    PAGE-3
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+    $Tag-&gt;button_bar(  { page =&gt; $page,
+                     current  =&gt; $current,
+                         body =&gt; $body}  );
+</PRE>
+<P>or similarly,</P>
+<PRE>
+    $Tag-&gt;area($page, $current, $body);
+</PRE>
+<H4><A NAME="See Also">6.1.1.1. See Also</A></H4>
+<P>bar_link routine</P>
+<H3><A NAME="Description">6.1.2. Description</A></H3>
+<P>Displays content based on current page. The content between the [selected][/selected] tags will be displayed only if the name of the current page matches the name that was passed to the page parameter (page=page-name). The default content will be displayed when there is no match.</P>
+<H4><A NAME="bar_button_page"> </A>6.1.2.1. <A NAME="bar_button_page">page</A></H4>
+<P>The name of the page for which this definition of the bar-button is defined.</P>
+<H4><A NAME="bar_button_current"> </A>6.1.2.2. <A NAME="bar_button_current">current</A></H4>
+<P>The name of the current page. Defaults to current page MV_PAGE.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_133.html">Parent Topic</A> | <A HREF="ictags_133.html">Previous Topic</A> | <A HREF="ictags_135.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

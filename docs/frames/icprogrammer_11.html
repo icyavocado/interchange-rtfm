@@ -1,0 +1,72 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Programmer Reference: Data structure overview</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icprogrammer_5.html">Parent Topic</A> | <A HREF="icprogrammer_10.html">Previous Topic</A> | <A HREF="icprogrammer_12.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>2.6. Data structure overview</H2>
+<P>Interchange has three major data stuctures, which correspond to the master server, the catalog, and the user.</P>
+<P>You can examine two of these structures by setting in interchange.cfg:</P>
+<PRE>
+        DumpStructure  Yes
+</PRE>
+<P>This will by default dump an interchange.structure file which shows the global configuration, and a CATALOGNAME.structure file in each catalog directory showing that catalog's configuration.</P>
+<P>The third structure, the user data session, can be viewed with the following ITL placed in a page:</P>
+<PRE>
+        &lt;XMP&gt;[dump]&lt;/XMP&gt;
+</PRE>
+<H3><A NAME="The Global configuration">2.6.1. The Global configuration</A></H3>
+<P>This is held in a set of variables inhabiting the Global package. They define overall server behavior, and contain pointers to the catalog structures.</P>
+<P>The Global configuration is defined in <TT>interchange.cfg</TT> and any files that it reads via <TT>include</TT> statements. The configuration is produced by parsing interchange.cfg with the routine <TT>Vend::Config::global_config</TT>.</P>
+<P>Directives can be defined for parsing by the catalog configuration within the global configuration -- and they can be deleted as well.</P>
+<P>The only way to define new global directives is via hacking the source. Luckily, this is just about never needed -- you can define settings for use by your programs in Variable or other repositories.</P>
+<H3><A NAME="The Catalog configuration">2.6.2. The Catalog configuration</A></H3>
+<P>Each Interchange catalog has its own configuration completely independent from others. It is basically produced from the file <TT>catalog.cfg</TT> in the directory defined as the base for the catalog. It is parsed by the subroutine <TT>Vend::Config::config</TT>.</P>
+<P>We say basically, because there are many ways to alter catalog configuration. (CATNAME below refers to the name of the catalog being configured.)</P>
+<P><B>ConfigAllBefore</B></P>
+<P>Global catalog configuration preamble, affecting all catalogs, can be defined by the Global directive <TT>ConfigAllBefore</TT>. It defaults to <TT>catalog_before.cfg</TT> in the Interchange software directory (/usr/local/interchange).</P>
+<P>LI1. CATNAME.before</P>
+<P>An individual per-catalog preamble configuration is defined in <TT>$Global::ConfDir/CATNAME.before</TT>.</P>
+<P>By default it would be /usr/local/interchange/etc/CATNAME.before.</P>
+<P><B>CATNAME.site</B></P>
+<P>A file in the catalog directory which is read before <TT>catalog.cfg</TT>. Deprecated.</P>
+<P><B>catalog.cfg</B></P>
+<P>The normal configuration file.</P>
+<P><B>CATNAME.after</B></P>
+<P>An individual per-catalog postamble configuration is defined in <TT>$Global::ConfDir/CATALOGNAME.after</TT>. This can be used to prevent user catalogs from doing unsafe things -- for instance enforcing the use of encryption, or preventing running in WideOpen mode.</P>
+<P>By default it would be /usr/local/interchange/etc/CATALOGNAME.after.</P>
+<P><B>ConfigAllAfter</B></P>
+<P>Global catalog configuration postamble, affecting all catalogs, can be defined by the Global directive <TT>ConfigAllAfter</TT>. It defaults to <TT>catalog_after.cfg</TT> in the Interchange software directory (/usr/local/interchange).</P>
+<P><B>command line</B></P>
+<P>Any configuration passed on the command line at Interchange startup is applied last. For instance, to test out a catalog named <TT>foundation</TT> with a different invocation URL without having to alter the config files:</P>
+<P>bin/interchange --foundation:VendURL=http://localhost/cgi-bin/found \</P>
+<UL><UL><UL>
+<LI>foundation:SecureURL=http://localhost/cgi-bin/found \
+<LI>foundation:RobotLimit=1000</UL></UL></UL>
+<P>That will set the <TT>foundation</TT> catalog directive values VendURL, SecureURL, and RobotLimit, overriding any settings in the configuration files.</P>
+<P><B>Tied configuration</B></P>
+<P>Interchange has dynamic catalog configuration as well. See <A HREF="icconfig_71.html#Programming Watch Points in catalog.cfg">Programming Watch Points in catalog.cfg</A>.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icprogrammer_5.html">Parent Topic</A> | <A HREF="icprogrammer_10.html">Previous Topic</A> | <A HREF="icprogrammer_12.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

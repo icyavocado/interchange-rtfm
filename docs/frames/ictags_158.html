@@ -1,0 +1,396 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: xml-generator</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_133.html">Parent Topic</A> | <A HREF="ictags_157.html">Previous Topic</A> | <A HREF="ictags_159.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>6.25. xml-generator</H2>
+<P>This is a quick and dirty tag that generates XML tags based upon one of two types of data (delimited and session).</P>
+<H3><A NAME="Summary">6.25.1. Summary</A></H3>
+<PRE>
+    [<B>xml-generator</B> type* <I>other_named_attributes</I>][/xml-generator]
+    [<B>xml-generator</B> type=value* <I>other_named_attributes</I>][/xml-generator]
+    [<B>xml-generator</B> type=value* <I>other_named_attributes</I>][][/xml-generator]
+
+*Optional
+</PRE>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Positional parameters: </STRONG>The first line shows the usage with positional parameters (given in order). The second line shows usage with named parameters.</P>
+<P><HR WIDTH="80%" ALIGN="Left"></P>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_158.html#xml_generator_type">type</A>
+</TD>
+<TD VALIGN='Top'>
+Data type. Delimited or session
+</TD>
+<TD VALIGN='Top'>
+delimited
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_158.html#xml_generator_attributes">attributes</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_158.html#xml_generator_dbdump">dbdump</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_158.html#xml_generator_delimiter">delimiter</A>
+</TD>
+<TD VALIGN='Top'>
+\t
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_158.html#xml_generator_field_names">field_names</A>
+</TD>
+<TD VALIGN='Top'>
+&amp;nbsp;
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_158.html#xml_generator_separator">separator</A>
+</TD>
+<TD VALIGN='Top'>
+\n
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_158.html#xml_generator_toplevel_tag">toplevel_tag</A>
+</TD>
+<TD VALIGN='Top'>
+'table' for delimited type and 'session' for other type
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_158.html#xml_generator_record_tag">record_tag</A>
+</TD>
+<TD VALIGN='Top'>
+record
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_158.html#xml_generator_field_tag">field_tag</A>
+</TD>
+<TD VALIGN='Top'>
+field
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_158.html#xml_generator_key_name">key_name</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_158.html#xml_generator_spacer">spacer</A>
+</TD>
+<TD VALIGN='Top'>
+[\s,]+
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_158.html#xml_generator_no_second">no_second</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_158.html#xml_generator_skip_empty">skip_empty</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD>
+Invalidates cache
+</TD>
+<TD>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD>
+Macro
+</TD>
+<TD>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD>
+Has end tag
+</TD>
+<TD>
+[/xml-generator]
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+    [xml-generator type=delimited
+             attributes=&quot;date&quot;
+                   date=&quot;[tag time]%d-%b-%Y[/tag]&quot;
+           toplevel_tag=products
+    ]code       description     price
+        [query list=1 sql=&quot;select sku, description, price from products&quot; prefix=xml][xml-code]  [xml-param description] [xml-param price]
+        [/query]
+    [/xml-generator]
+---
+    &lt;products date=&quot;18-May-2001&quot;&gt;
+            &lt;record key=&quot;os28113&quot;&gt;
+                    &lt;code&gt;os28113&lt;/code&gt;
+                    &lt;description&gt;The Claw Hand Rake&lt;/description&gt;
+                    &lt;price&gt;14.99&lt;/price&gt;
+            &lt;/record&gt;
+            &lt;record key=&quot;os28006&quot;&gt;
+                    &lt;code&gt;os28006&lt;/code&gt;
+                    &lt;description&gt;Painters Brush Set&lt;/description&gt;
+                    &lt;price&gt;29.99&lt;/price&gt;
+            &lt;/record&gt;
+            ...
+    &lt;/products&gt;
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+    $Tag-&gt;xml_generator( {type =&gt; delimited,
+                      toplevel_tag =&gt; apex,  }, $BODY );
+
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;xml_generator( $type, $attribute_hash_reference, $BODY );
+</PRE>
+<H3><A NAME="Description">6.25.2. Description</A></H3>
+<H4><A NAME="xml_generator_type"> </A>6.25.2.1. <A NAME="xml_generator_type">type</A></H4>
+<P>delimited</P>
+<P>Accepts a delimited and separated (default is TAB delimiter and newline separator) list of records such as that generated by an '[item-list]', '[sql]', or '[loop search=&quot;&quot;]' ITL tag.</P>
+<P>session</P>
+<P>When the type is not delimited, it can contain any hash reference into the Interchange session. Examples are:</P>
+<PRE>
+        values       The form values
+        scratch      Scratch values
+        errors       Error values
+        other        Any other Session key, for example &quot;source&quot; for
+                     [data session source]
+</PRE>
+<P>If the value is a hash, then it will be sent as an XML record with the top level equal to &quot;session&quot;, and a second_level tag equal to the hash name, and keys as separate XML container tags. If the parameter &quot;that is equal to the type&quot; is given, only those fields will be shown. Otherwise the entire hash will be shown. For example, this tag:</P>
+<PRE>
+        [xml-generator type=&quot;values&quot; values=&quot;fname lname&quot;][/xml-generator]
+
+will generate:
+
+        &lt;session&gt;
+                &lt;values&gt;
+                        &lt;fname&gt;First&lt;/fname&gt;
+                        &lt;lname&gt;Last&lt;/lname&gt;
+                &lt;/values&gt;
+        &lt;/session&gt;
+
+if it is a scalar, then only the second level will be done:
+
+        [xml-generator type=&quot;cybercash_id&quot;][/xml-generator]
+
+will do the equivalent of:
+
+        &lt;session&gt;
+                &lt;cybercash_id&gt;[data session cybercash_id]&lt;/cybercash_id&gt;
+        &lt;/session&gt;
+
+So bringing it all together, the following:
+
+        [xml-generator type=&quot;values scratch source&quot;
+                       values=&quot;fname lname&quot;
+                       scratch=&quot;downloads&quot;][/xml-generator]
+will generate:
+
+        &lt;session&gt;
+                &lt;values&gt;
+                        &lt;fname&gt;First&lt;/fname&gt;
+                        &lt;lname&gt;Last&lt;/lname&gt;
+                &lt;/values&gt;
+                &lt;scratch&gt;
+                        &lt;downloads&gt;0&lt;/downloads&gt;
+                &lt;/scratch&gt;
+                &lt;source&gt;Partner1&lt;/source&gt;
+        &lt;/session&gt;
+</PRE>
+<H4><A NAME="xml_generator_no_second"> </A>6.25.2.2. <A NAME="xml_generator_no_second">no_second</A></H4>
+<P>Prevents the second-level tags from being generated. Extending the last example in the &quot;session&quot; type above, this</P>
+<PRE>
+        [xml-generator  type=&quot;values scratch source&quot;
+                        no_second=1
+                        values=&quot;fname lname&quot;
+                        scratch=&quot;downloads&quot;][/xml-generator]
+will generate:
+
+        &lt;session&gt;
+                &lt;fname&gt;First&lt;/fname&gt;
+                &lt;lname&gt;Last&lt;/lname&gt;
+                &lt;downloads&gt;0&lt;/downloads&gt;
+                &lt;source&gt;Partner1&lt;/source&gt;
+        &lt;/session&gt;
+</PRE>
+<H4><A NAME="xml_generator_attributes"> </A>6.25.2.3. <A NAME="xml_generator_attributes">attributes</A></H4>
+<P>The attributes (if any) to pass on to the top level tag. For instance,</P>
+<PRE>
+    [xml-generator
+          attributes=&quot;date&quot;
+                date=&quot;[tag time]%d-%b-%Y[/tag]&quot;
+        toplevel_tag=order
+    ][/xml-generator]
+
+will generate a toplevel tag pair of:
+
+        &lt;order date=&quot;18-Mar-2001&quot;&gt;
+        &lt;/order&gt;
+</PRE>
+<H4><A NAME="xml_generator_dbdump"> </A>6.25.2.4. <A NAME="xml_generator_dbdump">dbdump</A></H4>
+<P>Will dump all tables in the catalog when this attribute is set true. Used attributes are &quot;toplevel_tag&quot;, &quot;record_tag&quot;, &quot;field_tag&quot;, and &quot;skip_empty&quot; or default values ('table', 'record', 'field' respectively).</P>
+<PRE>
+Output format:
+    &lt;database name=&quot;catalogname&quot;&gt;
+        &lt;toplevel_tag name=&quot;tablename1&quot;&gt;
+            &lt;record_tag key=&quot;value of first field-1&quot;&gt;
+                &lt;field_tag name=&quot;fieldname1&quot;&gt;fieldvalue1&lt;/field_tag&gt;
+                &lt;field_tag name=&quot;fieldname2&quot;&gt;fieldvalue2&lt;/field_tag&gt;
+                        &lt;/record_tag&gt;
+            &lt;record_tag key=&quot;value of first field-2&quot;&gt;
+                &lt;field_tag name=&quot;fieldname1&quot;&gt;fieldvalue1&lt;/field_tag&gt;
+                &lt;field_tag name=&quot;fieldname2&quot;&gt;fieldvalue2&lt;/field_tag&gt;
+                        &lt;/record_tag&gt;
+                &lt;/toplevel_tag&gt;
+        &lt;toplevel_tag name=&quot;tablename2&quot;&gt;
+            &lt;record_tag key=&quot;value of first field-1&quot;&gt;
+                &lt;field_tag name=&quot;fieldname1&quot;&gt;fieldvalue1&lt;/field_tag&gt;
+                &lt;field_tag name=&quot;fieldname2&quot;&gt;fieldvalue2&lt;/field_tag&gt;
+                        &lt;/record_tag&gt;
+                &lt;/toplevel_tag&gt;
+        &lt;/database&gt;
+</PRE>
+<P><B>Important note:</B> All tables are read into memory. So be warned, this could be a real memory hog.</P>
+<P>Ton Verhagen's proposal:</P>
+<OL>
+<LI>Add option to select tables. E.g. dump_tables=&quot;products cat area&quot; and/or
+<LI>Add option to select an output file. E.g. dump_file=&quot;tabledump.XML&quot;. Send output to file line by line.</OL>
+<H4><A NAME="xml_generator_delimiter"> </A>6.25.2.5. <A NAME="xml_generator_delimiter">delimiter</A></H4>
+<P>Character used as delimiter of fields in delimited data type. Defaults to a tab character.</P>
+<H4><A NAME="xml_generator_field_names"> </A>6.25.2.6. <A NAME="xml_generator_field_names">field_names</A></H4>
+<P>Space or comma-delimited list of field names to be used for delimited data type. Should be in the same order as in the data list provided (between the tags).</P>
+<P>Another way of providing the field names would be:</P>
+<PRE>
+    [xml-generator .....]fieldname-1    fieldname-2     fieldname-3
+        [field value list
+         delimited by option delimiter and
+         separated by option separator][/xml-generator]
+</PRE>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>Field name list <B>must</B> be tab delimited.
+<HR WIDTH="80%" ALIGN="Left"></P>
+<P>Ton Verhagen's humble opinion: This should change in future versions! Use option delimiter instead.</P>
+<H4><A NAME="xml_generator_separator"> </A>6.25.2.7. <A NAME="xml_generator_separator">separator</A></H4>
+<P>Character used as line separator in list between [xml-separator][xml-separator] tags and in output 'session' data type. Defaults to a newline, &quot;\n&quot;.</P>
+<H4><A NAME="xml_generator_toplevel_tag"> </A>6.25.2.8. <A NAME="xml_generator_toplevel_tag">toplevel_tag</A></H4>
+<P>The toplevel tag name to use. Defaults to &quot;table&quot; for the 'dbdump mode' and delimited type, and &quot;session&quot; for the other.</P>
+<H4><A NAME="xml_generator_record_tag"> </A>6.25.2.9. <A NAME="xml_generator_record_tag">record_tag</A></H4>
+<P>Defines the tag name for the record tag. Defaults to 'record'. Used for 'dbdump mode' and delimited type.</P>
+<H4><A NAME="xml_generator_field_tag"> </A>6.25.2.10. <A NAME="xml_generator_field_tag">field_tag</A></H4>
+<P>Defines the tag name for the field tag. Defaults to 'field'. Only used in 'dbdump mode'.</P>
+<H4><A NAME="xml_generator_key_name"> </A>6.25.2.11. <A NAME="xml_generator_key_name">key_name</A></H4>
+<P>Only used in delimited data type. Defines fieldname to determine key value in &quot;record_tag&quot;.</P>
+<PRE>
+    &lt;record_tag key=&quot;value of field with name defined by key_name&quot;&gt; ....
+</PRE>
+<H4><A NAME="xml_generator_spacer"> </A>6.25.2.12. <A NAME="xml_generator_spacer">spacer</A></H4>
+<P>Character used as delimiter in type parameter definition and corresponding attributes. Defaults to '[\s,]+' (one or more whitespace or comma).</P>
+<PRE>
+    [xml-generator type=&quot;values|scratch&quot;
+                 values=&quot;value1|value2&quot;
+                scratch=&quot;scratch1|scratch2&quot;
+                 spacer=&quot;|&quot;
+    ][/xml-generator]
+</PRE>
+<H4><A NAME="xml_generator_skip_empty"> </A>6.25.2.13. <A NAME="xml_generator_skip_empty">skip_empty</A></H4>
+<P>Only used in <A HREF="ictags_158.html#xml_generator_dbdump">dbdump</A> mode (dbdump=1). Will skip empty fields if this attribute is set true.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_133.html">Parent Topic</A> | <A HREF="ictags_157.html">Previous Topic</A> | <A HREF="ictags_159.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

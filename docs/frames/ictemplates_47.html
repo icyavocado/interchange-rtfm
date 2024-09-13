@@ -1,0 +1,74 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Template Guide: Special Locale Keys for Price Representation</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_43.html">Parent Topic</A> | <A HREF="ictemplates_46.html">Previous Topic</A> | <A HREF="ictemplates_48.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>9.4. Special Locale Keys for Price Representation</H2>
+<P>Interchange honors the standard POSIX keys:</P>
+<PRE>
+   mon_decimal_point    or      decimal_point
+   mon_thousands_sep    or      thousands_sep
+   currency_symbol      or      int_currency_symbol
+   frac_digits  or      p_cs_precedes
+</PRE>
+<P>See the POSIX setlocale(3) man page for more information. These keys will be used for formatting prices and approximates the number format used in most countries. To set a custom price format, use these special keys:</P>
+<P><B>price_picture</B></P>
+<UL>
+Interchange will format a currency number based on a &quot;picture&quot; given to it. The basic form is:</UL>
+<PRE>
+            Locale en_US price_picture &quot;$ ###,###,###.##&quot;
+</PRE>
+<UL>
+The <TT>en_US</TT> locale, for the United States, would display <TT>4452.3</TT> as <TT>$ 4,452.30</TT>. The same display can be achieved with:</UL>
+<PRE>
+             Locale en_US mon_thousands_sep ,
+             Locale en_US mon_decimal_point .
+             Locale en_US p_cs_precedes     1
+             Locale en_US currency_symbol   $
+</PRE>
+<UL>
+A common price_picture for European countries would be <TT>###.###.###,##</TT>, which would display that same number as <TT>4.452,30</TT>. To add a franc notation at the end for the locale <TT>fr_FR</TT>, use the setting:</UL>
+<PRE>
+            Locale fr_FR price_picture &quot;##.###,## fr&quot;
+</PRE>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>IMPORTANT NOTE: </STRONG>The decimal point in use (set by <TT>mon_decimal_point</TT>) and the thousands separator (set by <TT>mon_thousands_sep</TT>) must match the settings in the price_picture. The <TT>frac_digits</TT> setting is not used in this case. It is derived from the location of the decimal (if any).
+<HR WIDTH="80%" ALIGN="Left"></P>
+<UL>
+The same setting for <TT>fr_FR</TT> above can be achieved with:</UL>
+<PRE>
+             Locale fr_FR mon_thousands_sep .
+             Locale fr_FR mon_decimal_point ,
+             Locale fr_FR p_cs_precedes     0
+             Locale fr_FR currency_symbol   fr
+</PRE>
+<UL>
+If the number of digits is greater than the # locations in the price_picture, the digits will be changed to asterisks. An overflow number above would show as <TT>**.***,** fr</TT>.</UL>
+<P><B>picture</B></P>
+<UL>
+Same as <TT>price_picture</TT>, but sets the value returned if the <TT>[currency]</TT> tag is not used. If the number of digits is greater than the # locations in the picture, the digits will be changed to asterisks, displaying something like <TT>**,***.**</TT>.</UL>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_43.html">Parent Topic</A> | <A HREF="ictemplates_46.html">Previous Topic</A> | <A HREF="ictemplates_48.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

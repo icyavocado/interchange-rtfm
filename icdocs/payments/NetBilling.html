@@ -1,0 +1,747 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>NetBilling - RTFM</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="en-GB">
+    <meta http-equiv="Window-target" content="_top">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <meta http-equiv="X-Soup-Of-The-Day" content="Tomato">
+
+    <meta name="author" content="Kevin Walsh">
+    <meta name="publisher" content="Cursor Software Limited">
+    <meta name="copyright" content="2001-2010, Cursor Software Limited">
+    <meta name="licence" content="GPLv2+ (Unknown licence)">
+    <meta name="generator" content="Interchange 5.7.0 -- www.icdevgroup.org">
+    <meta name="robots" content="index,follow,noarchive,noimageindex">
+    <meta name="keywords" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="description" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="MSSmartTagsPreventParsing" content="TRUE">
+
+    <meta name="verify-v1" content="KqlU/bxZj9Y2ZdZ/3RwuzgVSMIrZ8XM2wqbjSaEo3O4=">
+
+    <meta name="y_key" content="e2dd60be5777fbc8">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
+    <link rel="search" type="application/opensearchdescription+xml" href="http://www.interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="stylesheet" href="/decor/css/website.css">
+    <link rel="stylesheet" href="/decor/css/wiki.css">
+    <link rel="stylesheet" href="/decor/css/neo.css">
+
+
+    <script type="text/javascript" language="JavaScript">
+    <!--
+	if (top != self){
+	    top.location = location;
+	}
+
+    // -->
+    </script>
+</head>
+<body>
+<!-- START VAR: LOGOBAR -->
+<table id="rtfmheader" cellpadding="0" cellspacing="0">
+    <tr>
+	<td><a href="http://www.interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+
+	<td width="100%" style="text-align: right; padding: 10px">
+
+	    <form action="http://www.interchange-rtfm.pullingshots.ca/search.html" method="POST">
+		<input type="hidden" name="mv_session_id" value="nsession">
+		<input type="hidden" name="mv_profile" value="cms_search">
+		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
+		<input type="submit" class="button" value="Search">
+	    </form>
+
+	</td>
+    </tr>
+</table>
+<table id="breadcrumbs" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+	<td>
+	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_payment_modules.html">Interchange payment modules</a></span>
+	    <span class="nowrap">&gt; <span class="current">NetBilling</span></span>
+	</td>
+
+    </tr>
+</table>
+<!-- END VAR: LOGOBAR -->
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+
+	    <td id="leftside">
+<!-- START COMPONENT: navigation -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th>NAVIGATION</th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+
+<!-- END COMPONENT: navigation -->
+<!-- START COMPONENT: wiki_recent -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th><span class="nowrap">RECENTLY VIEWED</span></th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/payments/NetBilling.html">NetBilling</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+<!-- END COMPONENT: wiki_recent -->
+<!-- START COMPONENT: wiki_backlinks -->
+
+
+
+<!-- END COMPONENT: wiki_backlinks -->
+<!-- START COMPONENT: account -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+
+    <tr>
+	<th>ACCOUNT LOGIN</th>
+    </tr>
+
+    <tr>
+	<td class="first">
+	    <p>You are not logged in</p>
+	</td>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+	    </ul>
+	</td>
+    </tr>
+
+</table>
+
+
+
+<!-- END COMPONENT: account -->
+<!-- START COMPONENT: icpowered -->
+
+<div style="text-align: center; margin: 10px; margin-top: 0px">
+    <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+</div>
+
+
+
+<!-- START COMPONENT: icpowered -->
+
+	    </td>
+
+	    <td id="bodytext">
+<!-- start of page text -->
+
+<!-- start page: wiki/display (payments/NetBilling) -->
+
+<div class="wikitext">
+<a name="NetBilling"></a>
+<h1>NetBilling</h1>
+<p>
+Interchange's support for the
+<a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2enetbilling%2ecom%2f" title="http://www.netbilling.com/" rel="nofollow">NetBilling</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page"> Payment Services Provider.
+</p>
+<a name="Synopsis"></a>
+<h2>Synopsis</h2>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">&amp;</span><span class="def_Syntax">charge </span><span class="def_Symbol">= </span>netbilling
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+or
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">charge route</span><span class="def_Symbol">=</span><span class="def_String">&quot;netbilling&quot; </span>param1<span class="def_Symbol">=</span><span class="def_String">&quot;value1&quot; </span>param2<span class="def_Symbol">=</span><span class="def_String">&quot;value2&quot;</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Prerequisites"></a>
+<h2>Prerequisites</h2>
+
+<p>
+<ul>
+<li>LWP::UserAgent</li>
+<li>LWP::Protocol::https</li>
+<li>Digest::MD5</li>
+</ul>
+
+<a name="Description"></a>
+<h2>Description</h2>
+<p>
+The <span class="fixedwidth">Vend::Payment::NetBilling</span> module implements the
+<span class="fixedwidth">netbilling()</span> subroutine for use with Interchange.&nbsp;
+It is compatible on a call level with the other Interchange payment modules.&nbsp;
+In theory (and even usually in practise) you could switch from another payment
+module to NetBilling with a few configuration file changes.
+</p>
+<p>
+To enable this module, place this directive in your &quot;<span class="fixedwidth">interchange.cfg</span>&quot; file:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">Require&nbsp; module&nbsp; </span>Vend<span class="def_Symbol">:</span><span class="def_Symbol">:</span>Payment<span class="def_Symbol">:</span><span class="def_Symbol">:</span>NetBilling
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+This <strong>must</strong> be in <span class="fixedwidth">interchange.cfg</span> or a file included from it.
+</p>
+<p>
+Make sure <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/CreditCardAuto.html" title="CreditCardAuto (config)">CreditCardAuto</a></span> is off, which is the default in
+the <em>Standard</em> ecommerce demo.
+</p>
+<p>
+The &quot;<span class="fixedwidth">mode</span>&quot; can be named anything, but the &quot;<span class="fixedwidth">gateway</span>&quot; parameter
+must be set to &quot;<span class="fixedwidth">netbilling</span>&quot;.&nbsp;
+To make it the default payment gateway for all credit card transactions in a
+specific website, you can set the following in <span class="fixedwidth">catalog.cfg</span>:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">Variable&nbsp; MV</span><span class="def_Symbol">_</span><span class="def_Syntax">PAYMENT</span><span class="def_Symbol">_</span><span class="def_Syntax">MODE&nbsp; </span>netbilling
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+It uses several of the standard settings from Interchange payment.&nbsp;
+Any time we speak of a setting, it is obtained either first from the tag/call
+options, then from an Interchange order <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Route.html" title="Route (config)">Route</a></span> named after
+the mode, then finally a default global payment <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span>.&nbsp;
+For example, the &quot;<span class="fixedwidth">id</span>&quot; parameter would be specified by:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">charge route</span><span class="def_Symbol">=</span><span class="def_Syntax">netbilling id</span><span class="def_Symbol">=</span><span class="def_Syntax">YourNetBillingID</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+or
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">Route&nbsp; netbilling&nbsp; id&nbsp; </span>YourNetBillingID
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+or
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">Variable&nbsp; MV</span><span class="def_Symbol">_</span><span class="def_Syntax">PAYMENT</span><span class="def_Symbol">_</span><span class="def_Syntax">ID&nbsp; </span>YourNetBillingID
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+You also need to change the &quot;<span class="fixedwidth">check_num</span>&quot; <span class="fixedwidth">&lt;form&gt;</span>
+variable to &quot;<span class="fixedwidth">check_number</span>&quot; in the following files:&nbsp;
+
+<ul>
+<li>include/checkout/old_browser_payment</li>
+<li>include/checkout/new_browser_payment</li>
+<li>etc/profiles.order</li>
+</ul>
+
+</p>
+<a name="Settings"></a>
+<h2>Settings</h2>
+<table width="100%" class="border">
+<tr valign="top">
+<th class="grid">Name
+</th>
+<th class="grid">Description
+</th>
+</tr>
+<tr valign="top">
+<td class="grid">id
+</td>
+<td class="grid">This is your account number and <em>sitetag</em> separated with a
+colon (i.e. <span class="fixedwidth">ACCOUNT:SITETAG</span>).&nbsp;
+ACCOUNT is the number of your NetBilling merchant or agent account,
+as a 12-character string, and is required for all transactions.&nbsp;
+SITETAG is the site tag assigned to your website,
+as configured in the NetBilling system.&nbsp;
+SITETAG is required for membership transactions,
+and is optional for others.&nbsp;
+The <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">variable</a> is <span class="fixedwidth">MV_PAYMENT_ID</span>.</td>
+</tr>
+<tr valign="top">
+<td class="grid">secret
+</td>
+<td class="grid">Your NetBilling Order Integrity Key,
+set in the NetBilling admin interface in step 11 of &quot;Fraud Defence&quot;.&nbsp;
+The <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">variable</a> is <span class="fixedwidth">MV_PAYMENT_SECRET</span>.</td>
+</tr>
+<tr valign="top">
+<td class="grid">transaction
+</td>
+<td class="grid"><p>
+The type of transaction to be run.&nbsp;
+Valid values are:
+</p>
+<table class="light border">
+<tr valign="top">
+<th class="grid">Interchange
+</th>
+<th class="grid">NetBilling
+</th>
+<th class="grid">Notes
+</th>
+</tr>
+<tr valign="top">
+<td class="grid">auth
+</td>
+<td class="grid">AUTH
+</td>
+<td class="grid">Pre-Auth a charge card for later capture.</td>
+</tr>
+<tr valign="top">
+<td class="grid">return
+</td>
+<td class="grid">CREDIT
+</td>
+<td class="grid">Credit the charge/ACH account instead of charging it.</td>
+</tr>
+<tr valign="top">
+<td class="grid">sale
+</td>
+<td class="grid">SALE
+</td>
+<td class="grid">Standard charge/ACH transaction.</td>
+</tr>
+<tr valign="top">
+<td class="grid">avs
+</td>
+<td class="grid">AVS
+</td>
+<td class="grid">Address verification only.&nbsp;
+No charges.</td>
+</tr>
+<tr valign="top">
+<td class="grid">settle
+</td>
+<td class="grid">CAPTURE
+</td>
+<td class="grid">Capture a Pre-Authed (<span class="fixedwidth">auth</span>) charge.</td>
+</tr>
+<tr valign="top">
+<td class="grid">reverse
+</td>
+<td class="grid">REFUND
+</td>
+<td class="grid">Will attempt a <span class="fixedwidth">void</span> or a <span class="fixedwidth">refund</span> of a previous <span class="fixedwidth">sale</span>.</td>
+</tr>
+<tr valign="top">
+<td class="grid">void
+</td>
+<td class="grid">REFUND
+</td>
+<td class="grid">Will attempt a <span class="fixedwidth">void</span> or a <span class="fixedwidth">refund</span> of a previous <span class="fixedwidth">sale</span>.</td>
+</tr>
+<tr valign="top">
+<td class="grid">abort
+</td>
+<td class="grid">ABORT
+</td>
+<td class="grid">Will abort a pending capture (<span class="fixedwidth">settle</span>) transaction.</td>
+</tr>
+</table>
+
+<p>
+The &quot;<span class="fixedwidth">reverse</span>&quot; and &quot;<span class="fixedwidth">void</span>&quot; transactions are both
+sent as a &quot;<span class="fixedwidth">REFUND</span>&quot; because NetBilling determines internally
+whether to &quot;<span class="fixedwidth">VOID</span>&quot; or &quot;<span class="fixedwidth">REFUND</span>&quot;,
+based upon whether the original transaction is yet to be batched out.
+</p>
+<p style="margin-bottom: 0px">
+The default <span class="fixedwidth">transaction</span> parameter value is &quot;<span class="fixedwidth">sale</span>&quot;
+</p></td>
+</tr>
+<tr valign="top">
+<td class="grid">type
+</td>
+<td class="grid">The payment type.&nbsp;
+Set to &quot;<span class="fixedwidth">K</span>&quot; or any string with the word &quot;check&quot; in it for
+online cheques, or any other value for charge.&nbsp;
+If left unset or blank then it will default to the
+&quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html#mv_order_profile" title="&quot;mv order profile&quot; heading on the &quot;Special form variables&quot; page">mv_order_profile</a></span>&quot; <span class="fixedwidth">&lt;form&gt;</span> <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/value.html" title="value (tags)">value</a> or <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/cgi.html" title="cgi (tags)">CGI</a> variable.&nbsp;
+<br><br>
+If everything is blank then this parameter defaults to &quot;<span class="fixedwidth">charge</span>&quot;.</td>
+</tr>
+<tr valign="top">
+<td class="grid">host
+</td>
+<td class="grid">The domain name of the NetBilling secure server.&nbsp;
+Defaults to &quot;<span class="fixedwidth">secure.netbilling.com</span>&quot;.</td>
+</tr>
+<tr valign="top">
+<td class="grid">port
+</td>
+<td class="grid">The port to connect to on the NetBilling secure server.&nbsp;
+Defaults to the standard HTTPS port (443).</td>
+</tr>
+<tr valign="top">
+<td class="grid">script
+</td>
+<td class="grid">The path to the NetBilling <em>direct mode 2.1 script</em> on the
+NetBilling secure server.&nbsp;
+Defaults to &quot;<span class="fixedwidth">/gw/native/direct2.1</span>&quot;.</td>
+</tr>
+<tr valign="top">
+<td class="grid">poll
+</td>
+<td class="grid">The path to the <em>poll script</em> on the NetBilling secure server.&nbsp;
+Defaults to &quot;<span class="fixedwidth">/gw/native/poll1.0</span>&quot;.</td>
+</tr>
+<tr valign="top">
+<td class="grid">retries
+</td>
+<td class="grid">Number of times to attempt a connection to the NetBilling secure
+server before giving up.&nbsp;
+Defaults to 3.</td>
+</tr>
+<tr valign="top">
+<td class="grid">amount
+</td>
+<td class="grid">The monetary value of the transaction.&nbsp;
+Defaults to the checkout total after all shipping, taxes discounts
+and other levies have been applied.</td>
+</tr>
+<tr valign="top">
+<td class="grid">trans_id
+</td>
+<td class="grid">The Netbilling Transaction ID returned from a previous transaction.&nbsp;
+This is used for &quot;<span class="fixedwidth">refund</span>&quot; type transactions.&nbsp;
+The amount of the <span class="fixedwidth">refund</span>/<span class="fixedwidth">void</span>,
+and other relevant data,
+will be taken from the original transaction data.</td>
+</tr>
+<tr valign="top">
+<td class="grid">getid
+</td>
+<td class="grid">The path to the &quot;<em>getid script</em> on the NetBilling secure server.&nbsp;
+Defaults to &quot;<span class="fixedwidth">/gw/native/getid1.0</span>&quot;.</td>
+</tr>
+<tr valign="top">
+<td class="grid">remote_host
+</td>
+<td class="grid">The customer's hostname for NetBilling to record along with this
+transaction.</td>
+</tr>
+<tr valign="top">
+<td class="grid">remote_ip
+</td>
+<td class="grid">The customer's IP address for NetBilling to record along with this
+transaction.</td>
+</tr>
+<tr valign="top">
+<td class="grid">remap
+</td>
+<td class="grid">This remaps the form variable names to the ones needed by NetBilling.</td>
+</tr>
+</table>
+
+<a name="Troubleshooting"></a>
+<h2>Troubleshooting</h2>
+<p>
+In order to run a test transaction in NetBilling,
+use the testing credit card number set in the Setup/Account
+Config/Credit Cards section of the NetBilling admin interface.
+</p>
+<p>
+If nothing works:
+</p>
+
+<ul>
+<li><p>
+Make sure you <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Require.html" title="Require (config)">Required</a> the module in
+<span class="fixedwidth">interchange.cfg</span>:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Syntax">Require module </span>Vend<span class="def_Symbol">:</span><span class="def_Symbol">:</span>Payment<span class="def_Symbol">:</span><span class="def_Symbol">:</span>NetBilling
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p style="margin-bottom: 0px">
+</p></li>
+<li><p>
+Make sure that <span class="fixedwidth">LWP::UserAgent</span>, <span class="fixedwidth">LWP::Protocol::https</span> and
+<span class="fixedwidth">Digest::MD5</span> are all installed and working.&nbsp;
+You can test to see whether your Perl thinks they are, like this:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+perl -MLWP::UserAgent -MLWP::Protocol::https -MDigest::MD5 -le 'print &quot;Available&quot;'
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p style="margin-bottom: 0px">
+If the above prints &quot;Available&quot;, and returns to the shell prompt,
+then you should be OK (presuming they are in working order otherwise).
+</p><br></li>
+<li>Check the <em>local</em> and <em>global</em> error log files.<br><br></li>
+<li>Make sure you set your payment parameters properly.<br><br></li>
+<li><p>
+Try an order, then put this code in a page:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">&lt;</span>pre<span class="def_Symbol">&gt;</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">calcn</span><span class="def_Symbol">]</span><br>
+&nbsp; &nbsp; <span class="def_Syntax">my </span>$<span class="def_Syntax">string </span><span class="def_Symbol">= </span>$<span class="def_Syntax">Tag</span><span class="def_Symbol">-</span><span class="def_Symbol">&gt;</span><span class="def_Syntax">uneval</span><span class="def_Symbol">(</span><span class="def_Symbol">{ </span><span class="def_Syntax">ref </span><span class="def_Symbol">=</span><span class="def_Symbol">&gt; </span>$<span class="def_Syntax">Session</span><span class="def_Symbol">-</span><span class="def_Symbol">&gt;</span><span class="def_Symbol">{</span><span class="def_Syntax">payment</span><span class="def_Symbol">_</span><span class="def_Syntax">result</span><span class="def_Symbol">} </span><span class="def_Symbol">}</span><span class="def_Symbol">)</span><span class="def_Symbol">;</span><br>
+<br>
+&nbsp; &nbsp; $<span class="def_Syntax">string </span><span class="def_Symbol">=</span><span class="def_Symbol">~ </span>s<span class="def_Symbol">/</span><span class="def_Symbol">{</span><span class="def_Symbol">/</span><span class="def_Symbol">{</span><span class="def_Symbol">\</span>n<span class="def_Symbol">/</span><span class="def_Symbol">;</span><br>
+&nbsp; &nbsp; $<span class="def_Syntax">string </span><span class="def_Symbol">=</span><span class="def_Symbol">~ </span>s<span class="def_Symbol">/</span><span class="def_Symbol">,</span><span class="def_Symbol">/</span><span class="def_Symbol">,</span><span class="def_Symbol">\</span>n<span class="def_Symbol">/</span>g<span class="def_Symbol">;</span><br>
+<br>
+&nbsp; &nbsp; <span class="def_Syntax">return </span>$<span class="def_Syntax">string</span><span class="def_Symbol">;</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">calcn</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">&lt;</span><span class="def_Symbol">/</span>pre<span class="def_Symbol">&gt;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p style="margin-bottom: 0px">
+That should show what happened.
+</p><br></li>
+<li>If all else fails, consultants are available to help with integration for a fee.</li>
+</ul>
+
+<a name="Notes"></a>
+<h2>Notes</h2>
+<p>
+There is actually nothing in <span class="fixedwidth">Vend::Payment::NetBilling</span>;&nbsp;
+This module changes its package name to <span class="fixedwidth">Vend::Payment</span> and
+places things there.
+</p>
+<p>
+You cannot randomly pick a transaction ID for NetBilling's Direct Mode.&nbsp;
+The ID must be assigned from NetBilling.&nbsp;
+It should either be left blank or a guaranteed unused ID can be retrieved
+from NetBilling prior to issuing the transaction.&nbsp;
+This module will overwrite any transaction ID supplied it with the one
+assigned by NetBilling.
+</p>
+<p>
+This module provides protection against dropped connections by prefetching
+a transaction ID from NetBilling and using that ID in the event of a
+dropped connection to see if the transaction was successful.&nbsp;
+For more details see the NetBilling
+<a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fnetbilling%2ecom%2fdirect%2fdirect2%2ehtml" title="http://netbilling.com/direct/direct2.html" rel="nofollow">Direct Mode 2.1 documentation</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">.
+</p>
+<p>
+We need to support a lot more fraud screening for ACH transactions.
+</p>
+<a name="Authors"></a>
+<h2>Authors</h2>
+
+<p>
+<ul>
+<li><a href="mailto:mark@summersault.com" title="Send email to mark@summersault.com">Mark Stosberg</a>&nbsp;<img src="/decor/images/email_link.gif" width="13" height="10" border="0" alt="Email link"></li>
+<li>Based on original code by <a href="mailto:mike@perusion.com" title="Send email to mike@perusion.com">Mike Heins</a>&nbsp;<img src="/decor/images/email_link.gif" width="13" height="10" border="0" alt="Email link"></li>
+<li>Modified from the AuthorizeNet.pm module, and later re-written, by <a href="mailto:peter@pajamian.dhs.org" title="Send email to peter@pajamian.dhs.org">Peter Ajamian</a>&nbsp;<img src="/decor/images/email_link.gif" width="13" height="10" border="0" alt="Email link"></li>
+</ul>
+
+<a name="Credits"></a>
+<h2>Credits</h2>
+<p>
+<ul>
+<li><a href="mailto:brage@cyberhighway.net" title="Send email to brage@cyberhighway.net">Jeff Nappi</a>&nbsp;<img src="/decor/images/email_link.gif" width="13" height="10" border="0" alt="Email link"></li>
+<li><a href="mailto:paul@gi.alaska.edu" title="Send email to paul@gi.alaska.edu">Paul Delys</a>&nbsp;<img src="/decor/images/email_link.gif" width="13" height="10" border="0" alt="Email link"></li>
+<li><a href="mailto:webmaster@nameastar.net" title="Send email to webmaster@nameastar.net">webmaster@nameastar.net</a>&nbsp;<img src="/decor/images/email_link.gif" width="13" height="10" border="0" alt="Email link"></li>
+<li><a href="mailto:ray@dfwmicrotech.com" title="Send email to ray@dfwmicrotech.com">Ray Desjardins</a>&nbsp;<img src="/decor/images/email_link.gif" width="13" height="10" border="0" alt="Email link"></li>
+<li><a href="mailto:nferrari@ccsc.com" title="Send email to nferrari@ccsc.com">Nelson H. Ferrari</a>&nbsp;<img src="/decor/images/email_link.gif" width="13" height="10" border="0" alt="Email link"></li>
+</ul>
+</div>
+
+<!-- start of modification notice -->
+<div class="wikitext">
+    <table class="pageinfo" cellpadding="0" cellspacing="0">
+	<tr>
+	    <td>
+Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_payment_modules.html">Interchange payment modules</a>
+	    </td>
+	</tr>
+
+
+	<tr>
+	    <td>
+		
+		Last modified by: <a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=pj">Peter Ajamian</a><br>
+		Modification date: Friday 22 June 2007 at 3:25 PM (BST)
+	    </td>
+	</tr>
+    </table>
+</div>
+<!-- end of modification notice -->
+
+
+
+<!-- end page: wiki/display (payments/NetBilling) -->
+
+<!-- START COMPONENT: textblock -->
+
+<div class="textblock">
+    <h2>Donations</h2>
+<div class="wikitext">
+<p style="margin-bottom: 0px">
+Please <a href="http://www.interchange-rtfm.pullingshots.ca/contact.html?subject=Donation">contact us</a> if you have
+a HOWTO-style document,
+or anything else you'd like to share with other Interchange users
+and developers.&nbsp;
+Go on - you know you want to.
+</p>
+</div>
+</div>
+
+
+<!-- START COMPONENT: textblock -->
+
+
+<!-- end of page text -->
+	    </td>
+
+	</tr>
+    </table>
+<!-- START VAR: FOOTER -->
+
+<table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+	<td>
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	</td>
+
+    </tr>
+</table>
+
+<!-- END VAR: FOOTER -->
+
+<!-- START VAR: COPYRIGHT -->
+
+
+    <div class="copyright">
+	Copyright &copy; 2001-2010
+	<a href="http://www.cursor.biz/index.html">Cursor Software Limited</a>.&nbsp;
+	All Rights Reserved.
+    </div>
+
+<!-- END VAR: COPYRIGHT -->
+
+</body>
+</html>

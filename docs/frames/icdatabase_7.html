@@ -1,0 +1,148 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Databases: Database Attributes</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_1.html">Parent Topic</A> | <A HREF="icdatabase_6.html">Previous Topic</A> | <A HREF="icdatabase_8.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>1.6. Database Attributes</H2>
+<P>Especially in SQL databases, there are certain functions that can be set with additional database attributes. For text import, the CONTINUE extended database import attribute allows additional control over the format of imported text.</P>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>CONTINUE applies to all types except CSV. (Do not use NOTES unless using type LINE.)
+<HR WIDTH="80%" ALIGN="Left"></P>
+<P><B>CONTINUE</B></P>
+<UL>
+One of UNIX, DITTO, LINE, NONE, or NOTES. The default, NONE, is to simply split the line/record according to the delimiter, with no possible spanning of records. Setting CONTINUE to UNIX appends the next line to the current when it encounters a backslash (<TT>\</TT>) at the end of a record, just like many UNIX commands and shells.
+<BR>
+DITTO is invoked when the key field is blank. It adds the contents of following fields to the one above, separated by a new line character. This allows additional text to be added to a field beyond the 255 characters available with most spreadsheets and flat-file databases.
+<BR>
+Example in catalog.cfg:</UL>
+<PRE>
+          Database products products.txt  TAB
+          Database products CONTINUE      DITTO
+</PRE>
+<UL>
+Products.asc file:</UL>
+<PRE>
+          code     price     description
+          00-0011  500000    The Mona Lisa, one of the worlds great masterpieces.
+                             Now at a reduced price!
+</PRE>
+<UL>
+The description for product 00-0011 will contain the contents of the <TT>description</TT> field on both lines, separated by a new line.</UL>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>Fields are separated by tabs, formatted for reading convenience.
+<HR WIDTH="80%" ALIGN="Left"></P>
+<UL>
+This will work for multiple fields in the same record. If the field contains any non-empty value, it will be appended.
+<BR>
+LINE is a special setting so a multi-line field can be used. Normally, when using the LINE type, there is only data on one line separated by one blank line. When using CONTINUE LINE, there may be some number of fields which are each on a line, while the last one spans multiple lines up until the first blank line.
+<BR>
+Example in catalog.cfg:</UL>
+<PRE>
+          Database products products.txt  LINE
+          Database products CONTINUE      LINE
+</PRE>
+<UL>
+Products.asc file:</UL>
+<PRE>
+            code
+            price
+            description
+        
+            00-0011
+            500000
+            The Mona Lisa, one of the worlds great masterpieces.
+            Now at a reduced price!
+        
+            00-0011a
+            1000
+            A special frame for the Mona Lisa.
+</PRE>
+<UL>
+NOTES reads a Lotus Notes &quot;structured text&quot; file. The format is any number of fields, all except one of which must have a field name followed by a colon and then the data. There is optional whitespace after the colon.
+<BR>
+Records are separated by a settable delimiting character which goes on a line by itself, much like a &quot;here document.&quot; By default, it is a form feed (^L) character. The final field begins at the first blank line and continues to the end of the record. This final field is named <TT>notes_field</TT>, unless set as mentioned below.
+<BR>
+Interchange reads the field names from the first paragraph of the file. The key field should be first, followed by other fields in any order. If one (and only one) field name has whitespace, then its name is used for the <TT>notes_field</TT>. Any characters after a space or TAB are used as the record delimiter.
+<BR>
+If there are none, then the delimiter returns to the default form feed (^L) and the field name reverts to <TT>notes_field</TT>. The field in question will be discarded, but a second field with whitespace will cause an import error. Following records are then read by name, and only fields with data in them need be set. Only the <TT>notes_field</TT> may contain a new line. It is always the last field in the record, and begins at the <B>first</B> blank line.
+<BR>
+The following example sets the delimiter to a tilde <TT>(~)</TT> and renames the <TT>notes_field</TT> to <TT>description</TT>.
+<BR>
+Example in catalog.cfg:</UL>
+<PRE>
+          Database products products.txt  LINE
+          Database products CONTINUE      NOTES
+</PRE>
+<UL>
+Products.asc file:</UL>
+<PRE>
+            code
+            title
+            price
+            image
+            description ~
+            size
+            color
+        
+            title: Mona Lisa
+            price: 500000
+            code: 00-0011
+            image: 00-0011.jpg
+        
+            The Mona Lisa, one of the worlds great masterpieces.
+            Now at a reduced price!
+            ~
+            title: The Art Store T-Shirt
+            code: 99-102
+            size: Medium, Large*, XL=Extra Large
+            color: Green, Blue, Red, White*, Black
+            price: 2000
+        
+            Extra large 1.00 extra.
+            ~
+</PRE>
+<P><B>EXCEL</B></P>
+<UL>
+Microsoft Excel is a widely-used tool to maintain Interchange databases, but has several problems with its standard TAB-delimited export, like enclosing fields containing commas in quotes, generating extra carriage returns embedded in records, and not including trailing blank fields. To avoid problems, use a text-qualifier of none.
+<BR>
+Set the EXCEL attribute to 1 to fix these problems on import:</UL>
+<PRE>
+            Database products EXCEL 1
+</PRE>
+<UL>
+This is normally used only with TAB-delimited files.</UL>
+<P><B>LARGE</B></P>
+<UL>
+Interchange databases containing many records can result in a noticeable slowdown when displayed by the UI.
+<BR>
+Set the LARGE attribute to 1 to avoid this problem:</UL>
+<PRE>
+        Database transactions LARGE 1
+</PRE>
+<UL>
+In this case the UI supplies only input boxes to search records in the database instead of drawing all the records from the database, sorting them and creating more lists.</UL>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_1.html">Parent Topic</A> | <A HREF="icdatabase_6.html">Previous Topic</A> | <A HREF="icdatabase_8.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

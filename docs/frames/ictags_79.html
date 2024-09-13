@@ -1,0 +1,345 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: loop</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_78.html">Previous Topic</A> | <A HREF="ictags_80.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.45. loop</H2>
+<H3><A NAME="Summary">4.45.1. Summary</A></H3>
+<P>Parameters: <B>list</B></P>
+<P>Positional parameters in same order.</P>
+<P><B>The attribute hash reference is passed</B> after the parameters but before the container text argument. <B>This may mean that there are parameters not shown here.</B></P>
+<P>Must pass named parameter interpolate=1 to cause interpolation.</P>
+<P>This is a container tag, i.e. [loop] FOO [/loop]. Nesting: NO</P>
+<P>Invalidates cache: <B>no</B></P>
+<P>Called Routine:</P>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+    NOTE: This would not usually be used with embedded Perl -- a better
+    choice would normally be:
+
+                 for(@list) { CODE }
+
+    $Tag-&gt;loop(
+        {
+         list =&gt; VALUE,
+        },
+        BODY
+    )
+
+ OR
+
+    $Tag-&gt;loop($list, $ATTRHASH, $BODY);
+</PRE>
+<P>Attribute aliases</P>
+<PRE>
+            arg ==&gt; list
+            args ==&gt; list
+    [<B>loop</B> list <I>other_named_attributes</I>]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_79.html#loop_list">arg</A>
+</TD>
+<TD VALIGN='Top'>
+Alias for list
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_79.html#loop_list">args</A>
+</TD>
+<TD VALIGN='Top'>
+Alias for list
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_79.html#loop_list">list</A>
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_interpolate">interpolate</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_reparse">reparse</A>
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>no</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Container tag
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Has Subtags
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Nests
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+    [loop list]
+---
+    TODO: (tag result)
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+   $Tag-&gt;loop(  { list =&gt; VALUE_list
+}, $body  );
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;loop(list, $attribute_hash_reference, $body);
+</PRE>
+<H3><A NAME="Description">4.45.2. Description</A></H3>
+<P>Returns a string consisting of the LIST, repeated for every item in a comma-separated or space-separated list. Operates in the same fashion as the [item-list] tag, except for order-item-specific values. Intended to pull multiple attributes from an item modifier&nbsp;-- but can be useful for other things, like building a pre-ordained product list on a page.</P>
+<P>Loop lists can be nested reliably in Interchange by using the prefix=&quot;tag&quot; parameter. New syntax:</P>
+<PRE>
+    [loop list=&quot;A B C&quot;]
+        [loop prefix=mid list=&quot;[loop-code]1 [loop-code]2 [loop-code]3&quot;]
+            [loop prefix=inner list=&quot;X Y Z&quot;]
+                [mid-code]-[inner-code]
+            [/loop]
+        [/loop]
+    [/loop]
+</PRE>
+<P>You can do an arbitrary search with the search=&quot;args&quot; parameter, just as in a one-click search:</P>
+<PRE>
+    [loop search=&quot;se=Americana/sf=category&quot;]
+        [loop-code] [loop-field title]
+    [/loop]
+</PRE>
+<P>The above will show all items with a category containing the whole world &quot;Americana&quot;, and will work the same in both old and new syntax.</P>
+<P>Ranges are accepted when you pass a <TT>list</TT> if you set the <TT>ranges</TT> option:</P>
+<PRE>
+    [loop list=&quot;A..Z&quot; ranges=1][loop-code] [/loop]
+</PRE>
+<P>The above lists all of the characters from A to Z. Any Perl incrementing variable list will work, but most commonly a range would be something like <TT>1..100</TT>. You can mix regular sets -- <TT>1..5 10 20</TT> would produce the list <TT>1 2 3 4 5 10 20</TT>.</P>
+<P>If you surround the repeating text section with a <TT>[list] [/list]</TT> anchor, the more-list, ml=N, and on-match / no-match processing is done just as in <TT>[query]</TT> and <TT>[search-region]</TT>.</P>
+<P>Using the <TT>acclist</TT> option will parse Interchange option lists, as used in product options. The value is available with <TT>[loop-code]</TT>, the label with <TT>[loop-param label]</TT>. If the size data for SKU <TT>TS-007</TT> was set to the string <TT>S=Small, M=Medium, L=Large, XL=Extra Large</TT> then you could produce a select list of options this way:</P>
+<PRE>
+    [loop list=&quot;[data products size TS-007]&quot; acclist=1]
+            [on-match]&lt;SELECT NAME=mv_order_size&gt;[/on-match]
+                [list]&lt;OPTION VALUE=&quot;[loop-code]&quot;&gt; [loop-param label]&lt;/OPTION&gt;[/list]
+        [on-match]&lt;/SELECT&gt;[/on-match]
+    [/loop]
+</PRE>
+<P>Of course the above is probably more easily produced with <TT>[accessories code=TS-007 attribute=size]</TT>, but there will be other uses for the capability. For instance:</P>
+<PRE>
+         &lt;SELECT NAME=Season&gt;
+    [loop acclist=1
+                list=&quot;
+                        Q1=Winter,
+                        Q2=Spring,
+                        Q3=Summer,
+                        Q4=Fall
+                &quot;]&gt; &lt;OPTION VALUE=&quot;[loop-code]&quot;&gt; [loop-param label]&lt;/OPTION&gt;
+    [/loop]
+</PRE>
+<P>If your parameter list needs to have spaces in the parameters, surround them with double or single quotes and set the quoted=1 option: in product options. If the size data for SKU <TT>TS-007</TT> was set to the string <TT>S=Small, M=Medium, L=Large, XL=Extra Large</TT> then you could produce a select list of options this way:</P>
+<PRE>
+    [loop list=&quot;[data products size TS-007]&quot; acclist=1]
+            [on-match]&lt;SELECT NAME=mv_order_size&gt;[/on-match]
+                [list]&lt;OPTION VALUE=&quot;[loop-code]&quot;&gt; [loop-param label]&lt;/OPTION&gt;[/list]
+        [on-match]&lt;/SELECT&gt;[/on-match]
+    [/loop]
+</PRE>
+<P>A nice shortcut is available when using [loop] to generate &lt;OPTION&gt; lists inside HTML &lt;SELECT&gt;...&lt;/SELECT&gt; blocks, when you want the user's last selection to be chosen by default on subsequent page views. Interchange simplifies this with functions that output &quot;SELECTED&quot; (surrounded by appropriate whitespace) for an &lt;OPTION&gt; if a certain value is set to the &lt;OPTION VALUE=&quot;...&quot;&gt;. (It sounds more complicated than it really is.)</P>
+<P>For example, consider:</P>
+<PRE>
+&lt;select name=search_cat&gt;
+[loop
+        search=&quot;
+                fi=cat
+                st=db
+                ra=yes
+                rf=name
+                tf=name
+                un=1
+        &quot;
+]
+&lt;option[selected search_cat [loop-code]&gt;[loop-code]
+[/loop]
+&lt;/select&gt;
+</PRE>
+<P>When the user returns to the page, their last selection will be chosen as the default. (Assuming the value search_cat was set after the search, which is normally is with standard searches.)</P>
+<P>[loop] offers the <TT>option</TT> attribute, which can give loops that parse faster and are easier to write. The following example is equivalent to the one above:</P>
+<PRE>
+&lt;select name=search_cat&gt;
+[loop
+        option=search_cat
+        search=&quot;
+                fi=cat
+                st=db
+                ra=yes
+                rf=name
+                tf=name
+                un=1
+        &quot;
+]
+&lt;option&gt;[loop-code]
+[/loop]
+&lt;/select&gt;
+</PRE>
+<P>It works equally well when option values are explicitly specified:</P>
+<PRE>
+&lt;option value=&quot;[loop-code]&quot;&gt;So-called &quot;[loop-code]&quot;
+</PRE>
+<P>See also the <TT>ictemplates</TT> documentation in the section &quot;Checks and Selections.&quot;</P>
+<H4><A NAME="E&lt;lbracket&gt;if-loop-data table column] IF [else] ELSE [/else][/if-loop-field]">4.45.2.1. [if-loop-data table column] IF [else] ELSE [/else][/if-loop-field]</A></H4>
+<P>Outputs the IF if the <TT>column</TT> in <TT>table</TT> is non-empty, and the ELSE (if any) otherwise.</P>
+<P>See [<A HREF="ictags_30.html#if-PREFIX-data">if-PREFIX-data</A>].</P>
+<H4><A NAME="E&lt;lbracket&gt;if-loop-field column] IF [else] ELSE [/else][/if-loop-field]">4.45.2.2. [if-loop-field column] IF [else] ELSE [/else][/if-loop-field]</A></H4>
+<P>Outputs the <B>IF</B> if the <TT>column</TT> in the <TT>products</TT> table is non-empty, and the <B>ELSE</B> (if any) otherwise. Will fall through to the first non-empty field if there are multiple <A HREF="icconfig_133.html#ProductFiles">ProductFiles</A>.</P>
+<P>See [<A HREF="ictags_31.html#if-PREFIX-field">if-PREFIX-field</A>].</P>
+<H4><A NAME="E&lt;lbracket&gt;if-loop-param param] IF [else] ELSE [/else][/if-loop-param]">4.45.2.3. [if-loop-param param] IF [else] ELSE [/else][/if-loop-param]</A></H4>
+<P>Only works if you have named return fields from a search (or from a passed list with the lr=1 parameter).</P>
+<P>Outputs the <B>IF</B> if the returned <TT>param</TT> is non-empty, and the <B>ELSE</B> (if any) otherwise.</P>
+<P>See <TT>[if-PREFIX-param]</TT>.</P>
+<H4><A NAME="E&lt;lbracket&gt;if-loop-pos N] IF [else] ELSE [/else][/if-loop-pos]">4.45.2.4. [if-loop-pos N] IF [else] ELSE [/else][/if-loop-pos]</A></H4>
+<P>Only works if you have multiple return fields from a search (or from a passed list with the lr=1 parameter).</P>
+<P>Parameters are numbered from ordinal 0, with [loop-pos 0] being the equivalent of [loop-code].</P>
+<P>Outputs the <B>IF</B> if the returned positional parameter <TT>N</TT> is non-empty, and the <B>ELSE</B> (if any) otherwise.</P>
+<P>See <TT>[if-PREFIX-pos]</TT>.</P>
+<H4><A NAME="E&lt;lbracket&gt;loop-accessories]">4.45.2.5. [loop-accessories]</A></H4>
+<P>Outputs an [accessories ...] item.</P>
+<P>See [<A HREF="ictags_10.html#PREFIX-accessories">PREFIX-accessories</A>].</P>
+<H4><A NAME="E&lt;lbracket&gt;loop-change marker]">4.45.2.6. [loop-change marker]</A></H4>
+<P>See [<A HREF="ictags_13.html#PREFIX-change">PREFIX-change</A>].</P>
+<H4><A NAME="E&lt;lbracket&gt;loop-code]">4.45.2.7. [loop-code]</A></H4>
+<P>Evaluates to the code for the current item.</P>
+<P>See [<A HREF="ictags_14.html#PREFIX-code">PREFIX-code</A>].</P>
+<H4><A NAME="E&lt;lbracket&gt;loop-data database fieldname]">4.45.2.8. [loop-data database fieldname]</A></H4>
+<P>Evaluates to the field name <I>fieldname</I> in the arbitrary database table <I>database</I>, for the current item.</P>
+<P>See [<A HREF="ictags_15.html#PREFIX-data">PREFIX-data</A>].</P>
+<H4><A NAME="E&lt;lbracket&gt;loop-description]">4.45.2.9. [loop-description]</A></H4>
+<P>Evaluates to the product description (from the products file, passed description in on-fly item, or description attribute in cart) for the current item.</P>
+<P>See [<A HREF="ictags_16.html#PREFIX-description">PREFIX-description</A>].</P>
+<H4><A NAME="E&lt;lbracket&gt;loop-field fieldname]">4.45.2.10. [loop-field fieldname]</A></H4>
+<P>Evaluates to the field name <I>fieldname</I> in the database,  for the current item.</P>
+<P>See [<A HREF="ictags_19.html#PREFIX-field">PREFIX-field</A>].</P>
+<H4><A NAME="E&lt;lbracket&gt;loop-increment]">4.45.2.11. [loop-increment]</A></H4>
+<P>Evaluates to the number of the item in the list. Used for numbering items in the list.</P>
+<P>Starts from integer 1.</P>
+<P>See [<A HREF="ictags_20.html#PREFIX-increment">PREFIX-increment</A>].</P>
+<H4><A NAME="E&lt;lbracket&gt;loop-last]tags[/loop-last]">4.45.2.12. [loop-last]tags[/loop-last]</A></H4>
+<P>Evaluates the output of the Interchange tags encased inside, and if it evaluates to a numerical non-zero number (i.e. 1, 23, or -1) then the loop iteration will terminate. If the evaluated number is <B>negative</B>, then the item itself will be skipped. If the evaluated number is <B>positive</B>, then the item itself will be shown but will be last on the list.</P>
+<PRE>
+      [loop-last][calc]
+        return -1 if '[loop-field weight]' eq '';
+        return 1 if '[loop-field weight]' &lt; 1;
+        return 0;
+        [/calc][/loop-last]
+</PRE>
+<P>If this is contained in your <TT>[loop list]</TT> and the weight field is empty, then a numerical <TT>-1</TT> will be output from the [calc][/calc] tags; the list will end and the item will <B>not</B> be shown. If the product's weight field is less than 1, a numerical 1 is output. The item will be shown, but will be the last item shown.</P>
+<H4><A NAME="E&lt;lbracket&gt;loop-next]tags[/loop-next]">4.45.2.13. [loop-next]tags[/loop-next]</A></H4>
+<P>Evaluates the output of the Interchange tags encased inside, and if it evaluates to a numerical non-zero number (i.e. 1, 23, or -1) then the loop will be skipped with no output. Example:</P>
+<PRE>
+      [loop-next][calc][loop-field weight] &lt; 1[/calc][/loop-next]
+</PRE>
+<P>If this is contained in your <TT>[loop list]</TT> and the product's weight field is less than 1, then a numerical <TT>1</TT> will be output from the [calc][/calc] operation. The item will not be shown.</P>
+<H4><A NAME="E&lt;lbracket&gt;loop-price n* noformat*]">4.45.2.14. [loop-price n* noformat*]</A></H4>
+<P>Evaluates to the price for optional quantity n (from the products file) of the current item, with currency formatting. If the optional &quot;noformat&quot; is set, then currency formatting will not be applied.</P>
+<H4><A NAME="loop_list"> </A>4.45.2.15. <A NAME="loop_list">list</A></H4>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_78.html">Previous Topic</A> | <A HREF="ictags_80.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

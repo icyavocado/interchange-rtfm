@@ -1,0 +1,346 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <title>Latest Interchange documentation - RTFM</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-Soup-Of-The-Day" content="Tomato">
+
+    <meta name="author" content="Kevin Walsh">
+    <meta name="publisher" content="Cursor Software Limited">
+    <meta name="copyright" content="2001-2007, Cursor Software Limited">
+    <meta name="generator" content="Interchange 5.5.2 -- www.icdevgroup.org">
+    <meta name="robots" content="index,follow,noarchive">
+    <meta name="keywords" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="description" content="The latest Interchange application server documentation.  This is the 'FM' that you need to 'R'.  This Interchange documentation is the most accurate, reliable and up-to-date source of Interchange information you'll find anywhere">
+
+    <link rel="SHORTCUT ICON" href="/favicon.ico">
+    <link rel="icon" href="/favicon.ico" type="image/ico">
+    <link rel="search" type="application/opensearchdescription+xml" href="http://www.interchange.rtfm.info/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="stylesheet" href="/decor/css/website.css">
+    <link rel="stylesheet" href="/decor/css/wiki.css">
+    <link rel="stylesheet" href="/decor/css/neo.css">
+
+
+    <script language="JavaScript">
+    <!--
+	if (top != self){
+	    top.location = location;
+	}
+
+    -->
+    </script>
+</head>
+<body>
+<!-- START VAR: LOGOBAR -->
+<table id="rtfmheader" cellpadding="0" cellspacing="0">
+    <tr>
+	<td><a href="http://www.interchange.rtfm.info/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+
+	<td width="100%" style="text-align: right; padding: 10px">
+
+	    <form action="http://www.interchange.rtfm.info/search.html" method="POST">
+		<input type="hidden" name="mv_session_id" value="nsession">
+		<input type="hidden" name="mv_profile" value="cms_search">
+		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
+		<input type="submit" class="button" value="Search">
+	    </form>
+
+	</td>
+    </tr>
+</table>
+<table id="breadcrumbs" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+	<td>
+	    <span class="nowrap">&gt; <a href="http://www.interchange.rtfm.info/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="http://www.interchange.rtfm.info/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <span class="current">Latest documentation</span></span>
+	</td>
+
+    </tr>
+</table>
+<!-- END VAR: LOGOBAR -->
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+
+	    <td id="leftside">
+<!-- START COMPONENT: navigation -->
+
+<table id="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th>NAVIGATION</th>
+    </tr>
+    <tr><td class="first"><div id="bullet"><a href="http://www.interchange.rtfm.info/index.html">Home</a></div></td></tr>
+    <tr><td><div id="bullet"><a href="http://www.interchange.rtfm.info/documentation.html">Documentation</a></div></td></tr>
+    <tr><td><div id="bullet"><a href="http://www.interchange.rtfm.info/downloads.html">Downloads</a></div></td></tr>
+    <tr><td><div id="bullet"><a href="http://www.interchange.rtfm.info/community.html">Mail lists and IRC</a></div></td></tr>
+    <tr><td><div id="bullet"><a href="http://www.interchange.rtfm.info/links.html">External websites</a></div></td></tr>
+    <tr><td><div id="bullet"><a href="http://www.interchange.rtfm.info/contributions.html">Suggestions and contributions</a></div></td></tr>
+</table>
+
+
+
+<!-- END COMPONENT: navigation -->
+<!-- START COMPONENT: wiki_recent -->
+
+<table id="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th><span class="nowrap">RECENTLY VIEWED</span></th>
+    </tr>
+    <tr><td class="first"><div id="bullet"><a href="http://www.interchange.rtfm.info/icdocs/index.html">Latest Interchange documentation</a></div></td></tr>
+</table>
+
+
+<!-- END COMPONENT: wiki_recent -->
+<!-- START COMPONENT: wiki_backlinks -->
+
+
+
+<!-- END COMPONENT: wiki_backlinks -->
+<!-- START COMPONENT: account -->
+
+<table id="component" cellpadding="0" cellspacing="0">
+
+    <tr>
+	<th>ACCOUNT LOGIN</th>
+    </tr>
+
+    <tr>
+	<td class="first">
+	    <p>You are not logged in</p>
+	</td>
+    </tr>
+    <tr>
+	<td class="first">
+	    <div id="bullet" class="nowrap"><a href="http://www.interchange.rtfm.info/account/login.html">Log in</a></div>
+	</td>
+    </tr>
+    <tr>
+	<td>
+	    <div id="bullet" class="nowrap"><a href="http://www.interchange.rtfm.info/account/create.html">Create an account</a></div>
+	</td>
+    </tr>
+    <tr>
+	<td>
+	    <div id="bullet" class="nowrap"><a href="http://www.interchange.rtfm.info/account/reminder.html">Password reminder</a></div>
+	</td>
+    </tr>
+
+</table>
+
+
+
+<!-- END COMPONENT: account -->
+<!-- START COMPONENT: icpowered -->
+
+<div style="text-align: center; margin-bottom: 10px">
+    <a href="http://www.interchange.rtfm.info/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.5.2"><img src="/decor/images/iclogo_button.gif" width="136" height="43" alt="Powered by Interchange version 5.5.2"></a>
+</div>
+
+
+
+<!-- START COMPONENT: icpowered -->
+
+	    </td>
+
+	    <td id="bodytext">
+<!-- start of page text -->
+
+<!-- start page: wiki/display (index) -->
+
+<div id="wikitext">
+<a name="Latest_Interchange_documentation"></a>
+<h1>Latest Interchange documentation</h1>
+<p>
+This Interchange documentation is the most accurate,
+reliable and up-to-date source of Interchange information you'll find
+anywhere.&nbsp;
+Almost all of the 500+ pages of Interchange
+documentation text have been either created from scratch,
+rewritten or updated in some way.
+</p>
+<p>
+All of the Interchange documentation pages are neatly categorised and
+extensively cross-referenced to help you quickly find the information
+you need
+In fact,
+the documentation is so good,
+this website even has its own <a href="http://www.interchange.rtfm.info/awards.html" title="awards (RTFM website)">awards section</a>.
+</p>
+<p>
+The Interchange documentation presented here is by no means complete.&nbsp;
+If you discover some information that is present elsewhere,
+but missing from this website,
+then please <a href="http://www.interchange.rtfm.info/contact.html?subject=Documentation%20suggestion" title="contact (RTFM website)">let us know</a>
+so that we can improve this resource for the benefit of all Interchange
+users.&nbsp;
+Likewise,
+if you have any suggestions,
+or would like to contribute some text,
+then please <a href="http://www.interchange.rtfm.info/contact.html?subject=Documentation%20suggestion" title="contact (RTFM website)">get in touch</a>.
+</p>
+<p>
+I'm sure you'll find it refreshing to discover that contributed text
+will actually be used,
+if accurate,
+or corrected if obvious errors are found.&nbsp;
+We find that it's better to publish as many contributions as possible,
+rather than ignore them or just let them pile up in a giant TODO list.
+</p>
+
+<table id="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_availability.gif" width="32" height="32" border="0" alt="Interchange versions">
+</td>
+<td width="100%">
+<p class="title">Interchange versions</p>
+<p style="margin-bottom: 0px">
+The documentation on this website covers Interchange 5.0.0
+through to the latest 5.4.2 (stable) and
+5.5.2 (development) versions.&nbsp;
+If a facility was removed prior to version 5.0.0
+then it probably won't be documented here.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="Documentation_categories"></a>
+<h2>Documentation categories</h2>
+
+<p>
+<ul>
+<li><a href="http://www.interchange.rtfm.info/icdocs/category:Interchange_tags.html" title="Category - interchange tags">Interchange tags</a>
+<br>
+Documentation for the Interchange markup language tags and their calling parameters.&nbsp;
+<br><br></li>
+<li><a href="http://www.interchange.rtfm.info/icdocs/category:Interchange_configuration.html" title="Category - interchange configuration">Interchange configuration</a>
+<br>
+Directives for use in the <em>global</em> (<span class="fixedwidth">interchange.cfg</span>) and/or
+<em>local</em> (<span class="fixedwidth">catalog.cfg</span>) configuration files,
+and in any files <a href="http://www.interchange.rtfm.info/icdocs/Configuration_file_and_directive_syntax.html#include" title="&quot;include&quot; heading on the &quot;Configuration file and directive syntax&quot; page">included</a>
+from them.&nbsp;
+<br><br></li>
+<li><a href="http://www.interchange.rtfm.info/icdocs/category:Interchange_database.html" title="Category - interchange database">Interchange database</a>
+<br>
+Documentation for Interchange's database access facilities.&nbsp;
+<br><br></li>
+<li><a href="http://www.interchange.rtfm.info/icdocs/category:Interchange_forms.html" title="Category - interchange forms">Interchange forms</a>
+<br>
+Documentation for Interchange's form processing facilities.&nbsp;
+<br><br></li>
+<li><a href="http://www.interchange.rtfm.info/icdocs/category:Interchange_ecommerce_functions.html" title="Category - interchange ecommerce functions">Interchange ecommerce functions</a>
+<br>
+Documentation for the ecommerce-related functionality provided
+by Interchange.&nbsp;
+<br><br></li>
+<li><a href="http://www.interchange.rtfm.info/icdocs/category:Interchange_Perl_usage.html" title="Category - interchange perl usage">Interchange Perl usage</a>
+<br>
+Pages associated with the use of Perl within Interchange.&nbsp;
+<br><br></li>
+<li><a href="http://www.interchange.rtfm.info/icdocs/category:Filters.html" title="Category - filters">Data/text filters</a>
+<br>
+Data/text filters that can be used within Interchange pages
+and elsewhere.&nbsp;
+See the <span class="fixedwidth"><a href="http://www.interchange.rtfm.info/icdocs/config/Filter.html" title="Filter (config)">Filter</a></span> directive,
+and ICML tags such as <span class="fixedwidth">[<a href="http://www.interchange.rtfm.info/icdocs/tags/filter.html" title="filter (tags)">filter</a>]</span> and
+<span class="fixedwidth">[<a href="http://www.interchange.rtfm.info/icdocs/tags/PREFIX-filter.html" title="PREFIX-filter (tags)">PREFIX-filter</a>]</span> tags etc. <br></li>
+</ul>
+
+<a name="Copyright_and_licence"></a>
+<h2>Copyright and licence</h2>
+<p>
+A proportion of the Interchange documentation, displayed on this website,
+is derived from text with the following copyright:
+</p>
+
+<ul>
+<li>Copyright &copy; 1996-2005 Members of the Interchange development group.</li>
+<li>Copyright &copy; 1996-2002 Red Hat, Inc.</li>
+</ul>
+
+<p>
+Interchange and all of its documentation,
+including all of the documentation in this website,
+is published under the terms of the
+<a href="http://www.interchange.rtfm.info/bouncer.html?target=http%3a%2f%2fwww%2egnu%2eorg%2flicenses%2fold%2dlicenses%2fgpl%2d2%2e0%2ehtml" title="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU General Public Licence</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+version 2 or, at your option, any later version.
+</p>
+<p>
+For the purpose of applying the <a href="http://www.interchange.rtfm.info/bouncer.html?target=http%3a%2f%2fwww%2egnu%2eorg%2flicenses%2fold%2dlicenses%2fgpl%2d2%2e0%2ehtml" title="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU General Public Licence</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page"> to this
+Interchange documentation,
+we consider &quot;source code&quot; to refer to the unprocessed plain text,
+with or without the RTFML (Wikitext) markup,
+and &quot;object code&quot; to refer to the formatted HTML text.
+</p>
+<p>
+Documentation published on external websites may have
+different copyright and licence terms.&nbsp;
+We are not responsible for the content or accuracy of
+external websites.
+</div>
+
+<!-- start of modification notice -->
+<div id="wikitext">
+    <table id="pageinfo" cellpadding="0" cellspacing="0">
+
+
+	<tr>
+	    <td>
+		
+		Last modified by: <a href="http://www.interchange.rtfm.info/account/profile.html?user=kevin">Kevin Walsh</a><br>
+		Modification date: Saturday 15 September 2007 at 8:54 AM (PDT)
+	    </td>
+	</tr>
+    </table>
+</div>
+<!-- end of modification notice -->
+
+
+
+<!-- end page: wiki/display (index) -->
+<!-- PAGE GENERATION TIME (SECONDS): total=0.040 user=0.030 sys=0.010 cuser=0.000 csys=0.000 -->
+
+
+
+<!-- end of page text -->
+	    </td>
+
+	</tr>
+    </table>
+<!-- START VAR: FOOTER -->
+
+<table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+	<td>
+	    <a href="http://www.interchange.rtfm.info/index.html">Home</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://www.interchange.rtfm.info/legal/legal.html">Legal nonsense</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://www.interchange.rtfm.info/legal/privacy.html">Privacy policy</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://www.interchange.rtfm.info/contact.html">Contact us</a>
+	</td>
+
+    </tr>
+</table>
+
+<!-- END VAR: FOOTER -->
+
+<!-- START VAR: COPYRIGHT -->
+
+
+    <div class="copyright">
+	Copyright &copy; 2001-2007
+	<a href="http://www.cursor.biz/index.html">Cursor Software Limited</a>.&nbsp;
+	All Rights Reserved.
+    </div>
+
+<!-- END VAR: COPYRIGHT -->
+
+</body>
+</html>

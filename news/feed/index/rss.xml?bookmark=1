@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/decor/xsl/news_rss.xsl" ?>
+<rss version="2.0">
+    <channel>
+	<title><![CDATA[Interchange RTFM news index]]></title>
+	<description><![CDATA[Visit the Interchange RTFM website for the best Interchange documentation, downloadable files and other resources you'll find anywhere.  For more Information... RTFM!]]></description>
+	<link>http://interchange.rtfm.info/</link>
+	<language>en-gb</language>
+	<image>
+	    <url>http://interchange.rtfm.info/decor/images/rtfm_button.gif</url>
+	    <title><![CDATA[Interchange RTFM website]]></title>
+	    <link>http://interchange.rtfm.info/</link>
+	</image>
+	<lastBuildDate>Wed, 23 Jan 2019 23:50:46 GMT</lastBuildDate>
+	<generator>Interchange 5.7.0 -- www.icdevgroup.org</generator>
+	<managingEditor>interchange@rtfm.info</managingEditor>
+	<webMaster>interchange@rtfm.info</webMaster>
+	<copyright>2001-2019 <![CDATA[Cursor Software Limited]]></copyright>
+	<ttl>360</ttl>
+
+	<item>
+	    <title><![CDATA[*** Interchange 5.6.0 (stable) released]]></title>
+	    <link>http://interchange.rtfm.info/news/14.html</link>
+	    <description><![CDATA[Having received no bug reports from users in the four whole days since the last beta release, the Interchange development group is pleased to release Interchange 5.6.0 (stable) in time for its presentation at LinuxTag 2008.  See the 5.5.2 (beta) release announcement, which included a list of the major changes since the 5.4 (stable) series.]]></description>
+	    <author><![CDATA[Kevin Walsh]]></author>
+	    <guid isPermaLink="true">http://interchange.rtfm.info/news/14.html</guid>
+	    <pubDate>Wed, 21 May 2008 23:17:44 GMT</pubDate>
+	    <category><![CDATA[Interchange news]]></category>
+	</item>
+
+	<item>
+	    <title><![CDATA[*** Interchange 5.5.3 (beta) released]]></title>
+	    <link>http://interchange.rtfm.info/news/13.html</link>
+	    <description><![CDATA[Hot on the heels of Interchange 5.5.2, the third beta in the Interchange 5.5 development series has been released.  We expect this to be the last beta on the road to a full stable Interchange 5.6.0, which is scheduled for release sometime later this month.  As always, you can help improve the upcoming stable version by downloading this beta release, installing it, testing it and reporting your experience to the <em>interchange-users</em> mail list.]]></description>
+	    <author><![CDATA[Kevin Walsh]]></author>
+	    <guid isPermaLink="true">http://interchange.rtfm.info/news/13.html</guid>
+	    <pubDate>Sun, 18 May 2008 3:16:00 GMT</pubDate>
+	    <category><![CDATA[Interchange news]]></category>
+	</item>
+
+	<item>
+	    <title><![CDATA[*** Interchange 5.5.2 (beta) released]]></title>
+	    <link>http://interchange.rtfm.info/news/12.html</link>
+	    <description><![CDATA[The second beta in the Interchange 5.5 development series was released today, paving the way for a full 5.6.0 (stable) version to be created in time to be shown off at LinuxTag 2008.  We anticipate making only minor changes between this beta release and the upcoming stable 5.6.0 version.  You can help improve the upcoming stable version by downloading this beta release, installing it, testing it and reporting your experience to the <em>interchange-users</em> mail list.]]></description>
+	    <author><![CDATA[Kevin Walsh]]></author>
+	    <guid isPermaLink="true">http://interchange.rtfm.info/news/12.html</guid>
+	    <pubDate>Wed, 30 Apr 2008 11:58:49 GMT</pubDate>
+	    <category><![CDATA[Interchange news]]></category>
+	</item>
+
+	<item>
+	    <title><![CDATA[*** Interchange returns to LinuxTag]]></title>
+	    <link>http://interchange.rtfm.info/news/11.html</link>
+	    <description><![CDATA[The LinuxTag 2008 event organisers have once again accepted an application for the Interchange development group to operate a free booth.  This year's LinuxTag event will be held at the Messezentrum unter dem Funkturm in Berlin, Germany, and will run from the 28th May through until the 31st May 2008.]]></description>
+	    <author><![CDATA[Kevin Walsh]]></author>
+	    <guid isPermaLink="true">http://interchange.rtfm.info/news/11.html</guid>
+	    <pubDate>Thu, 24 Apr 2008 1:50:44 GMT</pubDate>
+	    <category><![CDATA[Interchange news]]></category>
+	</item>
+
+	<item>
+	    <title><![CDATA[*** Interchange user location map]]></title>
+	    <link>http://interchange.rtfm.info/news/10.html</link>
+	    <description><![CDATA[Just for fun, this website now allows registered users to plot their location on a map.  A link to the map can be found in the navigation menu shown on the top-left of every page.  If you go to your account information page then you'll see a new "show me on the user map" option.  You can leave that set to "no", or you can set it to "yes" and plot your location on the map.  You can modify your location, or remove yourself from the map altogether, any time you like.]]></description>
+	    <author><![CDATA[Kevin Walsh]]></author>
+	    <guid isPermaLink="true">http://interchange.rtfm.info/news/10.html</guid>
+	    <pubDate>Wed, 13 Feb 2008 13:15:00 GMT</pubDate>
+	    <category><![CDATA[RTFM website news]]></category>
+	</item>
+	<item>
+	    <title><![CDATA[Interchange RTFM website home page]]></title>
+	    <link>http://interchange.rtfm.info/index.html</link>
+	    <description><![CDATA[The Interchange RTFM website home page.]]></description>
+	    <guid isPermaLink="true">http://interchange.rtfm.info/index.html</guid>
+	    <pubDate>Wed, 23 Jan 2019 23:50:46 GMT</pubDate>
+	    <category><![CDATA[RTFM Website]]></category>
+	</item>
+	<item>
+	    <title><![CDATA[Latest Interchange documentation]]></title>
+	    <link>http://interchange.rtfm.info/icdocs/index.html</link>
+	    <description><![CDATA[This shiny new Interchange documentation area is probably the most up-to-date source of Interchange information you'll find anywhere.  Almost all of the text has been either created from scratch, rewritten or modified in some way.]]></description>
+	    <guid isPermaLink="true">http://interchange.rtfm.info/icdocs/index.html</guid>
+	    <pubDate>Wed, 23 Jan 2019 23:50:46 GMT</pubDate>
+	    <category><![CDATA[RTFM Website]]></category>
+	</item>
+	<item>
+	    <title><![CDATA[Interchange tags reference]]></title>
+	    <link>http://interchange.rtfm.info/icdocs/category:Interchange_tags.html</link>
+	    <description><![CDATA[Documentation for the Interchange markup language tags and their calling parameters.]]></description>
+	    <guid isPermaLink="true">http://interchange.rtfm.info/icdocs/category:Interchange_tags.html</guid>
+	    <pubDate>Wed, 23 Jan 2019 23:50:46 GMT</pubDate>
+	    <category><![CDATA[RTFM Website]]></category>
+	</item>
+	<item>
+	    <title><![CDATA[Interchange configuration directives]]></title>
+	    <link>http://interchange.rtfm.info/icdocs/category:Interchange_configuration.html</link>
+	    <description><![CDATA[Directives for use in the Interchange configuration files.]]></description>
+	    <guid isPermaLink="true">http://interchange.rtfm.info/icdocs/category:Interchange_configuration.html</guid>
+	    <pubDate>Wed, 23 Jan 2019 23:50:46 GMT</pubDate>
+	    <category><![CDATA[RTFM Website]]></category>
+	</item>
+	<item>
+	    <title><![CDATA[Interchange downloads]]></title>
+	    <link>http://interchange.rtfm.info/downloads.html</link>
+	    <description><![CDATA[Various interchange demo catalogues, payment modules, UserTags and other goodies.  This section also includes an archive of current and previous Interchange releases.]]></description>
+	    <guid isPermaLink="true">http://interchange.rtfm.info/downloads.html</guid>
+	    <pubDate>Wed, 23 Jan 2019 23:50:46 GMT</pubDate>
+	    <category><![CDATA[RTFM Website]]></category>
+	</item>
+	<item>
+	    <title><![CDATA[Suggestions and contributions]]></title>
+	    <link>http://interchange.rtfm.info/contributions.html</link>
+	    <description><![CDATA[f you have any suggestions on how this new site should be arranged or run, or would like to contribute then please contact us.  We are trying to collect demo websites, Perl snippets, UserTags, payment gateway modules, HOWTO-style documents and other useful Interchange-related goodies.  Please submit anything you can.]]></description>
+	    <guid isPermaLink="true">http://interchange.rtfm.info/contributions.html</guid>
+	    <pubDate>Wed, 23 Jan 2019 23:50:46 GMT</pubDate>
+	    <category><![CDATA[RTFM Website]]></category>
+	</item>
+    </channel>
+</rss>
+

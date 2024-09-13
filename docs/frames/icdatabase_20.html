@@ -1,0 +1,36 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Databases: Making the Database</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_19.html">Parent Topic</A> | <A HREF="icdatabase_19.html">Previous Topic</A> | <A HREF="icdatabase_21.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>3.1. Making the Database</H2>
+<P>The DBM databases can be built offline with the <TT>offline</TT> command. The directory to be used for output is specified either on the command line with the <TT>-d</TT> option, or is taken from the <TT>catalog.cfg</TT> directive <TT>OfflineDir</TT> -- <TT>offline</TT> in the catalog directory by default. The directory must exist. The source ASCII files should be present in that directory, and the DBM files are created there. Existing files will be overwritten.</P>
+<PRE>
+   offline -c catalog [-d offline_dir]
+</PRE>
+<P>Do a <TT>perldoc VENDROOT/bin/offline</TT> for full documentation.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_19.html">Parent Topic</A> | <A HREF="icdatabase_19.html">Previous Topic</A> | <A HREF="icdatabase_21.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

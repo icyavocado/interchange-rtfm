@@ -1,0 +1,729 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>price - RTFM</title>
+
+    <meta http-equiv="Content-Language" content="en-GB">
+    <meta http-equiv="Window-target" content="_top">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <meta http-equiv="X-Soup-Of-The-Day" content="Tomato">
+
+    <meta name="author" content="Kevin Walsh">
+    <meta name="publisher" content="Cursor Software Limited">
+    <meta name="copyright" content="2001-2015, Cursor Software Limited">
+    <meta name="licence" content="GPLv2+ (Unknown licence)">
+    <meta name="generator" content="Interchange 5.7.0 -- www.icdevgroup.org">
+    <meta name="robots" content="index,follow,noarchive,noimageindex">
+    <meta name="keywords" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="description" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="MSSmartTagsPreventParsing" content="TRUE">
+
+    <meta name="verify-v1" content="KqlU/bxZj9Y2ZdZ/3RwuzgVSMIrZ8XM2wqbjSaEo3O4=">
+
+    <meta name="y_key" content="e2dd60be5777fbc8">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
+    <link rel="search" type="application/opensearchdescription+xml" href="http://interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="stylesheet" href="/decor/css/website.css">
+    <link rel="stylesheet" href="/decor/css/wiki.css">
+    <link rel="stylesheet" href="/decor/css/neo.css">
+
+
+    <script type="text/javascript" language="JavaScript">
+    <!--
+	if (top != self){
+	    top.location = location;
+	}
+
+    // -->
+    </script>
+</head>
+<body>
+<!-- START VAR: LOGOBAR -->
+<table id="rtfmheader" cellpadding="0" cellspacing="0">
+    <tr>
+	<td><a href="http://interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+
+	<td width="100%" style="text-align: right; padding: 10px">
+
+	    <form action="http://interchange-rtfm.pullingshots.ca/search.html" method="POST">
+		<input type="hidden" name="mv_session_id" value="nsession">
+		<input type="hidden" name="mv_profile" value="cms_search">
+		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
+		<input type="submit" class="button" value="Search">
+	    </form>
+
+	</td>
+    </tr>
+</table>
+<table id="breadcrumbs" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+	<td>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a></span>
+	    <span class="nowrap">&gt; <span class="current">price</span></span>
+	</td>
+
+    </tr>
+</table>
+<!-- END VAR: LOGOBAR -->
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+
+	    <td id="leftside">
+<!-- START COMPONENT: navigation -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th>NAVIGATION</th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+
+<!-- END COMPONENT: navigation -->
+<!-- START COMPONENT: wiki_recent -->
+
+
+
+<!-- END COMPONENT: wiki_recent -->
+<!-- START COMPONENT: wiki_backlinks -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th><span class="nowrap">PAGES THAT LINK HERE</span></th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/currency.html">currency</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Database_reference_guide.html">Database reference guide</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/PriceCommas.html">PriceCommas</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+<!-- END COMPONENT: wiki_backlinks -->
+<!-- START COMPONENT: account -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+
+    <tr>
+	<th>ACCOUNT LOGIN</th>
+    </tr>
+
+    <tr>
+	<td class="first">
+	    <p>You are not logged in</p>
+	</td>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+	    </ul>
+	</td>
+    </tr>
+
+</table>
+
+
+
+<!-- END COMPONENT: account -->
+<!-- START COMPONENT: icpowered -->
+
+<div style="text-align: center; margin: 10px; margin-top: 0px">
+    <a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+</div>
+
+
+
+<!-- START COMPONENT: icpowered -->
+
+	    </td>
+
+	    <td id="bodytext">
+<!-- start of page text -->
+
+<!-- start page: wiki/display (tags/price) -->
+
+<div class="wikitext">
+<a name="price"></a>
+<h1>price</h1>
+<p>
+Returns price of a product, identified by its product code, as found in the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span> table(s).
+</p>
+<a name="Summary"></a>
+<h2>Summary</h2>
+
+<p>
+<ul>
+<li><span class="fixedwidth">&#91;price code]</span></li>
+</ul>
+
+<br>
+<table width="100%" class="border">
+<tr valign="top">
+<th class="grid">Parameter
+</th>
+<th class="grid">Description
+</th>
+<th class="grid">Default
+</th>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#code" title="&quot;code&quot; heading on this page">code</a></td>
+<td class="grid">The item code (SKU).</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#base" title="&quot;base&quot; heading on this page">base</a></td>
+<td class="grid">Look up the item in this table.</td>
+<td class="grid"><span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#convert" title="&quot;convert&quot; heading on this page">convert</a></td>
+<td class="grid">Convert the amount according to the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/PriceDivide.html" title="PriceDivide (config)">PriceDivide</a></span> value for the current locale.</td>
+<td class="grid">No
+</td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#discount" title="&quot;discount&quot; heading on this page">discount</a></td>
+<td class="grid">Check discount and apply.</td>
+<td class="grid">No
+</td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#discount_space" title="&quot;discount space&quot; heading on this page">discount_space</a></td>
+<td class="grid">The discount space to use.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#discount_space" title="&quot;discount space&quot; heading on this page">space</a></td>
+<td class="grid">Alias for <a href="#discount_space" title="&quot;discount space&quot; heading on this page">discount_space</a>.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#display" title="&quot;display&quot; heading on this page">display</a></td>
+<td class="grid">Display the currency identifier as a symbol, as plain text or not at all.</td>
+<td class="grid">symbol
+</td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#locale" title="&quot;locale&quot; heading on this page">locale</a></td>
+<td class="grid">Override the current locale for the currency format.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#noformat" title="&quot;noformat&quot; heading on this page">noformat</a></td>
+<td class="grid">suppress currency formatting.</td>
+<td class="grid">No
+</td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#quantity" title="&quot;quantity&quot; heading on this page">quantity</a></td>
+<td class="grid">Price for a specific quantity.</td>
+<td class="grid">1
+</td>
+</tr>
+</table>
+
+<a name="Examples"></a>
+<h2>Examples</h2>
+<a name="Tag_expansion_example"></a>
+<h3>Tag expansion example</h3>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">price </span><span class="def_Number">99</span><span class="def_Symbol">-</span><span class="def_Number">102</span><span class="def_Symbol">]</span><br>
+</span>
+</td>
+</tr>
+<tr>
+<td class="hr">
+<span class="fixedwidth">
+$<span class="def_Number">10.00
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Perl_example"></a>
+<h3>Perl example</h3>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Tag</span><span class="perl_Symb def_Symbol">-&gt;</span>price<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span><br>
+&nbsp; &nbsp;&nbsp; code <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_Var def_Var">$code</span><span class="perl_Symb def_Symbol">,</span><br>
+<span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+or similarly with positional parameters:&nbsp;
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Tag</span><span class="perl_Symb def_Symbol">-&gt;</span>price<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$code</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Var def_Var">$attribute_hash_reference</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Description"></a>
+<h2>Description</h2>
+<p>
+Returns the price of the product, identified by its unique code,
+as found in the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span> table(s).&nbsp;
+If there is more than one products table defined,
+they will be searched in order unless constrained by the optional <span class="fixedwidth"><a href="#base" title="&quot;base&quot; heading on this page">base</a></span>
+parameter.&nbsp;
+Interchange maintains a price in its database for every product.&nbsp;
+The <span class="fixedwidth">price</span> column is the one required field in the
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span> tables, as it is necessary for the price routines.
+</p>
+<p>
+Quantity price breaks are configured by means of the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/CommonAdjust.html" title="CommonAdjust (config)">CommonAdjust</a></span>
+directive.&nbsp;
+There are a number of <span class="fixedwidth">CommonAdjust</span> recipes which can be used.&nbsp;
+The example in the <em>Standard</em> demo calls for a separate <span class="fixedwidth">pricing</span>
+table.
+</p>
+<p>
+Take the following example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+CommonAdjust&nbsp; pricing:q2,q5,q10,q25, ;products:price, ==size:pricing
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The above says to check <span class="fixedwidth">quantity</span>, find the applicable column
+in the pricing table and apply it to adjust the price.&nbsp;
+In this case, it would be:
+</p>
+<table class="border">
+<tr valign="top">
+<th class="grid">Quantity
+</th>
+<th class="grid">Column used
+</th>
+</tr>
+<tr valign="top">
+<td class="grid">2-4
+</td>
+<td class="grid">q2
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">5-9
+</td>
+<td class="grid">q5
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">10-24
+</td>
+<td class="grid">q10
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">25 and up
+</td>
+<td class="grid">q25
+</td>
+</tr>
+</table>
+
+<p>
+What happens if quantity is one?&nbsp;
+It <em>falls back</em> to the price that is in the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span>
+table.&nbsp;
+After that, if there is a <span class="fixedwidth">size</span> attribute for the product,
+the column in the <span class="fixedwidth">pricing</span> table, corresponding to that column,
+is checked for additions or subtractions (or even percentage changes).
+</p>
+<p>
+If you use this tag in the demo:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">price code</span><span class="def_Symbol">=</span><span class="def_Number">99</span><span class="def_Symbol">-</span><span class="def_Number">102 </span><span class="def_Syntax">quantity</span><span class="def_Symbol">=</span><span class="def_Number">10 </span><span class="def_Syntax">size</span><span class="def_Symbol">=</span><span class="def_Syntax">XL</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+the price will be set according to the <span class="fixedwidth">q10</span> column,
+adjusted by what is in the <span class="fixedwidth">XL</span> column.&nbsp;
+The row, of course, is &quot;<span class="fixedwidth">99-102</span>&quot;.
+</p>
+<p>
+Take the following row in the <span class="fixedwidth">pricing</span> table:
+</p>
+<table class="border">
+<tr valign="top">
+<th class="grid">code
+</th>
+<th class="grid">q2
+</th>
+<th class="grid">q5
+</th>
+<th class="grid">q10
+</th>
+<th class="grid">q25
+</th>
+<th class="grid">XL
+</th>
+</tr>
+<tr valign="top">
+<td class="grid">99-102
+</td>
+<td class="grid">10
+</td>
+<td class="grid">9
+</td>
+<td class="grid">8
+</td>
+<td class="grid">7
+</td>
+<td class="grid">0.50
+</td>
+</tr>
+</table>
+
+<p>
+The above would yield <span class="fixedwidth">8.50</span> for the per-item price,
+because the quantity of <span class="fixedwidth">10</span> in the q10 column sets the
+per-item price to <span class="fixedwidth">8</span>, with <span class="fixedwidth">0.50</span> added for extra large (XL).
+</p>
+<p>
+Following are several examples based on the above entry as well
+as this the entry in the products table:
+</p>
+<table class="border">
+<tr valign="top">
+<th class="grid">code
+</th>
+<th class="grid">description
+</th>
+<th class="grid">price
+</th>
+<th class="grid">size
+</th>
+</tr>
+<tr valign="top">
+<td class="grid">99-102
+</td>
+<td class="grid">T-Shirt
+</td>
+<td class="grid">10.00
+</td>
+<td class="grid">S=Small, M=Medium, L=Large*, XL=Extra Large
+</td>
+</tr>
+</table>
+
+<p>
+The following examples assume an <span class="fixedwidth">en_US</span> locale with 2 decimal places,
+use of commas to separate thousands in the value and a dollar sign
+(<span class="fixedwidth">&#36;</span>) as the currency symbol.
+</p>
+<table class="border">
+<tr valign="top">
+<th class="grid">Tag
+</th>
+<th class="grid">Returns
+</th>
+</tr>
+<tr valign="top">
+<td class="grid">&#91;price 99-102]
+</td>
+<td class="grid">&#36;10.00
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">&#91;price code=&quot;99-102&quot;]
+</td>
+<td class="grid">&#36;10.00
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">&#91;price code=&quot;99-102&quot; quantity=1]
+</td>
+<td class="grid">&#36;10.00
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">&#91;price code=&quot;99-102&quot; noformat=1]
+</td>
+<td class="grid">10
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">&#91;price code=&quot;99-102&quot; quantity=5]
+</td>
+<td class="grid">&#36;9.00
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">&#91;price code=&quot;99-102&quot; quantity=5 size=XL]
+</td>
+<td class="grid">&#36;9.50
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">&#91;price code=&quot;99-102&quot; size=XL]
+</td>
+<td class="grid">&#36;10.50
+</td>
+</tr>
+<tr valign="top">
+<td class="grid">&#91;price code=&quot;99-102&quot; size=XL noformat=1]
+</td>
+<td class="grid">10.5
+</td>
+</tr>
+</table>
+
+<p>
+Product discounts for specific products, all products, or the entire order
+can be configured with the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/discount.html" title="discount (tags)">discount</a></span> tag.&nbsp;
+Discounts are applied on a per-user basis,
+and you can gate the discount based on membership in a club or
+other arbitrary means.
+</p>
+<p>
+Adding <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/discount.html" title="discount (tags)">discount</a> 99-102] &#36;s * .9&#91;/discount]</span> deducts
+<span class="fixedwidth">10&#37;</span> from the price at checkout,
+but the <span class="fixedwidth">&#91;price]</span> tag will not show that unless you add the
+discount=1 parameter, as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="comment">Tags</span><br><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">discount </span><span class="def_Number">99</span><span class="def_Symbol">-</span><span class="def_Number">102</span><span class="def_Symbol">] </span>$s <span class="def_Symbol">* </span><span class="def_Symbol">.</span><span class="def_Number">9</span><span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">discount</span><span class="def_Symbol">]</span><br>
+<br>
+<span class="def_Symbol">[</span><span class="def_Syntax">price code</span><span class="def_Symbol">=</span><span class="def_String">&quot;99-102&quot;</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">price code</span><span class="def_Symbol">=</span><span class="def_String">&quot;99-102&quot; </span><span class="def_Syntax">discount</span><span class="def_Symbol">=</span><span class="def_Number">1</span><span class="def_Symbol">]</span><br>
+</span>
+</td>
+</tr>
+<tr>
+<td class="hr">
+<span class="fixedwidth">
+<span class="comment">Results</span><br><br>
+$<span class="def_Number">10.00</span><br>
+<span class="def_Symbol">%</span><span class="def_Number">9.00
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Parameters"></a>
+<h2>Parameters</h2>
+<a name="code"></a>
+<h3>code</h3>
+<p>
+The product's item code (SKU).
+</p>
+<a name="base"></a>
+<h3>base</h3>
+<p>
+Use the named table, instead of the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span> table(s).
+</p>
+<a name="convert"></a>
+<h3>convert</h3>
+<p>
+If <em>true</em> then convert the amount according to the
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/PriceDivide.html" title="PriceDivide (config)">PriceDivide</a></span> value for the current locale.
+</p>
+<p>
+See the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/currency.html#convert" title="&quot;convert&quot; heading on the &quot;currency (tags)&quot; page">currency</a>]</span> tag for a
+usage example.
+</p>
+<a name="discount"></a>
+<h3>discount</h3>
+<p>
+If <em>true</em> then check for, and apply, the appropriate product
+<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/discount.html" title="discount (tags)">discount</a>.
+</p>
+<a name="discount_space"></a>
+<h3>discount_space</h3>
+<a name="display"></a>
+<h3>display</h3>
+<p>
+The currency identifier will usually be displayed as a symbol
+(i.e. &quot;&pound;&quot; or &quot;&#36;&quot; etc.).&nbsp;
+If this parameter is set to &quot;<span class="fixedwidth">text</span>&quot; then the currency
+identifier will be displayed as plain text
+(i.e. &quot;GBP&quot; or &quot;USD&quot; etc.), depending upon the locale settings.&nbsp;
+If this parameter is set to &quot;<span class="fixedwidth">none</span>&quot; then the currency
+identifier will not be displayed at all.&nbsp;
+See the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/currency.html" title="currency (tags)">currency</a>]</span> tag.
+</p>
+<a name="locale"></a>
+<h3>locale</h3>
+<p>
+This parameter allows you to override the current locale that would
+be used to format the result and provide the exchange rate.&nbsp;
+See the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/currency.html" title="currency (tags)">currency</a>]</span> tag.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+Setting this parameter causes the <span class="fixedwidth"><a href="#convert" title="&quot;convert&quot; heading on this page">convert</a></span> parameter to
+also be set, unless you specify &quot;<span class="fixedwidth"><a href="#convert" title="&quot;convert&quot; heading on this page">convert</a>=0</span>&quot;.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="noformat"></a>
+<h3>noformat</h3>
+<p>
+If <em>true</em> then suppress currency formatting from the value
+returned from this tag.&nbsp;
+See the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/currency.html" title="currency (tags)">currency</a>]</span> tag.
+</p>
+<a name="quantity"></a>
+<h3>quantity</h3>
+<p>
+Specify quantity to use when calculating the price.&nbsp;
+The price may be affected by your <a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/CommonAdjust.html" title="CommonAdjust (config)">CommonAdjust</a> settings
+when a quantity is specified.&nbsp;
+See the <a href="http://interchange-rtfm.pullingshots.ca/icdocs/Price_maintenance_with_CommonAdjust.html" title="Price maintenance with CommonAdjust">Price maintenance with CommonAdjust</a> page for more information.
+</div>
+
+<!-- start of modification notice -->
+<div class="wikitext">
+    <table class="pageinfo" cellpadding="0" cellspacing="0">
+	<tr>
+	    <td>
+Category:&nbsp; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a>
+	    </td>
+	</tr>
+
+
+	<tr>
+	    <td>
+		
+		Last modified by: <a href="http://interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin">Kevin Walsh</a><br>
+		Modification date: Thursday 16 November 2006 at 4:33 PM (GMT)
+	    </td>
+	</tr>
+    </table>
+</div>
+<!-- end of modification notice -->
+
+
+
+<!-- end page: wiki/display (tags/price) -->
+
+
+
+<!-- end of page text -->
+	    </td>
+
+	</tr>
+    </table>
+<!-- START VAR: FOOTER -->
+
+<table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+	<td>
+	    <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/donations.html">Donations</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	</td>
+
+    </tr>
+</table>
+
+<!-- END VAR: FOOTER -->
+
+<!-- START VAR: COPYRIGHT -->
+
+
+    <div class="copyright">
+	Copyright &copy; 2001-2015
+	<a href="http://cursor.biz/index.html">Cursor Software Limited</a>.&nbsp;
+	All Rights Reserved.
+    </div>
+
+<!-- END VAR: COPYRIGHT -->
+
+</body>
+</html>

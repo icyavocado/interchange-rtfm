@@ -1,0 +1,56 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: <A NAME="parameters">Named vs. Positional Parameters</A></TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_2.html">Parent Topic</A> | <A HREF="ictags_4.html">Previous Topic</A> | <A HREF="ictags_6.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>2.3. <A NAME="parameters">Named vs. Positional Parameters</A></H2>
+<P>There are two styles of supplying parameters to a tag: named and positional.</P>
+<P>In the named style you supply a parameter name=value pair just as most HTML tags use:</P>
+<PRE>
+    [<A HREF="ictags_120.html#value">value</A> name=&quot;foo&quot;]
+</PRE>
+<P>The positional-style tag that accomplishes the same thing looks like this:</P>
+<PRE>
+    [value foo]
+</PRE>
+<P>The parameter <TT>name</TT> is the first positional parameter for the <TT>[<A HREF="ictags_120.html#value">value</A>]</TT> tag. Some people find positional usage simpler for common tags, and Interchange interprets them somewhat faster. If you wish to avoid ambiguity you can always use named calling.</P>
+<P>In most cases, tag parameters specified in the positional fashion work the same as named parameters. However, there are a few situations where you need to use named parameters:</P>
+<OL>
+<LI>If you want to specify a parameter that comes positionally after a parameter that you want to omit, e.g. omit the first parameter but specify the second. The parser would have no way of knowing which is which, so you just specify the second by name. This is rare, though, because the first positional parameters are usually required for a given tag anyway.
+<LI>When there is some ambiguity as to which parameter is which, usually due to whitespace.
+<LI>When you need to use the output of a tag as the parameter or attribute for another tag.</OL>
+<H3><A NAME="Interpolating parameters">2.3.1. Interpolating parameters</A></H3>
+<P>If you wish to use the value of a tag within a parameter of another tag, you cannot use a positional call. You must also double-quote the argument containing the tag you wish to have expanded. For example, this will not work:</P>
+<PRE>
+    [<A HREF="ictags_86.html#page">page</A> scan se=[<A HREF="ictags_96.html#scratch">scratch</A> somevar]]
+</PRE>
+<P>To get the output of the <TT>[scratch somevar]</TT> interpreted, you must place it within a named and quoted attribute:</P>
+<PRE>
+    [<A HREF="ictags_86.html#page">page</A> href=scan arg=&quot;se=[<A HREF="ictags_96.html#scratch">scratch</A> somevar]&quot;]
+</PRE>
+<P>Note that the argument to <B>href</B> ('scan') did not need to be quoted; only the argument to <B>arg</B>, which contained a tag, needed the quotes.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_2.html">Parent Topic</A> | <A HREF="ictags_4.html">Previous Topic</A> | <A HREF="ictags_6.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

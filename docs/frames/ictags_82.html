@@ -1,0 +1,180 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: nitems</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_81.html">Previous Topic</A> | <A HREF="ictags_83.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.48. nitems</H2>
+<P>Returns the total number of items ordered.  Uses the current cart if none specified.</P>
+<H3><A NAME="Summary">4.48.1. Summary</A></H3>
+<PRE>
+    [<B>nitems</B> name]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_82.html#nitems_compare">compare</A>
+</TD>
+<TD VALIGN='Top'>
+Regular expression the specified qualifier attribute's value must match to be counted. This replaces the truth value comparison.
+<UL>
+<LI>Default: None (uses truth value of the specified qualifier attribute)</UL>
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_82.html#nitems_name">name</A>
+</TD>
+<TD VALIGN='Top'>
+Cart name
+<UL>
+<LI>Default: current cart</UL>
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_82.html#nitems_qualifier">qualifier</A>
+</TD>
+<TD VALIGN='Top'>
+An item attribute that must be true in order to count the item.
+<UL>
+<LI>Default: None</UL>
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_interpolate">interpolate (reparse)</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>YES</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Container tag
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Has Subtags
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Nests
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+    [nitems name]
+---
+    TODO: (tag result)
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+   $Tag-&gt;nitems(  { name =&gt; VALUE_name
+}, $body  );
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;nitems(name, $attribute_hash_reference, $body);
+</PRE>
+<H3><A NAME="Description">4.48.2. Description</A></H3>
+<P>Expands into the total number of items ordered so far. Takes an optional cart name as a parameter.</P>
+<H4><A NAME="nitems_compare"> </A>4.48.2.1. <A NAME="nitems_compare">compare</A></H4>
+<P>Regular expression the specified qualifier attribute's value must match to be counted. This replaces the truth value comparison.</P>
+<UL>
+<LI>Default: None (uses truth value of the specified qualifier attribute)</UL>
+<H4><A NAME="nitems_name"> </A>4.48.2.2. <A NAME="nitems_name">name</A></H4>
+<P>Cart name</P>
+<UL>
+<LI>Default: current cart</UL>
+<H4><A NAME="nitems_qualifier"> </A>4.48.2.3. <A NAME="nitems_qualifier">qualifier</A></H4>
+<P>An item attribute that must be true in order to count the item.</P>
+<UL>
+<LI>Default: None</UL>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_81.html">Previous Topic</A> | <A HREF="ictags_83.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

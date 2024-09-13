@@ -1,0 +1,63 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange + CVS HOWTO: Automatic e-mail on commit</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ic_howto_cvs_26.html">Parent Topic</A> | <A HREF="ic_howto_cvs_29.html">Previous Topic</A> | <A HREF="ic_howto_cvs_31.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.4. Automatic e-mail on commit</H2>
+<P>Often it is very helpful to have a commit mailing list that keeps developers up-to-date on every commit happening to the CVS.  To setup automatic e-mails on every commit, put the following in</P>
+<PRE>
+<B>/rep/CVSROOT/loginfo:</B>
+
+ALL     /usr/bin/cvs-log     $CVSROOT/CVSROOT/commitlog $USER &quot;%{sVv}&quot;
+</PRE>
+<P>This tells CVS to pipe the commit output to a shell script, which in turn updates a log file and e-mails an update (typically to a mailing list address). Create the shell script at <TT>/usr/bin/cvs-log</TT> that is executable by the cvs user (using <TT>&quot;chmod 755 /usr/bin/cvs-log&quot;</TT>).</P>
+<PRE>
+<B>/usr/bin/cvs-log:</B>
+
+#!/bin/sh
+(echo &quot;----------------------------------------------&quot;;
+ echo -n $2&quot;  &quot;;
+ date;
+ echo;
+ cat) | tee -a $1 | /usr/bin/Mail -s &quot;[foundation-cvs] $3&quot; foundation-cvs@example.com
+</PRE>
+<P>Your commit logs will now be archived in the CVSROOT/commitlog file and e-mailed to the  foundation-cvs@example.com address (which is especially useful when you have a <A HREF="ic_howto_cvs_41.html">Mailserver for CVS updates</A>).  Here is what a sample e-mail looks like:</P>
+<PRE>
+Subject: [foundation-cvs] 'directory/subdirectory filename.c,1.7,1.8'
+
+
+----------------------------------------------
+cvs Fri Mar 16 21:14:09 PST 2001
+Update of directory/subdirectory
+In directory cvs.foundationsomething.com:/tmp/cvs-serv7721
+Modified Files:
+filename.c
+Log Message:
+test
+</PRE>
+<P>Now you have a working CVS development system.  At this point it may be valuable to learn more about CVS the client tools that you are using.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ic_howto_cvs_26.html">Parent Topic</A> | <A HREF="ic_howto_cvs_29.html">Previous Topic</A> | <A HREF="ic_howto_cvs_31.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

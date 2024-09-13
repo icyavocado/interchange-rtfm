@@ -1,0 +1,55 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Upgrade Guide: Search lists</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<UL ALIGN="Center">
+<A HREF="icupgrade_16.html">Parent Topic</A> | <A HREF="icupgrade_21.html">Previous Topic</A> | <A HREF="icupgrade_23.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></UL>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.6. Search lists</H2>
+<UL>
+Search tags must now be surrounded by [search-region] [/search-region]. This is because multiple searches can be done in a page, with multiple [more-list] entries, multiple [no-match] areas, etc. It was not really possible to avoid this and add the feature.
+<BR>
+To find all files containing the search list, do:</UL>
+<PRE>
+    find pages -type f | xargs grep -l '\[search.list'
+</PRE>
+<UL>
+That will yield a set of files that need to be updated. You should surround all parts of the search area, i.e.:</UL>
+<PRE>
+        [search-region]
+    
+        [search-list]
+            your search iteration stuff, [item-code], etc.
+        [/search-list]
+    
+        [more-list]
+            [more]
+        [/more-list]
+    
+        [/search-region]
+</PRE>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<UL ALIGN="Center">
+<A HREF="icupgrade_16.html">Parent Topic</A> | <A HREF="icupgrade_21.html">Previous Topic</A> | <A HREF="icupgrade_23.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></UL>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

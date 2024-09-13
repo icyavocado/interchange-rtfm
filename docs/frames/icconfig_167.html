@@ -1,0 +1,54 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Configuration Reference: TableRestrict</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_70.html">Parent Topic</A> | <A HREF="icconfig_166.html">Previous Topic</A> | <A HREF="icconfig_168.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>3.97. TableRestrict</H2>
+<P>Used to provide &quot;views&quot; in database-based searches. Does not affect the text searches. Affects the table being searched.</P>
+<P>Takes the form of <TT>field=session_param</TT>, where <TT>field</TT> is a column in the table being iterated over, and <TT>session_param</TT> is a <TT>$Session</TT> key (i.e., [data session username]).</P>
+<PRE>
+   TableRestrict  products  owner=username
+</PRE>
+<P>The above would prevent the database search from returning any records except those where the column <TT>owner</TT> contains the current value of <TT>[data session username]</TT>.</P>
+<P>Probably most usefully set by embedded Perl code in certain situations. For example:</P>
+<PRE>
+   [calc]
+       # Restrict edit to owned fields
+       $Config-&gt;{TableRestrict}{products} = 'owner=username';
+       return;
+   [/calc]
+</PRE>
+<P>When using SQL-based databases, in effect it turns the base search query</P>
+<PRE>
+   select * from products
+</PRE>
+<P>into</P>
+<PRE>
+   select * from products where owner = '[data session username]'
+</PRE>
+<P>Interchange databases are similarly affected, though the methodology is different. Also may be useful in &quot;mall&quot; situations, where user is allowed to only see products from the current store ID.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_70.html">Parent Topic</A> | <A HREF="icconfig_166.html">Previous Topic</A> | <A HREF="icconfig_168.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

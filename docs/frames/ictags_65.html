@@ -1,0 +1,193 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: fly-list</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_64.html">Previous Topic</A> | <A HREF="ictags_66.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.31. fly-list</H2>
+<H3><A NAME="Summary">4.31.1. Summary</A></H3>
+<P>Parameters: <B>code base</B></P>
+<P>Positional parameters in same order.</P>
+<P>Pass attribute hash as last to subroutine: <B>no</B></P>
+<P>Must pass named parameter interpolate=1 to cause interpolation.</P>
+<P>This is a container tag, i.e. [fly-list] FOO [/fly-list]. Nesting: NO</P>
+<P>Invalidates cache: <B>no</B></P>
+<P>Called Routine:</P>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+    $Tag-&gt;fly_list(
+        {
+         code =&gt; VALUE,
+         base =&gt; VALUE,
+        },
+        BODY
+    )
+
+ OR
+
+    $Tag-&gt;fly_list($code, $base, $BODY);
+    [<B>fly-list</B> code base]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_65.html#fly_list_base">base</A>
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_65.html#fly_list_code">code</A>
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_interpolate">interpolate</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_reparse">reparse</A>
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>no</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Container tag
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Has Subtags
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Nests
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+    [fly-list code base]
+---
+    TODO: (tag result)
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+   $Tag-&gt;fly_list(  { base =&gt; VALUE_base
+                       code =&gt; VALUE_code
+}, $body  );
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;fly_list(code,base, $attribute_hash_reference, $body);
+</PRE>
+<H3><A NAME="Description">4.31.2. Description</A></H3>
+<P>Syntax: [fly-list prefix=tag_prefix* code=code*]</P>
+<P>Defines an area in a random page which performs the flypage lookup function, implementing the tags below.</P>
+<PRE>
+   [fly-list]
+    (contents of flypage.html)
+   [/fly-list]
+</PRE>
+<P>If you place the above around the contents of the demo flypage, in a file named <TT>flypage2.html</TT>, it will make these two calls display identical pages:</P>
+<PRE>
+    [page 00-0011] One way to display the Mona Lisa &lt;/a&gt;
+    [page flypage2 00-0011] Another way to display the Mona Lisa &lt;/a&gt;
+</PRE>
+<P>If you place a [fly-list] tag alone at the top of the page, it will cause any page to act as a flypage.</P>
+<P>By default, the prefix is <TT>item</TT>, meaning the <TT>[item-code]</TT> tag will display the code of the item, the <TT>[item-price]</TT> tag will display price, etc. But if you use the prefix, i.e. <TT>[fly-list prefix=fly]</TT>, then it will be [fly-code]; <TT>prefix=foo</TT> would cause <TT>[foo-code]</TT>, etc.</P>
+<H4><A NAME="fly_list_base"> </A>4.31.2.1. <A NAME="fly_list_base">base</A></H4>
+<H4><A NAME="fly_list_code"> </A>4.31.2.2. <A NAME="fly_list_code">code</A></H4>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_64.html">Previous Topic</A> | <A HREF="ictags_66.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

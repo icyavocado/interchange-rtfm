@@ -1,0 +1,153 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Template Guide: loop</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_4.html">Parent Topic</A> | <A HREF="ictemplates_7.html">Previous Topic</A> | <A HREF="ictemplates_9.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>3.4. loop</H2>
+<P>Loop lists can be used to construct arbitrary lists based on the contents of a database field, a search or other value (like a fixed list). Loop accepts a <TT>search</TT> parameter that will do one-click searches on a database table (or file).</P>
+<P>To iterate over all keys in a table, use the idiom (<TT>[loop search=&quot;ra=yes/ml=9999&quot;] [/loop]</TT>. <TT>ra=yes</TT> sets <TT>mv_return_all</TT>, which means &quot;match everything&quot;. <TT>ml=9999</TT> limits matches to that many records. If the text file for searching an Interchange DBM database is not used, set <TT>st=db</TT> (mv_searchtype).</P>
+<P>When using <TT>st=db</TT>, returned keys may be affected by <TT>TableRestrict</TT>. Both can be sorted with <TT>[sort table:field:mod -start +number]</TT> modifiers. See <A HREF="icdatabase_37.html#Sorting">sorting</A>.</P>
+<P>The Interchange Tags Reference has more information on the [<A HREF="ictags_79.html#loop">loop</A>] tag.</P>
+<P><B>[<A HREF="ictags_79.html#loop">loop</A><TT> item item item]</TT> LIST <TT>[/loop]</TT></B></P>
+<UL>
+named attributes: <TT>[loop prefix=label* list=&quot;item item item&quot;* search=&quot;se=whatever&quot;*]</TT>
+<BR>
+Returns a string consisting of the LIST, repeated for every item in a comma-separated or space-separated list. This tag works the same way as the <TT>[item-list]</TT> tag, except for order-item-specific values. It is intended to pull multiple attributes from an item modifier, but can be useful for other things, like building a pre-ordained product list on a page.
+<BR>
+Loop lists can be nested by using different prefixes:</UL>
+<PRE>
+            [loop prefix=size list=&quot;Small Medium Large&quot;]
+                [loop prefix=color list=&quot;Red White Blue&quot;]
+                    [color-code]-[size-code]&lt;BR&gt;
+                [/loop]
+                &lt;P&gt;
+            [/loop]
+</PRE>
+<UL>
+This will output:</UL>
+<PRE>
+            Red-Small
+            White-Small
+            Blue-Small
+        
+            Red-Medium
+            White-Medium
+            Blue-Medium
+        
+            Red-Large
+            White-Large
+            Blue-Large
+</PRE>
+<UL>
+The search=&quot;args&quot; parameter will return an arbitrary search, just as in a one-click search:</UL>
+<PRE>
+            [loop search=&quot;se=Americana/sf=category&quot;]
+                [loop-code] [loop-field title]
+            [/loop]
+</PRE>
+<UL>
+The above will show all items with a category containing the whole world &quot;Americana.&quot;</UL>
+<P><B>[<A HREF="ictags_30.html#if-PREFIX-data">if-loop-data</A><TT> table field]</TT> IF <TT>[else]</TT> ELSE <TT>[/else][/if-loop-data]</TT></B></P>
+<UL>
+Outputs the IF if the <TT>field</TT> in the <TT>table</TT> is not empty or the ELSE (if any) otherwise.</UL>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>This tag does not nest with other <TT>if-loop-data</TT> tags.
+<HR WIDTH="80%" ALIGN="Left"></P>
+<P><B>[<A HREF="ictags_31.html#if-PREFIX-field">if-loop-field</A>] IF <TT>[else]</TT> ELSE <TT>[/else][/if-loop-field]</TT></B></P>
+<UL>
+Outputs the IF if the <TT>field</TT> in the <TT>products</TT> table is not empty or the ELSE (if any) otherwise.</UL>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>This tag does not nest with other <TT>if-loop-field</TT> tags.
+<HR WIDTH="80%" ALIGN="Left"></P>
+<P><B>[loop-alternate N] DIVISIBLE [else] NOT DIVISIBLE [/else][/loop-alternate]</B></P>
+<UL>
+Set up an alternation sequence. If the loop-increment is divisible by <TT>N</TT>, the text will be displayed. If <TT>[else]NOT DIVISIBLE TEXT [/else]</TT> is present, then the NOT DIVISIBLE TEXT will be displayed. For example:</UL>
+<PRE>
+            [loop-alternate 2]EVEN[else]ODD[/else][/loop-alternate]
+            [loop-alternate 3]BY 3[else]NOT by 3[/else][/loop-alternate]
+</PRE>
+<P><B>[/loop-alternate]</B></P>
+<UL>
+Terminates the alternation area.</UL>
+<P><B>[<A HREF="ictags_13.html#PREFIX-change">loop-change</A><TT> marker</TT>]</B></P>
+<UL>
+Same as <TT>[item-change]</TT>, but within loop lists.</UL>
+<P><B>[<A HREF="ictags_14.html#PREFIX-code">loop-code</A>]</B></P>
+<UL>
+Evaluates to the first returned parameter for the current returned record.</UL>
+<P><B>[<A HREF="ictags_15.html#PREFIX-data">loop-data</A><TT> database fieldname</TT>]</B></P>
+<UL>
+Evaluates to the field name fieldname in the arbitrary database table database for the current item.</UL>
+<P><B>[<A HREF="ictags_16.html#PREFIX-description">loop-description</A>]</B></P>
+<UL>
+Evaluates to the product description for the current item. Returns the &lt;Description Field&gt; from the first products database where that item exists.</UL>
+<P><B>[<A HREF="ictags_19.html#PREFIX-field">loop-field</A><TT> fieldname</TT>]</B></P>
+<UL>
+The [<A HREF="ictags_19.html#PREFIX-field">loop-field</A>]
+<BR>
+The [<A HREF="ictags_19.html#PREFIX-field">loop-field</A>] tag is special in that it looks in any of the tables defined as <TT>ProductFiles</TT>, in that order, for the data and returns the value only if that key is defined. In most catalogs, where <TT>ProductFiles</TT> is not defined <TT>[loop-field title]</TT> is equivalent to [<A HREF="ictags_15.html#PREFIX-data">loop-field</A><TT> products title</TT>].
+<BR>
+Evaluates to the field name fieldname in the database for the current item.</UL>
+<P><B>[<A HREF="ictags_20.html#PREFIX-increment">loop-increment</A>]</B></P>
+<UL>
+Evaluates to the number of the item in the list. Used for numbering items in the list. Starts from one (1).</UL>
+<P><B>[loop-last]tags[/loop-last]</B></P>
+<UL>
+Evaluates the output of the ITL tags encased in the [loop-last] tags. If it evaluates to a numerical non-zero number (for example, 1, 23, -10 etc.), the loop iteration will terminate. If the evaluated number is negative, the item itself will be skipped. If the evaluated number is positive, the item itself will be shown, but will be last on the list.</UL>
+<PRE>
+              [loop-last][calc]
+                return -1 if '[loop-field weight]' eq '';
+                return 1 if '[loop-field weight]' &lt; 1;
+                return 0;
+                [/calc][/loop-last]
+</PRE>
+<UL>
+If this is contained in your <TT>[loop list]</TT> and the weight field is empty, a numerical <TT>-1</TT> will be output from the <TT>[calc][/calc]</TT> tags; the list will end and the item will <B>not</B> be shown. If the product's weight field is less than 1, a numerical 1 is output. The item will be shown, but it will be the last item on the list.</UL>
+<P><B>[loop-next]tags[/loop-next]</B></P>
+<UL>
+Evaluates the output of the ITL tags encased in the [loop-next] tags. If it evaluates to a numerical non-zero number (for example, 1, 23, -10 etc.), the loop will be skipped with no output. Example:</UL>
+<PRE>
+              [loop-next][calc][loop-field weight] &lt; 1[/calc][/loop-next]
+</PRE>
+<UL>
+If this is contained in your <TT>[loop list]</TT> and the product's weight field is less than 1, a numerical <TT>1</TT> will be output from the <TT>[calc][/calc]</TT> operation. The item will not be shown.</UL>
+<P><B>[<A HREF="ictags_27.html#PREFIX-price">loop-price</A><TT> n* noformat*</TT>]</B></P>
+<UL>
+Evaluates to the price for the optional quantity n (from the products file) of the current item, with currency formatting. If the optional &quot;noformat&quot; is set, then currency formatting will not be applied.</UL>
+<P><B>[<A HREF="ictags_12.html#PREFIX-calc">loop-calc</A>] PERL <TT>[/loop-calc]</TT></B></P>
+<UL>
+Calls embedded Perl with the code in the container. All <TT>[loop-*]</TT> tags can be placed inside except for <TT>[loop-filter ...][/loop-filter]</TT>, <TT>[loop-exec routine][/loop-exec]</TT>, <TT>[loop-last][/loop-last]</TT> and <TT>[loop-next][/loop-next]</TT>.</UL>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>All normal embedded Perl operations can be used, but be careful to pre-open any database tables with a [perl tables=&quot;tables you need&quot;][/perl] tag prior to the opening of the [loop].
+<HR WIDTH="80%" ALIGN="Left"></P>
+<P><B>[loop-exec routine]argument[/loop-exec]</B></P>
+<UL>
+Calls a subroutine predefined either in catalog.cfg with Sub or in a [<A HREF="ictags_79.html#loop">loop</A>] with <TT>[loop-sub routine]</TT> PERL <TT>[/loop-sub]</TT>. The container text is passed as <TT>$_[0]</TT> and the array (or hash) value of the current row is <TT>$_[1]</TT>.</UL>
+<P><B>[loop-sub routine]PERL[/loop-sub]</B></P>
+<UL>
+Defines a subroutine that is available to the current (and subsequent) <TT>[loop-*]</TT> tags within the same page. See <A HREF="ictemplates_10.html#Programming">Interchange Programming</A>.</UL>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_4.html">Parent Topic</A> | <A HREF="ictemplates_7.html">Previous Topic</A> | <A HREF="ictemplates_9.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

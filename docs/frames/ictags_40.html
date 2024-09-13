@@ -1,0 +1,353 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: banner</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_39.html">Previous Topic</A> | <A HREF="ictags_41.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.6. banner</H2>
+<P>Implements random or rotating banner ads. See also <A HREF="ictemplates_26.html#Banner/Ad rotation">Banner/Ad rotation</A>.</P>
+<H3><A NAME="Summary">4.6.1. Summary</A></H3>
+<PRE>
+    [<B>banner</B> category]
+    [<B>banner</B> category=my_category <I>other_named_attributes</I>]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_40.html#banner_category">category</A>
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+default
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_40.html#banner_table">table</A>
+</TD>
+<TD VALIGN='Top'>
+banner
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_40.html#banner_r_field">r_field</A> (unweighted)
+</TD>
+<TD VALIGN='Top'>
+rotate
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_40.html#banner_b_field">b_field</A>
+</TD>
+<TD VALIGN='Top'>
+banner
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_40.html#banner_separator">separator</A> (unweighted)
+</TD>
+<TD VALIGN='Top'>
+':'
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_40.html#banner_delimiter">delimiter</A> (unweighted)
+</TD>
+<TD VALIGN='Top'>
+'{or}'
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_40.html#banner_weighted">weighted</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_40.html#banner_once">once</A> (weighted)
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_40.html#banner_c_field">c_field</A> (weighted)
+</TD>
+<TD VALIGN='Top'>
+category
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_40.html#banner_w_field">w_field</A> (weighted)
+</TD>
+<TD VALIGN='Top'>
+weight
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_interpolate">interpolate (reparse)</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Container tag
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+    [<B>banner</B> category=my_category]
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+    $Tag-&gt;banner(  { category =&gt; $key, } );
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;banner($category, $attribute_hash_reference);
+</PRE>
+<H4><A NAME="See Also">4.6.1.1. See Also</A></H4>
+<P><A HREF="ictemplates_26.html#Banner/Ad rotation">Banner/Ad rotation</A></P>
+<H3><A NAME="Description">4.6.2. Description</A></H3>
+<P>Implements random or rotating banner ads. See <A HREF="ictemplates_26.html#Banner/Ad rotation">Banner/Ad rotation</A> in the Interchange Template documentation.</P>
+<P>You will need a banner ad table (typically called 'banner') which contains banner data. The following is an example:</P>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>code</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>category</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>weight</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>rotate</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>banner</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+m_3
+</TD>
+<TD VALIGN='Top'>
+cat1
+</TD>
+<TD VALIGN='Top'>
+7
+</TD>
+<TD VALIGN='Top'>
+0
+</TD>
+<TD VALIGN='Top'>
+my banner 3
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+m_1
+</TD>
+<TD VALIGN='Top'>
+cat1
+</TD>
+<TD VALIGN='Top'>
+1
+</TD>
+<TD VALIGN='Top'>
+0
+</TD>
+<TD VALIGN='Top'>
+my banner 1
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+default
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+1
+</TD>
+<TD VALIGN='Top'>
+Default 1{or}Default 2{or}Default 3
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+m_2
+</TD>
+<TD VALIGN='Top'>
+cat1
+</TD>
+<TD VALIGN='Top'>
+2
+</TD>
+<TD VALIGN='Top'>
+0
+</TD>
+<TD VALIGN='Top'>
+my banner 2
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+t_1
+</TD>
+<TD VALIGN='Top'>
+cat2
+</TD>
+<TD VALIGN='Top'>
+4
+</TD>
+<TD VALIGN='Top'>
+0
+</TD>
+<TD VALIGN='Top'>
+their banner 1
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+t_2
+</TD>
+<TD VALIGN='Top'>
+cat2
+</TD>
+<TD VALIGN='Top'>
+1
+</TD>
+<TD VALIGN='Top'>
+0
+</TD>
+<TD VALIGN='Top'>
+their banner 2
+</TD>
+</TR>
+</TABLE>
+
+<H4><A NAME="banner_category"> </A>4.6.2.1. <A NAME="banner_category">category</A></H4>
+<P>Default: category=&quot;default&quot;</P>
+<P>This specifies the category for weighted ad, or the table row (i.e., code value) for an unweighted ad.</P>
+<H4><A NAME="banner_table"> </A>4.6.2.2. <A NAME="banner_table">table</A></H4>
+<P>Default: table=&quot;banner&quot;</P>
+<P>Setting '<TT>table</TT>=&quot;my_banner_table&quot;' forces the tag to refer to 'my_banner_table' rather than the default 'banner' table for banner ad information.</P>
+<H4><A NAME="banner_r_field"> </A>4.6.2.3. <A NAME="banner_r_field">r_field</A></H4>
+<P>Default: r_field=&quot;rotate&quot;</P>
+<P>Unweighted ads only.</P>
+<P>A table row may include multiple banners in the 'banner' column. The column specified by r_field contains a boolean that determines whether to rotate banners. In the above table example, 'Default&nbsp;1', 'Default&nbsp;2' and 'Default&nbsp;3' would rotate.</P>
+<H4><A NAME="banner_b_field"> </A>4.6.2.4. <A NAME="banner_b_field">b_field</A></H4>
+<P>Default: b_field=&quot;banner&quot;</P>
+<P>This specifies the column containing the banner descriptor(s). The default is 'banner'. Note that an entry might be a delimited list of banner descriptors to rotate (see <A HREF="ictags_40.html#banner_delimiter">delimiter</A> below).</P>
+<H4><A NAME="banner_separator"> </A>4.6.2.5. <A NAME="banner_separator">separator</A></H4>
+<P>Default: separator=&quot;:&quot;</P>
+<P>Unweighted ads only.</P>
+<P>This sets the separator within the table key (i.e., code) for multi-level categorized ads. See <A HREF="ictemplates_26.html#Banner/Ad rotation">Banner/Ad rotation</A>.</P>
+<H4><A NAME="banner_delimiter"> </A>4.6.2.6. <A NAME="banner_delimiter">delimiter</A></H4>
+<P>Default: delimiter=&quot;{or}&quot;</P>
+<P>Unweighted ads only.</P>
+<P>This specifies the delimiter between rotating banner descriptors in the 'banner' column.</P>
+<H4><A NAME="banner_weighted"> </A>4.6.2.7. <A NAME="banner_weighted">weighted</A></H4>
+<P>The <TT>banner</TT> tag will not apply weighting from the table unless you set <TT>weighted</TT>=1. Note that the tag will behave as if you gave it a standard unweighted entry&nbsp;-- it will look for a matching row rather than a matching category.</P>
+<H4><A NAME="banner_once"> </A>4.6.2.8. <A NAME="banner_once">once</A></H4>
+<P>Weighted ads only.</P>
+<P>If the option once is passed (i.e., [banner once=1 weighted=1], then the banners will not be rebuilt until the total_weight file is removed. See <A HREF="ictemplates_26.html#Banner/Ad rotation">Banner/Ad rotation</A>.</P>
+<H4><A NAME="banner_c_field"> </A>4.6.2.9. <A NAME="banner_c_field">c_field</A></H4>
+<P>Default: c_field=&quot;category&quot;</P>
+<P>Weighted ads only.</P>
+<P>This specifies the column containing the banner category for weighted ads. The <TT>banner</TT> tag will display ads from rows in the table whose category matches the category given in the tag, with frequency corresponding to the weights in the table.</P>
+<H4><A NAME="banner_w_field"> </A>4.6.2.10. <A NAME="banner_w_field">w_field</A></H4>
+<P>Default: w_field=&quot;weight&quot;</P>
+<P>Weighted ads only.</P>
+<P>This specifies the column containing the banner weight.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_39.html">Previous Topic</A> | <A HREF="ictags_41.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

@@ -1,0 +1,72 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Template Guide: data and field</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_4.html">Parent Topic</A> | <A HREF="ictemplates_5.html">Previous Topic</A> | <A HREF="ictemplates_7.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>3.2. data and field</H2>
+<P>The [<A HREF="ictags_52.html#data">data</A>] and [<A HREF="ictags_61.html#field">field</A>] tags access elements of Interchange databases. They are the form used outside of the iterating lists, and are used to do lookups when the table, column/field or key/row is conditional based on a previous operation.</P>
+<P>The following are equivalent for attribute names:</P>
+<PRE>
+    table --&gt; base
+    col   --&gt; field --&gt; column
+    key   --&gt; code  --&gt; row
+</PRE>
+<P>The [<A HREF="ictags_61.html#field">field</A>] tag looks in any tables defined as <TT>ProductFiles</TT>, in that order, for the data and returns the first non-empty value. In most catalogs, where <TT>ProductFiles</TT> is not defined, i.e., the demo, <TT>[field title 00-0011]</TT> is equivalent to <TT>[data products title 00-0011]</TT>. For example, [field col=foo key=bar] will not display something from the table &quot;category&quot; because &quot;category&quot; is not in the directive ProductFiles or there are multiple ProductFiles and an earlier one has an entry for that key.</P>
+<P><B>[<A HREF="ictags_52.html#data">data</A><TT> table column key</TT>]</B></P>
+<UL>
+named attributes: <TT>[data base=&quot;database&quot; field=&quot;field&quot; key=&quot;key&quot;</TT> <TT>value=&quot;value&quot; op=&quot;increment]</TT>
+<BR>
+Returns the value of the field in any of the arbitrary databases or from the variable namespaces. If the option <TT>increment=1</TT> is present, the field will be automatically incremented with the value in value.
+<BR>
+If a DBM-based database is to be modified, it must be flagged writable on the page calling the write tag. For example, use <TT>[tag flag write]products[/tag]</TT> to mark the <TT>products</TT> database writable.
+<BR>
+In addition, the <TT>[data ...]</TT> tag can access a number of elements in the Interchange session database:</UL>
+<PRE>
+            accesses      Accesses within the last 30 seconds
+            arg           The argument passed in a [page ...] or [area ...] tag
+            browser       The user browser string
+            host          Interchange's idea of the host (modified by DomainTail)
+            last_error    The last error from the error logging
+            last_url      The current Interchange path_info
+            logged_in     Whether the user is logged in via UserDB
+            pageCount     Number of unique URLs generated
+            prev_url      The previous path_info
+            referer       HTTP_REFERER string
+            ship_message  The last error messages from shipping
+            source        Source of original entry to Interchange
+            time          Time (seconds since Jan 1, 1970) of last access
+            user          The REMOTE_USER string
+            username      User name logged in as (UserDB)
+</PRE>
+<UL>
+Databases will hide variables, so if a database is named &quot;session,&quot; &quot;scratch,&quot; or any of the other reserved names it won't be able to use the <TT>[data ...]</TT> tag to read them. Case is sensitive, so the database could be called &quot;Session,&quot; but this is not recommended practice.</UL>
+<P><B>[<A HREF="ictags_61.html#field">field</A><TT> name code</TT>]</B></P>
+<UL>
+named attributes: <TT>[field code=&quot;code&quot; name=&quot;fieldname&quot;]</TT>
+<BR>
+Expands into the value of the field name for the product as identified by code found by searching the products database. It will return the first entry found in the series of Product Files in the products database. If this needs to constrained to a particular table, use a <TT>[data table col key]</TT> call.</UL>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_4.html">Parent Topic</A> | <A HREF="ictemplates_5.html">Previous Topic</A> | <A HREF="ictemplates_7.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

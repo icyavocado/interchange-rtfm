@@ -1,0 +1,46 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Databases: Updating Individual Records</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_19.html">Parent Topic</A> | <A HREF="icdatabase_20.html">Previous Topic</A> | <A HREF="icdatabase_22.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>3.2. Updating Individual Records</H2>
+<P>If it takes a long time to build a very large DBM database, consider using the <TT>bin/update</TT> script to change just one field in a record, or to add from a corrections list.</P>
+<P>The database is specified with the <TT>-n</TT> option, or is 'products' by default.</P>
+<P>The following updates the products database <TT>price</TT> field for item 19-202 with the new value 25.00:</P>
+<PRE>
+   update -c catalog -f price 25.00
+</PRE>
+<P>More than one field can be updated on a single command line.</P>
+<PRE>
+   update -c catalog -f price -f comment 25.00 &quot;That pitchfork couple&quot;
+</PRE>
+<P>The following takes input from <TT>file</TT>, which must be formatted exactly like the original database, and adds/corrects any records contained therein.</P>
+<PRE>
+   update -c catalog -i file
+</PRE>
+<P>Invoke the command without any arguments for a usage message describing the options.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_19.html">Parent Topic</A> | <A HREF="icdatabase_20.html">Previous Topic</A> | <A HREF="icdatabase_22.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

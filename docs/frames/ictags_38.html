@@ -1,0 +1,178 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: assign</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_37.html">Previous Topic</A> | <A HREF="ictags_39.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.4. assign</H2>
+<P>Allows you to assign numeric values to preempt calculation of one or more of the following tags:</P>
+<P>[<A HREF="ictags_68.html#handling">handling</A>], [<A HREF="ictags_95.html#salestax">salestax</A>], [<A HREF="ictags_105.html#shipping">shipping</A>], and [<A HREF="ictags_109.html#subtotal">subtotal</A>]</P>
+<P>The assignment is persistent within a user's session until you clear it, an assigned tag will return your value instead of calculating a value.</P>
+<P>Warning&nbsp;-- please be sure you understand the dependencies within the pricing system before using the <TT>assign</TT> tag. In particular, you must have the value <TT>mv_shipmode</TT> set to assign to <TT>shipping</TT>, and likewise you must set <TT>mv_handling</TT> to assign to <TT>handling</TT>. The <TT>salestax</TT> and <TT>subtotal</TT> settings don't require any session variables be set.</P>
+<H3><A NAME="Summary">4.4.1. Summary</A></H3>
+<PRE>
+    [<B>assign</B> <I>tag_name=value</I> <I>tag_name=value</I> ...]
+    [<B>assign</B> <TT>clear=1</TT>]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_38.html#assign_clear">clear</A>
+</TD>
+<TD VALIGN='Top'>
+Clears all pending '<TT>assign</TT>' tag assignments
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_38.html#assign_handling">handling</A>
+</TD>
+<TD VALIGN='Top'>
+Assigns an override value for [<A HREF="ictags_68.html#handling">handling</A>] tags
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_38.html#assign_salestax">salestax</A>
+</TD>
+<TD VALIGN='Top'>
+Assigns an override value for [<A HREF="ictags_95.html#salestax">salestax</A>] tags
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_38.html#assign_shipping">shipping</A>
+</TD>
+<TD VALIGN='Top'>
+Assigns an override value for [<A HREF="ictags_105.html#shipping">shipping</A>] tags
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_38.html#assign_subtotal">subtotal</A>
+</TD>
+<TD VALIGN='Top'>
+Assigns an override value for [<A HREF="ictags_109.html#subtotal">subtotal</A>] tags
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Container tag
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+    $Tag-&gt;assign(  { shipping =&gt; 2.99, }  );
+</PRE>
+<H4><A NAME="See Also">4.4.1.1. See Also</A></H4>
+<P>[<A HREF="ictags_68.html#handling">handling</A>], [<A HREF="ictags_95.html#salestax">salestax</A>], [<A HREF="ictags_105.html#shipping">shipping</A>], [<A HREF="ictags_109.html#subtotal">subtotal</A>], [<A HREF="icdatabase_38.html#Shipping">Shipping</A>]</P>
+<H3><A NAME="Description">4.4.2. Description</A></H3>
+<P>The <TT>assign</TT> tag allows you to assign numeric override values to one or more of the following tags:</P>
+<P>[<A HREF="ictags_68.html#handling">handling</A>], [<A HREF="ictags_95.html#salestax">salestax</A>], [<A HREF="ictags_105.html#shipping">shipping</A>], and [<A HREF="ictags_109.html#subtotal">subtotal</A>]</P>
+<P>An assigned tag will return your value rather than calculating its own until you clear the assignment.</P>
+<P>Assignment is persistent within the user's session (unless cleared) and affects only that user.</P>
+<P>Assigning an empty string clears the tag's assignment. You can also clear all pending assignments at once with the <A HREF="ictags_38.html#assign_clear">clear</A> attribute.</P>
+<P>For example, the following eliminates salestax and sets shipping to $4.99 regardless of weight and destination:</P>
+<PRE>
+    [assign salestax=0 shipping=4.99]
+</PRE>
+<P>This restores the [<A HREF="ictags_95.html#salestax">salestax</A>] tag and eliminates handling charges:</P>
+<PRE>
+    [assign salestax=&quot;&quot; handling=0]
+</PRE>
+<P>This restores the normal behavior to the [<A HREF="ictags_105.html#shipping">shipping</A>] and [<A HREF="ictags_68.html#handling">handling</A>] tags:</P>
+<PRE>
+    [assign clear=1]
+</PRE>
+<P>Assignment affects only the value returned by a tag. Other behavior, such as formatting for the local currency, is not affected by the assignment.</P>
+<P>Note&nbsp;-- you will get an error in the error log (and any pending assignment for the specified tag will be cleared) if you try to assign a value other than a number or the empty string (&quot;&quot;).</P>
+<H4><A NAME="assign_clear"> </A>4.4.2.1. <A NAME="assign_clear">clear</A></H4>
+<P>Setting this to a true value clears all pending assignments (i.e., all assignable tags return to normal behavior).</P>
+<H4><A NAME="assign_shipping"> </A>4.4.2.2. <A NAME="assign_shipping">shipping</A></H4>
+<P>This sets the total value of shipping, rounded to locale-specific fractional digits. Always active if assigned a numeric value. See the [<A HREF="ictags_105.html#shipping">shipping</A>] tag for detail about rounding, etc.</P>
+<H4><A NAME="assign_handling"> </A>4.4.2.3. <A NAME="assign_handling">handling</A></H4>
+<P>This option sets the total value of handling, rounded to fractional digits.</P>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Important note</STRONG></P>
+<P>The [<A HREF="ictags_68.html#handling">handling</A>] tag is unlike the others in that it will be inactive (despite your assignment) unless the [<A HREF="ictags_120.html#value">value</A> <B>mv_handling</B>] variable is true (i.e., a nonzero, non-blank value).</P>
+<P><HR WIDTH="80%" ALIGN="Left"></P>
+<H4><A NAME="assign_salestax"> </A>4.4.2.4. <A NAME="assign_salestax">salestax</A></H4>
+<P>This preempts the salestax calculation. The assigned value is not rounded.</P>
+<H4><A NAME="assign_subtotal"> </A>4.4.2.5. <A NAME="assign_subtotal">subtotal</A></H4>
+<P>This preempts the cart subtotal derived from prices. The assigned value is not rounded.</P>
+<P>Note that you cannot assign to [<A HREF="ictags_115.html#total-cost">total-cost</A>]&nbsp;-- it will always be the sum of the four above.</P>
+<P>Before using the <TT>assign</TT> tag, please be sure you understand the dependencies within the pricing system, such as the relationship between [<A HREF="ictags_115.html#total-cost">total-cost</A>] and assigned tags.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_37.html">Previous Topic</A> | <A HREF="ictags_39.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

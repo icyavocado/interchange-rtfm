@@ -1,0 +1,929 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>Interchange payment modules - RTFM</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="en-GB">
+    <meta http-equiv="Window-target" content="_top">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <meta http-equiv="X-Soup-Of-The-Day" content="Tomato">
+
+    <meta name="author" content="Kevin Walsh">
+    <meta name="publisher" content="Cursor Software Limited">
+    <meta name="copyright" content="2001-2011, Cursor Software Limited">
+    <meta name="generator" content="Interchange 5.7.0 -- www.icdevgroup.org">
+    <meta name="robots" content="index,follow,noarchive,noimageindex">
+    <meta name="keywords" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="description" content="Interchange payment modules">
+    <meta name="MSSmartTagsPreventParsing" content="TRUE">
+
+    <meta name="verify-v1" content="KqlU/bxZj9Y2ZdZ/3RwuzgVSMIrZ8XM2wqbjSaEo3O4=">
+
+    <meta name="y_key" content="e2dd60be5777fbc8">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
+    <link rel="search" type="application/opensearchdescription+xml" href="http://interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="stylesheet" href="/decor/css/website.css">
+
+    <script type="text/javascript" language="JavaScript">
+    <!--
+	if (top != self){
+	    top.location = location;
+	}
+
+    // -->
+    </script>
+</head>
+<body>
+<!-- START VAR: LOGOBAR -->
+<table id="rtfmheader" cellpadding="0" cellspacing="0">
+    <tr>
+	<td><a href="http://interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+
+	<td width="100%" style="text-align: right; padding: 10px">
+
+	    <form action="http://interchange-rtfm.pullingshots.ca/search.html" method="POST">
+		<input type="hidden" name="mv_session_id" value="nsession">
+		<input type="hidden" name="mv_profile" value="cms_search">
+		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
+		<input type="submit" class="button" value="Search">
+	    </form>
+
+	</td>
+    </tr>
+</table>
+<table id="breadcrumbs" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+	<td>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></span>
+	    <span class="nowrap">&gt; <span class="current">Payment Modules</span></span>
+	</td>
+
+    </tr>
+</table>
+<!-- END VAR: LOGOBAR -->
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+
+	    <td id="leftside">
+<!-- START COMPONENT: navigation -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th>NAVIGATION</th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+
+<!-- END COMPONENT: navigation -->
+<!-- START COMPONENT: account -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+
+    <tr>
+	<th>ACCOUNT LOGIN</th>
+    </tr>
+
+    <tr>
+	<td class="first">
+	    <p>You are not logged in</p>
+	</td>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+	    </ul>
+	</td>
+    </tr>
+
+</table>
+
+
+
+<!-- END COMPONENT: account -->
+<!-- START COMPONENT: icpowered -->
+
+<div style="text-align: center; margin: 10px; margin-top: 0px">
+    <a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+</div>
+
+
+
+<!-- START COMPONENT: icpowered -->
+
+	    </td>
+
+	    <td id="bodytext">
+<!-- start of page text -->
+
+<!-- start page: flypage (downloads/payments) -->
+
+<h1>Interchange payment modules</h1>
+
+
+<div class="intro_text">
+<div class="wikitext">
+These are the latest versions of the Interchange payment modules.&nbsp;
+Please note that these modules come from Interchange's 0.0.0
+development version (in CVS), or elsewhere.&nbsp;
+You can help improve Interchange by reporting any problems you have with any
+if these modules.
+</div>
+</div>
+
+<!-- end page: flypage (downloads/payments) -->
+
+<!-- START COMPONENT: textblock -->
+
+<div class="textblock">
+    <div class="wikitext">
+<p>
+If you have a working payment module that is not listed here,
+or are developing one, then please donate it.&nbsp;
+If you know of another Payment Services Provider (PSP) that can can be used
+with one or more of the existing modules then please
+<a href="http://interchange-rtfm.pullingshots.ca/contact.html?subject=Payment%20Services%20Provider%20information">let us know</a>.&nbsp;
+If a seemingly useful installation or configuration guide for any of these
+modules is posted to the <em>interchange-users</em> mail list, or anywhere else,
+we will probably want to either put a link to it on this page or add the new
+text to the existing documentation.
+</p>
+<p style="margin-bottom: 0px">
+Please check whether you already have the module you need,
+before you download it from this website.&nbsp;
+The only reasons to download Payment modules from here are either
+(1) you don't have the module at all,
+(2) you are having problems with a module and we have a later version
+you would like to try,
+or (3) you would like to make use of a facility only available in a version
+later than the one you have.&nbsp;
+Don't just grab modules from here and update for the sake of it.&nbsp;
+If it's not broken, don't fix it!
+</p>
+</div>
+</div>
+
+
+<!-- START COMPONENT: textblock -->
+<!-- START COMPONENT: filelist -->
+
+<div class="filelist">
+<table class="list" width="100%" cellpadding="2" cellspacing="5" border="0">
+    <tr>
+	<th colspan="2">
+	    Description
+	</th>
+	<th class="numeric">
+	    Size
+	</th>
+	<th>
+	    Download
+	</th>
+	<th>
+	    Notes
+	</th>
+    </tr>
+    <tr valign="top">
+	<td>
+	    <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" vspace="3" alt="*">
+	</td>
+	<td width="100%">
+<a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eauthorize%2enet%2f" class="filetitle" rel="nofollow"><strong>Authorize.net</strong></a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+<br>
+<div class="wikitext">
+<p style="margin-bottom: 0px">
+Unconfirmed reports suggest that <a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2e2checkout%2ecom%2f" rel="nofollow">2Checkout</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page"> uses the Authorize.net interface for its services &quot;with minor changes.&quot; Once these changes are reported and confirmed, a new module should be easy to create for their service.&nbsp;
+Also note that although <a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2enetbilling%2ecom%2f" rel="nofollow">Netbilling</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page"> have an Authorize.net emulation mode, a native Netbilling payment module is available for download from this page.
+</p>
+</div>
+<p class="version">Version: 2.19.</p>
+<p class="update">Last update: 15 November 2007.</p>
+
+	</td>
+	<td class="numeric nowrap">
+	    15,182
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/mirror/payments/AuthorizeNet.pm" rel="nofollow">AuthorizeNet</a>
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/icdocs/payments/AuthorizeNet.html">Documentation</a>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td>
+	    <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" vspace="3" alt="*">
+	</td>
+	<td>
+<a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2ebankofamerica%2ecom%2f" class="filetitle" rel="nofollow"><strong>Bank of America</strong></a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+<br>
+<div class="wikitext">
+<p style="margin-bottom: 0px">
+
+</p>
+</div>
+<p class="author">Author: Mark Johnson.</p>
+<p class="version">Version: 1.12.</p>
+<p class="update">Last update: 10 June 2005.</p>
+
+	</td>
+	<td class="numeric nowrap">
+	    16,015
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/mirror/payments/BoA.pm" rel="nofollow">BoA</a>
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/icdocs/payments/BoA.html">Documentation</a>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td>
+	    <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" vspace="3" alt="*">
+	</td>
+	<td>
+<a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2f420%2eam%2fbusiness%2donlinepayment%2f" class="filetitle" rel="nofollow"><strong>Business::OnlinePayment</strong></a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+<br>
+<div class="wikitext">
+<p style="margin-bottom: 0px">
+Interchange wrapper for the <span class="fixedwidth">Business::OnlinePayment</span> suite of payment modules.
+</p>
+</div>
+<p class="author">Author: Ivan Kohler.</p>
+<p class="version">Version: 1.1.</p>
+<p class="update">Last update: 24 January 2005.</p>
+
+	</td>
+	<td class="numeric nowrap">
+	    9,352
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/mirror/payments/BusinessOnlinePayment.pm" rel="nofollow">BOP</a>
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/icdocs/payments/BusinessOnlinePayment.html">Documentation</a>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td>
+	    <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" vspace="3" alt="*">
+	</td>
+	<td>
+<a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eclear2pay%2ecom%2f" class="filetitle" rel="nofollow"><strong>Clear2Pay</strong></a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+<br>
+<div class="wikitext">
+<p style="margin-bottom: 0px">
+This payment module works only for specific ProxyPay implementations that use XML.&nbsp;
+This is by no means a generic ProxyPay module.&nbsp;
+It does work with the Clear2Pay service, and may work with others.
+</p>
+</div>
+<p class="author">Author: Gert van der Spoel.</p>
+<p class="version">Version: 1.0.</p>
+<p class="update">Last update: 05 August 2005.</p>
+
+	</td>
+	<td class="numeric nowrap">
+	    12,036
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/mirror/payments/ProxyPay.pm" rel="nofollow">ProxyPay</a>
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/icdocs/payments/ProxyPay.html">Documentation</a>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td>
+	    <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" vspace="3" alt="*">
+	</td>
+	<td>
+<a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2econcordefsnet%2ecom%2f" class="filetitle" rel="nofollow"><strong>Concord EFSNet</strong></a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+<br>
+<div class="wikitext">
+<p style="margin-bottom: 0px">
+
+</p>
+</div>
+<p class="author">Author: Chris Wenham.</p>
+<p class="version">Version: 1.2.</p>
+<p class="update">Last update: 18 April 2004.</p>
+
+	</td>
+	<td class="numeric nowrap">
+	    13,690
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/mirror/payments/EFSNet.pm" rel="nofollow">EFSNet</a>
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/icdocs/payments/EFSNet.html">Documentation</a>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td>
+	    <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" vspace="3" alt="*">
+	</td>
+	<td>
+<a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2ecybersource%2ecom%2f" class="filetitle" rel="nofollow"><strong>CyberSource ICS</strong></a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+<br>
+<div class="wikitext">
+<p style="margin-bottom: 0px">
+
+</p>
+</div>
+<p class="author">Author: Sonny Cook.</p>
+<p class="version">Version: 1.1.</p>
+<p class="update">Last update: 25 January 2005.</p>
+
+	</td>
+	<td class="numeric nowrap">
+	    14,210
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/mirror/payments/ICS.pm" rel="nofollow">ICS</a>
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/icdocs/payments/ICS.html">Documentation</a>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td>
+	    <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" vspace="3" alt="*">
+	</td>
+	<td>
+<a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eezic%2ecom%2f" class="filetitle" rel="nofollow"><strong>Ezic</strong></a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+<br>
+<div class="wikitext">
+<p style="margin-bottom: 0px">
+
+</p>
+</div>
+<p class="author">Author: Mark Lipscombe.</p>
+<p class="version">Version: 1.2.</p>
+<p class="update">Last update: 06 March 2005.</p>
+
+	</td>
+	<td class="numeric nowrap">
+	    13,391
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/mirror/payments/Ezic.pm" rel="nofollow">Ezic</a>
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/icdocs/payments/Ezic.html">Documentation</a>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td>
+	    <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" vspace="3" alt="*">
+	</td>
+	<td>
+<a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicsaccess%2ecom%2f" class="filetitle" rel="nofollow"><strong>International Commerce Solutions</strong></a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+<br>
+<div class="wikitext">
+<p style="margin-bottom: 0px">
+
+</p>
+</div>
+<p class="author">Author: Marty Tennison.</p>
+<p class="version">Version: 2.6.</p>
+<p class="update">Last update: 16 April 2005.</p>
+
+	</td>
+	<td class="numeric nowrap">
+	    11,160
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/mirror/payments/ICS2.pm" rel="nofollow">ICS2</a>
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/icdocs/payments/ICS2.html">Documentation</a>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td>
+	    <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" vspace="3" alt="*">
+	</td>
+	<td>
+<a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eitransact%2ecom%2f" class="filetitle" rel="nofollow"><strong>iTransact</strong></a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+<br>
+<div class="wikitext">
+<p style="margin-bottom: 0px">
+
+</p>
+</div>
+<p class="author">Author: <nobr>Mark Johnson</nobr> and <nobr>Cameron Prince</nobr>.</p>
+<p class="version">Version: 2.2.</p>
+<p class="update">Last update: 04 August 2003.</p>
+
+	</td>
+	<td class="numeric nowrap">
+	    8,759
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/mirror/payments/iTransact.pm" rel="nofollow">iTransact</a>
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/icdocs/payments/iTransact.html">Documentation</a>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td>
+	    <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" vspace="3" alt="*">
+	</td>
+	<td>
+<a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2elinkpt%2ecom%2f" class="filetitle" rel="nofollow"><strong>Linkpoint</strong></a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+<br>
+<div class="wikitext">
+<p style="margin-bottom: 0px">
+
+</p>
+</div>
+<p class="author">Author: Stefan Hornburg.</p>
+<p class="version">Version: 1.10.</p>
+<p class="update">Last update: 16 October 2006.</p>
+
+	</td>
+	<td class="numeric nowrap">
+	    11,944
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/mirror/payments/Linkpoint.pm" rel="nofollow">Linkpoint</a>
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/icdocs/payments/Linkpoint.html">Documentation</a>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td>
+	    <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" vspace="3" alt="*">
+	</td>
+	<td>
+<a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2emcve%2ecom%2f" class="filetitle" rel="nofollow"><strong>Mainstreet Credit Verification Engine</strong></a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+<br>
+<div class="wikitext">
+<p style="margin-bottom: 0px">
+
+</p>
+</div>
+<p class="author">Author: Carlc Internet Services.</p>
+<p class="version">Version: 1.3.</p>
+<p class="update">Last update: 04 August 2003.</p>
+
+	</td>
+	<td class="numeric nowrap">
+	    13,690
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/mirror/payments/MCVE.pm" rel="nofollow">MCVE</a>
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/icdocs/payments/MCVE.html">Documentation</a>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td>
+	    <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" vspace="3" alt="*">
+	</td>
+	<td>
+<a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2enetbilling%2ecom%2f" class="filetitle" rel="nofollow"><strong>NetBilling</strong></a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+<br>
+<div class="wikitext">
+<p style="margin-bottom: 0px">
+
+</p>
+</div>
+<p class="author">Author: Peter Ajamain.</p>
+<p class="version">Version: 1.4.</p>
+<p class="update">Last update: 01 September 2006.</p>
+
+	</td>
+	<td class="numeric nowrap">
+	    26,908
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/mirror/payments/NetBilling.pm" rel="nofollow">NetBilling</a>
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/icdocs/payments/NetBilling.html">Documentation</a>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td>
+	    <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" vspace="3" alt="*">
+	</td>
+	<td>
+<a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eopenecho%2ecom%2f" class="filetitle" rel="nofollow"><strong>OpenECHO</strong></a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+<br>
+<div class="wikitext">
+<p style="margin-bottom: 0px">
+
+</p>
+</div>
+<p class="author">Author: <nobr>Michael Lehmkuhl</nobr> and <nobr>Dan Browning</nobr>.</p>
+<p class="version">Version: 1.7.</p>
+<p class="update">Last update: 08 April 2005.</p>
+
+	</td>
+	<td class="numeric nowrap">
+	    16,346
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/mirror/payments/ECHO.pm" rel="nofollow">ECHO</a>
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/icdocs/payments/ECHO.html">Documentation</a>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td>
+	    <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" vspace="3" alt="*">
+	</td>
+	<td>
+<a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2epaymentresource%2ecom%2f" class="filetitle" rel="nofollow"><strong>Payment Resources International</strong></a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+<br>
+<div class="wikitext">
+<p style="margin-bottom: 0px">
+
+</p>
+</div>
+<p class="author">Author: Marty Tennison.</p>
+<p class="version">Version: 1.4.</p>
+<p class="update">Last update: 22 February 2005.</p>
+
+	</td>
+	<td class="numeric nowrap">
+	    15,206
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/mirror/payments/PRI.pm" rel="nofollow">PRI</a>
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/icdocs/payments/PRI.html">Documentation</a>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td>
+	    <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" vspace="3" alt="*">
+	</td>
+	<td>
+<a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2epaypal%2ecom%2f" class="filetitle" rel="nofollow"><strong>PayPal &quot;Pro&quot;</strong></a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+<br>
+<div class="wikitext">
+<p style="margin-bottom: 0px">
+This service is only available in the USA.
+</p>
+</div>
+<p class="author">Author: Erik Fantasia.</p>
+<p class="update">Last update: 27 November 2005.</p>
+
+	</td>
+	<td class="numeric nowrap">
+	    13,096
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/mirror/payments/PaypalPro.pm" rel="nofollow">PaypalPro</a>
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/icdocs/payments/PaypalPro.html">Documentation</a>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td>
+	    <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" vspace="3" alt="*">
+	</td>
+	<td>
+<a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2epaypal%2ecom%2f" class="filetitle" rel="nofollow"><strong>Paypal Express</strong></a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+<br>
+<div class="wikitext">
+<p style="margin-bottom: 0px">
+
+</p>
+</div>
+<p class="author">Author: Lyn St George.</p>
+<p class="update">Last update: 27 February 2007.</p>
+
+	</td>
+	<td class="numeric nowrap">
+	    36,114
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/mirror/payments/PaypalExpress.pm" rel="nofollow">PaypalExpress</a>
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/icdocs/payments/PaypalExpress.html">Documentation</a>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td>
+	    <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" vspace="3" alt="*">
+	</td>
+	<td>
+<a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eprocessing%2enet%2f" class="filetitle" rel="nofollow"><strong>ProcessNet</strong></a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+<br>
+<div class="wikitext">
+<p style="margin-bottom: 0px">
+
+</p>
+</div>
+<p class="author">Author: David Etheredge.</p>
+<p class="version">Version: 2.0.</p>
+<p class="update">Last update: 05 October 2006.</p>
+
+	</td>
+	<td class="numeric nowrap">
+	    8,153
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/mirror/payments/ProcessNet.pm" rel="nofollow">ProcessNet</a>
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/icdocs/payments/ProcessNet.html">Documentation</a>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td>
+	    <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" vspace="3" alt="*">
+	</td>
+	<td>
+<a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eprotx%2ecom%2f" class="filetitle" rel="nofollow"><strong>Protx</strong></a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+<br>
+<div class="wikitext">
+<p style="margin-bottom: 0px">
+This module allows you to use the &quot;Protx Direct&quot; service with Interchange.&nbsp;
+The package also includes a &quot;virtual terminal&quot; which intergrates into the Interchange admin system and allows you to perform various payment-related operations, such as settlements and refunds etc.
+</p>
+</div>
+<p class="author">Author: Lyn St George.</p>
+<p class="version">Version: 1.0.9f.</p>
+<p class="update">Last update: 29 July 2004.</p>
+
+	</td>
+	<td class="numeric nowrap">
+	    46,268
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/mirror/payments/protx-1.0.9f.tar.gz" rel="nofollow">protx-1.0.9f</a>
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fdownloads%2einterchange%2ertfm%2einfo%2fpayments%2fprotx%2d1%2e0%2e9f%2etxt">Documentation</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+	</td>
+    </tr>
+    <tr valign="top">
+	<td>
+	    <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" vspace="3" alt="*">
+	</td>
+	<td>
+<a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eprotx%2ecom%2f" class="filetitle" rel="nofollow"><strong>Protx2</strong></a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+<br>
+<div class="wikitext">
+<p style="margin-bottom: 0px">
+Updated version of the Protx module that brings it up to date with version 2.22 of the Protx API
+</p>
+</div>
+<p class="author">Author: Lyn St George.</p>
+<p class="version">Version: 1.2.</p>
+<p class="update">Last update: 11 April 2008.</p>
+
+	</td>
+	<td class="numeric nowrap">
+	    41,412
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/mirror/payments/Protx2.pm" rel="nofollow">Protx2</a>
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/icdocs/payments/Protx2.html">Documentation</a>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td>
+	    <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" vspace="3" alt="*">
+	</td>
+	<td>
+<a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2epsigate%2ecom%2f" class="filetitle" rel="nofollow"><strong>PSiGate</strong></a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+<br>
+<div class="wikitext">
+<p style="margin-bottom: 0px">
+PSiGate is a Canadian PSP.
+</p>
+</div>
+<p class="author">Author: Gary Benson.</p>
+<p class="version">Version: 1.2.</p>
+<p class="update">Last update: 25 March 2004.</p>
+
+	</td>
+	<td class="numeric nowrap">
+	    13,303
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/mirror/payments/PSiGate.pm" rel="nofollow">PSiGate</a>
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/icdocs/payments/PSiGate.html">Documentation</a>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td>
+	    <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" vspace="3" alt="*">
+	</td>
+	<td>
+<a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2esignio%2ecom%2f" class="filetitle" rel="nofollow"><strong>Signio</strong></a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+<br>
+<div class="wikitext">
+<p style="margin-bottom: 0px">
+The Signio interface is also used by Verisign to connect to their Payflow &quot;Pro&quot; service.&nbsp;
+We recommend that you do not use any service provided by Verisign or its subsidiaries, but the choice is yours.
+</p>
+</div>
+<p class="author">Authors: <nobr>Cameron Prince</nobr>, <nobr>Mark Johnson</nobr>, <nobr>Mike Heins</nobr> and <nobr>Jon Jensen</nobr>.</p>
+<p class="version">Version: 2.16.</p>
+<p class="update">Last update: 13 May 2006.</p>
+
+	</td>
+	<td class="numeric nowrap">
+	    17,292
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/mirror/payments/Signio.pm" rel="nofollow">Signio</a>
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/icdocs/payments/Signio.html">Documentation</a>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td>
+	    <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" vspace="3" alt="*">
+	</td>
+	<td>
+<a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eskipjack%2ecom%2f" class="filetitle" rel="nofollow"><strong>Skipjack</strong></a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+<br>
+<div class="wikitext">
+<p style="margin-bottom: 0px">
+
+</p>
+</div>
+<p class="author">Author: <nobr>Michael Bacarella</nobr> and <nobr>Troy Davis</nobr>.</p>
+<p class="version">Version: 2.6.</p>
+<p class="update">Last update: 04 August 2003.</p>
+
+	</td>
+	<td class="numeric nowrap">
+	    17,683
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/mirror/payments/Skipjack.pm" rel="nofollow">Skipjack</a>
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/icdocs/payments/Skipjack.html">Documentation</a>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td>
+	    <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" vspace="3" alt="*">
+	</td>
+	<td>
+<strong>TestPayment</strong>
+<br>
+<div class="wikitext">
+<p style="margin-bottom: 0px">
+This is a test module to allow developers to test their site's interaction with the Interchange Payment system, without actually being connected to a real Payment Services Provider.
+</p>
+</div>
+<p class="author">Author: <nobr>Kevin Walsh</nobr> and <nobr>Mike Heins</nobr>.</p>
+<p class="version">Version: 1.7.</p>
+<p class="update">Last update: 16 January 2005.</p>
+
+	</td>
+	<td class="numeric nowrap">
+	    9,187
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/mirror/payments/TestPayment.pm" rel="nofollow">TestPayment</a>
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/icdocs/payments/TestPayment.html">Documentation</a>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td>
+	    <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" vspace="3" alt="*">
+	</td>
+	<td>
+<a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2etrustcommerce%2ecom%2f" class="filetitle" rel="nofollow"><strong>TrustCommerce</strong></a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+<br>
+<div class="wikitext">
+<p style="margin-bottom: 0px">
+
+</p>
+</div>
+<p class="author">Author: <nobr>Dan Helfman</nobr> and <nobr>Mark Stosberg</nobr>.</p>
+<p class="version">Version: 1.6.</p>
+<p class="update">Last update: 09 June 2004.</p>
+
+	</td>
+	<td class="numeric nowrap">
+	    9,995
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/mirror/payments/TCLink.pm" rel="nofollow">TCLink</a>
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/icdocs/payments/TCLink.html">Documentation</a>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td>
+	    <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" vspace="3" alt="*">
+	</td>
+	<td>
+<a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2ewellsfargo%2ecom%2f" class="filetitle" rel="nofollow"><strong>Wells Fargo</strong></a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+<br>
+<div class="wikitext">
+<p style="margin-bottom: 0px">
+
+</p>
+</div>
+<p class="author">Author: Mark Johnson.</p>
+<p class="version">Version: 1.8.</p>
+<p class="update">Last update: 12 June 2005.</p>
+
+	</td>
+	<td class="numeric nowrap">
+	    19,643
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/mirror/payments/WellsFargo.pm" rel="nofollow">WellsFargo</a>
+	</td>
+	<td class="nowrap">
+	    <a href="http://interchange-rtfm.pullingshots.ca/icdocs/payments/WellsFargo.html">Documentation</a>
+	</td>
+    </tr>
+</table>
+</div>
+
+<!-- START COMPONENT: filelist -->
+
+		<br>
+<!-- end of page text -->
+	    </td>
+
+	</tr>
+    </table>
+<!-- START VAR: FOOTER -->
+
+<table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+	<td>
+	    <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	</td>
+
+    </tr>
+</table>
+
+<!-- END VAR: FOOTER -->
+
+<!-- START VAR: COPYRIGHT -->
+
+
+    <div class="copyright">
+	Copyright &copy; 2001-2011
+	<a href="http://cursor.biz/index.html">Cursor Software Limited</a>.&nbsp;
+	All Rights Reserved.
+    </div>
+
+<!-- END VAR: COPYRIGHT -->
+
+</body>
+</html>

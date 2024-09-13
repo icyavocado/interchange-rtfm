@@ -1,0 +1,63 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Template Guide: Log</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_18.html">Parent Topic</A> | <A HREF="ictemplates_21.html">Previous Topic</A> | <A HREF="ictemplates_23.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>6.4. Log</H2>
+<UL>
+Named Parameters: [log file=file_name]
+<BR>
+Positional Parameters: [log file_name]
+<BR>
+The attribute hash reference is passed after the parameters but before the container text argument. This may mean that there are parameters not shown here. Must pass named parameter interpolate=1 to cause interpolation. This is a container tag, i.e., [log] FOO [/log].
+<BR>
+Nesting: NO.
+<BR>
+Invalidates cache: NO.
+<BR>
+Called Routine:
+<BR>
+ASP/perl tag calls:</UL>
+<PRE>
+            $Tag-&gt;log(
+                {
+                 file =&gt; VALUE,
+                },
+                BODY
+            )
+</PRE>
+<UL>
+OR</UL>
+<PRE>
+            $Tag-&gt;log($file, $ATTRHASH, $BODY);
+</PRE>
+<UL>
+Attribute aliases:</UL>
+<PRE>
+                arg ==&gt; file
+</PRE>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_18.html">Parent Topic</A> | <A HREF="ictemplates_21.html">Previous Topic</A> | <A HREF="ictemplates_23.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

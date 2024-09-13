@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /account/
+Disallow: /admin/
+Disallow: /cms/
+Disallow: /mirror/
+Disallow: /news/feed/
+Disallow: /bouncer.html
+Disallow: /process.html

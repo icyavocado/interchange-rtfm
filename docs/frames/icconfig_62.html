@@ -1,0 +1,61 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Configuration Reference: TcpMap *global*</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_3.html">Parent Topic</A> | <A HREF="icconfig_61.html">Previous Topic</A> | <A HREF="icconfig_63.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>2.59. TcpMap *global*</H2>
+<P>When running in INET mode, using <TT>tlink</TT> or the internal HTTP server, specifies the port(s) which will be monitored by the Interchange server. Default is 7786.</P>
+<P>To use the internal HTTP server (perhaps only for password-protected queries), a catalog may be mapped to a port. If three catalogs were running on the server <TT>www.akopia.com</TT>, named <TT>simple</TT>, <TT>sample</TT>, and <TT>search</TT>, the directive might look like this:</P>
+<PRE>
+   TcpMap    7786 -  7787 simple 7788 sample 7789 search
+</PRE>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>To map large numbers of ports, use the &lt;&lt;MARKER here document notation in interchange.cfg. With this in effect, the internal HTTP server would map the following addresses:
+<HR WIDTH="80%" ALIGN="Left"></P>
+<PRE>
+   *:7786   mv_admin
+   *:7787   simple
+   *:7788   sample
+   *:7789   search
+</PRE>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>This does not pertain to the use of <TT>tlink</TT>, which still relies on the CGI SCRIPT_PATH. To enable this, the SCRIPT_PATH aliases /simple, /sample, etc. must be set in the <TT>Catalog</TT> directive. This would look like:
+<HR WIDTH="80%" ALIGN="Left"></P>
+<PRE>
+ Catalog  simple  /home/interchange/catalogs/simple /cgi-bin/simple /simple
+</PRE>
+<P>To bind to specific IP addresses, add them in the same fashion that they would as an Apache Listen directive:</P>
+<PRE>
+   TcpMap &lt;&lt;EOF
+       127.0.0.1:7786       -
+       www.akopia.com:7787  -
+   EOF
+</PRE>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>As usual, the EOF should be at the beginning of a line with no leading or trailing whitespace.
+<HR WIDTH="80%" ALIGN="Left"></P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_3.html">Parent Topic</A> | <A HREF="icconfig_61.html">Previous Topic</A> | <A HREF="icconfig_63.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

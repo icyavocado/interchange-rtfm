@@ -1,0 +1,147 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: process</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_88.html">Previous Topic</A> | <A HREF="ictags_90.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.55. process</H2>
+<P>This is a shortcut for the 'process' action, expanding to your catalog URL and session ID. It is analogous to the <A HREF="ictags_37.html#area">area</A> tag for the 'process' page, but is more limited. The following expansion is illustrative:</P>
+<PRE>
+    [process target=targetframe]
+---
+    http://www.here.com/cgi-bin/mycatalog/process.html?\
+    id=6CZ2whqo&quot; TARGET=&quot;targetframe
+</PRE>
+<P>(the trailing backslash indicates continuation, i.e., the result should be only one line)</P>
+<P>Note the mismatched quotes in the expansion.  Your surrounding HTML should supply the containing quotes, like this:</P>
+<PRE>
+   &lt;A HREF=&quot;[process target=targetframe]&quot;&gt;...
+</PRE>
+<P>Aliases:  <B>process_target</B>, <B>process_order</B></P>
+<H3><A NAME="Summary">4.55.1. Summary</A></H3>
+<PRE>
+    [<B>process</B> target secure]
+    [<B>process</B> target=<I>targetframe</I> secure=1 <I>other_named_attributes</I>]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+target
+</TD>
+<TD VALIGN='Top'>
+The target frame or window
+</TD>
+<TD VALIGN='Top'>
+<I>None</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+secure
+</TD>
+<TD VALIGN='Top'>
+Boolean.  If true (secure=1), the URL will link to your secure server.
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_interpolate">interpolate (reparse)</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Container tag
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+    [process targetframe 1]
+---
+    http://secure.here.com/cgi-bin/mycatalog/process.html?\
+    id=6CZ2whqo&quot; TARGET=&quot;targetframe
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+    $Tag-&gt;process(  { target =&gt; <TT>'frametarget'</TT>,
+                      secure =&gt; 1, } );
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;process($target, $secure, $attribute_hash_reference);
+</PRE>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_88.html">Previous Topic</A> | <A HREF="ictags_90.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

@@ -1,0 +1,99 @@
+UserTag post_external Documentation <<EOD
+
+    Post a simple form to an external URI.
+
+    Author: Kevin Walsh <kevin@cursor.biz>
+
+    Copyright (c) 2003 Cursor Software Limited.
+    All Rights Reserved.
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public
+    License along with this program; if not, write to the Free
+    Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+    MA  02111-1307  USA.
+
+Parameters:
+
+    uri		URI to POST the form to.
+    headers	Optional extra HTTP headers, each on a line of its own.
+    form	Form names and values to POST, each on a line of its own.
+    timeout	Timeout value in seconds.
+    useragent	You may specify a user agent string if you need to.
+
+Example:
+
+    [post-external
+	form=|
+	    foo=bar
+	    name=Kevin Walsh
+	|
+	headers=|
+	    X-Soup-Of-The-Day: Tomato
+	    X-President: Bill Clinton
+	|
+	uri=http://www.example.com/foo/bar.html
+	timeout=30
+	useragent="This is a test"
+    ]
+
+Notes:
+
+    This must be installed as a global UserTag, rather than a local UserTag.
+
+    The "form" and "headers" parameters accept name/value pairs, with
+    each pair on its own line.  The name and value can be separated using
+    a colon (name: value) or an equals symbol (name=value).  An example
+    of both formats is shown above.
+
+    This UserTag requires the following Perl modules to be present and
+    working:
+
+	HTTP::Request::Common
+	LWP::UserAgent
+
+EOD
+
+UserTag post_external Order uri form headers timeout useragent
+UserTag post_external Routine <<EOR
+use HTTP::Request::Common;
+use LWP::UserAgent;
+sub {
+    my ($uri,$f,$h,$timeout,$useragent) = @_;
+    die q{No URI provided to the "post-external" UserTag} unless $uri;
+
+    $timeout ||= 30;
+    $useragent ||= 'post-external';
+
+    my %headers = ();
+    foreach (split(/[\r\n]+/,$h)) {
+	/^\s*(.+?)\s*[=:]\s*(.*?)\s*$/;
+	$headers{$1} = $2 if (length($1) && length($2));
+    }
+
+    my %form = ();
+    foreach (split(/[\r\n]+/,$f)) {
+	/^\s*(.+?)\s*[=:]\s*(.*?)\s*$/;
+	$form{$1} = $2 if (length($1) && length($2));
+    }
+
+    my $ua = new LWP::UserAgent(
+	timeout => $timeout,
+	agent => $useragent,
+    );
+
+    my $res = $ua->request(POST($uri,\%form,%headers));
+    die $res->message() unless $res->is_success();
+
+    return $res->as_string();
+}
+EOR

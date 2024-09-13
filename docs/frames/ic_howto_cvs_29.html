@@ -1,0 +1,36 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange + CVS HOWTO: Automatic updates on commit</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ic_howto_cvs_26.html">Parent Topic</A> | <A HREF="ic_howto_cvs_28.html">Previous Topic</A> | <A HREF="ic_howto_cvs_30.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.3. Automatic updates on commit</H2>
+<P>Start by modifying $CVSROOT/CVSROOT/loginfo</P>
+<PRE>
+^foundation     (date; cat; (sleep 1; cd /var/lib/interchange/foundation; cvs -q update -d) &amp;) &gt;&gt; $CVSROOT/CVSROOT/updatelog 2&gt;&amp;1
+</PRE>
+<P>The first line tells CVS that for every commit on modules that start with &quot;foundation&quot; (notice the regular expression <TT>&quot;^foundation&quot;</TT>), it will run <TT>cvs update</TT> on the given catalog directory in the background.  It is important that it is executed in a forked shell (notice the <TT>&quot;&amp;&quot;</TT>) after <TT>sleep</TT>'ing for 1 second, because otherwise you may run into contention issues that can cause file locking problems.  The 1 second timing used above works fine for me, but a longer pause may be necessary for slower computers (you'll know if you get errors about &quot;file locked by user&quot;).  See the CVS documentation in the <A HREF="ic_howto_cvs_47.html">Resources</A> Appendix for more details.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ic_howto_cvs_26.html">Parent Topic</A> | <A HREF="ic_howto_cvs_28.html">Previous Topic</A> | <A HREF="ic_howto_cvs_30.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

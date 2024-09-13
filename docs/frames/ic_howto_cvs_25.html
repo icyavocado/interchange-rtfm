@@ -1,0 +1,40 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange + CVS HOWTO: Testing the new CVS module</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ic_howto_cvs_19.html">Parent Topic</A> | <A HREF="ic_howto_cvs_24.html">Previous Topic</A> | <A HREF="ic_howto_cvs_26.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>3.6. Testing the new CVS module</H2>
+<P>Now you should be able to do another test checkout or update using any CVS client, which should now download all the files that you have just imported into CVS.  Additionally, you might test your newly imported code by making a change to one of your checked-out source files, saving it, then committing it.</P>
+<PRE>
+<B>index.html:</B>
+&lt;!--this is a test comment at the top of index.html--&gt;
+</PRE>
+<P>Now commit the change</P>
+<P><TT>cvs commit index.html</TT></P>
+<P>Your changed version will now be resident in the repository.  There are a lot of good CVS documentation and resources for discovering more about the checkout/update/commit cycle and other CVS aspects in the <A HREF="ic_howto_cvs_47.html">Resources</A> Appendix</P>
+<P>You'll also notice that even if you start your interchange server, the change you made did not take effect.  The next section will detail the process of tying CVS and Interchange together in a way that this will happen automatically.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ic_howto_cvs_19.html">Parent Topic</A> | <A HREF="ic_howto_cvs_24.html">Previous Topic</A> | <A HREF="ic_howto_cvs_26.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

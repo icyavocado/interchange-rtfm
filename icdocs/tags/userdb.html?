@@ -1,0 +1,471 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>userdb - RTFM</title>
+
+    <meta http-equiv="Content-Language" content="en-GB">
+    <meta http-equiv="Window-target" content="_top">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <meta http-equiv="X-Soup-Of-The-Day" content="Tomato">
+
+    <meta name="author" content="Kevin Walsh">
+    <meta name="publisher" content="Cursor Software Limited">
+    <meta name="copyright" content="2001-2013, Cursor Software Limited">
+    <meta name="licence" content="GPLv2+ (Unknown licence)">
+    <meta name="generator" content="Interchange 5.7.0 -- www.icdevgroup.org">
+    <meta name="robots" content="index,follow,noarchive,noimageindex">
+    <meta name="keywords" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="description" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="MSSmartTagsPreventParsing" content="TRUE">
+
+    <meta name="verify-v1" content="KqlU/bxZj9Y2ZdZ/3RwuzgVSMIrZ8XM2wqbjSaEo3O4=">
+
+    <meta name="y_key" content="e2dd60be5777fbc8">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
+    <link rel="search" type="application/opensearchdescription+xml" href="http://interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="stylesheet" href="/decor/css/website.css">
+    <link rel="stylesheet" href="/decor/css/wiki.css">
+    <link rel="stylesheet" href="/decor/css/neo.css">
+
+
+    <script type="text/javascript" language="JavaScript">
+    <!--
+	if (top != self){
+	    top.location = location;
+	}
+
+    // -->
+    </script>
+</head>
+<body>
+<!-- START VAR: LOGOBAR -->
+<table id="rtfmheader" cellpadding="0" cellspacing="0">
+    <tr>
+	<td><a href="http://interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+
+	<td width="100%" style="text-align: right; padding: 10px">
+
+	    <form action="http://interchange-rtfm.pullingshots.ca/search.html" method="POST">
+		<input type="hidden" name="mv_session_id" value="nsession">
+		<input type="hidden" name="mv_profile" value="cms_search">
+		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
+		<input type="submit" class="button" value="Search">
+	    </form>
+
+	</td>
+    </tr>
+</table>
+<table id="breadcrumbs" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+	<td>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a></span>
+	    <span class="nowrap">&gt; <span class="current">userdb</span></span>
+	</td>
+
+    </tr>
+</table>
+<!-- END VAR: LOGOBAR -->
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+
+	    <td id="leftside">
+<!-- START COMPONENT: navigation -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th>NAVIGATION</th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+
+<!-- END COMPONENT: navigation -->
+<!-- START COMPONENT: wiki_recent -->
+
+
+
+<!-- END COMPONENT: wiki_recent -->
+<!-- START COMPONENT: wiki_backlinks -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th><span class="nowrap">PAGES THAT LINK HERE</span></th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/CookieLogin.html">CookieLogin</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Interchange_user_database.html">Interchange user database</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/load-cart.html">load-cart</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/LogFile.html">LogFile</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Page_access_control.html">Page access control</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/save-cart.html">save-cart</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserDB.html">UserDB</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+<!-- END COMPONENT: wiki_backlinks -->
+<!-- START COMPONENT: account -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+
+    <tr>
+	<th>ACCOUNT LOGIN</th>
+    </tr>
+
+    <tr>
+	<td class="first">
+	    <p>You are not logged in</p>
+	</td>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+	    </ul>
+	</td>
+    </tr>
+
+</table>
+
+
+
+<!-- END COMPONENT: account -->
+<!-- START COMPONENT: icpowered -->
+
+<div style="text-align: center; margin: 10px; margin-top: 0px">
+    <a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+</div>
+
+
+
+<!-- START COMPONENT: icpowered -->
+
+	    </td>
+
+	    <td id="bodytext">
+<!-- start of page text -->
+
+<!-- start page: wiki/display (tags/userdb) -->
+
+<div class="wikitext">
+<a name="userdb"></a>
+<h1>userdb</h1>
+<p>
+Access the Interchange user account facilities.
+</p>
+<a name="Summary"></a>
+<h2>Summary</h2>
+
+<p>
+<ul>
+<li><span class="fixedwidth">&#91;userdb function]</span></li>
+</ul>
+
+<br>
+<table width="100%" class="border">
+<tr valign="top">
+<th class="grid">Parameter
+</th>
+<th class="grid">Description
+</th>
+<th class="grid">Default
+</th>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#function" title="&quot;function&quot; heading on this page">function</a></td>
+<td class="grid">The name of a user account facility to control with this tag.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#cgi" title="&quot;cgi&quot; heading on this page">cgi</a></td>
+<td class="grid"><p>
+Use the volatile <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Interchange_Perl_objects.html#CGI" title="&quot;CGI&quot; heading on the &quot;Interchange Perl objects&quot; page">&#36;CGI</a></span> space instead of the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Interchange_Perl_objects.html#Values" title="&quot;Values&quot; heading on the &quot;Interchange Perl objects&quot; page">&#36;Values</a></span> space.</td>
+<td class="grid">No
+</td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#db" title="&quot;db&quot; heading on this page">db</a></td>
+<td class="grid">The database table to use.</td>
+<td class="grid"><span class="fixedwidth">userdb</span></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#db" title="&quot;db&quot; heading on this page">table</a></td>
+<td class="grid">Alias for <a href="#db" title="&quot;db&quot; heading on this page">db</a>.</td>
+<td class="grid"><span class="fixedwidth">userdb</span></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#hide" title="&quot;hide&quot; heading on this page">hide</a></td>
+<td class="grid">Hide the result code
+</td>
+<td class="grid">No
+</td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#nickname" title="&quot;nickname&quot; heading on this page">nickname</a></td>
+<td class="grid">A name to use when loading or saving values using the <em>address book</em>, <em>accounts book</em>, <em>saved carts</em> and <em>preferences</em> facilities.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#nickname" title="&quot;nickname&quot; heading on this page">name</a></td>
+<td class="grid">Alias for <a href="#nickname" title="&quot;nickname&quot; heading on this page">nickname</a>.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+</table>
+
+<p>
+Various other parameters can be used to override defaults set using
+the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserDB.html" title="UserDB (config)">UserDB</a></span> <em>local</em> configuration directive.&nbsp;
+See the <a href="http://interchange-rtfm.pullingshots.ca/icdocs/Interchange_user_database.html" title="Interchange user database">Interchange user database</a> page.
+</p>
+<a name="Examples"></a>
+<h2>Examples</h2>
+<a name="Tag_usage_example"></a>
+<h3>Tag usage example</h3>
+<p>
+This tag is usually called from within a
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Form_callback_functions.html#mv_click" title="&quot;mv click&quot; heading on the &quot;Form callback functions&quot; page">mv_click</a></span>
+or
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Form_callback_functions.html#mv_check" title="&quot;mv check&quot; heading on the &quot;Form callback functions&quot; page">mv_check</a></span>
+<em>callback</em>, as in the following:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">form</span> </span><span class="html_htmlParam def_Parameter">action</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;[process]&quot; </span><span class="html_htmlParam def_Parameter">method</span><span class="html_htmlTagEqu def_Symbol">=</span>POST<span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">input</span> </span><span class="html_htmlParam def_Parameter">type</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;hidden&quot; </span><span class="html_htmlParam def_Parameter">name</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;mv_session_id&quot; </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;[data session id]&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+<br>
+&nbsp; &nbsp; Username: <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">input</span> </span><span class="html_htmlParam def_Parameter">name</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;mv_username&quot; </span><span class="html_htmlParam def_Parameter">SIZE</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;10&quot; </span><span class="html_htmlParam def_Parameter">maxlength</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;20&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">br</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+&nbsp; &nbsp; Password: <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">input</span> </span><span class="html_htmlParam def_Parameter">name</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;mv_password&quot; </span><span class="html_htmlParam def_Parameter">SIZE</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;10&quot; </span><span class="html_htmlParam def_Parameter">maxlength</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;20&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+<br>
+&nbsp; &nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">input</span> </span><span class="html_htmlParam def_Parameter">type</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;submit&quot; </span><span class="html_htmlParam def_Parameter">name</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;mv_click&quot; </span><span class="html_htmlParam def_Parameter">value</span><span class="html_htmlTagEqu def_Symbol">=</span><span class="html_htmlString def_String">&quot;Login&quot;</span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+<span class="html_htmlUnknowParam def_ParameterUnknown def_ParameterStrong def_Parameter"><span class="def_PairStart def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&lt;/</span></span><span class="html_htmlUnknowTag def_Tag"><span class="html_htmlOpenTag def_Keyword">form</span></span><span class="def_PairEnd def_Special"><span class="html_htmlTagBr def_OpenTag def_Tag">&gt;</span></span></span><br>
+<br>
+[set Login]<br>
+&nbsp; &nbsp; mv_todo=return<br>
+&nbsp; &nbsp; mv_nextpage=welcome<br>
+&nbsp; &nbsp; [userdb function=login]<br>
+[/set]
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Perl_example"></a>
+<h3>Perl example</h3>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Tag</span><span class="perl_Symb def_Symbol">-&gt;</span>userdb<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span><br>
+&nbsp; &nbsp; function <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_Var def_Var">$function</span><br>
+<span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+or similarly with positional parameters:&nbsp;
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Tag</span><span class="perl_Symb def_Symbol">-&gt;</span>area<span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$function</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Var def_Var">$attribute_hash_reference</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Description"></a>
+<h2>Description</h2>
+<p>
+This tag allows access to the Interchange user account facilities.
+</p>
+<p>
+There are several default parameters that apply to any use of the
+<span class="fixedwidth">&#91;userdb]</span> functions.&nbsp;
+Most importantly, by default the database table name set to &quot;<span class="fixedwidth">userdb</span>&quot;.&nbsp;
+If you must use another table name, then you should include a
+&quot;<span class="fixedwidth">table=somename</span>&quot; parameter with any call to <span class="fixedwidth">&#91;userdb]</span>.
+</p>
+<p>
+You may override any of the default settings, defined with the
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserDB.html" title="UserDB (config)">UserDB</a></span> <em>local</em> configuration directive,
+by passing the appropriate <a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserDB.html#Settings" title="&quot;Settings&quot; heading on the &quot;UserDB (config)&quot; page">setting name</a>
+to the <span class="fixedwidth">&#91;userdb]</span> tag.&nbsp;
+For example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">userdb userminlen</span><span class="def_Symbol">=</span><span class="def_Number">6 </span><span class="def_Syntax">new</span><span class="def_Symbol">_</span><span class="def_Syntax">account</span><span class="def_Symbol">=</span><span class="def_Number">1</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+See the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserDB.html" title="UserDB (config)">UserDB</a></span> page for a full list of default settings.&nbsp;
+You should also see the <a href="http://interchange-rtfm.pullingshots.ca/icdocs/Interchange_user_database.html" title="Interchange user database">Interchange user database</a> page to learn more
+about Interchange's user database facility.
+</p>
+<a name="Parameters"></a>
+<h2>Parameters</h2>
+<a name="function"></a>
+<h3>function</h3>
+<p>
+The name of a user account facility to control with this tag.&nbsp;
+See the <a href="http://interchange-rtfm.pullingshots.ca/icdocs/Interchange_user_database.html#User_database_functions" title="&quot;User database functions&quot; heading on the &quot;Interchange user database&quot; page">User database functions</a> list on the
+<a href="http://interchange-rtfm.pullingshots.ca/icdocs/Interchange_user_database.html" title="Interchange user database">Interchange user database</a> page for more information.
+</p>
+<a name="cgi"></a>
+<h3>cgi</h3>
+<p>
+By default, the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Interchange_Perl_objects.html#Values" title="&quot;Values&quot; heading on the &quot;Interchange Perl objects&quot; page">&#36;Values</a></span> space
+(i.e. <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/value.html" title="value (tags)">value</a> foo]</span>) is selected.&nbsp;
+Use this parameter if you want to use the volatile
+<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Interchange_Perl_objects.html#CGI" title="&quot;CGI&quot; heading on the &quot;Interchange Perl objects&quot; page">&#36;CGI</a></span> space
+(i.e. <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/cgi.html" title="cgi (tags)">cgi</a> foo]</span>).
+<p>
+This is useful for access to values gathered on a HTML
+<span class="fixedwidth">&lt;form&gt;</span>.
+</p>
+<a name="db"></a>
+<h3>db</h3>
+<p>
+This parameter allows you to use a different table for user information.&nbsp;
+The default is <span class="fixedwidth">userdb</span>.
+</p>
+<a name="hide"></a>
+<h3>hide</h3>
+<p>
+The <span class="fixedwidth">&#91;userdb]</span> tag will usually return a result code that can
+be used to determine whether the call succeeded or failed.&nbsp;
+If this parameter is set <em>true</em> then the result code will be
+suppressed.
+</p>
+<a name="nickname"></a>
+<h3>nickname</h3>
+<p>
+A name to use when loading or saving values using the <em>address book</em>,
+<em>accounts book</em>, <em>saved carts</em> and <em>preferences</em> facilities.&nbsp;
+Nicknames should be unique within each facility, unless the intention is
+to update previously-set values.
+</p>
+<a name="See_also"></a>
+<h2>See also</h2>
+<p>
+<ul>
+<li>The <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserDB.html" title="UserDB (config)">UserDB</a></span> <em>local</em> configuration directive</li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Interchange_user_database.html" title="Interchange user database">Interchange user database</a></li>
+</ul>
+</div>
+
+<!-- start of modification notice -->
+<div class="wikitext">
+    <table class="pageinfo" cellpadding="0" cellspacing="0">
+	<tr>
+	    <td>
+Category:&nbsp; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a>
+	    </td>
+	</tr>
+
+
+	<tr>
+	    <td>
+		
+		Last modified by: <a href="http://interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin">Kevin Walsh</a><br>
+		Modification date: Wednesday 13 February 2008 at 4:34 PM (GMT)
+	    </td>
+	</tr>
+    </table>
+</div>
+<!-- end of modification notice -->
+
+
+
+<!-- end page: wiki/display (tags/userdb) -->
+
+
+
+<!-- end of page text -->
+	    </td>
+
+	</tr>
+    </table>
+<!-- START VAR: FOOTER -->
+
+<table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+	<td>
+	    <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	</td>
+
+    </tr>
+</table>
+
+<!-- END VAR: FOOTER -->
+
+<!-- START VAR: COPYRIGHT -->
+
+
+    <div class="copyright">
+	Copyright &copy; 2001-2013
+	<a href="http://cursor.biz/index.html">Cursor Software Limited</a>.&nbsp;
+	All Rights Reserved.
+    </div>
+
+<!-- END VAR: COPYRIGHT -->
+
+</body>
+</html>

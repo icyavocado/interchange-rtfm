@@ -1,0 +1,53 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Databases: Accounts Book</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_47.html">Parent Topic</A> | <A HREF="icdatabase_51.html">Previous Topic</A> | <A HREF="icdatabase_53.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>8.5. Accounts Book</H2>
+<P>The accounts book saves information relevant to billing the order. By default these form values are included:</P>
+<PRE>
+  b_nickname
+  b_name
+  b_fname
+  b_lname
+  b_address
+  b_address1
+  b_address2
+  b_address3
+  b_city
+  b_state
+  b_zip
+  b_country
+  b_phone
+  purchase_order
+  mv_credit_card_type
+  mv_credit_card_exp_month
+  mv_credit_card_exp_year
+  mv_credit_card_info
+</PRE>
+<P>The values are saved with the <TT>[userdb function=set_billing]</TT> tag call, and are recalled with <TT>[userdb function=get_billing]</TT>. A list of the keys available is kept in the form value <TT>accounts</TT>, suitable for iteration in an HTML select box or in a set of links.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_47.html">Parent Topic</A> | <A HREF="icdatabase_51.html">Previous Topic</A> | <A HREF="icdatabase_53.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

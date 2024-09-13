@@ -1,0 +1,44 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Databases: Search Modification</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_22.html">Parent Topic</A> | <A HREF="icdatabase_22.html">Previous Topic</A> | <A HREF="icdatabase_24.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.1. Search Modification</H2>
+<P>Normally, Interchange can search any database and will return all records that match the search specification. Some attributes affect this.</P>
+<H3><A NAME="HIDE_FIELD">4.1.1. HIDE_FIELD</A></H3>
+<P>When set to a field name, i.e.:</P>
+<PRE>
+   Database  sometable  HIDE_FIELD  inactive
+</PRE>
+<P>Interchange will not return records that have that field (in the example, c&lt;inactive&gt;) set to a true (non-blank, non-zero) value.</P>
+<H3><A NAME="NO_SEARCH">4.1.2. NO_SEARCH</A></H3>
+<P>An indication that the database should not be searchable by default. Used to determine the default search files for a product searc.</P>
+<PRE>
+   Database  sometable  NO_SEARCH  1
+</PRE>
+<P>In the <TT>foundation</TT> demo, this is used to prevent the <TT>options</TT> table from being searched for products.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_22.html">Parent Topic</A> | <A HREF="icdatabase_22.html">Previous Topic</A> | <A HREF="icdatabase_24.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

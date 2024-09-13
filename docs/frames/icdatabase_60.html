@@ -1,0 +1,245 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Databases: Order Routing</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_57.html">Parent Topic</A> | <A HREF="icdatabase_59.html">Previous Topic</A> | <A HREF="icdatabase_61.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>9.3. Order Routing</H2>
+<P>Interchange can send order emails and perform custom credit card charges and/or logging for each item. The Route directive is used to control this behavior, along with the <TT>mv_order_route</TT> item attribute.</P>
+<P>If no Route is in the catalog, Interchange uses a default &quot;mail out the order and show a receipt&quot; model.</P>
+<P>Routes are established with the <TT>Route</TT> directive, which is similar to the <TT>Locale</TT> directive. Each route is like a locale, so that key-value pairs can be set. Here is an example setting:</P>
+<PRE>
+   Route  mail  pgp_key         0x67798115
+   Route  mail  email           orders@akopia.com
+   Route  mail  reply           service@akopia.com
+   Route  mail  encrypt         1
+   Route  mail  encrypt_program &quot;/usr/bin/pgpe -fat -q -r %s&quot;
+   Route  mail  report          etc/report_mail
+</PRE>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>Values with whitespace in them must be quoted.
+<HR WIDTH="80%" ALIGN="Left"></P>
+<P>You can also set the route in a valid Perl hash reference string:</P>
+<PRE>
+   Route  mail &lt;&lt;EOR
+   {
+        pgp_key         =&gt; '0x67798115',
+        email           =&gt; 'orders@akopia.com',
+        reply           =&gt; 'service@akopia.com',
+        encrypt         =&gt; 1,
+        encrypt_program =&gt; q{/usr/bin/gpg -e -a -r '%s' --batch},
+        report          =&gt; 'etc/report_mail',
+  }
+  EOR
+</PRE>
+<P>This route would be used whenever the <I>mail</I> route was called by one of the three possible methods:</P>
+<P><B>route called from master route</B></P>
+<UL>
+Called via the <TT>cascade</TT> parameter from the master route. This is the way that most routes are called in Interchange's <A HREF="Foundation.html">the Foundation manpage</A> demo. These routes treat the order as a whole.</UL>
+<P><B>route set in item</B></P>
+<UL>
+An item in the shopping cart has <TT>mail</TT> as the value in the attribute  <TT>mv_order_route</TT>. This method is item-specific to this item (or group of items in route <TT>mail</TT>).</UL>
+<P><B>route set in the form variable mv_order_route</B></P>
+<UL>
+By setting a value in the <TT>mv_order_route</TT> form variable, you can specify one or more routes to run. This is the deprecated method used in earlier Interchange 4.6.x and Minivend 4 routes. It will still work fine.</UL>
+<P>The last route that is defined is the <TT>master</TT> route, by convention named <I>main</I>. Besides setting the global behavior of the routing, it provides some defaults for other routes. For example, if <TT>encrypt_program</TT> is set there, then the same value will be the default for all routes. Most settings do not fall through.</P>
+<P>The attributes that can be set are:</P>
+<P><B>attach</B></P>
+<UL>
+Determines whether the order report should be attached to the main order report e-mail. This is useful if certain items must be printed separately from others, perhaps for FAX to a fulfillment house.
+<BR>
+cascade
+<BR>
+A list of routes which should be pushed on the stack of routes to run, <I>after all currently scheduled routes are done</I>. NOTE: cascades can cause endless loops, so only one setting is recommended, that being the main route.</UL>
+<P><B>commit</B></P>
+<UL>
+Perl code which should be performed on a route commit.</UL>
+<P><B>commit_tables</B></P>
+<UL>
+Tables that are to be pre-opened before running the Perl commit code.</UL>
+<P><B>counter</B></P>
+<UL>
+The location of a counter file which should be used instead of <TT>OrderCounter</TT> for this route. It will generate a different value for <TT>mv_order_number</TT> for the route. This is normally used to obtain unique order references for multi-vendor routing.</UL>
+<P><B>credit_card</B></P>
+<UL>
+Determines whether credit card encryption should be done for this order. Either this or <TT>encrypt</TT> should always be set.</UL>
+<P><B>dynamic_routes</B></P>
+<UL>
+If set in the <A HREF="master.html">the master manpage</A> route, will cause the <A HREF="RouteDatabase.html">the RouteDatabase manpage</A> to be checked for a route. If it exists, it will be read in and the database copy used instead of the static copy build at catalog configuration time. If set in a subsidiary route, that route will be ignored during catalog.cfg, and <TT>dynamic_routes</TT> must be active for it to be seen.</UL>
+<P><B>email</B></P>
+<UL>
+The email address(es) where the order should be sent. Set just like the <TT>MailOrderTo</TT> directive, which is also the default.</UL>
+<P><B>encrypt</B></P>
+<UL>
+Whether the entire order should be encrypted with the <B>encrypt_program</B>. If <TT>credit_card</TT> is set, the credit card will first be encrypted, then the entire order encrypted.</UL>
+<P><B>encrypt_program</B></P>
+<UL>
+The encryption program incantation which should be used. Set identically to the <TT>EncryptProgram</TT> directive, except that %s will be replaced with the <TT>pgp_key</TT>. Default is empty.</UL>
+<P><B>errors_to</B></P>
+<UL>
+Sets the <TT>Errors-To:</TT> e-mail header so that bounced orders will go to the proper address. Default is the same as <TT>MailOrderTo</TT>.</UL>
+<P><B>expandable</B></P>
+<UL>
+If set in the <A HREF="master.html">the master manpage</A> route, route settings will be expanded for ITL tags. No effect if the route is not the master.</UL>
+<P><B>extended</B></P>
+<UL>
+Extended route settings that take the form of an Interchange option list; normally a Perl hash reference that will be read. These settings always overwrite any that currently exist, regardless of the order in which they are specified. For example:</UL>
+<PRE>
+        Route  main   extended    { email =&gt; 'milton@akopia.com' }
+        Route  main   email       papabear@minivend.com
+</PRE>
+<P>The ultimate setting of <TT>email</TT> will be <TT>milton@akopia.com</TT>.</P>
+<P><B>increment</B></P>
+<UL>
+Whether the order number should be incremented as a result of this result. Default is not to increment, as the order number should usually be the same for different routes within the same customer order.</UL>
+<P><B>individual_track</B></P>
+<UL>
+A directory where individual order tracking files will be placed. The file name will correspond to the value of <TT>mv_order_number</TT>. This can be useful for batching orders via download.</UL>
+<P><B>individual_track_ext</B></P>
+<UL>
+The extension that will be added to the file name for <TT>individual_track</TT>. Must contain a period (<TT>.</TT>), if that is desired.</UL>
+<PRE>
+   individual_track_ext     .pgp
+</PRE>
+<P><B>individual_track_mode</B></P>
+<UL>
+A number representing the final permission mode for the <TT>individual_track</TT> file. Usually expressed in octal:</UL>
+<PRE>
+   individual_track_mode    0444
+</PRE>
+<P><B>master</B></P>
+<UL>
+If set, this route becomes the master route for <TT>supplant</TT>, <TT>dynamic_routes</TT>, <TT>errors_to</TT>, and <TT>expandable</TT>, and supplies the setting for <TT>receipt</TT> and the <TT>attach</TT> report.  Switching <TT>master</TT> in midstream is unlikely to be successful -- it should certainly be the first route in a cascade.</UL>
+<P><B>payment_mode</B></P>
+<UL>
+If this is set, enables a payment mode for the route. (Payment modes are also set in the <TT>Route</TT> directive.)</UL>
+<P><B>pgp_cc_key</B></P>
+<UL>
+The PGP/GPG key selector that is used to determine which public key is used for encryption of credit cards only. With PGP 5 and 6, see appropriate values by using the command <TT>pgpk -l</TT>. For GPG, use <TT>gpg --list-keys</TT>. Defaults to the value of <A HREF="pgp_key.html">the pgp_key manpage</A>.</UL>
+<P><B>pgp_key</B></P>
+<UL>
+The PGP key selector that is used to determine which public key is used for encryption. If <TT>pgp_cc_key</TT> is set, that key will be used for credit card encryption instead of <TT>pgp_key</TT>. With PGP 5 and 6, see appropriate values by using the command <TT>pgpk -l</TT>. For GPG, use <TT>gpg --list-keys</TT>. Defaults to the value of <A HREF="pgp_key.html">the pgp_key manpage</A>.</UL>
+<P><B>profile</B></P>
+<UL>
+The custom order profile which should be performed to check the order <I>prior</I> to actually running the route. If it fails, the route will not be performed. See <TT>OrderProfile</TT> and <TT>mv_order_profile</TT>.</UL>
+<P><B>receipt</B></P>
+<UL>
+The receipt page that should be used for this routing. This only applies if supplant is set for the route, and that normally would only be in the default route.</UL>
+<P><B>report</B></P>
+<UL>
+The report page that should be used for this routing. If <TT>attach</TT> is defined, the contents of the report will be placed in a MIME attachment in the main order report.</UL>
+<P><B>reply</B></P>
+<UL>
+The <TT>Reply-To</TT> header that should be set. Default is the same as <TT>email</TT>.
+<BR>
+If there are only word characters (A-Za-z0-9 and underscore), it describes an Interchange variable name where the address can be found.</UL>
+<P><B>rollback</B></P>
+<UL>
+Perl code which should be performed on a route rollback.</UL>
+<P><B>rollback_tables</B></P>
+<UL>
+Tables that are to be pre-opened before running the Perl rollback code.</UL>
+<P><B>supplant</B></P>
+<UL>
+Whether the master route should supplant the main order report. If set, the <TT>AsciiTrack</TT> operation will use this route and the normal Interchange order e-mail sequence will not be performed. This is normally set in the master route.</UL>
+<P><B>track</B></P>
+<UL>
+The name of a file which should be used for tracking. If the <TT>supplant</TT> attribute is set, the normal order tracking will be used as well.</UL>
+<P><B>track_mode</B></P>
+<UL>
+A number representing the final permission mode for the <TT>track</TT> file. Usually expressed in octal:</UL>
+<PRE>
+   track_mode    0444
+</PRE>
+<P><B>transactions</B></P>
+<UL>
+A list of tables to put in transactions mode at the beginning of the route. Used to ensure that orders get rolled back if another route fails.
+<BR>
+The <I>first</I> route to open a table must have this parameter, otherwise transactions will not work. If any route fails (except ones marked error_ok) then a rollback will be done on these tables. If all routes succeed, a commit will be performed at the end of all order routes.</UL>
+<P>Individual item routing causes all items labeled with that route to be placed in a special sub-cart that will be used for the order report. This means that the <TT>[item-list] LIST [/item-list]</TT> will only contain those items, allowing operations to be performed on subsets of the complete order. The <TT>[subtotal]</TT>, <TT>[salestax]</TT>, <TT>[shipping]</TT>, <TT>[handling]</TT>, and <TT>[total-cost]</TT> tags are also affected.</P>
+<P>Here is an example of an order routing:</P>
+<PRE>
+   Route  HARD      pgp_key          0x67798115
+   Route  HARD      email            hardgoods@akopia.com
+   Route  HARD      reply            service@akopia.com
+   Route  HARD      encrypt          1
+   Route  HARD      report           etc/report_mail
+
+   Route  SOFT      email            &quot;&quot;
+   Route  SOFT      profile          create_download_link
+   Route  SOFT      empty            1
+
+   Route  mail      pgp_key          0x67798115
+   Route  mail      email            orders@akopia.com
+   Route  mail      reply            service@akopia.com
+   Route  mail      encrypt          1
+   Route  mail      report           etc/report_all
+
+   Route  user      error_ok         1
+   Route  user      email            email
+   Route  user      reply            service@akopia.com
+   Route  user      report           etc/user_copy
+
+   Route  log       empty            1
+   Route  log       report           etc/log_transaction
+   Route  log       transactions     &quot;transactions orderline inventory&quot;
+   Route  log       track            logs/log
+
+   Route  main      supplant         1
+   Route  main      receipt          etc/receipt.html
+   Route  main      master           log mail user
+   Route  main      cascade          log mail user
+   Route  main      encrypt_program  &quot;/usr/bin/gpg -e -a r '%s' --batch&quot;
+
+</PRE>
+<P>This will have the following behavior:</P>
+<P><B>Order</B></P>
+<UL>
+The master order route is <I>main</I>, the last one defined. It cascades the routes <I>log</I>, <I>mail</I>, and <I>user</I>, which means they will run in that order at the completion of the <I>main</I> route. The individual item routes <TT>HARD</TT> and <TT>SOFT</TT>, if applicable, will run before those.</UL>
+<P><B>Transactions</B></P>
+<UL>
+The route <I>log</I> specifies the tables that will be put in transaction mode, in this case <TT>transactions</TT> <TT>orderline</TT>, and <TT>inventory</TT>.</UL>
+<P><B>Failure</B></P>
+<UL>
+All order routes must succeed except <I>user</I>, which has <TT>error_ok</TT> set to 1.</UL>
+<P><B>Encryption The <I>mail</I> order route and the <TT>HARD</TT> order route will be sent by email, and encrypted against different GPG key IDs. They will get their <TT>encrypt_program</TT> setting from the main route.</B></P>
+<P>To set the order routing for individual items, some method of determining their status must be made and the <TT>mv_order_route</TT> attribute must be set. This could be set at the time of the item being placed in the basket, or have a database field called <TT>goods_type</TT> set to the appropriate value. The following example uses a Perl routine on the final order form:</P>
+<PRE>
+  [perl table=products]
+     <B>my</B> %route;
+     <B>my</B> $item;
+     <B>foreach</B> $item (@{$Items}) {
+         <B>my</B> $code = $item-&gt;{code};
+         <B>my</B> $keycode = $Tag-&gt;data(<TT>'products'</TT>, <TT>'goods_type'</TT>, $code);
+         $item-&gt;{mv_order_route} = $keycode;
+     }
+     <B>return</B>;
+  [/perl]
+</PRE>
+<P>Now the individual items are labeled with a <TT>mv_order_route</TT> value which causes their inclusion in the appropriate order routing.</P>
+<P>Upon submission of the order form, any item labeled <TT>HARD</TT> will be accumulated and sent to the e-mail address <TT>hardgoods@akopia.com</TT>, where the item will be pulled from inventory and shipped.</P>
+<P>Any item labeled <TT>SOFT</TT> will be passed to the order profile <TT>create_download_link</TT>, which will place it in a staging area for customer download. (This would be supported by a link on the receipt, possibly by reading a value set in the profile).</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_57.html">Parent Topic</A> | <A HREF="icdatabase_59.html">Previous Topic</A> | <A HREF="icdatabase_61.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

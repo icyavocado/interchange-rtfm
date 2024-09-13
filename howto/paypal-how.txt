@@ -1,0 +1,146 @@
+Okay, here's my description of how to make PayPal work with Interchange. This is quite rough, and I might be leaving something out. I'm no programmer, but this gets the job done for me. Please backup all important things before trying this.
+
+Preliminaries:
+Get the web accept manual! I couldn't find it on their site, but I will upload a copy to http://www.signless.com/paypal/wa_manual_v5.0.pdf
+
+I had to change the format of my userdb some. First, I let PayPal handle the "billing address" completely, so I removed that. Second I changed the phone numbers into three separate fields each:
+
+| night_phone_a            | smallint(6)   | YES  |     | NULL    |       |
+| night_phone_b            | smallint(6)   | YES  |     | NULL    |       |
+| night_phone_c            | smallint(6)   | YES  |     | NULL    |       |
+| day_phone_a              | smallint(6)   | YES  |     | NULL    |       |
+| day_phone_b              | smallint(6)   | YES  |     | NULL    |       |
+| day_phone_c              | smallint(6)   | YES  |     | NULL    |       |
+
+This is how PayPal want it passed. You could also use a regex to break it down I suppose but this is simpler if you're starting from scratch.
+
+Okay, on to business.
+
+Checkout:
+
+Neuter the checkout page. The initial takes the user's info and checks it. I also put a little explanation of how the checkout works and a PayPal logo. Here's the most relivant lines from mine:
+<pre>
+<FORM ACTION="[process secure=1]" METHOD="POST" name=checkout>
+<INPUT TYPE=hidden NAME=mv_session_id VALUE="[data session id]">
+<INPUT TYPE=hidden NAME=mv_order_route   VALUE="[either]__ORDER_ROUTES__[or]log main copy_user[/either]">
+<INPUT TYPE=HIDDEN NAME=mv_check    VALUE="Save_database">
+
+[set Continue Shopping]
+mv_todo=go
+mv_nextpage=index
+[/set]
+
+[set Recalculate]
+mv_todo=refresh
+mv_nextpage=ord/checkout
+[/set]
+
+[set Place Order]
+mv_todo=submit
+mv_order_profile=checkout_initial
+mv_successpage=checkout2
+mv_failpage=ord/checkout
+[/set]
+
+<INPUT TYPE=submit NAME=mv_click VALUE="Continue Shopping">
+<INPUT TYPE=submit NAME=mv_click VALUE="Recalculate">
+<INPUT TYPE=submit NAME=mv_click VALUE="Place Order">
+</pre>
+
+Basically, the if the customer places the order it is checked against the order profile checkout_initial. If it fails it is returned to checkout for error processing as normal; if it succeeds it is sent to the page called checkout2 which bounces them to PayPal (see below). 
+
+
+The order profiles:
+
+I added the following to profiles.order:
+
+__NAME__                            checkout_initial
+fname=required
+lname=required
+address1=required
+city=required
+country=required
+[if value country =~ /^(US|CA)$/i]
+	state=state_province
+	zip=postcode
+[/if]
+
+&fatal = yes
+email=required
+email=email
+
+&set = mv_payment Incomplete
+
+&final = no
+&setcheck=mv_email [value email]
+
+__NAME__                            checkout_profile
+fname=required
+lname=required
+address1=required
+city=required
+country=required
+[if value country =~ /^(US|CA)$/i]
+	state=state_province
+	zip=postcode
+[/if]
+
+&fatal = yes
+email=required
+email=email
+
+&set = mv_payment Complete
+
+&final = yes
+&setcheck=mv_email [value email]
+
+---------------------------------------------------------
+The first profile, checkout_initial, simply ensures that everything is there. The important part is &final = no... we do not want to submit the order yet. The second profile is the final profile that is &final. Obviously you can check on more fields, mine is fairly simple.
+
+checkout2:
+
+This where the magic happens:
+
+<HTML>
+<HEAD>
+
+[tmp dirty_cost][total-cost][/tmp]
+
+[tmp clean_price][perl]
+    my $FilterData = $Scratch->{dirty_cost};
+    $FilterData =~ s/\$//g;
+    return $FilterData;
+[/perl][/tmp]
+
+[tmp raw_url]https://www.paypal.com/cgi-bin/webscr?cmd=_ext-enter&redirect_cmd=_xclick&business=payment%40edenclothing.com&return=[area ord/paypal_standby]&amount=[scratch clean_price]&no_shipping=1&cancel_return=[area paypal-failed]&no_note=1&item_name=Eden+Clothing+Purchase&first_name=[cgi fname]&last_name=[cgi lname]&address1=[cgi address1]&address2=[cgi address2]&city=[cgi city]&state=[cgi state]&zip=[cgi zip]&night_phone_a=[cgi night_phone_1]&night_phone_b=[cgi night_phone_2]&night_phone_c=[cgi night_phone_3]&day_phone_a=[cgi day_phone_1]&day_phone_b=[cgi day_phone_2]&day_phone_c=[cgi day_phone_3][/tmp]
+
+[tmp wa_url][perl]
+    my $FilterData = $Scratch->{raw_url};
+
+    $FilterData =~ s/#*//g;
+    return $FilterData; 
+[/perl][/tmp]
+
+<TITLE>Please wait....</TITLE>
+
+</HEAD>
+<BODY>
+
+<H2> Please wait while you are transfered to the secure PayPal area.</H2><BR>
+If this page shows longer than 30 seconds, click <A href="[scratch wa_url]">here</A>.
+      
+[bounce href="[scratch wa_url]"]
+
+</BODY>
+</HTML>
+
+----------------------------------------------------
+This page builds a URL and uses a [bounce] tag to send the user to that page. All these parameters described in the web accept manual. The name, address, and phone number are pre-population fields (so the customer doesn't have to enter them in the paypal page. I converted some parts of the URL (i.e. the @ in the e-mail address converted to %40) but I'm not sure it's needed. The manual says alpha-numeric chars only in most of these fields... a little experimenting showed me that the only char it will reject is # (which, unfortunatly, is the most common special char in an address). The little bit of perl code will remove any pound signs. Also, most annoyingly, PayPal insists on having no dolar signs in the price. Easy enough, just use [total-cost noformat=1] right? WRONG! They also (starting very recently) won't accept a price unless it has two decimal places even if the cents are divisable by ten (i.e.6.50 NOT 6.5). So the other perl tag just removes the $. The user should never see this page, but just in case their browser doesn't complete the bounce, there's a message and a link. For me the bounce is always seamless using IE 5 and Mozilla latest stable. 
+
+-----------------------------------------------------
+
+From here, the user is in the hands of PayPal. Try it out, tweak the variables to your liking. Remember, if you want to use an image at the top of the page, it must be hosted in HTTPS space or it will result in the user seeing a security error! If the user succeds in paypal, they are taken to the success page (in my case, ord/paypal_standby).
+
+Now, the next page is the "real" checkout. Mine just says "please verify your information and hit submit". You could find a a way around this step, like using JavaScript to submit a form with all hidden variables. It's up to you. Since everything is completed, you can more or less just use the default checkout page for this. When the order completes they get the receipt page as normal. 
+
+When using this method it is important to remember to manually verify payments and amounts. It would be simple to change the URL and thus the amount of the payment. I plan to add support for the instant payment verification, but I havn't gotten time yet. I will let the list know when I do. 

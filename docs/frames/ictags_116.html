@@ -1,0 +1,349 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: tree</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_115.html">Previous Topic</A> | <A HREF="ictags_117.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.82. tree</H2>
+<H3><A NAME="Summary">4.82.1. Summary</A></H3>
+<P>Parameters: <B>table master subordinate start</B></P>
+<P><B>The attribute hash reference is passed</B> after the parameters but before the container text argument. <B>This may mean that there are parameters not shown here.</B></P>
+<P>Must pass named parameter interpolate=1 to cause interpolation.</P>
+<P>This is a container tag, i.e. [tree] FOO [/tree]. Nesting: NO</P>
+<P>Invalidates cache: <B>no</B></P>
+<P>Called Routine:</P>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+    $Tag-&gt;tree(
+        {
+         table =&gt; VALUE,
+         master =&gt; VALUE,
+         subordinate =&gt; VALUE,
+         start =&gt; VALUE,
+        },
+        BODY
+    )
+
+ OR
+
+    $Tag-&gt;tree($table, $master, $subordinate, $start, $ATTRHASH, $BODY);
+</PRE>
+<P>Attribute aliases</P>
+<PRE>
+            sub ==&gt; subordinate
+    [<B>tree</B> table master subordinate start <I>other_named_attributes</I>]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_116.html#tree_master">master</A>
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_116.html#tree_start">start</A>
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_116.html#tree_subordinate">sub</A>
+</TD>
+<TD VALIGN='Top'>
+Alias for subordinate
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_116.html#tree_subordinate">subordinate</A>
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_116.html#tree_table">table</A>
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_interpolate">interpolate</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_reparse">reparse</A>
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>no</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Container tag
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Has Subtags
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Nests
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+    [tree table master subordinate start]
+---
+    TODO: (tag result)
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+   $Tag-&gt;tree(  { master =&gt; VALUE_master
+                   start =&gt; VALUE_start
+                   subordinate =&gt; VALUE_subordinate
+                   table =&gt; VALUE_table
+}, $body  );
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;tree(table,master,subordinate,start, $attribute_hash_reference, $body);
+</PRE>
+<H3><A NAME="Description">4.82.2. Description</A></H3>
+<P>Provides iterative list capability for binary trees. It produces hash-based rows use the same tags as [<A HREF="ictags_76.html#item-list">item-list</A>]; sets some additional hash key entries to describe the tree and provide display control.</P>
+<P>Works on a data set with the structure:</P>
+<PRE>
+    parent  child
+    99      a
+    a       b
+    a       c
+    a       d
+    a       x
+    x       y
+    x       z
+    99      m
+    99      n
+    99      o
+    o       e
+    o       f
+    o       g
+</PRE>
+<P>Sets several keys which assist in walking and displaying the tree.</P>
+<H4><A NAME="tree_key_mv_level"> </A>4.82.2.1. <A NAME="tree_key_mv_level">mv_level</A></H4>
+<P>Level of the item. If it is in the first level, it is 0. Sublevels are infinite (except for performance).</P>
+<H4><A NAME="tree_key_mv_increment"> </A>4.82.2.2. <A NAME="tree_key_mv_increment">mv_increment</A></H4>
+<P>Increment label for the item. Normally goes from 1...n, but can be changed to A...Z or a...z in outline mode.</P>
+<H4><A NAME="tree_key_mv_children"> </A>4.82.2.3. <A NAME="tree_key_mv_children">mv_children</A></H4>
+<P>If in autodetect mode, set to the number of children this branch has. If a leaf, set to 0.</P>
+<H4><A NAME="tree_key_mv_spacing"> </A>4.82.2.4. <A NAME="tree_key_mv_spacing">mv_spacing</A></H4>
+<P>A multiple of level times the spacing option. Useful for setting width of spacer images.</P>
+<P>The above sample data placed in a table named &quot;tree&quot; would produce:</P>
+<PRE>
+    a           mv_level=0, mv_increment=1, mv_children=4
+        b       mv_level=1, mv_increment=1, mv_children=0
+        c       mv_level=1, mv_increment=2, mv_children=0
+        d       mv_level=1, mv_increment=3, mv_children=0
+        x       mv_level=1, mv_increment=4, mv_children=2
+            y   mv_level=2, mv_increment=1, mv_children=0
+            z   mv_level=2, mv_increment=2, mv_children=0
+    m           mv_level=0, mv_increment=1, mv_children=0
+    n           mv_level=0, mv_increment=2, mv_children=0
+    o           mv_level=0, mv_increment=3, mv_children=3
+        e       mv_level=1, mv_increment=1, mv_children=0
+        f       mv_level=1, mv_increment=2, mv_children=0
+        g       mv_level=1, mv_increment=3, mv_children=0
+</PRE>
+<P>from the tag call:</P>
+<PRE>
+        &lt;table&gt;
+    [tree   start=99
+            table=tree
+            master=parent
+            subordinate=child
+            autodetect=1
+            spacing=4
+            full=1]
+        &lt;tr&gt;
+        &lt;td&gt;
+        [if-item-param mv_level]
+                [item-calc]
+                        return '&amp;nbsp' x [item-param mv_spacing];
+                [/item-calc]
+        [/if-item-param]
+        [item-param child]
+        &lt;/td&gt;
+        &lt;td&gt;
+                mv_level=[item-param mv_level],
+                mv_increment=[item-param mv_increment],
+                mv_children=[item-param mv_children]
+        &lt;/td&gt;
+        &lt;/tr&gt;
+        [/tree]
+        &lt;/table&gt;
+</PRE>
+<P>Accepts the following parameters:</P>
+<H4><A NAME="tree_table"> </A>4.82.2.5. <A NAME="tree_table">table</A></H4>
+<P>Database table which contains the tree. Must be a valid Interchange table identifier.</P>
+<H4><A NAME="tree_master"> </A>4.82.2.6. <A NAME="tree_master">master</A></H4>
+<P>The column which is used to determine the parent of the item.</P>
+<H4><A NAME="tree_subordinate"> </A>4.82.2.7. <A NAME="tree_subordinate">subordinate</A></H4>
+<P>The child column, which determines which items are sub-items of the current one. Used to re-query for items with its value in <TT>master</TT>.</P>
+<H4><A NAME="tree_start_item"> </A>4.82.2.8. <A NAME="tree_start_item">start_item</A></H4>
+<P>The first item to be followed, i.e. the <TT>master</TT> value of all the top-level items.</P>
+<H4><A NAME="tree_autodetect"> </A>4.82.2.9. <A NAME="tree_autodetect">autodetect</A></H4>
+<P>Specifies that the next level should be followed to detect the number of child items contained. Not recursive; only follows far enough to determine the children of the current item.</P>
+<H4><A NAME="tree_full"> </A>4.82.2.10. <A NAME="tree_full">full</A></H4>
+<P>Specifies that all items should be followed. Essentially the same as specifying <TT>memo</TT> and passing the <TT>explode</TT> variable, but not dependent on them. Useful for building lists for inclusion in embedded Perl, among other things.</P>
+<H4><A NAME="tree_stop"> </A>4.82.2.11. <A NAME="tree_stop">stop</A></H4>
+<P>An optional <TT>stop</TT> field which, when the value is true, can stop the following of the branch.</P>
+<H4><A NAME="tree_continue"> </A>4.82.2.12. <A NAME="tree_continue">continue</A></H4>
+<P>An optional <TT>continue</TT> field which, when the value is true, can force the branch to be followed.</P>
+<H4><A NAME="tree_sort"> </A>4.82.2.13. <A NAME="tree_sort">sort</A></H4>
+<P>The column which should be used for ordering the items&nbsp;-- determines the order in which they will be displayed under the current parent.</P>
+<H4><A NAME="tree_outline"> </A>4.82.2.14. <A NAME="tree_outline">outline</A></H4>
+<P>Sets outline mode, where <TT>mv_increment</TT> will be displayed with letter values or numeral values. If set to specifically <TT>1</TT>, will produced outline increments like:</P>
+<PRE>
+    1
+        A
+        B
+            1
+            2
+        C
+            1
+            2
+                a
+                b
+                    1
+                    2
+                        a
+                        b
+    2
+</PRE>
+<H4><A NAME="tree_memo"> </A>4.82.2.15. <A NAME="tree_memo">memo</A></H4>
+<P>Indicates that the collapse/explode/toggle features are to be used, and names a <TT>Scratch</TT> variable where the values should be stored.</P>
+<H4><A NAME="tree_collapse"> </A>4.82.2.16. <A NAME="tree_collapse">collapse</A></H4>
+<P>The name of a variable in the user's session which will determine that the tree should be &quot;collapsed&quot;. When collapsed, the child items will not be followed unless they are set to be followed with <TT>toggle</TT>. Zeros all toggles.</P>
+<P>Requires <TT>memo</TT> to be set if values are to be retained.</P>
+<H4><A NAME="tree_toggle"> </A>4.82.2.17. <A NAME="tree_toggle">toggle</A></H4>
+<P>The name of a variable in the user's session which will determine that the current item should be either followed or not followed. The first time the <TT>toggle</TT> variable corresponding to its primary key is passed, the item will be expanded. The next call will &quot;collapse&quot; the item.</P>
+<P>Requires <TT>memo</TT> to be set if values are to be retained.</P>
+<H4><A NAME="tree_explode"> </A>4.82.2.18. <A NAME="tree_explode">explode</A></H4>
+<P>The name of a variable in the user's session which will determine that the tree should be &quot;exploded&quot;. When exploded, all child items are followed and the full tree can be displayed.</P>
+<P>Requires <TT>memo</TT> to be set if values are to be retained.</P>
+<H4><A NAME="tree_pedantic"> </A>4.82.2.19. <A NAME="tree_pedantic">pedantic</A></H4>
+<P>When set to a true value, and an endless tree is detected (i.e. the child branch contains a parent) then the error will be logged to the catalog error log and the tree call will return with an error.</P>
+<P>If <TT>pedantic</TT> is not set (the default), the current leaf will be shown but never followed. This allows partial display of the tree.</P>
+<H4><A NAME="tree_log_error"> </A>4.82.2.20. <A NAME="tree_log_error">log_error</A></H4>
+<P>When set to a true value, and an endless tree is detected (i.e. the child branch contains a parent) then the error will be logged to the catalog error log. No logging done by default.</P>
+<H4><A NAME="tree_show_error"> </A>4.82.2.21. <A NAME="tree_show_error">show_error</A></H4>
+<P>When set to a true value, and an endless tree is detected (i.e. the child branch contains a parent) then the error will be returned in the page. Errors are NOT shown by default.</P>
+<P>In addition to the above values, all valid options for a list tag are in force. For example, you can set a &quot;SELECTED&quot; value on an option list with <TT>option=1</TT>, set the tag prefix with <TT>prefix</TT>, etc.</P>
+<H4><A NAME="tree_master"> </A>4.82.2.22. <A NAME="tree_master">master</A></H4>
+<H4><A NAME="tree_start"> </A>4.82.2.23. <A NAME="tree_start">start</A></H4>
+<H4><A NAME="tree_subordinate"> </A>4.82.2.24. <A NAME="tree_subordinate">subordinate</A></H4>
+<H4><A NAME="tree_table"> </A>4.82.2.25. <A NAME="tree_table">table</A></H4>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_115.html">Previous Topic</A> | <A HREF="ictags_117.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

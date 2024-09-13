@@ -1,0 +1,71 @@
+#
+#	count_sessions.usertag
+#	----------------------
+#	Kevin Walsh <kevin@cursor.biz>
+#
+#	Copyright (c) 2002 Cursor Software Limited.
+#	All Rights Reserved.
+#
+#	This program is free software; you can redistribute it and/or modify
+#	it under the terms of the GNU General Public License as published by
+#	the Free Software Foundation; either version 2 of the License, or
+#	(at your option) any later version.
+#
+#	This program is distributed in the hope that it will be useful,
+#	but WITHOUT ANY WARRANTY; without even the implied warranty of
+#	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#	GNU General Public License for more details.
+#
+#	You should have received a copy of the GNU General Public
+#	License along with this program; if not, write to the Free
+#	Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+#	MA  02111-1307  USA.
+#
+#	Summary:
+#
+#	    Counts the number of "active" sessions.
+#
+#	Parameters:
+#
+#	    expire:
+#		Number of minutes inactivity to allow before ignoring a
+#		session in the current count.
+#
+#		Defaults to the value of the ACTIVE_SESSION_MINUTES
+#		catalog.cfg variable or the value of the SessionExpire
+#		directive.
+#
+#	Usage example:
+#
+#	    There are [count-sessions expire="15"] active sessions.
+#
+#	    (Outputs like: "There are 7 active sessions.")
+#
+#	Note:
+#	    Only works for file-based sessions.
+#
+UserTag count_sessions Order expire
+UserTag count_sessions Routine <<EOR
+sub {
+    require File::Find;
+
+    my $expire = shift;
+
+    if ($expire){
+	$expire *= 60;
+    }
+    else{
+	$expire = (int($::Variable->{ACTIVE_SESSION_MINUTES}) * 60) or $Vend::Cfg->{SessionExpire};
+    }
+
+    $expire = time() - $expire;
+    my @files;
+
+    my $wanted = sub{
+	push @files, $_ unless (/\.lock$/ or ! -f $_ or (stat(_))[9] < $expire);
+    };
+
+    File::Find::find($wanted,$Vend::Cfg->{SessionDatabase});
+    scalar @files;
+}
+EOR

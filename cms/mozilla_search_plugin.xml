@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+    <ShortName>Interchange RTFM website</ShortName>
+    <Description>Search the Interchange documentation at interchange.rtfm.info</Description>
+    <Url type="text/html" method="POST" template="http://interchange.rtfm.info/search.html">
+	<Param name="cms_toolbar_search" value="Mozilla" />
+	<Param name="mv_profile" value="cms_search" />
+	<Param name="mv_searchspec" value="{searchTerms}" />
+    </Url>
+    <Image width="16" height="16" type="image/x-icon">http://interchange.rtfm.info/favicon16.ico</Image>
+    <Developer>Kevin Walsh - Cursor Software - www.cursor.biz</Developer>
+    <InputEncoding>UTF-8</InputEncoding>
+    <moz:SearchForm>http://interchange.rtfm.info/</moz:SearchForm>
+    <moz:UpdateUrl>http://interchange.rtfm.info/cms/mozilla_search_plugin.xml</moz:UpdateUrl>
+    <moz:IconUpdateUrl>http://interchange.rtfm.info/favicon16.ico</moz:IconUpdateUrl>
+    <moz:UpdateInterval>7</moz:UpdateInterval>
+</OpenSearchDescription>

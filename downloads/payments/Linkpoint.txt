@@ -1,0 +1,122 @@
+Linkpoint(3)          User Contributed Perl Documentation         Linkpoint(3)
+
+
+
+NAME
+       Vend::Payment::Linkpoint - Interchange Linkpoint Support
+
+SYNOPSIS
+           &charge=linkpoint
+
+               or
+
+           [charge mode=linkpoint param1=value1 param2=value2]
+
+PREREQUISITES
+           LPERL
+
+DESCRIPTION
+       The Vend::Payment::Linkpoint module implements the linkpoint() routine
+       for use with Interchange. It is compatible on a call level with the
+       other Interchange payment modules -- in theory (and even usually in
+       practice) you could switch from CyberCash to Linkpoint with a few con-
+       figuration file changes.
+
+       To enable this module, place this directive in "interchange.cfg":
+
+           Require module Vend::Payment::Linkpoint
+
+       This must be in interchange.cfg or a file included from it.
+
+       Make sure CreditCardAuto is off (default in Interchange demos).
+
+       The mode can be named anything, but the "gateway" parameter must be set
+       to "linkpoint". To make it the default payment gateway for all credit
+       card transactions in a specific catalog, you can set in "catalog.cfg":
+
+           Variable MV_PAYMENT_MODE linkpoint
+
+       It uses several of the standard settings from Interchange payment. Any
+       time we speak of a setting, it is obtained either first from the
+       tag/call options, then from an Interchange order Route named for the
+       mode, then finally a default global payment variable, For example, the
+       "id" parameter would be specified by:
+
+           [charge mode=linkpoint id=YourLinkpointID]
+
+       or
+
+           Route linkpoint id YourLinkpointID
+
+       or
+
+           Variable MV_PAYMENT_ID YourLinkpointID
+
+       Required settings are "id" and "keyfile".
+
+       The active settings are:
+
+       host
+           Your LinkPoint Secure Payment Gateway (LSPG) hostname. Usually
+           secure.linkpt.net (production) or staging.linkpt.net (testing).
+
+       keyfile
+           File name of the merchant security certificate. This file should
+           contain the RSA private key and the certificate, otherwise you get
+           an error like "Unable to open/parse client certificate file."
+
+       id  Store number assigned to your merchant account.
+
+       transaction
+           The type of transaction to be run. Valid values are:
+
+               Interchange         Linkpoint
+               ----------------    -----------------
+                   auth            preauth
+                   sale            sale
+
+           Default is "sale".
+
+       Troubleshooting
+
+       If nothing works:
+
+       o   Make sure you "Require"d the module in interchange.cfg:
+
+               Require module Vend::Payment::Linkpoint
+
+       o   Make sure lpperl (v3.0.012+) is installed and working. You can test
+           to see whether your Perl thinks they are:
+
+               perl -Mlpperl -e 'print "It works.\n"'
+
+           If it "It works." and returns to the prompt you should be OK (pre-
+           suming they are in working order otherwise).
+
+       o   Make sure curl is installed and working.  Lpperl uses curl to con-
+           tact Linkpoint.
+
+       o   Check the error logs, both catalog and global.
+
+       o   Make sure you set your payment parameters properly.
+
+       o   Try an order, then put this code in a page:
+
+               <XMP>
+               [calc]
+                   my $string = $Tag->uneval( { ref => $Session->{payment_result} });
+                   $string =~ s/{/{\n/;
+                   $string =~ s/,/,\n/g;
+                   return $string;
+               [/calc]
+               </XMP>
+
+           That should show what happened.
+
+BUGS
+       There is actually nothing *in* Vend::Payment::Linkpoint. It changes
+       packages to Vend::Payment and places things there.
+
+AUTHOR
+       Stefan Hornburg (Racke) <racke@linuxia.de> Ron Phipps
+       <rphipps@reliant-solutions.com>

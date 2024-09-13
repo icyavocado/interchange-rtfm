@@ -1,0 +1,116 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Databases: Coordinated and Joined Searching</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_25.html">Parent Topic</A> | <A HREF="icdatabase_28.html">Previous Topic</A> | <A HREF="icdatabase_30.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>5.4. Coordinated and Joined Searching</H2>
+<P>Interchange will do a complete range of tests on individual columns in the database. To use this function, set <TT>mv_coordinate</TT> to Yes (co=yes in the one-click syntax). In order to use coordinated searching, the number of search fields must equal the number of search strings.</P>
+<P>To make sure that is the case, use the <TT>mv_search_map</TT> variable. It allows variables to be mapped to others in the search specification. For example:</P>
+<PRE>
+   &lt;INPUT TYPE=hidden NAME=mv_search_map VALUE=&quot;
+       mv_searchspec=search1
+       mv_searchspec=search2
+       mv_searchspec=search3
+       &quot;&gt;
+   &lt;INPUT TYPE=hidden NAME=mv_search_field VALUE=title&gt;
+   &lt;INPUT TYPE=hidden NAME=mv_search_field VALUE=artist&gt;
+   &lt;INPUT TYPE=hidden NAME=mv_search_field VALUE=category&gt;
+   Artist: &lt;INPUT NAME=search1 VALUE=&quot;&quot;&gt;
+   Title:  &lt;INPUT NAME=search2 VALUE=&quot;&quot;&gt;
+   Genre:  &lt;INPUT NAME=search3 VALUE=&quot;&quot;&gt;
+</PRE>
+<P>Even if the user leaves one blank, the search will work.</P>
+<P>Leading/trailing whitespace is stripped from all lines in the <TT>mv_search_map</TT> variable, so it can be positioned as shown for convenience.</P>
+<P>Coordinated searches may be joined with the output of another table if set one of the <TT>mv_search_field</TT> values is set to a <TT>table:column</TT> pair. Note that this will slow down large searches considerably unless there is another search specification, as the database must be accessed for every search line If there is a search field that qualifies for a regular expression search function, or conducting a binary search with <TT>mv_dict_look</TT>, or are not doing an <TT>OR</TT> search, the penalty should not be too great as only matching lines will cause an access to the database.</P>
+<P>Individual field operations can then be specified with the <TT>mv_column_op</TT> (or op) parameter. The operations include:</P>
+<PRE>
+   operation            string     numeric   equivalent
+   ---------
+   equal to               eq         ==           =
+   not equal              ne         !=           &lt;&gt;
+   greater than           gt         &gt;
+   less than              lt         &lt;
+   less than/equal to     le         &lt;=
+   greater than/equal to  ge         &gt;=
+   regular expression     rm                       =~ , LIKE
+   regular expression NOT rn                       !~
+   exact match            em
+</PRE>
+<P>An example:</P>
+<PRE>
+   [page search=&quot;
+           co=yes
+           sf=title
+           se=Sunflowers
+           op=em
+           sf=artist
+           se=Van Gogh
+           op=rm
+   &quot;] Sunflowers, Van Gogh &lt;/a&gt;
+
+   [page search=&quot;
+           co=yes
+
+           sf=title
+           se=Sunflowers
+           nu=0
+           op=!~
+
+           sf=artist
+           se=Van Gogh
+           op=rm
+           nu=0
+
+           sf=inventory:qty
+           se=1
+           op=&gt;=
+           nu=1
+   &quot;] Any in stock except Sunflowers, Van Gogh &lt;/a&gt;
+</PRE>
+<P>Note that in the second example, nu=0 must be specified even though that is the default. This is to set the proper correspondence. To avoid having to do this, use Interchange's option array feature:</P>
+<PRE>
+   [page search.0=&quot;
+                   sf=title
+                   se=Sunflowers
+                   op=!~
+               &quot;
+         search.1=&quot;
+                   sf=artist
+                   se=Van Gogh
+               &quot;
+         search.2=&quot;
+                   sf=inventory:qty
+                   se=1
+                   op=&gt;=
+                   nu=1
+               &quot;
+       ] Any in stock except Sunflowers, Van Gogh &lt;/a&gt;
+</PRE>
+<P>The <TT>co=yes</TT> is assumed when specifying a multiple search.</P>
+<P>The second search will check the stock status of the painting provided there is an <TT>inventory</TT> table as in some of the Interchange demo catalogs. If the <TT>qty</TT> field is greater than or equal to 1, the product will be picked. If out of stock, it will not be found.</P>
+<P>It always helps to have an <TT>rm</TT> type included in the search. This is used to pre-screen records so that database accesses only need be made for already-matching entries. If accesses must be made for every record, large searches can get quite slow.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_25.html">Parent Topic</A> | <A HREF="icdatabase_28.html">Previous Topic</A> | <A HREF="icdatabase_30.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

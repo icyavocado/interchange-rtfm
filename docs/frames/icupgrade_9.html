@@ -1,0 +1,76 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Upgrade Guide: Order Manager</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<UL ALIGN="Center">
+<A HREF="icupgrade_5.html">Parent Topic</A> | <A HREF="icupgrade_8.html">Previous Topic</A> | <A HREF="icupgrade_10.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></UL>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>3.4. Order Manager</H2>
+<UL>
+Some things that are needed for the order manager:
+<LI>Add these fields to transactions:</UL>
+<PRE>
+        affiliate  approx. char(32)
+        archived   char(1)
+        campaign   approx. char(32)
+        comments   blob/text
+        complete   char(1)
+        deleted    char(1)
+        order_wday char(10)
+        order_ymd  char(8)
+        po_number  approx. char(32)
+</PRE>
+<UL>
+<LI>Add these fields to transactions:</UL>
+<PRE>
+        affiliate  approx. char(32)
+        campaign   approx. char(32)
+</PRE>
+<UL>
+<LI>Remove this field from userdb:</UL>
+<PRE>
+    mv_credit_card_info
+</PRE>
+<UL>
+<LI>Add these fields to userdb:</UL>
+<PRE>
+    inactive     char(1)
+    credit_limit char(14) or decimal(12,2)
+    dealer       char(3)
+</PRE>
+<UL>
+<LI>Create the directory 'logs'.
+<LI>Create the directory 'orders' if it doesn't already exist.
+<LI>Update your order routes to those in the Interchange distribution. Note that the route log_entry is necessary if you want to enter orders from the Interchange UI.
+<LI>Update the etc/log_transaction file.
+<LI>Add the etc/log_entry file.
+<LI>Add this to catalog.cfg:</UL>
+<PRE>
+        ## Don't want people setting their credit_limit directly
+        UserDB default scratch &quot;credit_limit dealer&quot;
+</PRE>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<UL ALIGN="Center">
+<A HREF="icupgrade_5.html">Parent Topic</A> | <A HREF="icupgrade_8.html">Previous Topic</A> | <A HREF="icupgrade_10.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></UL>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

@@ -1,0 +1,467 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>css - RTFM</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-Soup-Of-The-Day" content="Tomato">
+
+    <meta name="author" content="Kevin Walsh">
+    <meta name="publisher" content="Cursor Software Limited">
+    <meta name="copyright" content="2001-2008, Cursor Software Limited">
+    <meta name="licence" content="GPLv2+ (Unknown licence)">
+    <meta name="generator" content="Interchange 5.7.0 -- www.icdevgroup.org">
+    <meta name="robots" content="index,follow,noarchive">
+    <meta name="keywords" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="description" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+
+    <meta name="verify-v1" content="KqlU/bxZj9Y2ZdZ/3RwuzgVSMIrZ8XM2wqbjSaEo3O4=">
+
+    <meta name="y_key" content="e2dd60be5777fbc8">
+
+    <link rel="SHORTCUT ICON" href="/favicon.ico">
+    <link rel="icon" href="/favicon.ico" type="image/ico">
+    <link rel="search" type="application/opensearchdescription+xml" href="http://www.interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="stylesheet" href="/decor/css/website.css">
+    <link rel="stylesheet" href="/decor/css/wiki.css">
+    <link rel="stylesheet" href="/decor/css/neo.css">
+
+
+    <script type="text/javascript" language="JavaScript">
+    <!--
+	if (top != self){
+	    top.location = location;
+	}
+
+    -->
+    </script>
+</head>
+<body>
+<!-- START VAR: LOGOBAR -->
+<table id="rtfmheader" cellpadding="0" cellspacing="0">
+    <tr>
+	<td><a href="http://www.interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+
+	<td width="100%" style="text-align: right; padding: 10px">
+
+	    <form action="http://www.interchange-rtfm.pullingshots.ca/search.html" method="POST">
+		<input type="hidden" name="mv_session_id" value="nsession">
+		<input type="hidden" name="mv_profile" value="cms_search">
+		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
+		<input type="submit" class="button" value="Search">
+	    </form>
+
+	</td>
+    </tr>
+</table>
+<table id="breadcrumbs" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+	<td>
+	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a></span>
+	    <span class="nowrap">&gt; <span class="current">css</span></span>
+	</td>
+
+    </tr>
+</table>
+<!-- END VAR: LOGOBAR -->
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+
+	    <td id="leftside">
+<!-- START COMPONENT: navigation -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th>NAVIGATION</th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+
+<!-- END COMPONENT: navigation -->
+<!-- START COMPONENT: wiki_recent -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th><span class="nowrap">RECENTLY VIEWED</span></th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/css.html">css</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+<!-- END COMPONENT: wiki_recent -->
+<!-- START COMPONENT: wiki_backlinks -->
+
+
+
+<!-- END COMPONENT: wiki_backlinks -->
+<!-- START COMPONENT: account -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+
+    <tr>
+	<th>ACCOUNT LOGIN</th>
+    </tr>
+
+    <tr>
+	<td class="first">
+	    <p>You are not logged in</p>
+	</td>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+	    </ul>
+	</td>
+    </tr>
+
+</table>
+
+
+
+<!-- END COMPONENT: account -->
+<!-- START COMPONENT: icpowered -->
+
+<div style="text-align: center; margin: 10px; margin-top: 0px">
+    <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+</div>
+
+
+
+<!-- START COMPONENT: icpowered -->
+
+	    </td>
+
+	    <td id="bodytext">
+<!-- start of page text -->
+
+<!-- start page: wiki/display (tags/css) -->
+
+<div class="wikitext">
+<a name="css"></a>
+<h1>css</h1>
+<p>
+Builds a CSS file and outputs a link to the file.
+</p>
+<a name="Summary"></a>
+<h2>Summary</h2>
+
+<p>
+<ul>
+<li><span class="fixedwidth">&#91;css name]</span></li>
+</ul>
+
+<br>
+<table width="100%" class="border">
+<tr valign="top">
+<th class="grid">Parameter
+</th>
+<th class="grid">Description
+</th>
+<th class="grid">Default
+</th>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#name" title="&quot;name&quot; heading on this page">name</a></td>
+<td class="grid">The name of the <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">Variable</a> that contains the CSS text, and the  name of the CSS file to be created or updated.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#basefile" title="&quot;basefile&quot; heading on this page">basefile</a></td>
+<td class="grid">A file used to compare the modification time against the <a href="#name" title="&quot;name&quot; heading on this page">name</a> file.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#imagedir" title="&quot;imagedir&quot; heading on this page">imagedir</a></td>
+<td class="grid">Directory path prefix to use.</td>
+<td class="grid"><span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/ImageDir.html" title="ImageDir (config)">ImageDir</a></span></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#no_imagedir" title="&quot;no imagedir&quot; heading on this page">no_imagedir</a></td>
+<td class="grid"><a href="#imagedir" title="&quot;imagedir&quot; heading on this page">imagedir</a> to the generated link URL.</td>
+<td class="grid">No
+</td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#literal" title="&quot;literal&quot; heading on this page">literal</a></td>
+<td class="grid">Literal CSS text to use instead of the <a href="#name" title="&quot;name&quot; heading on this page">name</a> <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span>.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#media" title="&quot;media&quot; heading on this page">media</a></td>
+<td class="grid">The <span class="fixedwidth">media</span> attribute for the HTML <span class="fixedwidth">&lt;link&gt;</span> tag.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#mode" title="&quot;mode&quot; heading on this page">mode</a></td>
+<td class="grid">File creation mode.</td>
+<td class="grid"><span class="fixedwidth">0644</span></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#output_dir" title="&quot;output dir&quot; heading on this page">output_dir</a></td>
+<td class="grid">Directory in which to create the <a href="#name" title="&quot;name&quot; heading on this page">CSS file</a>.</td>
+<td class="grid">images
+</td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#relative" title="&quot;relative&quot; heading on this page">relative</a></td>
+<td class="grid">Set to a <em>true</em> value to copy the directory hierarchy in the <a href="#output_dir" title="&quot;output dir&quot; heading on this page">output_dir</a> directory.</td>
+<td class="grid">No
+</td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#timed" title="&quot;timed&quot; heading on this page">timed</a></td>
+<td class="grid">Regenerate the file on a timed basis.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+</table>
+
+<a name="Examples"></a>
+<h2>Examples</h2>
+<a name="Tag_usage_example"></a>
+<h3>Tag usage example</h3>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">css name</span><span class="def_Symbol">=</span><span class="def_Syntax">THEME</span><span class="def_Symbol">_</span><span class="def_Syntax">CSS basefile</span><span class="def_Symbol">=</span>variables<span class="def_Symbol">/</span><span class="def_Syntax">THEME</span><span class="def_Symbol">_</span><span class="def_Syntax">CSS</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Description"></a>
+<h2>Description</h2>
+<p>
+This tag builds a CSS file from a <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span>,
+or another source specified using the <span class="fixedwidth"><a href="#literal" title="&quot;literal&quot; heading on this page">literal</a></span> parameter,
+and generates HTML tag to serve the file to the website's visitors.
+</p>
+<p>
+If the target CSS file cannot be written,
+for whatever reason,
+then the CSS will be output to the page,
+inside a <span class="fixedwidth">&lt;style&nbsp;type=&quot;text/css&quot;&gt;</span> block,
+instead.
+</p>
+<a name="Parameters"></a>
+<h2>Parameters</h2>
+<a name="name"></a>
+<h3>name</h3>
+<p>
+The name of the CSS file that will be created by Interchange,
+updated as required
+and served website visitors.&nbsp;
+The filename will be forced to lowercase and a <span class="fixedwidth">.css</span> suffix will be appended.
+</p>
+<p>
+This is also the name of the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span> that will be expected to
+contain the CSS text,
+unless the <span class="fixedwidth"><a href="#literal" title="&quot;literal&quot; heading on this page">literal</a></span> parameter is specified.
+</p>
+<a name="basefile"></a>
+<h3>basefile</h3>
+<p>
+This file's modification time will be checked against the
+<a href="#name" title="&quot;name&quot; heading on this page">output CSS file</a>.&nbsp;
+The output file will be rebuilt if it is older than this file.&nbsp;
+This is intended for use where the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span>,
+specified using the <span class="fixedwidth"><a href="#name" title="&quot;name&quot; heading on this page">name</a></span> parameter,
+has been set up using the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/DirConfig.html" title="DirConfig (config)">DirConfig</a></span> parameter.
+</p>
+<a name="imagedir"></a>
+<h3>imagedir</h3>
+<p>
+Specify the CSS file's location.
+</p>
+<p>
+If the <span class="fixedwidth"><a href="#no_imagedir" title="&quot;no imagedir&quot; heading on this page">no_imagedir</a></span> parameter is not specified then
+this parameter's value will be prepended to the <a href="#name" title="&quot;name&quot; heading on this page">CSS filename</a>
+served to the website's visitors.
+</p>
+<a name="no_imagedir"></a>
+<h3>no_imagedir</h3>
+<p>
+When set <em>true</em> the <span class="fixedwidth"><a href="#imagedir" title="&quot;imagedir&quot; heading on this page">imagedir</a></span> prefix will not be
+prepended to the start of the <a href="#name" title="&quot;name&quot; heading on this page">CSS file</a>&lt;/tt&gt;.
+</p>
+<a name="literal"></a>
+<h3>literal</h3>
+<p>
+You can use this parameter to specify the CSS text instead of using
+the &quot;<span class="fixedwidth"><a href="#name" title="&quot;name&quot; heading on this page">name</a></span>&quot; <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span>.&nbsp;
+For example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="def_Symbol">[</span><span class="def_Syntax">set my</span><span class="def_Symbol">_</span><span class="def_Syntax">css</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">.</span><span class="def_Syntax">title </span><span class="def_Symbol">{ </span><span class="def_Syntax">background</span><span class="def_Symbol">-</span>color<span class="def_Symbol">: </span>#<span class="def_Number">336699</span><span class="def_Symbol">; </span><span class="def_Symbol">}</span><br>
+<span class="def_Symbol">[</span><span class="def_Symbol">/</span><span class="def_Syntax">set</span><span class="def_Symbol">]</span><br>
+<br>
+<span class="def_Symbol">[</span><span class="def_Syntax">css name</span><span class="def_Symbol">=</span><span class="def_String">&quot;test_css1&quot; </span><span class="def_Syntax">literal</span><span class="def_Symbol">=</span><span class="def_String">&quot;[scratch my_css]&quot;</span><span class="def_Symbol">]</span><br>
+<span class="def_Symbol">[</span><span class="def_Syntax">css name</span><span class="def_Symbol">=</span><span class="def_String">&quot;test_css2&quot; </span><span class="def_Syntax">literal</span><span class="def_Symbol">=</span><span class="def_String">&quot;body { background-color: yellow; }&quot;</span><span class="def_Symbol">]
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+The CSS file won't be rebuilt when you change the literal value.&nbsp;
+To cause a rebuild, you must delete the generated <a href="#name" title="&quot;name&quot; heading on this page">CSS file</a>.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="media"></a>
+<h3>media</h3>
+<p>
+Set the CSS media type,
+such as <span class="fixedwidth">PRINT</span>,
+<span class="fixedwidth">SCREEN</span>,
+<span class="fixedwidth">AURAL</span> and
+<span class="fixedwidth">HANDHELD</span> etc.
+</p>
+<a name="mode"></a>
+<h3>mode</h3>
+<p>
+Permissions to use when creating the <a href="#name" title="&quot;name&quot; heading on this page">CSS file</a>.
+</p>
+<a name="output_dir"></a>
+<h3>output_dir</h3>
+<p>
+Directory in which to create the <a href="#name" title="&quot;name&quot; heading on this page">CSS file</a>,
+with the permissions set using the <span class="fixedwidth"><a href="#mode" title="&quot;mode&quot; heading on this page">mode</a></span> parameter.
+</p>
+<a name="relative"></a>
+<h3>relative</h3>
+<p>
+If this parameter is set <em>true</em>
+then this tag will copy the directory hierarchy in the
+<span class="fixedwidth"><a href="#output_dir" title="&quot;output dir&quot; heading on this page">output_dir</a></span> directory.
+</p>
+<p>
+For instance,
+if you set this to &quot;<span class="fixedwidth">foo/bar/index.html</span>&quot; then this tag would would output the <a href="#name" title="&quot;name&quot; heading on this page">CSS file</a> to
+&quot;<span class="fixedwidth">images/foo/bar/mycss.css</span>&quot;.&nbsp;
+That is assuming that the <span class="fixedwidth"><a href="#imagedir" title="&quot;imagedir&quot; heading on this page">imagedir</a></span> parameter,
+and/or the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/ImageDir.html" title="ImageDir (config)">ImageDir</a></span> configuration directive is set
+to &quot;<span class="fixedwidth">images</span>&quot;.
+</p>
+<a name="timed"></a>
+<h3>timed</h3>
+<p>
+Used for regenerating the <a href="#name" title="&quot;name&quot; heading on this page">CSS file</a> on a timed basis.&nbsp;
+You can specify a number of minutes here,
+or can use any <em>time interval</em>,
+such as &quot;<span class="fixedwidth">1 hour</span>&quot;.
+</div>
+
+<!-- start of modification notice -->
+<div class="wikitext">
+    <table class="pageinfo" cellpadding="0" cellspacing="0">
+	<tr>
+	    <td>
+Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a>
+	    </td>
+	</tr>
+
+
+	<tr>
+	    <td>
+		
+		Last modified by: <a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin">Kevin Walsh</a><br>
+		Modification date: Saturday 4 August 2007 at 11:38 PM (PDT)
+	    </td>
+	</tr>
+    </table>
+</div>
+<!-- end of modification notice -->
+
+
+
+<!-- end page: wiki/display (tags/css) -->
+
+
+
+<!-- end of page text -->
+	    </td>
+
+	</tr>
+    </table>
+<!-- START VAR: FOOTER -->
+
+<table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+	<td>
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	</td>
+
+    </tr>
+</table>
+
+<!-- END VAR: FOOTER -->
+
+<!-- START VAR: COPYRIGHT -->
+
+
+    <div class="copyright">
+	Copyright &copy; 2001-2008
+	<a href="http://www.cursor.biz/index.html">Cursor Software Limited</a>.&nbsp;
+	All Rights Reserved.
+    </div>
+
+<!-- END VAR: COPYRIGHT -->
+
+</body>
+</html>

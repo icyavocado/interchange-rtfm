@@ -1,0 +1,228 @@
+UserTag google_query Documentation <<EOD
+
+    Query Google using their SOAP API.
+
+    You need to obtain a "key" from Google before you can use their
+    Search API.  You can register at "http://www.google.com/apis/".
+
+    Author: Kevin Walsh <kevin@cursor.biz>
+
+    Copyright (c) 2003 Cursor Software Limited.
+    All Rights Reserved.
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public
+    License along with this program; if not, write to the Free
+    Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+    MA  02111-1307  USA.
+
+Parameters:
+
+    wdsl    Path to the Google Search WDSL file, relative to the
+            Interchange website's root - or a URI pointing to a
+            remote file.  If no file is specified then the default
+            "http://api.google.com/GoogleSearch.wsdl" URI will be used.
+            Obviously, it's quicker to have a local copy.
+
+    key     Your Google Search API access key.  You get one of these
+            when you register with Google to use their search API.
+
+    query   Text to send to Google's search engine.
+
+    full    Set true (1) if you need the full results, otherwise set
+            false or leave undefined.  Google's default is to present
+            two results from each domain unless a full resultset is
+            requested.
+
+    ml      Limit the number of matches per page.  Google has a
+            10-result-per-page limit for queries posted via their
+            SOAP API.  There's nothing we can do about that.  If you
+            specify a match limit greater than 10 then ml=10 will be
+            used.  Any match limit value between 1 and 10 is fine.
+
+Example:
+
+    [google-query
+        wsdl="etc/GoogleSearch.wsdl"
+        key="your Google API key string goes here"
+        query=| "Cursor Software" Kevin says RTFM |
+	full=1
+    ]
+        [on-match]
+            [scratchd google_search_tips]<br>
+            [scratchd google_search_comments]<br><br>
+        [/on-match]
+        [no-match]
+            <b>No matches found.</b><br>
+            [scratchd google_search_tips]<br>
+            [scratchd google_search_comments]<br><br>
+        [/no-match]
+        [list]
+            <a href="[google-code]">[google-param title]</a><br>
+            [google-param snippet]<br>
+            <i>[google-code]</i>
+            <hr>
+        [/list]
+        [more-list]
+            Results [matches] of [match-count] displayed.<br>
+            [more]
+        [/more-list]
+    [/google-query]
+
+Bugs:
+
+    * This tag doesn't handle the last few [more-list] results pages
+      properly.
+
+    * No fancy results caching is done.  That can come later.
+
+    * Not all of the Google Search API options have been implemented as
+      parameters.  This will be an easy thing to complete, if someone
+      needs the facility.
+
+    * Google has a 1,000-total-result limit for queries posted via their
+      SOAP API.  There's nothing we can do about that.
+
+    * Google has a 10-result-per-page limit for queries posted via their
+      SOAP API.  There's nothing we can do about that either.
+
+EOD
+
+UserTag google_query Order     key wsdl query full
+UserTag google_query addAttr
+UserTag google_query hasEndTag
+UserTag google_query Routine   <<EOR
+use SOAP::Lite;
+sub {
+    my ($key,$wsdl,$query,$full,$opt,$body) = @_;
+
+    return errmsg('No query provided.') unless $query;
+    return errmsg('No Google API key provided.') unless $key;
+
+    my $google_result_limit = 1000;
+    my $google_page_limit = 10;
+
+    $wsdl ||= 'http://api.google.com/GoogleSearch.wsdl';
+
+    unless ($wsdl =~ m|://|) {
+	$wsdl = "file://$Vend::Cfg->{VendRoot}/$wsdl";
+    }
+
+    $opt ||= {};
+    $opt->{prefix} ||= 'google';
+    $opt->{sp} ||= $Global::Variable->{MV_PAGE};
+    $opt->{ml} = $google_page_limit if ($opt->{ml} < 1 || $opt->{ml} > $google_page_limit);
+    $opt->{more} = 1;
+    $opt->{mv_next_pointer} = 0;
+    $opt->{mv_last_pointer} = $opt->{ml};
+
+    if ($Vend::More_in_progress || $CGI::values{MM}) {
+	undef $Vend::More_in_progress;
+
+	my $last_search = $Vend::Session->{last_search};
+
+	if ($last_search =~ /MM=/) {
+	    $last_search =~ s/\.$Vend::Cfg->{HTMLsuffix}$//;
+	    $last_search =~ s/^.+?MM=//;
+
+	    (
+		$opt->{mv_cache_key},
+		$opt->{mv_next_pointer},
+		$opt->{mv_last_pointer},
+		$opt->{ml},
+	    ) = split(':',$last_search);
+	}
+    }
+
+    if ($opt->{mv_last_pointer} > $google_result_limit) {
+	$opt->{mv_last_pointer} = $google_result_limit - 1;
+	$opt->{mv_next_pointer} = ($google_result_limit - 1) - $opt->{ml};
+    }
+
+    my $google = SOAP::Lite->service($wsdl) or die qq{Can't load the "Google Search" WSDL file from "$wsdl"};
+
+    my $response = $google->doGoogleSearch(
+	$key,
+	$query,
+	$opt->{mv_next_pointer},
+	$opt->{ml},
+	is_yes($full) ? 'false' : 'true',
+	'',
+	'false',
+	'',
+	'latin1',
+	'latin1',
+    );
+    return undef unless $response;
+
+    my $count = $response->{estimatedTotalResultsCount} || return undef;
+    $count = $google_result_limit if $count > $google_result_limit;
+
+    my %map = qw(
+	documentFiltering               document_filtering
+	searchComments                  search_comments
+	estimatedTotalResultsCount	estimated_total_results_count
+	estimateIsExact                 estimate_is_exact
+	searchTips                      search_tips
+	searchTime                      search_time
+    );
+
+    while (my ($from,$to) = each(%map)) {
+	$::Scratch->{"google_$to"} = $response->{$from};
+    }
+
+    my @resultset;
+    foreach (@{$response->{resultElements}}) {
+	push (@resultset, [
+	    $_->{URL},
+	    $_->{URL},
+	    $_->{title},
+	    $_->{snippet},
+	    $_->{summary},
+	    $_->{cachedSize},
+	    $_->{relatedInformationPresent},
+	    $_->{hostName},
+	    $_->{directoryCategory},
+	    $_->{directoryTitle},
+	]);
+    }
+
+    my @rows;
+    splice(@rows,$opt->{mv_next_pointer},$opt->{mv_matchlimit},@resultset);
+    $rows[$count - 1] ||= [];
+
+    $opt->{object} = {
+	prefix          => $opt->{prefix},
+	matches         => scalar(@rows),
+	mv_results      => \@rows,
+	mv_cache_key    => generate_key(substr($body,0,100)),
+	mv_first_match  => $opt->{mv_next_pointer},
+	mv_matchlimit   => $opt->{ml},
+	mv_more_decade  => $opt->{md},
+	mv_search_page  => $opt->{sp},
+	mv_field_hash   => {qw(
+	    uri                             0
+	    url                             1
+	    title                           2
+	    snippet                         3
+	    summary                         4
+	    cached_size                     5
+	    related_information_present     6
+	    host_name                       7
+	    directory_category              8
+	    directory_title                 9
+	)},
+    };
+
+    return region($opt,$body);
+}
+EOR

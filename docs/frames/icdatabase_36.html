@@ -1,0 +1,253 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Databases: The Results Page</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_25.html">Parent Topic</A> | <A HREF="icdatabase_35.html">Previous Topic</A> | <A HREF="icdatabase_37.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>5.11. The Results Page</H2>
+<P>Once a search has been completed, there needs to be a way of presenting the output. By default, the <TT>SpecialPage</TT> search is used. It is set to <TT>results</TT> in the distribution demo, but any number of search pages can be specified by passing the value in the search form specified in the variable <TT>mv_search_page</TT>.</P>
+<P>On the search page, some special Interchange tags are used to format the otherwise standard HTML. Each of the iterative tags is applied to every code returned from the search. This is normally the product code, but could be a key to any of the arbitrary databases. The value placed by the <TT>[item-code]</TT> tag is set to the first field returned from the search.</P>
+<P>The basic structure looks like this:</P>
+<PRE>
+[search-region]
+[search-list]
+    your iterating code, once for each match
+[/search-list]
+[no-match]
+    Text / tags to be output if no matches found (optional but recommended)
+[/no-match]
+[more-list]
+    More / paging area (optional)
+[/more-list]
+[/search-region]
+</PRE>
+<P>Tip for catalogs upgraded from Minivend 3: A <TT>[search-list][/search-list]</TT> must always be surrounded by a <TT>[search-region][/search-region]</TT> pair. This is a change from Minivend 3.</P>
+<P><B>[search-list]</B></P>
+<UL>
+Starts the representation of a search list. Interchange tags can be embedded in the search list, yielding a table or formatted list of items with part number, description, price, and hyperlinks to order or go to its catalog page.
+<BR>
+The example tags shown have an <TT>item-</TT> prefix, which is the default. Set any prefix desired with the <TT>prefix</TT> parameter to <TT>[search-region]</TT>:</UL>
+<PRE>
+            [search-region prefix=my]
+            [search-list]
+                SKU:   [my-code]
+                Title: [my-data products title]
+            [/search-list]
+            [/search-region]
+</PRE>
+<UL>
+The standard set of Interchange iterative ITL tags are available. They are interpolated in this order:</UL>
+<PRE>
+                [item-alternate N] true [else] false [/else] [/item-alternate]
+                [if-item-param named_field] true [else] false [/else] [/if-item-param]
+                [item-param named_field]
+                [if-item-pos N] true [else] false [/else] [/if-item-pos]
+                [item-pos N]
+                [if-item-field products_field] true [else] false [/else] [/if-item-field]
+                [item-field products_column]
+                [item-increment]
+                [item-accessories]
+                [item-code]
+                [item-description]
+                [if-item-data table column] true [else] false [/else] [/if-item-data]
+                [item-data table column]
+                [item-price N* noformat=1*]
+                [item-calc] [/item-calc]
+                [item-change marker]
+                    [condition]variable text[/condition]
+                    true
+                    [else] false [/else]
+                [/item-change marker]
+                [item-last] condition [/item-last]
+                [item-next] condition [/item-next]
+</PRE>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>those that reference the shopping cart do not apply, i.e., [item-quantity], [item-modifier ...] and friends.
+<HR WIDTH="80%" ALIGN="Left"></P>
+<P><B>[/search-list]</B></P>
+<UL>
+Ends the search list.</UL>
+<P><B>[no-match]</B></P>
+<UL>
+Starts the region of the search results page that should be returned if there is no match (and no error) for the search. If this is not on the page, the special page nomatch will be displayed instead.</UL>
+<P><B>[/no-match]</B></P>
+<UL>
+Ends the no match region.</UL>
+<P><B>[sort database:field:option* database:field:option*]</B></P>
+<UL>
+Sorts the search list return based on database fields. If no options are supplied, sorts according to the return code. See SORTING.
+<BR>
+This is slow, and it is far better to pre-sort the return in the search specification.</UL>
+<P><B>[item-change marker]</B></P>
+<UL>
+Active only within <TT>[search-list][/search-list]</TT>.
+<BR>
+Along with the companion <TT>[/item-change marker]</TT>, surrounds a region which should only be output when a field (or other repeating value) changes its value. This allows indented lists similar to database reports to be easily formatted. The repeating value must be a tag interpolated in the search process, such as <TT>[item-field field]</TT> or <TT>[item-data database field]</TT>.
+<BR>
+Of course, this will only work as expected when the search results are properly sorted.
+<BR>
+The <TT>marker</TT> field is mandatory, and is also arbitrary, meaning that any marker can be selected as long as it matches the marker associated with <TT>[/item-change marker]</TT>. The value to be tested is contained within a <TT>[condition]value[/condition]</TT> tag pair. The <TT>[item-change marker]</TT> tag also processes an <TT>[else] [/else]</TT> pair for output when the value does not change. The tags may be nested as long as the markers are different.
+<BR>
+The following is a simple example for a search list that has a field <TT>category</TT> and <TT>subcategory</TT> associated with each item:</UL>
+<PRE>
+         &lt;TABLE&gt;
+         &lt;TR&gt;&lt;TH&gt;Category&lt;/TH&gt;&lt;TH&gt;Subcategory&lt;/TH&gt;&lt;TH&gt;Product&lt;/TH&gt;&lt;/TR&gt;
+         [search-list]
+         &lt;TR&gt;
+            &lt;TD&gt;
+                 [item-change cat]
+        
+                 [condition][item-field category][/condition]
+        
+                         [item-field category]
+                 [else]
+                         &amp;nbsp;
+                 [/else]
+                 [/item-change cat]
+            &lt;/TD&gt;
+            &lt;TD&gt;
+                 [item-change subcat]
+        
+                 [condition][item-field subcategory][/condition]
+        
+                         [item-field subcategory]
+                 [else]
+                         &amp;nbsp;
+                 [/else]
+                 [/item-change subcat]
+            &lt;/TD&gt;
+            &lt;TD&gt; [item-field name] &lt;/TD&gt;
+         [/search-list]
+         &lt;/TABLE&gt;
+</PRE>
+<UL>
+The above should output a table that only shows the category and subcategory once, while showing the name for every product. (The <TT>&amp;nbsp;</TT> will prevent blanked table cells if using a border.)</UL>
+<P><B>[/item-change marker]</B></P>
+<UL>
+Companion to <TT>[item-change marker]</TT>.</UL>
+<P><B>[matches]</B></P>
+<UL>
+Replaced with the range of match numbers displayed by the search page. Looks something like &quot;1-50&quot;. Make sure to insert this item between a <TT>[more-list]</TT> and <TT>[/more-list]</TT> element pair.</UL>
+<P><B>[match-count]</B></P>
+<UL>
+Replaced with the total number of matches. This tag works even on <TT>[query]</TT> searches where <TT>[value mv_search_match_count]</TT> isn't set unless the query is applied to a non-SQL database. Make sure to insert this item between a <TT>[more-list]</TT> and <TT>[/more-list]</TT> element pair.</UL>
+<P><B>[more-list next_img* prev_img* page_img* border* border_current*]</B></P>
+<UL>
+Starts the section of the search page which is only displayed if there are more matches than specified in <TT>mv_matchlimit</TT>. If there are less matches than the number in mv_matchlimit, all text/html between the <TT>[more_list]</TT> and <TT>[/more_list]</TT> elements is stripped.
+<BR>
+Use in conjunction with the <TT>[more]</TT> element to place pointers to additional pages of matches.
+<BR>
+If the optional arguments <TT>next_img</TT>, <TT>prev_img</TT>, and/or <TT>page_img</TT> are present, they represent image files that will be inserted instead of the standard 'Next,' 'Previous,' and page number. If <TT>prev_img</TT> is <TT>none</TT>, then no previous link will be output. If <TT>page_img</TT> is <TT>none</TT>, then no links to pages of matches will be output. These are URLs, are substituted for with <I>ImageDir</I> and friends, and will be encased in IMG tags. Lastly, <TT>border</TT> is the border number to put.
+<BR>
+In addition, if <TT>page_img</TT> is used, it will be passed an argument of the digit that is to be represented. This would allow an image generator program to be used, generating page numbers on the fly. The <TT>border</TT> and <TT>border_selected</TT> values are integers indicating the border that should be put around images in the <TT>page_img</TT> selection. The &lt;border_selected&gt; is used for the current page if set.
+<BR>
+\Examples:
+<BR>
+<TT>[more-list next.gif prev.gif page_num.cgi 3]</TT> causes anchors of:</UL>
+<PRE>
+             Previous   &lt;IMG SRC=&quot;prev.gif&quot; Border=3&gt;
+             Page 1     &lt;IMG SRC=&quot;/cgi-bin/page_num.cgi?1&quot;&gt;
+             Page 2     &lt;IMG SRC=&quot;/cgi-bin/page_num.cgi?2&quot;&gt;
+             Next       &lt;IMG SRC=&quot;next.gif&quot; Border=3&gt;
+</PRE>
+<UL>
+<TT>[more-list next.gif prev.gif page_num.cgi]</TT> causes anchors of:</UL>
+<PRE>
+             Previous   &lt;IMG SRC=&quot;prev.gif&quot;&gt;
+             Page 1     &lt;IMG SRC=&quot;/cgi-bin/page_num.cgi?1&quot;&gt;
+             Page 2     &lt;IMG SRC=&quot;/cgi-bin/page_num.cgi?2&quot;&gt;
+             Next       &lt;IMG SRC=&quot;next.gif&quot;&gt;
+</PRE>
+<UL>
+<TT>[more-list next.gif prev.gif 0 0]</TT> causes anchors of:</UL>
+<PRE>
+             Previous   &lt;IMG SRC=&quot;prev.gif&quot; Border=0&gt;
+             Page 1     &lt;IMG SRC=&quot;/cgi-bin/page_num.cgi?1&quot;&gt;
+             Page 2     &lt;IMG SRC=&quot;/cgi-bin/page_num.cgi?2&quot;&gt;
+             Next       &lt;IMG SRC=&quot;next.gif&quot; Border=0&gt;
+</PRE>
+<UL>
+To set custom text for the &quot;Previous&quot; and &quot;Next&quot; usually used, define the <TT>next_img</TT>, <TT>prev_img</TT>, and <TT>page_img</TT> with <TT>[next-anchor][/next-anchor]</TT>, <TT>[prev-anchor][/prev-anchor]</TT> and <TT>[page-anchor][/page-anchor]</TT>. The string $PAGE$ will be replaced with the page number in the latter. The same example:</UL>
+<PRE>
+            [more-list]
+            [next-anchor] Forward | [/next-anchor]
+            [prev-anchor] Back [/prev-anchor]
+            [page-anchor] Page $PAGE$ (matches $MINPAGE$-$MAXPAGE$) | [/page-anchor]
+            [more]
+            [/more-list]
+</PRE>
+<UL>
+will display <TT>Forward | Page 1 (matches 1-50) | Page 2 (matches 51-77) | Back</TT> for 2 pages. Note that the following anchors are replaced with the page number, the minimum match on the page, and the maximum match on the page:</UL>
+<PRE>
+            $PAGE$       Page number
+            $MINPAGE$    Minimum match on page
+            $MAXPAGE$    Maximum match on page
+</PRE>
+<UL>
+You can customize the HTML hyperlink with [link-template] [/link-template]. This is useful for adding a JavaScript onclick attribute, or setting the link target to a different window, etc.</UL>
+<PRE>
+            [link-template]&lt;a href=&quot;$URL$&quot; target=&quot;_top&quot;&gt;$ANCHOR$&lt;/a&gt;[/link-template]
+</PRE>
+<UL>
+There are two tokens you can use as many times as needed in [link-template], which will be replaced as follows:</UL>
+<PRE>
+            $URL$      The URL for the 'more' page in question
+            $ANCHOR$   The page number or the word &quot;Next&quot; or &quot;Previous&quot; for the link in question.
+</PRE>
+<UL>
+If have many pages of matches and don't wish to have all displayed at once, set <TT>[decade-next][/decade-next]</TT> and <TT>[decade-prev][/decade-prev]</TT>. If set them empty, a search with 31 pages will display pages 21-30 like:</UL>
+<PRE>
+          Previous 1 2 3 4 5 6 7 8 9 10 [more&gt;&gt;] Next
+</PRE>
+<UL>
+and pages 11-20 like:</UL>
+<PRE>
+          Previous [&lt;&lt;more] 11 12 13 14 15 16 17 18 19 20 [more&gt;&gt;] Next
+</PRE>
+<UL>
+If set to <TT>[decade-next](higher)[/decade-next]</TT> and <TT>[decade-prev](lower)[/decade-prev]</TT>, the following will be displayed:</UL>
+<PRE>
+          Previous (lower) 11 12 13 14 15 16 17 18 19 20 (higher) Next
+</PRE>
+<UL>
+Of course, image-based anchors can be used as well.</UL>
+<P><B>[/more-list]</B></P>
+<UL>
+Companion to <TT>[more-list]</TT>.</UL>
+<P><B>[more]</B></P>
+<UL>
+Inserts a series of hyperlinks that will call up the next matches in a series. They look like this:</UL>
+<PRE>
+            Previous 1 2 3 4 5 6 Next
+</PRE>
+<UL>
+The current page will not be a hyperlink. Every time the new link is pressed, the list is re-built to correspond to the current page. If there is no <TT>Next</TT> or <TT>Previous</TT> page, that link will not be shown.
+<BR>
+See the <TT>search.html</TT> file for examples. Make sure to insert this item between a <TT>[more-list]</TT> and <TT>[/more-list]</TT> element pair.</UL>
+<P><B>[process-search]</B></P>
+<UL>
+Outputs the complete URL for a search, including Interchange session tags. Used as the ACTION value for the search form. This is exactly the same as [area search].</UL>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_25.html">Parent Topic</A> | <A HREF="icdatabase_35.html">Previous Topic</A> | <A HREF="icdatabase_37.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

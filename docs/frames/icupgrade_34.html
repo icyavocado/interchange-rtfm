@@ -1,0 +1,96 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Upgrade Guide: random_rotate</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<UL ALIGN="Center">
+<A HREF="icupgrade_29.html">Parent Topic</A> | <A HREF="icupgrade_33.html">Previous Topic</A> | <A HREF="icupgrade_35.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></UL>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>A.5. random_rotate</H2>
+<PRE>
+    UserTag random PosNumber 0
+    UserTag random Interpolate 1
+    UserTag random Routine &lt;&lt;EOR
+    <B>package</B> Vend::Config;
+    <B>sub</B> parse_random {
+        <B>my</B> ($var, $value) = @_;
+        <B>return</B> <TT>''</TT> <B>unless</B> (<B>defined</B> $value &amp;&amp; $value);
+        <B>my</B> $c = [];
+        $var = <B>lc</B> $var;
+        <B>my</B> @files = <B>grep</B> /\S/, <B>split</B> /\s+/, $value;
+        <B>local</B> ($Vend::Cfg) = $C;
+        <B>for</B> (@files) { <B>push</B> @$c, Vend::Util::readin($_) }
+        <B>return</B> $c;
+    }
+    
+    <B>package</B> Vend::Interpolate;
+    <B>sub</B> {
+        <B>my</B> $random = <B>int</B> <B>rand</B>(<B>scalar</B>(@{$Vend::Cfg-&gt;{'Random'}}));
+        <B>if</B> (<B>defined</B> $Vend::Cfg-&gt;{'Random'}-&gt;[$random]) {
+            <B>return</B> $Vend::Cfg-&gt;{'Random'}-&gt;[$random];
+        }
+        <B>else</B> {
+            <B>return</B> <TT>''</TT>;
+        }
+    }
+    EOR
+    
+    UserTag rotate PosNumber 2
+    UserTag rotate Order ceiling floor
+    UserTag rotate Interpolate 1
+    UserTag rotate Routine &lt;&lt;EOR
+    <B>sub</B> {
+        <B>return</B> <TT>''</TT> <B>unless</B> $Vend::Cfg-&gt;{Rotate};
+        <B>my</B> $ceiling = $_[0] || @{$Vend::Cfg-&gt;{'Rotate'}} || <B>return</B> <TT>''</TT>;
+        <B>my</B> $floor   = $_[1] || 1;
+    
+        $ceiling--;
+        $floor--;
+    
+        <B>my</B> $marker = <TT>&quot;rotate$floor$ceiling&quot;</TT>;
+    
+        <B>if</B>($ceiling &lt; 0 <B>or</B> $floor &lt; 0) {
+            $floor = 0;
+            $ceiling = <B>scalar</B>  @{$Vend::Cfg-&gt;{'Rotate'}} - 1;
+            logError <TT>&quot;Bad ceiling or floor for rotate&quot;</TT>;
+        }
+    
+        <B>my</B> $rotate;
+        $rotate = $Vend::Session-&gt;{$marker} || $floor;
+    
+        <B>if</B>($rotate &gt; $ceiling <B>or</B> $rotate &lt; $floor ) {
+            $rotate = $floor;
+        }
+    
+        $Vend::Session-&gt;{$marker} = $rotate + 1;
+        <B>return</B> $Vend::Cfg-&gt;{'Rotate'}-&gt;[$rotate];
+    }
+    EOR
+    
+    AddDirective Random random
+    AddDirective Rotate random
+</PRE>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<UL ALIGN="Center">
+<A HREF="icupgrade_29.html">Parent Topic</A> | <A HREF="icupgrade_33.html">Previous Topic</A> | <A HREF="icupgrade_35.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></UL>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

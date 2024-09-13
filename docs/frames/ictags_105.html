@@ -1,0 +1,419 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: shipping</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_104.html">Previous Topic</A> | <A HREF="ictags_106.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.71. shipping</H2>
+<P>Returns the cost of shipping the items in the cart via the shipping mode set with the <B>mode</B> parameter. See also the <A HREF="icdatabase_38.html#Shipping">Shipping</A> section of the Database documentation.</P>
+<H3><A NAME="Summary">4.71.1. Summary</A></H3>
+<PRE>
+    [<B>shipping</B> mode]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_105.html#shipping_add">add</A>
+</TD>
+<TD VALIGN='Top'>
+Adds the argument to <B>add</B> as data for a shipping.asc file (in $Vend::Cfg-&gt;{ScratchDir}/) and sets it.
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_105.html#shipping_cart">cart</A>
+</TD>
+<TD VALIGN='Top'>
+<UL>
+<LI>Alias: <B>carts</B> Comma-delimited list of names of carts to calculate shipping cost for.
+<LI>Default: current cart</UL>
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_105.html#shipping_cart">carts</A>
+</TD>
+<TD VALIGN='Top'>
+Alias for cart
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_105.html#shipping_convert">convert</A>
+</TD>
+<TD VALIGN='Top'>
+Applies the conversion (if any) set with the <A HREF="icconfig_130.html#PriceDivide">PriceDivide</A> catalog configuration directive.
+<UL>
+<LI>Default: True</UL>
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_105.html#shipping_default">default</A>
+</TD>
+<TD VALIGN='Top'>
+Resets shipping mode to default of [value mv_shipmode]
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_105.html#shipping_file">file</A>
+</TD>
+<TD VALIGN='Top'>
+Filename to read shipping from (default is usual shipping database, e.g., shipping.asc)
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_105.html#shipping_format">format</A>
+</TD>
+<TD VALIGN='Top'>
+Format for results with <B>label</B> attribute.
+<UL>
+<LI>Default: '&lt;OPTION VALUE=&quot;%M&quot;%S&gt;%D (%F)'
+<LI>For example,</UL>
+<PRE>
+    [shipping mode=&quot;FLAT&quot;
+             label=1
+            format=&quot;My Format Desc %D Price %F&quot;]
+</PRE>
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_105.html#shipping_handling">handling</A>
+</TD>
+<TD VALIGN='Top'>
+Boolean-- use [value mv_handling] rather than [value mv_shipping] as first default for <B>mode</B>. Note that this attribute matters only if you do not specify the <B>mode</B> in the tag.
+<UL>
+<LI>Note that this is set by the [<A HREF="ictags_68.html#handling">handling</A> tag (which calls the <TT>shipping</TT> tag internally).  You should probably use the handling tag rather than setting this directly.
+<LI>Default: False</UL>
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_105.html#shipping_hide">hide</A>
+</TD>
+<TD VALIGN='Top'>
+Suppresses output
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_105.html#shipping_label">label</A>
+</TD>
+<TD VALIGN='Top'>
+By default, returns HTML &lt;OPTION ...&gt; widget for shipping mode(s), including description and cost. You can override the widget with the <B>format</B> attribute.  Note that <B>label</B> overrides <B>noformat</B>.
+<UL>
+<LI>Here is an example from the foundation checkout.html page:</UL>
+<PRE>
+    [shipping
+        label=1
+        mode=|[data table=country key='[default country US]' col=shipmodes]|
+    ]
+</PRE>
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_105.html#shipping_mode">mode</A>
+</TD>
+<TD VALIGN='Top'>
+<UL>
+<LI>Aliases: <B>name</B>, <B>modes</B> Whitespace, null or comma delimited list of modes for which to calculate shipping cost.  See also mv_shipmode.
+<LI>Default: [value mv_handling] if <B>handling=1</B> or [value mv_shipmode] or 'default'</UL>
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_105.html#shipping_mode">modes</A>
+</TD>
+<TD VALIGN='Top'>
+Alias for mode
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_105.html#shipping_mode">name</A>
+</TD>
+<TD VALIGN='Top'>
+Alias for mode
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_105.html#shipping_noformat">noformat</A>
+</TD>
+<TD VALIGN='Top'>
+Returns result as a number rather than a string formatted for the current locale's currency.
+<UL>
+<LI>Default: True</UL>
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_105.html#shipping_reset_message">reset_message</A>
+</TD>
+<TD VALIGN='Top'>
+Boolean. Blanks the session's current shipping message (i.e., $Session-&gt;{ship_message}).
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_105.html#shipping_reset_modes">reset_modes</A>
+</TD>
+<TD VALIGN='Top'>
+Clears list of modes in $Vend::Cfg-&gt;{Shipping_line}
+<UL>
+<LI>Default: False</UL>
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_105.html#shipping_table">table</A>
+</TD>
+<TD VALIGN='Top'>
+<UL>
+<LI>Alias: <B>tables</B> Whitespace-delimited list of tables containing shipping data required for perl or query calculations (<I>e.g.</I>, in the 'PERL' field of your shipping database&nbsp;-- see <A HREF="icdatabase_38.html#Shipping">Shipping</A>). You must specify the tables to get past the Perl '<A HREF="http://www.perl.com/pub/doc/manual/html/lib/Safe.html">Safe.pm</A>' protection. For example, you will get '<A HREF="http://www.perl.com/pub/doc/manual/html/lib/Safe.html">Safe</A>' errors if you refer to an SQL table without specifying it here.
+<LI>Default: None</UL>
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_105.html#shipping_table">tables</A>
+</TD>
+<TD VALIGN='Top'>
+Alias for table
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_interpolate">interpolate (reparse)</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>YES</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Container tag
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Has Subtags
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Nests
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+    [shipping mode]
+---
+    TODO: (tag result)
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+   $Tag-&gt;shipping(  { mode =&gt; VALUE_mode
+}, $body  );
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;shipping(mode, $attribute_hash_reference, $body);
+</PRE>
+<H3><A NAME="Description">4.71.2. Description</A></H3>
+<P>This tag calculates the shipping cost for items in the current cart via the specified shipping mode (usually set in the mv_shipmode variable).  See the <A HREF="icdatabase_38.html#Shipping">Shipping</A> section of the Database documentation for detail.</P>
+<H4><A NAME="Rounding">4.71.2.1. Rounding</A></H4>
+<P>Note that the tag rounds the calculated shipping cost to a locale-specific number of fractional digits (e.g., to the nearest penny, or 2 digits after the decimal point in the USA).</P>
+<H4><A NAME="shipping_add"> </A>4.71.2.2. <A NAME="shipping_add">add</A></H4>
+<P>Adds the argument to <B>add</B> as data for a shipping.asc file (in $Vend::Cfg-&gt;{ScratchDir}/) and sets it.</P>
+<H4><A NAME="shipping_cart"> </A>4.71.2.3. <A NAME="shipping_cart">cart</A></H4>
+<UL>
+<LI>Alias: <B>carts</B> Comma-delimited list of names of carts to calculate shipping cost for.
+<LI>Default: current cart</UL>
+<H4><A NAME="shipping_convert"> </A>4.71.2.4. <A NAME="shipping_convert">convert</A></H4>
+<P>Applies the conversion (if any) set with the <A HREF="icconfig_130.html#PriceDivide">PriceDivide</A> catalog configuration directive.</P>
+<UL>
+<LI>Default: True</UL>
+<H4><A NAME="shipping_default"> </A>4.71.2.5. <A NAME="shipping_default">default</A></H4>
+<P>Resets shipping mode to default of [value mv_shipmode]</P>
+<H4><A NAME="shipping_file"> </A>4.71.2.6. <A NAME="shipping_file">file</A></H4>
+<P>Filename to read shipping from (default is usual shipping database, e.g., shipping.asc)</P>
+<H4><A NAME="shipping_format"> </A>4.71.2.7. <A NAME="shipping_format">format</A></H4>
+<P>Format for results with <B>label</B> attribute.</P>
+<UL>
+<LI>Default: '&lt;OPTION VALUE=&quot;%M&quot;%S&gt;%D (%F)'
+<LI>For example,</UL>
+<PRE>
+    [shipping mode=&quot;FLAT&quot;
+             label=1
+            format=&quot;My Format Desc %D Price %F&quot;]
+</PRE>
+<H4><A NAME="shipping_handling"> </A>4.71.2.8. <A NAME="shipping_handling">handling</A></H4>
+<P>Boolean-- use [value mv_handling] rather than [value mv_shipping] as first default for <B>mode</B>. Note that this attribute matters only if you do not specify the <B>mode</B> in the tag.</P>
+<UL>
+<LI>Note that this is set by the [<A HREF="ictags_68.html#handling">handling</A> tag (which calls the <TT>shipping</TT> tag internally).  You should probably use the handling tag rather than setting this directly.
+<LI>Default: False</UL>
+<H4><A NAME="shipping_hide"> </A>4.71.2.9. <A NAME="shipping_hide">hide</A></H4>
+<P>Suppresses output</P>
+<H4><A NAME="shipping_label"> </A>4.71.2.10. <A NAME="shipping_label">label</A></H4>
+<P>By default, returns HTML &lt;OPTION ...&gt; widget for shipping mode(s), including description and cost. You can override the widget with the <B>format</B> attribute.  Note that <B>label</B> overrides <B>noformat</B>.</P>
+<UL>
+<LI>Here is an example from the foundation checkout.html page:</UL>
+<PRE>
+    [shipping
+        label=1
+        mode=|[data table=country key='[default country US]' col=shipmodes]|
+    ]
+</PRE>
+<H4><A NAME="shipping_mode"> </A>4.71.2.11. <A NAME="shipping_mode">mode</A></H4>
+<UL>
+<LI>Aliases: <B>name</B>, <B>modes</B> Whitespace, null or comma delimited list of modes for which to calculate shipping cost.  See also mv_shipmode.
+<LI>Default: [value mv_handling] if <B>handling=1</B> or [value mv_shipmode] or 'default'</UL>
+<H4><A NAME="shipping_noformat"> </A>4.71.2.12. <A NAME="shipping_noformat">noformat</A></H4>
+<P>Returns result as a number rather than a string formatted for the current locale's currency.</P>
+<UL>
+<LI>Default: True</UL>
+<H4><A NAME="shipping_reset_message"> </A>4.71.2.13. <A NAME="shipping_reset_message">reset_message</A></H4>
+<P>Boolean. Blanks the session's current shipping message (i.e., $Session-&gt;{ship_message}).</P>
+<H4><A NAME="shipping_reset_modes"> </A>4.71.2.14. <A NAME="shipping_reset_modes">reset_modes</A></H4>
+<P>Clears list of modes in $Vend::Cfg-&gt;{Shipping_line}</P>
+<UL>
+<LI>Default: False</UL>
+<H4><A NAME="shipping_table"> </A>4.71.2.15. <A NAME="shipping_table">table</A></H4>
+<UL>
+<LI>Alias: <B>tables</B> Whitespace-delimited list of tables containing shipping data required for perl or query calculations (<I>e.g.</I>, in the 'PERL' field of your shipping database&nbsp;-- see <A HREF="icdatabase_38.html#Shipping">Shipping</A>). You must specify the tables to get past the Perl '<A HREF="http://www.perl.com/pub/doc/manual/html/lib/Safe.html">Safe.pm</A>' protection. For example, you will get '<A HREF="http://www.perl.com/pub/doc/manual/html/lib/Safe.html">Safe</A>' errors if you refer to an SQL table without specifying it here.
+<LI>Default: None</UL>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_104.html">Previous Topic</A> | <A HREF="ictags_106.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

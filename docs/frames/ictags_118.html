@@ -1,0 +1,203 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: update</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_117.html">Previous Topic</A> | <A HREF="ictags_119.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.84. update</H2>
+<P>Forces an update of the specified interchange function. Function may be one of the following:</P>
+<UL>
+<LI><B>cart</B> (updates current or named cart)
+<LI><B>process</B> (updates order or search)
+<LI><B>values</B> (updates user-entered fields)
+<LI><B>data</B> (updates database, using current <B>mv_</B> CGI form variables)</UL>
+<H3><A NAME="Summary">4.84.1. Summary</A></H3>
+<PRE>
+    [<B>update</B> function]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_118.html#update_function">function</A>
+</TD>
+<TD VALIGN='Top'>
+<UL>
+<LI>cart<UL>
+<LI>Updates current or named cart (see <TT>name</TT> attribute)</UL>
+<LI>process<UL>
+<LI>Updates an order or a search page</UL>
+<LI>values<UL>
+<LI>Updates user-entered fields</UL>
+<LI>data<UL>
+<LI>Updates database, using current <B>mv_</B> CGI form variables, for example:<UL>
+<LI><B>mv_data_table</B> Table to update
+<LI><B>mv_data_key</B> Key into table
+<LI><B>mv_data_fields</B> Fields to update (space or null delimited)
+<LI><B>mv_data_function</B> One of the following:<UL>
+<LI>delete
+<LI>update
+<LI>insert
+<LI>delete</UL>
+<LI>etc.</UL></UL></UL>
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_118.html#update_name">name</A>
+</TD>
+<TD VALIGN='Top'>
+Cart name to update (if 'function=cart')
+<UL>
+<LI>Default: current cart</UL>
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_interpolate">interpolate (reparse)</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>YES</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Container tag
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Has Subtags
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Nests
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+    [update function]
+---
+    TODO: (tag result)
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+   $Tag-&gt;update(  { function =&gt; VALUE_function
+}, $body  );
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;update(function, $attribute_hash_reference, $body);
+</PRE>
+<H3><A NAME="Description">4.84.2. Description</A></H3>
+<P>Forces an update of the specified interchange function. Function may be one of the following:</P>
+<UL>
+<LI><B>cart</B> (updates current or named cart)
+<LI><B>process</B> (updates order or search)
+<LI><B>values</B> (updates user-entered fields)
+<LI><B>data</B> (updates database, using current <B>mv_</B> CGI form variables)</UL>
+<H4><A NAME="update_function"> </A>4.84.2.1. <A NAME="update_function">function</A></H4>
+<UL>
+<LI>cart<UL>
+<LI>Updates current or named cart (see <TT>name</TT> attribute)</UL>
+<LI>process<UL>
+<LI>Updates an order or a search page</UL>
+<LI>values<UL>
+<LI>Updates user-entered fields</UL>
+<LI>data<UL>
+<LI>Updates database, using current <B>mv_</B> CGI form variables, for example:<UL>
+<LI><B>mv_data_table</B> Table to update
+<LI><B>mv_data_key</B> Key into table
+<LI><B>mv_data_fields</B> Fields to update (space or null delimited)
+<LI><B>mv_data_function</B> One of the following:<UL>
+<LI>delete
+<LI>update
+<LI>insert
+<LI>delete</UL>
+<LI>etc.</UL></UL></UL>
+<H4><A NAME="update_name"> </A>4.84.2.2. <A NAME="update_name">name</A></H4>
+<P>Cart name to update (if 'function=cart')</P>
+<UL>
+<LI>Default: current cart</UL>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_117.html">Previous Topic</A> | <A HREF="ictags_119.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

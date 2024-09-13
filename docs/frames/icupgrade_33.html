@@ -1,0 +1,85 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Upgrade Guide: help</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<UL ALIGN="Center">
+<A HREF="icupgrade_29.html">Parent Topic</A> | <A HREF="icupgrade_32.html">Previous Topic</A> | <A HREF="icupgrade_34.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></UL>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>A.4. help</H2>
+<PRE>
+    UserTag help PosNumber 1
+    UserTag help Order name
+    UserTag help Routine &lt;&lt;EOR
+    <B>sub</B> parse_help {
+        <B>my</B> ($var, $value) = @_;
+        <B>my</B> (@files);
+        <B>my</B> (@items);
+        <B>my</B> ($c, $chunk, $item, $help, $key);
+        <B>unless</B> (<B>defined</B> $value &amp;&amp; $value) {
+            $c = {};
+            <B>return</B> $c;
+        }
+        $c = $C-&gt;{'Help'};
+        $var = <B>lc</B> $var;
+        $C-&gt;{'Source'}-&gt;{'Help'} = $value;
+        @files = get_files($C-&gt;{'PageDir'}, <B>split</B> /\s+/, $value);
+        <B>foreach</B> $chunk (@files) {
+            @items = <B>split</B> /\r?\n\r?\n/, $chunk;
+            <B>foreach</B> $item (@items) {
+                ($key,$help) = <B>split</B> /\s*\n/, $item, 2;
+                <B>if</B>(<B>defined</B> $c-&gt;{$key}) {
+                    $c-&gt;{$key} .= $help;
+                }
+                <B>else</B> {
+                    $c-&gt;{$key} = $help;
+                }
+    
+            }
+        }
+        <B>return</B> $c;
+    }
+    
+    <B>sub</B> {
+        <B>my</B>($help) = <B>shift</B>;
+        <I># Move this to control section?</I>
+        <B>if</B> ($::Values-&gt;{mv_helpon}) {
+            <B>delete</B> $::Values-&gt;{mv_helpoff};
+            <B>undef</B> $::Values-&gt;{mv_helpon};
+        }
+        <B>return</B> <TT>''</TT> <B>if</B> <B>defined</B> $::Values-&gt;{'mv_helpoff'};
+        <B>if</B> (<B>defined</B> $Vend::Cfg-&gt;{'Help'}{$help}) {
+            <B>return</B> $Vend::Cfg-&gt;{'Help'}{$help};
+        }
+        <B>else</B> {
+            <B>return</B> <TT>''</TT>;
+        }
+    }
+    EOR
+    
+    AddDirective Help help
+</PRE>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<UL ALIGN="Center">
+<A HREF="icupgrade_29.html">Parent Topic</A> | <A HREF="icupgrade_32.html">Previous Topic</A> | <A HREF="icupgrade_34.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></UL>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

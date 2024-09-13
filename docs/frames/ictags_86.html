@@ -1,0 +1,332 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: page</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_85.html">Previous Topic</A> | <A HREF="ictags_87.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.52. page</H2>
+<P>Expands to a hyperlink to an Interchange page or action, including surrounding &lt;A&nbsp;HREF&nbsp;...&gt;. The URL within the link includes the Interchange session ID and supplied arguments. The optional [/page] is simply a macro for &lt;/A&gt;.</P>
+<P>If you do not want the &lt;A&nbsp;HREF&nbsp;...&gt;, use the <A HREF="ictags_37.html#area">area</A> tag instead&nbsp;-- these are equivalent:</P>
+<PRE>
+    [page href=dir/page arg=mv_arg]TargetName&lt;/A&gt;
+    &lt;A HREF=&quot;[area href=dir/page arg=mv_arg]&quot;&gt;TargetName&lt;/A&gt;
+</PRE>
+<H3><A NAME="Summary">4.52.1. Summary</A></H3>
+<PRE>
+    [<B>page</B> href arg]
+    [<B>page</B> href=dir/page arg=page_arguments <I>other_named_attributes</I>]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+href
+</TD>
+<TD VALIGN='Top'>
+Path to Interchange page or action
+<UL>
+<I>Special arguments</I><UL>
+<LI>'scan' treats <B>arg</B> as a search argument
+<LI>'http://...' external link (requires <B>form</B> attribute)</UL></UL>
+</TD>
+<TD VALIGN='Top'>
+process
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+arg
+</TD>
+<TD VALIGN='Top'>
+Interchange arguments to page or action
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<I>base</I>
+</TD>
+<TD VALIGN='Top'>
+alias for <B>arg</B>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_86.html#page_extra">extra</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_86.html#page_form">form</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_86.html#page_search">search</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_86.html#page_secure">secure</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_interpolate">interpolate (reparse)</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Macro
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Has end tag
+</TD>
+<TD VALIGN='Top'>
+<I>No</I> (<TT>[/page]</TT> is a macro for <TT>&lt;/A&gt;</TT>)
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+    [page href=dir/page.html arg=&quot;arg1=AA/arg2=BB&quot;]
+
+    &lt;a href=&quot;www.here.com/cgi-bin/mycatalog/page.html?mv_session_id=6CZ2whqo&amp;\
+    mv_pc=1&amp;mv_arg=arg1%3dAA/arg2%3dBB&quot;&gt;
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+    $Tag-&gt;page(  { href =&gt; <TT>&quot;dir/page&quot;</TT>,
+                   arg  =&gt; <TT>&quot;arguments&quot;</TT>, }  );
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;page($href, $arg, $attribute_hash_reference);
+</PRE>
+<P>Using arrayref for joined search (see also <A HREF="ictags_8.html#attr_array_hash">Attribute Arrays and Hashes</A>)</P>
+<PRE>
+    my $searchref = [ &quot;se=hammer/fi=products/sf=description&quot;,
+                      &quot;se=plutonium/fi=products/sf=description&quot;, ];
+
+    $Tag-&gt;page( { href   =&gt; 'scan',
+                  search =&gt; $searchref, } );
+</PRE>
+<H4><A NAME="See Also">4.52.1.1. See Also</A></H4>
+<P><A HREF="ictags_37.html#area">area</A></P>
+<H3><A NAME="Description">4.52.2. Description</A></H3>
+<P>The <TT>page</TT> tag inserts a hyperlink to the specified Interchange page or action. For example, [<TT>page</TT> shirts] will expand into</P>
+<PRE>
+   &lt;a&nbsp;href=&quot;http://www.here.com/cgi-bin/mycatalog/shirts?mv_session_id=6CZ2whqo&amp;mv_pc=1&quot;&gt;
+</PRE>
+<P>The catalog page displayed will come from &quot;shirts.html&quot; in the pages directory.</P>
+<P>The additional argument will be passed to Interchange and placed in the {arg} session parameter. This allows programming of a conditional page display based on where the link came from. The argument is then available with the tag [data session arg], or the embedded Perl session variable $Session-&gt;{arg}. Spaces and some other characters will be escaped with the %NN HTTP-style notation and unescaped when the argument is read back into the session.</P>
+<P>For better performance, Interchange can prebuild and cache pages that would otherwise be generated dynamically. If Interchange has built such a static page for the target, the <TT>page</TT> tag produces a link to the cached page whenever the user has accepted and sent back a cookie with the session ID. If the user did not accept the cookie, Interchange cannot use the cache, since the link must then include the <I>mv_session_id</I> argument in order to preserve session.</P>
+<H4><A NAME="page_extra"> </A>4.52.2.1. <A NAME="page_extra">extra</A></H4>
+<H4><A NAME="page_form"> </A>4.52.2.2. <A NAME="page_form">form</A></H4>
+<P>The optional <TT>form</TT> argument allows you to encode a form in the link.</P>
+<PRE>
+        [page form=&quot;mv_order_item=os28044
+                    mv_order_size=15oz
+                    mv_order_quantity=1
+                    mv_separate_items=1
+                    mv_todo=refresh&quot;] Order 15oz Framing Hammer&lt;/A&gt;
+</PRE>
+<P>The two form values <I>mv_session_id</I> and <I>mv_arg</I> are automatically added when appropriate. The form value <I>mv_arg</I> receives the value of the tag's <TT>arg</TT> parameter.</P>
+<P>This would generate a form that ordered quantity one of item number <TT>os28044</TT> with size <TT>15oz</TT>. The item would appear on a separate line in the shopping cart, since <TT>mv_separate_items</TT> is set. Since the <TT>href</TT> is not set, you will go to the default shopping cart page&nbsp;-- alternatively, you could have set <TT>mv_orderpage=yourpage</TT> to go to <TT>yourpage</TT>.</P>
+<P>All normal Interchange form caveats apply&nbsp;-- you must have an action, you must supply a page if you don't want to go to the default, etc.</P>
+<P>You can theoretically submit any form with this, though none of the included values can have newlines or trailing whitespace. If you want to do something like that you will have to write a UserTag.</P>
+<P>If the parameter <TT>href</TT> is not supplied, <I>process</I> is used, causing normal Interchange form processing.</P>
+<P>If the <TT>href</TT> points to an http:// link, then no Interchange URL processing will be done, but the URL will include mv_session_id, mv_pc, and any arguments supplied with the <TT>arg</TT> attribute:</P>
+<PRE>
+       [page  href=&quot;http://www.elsewhere.net/cgi/script&quot;
+              form=&quot;cgi_1=ONE
+                    cgi_2=TWO&quot;
+               arg=&quot;Interchange argument&quot;]External link&lt;/A&gt;
+
+       &lt;A HREF=&quot;http://www.elsewhere.net/cgi/script?\
+        mv_session_id=6CZ2whqo&amp;mv_pc=1&amp;mv_arg=Interchange%20argument&amp;\
+        cgi_1=ONE&amp;cgi_2=TWO&quot;&gt;External link&lt;/A&gt;
+</PRE>
+<H4><A NAME="page_search"> </A>4.52.2.3. <A NAME="page_search">search</A></H4>
+<P>Interchange allows you to pass a search in a URL. There are two ways to do this:</P>
+<OL>
+<LI>Place the search specification in the named <TT>search</TT> attribute.<UL>
+<LI>Interchange will ignore the <TT>href</TT> parameter (the link will be set to 'scan'.</UL><UL>
+<LI>If you give the <TT>arg</TT> parameter a value, that value will be available as [<A HREF="ictags_120.html#value">value</A> mv_arg] within the search display page.</UL>
+<LI>Set the <TT>href</TT> parameter to 'scan' and set <TT>arg</TT> to the search specification.<UL>
+<LI>Note that you can use this form positionally&nbsp;-- the values go into <TT>href</TT> and <TT>arg</TT>, so you do not have to name parameters.</UL></OL>
+<P>These are identical:</P>
+<PRE>
+    [page scan
+          se=Impressionists
+          sf=category]
+        Impressionist Paintings
+    &lt;/a&gt;
+
+    [page href=scan
+          arg=&quot;se=Impressionists
+               sf=category&quot;]
+        Impressionist Paintings
+    &lt;/A&gt;
+
+    [page search=&quot;se=Impressionists
+                  sf=category&quot;]
+        Impressionist Paintings
+    &lt;/a&gt;
+</PRE>
+<P>Here is the same thing from a non-Interchange page (e.g., a home page), assuming '/cgi-bin/mycatalog' is the CGI path to Interchange's vlink):</P>
+<PRE>
+     &lt;A HREF=&quot;/cgi-bin/mycatalog/scan/se=Impressionists/sf=category&quot;&gt;
+        Impressionist Paintings
+     &lt;/A&gt;
+</PRE>
+<P>Sometimes, you will find that you need to pass characters that will not be interpreted positionally. In that case, you should quote the arguments:</P>
+<PRE>
+    [page href=scan
+          arg=|
+                se=&quot;Something with spaces&quot;
+          |]
+</PRE>
+<P>See the <A HREF="ictags_163.html#Search and Form Variables">Search and Form Variables</A> appendix for a listing of the form variables along with two-letter abbreviations and descriptions.</P>
+<P>They can be treated just the same as form variables on the page, except that they can't contain spaces, '/' in a file name, or quote marks. These characters can be used in URL hex encoding, i.e. %20 is a space, %2F is a <TT>/</TT>, etc.&nbsp;-- <TT>&amp;sp;</TT> or <TT>&amp;#32;</TT> will not be recognized. If you use one of the methods below to escape these &quot;unsafe&quot; characters, you won't have to worry about this.</P>
+<P>You may specify a one-click search in three different ways. The first is as used in previous versions, with the scan URL being specified completely as the page name. The second two use the &quot;argument&quot; parameter to the <TT>[page ...]</TT> or [<A HREF="ictags_37.html#area">area</A> ...]&gt; tags to specify the search (an argument to a scan is never valid anyway).</P>
+<H4><A NAME="page_secure"> </A>4.52.2.4. <A NAME="page_secure">secure</A></H4>
+<H4><A NAME="Original syntax">4.52.2.5. Original syntax</A></H4>
+<P>If you wish to do an OR search on the fields category and artist for the strings &quot;Surreal&quot; and &quot;Gogh&quot;, while matching substrings, you would do:</P>
+<PRE>
+ [page scan se=Surreal/se=Gogh/os=yes/su=yes/sf=artist/sf=category]
+    Van Gogh -- compare to surrealists
+ &lt;/a&gt;
+</PRE>
+<P>In this method of specification, to replace a / (slash) in a file name (for the sp, bd, or fi parameter) you must use the shorthand of ::, i.e. sp=results::standard. (This may not work for some browsers, so you should probably either put the page in the main pages directory or define the page in a search profile.)</P>
+<H4><A NAME="Ampersand syntax">4.52.2.6. Ampersand syntax</A></H4>
+<P>You can substitute &amp; for / in the specification and be able to use / and quotes and spaces in the specification.</P>
+<PRE>
+ [page scan se=&quot;Van Gogh&quot;&amp;sp=lists/surreal&amp;os=yes&amp;su=yes&amp;sf=artist&amp;sf=category]
+    Van Gogh -- compare to surrealists
+ &lt;/a&gt;
+</PRE>
+<P>Any &quot;unsafe&quot; characters will be escaped.</P>
+<H4><A NAME="Multi-line syntax">4.52.2.7. Multi-line syntax</A></H4>
+<P>You can specify parameters one to a line, as well.</P>
+<PRE>
+    [page scan
+        se=&quot;Van Gogh&quot;
+        sp=lists/surreal
+        os=yes
+        su=yes
+        sf=artist
+        sf=category
+    ] Van Gogh -- compare to surrealists &lt;/a&gt;
+</PRE>
+<P>Any &quot;unsafe&quot; characters will be escaped. You may not search for trailing spaces in this method; it is allowed in the other notations.</P>
+<H4><A NAME="Joined searches">4.52.2.8. Joined searches</A></H4>
+<P>You can also specify a joined search using an attribute array (see <A HREF="ictags_8.html#attr_array_hash">Attribute Arrays and Hashes</A>):</P>
+<PRE>
+    [page href=scan
+      search.0=&quot;se=fragrant
+                fi=products
+                sf=smell&quot;
+      search.1=&quot;se=purple
+                sf=color&quot;
+      search.2=&quot;se=perennial
+                sf=type&quot;]
+</PRE>
+<P>The search routine called by the page tag automatically adds the other relevant search specification elements, including the 'co=yes' to indicate a combined search (<A HREF="icdatabase_29.html#Coordinated and Joined Searching">joined</A>&nbsp;searches are described in the Interchange database documentation).</P>
+<H4><A NAME="E&lt;lbracket&gt;/page]">4.52.2.9. [/page]</A></H4>
+<P>This is not an actual end tag, but simply a macro that expands to &lt;/A&gt;. The following two lines are equivalent:</P>
+<PRE>
+  [page shirts]Our shirt collection[/page]
+  [page shirts]Our shirt collection&lt;/A&gt;
+</PRE>
+<P>Tip: In large pages, just use the &lt;/A&gt; tag for a small performance improvement.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_85.html">Previous Topic</A> | <A HREF="ictags_87.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

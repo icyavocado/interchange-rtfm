@@ -1,0 +1,81 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Databases: Address Book</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_47.html">Parent Topic</A> | <A HREF="icdatabase_50.html">Previous Topic</A> | <A HREF="icdatabase_52.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>8.4. Address Book</H2>
+<P>Address_book is a shipping address book. The shipping address book saves information relevant to shipping the order. In its simplest form, this can be the only address book needed. By default these form values are included:</P>
+<PRE>
+  s_nickname
+  name
+  fname
+  lname
+  address
+  address1
+  address2
+  address3
+  city
+  state
+  zip
+  country
+  phone_day
+  mv_shipmode
+</PRE>
+<P>The first field is always the name of the form variable that contains the key for the entry. The values are saved with the <TT>[userdb function=set_shipping]</TT> tag call, and are recalled with <TT>[userdb function=get_shipping]</TT>. A list of the keys available is kept in the form value <TT>address_book</TT>, suitable for iteration in an HTML select box or in a set of links.</P>
+<P>To get the names of the addresses, use the <TT>get_shipping_names</TT> function:</P>
+<PRE>
+   [userdb function=get_shipping_names]
+</PRE>
+<P>By default, they are placed in the variable <TT>address_book</TT>. Here is a little snippet that builds a select box:</P>
+<PRE>
+   &lt;FORM ACTION=&quot;[process]&quot; METHOD=POST&gt;
+   [userdb function=get_shipping_names]
+   [if value address_book]
+   &lt;SELECT NAME=&quot;s_nickname&quot;&gt;
+   [loop arg=&quot;[value address_book]&quot;] &lt;OPTION&gt; [loop-code] [/loop]
+   &lt;/SELECT&gt;
+   &lt;INPUT TYPE=submit NAME=mv_check VALUE=&quot;Recall Shipping&quot;&gt;
+   &lt;/FORM&gt;
+</PRE>
+<P>The same principle works with accounts, carts, and preferences.</P>
+<P>To restore a cart based on the above, put in an <TT>mv_check</TT> routine:</P>
+<PRE>
+   [set Recall Shipping]
+   mv_todo=return
+   mv_nextpage=ord/basket
+   [userdb function=get_shipping nickname=&quot;[value s_nickname]&quot;]
+   [/set]
+</PRE>
+<P>When the <TT>mv_check</TT> variable is encountered, the contents of the scratch variable <TT>Recall Shipping</TT> are processed and the shipping address information inserted into the user form values. This is destructive of any current values of those user session variables, of course.</P>
+<P>To change the fields that are recalled or saved, use the <TT>shipping</TT> parameter:</P>
+<PRE>
+   [userdb function=get_shipping
+           nickname=city_and_state
+           shipping=&quot;city state&quot;]
+</PRE>
+<P>Only the values of the <TT>city</TT> and <TT>state</TT> variables will be replaced.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_47.html">Parent Topic</A> | <A HREF="icdatabase_50.html">Previous Topic</A> | <A HREF="icdatabase_52.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

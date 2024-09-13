@@ -1,0 +1,62 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Template Guide: Setting the Locale</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_43.html">Parent Topic</A> | <A HREF="ictemplates_44.html">Previous Topic</A> | <A HREF="ictemplates_46.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>9.2. Setting the Locale</H2>
+<P>The locale could be set to <TT>fr_FR</TT> (French for France) in one of two ways:</P>
+<P><B>[setlocale locale=locale* currency=locale* persist=1*]</B></P>
+<UL>
+Immediately sets the locale to <TT>locale</TT>, and will cause it to persist in future user pages if the <TT>persist</TT> is set to a non-zero, non-blank value. If the <TT>currency</TT> attribute is set, the pricing and currency-specific locale keys and Interchange configuration directives are modified to that locale. If there are no arguments, it sets it back to the user's default locale as defined in the scratch variables <TT>mv_locale</TT> and <TT>mv_currency</TT>.
+<BR>
+This allows:</UL>
+<PRE>
+            Dollar Pricing:
+        
+            [setlocale en_US]
+            [item-list]
+            [item-code]: [item-price]&lt;BR&gt;
+            [/item-list]
+        
+            Franc Pricing:
+        
+            [setlocale fr_FR]
+            [item-list]
+            [item-code]: [item-price]&lt;BR&gt;
+            [/item-list]
+        
+            [comment] Return to the user's default locale [/comment]
+            [setlocale]
+</PRE>
+<P><B>[page process/locale/fr_FR/page/catalog]</B></P>
+<UL>
+This is the same as <TT>[page catalog]</TT>, except when the link is followed it will set the locale to <TT>fr_FR</TT> before displaying the page. This is persistent.</UL>
+<P><B>[page process/locale/fr_FR/currency/en_US/page/catalog]</B></P>
+<UL>
+This is the same as <TT>[page catalog]</TT>, except when the link is followed it will set the locale to <TT>fr_FR</TT> and the pricing/number display to the locale <TT>en_US</TT> before displaying the page. This is persistent.</UL>
+<P>Once the locale is persistently set for a user, it is in effect for the duration of their session.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_43.html">Parent Topic</A> | <A HREF="ictemplates_44.html">Previous Topic</A> | <A HREF="ictemplates_46.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

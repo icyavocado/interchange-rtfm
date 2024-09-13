@@ -1,0 +1,90 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange + CVS HOWTO: Setup the development catalog</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ic_howto_cvs_31.html">Parent Topic</A> | <A HREF="ic_howto_cvs_34.html">Previous Topic</A> | <A HREF="ic_howto_cvs_36.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>5.4. Setup the development catalog</H2>
+<P>Now we have a branch in CVS, but we need to tie it to something in the real world, namely, an Interchange catalog.</P>
+<H3><A NAME="Importing the catalog">5.4.1. Importing the catalog</A></H3>
+<P>Like we did in <SECT>Integrating CVS with Interchange</SECT>, you must make another copy of your catalog for use as the development version.  Some would like to keep the orders/, logs/, and other directories the same, but I prefer to start with a clean slate, especially since I don't plan on having any customers visit the development site.  (In fact, you can restrict who can access the development URL using the Apache <TT>&lt;Directory&gt; allow from...</TT> directive).</P>
+<H4><A NAME="Checkout source code">5.4.1.1. Checkout source code</A></H4>
+<PRE>
+cd /var/lib/interchange
+cvs co -d foundation_dev foundation
+</PRE>
+<H4><A NAME="Copy any other needed directories to complete the catalog">5.4.1.2. Copy any other needed directories to complete the catalog</A></H4>
+<P>Depending on how complete your catalog is in CVS, you may need to create or copy directories/files.</P>
+<PRE>
+cd /var/lib/interchange/foundation
+cp -a catalog.cfg orders/*   \
+        /var/lib/interchange/foundation_dev
+</PRE>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>A lot of the following steps are performed by the /usr/local/interchange/bin/makecat script, but here is how to do it manually:
+<HR WIDTH="80%" ALIGN="Left"></P>
+<H3><A NAME="Setting up a separate database">5.4.2. Setting up a separate database</A></H3>
+<P>Most often, I find it profitable to make use of a second database for the development catalog, rather than having both catalogs reference the same database (especially if the first catalog is live).</P>
+<H4><A NAME="Create a second database">5.4.2.1. Create a second database</A></H4>
+<P>Use the means of your database platform to create a separate database.  For example, PostgreSQL users might do something like:</P>
+<P><TT>createdb foundation_dev</TT></P>
+<H4><A NAME="Populate the database">5.4.2.2. Populate the database</A></H4>
+<P>You can rely on the catalogs internal products/*.txt data to generate the database tables and populate them, or you can export another catalog's database and import it for the development catalog, like the example below for PostgreSQL users.</P>
+<PRE>
+pg_dump foundation  &gt; ~/foundation.dump
+psql foundation_dev &lt; ~/foundation.dump
+</PRE>
+<H3><A NAME="Copy the catalog support files">5.4.3. Copy the catalog support files</A></H3>
+<PRE>
+#Must be root
+su - root
+
+#Copy HTML
+cd /var/www/html/
+cp -a foundation foundation_dev
+
+#Copy CGI
+cd /var/www/cgi-bin
+cp -a foundation foundation_dev
+</PRE>
+<H3><A NAME="Configure the Interchange daemon">5.4.4. Configure the Interchange daemon</A></H3>
+<P>Perform the necessary modifications to <TT>interchange.cfg</TT>.  For example:</P>
+<PRE>
+<B>/usr/local/interchange/interchange.cfg:</B>
+Catalog foundation     /var/lib/interchange/foundation     /cgi-bin/foundation
+Catalog foundation_dev /var/lib/interchange/foundation_dev /cgi-bin/foundation_dev
+</PRE>
+<H3><A NAME="Configure the catalog specifics">5.4.5. Configure the catalog specifics</A></H3>
+<P>The development catalog will differ at least a little bit from the standard catalog, such as in the CGI_URL and database parameters.  You can also modify/add the foundation_dev/variable.txt instead of the following.</P>
+<PRE>
+<B>/var/lib/interchange/catalog.cfg:</B>
+Variable CGI_URL   /cgi-bin/foundation_dev
+Variable IMAGE_DIR /foundation_dev/images
+Variable SQLDSN    dbi:Pg:dbname=foundation_dev
+Variable SQLDB     foundation_dev
+</PRE>
+<P>Now you can restart Interchange to make your changes take effect.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ic_howto_cvs_31.html">Parent Topic</A> | <A HREF="ic_howto_cvs_34.html">Previous Topic</A> | <A HREF="ic_howto_cvs_36.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

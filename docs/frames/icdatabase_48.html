@@ -1,0 +1,97 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Databases: The [userdb ...] Tag</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_47.html">Parent Topic</A> | <A HREF="icdatabase_47.html">Previous Topic</A> | <A HREF="icdatabase_49.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>8.1. The [userdb ...] Tag</H2>
+<P>Interchange provides a <TT>[userdb ...]</TT> tag to access the UserDB functions.</P>
+<PRE>
+[userdb
+       function=function_name
+       username=&quot;username&quot;*
+       assign_username=1
+       username_mask=REGEX*
+       password=&quot;password&quot;*
+       verify=&quot;password&quot;*
+       oldpass=&quot;old password&quot;*
+       crypt=&quot;1|0&quot;*
+       shipping=&quot;fields for shipping save&quot;
+       billing=&quot;fields for billing save&quot;
+       preferences=&quot;fields for preferences save&quot;
+       ignore_case=&quot;1|0&quot;*
+       force_lower=1
+       param1=value*
+       param2=value*
+       ...
+       ]
+</PRE>
+<P>* Optional</P>
+<P>It is normally called in an <TT>mv_click</TT> or <TT>mv_check</TT> setting, as in:</P>
+<PRE>
+   [set Login]
+   mv_todo=return
+   mv_nextpage=welcome
+   [userdb function=login]
+   [/set]
+
+   &lt;FORM ACTION=&quot;[process]&quot; METHOD=POST&gt;
+   &lt;INPUT TYPE=hidden NAME=mv_click VALUE=Login&gt;
+   Username &lt;INPUT NAME=mv_username SIZE=10&gt;
+   Password &lt;INPUT NAME=mv_password SIZE=10&gt;
+   &lt;/FORM&gt;
+</PRE>
+<P>There are several global parameters that apply to any use of the <TT>userdb</TT> functions. Most importantly, by default, the database table is set to be userdb. If another table name must be used, include a <TT>database=table</TT> parameter with any call to <TT>userdb</TT>. The global parameters (default in parentheses):</P>
+<PRE>
+ database          Sets user database table (userdb)
+ show              Show the return value of certain functions
+                   or the error message, if any (0)
+ force_lower       Force possibly upper-case database fields
+                   to lower case session variable names (0)
+ billing           Set the billing fields (see Accounts)
+ shipping          Set the shipping fields (see Address Book)
+ preferences       Set the preferences fields (see Preferences)
+ bill_field        Set field name for accounts (accounts)
+ addr_field        Set field name for address book (address_book)
+ pref_field        Set field name for preferences (preferences)
+ cart_field        Set field name for cart storage (carts)
+ pass_field        Set field name for password (password)
+ time_field        Set field for storing last login time (time)
+ outboard          Set fields that live in another table
+ outboard_key_col  Set field providing key for outboard tables
+ expire_field      Set field for expiration date (expire_date)
+ acl               Set field for simple access control storage (acl)
+ file_acl          Set field for file access control storage (file_acl)
+ db_acl            Set field for database access control storage (db_acl)
+ indirect_login    Log in field if different than real username ('')
+</PRE>
+<P>By default the system crypt() call will be used to compare the password. This is best for security, but the passwords in the user database will not be human readable.</P>
+<P>If no critical information is kept and Interchange administration is not done via the <TT>UserDB</TT> capability, use the <TT>UserDB</TT> directive (described below) to set encryption off by default:</P>
+<PRE>
+   UserDB   default   crypt   0
+</PRE>
+<P>Encryption can still be set on by passing <TT>crypt=1</TT> with any call to a <TT>new_account</TT>, <TT>change_pass</TT>, or <TT>login</TT> call.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_47.html">Parent Topic</A> | <A HREF="icdatabase_47.html">Previous Topic</A> | <A HREF="icdatabase_49.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

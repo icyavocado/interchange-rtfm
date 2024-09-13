@@ -1,0 +1,195 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: setlocale</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_103.html">Previous Topic</A> | <A HREF="ictags_105.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.70. setlocale</H2>
+<P>Sets locale and/or currency for the current page. Can be made persistent for the user with the 'persist' option. Resets default locale if called without arguments.  See also <A HREF="ictemplates_45.html#Setting the Locale">Setting the Locale</A> in the template documentation.</P>
+<H3><A NAME="Summary">4.70.1. Summary</A></H3>
+<PRE>
+    [<B>setlocale</B>]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_104.html#setlocale_currency">currency</A>
+</TD>
+<TD VALIGN='Top'>
+The currency format to use.
+<UL>
+<LI>Default: [scratch mv_currency] (see also 'persist' attribute)</UL>
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_104.html#setlocale_locale">locale</A>
+</TD>
+<TD VALIGN='Top'>
+The locale to use.
+<UL>
+<LI>Default: [scratch mv_locale] (see also 'persist' attribute)</UL>
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_104.html#setlocale_persist">persist</A>
+</TD>
+<TD VALIGN='Top'>
+Setting '<TT>persist=1</TT>' also sets the scratch variables, <B>mv_locale</B> and <B>mv_currency</B> to specified locale and currency. This makes the locale settings persistent for the user's session. Otherwise (<TT>persist=0</TT>), the <TT>setlocale</TT> tag affects the remainder of the current page only.
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_interpolate">interpolate (reparse)</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>no</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Container tag
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Has Subtags
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Nests
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+    [setlocale]
+---
+    TODO: (tag result)
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+   $Tag-&gt;setlocale(  {
+}, $body  );
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;setlocale(, $attribute_hash_reference, $body);
+</PRE>
+<H3><A NAME="Description">4.70.2. Description</A></H3>
+<P>Immediately sets the locale to <TT>locale</TT>, and will cause it to persist in future user pages if the <TT>persist</TT> is set to a non-zero, non-blank value. If the <TT>currency</TT> attribute is set, the pricing and currency-specific locale keys and Interchange configuration directives are modified to that locale. If there are no arguments, it sets it back to the user's default locale as defined in the scratch variables <TT>mv_locale</TT> and <TT>mv_currency</TT>.</P>
+<P>This allows:</P>
+<PRE>
+    Dollar Pricing:
+
+    [setlocale en_US]
+    [item-list]
+    [item-code]: [item-price]&lt;BR&gt;
+    [/item-list]
+
+    Franc Pricing:
+
+    [setlocale fr_FR]
+    [item-list]
+    [item-code]: [item-price]&lt;BR&gt;
+    [/item-list]
+
+    [comment] Return to the user's default locale [/comment]
+    [setlocale]
+</PRE>
+<H4><A NAME="setlocale_currency"> </A>4.70.2.1. <A NAME="setlocale_currency">currency</A></H4>
+<P>The currency format to use.</P>
+<UL>
+<LI>Default: [scratch mv_currency] (see also 'persist' attribute)</UL>
+<H4><A NAME="setlocale_locale"> </A>4.70.2.2. <A NAME="setlocale_locale">locale</A></H4>
+<P>The locale to use.</P>
+<UL>
+<LI>Default: [scratch mv_locale] (see also 'persist' attribute)</UL>
+<H4><A NAME="setlocale_persist"> </A>4.70.2.3. <A NAME="setlocale_persist">persist</A></H4>
+<P>Setting '<TT>persist=1</TT>' also sets the scratch variables, <B>mv_locale</B> and <B>mv_currency</B> to specified locale and currency. This makes the locale settings persistent for the user's session. Otherwise (<TT>persist=0</TT>), the <TT>setlocale</TT> tag affects the remainder of the current page only.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_103.html">Previous Topic</A> | <A HREF="ictags_105.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

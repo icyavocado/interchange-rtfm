@@ -1,0 +1,133 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: save_cart</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_133.html">Parent Topic</A> | <A HREF="ictags_150.html">Previous Topic</A> | <A HREF="ictags_152.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>6.18. save_cart</H2>
+<P>This tag saves the current cart or recurring order in the userdb under a given name.</P>
+<H3><A NAME="Summary">6.18.1. Summary</A></H3>
+<PRE>
+    [<B>save_cart</B> nickname recurring]
+    [<B>save_cart</B> nickname=&quot;cart-name&quot; recurring=1]
+</PRE>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Positional parameters: </STRONG>The first line shows the usage with positional parameters (given in order). The second line shows usage with named parameters.</P>
+<P><HR WIDTH="80%" ALIGN="Left"></P>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_151.html#save_cart_nickname">nickname</A>
+</TD>
+<TD VALIGN='Top'>
+Label for the cart.
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_151.html#save_cart_recurring">recurring</A>
+</TD>
+<TD VALIGN='Top'>
+Set to true if recurring. Set to false, or omit if cart.
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD>
+Invalidates cache
+</TD>
+<TD>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD>
+Macro
+</TD>
+<TD>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD>
+Has end tag
+</TD>
+<TD>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+    [save_cart mycart]
+    [save_cart nickname=mycart recurring=1]
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+    $Tag-&gt;save_cart( { nickname =&gt; mycart,
+                      recurring =&gt; 1, } );
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;save_cart( <TT>&quot;mycart&quot;</TT>, <TT>&quot;1&quot;</TT> );
+</PRE>
+<H4><A NAME="See Also">6.18.1.1. See Also</A></H4>
+<P><A HREF="ictags_119.html#userdb">userdb</A>, <A HREF="ictags_138.html#delete_cart">delete_cart</A>, <A HREF="ictags_145.html#load_cart">load_cart</A> and pages templates/components/saved_carts_list_small, pages/saved_carts.html for more examples.</P>
+<H3><A NAME="Description">6.18.2. Description</A></H3>
+<P>Saves the current cart with name nickname in the user database. Basically the same as [userdb function=set_cart nickname=cartname]</P>
+<H4><A NAME="save_cart_nickname"> </A>6.18.2.1. <A NAME="save_cart_nickname">nickname</A></H4>
+<P>Nickname for the current cart to be saved. You can use same nickname for different carts. An index will be added if there are more carts with the same nickname.</P>
+<H4><A NAME="save_cart_recurring"> </A>6.18.2.2. <A NAME="save_cart_recurring">recurring</A></H4>
+<P>Set to true if recurring. Set to false, or simply omit it, if it is a cart.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_133.html">Parent Topic</A> | <A HREF="ictags_150.html">Previous Topic</A> | <A HREF="ictags_152.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

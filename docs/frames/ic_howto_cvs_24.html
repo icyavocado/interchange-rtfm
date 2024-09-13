@@ -1,0 +1,39 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange + CVS HOWTO: Import the streamlined catalog</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ic_howto_cvs_19.html">Parent Topic</A> | <A HREF="ic_howto_cvs_23.html">Previous Topic</A> | <A HREF="ic_howto_cvs_25.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>3.5. Import the streamlined catalog</H2>
+<P>Import the remaining portion of the catalog using the <TT>cvs import</TT> command, with &quot;foundation&quot; as the module name and repository directory name. See the CVS documentation resources mentioned in Appendix <A HREF="ic_howto_cvs_47.html">Resources</A> for more information.</P>
+<P>When you run the import command, it will launch $EDITOR (set to <TT>'vi'</TT> earlier), and ask for a message to go along with the import action.  Whatever you see fit to write (e.g. &quot;starting new CVS module with my foundation catalog...&quot;) is fine.</P>
+<P>This example <TT>import</TT> command includes renaming the foundation &quot;working&quot; directory back to &quot;foundation&quot; for the import.</P>
+<PRE>
+su - interch
+cd /tmp/import_foundation
+cvs import foundation foundation start
+</PRE>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ic_howto_cvs_19.html">Parent Topic</A> | <A HREF="ic_howto_cvs_23.html">Previous Topic</A> | <A HREF="ic_howto_cvs_25.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

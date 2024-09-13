@@ -1,0 +1,49 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Databases: Glimpse</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_25.html">Parent Topic</A> | <A HREF="icdatabase_26.html">Previous Topic</A> | <A HREF="icdatabase_28.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>5.2. Glimpse</H2>
+<P>To use the Glimpse search, the Glimpse index must be built based on files in the ProductDir, or wherever the files to be searched will be located. If the catalog is in <TT>/var/lib/interchange/foundation</TT>, the command line to build the index for the products file would be:</P>
+<PRE>
+   chdir /var/lib/interchange/foundation/products
+   glimpseindex -b -H . products.txt
+</PRE>
+<P>There are several ways to improve search speed for large catalogs. One method that works well for large <TT>products.txt</TT> files is to split the <TT>products.txt</TT> file into small index files (in the example, 100 lines) with the split(1) UNIX/POSIX command. Then, index it with Glimpse:</P>
+<PRE>
+   split -100 products.txt index.txt.
+   glimpseindex -H /var/lib/interchange/foundation/products index.txt.*
+</PRE>
+<P>This will dramatically increase search speeds for large catalogs, at least if the search term is relatively unique. If it is a common string, in a category search, for example, it is better to use the text-based search.</P>
+<P>To search for numbers, add the <TT>-n</TT> option to the Glimpse command line.</P>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>A large catalog is one of more than several thousand items; smaller ones have acceptable speed in any of the search modes.
+<HR WIDTH="80%" ALIGN="Left"></P>
+<P>If the Glimpse executable is not found at Interchange startup, the Glimpse search will be disabled and the regular text-based search used instead.</P>
+<P>There are several things to watch for while using Glimpse, and a liberal dose of the Glimpse documentation is suggested. In particular, the spelling error capability will not work in combination with the field-specific search. Glimpse selects the line, but Interchange's text-based search routines disqualify it when checking to see if the search string is within one of the specified fields.</P>
+<P>To use field-specific searching on Glimpse, tell it what the field names are. If the search is on the products database (file), nothing is needed for the default is to use the field names from the products database. If it is some other field layout, specify the file to get the field names from with <TT>mv_field_file</TT> (ff).</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_25.html">Parent Topic</A> | <A HREF="icdatabase_26.html">Previous Topic</A> | <A HREF="icdatabase_28.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

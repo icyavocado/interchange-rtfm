@@ -1,0 +1,127 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Template Guide: Tags for Summarizing Shopping Basket/Cart</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_18.html">Parent Topic</A> | <A HREF="ictemplates_26.html">Previous Topic</A> | <A HREF="ictemplates_28.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>6.9. Tags for Summarizing Shopping Basket/Cart</H2>
+<P>The following elements are used to access common items which need to be displayed on baskets and checkout pages.</P>
+<P><B>* marks an optional parameter</B></P>
+<P><B>[item-list cart*]</B></P>
+<UL>
+named attributes: <TT>[item-list name=&quot;cart&quot;]</TT>
+<BR>
+Places an iterative list of the items in the specified shopping cart, the main cart by default. See Item Lists for a description.</UL>
+<P><B>[/item-list]</B></P>
+<UL>
+Terminates the <TT>[item-list]</TT> tag.</UL>
+<P><B>[nitems cart*]</B></P>
+<UL>
+Expands into the total number of items ordered so far. Takes an optional cart name as a parameter.</UL>
+<P><B>[subtotal]</B></P>
+<UL>
+Expands into the subtotal cost, exclusive of sales tax, of all the items ordered so far.</UL>
+<P><B>[salestax cart*]</B></P>
+<UL>
+Expands into the sales tax on the subtotal of all the items ordered so far. If there is no key field to derive the proper percentage, such as state or zip code, it is set to 0. See SALES TAX for more information.</UL>
+<P><B>[shipping-description mode*]</B></P>
+<UL>
+named attributes: <TT>[shipping-description name=&quot;mode&quot;]</TT>
+<BR>
+The text description of mode. The default is the shipping mode currently selected.</UL>
+<P><B>[shipping mode*]</B></P>
+<UL>
+named attributes: <TT>[shipping name=&quot;mode&quot;]</TT>
+<BR>
+The shipping cost of the items in the basket via <TT>mode</TT>. The default mode is the shipping mode currently selected in the <TT>mv_shipmode</TT> variable. See SHIPPING.</UL>
+<P><B>[total-cost cart*]</B></P>
+<UL>
+Expands into the total cost of all the items in the current shopping cart, including sales tax, if any.</UL>
+<P><B>[currency convert*]</B></P>
+<UL>
+named attributes: <TT>[currency convert=1*]</TT>
+<BR>
+When passed a value of a single number, formats it according to the currency specification. For instance:</UL>
+<PRE>
+            [currency]4[/currency]
+</PRE>
+<UL>
+will display:</UL>
+<PRE>
+            4.00
+</PRE>
+<UL>
+Uses the Locale and PriceCommas settings as appropriate, and can contain a <TT>[calc]</TT> region. If the optional &quot;convert&quot; parameter is set, it will convert according to PriceDivide&gt; for the current locale. If Locale is set to <TT>fr_FR</TT>, and <TT>PriceDivide</TT> for <TT>fr_FR</TT> is 0.167, using the following sequence:</UL>
+<PRE>
+            [currency convert=1] [calc] 500.00 + 1000.00 [/calc] [/currency]
+</PRE>
+<UL>
+will cause the number 8.982,04 to be displayed.</UL>
+<P><B>[/currency]</B></P>
+<UL>
+Terminates the currency region.</UL>
+<P><B>[cart name]</B></P>
+<UL>
+named attributes: <TT>[cart name=&quot;name&quot;]</TT>
+<BR>
+Sets the name of the current shopping cart for display of <TT>[shipping]</TT>, <TT>[price]</TT>, <TT>[total]</TT>, <TT>[subtotal]</TT> and <TT>[nitems]</TT> tags. If a different price is used for the cart, all of the above except <TT>[shipping]</TT> will reflect the normal price field. Those operations must be emulated with embedded Perl or the <TT>[item-list]</TT>, <TT>[calc]</TT> and <TT>[currency]</TT> tags, or use the PriceAdjustment feature to set it.</UL>
+<P><B>[row nn]</B></P>
+<UL>
+named attributes: <TT>[row width=&quot;nn&quot;]</TT>
+<BR>
+Formats text in tables. Intended for use in emailed reports or &lt;PRE&gt;&lt;/PRE&gt; HTML areas. The parameter nn gives the number of columns to use. Inside the row tag, <TT>[col param=value ...]</TT> tags may be used.</UL>
+<P><B>[/row]</B></P>
+<UL>
+Terminates a <TT>[row nn]</TT> element.</UL>
+<P><B>[col width=nn wrap=yes|no gutter=n align=left|right|input spacing=n]</B></P>
+<UL>
+Sets up a column for use in a <TT>[row]</TT>. This parameter can only be contained inside a <TT>[row nn] [/row]</TT> tag pair. Any number of columns (that fit within the size of the row) can be defined.
+<BR>
+The parameters are:</UL>
+<PRE>
+            width=nn        The column width, including the gutter. Must be
+                            supplied, there is no default. A shorthand method
+                            is to just supply the number as the first parameter,
+                            as in [col 20].
+        
+            gutter=n        The number of spaces used to separate the column (on
+                            the right-hand side) from the next. Default is 2.
+        
+            spacing=n       The line spacing used for wrapped text. Default is 1,
+                            or single-spaced.
+        
+            wrap=(yes|no)   Determines whether text that is greater in length than
+                            the column width will be wrapped to the next line. Default
+                            is yes.
+        
+            align=(L|R|I)   Determines whether text is aligned to the left (the default),
+                            the right or in a way that might display an HTML text
+                            input field correctly.
+</PRE>
+<P><B>[/col]</B></P>
+<UL>
+Terminates the column field.</UL>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_18.html">Parent Topic</A> | <A HREF="ictemplates_26.html">Previous Topic</A> | <A HREF="ictemplates_28.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

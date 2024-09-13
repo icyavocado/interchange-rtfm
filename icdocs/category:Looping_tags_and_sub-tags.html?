@@ -1,0 +1,329 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>Looping tags and sub-tags - RTFM</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="en-GB">
+    <meta http-equiv="Window-target" content="_top">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <meta http-equiv="X-Soup-Of-The-Day" content="Tomato">
+
+    <meta name="author" content="Kevin Walsh">
+    <meta name="publisher" content="Cursor Software Limited">
+    <meta name="copyright" content="2001-2010, Cursor Software Limited">
+    <meta name="licence" content="GPLv2+ (Unknown licence)">
+    <meta name="generator" content="Interchange 5.7.0 -- www.icdevgroup.org">
+    <meta name="robots" content="index,follow,noarchive,noimageindex">
+    <meta name="keywords" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="description" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="MSSmartTagsPreventParsing" content="TRUE">
+
+    <meta name="verify-v1" content="KqlU/bxZj9Y2ZdZ/3RwuzgVSMIrZ8XM2wqbjSaEo3O4=">
+
+    <meta name="y_key" content="e2dd60be5777fbc8">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
+    <link rel="search" type="application/opensearchdescription+xml" href="http://www.interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="stylesheet" href="/decor/css/website.css">
+    <link rel="stylesheet" href="/decor/css/wiki.css">
+    <link rel="stylesheet" href="/decor/css/neo.css">
+
+
+    <script type="text/javascript" language="JavaScript">
+    <!--
+	if (top != self){
+	    top.location = location;
+	}
+
+    // -->
+    </script>
+</head>
+<body>
+<!-- START VAR: LOGOBAR -->
+<table id="rtfmheader" cellpadding="0" cellspacing="0">
+    <tr>
+	<td><a href="http://www.interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+
+	<td width="100%" style="text-align: right; padding: 10px">
+
+	    <form action="http://www.interchange-rtfm.pullingshots.ca/search.html" method="POST">
+		<input type="hidden" name="mv_session_id" value="nsession">
+		<input type="hidden" name="mv_profile" value="cms_search">
+		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
+		<input type="submit" class="button" value="Search">
+	    </form>
+
+	</td>
+    </tr>
+</table>
+<table id="breadcrumbs" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+	<td>
+	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <span class="current">Looping tags and sub-tags</span></span>
+	</td>
+
+    </tr>
+</table>
+<!-- END VAR: LOGOBAR -->
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+
+	    <td id="leftside">
+<!-- START COMPONENT: navigation -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th>NAVIGATION</th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+
+<!-- END COMPONENT: navigation -->
+<!-- START COMPONENT: wiki_recent -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th><span class="nowrap">RECENTLY VIEWED</span></th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category%3ALooping_tags_and_sub-tags.html">Looping tags and sub-tags</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+<!-- END COMPONENT: wiki_recent -->
+<!-- START COMPONENT: wiki_backlinks -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th><span class="nowrap">PAGES THAT LINK HERE</span></th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/accessories.html">accessories</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Database_reference_guide.html">Database reference guide</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/filter.html">filter</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/fly-list.html">fly-list</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/include.html">include</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Interchange_search_engine.html">Interchange search engine</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Interchange_tag_introduction.html">Interchange tag introduction</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html">item-list</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/links:category:Looping_tags_and_sub-tags.html">(16 pages in total)</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+<!-- END COMPONENT: wiki_backlinks -->
+<!-- START COMPONENT: account -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+
+    <tr>
+	<th>ACCOUNT LOGIN</th>
+    </tr>
+
+    <tr>
+	<td class="first">
+	    <p>You are not logged in</p>
+	</td>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+	    </ul>
+	</td>
+    </tr>
+
+</table>
+
+
+
+<!-- END COMPONENT: account -->
+<!-- START COMPONENT: icpowered -->
+
+<div style="text-align: center; margin: 10px; margin-top: 0px">
+    <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+</div>
+
+
+
+<!-- START COMPONENT: icpowered -->
+
+	    </td>
+
+	    <td id="bodytext">
+<!-- start of page text -->
+
+<!-- start page: wiki/category (category:Looping_tags_and_sub-tags) -->
+
+
+<div class="wikitext">
+<a name="Looping_tags_and_sub-tags"></a>
+<h1>Looping tags and sub-tags</h1>
+<p>
+Certain tags are not standalone, but are dependent upon a parent tag.&nbsp;
+The tags in this category are variously referred to as &quot;looping tags&quot;,
+&quot;sub-tags&quot; or &quot;pseudo-tags&quot;.&nbsp;
+Looping tags include
+<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span>,
+<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/loop.html" title="loop (tags)">loop</a>]</span>,
+<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/query.html" title="query (tags)">query</a>]</span>,
+<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/search-region.html" title="search-region (tags)">search-region</a>]</span> and some others, such as
+<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/tree.html" title="tree (tags)">tree</a>]</span>.
+</p>
+<p>
+See the <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Looping_tags_introduction.html" title="Looping tags introduction">looping tags introduction</a>
+for an explanation of how the various looping tags work.&nbsp;
+The introduction also covers the various output control regions,
+such as <span class="fixedwidth">&#91;on-match]</span>,
+<span class="fixedwidth">&#91;no-match]</span>
+and <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/more-list.html" title="more-list (tags)">more-list</a>]</span> etc.
+</p>
+<a name="Pages_in_the_Looping_tags_and_sub-tags_category"></a>
+<h2>Pages in the &quot;Looping tags and sub-tags&quot; category</h2>
+<p>
+<!-- start of toc --><table class="categorytoc" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="33%">
+<ul>
+<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/if-PREFIX-data.html" title="if-PREFIX-data (tags)">if-PREFIX-data</a></li>
+<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/if-PREFIX-field.html" title="if-PREFIX-field (tags)">if-PREFIX-field</a></li>
+<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/if-PREFIX-modifier.html" title="if-PREFIX-modifier (tags)">if-PREFIX-modifier</a></li>
+<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/if-PREFIX-param.html" title="if-PREFIX-param (tags)">if-PREFIX-param</a></li>
+<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/if-PREFIX-pos.html" title="if-PREFIX-pos (tags)">if-PREFIX-pos</a></li>
+<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a></li>
+<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-alternate.html" title="PREFIX-alternate (tags)">PREFIX-alternate</a></li>
+<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-calc.html" title="PREFIX-calc (tags)">PREFIX-calc</a></li>
+<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-change.html" title="PREFIX-change (tags)">PREFIX-change</a></li>
+<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-code.html" title="PREFIX-code (tags)">PREFIX-code</a></li>
+</ul>
+</td>
+<td width="33%">
+<ul>
+<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-data.html" title="PREFIX-data (tags)">PREFIX-data</a></li>
+<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-description.html" title="PREFIX-description (tags)">PREFIX-description</a></li>
+<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-discount.html" title="PREFIX-discount (tags)">PREFIX-discount</a></li>
+<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-discount-price.html" title="PREFIX-discount-price (tags)">PREFIX-discount-price</a></li>
+<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-discount-subtotal.html" title="PREFIX-discount-subtotal (tags)">PREFIX-discount-subtotal</a></li>
+<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-field.html" title="PREFIX-field (tags)">PREFIX-field</a></li>
+<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-filter.html" title="PREFIX-filter (tags)">PREFIX-filter</a></li>
+<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-include.html" title="PREFIX-include (tags)">PREFIX-include</a></li>
+<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-increment.html" title="PREFIX-increment (tags)">PREFIX-increment</a></li>
+<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-last.html" title="PREFIX-last (tags)">PREFIX-last</a></li>
+</ul>
+</td>
+<td width="33%">
+<ul>
+<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-line.html" title="PREFIX-line (tags)">PREFIX-line</a></li>
+<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-modifier.html" title="PREFIX-modifier (tags)">PREFIX-modifier</a></li>
+<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-modifier-name.html" title="PREFIX-modifier-name (tags)">PREFIX-modifier-name</a></li>
+<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-next.html" title="PREFIX-next (tags)">PREFIX-next</a></li>
+<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-param.html" title="PREFIX-param (tags)">PREFIX-param</a></li>
+<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-pos.html" title="PREFIX-pos (tags)">PREFIX-pos</a></li>
+<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-price.html" title="PREFIX-price (tags)">PREFIX-price</a></li>
+<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-quantity.html" title="PREFIX-quantity (tags)">PREFIX-quantity</a></li>
+<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-quantity-name.html" title="PREFIX-quantity-name (tags)">PREFIX-quantity-name</a></li>
+<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-subtotal.html" title="PREFIX-subtotal (tags)">PREFIX-subtotal</a></li>
+</ul>
+</td>
+</tr>
+</table><!-- end of toc -->
+</div>
+
+
+
+<!-- start of modification notice -->
+<div class="wikitext">
+    <table class="pageinfo" cellpadding="0" cellspacing="0">
+
+
+
+	<tr>
+	    <td>
+		
+		Last modified by: <a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin">Kevin Walsh</a><br>
+		Modification date: Tuesday 18 September 2007 at 11:23 PM (BST)
+	    </td>
+	</tr>
+
+    </table>
+</div>
+<!-- end of modification notice -->
+
+
+
+<!-- end page: wiki/category (category:Looping_tags_and_sub-tags) -->
+
+
+
+<!-- end of page text -->
+	    </td>
+
+	</tr>
+    </table>
+<!-- START VAR: FOOTER -->
+
+<table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+	<td>
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	</td>
+
+    </tr>
+</table>
+
+<!-- END VAR: FOOTER -->
+
+<!-- START VAR: COPYRIGHT -->
+
+
+    <div class="copyright">
+	Copyright &copy; 2001-2010
+	<a href="http://www.cursor.biz/index.html">Cursor Software Limited</a>.&nbsp;
+	All Rights Reserved.
+    </div>
+
+<!-- END VAR: COPYRIGHT -->
+
+</body>
+</html>

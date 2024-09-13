@@ -1,0 +1,85 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Template Guide: set, seti, tmp, tmpn scratch and scratchd</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_4.html">Parent Topic</A> | <A HREF="ictemplates_6.html">Previous Topic</A> | <A HREF="ictemplates_8.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>3.3. set, seti, tmp, tmpn scratch and scratchd</H2>
+<P>Scratch variables are maintained in the user session, which is separate from the form variable values set on HTML forms. Many things can be controlled with scratch variables, particularly search and order processing, the <TT>mv_click</TT> multiple variable setting facility and key Interchange conditions session URL display.</P>
+<P>There are four tags that are used to set the scratch space: [<A HREF="ictags_101.html#set">set</A><TT> variable</TT>] value [/set], [<A HREF="ictags_103.html#seti">seti</A><TT> variable</TT>] value [/seti], [<A HREF="ictags_113.html#tmp">tmp</A><TT> variable</TT>] value [/tmp], [<A HREF="ictags_114.html#tmpn">tmpn</A><TT> variable</TT>] value [/tmpn] and and two tags for reading scratch space: [<A HREF="ictags_96.html#scratch">scratch</A><TT> variable</TT>] and [<A HREF="ictags_97.html#scratchd">scratchd</A><TT> variable</TT>].</P>
+<P><B>[<A HREF="ictags_101.html#set">set</A><TT> variable</TT>] value [/set]</B></P>
+<UL>
+Sets a scratchpad variable to a value.
+<BR>
+Most of the mv_* variables that are used for search and order conditionals are in another namespace. They can be set through hidden fields in a form.
+<BR>
+An order profile would be set with:</UL>
+<PRE>
+          [set checkout]
+          name=required Please enter your name.
+          address=required No address entered.
+          [/set]
+          &lt;INPUT TYPE=hidden NAME=mv_order_profile VALUE=&quot;checkout&quot;&gt;
+</PRE>
+<UL>
+A search profile would be set with:</UL>
+<PRE>
+          [set substring_case]
+          mv_substring_match=yes
+          mv_case=yes
+          [/set]
+          &lt;INPUT TYPE=hidden NAME=mv_profile VALUE=&quot;substring_case&quot;&gt;
+</PRE>
+<UL>
+To do the same as <TT>[set foo]bar[/set]</TT> in embedded Perl:</UL>
+<PRE>
+            [calc]$Scratch-&gt;{foo} = 'bar'; return;[/calc]
+</PRE>
+<P><B>[<A HREF="ictags_103.html#seti">seti</A><TT> variable</TT>] value [/seti]</B></P>
+<UL>
+The same as [<A HREF="ictags_101.html#set">set</A>] except it interpolates the container text. The above is the same as:</UL>
+<PRE>
+            [<A HREF="ictags_101.html#set">set</A> name=variable interpolate=1] [<A HREF="ictags_120.html#value">value</A> something] [/set]
+</PRE>
+<P><B>[<A HREF="ictags_113.html#tmp">tmp</A><TT> variable</TT>] value [/tmp]</B></P>
+<UL>
+The same as [<A HREF="ictags_103.html#seti">seti</A>] except it does not persist.</UL>
+<P><B>[<A HREF="ictags_114.html#tmpn">tmpn</A><TT> variable</TT>] value [/tmpn]</B></P>
+<UL>
+The same as [<A HREF="ictags_101.html#set">set</A>] except it does not persist.</UL>
+<P><B>[<A HREF="ictags_96.html#scratch">scratch</A><TT> variable</TT>]</B></P>
+<UL>
+Returns the contents of a scratch variable to the page. <TT>[scratch foo]</TT> is the same as, but faster than:</UL>
+<PRE>
+            [<A HREF="ictags_87.html#perl">perl</A>] $Scratch-&gt;{foo} [/perl]
+</PRE>
+<P><B>[<A HREF="ictags_97.html#scratchd">scratchd</A><TT> variable</TT>]</B></P>
+<UL>
+The same as [<A HREF="ictags_96.html#scratch">scratch</A><TT> variable</TT>] except it deletes the value after returning it. Same as <TT>[scratch foo] [<A HREF="ictags_101.html#set">set</A> foo] [/set]</TT>.</UL>
+<P><B>[<A HREF="ictags_72.html#if">if</A><TT> scratch name op* compare*]</TT> yes <TT>[else]</TT> no <TT>[/else][/if]</TT></B></P>
+<UL>
+Tests a scratch variable. See the [<A HREF="ictags_72.html#if">if</A>] tag documentation for more information.</UL>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_4.html">Parent Topic</A> | <A HREF="ictemplates_6.html">Previous Topic</A> | <A HREF="ictemplates_8.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

@@ -1,0 +1,32 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: Nonstandard parsing within the admin interface</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_159.html">Parent Topic</A> | <A HREF="ictags_160.html">Previous Topic</A> | <A HREF="ictags_162.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>A.2. Nonstandard parsing within the admin interface</H2>
+<P>Parsing of content via the specialized <TT>[regenerate]</TT> usertag included with the administrative interface does not obey the above order. The MV_AUTOLOAD and '&lt;!--[tagname]--&gt;' escapes are skipped. There are some other more subtle differences as well; in the very unlikely event that you need to check this in the source code, compare the 'interpolate_html' and 'cache_html' routines in Interpolate.pm.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_159.html">Parent Topic</A> | <A HREF="ictags_160.html">Previous Topic</A> | <A HREF="ictags_162.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

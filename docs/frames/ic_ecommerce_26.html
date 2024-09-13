@@ -1,0 +1,48 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Ecommerce Functions: Customer Input Fields</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ic_ecommerce_20.html">Parent Topic</A> | <A HREF="ic_ecommerce_25.html">Previous Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.6. Customer Input Fields</H2>
+<P>On the order (or shopping basket) page, by default order.html, you will have a number of input fields allowing the customer to enter information such as their name and address. You can add more fields simply by putting more input elements on the order.html page, and the information will automatically be included in the order report. Input elements should be written in this way:</P>
+<PRE>
+    &lt;input type=&quot;text&quot; name=&quot;town&quot; value=&quot;[value town]&quot; size=30&gt;
+</PRE>
+<P>Choose a name for this input field such as &quot;email&quot; for an email address. Set the name attribute to the name you have chosen.</P>
+<P>The value attribute specifies the default value to give the field when the page is displayed. Because the customer may enter information on the order page, return to browsing, and come back to the order page, you want the default value to be what was entered the first time. This is done with the <TT>[value var]</TT> element, which returns the last value of an input field. Thus,</P>
+<PRE>
+    value=&quot;[value name]&quot;
+</PRE>
+<P>will evaluate to the name entered on the previous order screen, such as:</P>
+<PRE>
+       value=&quot;Jane Smith&quot;
+</PRE>
+<P>which will be displayed by the browser.</P>
+<P>The size attributes specifies how many characters wide the input field should be on the browser. You do not need to set this to fit the longest possible value since the browser will scroll the field, but you should set it large enough to be comfortable for the customer.</P>
+<HR>
+<P>Copyright 2001-2002 Red Hat, Inc. Freely redistributable under terms of the GNU General Public License.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ic_ecommerce_20.html">Parent Topic</A> | <A HREF="ic_ecommerce_25.html">Previous Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

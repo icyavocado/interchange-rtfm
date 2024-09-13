@@ -1,0 +1,41 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Configuration Reference: FormAction *global*</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_3.html">Parent Topic</A> | <A HREF="icconfig_24.html">Previous Topic</A> | <A HREF="icconfig_26.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>2.22. FormAction *global*</H2>
+<P>Allows a form action (like the standard ones <TT>return, submit, refresh,</TT> etc.) to be set up. It requires a Perl subroutine as a target:</P>
+<PRE>
+   FormAction foo &lt;&lt;EOR
+   sub {
+       $CGI-&gt;{mv_nextpage} = 'bar';
+   }
+   EOR
+</PRE>
+<P>If it returns a true (non-zero, non-empty) value, Interchange will display the page defined in $CGI-&gt;{mv_nextpage}. Otherwise, Interchange will not display any page. The default Interchange actions can be overridden, if desired. There is also a catalog-specific version of this directive, which overrides any action of the same name.</P>
+<P>The global version affects all catalogs -- there is also a catalog-specific version of FormAction which is protected by Safe.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_3.html">Parent Topic</A> | <A HREF="icconfig_24.html">Previous Topic</A> | <A HREF="icconfig_26.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

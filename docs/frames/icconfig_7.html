@@ -1,0 +1,33 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Configuration Reference: AutoVariable *global*</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_3.html">Parent Topic</A> | <A HREF="icconfig_6.html">Previous Topic</A> | <A HREF="icconfig_8.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>2.4. AutoVariable *global*</H2>
+<P>Specifies directives which should be translated to Variable settings. For scalars, the directive name becomes the Variable name and yields its value, i.e. <TT>ErrorFile</TT> becomes <TT>__</TT><TT>ErrorFile__</TT>, which would by default be <TT>error.log</TT>. Array variables have a <TT>_N</TT> added, where <TT>_N</TT> is the ordinal index, i.e. <TT>SafeUntrap</TT> becomes <TT>__</TT><TT>SafeUntrap_0__</TT>, <TT>__</TT><TT>SafeUntrap_1__</TT>, etc. Hash variables have a _KEY added, i.e. <TT>SysLog</TT> becomes <TT>__</TT><TT>SysLog_command__</TT>, <TT>__</TT><TT>SysLog_facility__</TT>, etc. Doesn't handle hash keys that have non-word characters or whitespace. Only single-level arrays and hashes are translated properly.</P>
+<P>See <TT>AutoVariable</TT> in <TT>catalog.cfg</TT>.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_3.html">Parent Topic</A> | <A HREF="icconfig_6.html">Previous Topic</A> | <A HREF="icconfig_8.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

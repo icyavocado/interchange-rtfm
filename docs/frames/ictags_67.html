@@ -1,0 +1,129 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: goto</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_66.html">Previous Topic</A> | <A HREF="ictags_68.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.33. goto</H2>
+<P>Skips page content between [<TT>goto</TT> <I>name</I>] and [<A HREF="ictags_77.html#label">label</A> <I>name</I>]. Note that the <TT>goto</TT> tag is not interpreted in the standard way, and you cannot use the '$Tag-&gt;goto()' Perl syntax. Note also that skipping endtags with <TT>goto</TT> will probably break your page.</P>
+<H3><A NAME="Summary">4.33.1. Summary</A></H3>
+<PRE>
+    [goto name=<I>label_name</I> if=<I>condition</I>]
+        <I>content to skip</I>
+    [label name=<I>label_name</I>]
+</PRE>
+<P>or positionally,</P>
+<PRE>
+    [goto name if]
+        <I>content to skip</I>
+    [label name]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_67.html#goto_name">name</A>
+</TD>
+<TD VALIGN='Top'>
+The name set in the corresponding [label] tag
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_67.html#goto_if">if</A>
+</TD>
+<TD VALIGN='Top'>
+Condition for <TT>goto</TT>. Should evaluate to truth value before tag is parsed.
+</TD>
+<TD VALIGN='Top'>
+<I>true</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Container tag
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>, but you use it like this:
+<UL>
+[goto name=<I>label_name</I> if=<I>condition</I>]<UL>
+<I>body text</I></UL>
+<BR>
+[label <I>label_name</I>]</UL>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Has Subtags
+</TD>
+<TD VALIGN='Top'>
+[label] interpreted by <TT>goto</TT>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>ASP-like Perl call:</B></P>
+<P>No Perl call available (Note that this tag is not parsed in the standard way).</P>
+<H3><A NAME="Description">4.33.2. Description</A></H3>
+<P>Skips page content between [<TT>goto</TT> <I>name</I>] and [<A HREF="ictags_77.html#label">label</A> <I>name</I>]. Note that the <TT>goto</TT> tag is not interpreted in the standard way, and you cannot use the '$Tag-&gt;goto()' Perl syntax. Note also that skipping endtags with <TT>goto</TT> will probably break your page.</P>
+<P>The correspondingly named [<TT>label</TT>] tag marks the end of the page content the <TT>goto</TT> should skip. Note that the [<TT>label</TT>] tag is not an end tag, but simply a marker for the end of the text to skip.</P>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Technical note (Interchange 4.8): </STRONG>This tag may not work properly if you have more than one goto/label pair on a page.</P>
+<P><HR WIDTH="80%" ALIGN="Left"></P>
+<H4><A NAME="goto_name"> </A>4.33.2.1. <A NAME="goto_name">name</A></H4>
+<P>This should match the name set in a [label] tag <I>after</I> the goto tag in the page (i.e., don't create loops).</P>
+<H4><A NAME="goto_if"> </A>4.33.2.2. <A NAME="goto_if">if</A></H4>
+<P>Condition for goto. If the argument to '<TT>if</TT>' is true, the tag will skip the text between the <TT>goto</TT> and &lt;label&gt;.  Note that the tag itself does not evaluate the condition. The condition must evaluate to a true or false value before the <TT>goto</TT> tag processes it.</P>
+<P>For example, this will not execute the goto:</P>
+<PRE>
+    [set go]0[/set]
+    [goto name=&quot;there&quot; if=&quot;[scratch go]&quot;]
+</PRE>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_66.html">Previous Topic</A> | <A HREF="ictags_68.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

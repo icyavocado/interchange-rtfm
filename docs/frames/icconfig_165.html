@@ -1,0 +1,63 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Configuration Reference: Sub</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_70.html">Parent Topic</A> | <A HREF="icconfig_164.html">Previous Topic</A> | <A HREF="icconfig_166.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>3.95. Sub</H2>
+<P>Defines a catalog subroutine for use by the <TT>[perl][/perl]</TT> or [mvasp] embedded perl languages. Use the &quot;here document&quot; capability of Interchange configuration files to make it easy to define:</P>
+<PRE>
+   Sub &lt;&lt;EOF
+   sub sort_cart_by_quantity {
+       my($items) = @_;
+       $items = $Items if ! $items;
+       my $out = '&lt;TABLE BORDER=1&gt;';
+       @$items = sort { $a-&gt;{quantity} &lt;=&gt; $b-&gt;{quantity} } @$items;
+       foreach $item (@$items) {
+           my $code = $item-&gt;{code};
+           $out .= '&lt;TR&gt;&lt;TD&gt;';
+           $out .= $code;
+           $out .= '&lt;/TD&gt;&lt;TD&gt;';
+           $out .= $Tag-&gt;data('products', 'name', $code);
+           $out .= '&lt;/TD&gt;&lt;TD&gt;';
+           $out .= $Tag-&gt;data('products', 'price', $code);
+           $out .= '&lt;/TD&gt;&lt;/TR&gt;';
+       }
+       $out .= '&amp;lt/TABLE&gt;';
+       return $out;
+   }
+   EOF
+</PRE>
+<P>As with Perl &quot;here documents,&quot; the EOF (or other end marker) must be the ONLY thing on the line, with no leading or trailing white space. Do not append a semicolon to the marker. The above would be called with:</P>
+<PRE>
+   [perl]
+       my $cart = $Carts-&gt;{main};
+       return sort_cart_by_quantity($cart);
+   [/perl]
+</PRE>
+<P>and will display an HTML table of the items in the current shopping cart, sorted by the quantity. Syntax errors will be reported at catalog startup time.</P>
+<P>Catalog subroutines may not perform unsafe operations. The Safe.pm module enforces this unless global operations are allowed for the catalog. See <TT>AllowGlobal</TT>.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_70.html">Parent Topic</A> | <A HREF="icconfig_164.html">Previous Topic</A> | <A HREF="icconfig_166.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

@@ -1,0 +1,74 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Template Guide: Special Pages</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_29.html">Parent Topic</A> | <A HREF="ictemplates_30.html">Previous Topic</A> | <A HREF="ictemplates_32.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>7.2. Special Pages</H2>
+<P>A number of HTML pages are special for Interchange operation. Typically, they are used to transmit error messages, status of search or order operations and other out of boundary conditions.</P>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>The distributed demo does not use all of the default values.
+<HR WIDTH="80%" ALIGN="Left"></P>
+<P>The names of these pages can be set with the <I>SpecialPage</I> directive. The standard pages and their default locations:</P>
+<P><B>canceled (special_pages/canceled.html)</B></P>
+<UL>
+The page displayed by Interchange when an order has been canceled by the user.</UL>
+<P><B>catalog (special_pages/catalog.html)</B></P>
+<UL>
+The main catalog page presented by Interchange when another page is not specified.</UL>
+<P><B>failed (special_pages/failed.html)</B></P>
+<UL>
+If the sendmail program could not be invoked to email the completed order, the failed.html page is displayed.</UL>
+<P><B>flypage (special_pages/flypage.html)</B></P>
+<UL>
+If the catalog page for an item was not found when its <TT>[item-link]</TT> is clicked, this page is used as a template to build an on-the-fly page. See On-the-fly Catalog Pages.</UL>
+<P><B>interact (special_pages/interact.html)</B></P>
+<UL>
+Displayed if an unexpected response was received from the browser, such as not getting expected fields from submitting a form. This would probably happen from typos in the html pages, but could be a browser bug.</UL>
+<P><B>missing (special_pages/missing.html)</B></P>
+<UL>
+This page is displayed if the URL from the browser specifies a page that does not have a matching .html file in the pages directory. This can happen if the customer saved a bookmark to a page that was later removed from the database, for example, or if there is a defect in the code.
+<BR>
+Essentially this is the same as a 404 error in HTTP. To deliberately display a 404 error, just put this in special_pages/missing.html:</UL>
+<PRE>
+            [tag op=header]Status: 404 missing[/tag]
+</PRE>
+<P><B>noproduct (special_pages/noproduct.html)</B></P>
+<UL>
+This page is displayed if the URL from the browser specifies the ordering of a product code which is not in the products file.</UL>
+<P><B>order (ord/basket.html)</B></P>
+<UL>
+This page is displayed when the customer orders an item. It can contain any or all of the customer-entered values, but is commonly used as a status display (or &quot;shopping basket&quot;).</UL>
+<P><B>search (results.html)</B></P>
+<UL>
+Contains the default output page for the search engine results. Also required is an input page, which can be the same as search.html or an additional page. By convention Interchange defines this as the page <TT>results</TT>.</UL>
+<PRE>
+            SpecialPage   search   results
+</PRE>
+<P><B>violation (special pages/violation.html)</B></P>
+<UL>
+Displayed if a security violation is noted, such as an attempt to access a page denied by an <TT>access_gate</TT>. See UserDB.</UL>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_29.html">Parent Topic</A> | <A HREF="ictemplates_30.html">Previous Topic</A> | <A HREF="ictemplates_32.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

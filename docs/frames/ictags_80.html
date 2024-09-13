@@ -1,0 +1,214 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: mail</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_79.html">Previous Topic</A> | <A HREF="ictags_81.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.46. mail</H2>
+<P>Mail contained text to recipient specified by 'to' using the program specified with the SendMailProgram catalog directive.</P>
+<H3><A NAME="Summary">4.46.1. Summary</A></H3>
+<PRE>
+    [<B>mail</B> to <I>other_named_attributes</I>]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_80.html#mail_extra">extra</A>
+</TD>
+<TD VALIGN='Top'>
+Additional headers (these will also be added to 'raw' messages)
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_80.html#mail_hide">hide</A>
+</TD>
+<TD VALIGN='Top'>
+Suppress tag return value. This would otherwise be the 'success' attribute setting.
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_80.html#mail_raw">raw</A>
+</TD>
+<TD VALIGN='Top'>
+Send it raw without creating headers and checking content, recipient, subject, etc.
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_80.html#mail_show">show</A>
+</TD>
+<TD VALIGN='Top'>
+The tag will return the final message with headers in the page
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_80.html#mail_success">success</A>
+</TD>
+<TD VALIGN='Top'>
+Tag return value if successful (default is 1).
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_80.html#mail_to">to</A>
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_interpolate">interpolate</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_reparse">reparse</A>
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>YES</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Container tag
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Has Subtags
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Nests
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+    [mail to]
+---
+    TODO: (tag result)
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+   $Tag-&gt;mail(  { to =&gt; VALUE_to
+}, $body  );
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;mail(to, $attribute_hash_reference, $body);
+</PRE>
+<H3><A NAME="Description">4.46.2. Description</A></H3>
+<P>Mail contained text to recipient specified by 'to' using the program specified with the SendMailProgram catalog directive.</P>
+<H4><A NAME="mail_extra"> </A>4.46.2.1. <A NAME="mail_extra">extra</A></H4>
+<P>Additional headers (these will also be added to 'raw' messages)</P>
+<H4><A NAME="mail_hide"> </A>4.46.2.2. <A NAME="mail_hide">hide</A></H4>
+<P>Suppress tag return value. This would otherwise be the 'success' attribute setting.</P>
+<H4><A NAME="mail_raw"> </A>4.46.2.3. <A NAME="mail_raw">raw</A></H4>
+<P>Send it raw without creating headers and checking content, recipient, subject, etc.</P>
+<H4><A NAME="mail_show"> </A>4.46.2.4. <A NAME="mail_show">show</A></H4>
+<P>The tag will return the final message with headers in the page</P>
+<H4><A NAME="mail_success"> </A>4.46.2.5. <A NAME="mail_success">success</A></H4>
+<P>Tag return value if successful (default is 1).</P>
+<H4><A NAME="mail_to"> </A>4.46.2.6. <A NAME="mail_to">to</A></H4>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_79.html">Previous Topic</A> | <A HREF="ictags_81.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

@@ -1,0 +1,1075 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>time - RTFM</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="en-GB">
+    <meta http-equiv="Window-target" content="_top">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <meta http-equiv="X-Soup-Of-The-Day" content="Tomato">
+
+    <meta name="author" content="Kevin Walsh">
+    <meta name="publisher" content="Cursor Software Limited">
+    <meta name="copyright" content="2001-2012, Cursor Software Limited">
+    <meta name="licence" content="GPLv2+ (Unknown licence)">
+    <meta name="generator" content="Interchange 5.7.0 -- www.icdevgroup.org">
+    <meta name="robots" content="index,follow,noarchive,noimageindex">
+    <meta name="keywords" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="description" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="MSSmartTagsPreventParsing" content="TRUE">
+
+    <meta name="verify-v1" content="KqlU/bxZj9Y2ZdZ/3RwuzgVSMIrZ8XM2wqbjSaEo3O4=">
+
+    <meta name="y_key" content="e2dd60be5777fbc8">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
+    <link rel="search" type="application/opensearchdescription+xml" href="http://interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="stylesheet" href="/decor/css/website.css">
+    <link rel="stylesheet" href="/decor/css/wiki.css">
+    <link rel="stylesheet" href="/decor/css/neo.css">
+
+
+    <script type="text/javascript" language="JavaScript">
+    <!--
+	if (top != self){
+	    top.location = location;
+	}
+
+    // -->
+    </script>
+</head>
+<body>
+<!-- START VAR: LOGOBAR -->
+<table id="rtfmheader" cellpadding="0" cellspacing="0">
+    <tr>
+	<td><a href="http://interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+
+	<td width="100%" style="text-align: right; padding: 10px">
+
+	    <form action="http://interchange-rtfm.pullingshots.ca/search.html" method="POST">
+		<input type="hidden" name="mv_session_id" value="nsession">
+		<input type="hidden" name="mv_profile" value="cms_search">
+		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
+		<input type="submit" class="button" value="Search">
+	    </form>
+
+	</td>
+    </tr>
+</table>
+<table id="breadcrumbs" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+	<td>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a></span>
+	    <span class="nowrap">&gt; <span class="current">time</span></span>
+	</td>
+
+    </tr>
+</table>
+<!-- END VAR: LOGOBAR -->
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+
+	    <td id="leftside">
+<!-- START COMPONENT: navigation -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th>NAVIGATION</th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+
+<!-- END COMPONENT: navigation -->
+<!-- START COMPONENT: wiki_recent -->
+
+
+
+<!-- END COMPONENT: wiki_recent -->
+<!-- START COMPONENT: wiki_backlinks -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th><span class="nowrap">PAGES THAT LINK HERE</span></th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/filters/convert_date.html">convert_date</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/counter.html">counter</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/PageTables.html">PageTables</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/set-cookie.html">set-cookie</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/filters/strftime.html">strftime</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/TrackDateFormat.html">TrackDateFormat</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Universal_tag_attributes.html">Universal tag attributes</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+<!-- END COMPONENT: wiki_backlinks -->
+<!-- START COMPONENT: account -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+
+    <tr>
+	<th>ACCOUNT LOGIN</th>
+    </tr>
+
+    <tr>
+	<td class="first">
+	    <p>You are not logged in</p>
+	</td>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+	    </ul>
+	</td>
+    </tr>
+
+</table>
+
+
+
+<!-- END COMPONENT: account -->
+<!-- START COMPONENT: icpowered -->
+
+<div style="text-align: center; margin: 10px; margin-top: 0px">
+    <a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+</div>
+
+
+
+<!-- START COMPONENT: icpowered -->
+
+	    </td>
+
+	    <td id="bodytext">
+<!-- start of page text -->
+
+<!-- start page: wiki/display (tags/time) -->
+
+<div class="wikitext">
+<a name="time"></a>
+<h1>time</h1>
+<p>
+Formats the current time using <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fperldoc%2eperl%2eorg%2fPOSIX%2ehtml#strftime" title="http://perldoc.perl.org/POSIX.html" rel="nofollow">POSIX strftime</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+tokens.
+</p>
+<a name="Summary"></a>
+<h2>Summary</h2>
+
+<p>
+<ul>
+<li><span class="fixedwidth">&#91;time locale] Time format string &#91;/time]</span></li>
+</ul>
+
+<br>
+<table width="100%" class="border">
+<tr valign="top">
+<th class="grid">Parameter
+</th>
+<th class="grid">Description
+</th>
+<th class="grid">Default
+</th>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#locale" title="&quot;locale&quot; heading on this page">locale</a></td>
+<td class="grid">Format the time according to the named locale.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#adjust" title="&quot;adjust&quot; heading on this page">adjust</a></td>
+<td class="grid">Temporarily adjust the time for display purposes.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#gmt" title="&quot;gmt&quot; heading on this page">gmt</a></td>
+<td class="grid">Display time as GMT.</td>
+<td class="grid">No
+</td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#hours" title="&quot;hours&quot; heading on this page">hours</a></td>
+<td class="grid">Force the <a href="#adjust" title="&quot;adjust&quot; heading on this page">adjust</a> parameter value to be treated as a number of hours.</td>
+<td class="grid">No
+</td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#sortable" title="&quot;sortable&quot; heading on this page">sortable</a></td>
+<td class="grid">Returns the date in <span class="fixedwidth">&#37;Y&#37;m&#37;d</span> format.</td>
+<td class="grid">No
+</td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#tz" title="&quot;tz&quot; heading on this page">tz</a></td>
+<td class="grid">Use the passed timezone to display the time.</td>
+<td class="grid"><em>None</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="#zerofix" title="&quot;zerofix&quot; heading on this page">zerofix</a></td>
+<td class="grid">Strips leading zeroes from numbers.</td>
+<td class="grid">No
+</td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Universal_tag_attributes.html#Interpolate" title="&quot;Interpolate&quot; heading on the &quot;Universal tag attributes&quot; page">interpolate</a></td>
+<td class="grid">Parse Interchange tags, included in the body text, before this container tag executes.</td>
+<td class="grid">No
+</td>
+</tr>
+<tr valign="top">
+<td class="grid"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Universal_tag_attributes.html#Reparse" title="&quot;Reparse&quot; heading on the &quot;Universal tag attributes&quot; page">reparse</a></td>
+<td class="grid">Process any Interchange tags found in the text output from this tag.</td>
+<td class="grid">Yes
+</td>
+</tr>
+</table>
+
+<a name="Examples"></a>
+<h2>Examples</h2>
+<a name="Tag_expansion_example"></a>
+<h3>Tag expansion example</h3>
+<p>
+All examples on this page assume that today is Monday 01 January 2001.
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+The year is &#91;time]&#37;Y&#91;/time].<br>
+</span>
+</td>
+</tr>
+<tr>
+<td class="hr">
+<span class="fixedwidth">
+The year is 2001.
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Perl_example"></a>
+<h3>Perl example</h3>
+<p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Tag</span><span class="perl_Symb def_Symbol">-&gt;</span><span class="perl_WordFun perl_Word def_Keyword">time</span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="def_SymbolStrong def_Symbol"><span class="def_PairStart def_Special">{</span></span><br>
+&nbsp; &nbsp; <span class="perl_packages perl_WordExt def_KeywordStrong def_Keyword">locale </span><span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_Var def_Var">$locale</span><span class="perl_Symb def_Symbol">,</span><br>
+&nbsp; &nbsp; body <span class="perl_Symb def_Symbol">=</span><span class="perl_Symb def_Symbol">&gt; </span><span class="perl_Var def_Var">$format</span><span class="perl_Symb def_Symbol">,</span><br>
+<span class="def_SymbolStrong def_Symbol"><span class="def_PairEnd def_Special">}</span></span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+or similarly with positional parameters:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="perl_Var def_Var">$Tag</span><span class="perl_Symb def_Symbol">-&gt;</span><span class="perl_WordFun perl_Word def_Keyword">time</span><span class="def_Symbol"><span class="def_PairStart def_Special">(</span></span><span class="perl_Var def_Var">$locale</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Var def_Var">$attribute_hash_reference</span><span class="perl_Symb def_Symbol">, </span><span class="perl_Var def_Var">$format</span><span class="def_Symbol"><span class="def_PairEnd def_Special">)</span></span><span class="perl_MainSymb def_SymbolStrong def_Symbol">;
+</span></span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="Description"></a>
+<h2>Description</h2>
+<p>
+Formats the current time using <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fperldoc%2eperl%2eorg%2fPOSIX%2ehtml#strftime" title="http://perldoc.perl.org/POSIX.html" rel="nofollow">POSIX strftime</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+tokens.&nbsp;
+For example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+&#91;time]&#37;A &#37;d &#37;B &#37;Y&#91;/time]<br>
+</span>
+</td>
+</tr>
+<tr>
+<td class="hr">
+<span class="fixedwidth">
+Monday 01 January 2001
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+See the <a href="#Time_format_tokens" title="&quot;Time format tokens&quot; heading on this page">time format tokens</a> section, below,
+and/or the
+<a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fdeveloper%2eapple%2ecom%2fdocumentation%2fDarwin%2fReference%2fManPages%2fman3%2fstrftime%2e3%2ehtml" title="http://developer.apple.com/documentation/Darwin/Reference/ManPages/man3/strftime.3.html" rel="nofollow">strftime(3)</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+UNIX manual page, for information on the recognised tokens.&nbsp;
+The tokens are the same as modern UNIX <span class="fixedwidth">date(1)</span> command
+arguments.
+</p>
+<p>
+The tag body defaults to <span class="fixedwidth">&#37;c,</span> if it is empty.
+</p>
+<a name="Time_format_tokens"></a>
+<h2>Time format tokens</h2>
+<p>
+Time format tokens are introduced by a &quot;<span class="fixedwidth">&#37;</span>&quot; character and
+terminated by a conversion specifier character, as listed in the following
+table:
+</p>
+<table class="border">
+<tr valign="top">
+<th class="grid">Token
+</th>
+<th class="grid">Description
+</th>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;a</span></td>
+<td class="grid">The abbreviated weekday name according to the current locale.</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;A</span></td>
+<td class="grid">The full weekday name according to the current locale.</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;b</span></td>
+<td class="grid">The abbreviated month name according to the current locale.</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;B</span></td>
+<td class="grid">The full month name according to the current locale.</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;c</span></td>
+<td class="grid">The preferred date and time representation for the current locale.</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;C</span></td>
+<td class="grid">The century number (year/100) as a 2-digit integer.&nbsp;
+<em>(SU)</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;d</span></td>
+<td class="grid">The day of the month as a decimal number (range 01 to 31).</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;D</span></td>
+<td class="grid">Equivalent to &quot;<span class="fixedwidth">&#37;m/&#37;d/&#37;y</span>&quot;.&nbsp;
+(Yecch -- for North Americans only).&nbsp;
+Americans should note that &quot;<span class="fixedwidth">&#37;d/&#37;m/&#37;y</span>&quot; is rather common in other countries, and actually makes more sense.&nbsp;
+In an international context, the <span class="fixedwidth">&#37;D</span> format is ambiguous and should therefore not be used.&nbsp;
+<em>(SU)</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;e</span></td>
+<td class="grid">Like &quot;<span class="fixedwidth">&#37;d</span>&quot;, the day of the month as a decimal number, but a leading zero is replaced by a space.&nbsp;
+<em>(SU)</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;E</span></td>
+<td class="grid">Modifier:&nbsp;
+use alternative format, see below.&nbsp;
+<em>(SU)</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;F</span></td>
+<td class="grid">Equivalent to &quot;<span class="fixedwidth">&#37;Y-&#37;m-&#37;d</span>&quot; (the ISO 8601 date format).&nbsp;
+(C99)</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;G</span></td>
+<td class="grid">The ISO 8601 year with century as a decimal number.&nbsp;
+The 4-digit year corresponding to the ISO week number (see &quot;<span class="fixedwidth">&#37;V</span>&quot;).&nbsp;
+This has the same format and value as &quot;<span class="fixedwidth">&#37;y</span>&quot;, except that if the ISO week number belongs to the previous or next year, that year is used instead.&nbsp;
+<em>(TZ)</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;g</span></td>
+<td class="grid">Like &quot;<span class="fixedwidth">&#37;G</span>&quot;, but without century.&nbsp;
+I.e., with a 2-digit year (00-99).&nbsp;
+<em>(TZ)</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;h</span></td>
+<td class="grid">Equivalent to &quot;<span class="fixedwidth">&#37;b</span>&quot;.&nbsp;
+<em>(SU)</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;H</span></td>
+<td class="grid">The hour as a decimal number using a 24-hour clock (range 00 to 23).</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;I</span></td>
+<td class="grid">The hour as a decimal number using a 12-hour clock (range 01 to 12).</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;j</span></td>
+<td class="grid">The day of the year as a decimal number (range 001 to 366).</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;k</span></td>
+<td class="grid">The hour (24-hour clock) as a decimal number (range 0 to 23);&nbsp;
+single digits are preceded by a blank.&nbsp;
+(See also &quot;<span class="fixedwidth">&#37;H</span>&quot;.) <em>(TZ)</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;l</span></td>
+<td class="grid">The hour (12-hour clock) as a decimal number (range 1 to 12);&nbsp;
+single digits are preceded by a blank.&nbsp;
+(See also &quot;<span class="fixedwidth">&#37;I</span>&quot;.) <em>(TZ)</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;m</span></td>
+<td class="grid">The month as a decimal number (range 01 to 12).</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;M</span></td>
+<td class="grid">The minute as a decimal number (range 00 to 59).</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;n</span></td>
+<td class="grid">A newline character.&nbsp;
+<em>(SU)</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;O</span></td>
+<td class="grid">Modifier:&nbsp;
+use alternative format, see below.&nbsp;
+<em>(SU)</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;p</span></td>
+<td class="grid">Either &quot;AM&quot; or &quot;PM&quot; according to the given time value, or the corresponding strings for the current locale.&nbsp;
+Noon is treated as &quot;pm&quot; and midnight as `am'.</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;P</span></td>
+<td class="grid">Like &quot;<span class="fixedwidth">&#37;p</span>&quot; but in lowercase:&nbsp;
+&quot;am&quot; or &quot;pm&quot; or a corresponding string for the current locale.&nbsp;
+<em>(GNU)</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;r</span></td>
+<td class="grid">The time in &quot;AM&quot; or &quot;PM&quot; notation.&nbsp;
+In the POSIX locale this is equivalent to &quot;<span class="fixedwidth">&#37;I:&#37;M:&#37;S &#37;p</span>&quot;.&nbsp;
+<em>(SU)</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;R</span></td>
+<td class="grid">The time in 24-hour notation (<span class="fixedwidth">&#37;H:&#37;M</span>).&nbsp;
+<em>(SU)</em> For a version including the seconds, see &quot;<span class="fixedwidth">&#37;T</span>&quot;, below.</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;s</span></td>
+<td class="grid">The number of seconds since the Epoch (1970-01-01 00:00:00 UTC).&nbsp;
+<em>(TZ)</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;S</span></td>
+<td class="grid">The second as a decimal number (range 00 to 60).&nbsp;
+The range is up to 60 to allow for occasional leap seconds.</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;t</span></td>
+<td class="grid">A tab character.&nbsp;
+<em>(SU)</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;T</span></td>
+<td class="grid">The time in 24-hour notation (<span class="fixedwidth">&#37;H:&#37;M:&#37;S</span>).&nbsp;
+<em>(SU)</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;u</span></td>
+<td class="grid">The day of the week as a decimal, range 1 to 7, Monday being 1.&nbsp;
+See also &quot;<span class="fixedwidth">&#37;w</span>&quot;.&nbsp;
+<em>(SU)</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;U</span></td>
+<td class="grid">The week number of the current year as a decimal number, range 00 to 53, starting with the first Sunday as the first day of week 01.&nbsp;
+See also &quot;<span class="fixedwidth">&#37;V</span>&quot; and &quot;<span class="fixedwidth">&#37;W</span>&quot;.</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;V</span></td>
+<td class="grid">The ISO 8601:1988 week number of the current year as a decimal number, range 01 to 53, where week 1 is the first week that has at least 4 days in the current year, and with Monday as the first day of the week.&nbsp;
+See also &quot;<span class="fixedwidth">&#37;U</span>&quot; and &quot;<span class="fixedwidth">&#37;W</span>&quot;.&nbsp;
+<em>(SU)</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;w</span></td>
+<td class="grid">The day of the week as a decimal, range 0 to 6, Sunday being 0.&nbsp;
+See also &quot;<span class="fixedwidth">&#37;u</span>&quot;.</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;W</span></td>
+<td class="grid">The week number of the current year as a decimal number, range 00 to 53, starting with the first Monday as the first day of week 01.</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;x</span></td>
+<td class="grid">The preferred date representation for the current locale without the time.</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;X</span></td>
+<td class="grid">The preferred time representation for the current locale without the date.</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;y</span></td>
+<td class="grid">The year as a decimal number without a century (range 00 to 99).</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;Y</span></td>
+<td class="grid">The year as a decimal number including the century.</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;z</span></td>
+<td class="grid">The time-zone as hour offset from GMT.&nbsp;
+Required to emit RFC 822-conformant dates (using &quot;<span class="fixedwidth">&#37;a, &#37;d &#37;b &#37;Y &#37;H:&#37;M:&#37;S &#37;z</span>&quot;).&nbsp;
+<em>(GNU)</em></td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;Z</span></td>
+<td class="grid">The time zone or name or abbreviation.</td>
+</tr>
+<tr valign="top">
+<td class="grid"><span class="fixedwidth">&#37;&#37;</span></td>
+<td class="grid">A literal &quot;<span class="fixedwidth">&#37;</span>&quot; character.</td>
+</tr>
+</table>
+
+<p>
+Some time format tokens can be modified by preceding the conversion
+specifier character by the &quot;<span class="fixedwidth">E</span>&quot; or &quot;<span class="fixedwidth">O</span>&quot; modifier to indicate
+that an alternative format should be used.&nbsp;
+If the alternative format or token does not exist for the current locale,
+the behaviour will be as if the unmodified conversion specification were used.
+</p>
+<p>
+SU, the Single Unix Specification, mentions
+<span class="fixedwidth">&#37;Ec</span>, <span class="fixedwidth">&#37;EC</span>, <span class="fixedwidth">&#37;Ex</span>, <span class="fixedwidth">&#37;EX</span>, <span class="fixedwidth">&#37;Ey</span>,
+<span class="fixedwidth">&#37;EY</span>, <span class="fixedwidth">&#37;Od</span>, <span class="fixedwidth">&#37;Oe</span>, <span class="fixedwidth">&#37;OH</span>, <span class="fixedwidth">&#37;OI</span>,
+<span class="fixedwidth">&#37;Om</span>, <span class="fixedwidth">&#37;OM</span>, <span class="fixedwidth">&#37;OS</span>, <span class="fixedwidth">&#37;Ou</span>, <span class="fixedwidth">&#37;OU</span>,
+<span class="fixedwidth">&#37;OV</span>, <span class="fixedwidth">&#37;Ow</span>, <span class="fixedwidth">&#37;OW</span> and <span class="fixedwidth">&#37;Oy</span>,
+where the effect of the &quot;<span class="fixedwidth">O</span>&quot; modifier is to use alternative numeric
+symbols (roman numerals, for instance), and that of the &quot;<span class="fixedwidth">E</span>&quot; modifier
+is to use a locale-dependent alternative representation.
+</p>
+<a name="Parameters"></a>
+<h2>Parameters</h2>
+<a name="locale"></a>
+<h3>locale</h3>
+<p>
+Format the time according to the named locale,
+assuming that locale is available on your operating system.&nbsp;
+For example, the following:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+1. &#91;time locale=en_US]&#37;d &#37;B &#37;Y&#91;/time]<br>
+2. &#91;time locale=fr_FR]&#37;d &#37;B &#37;Y&#91;/time]<br>
+</span>
+</td>
+</tr>
+<tr>
+<td class="hr">
+<span class="fixedwidth">
+1. 01 January 2001<br>
+2. 01 janvier 2001
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="adjust"></a>
+<h3>adjust</h3>
+<p>
+If you wish to temporarily adjust the time for display purposes,
+you can pass an adjust parameter with the number of hours (plus or minus).
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+1. &#91;time]&#37;a &#37;d &#37;b &#37;Y &#37;H:&#37;M:&#37;S&#91;/time]<br>
+2. &#91;time adjust=&quot;-3&quot;]&#37;a &#37;d &#37;b &#37;Y &#37;H:&#37;M:&#37;S&#91;/time]<br>
+</span>
+</td>
+</tr>
+<tr>
+<td class="hr">
+<span class="fixedwidth">
+1. Mon 01 Jan 2001 11:29:03<br>
+2. Mon 01 Jan 2001 08:29:03
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+If the number ends in zero and has 3 digits or more,
+it is assumed that the number is in timezone format (i.e +500)
+the local time or from GMT:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+1. &#91;time]&#37;a &#37;d &#37;b &#37;Y &#37;H:&#37;M:&#37;S &#37;Z&#91;/time]<br>
+2. &#91;time adjust=&quot;-330&quot;]&#37;a &#37;d &#37;b &#37;Y &#37;H:&#37;M:&#37;S &#37;Z&#91;/time]<br>
+3. &#91;time adjust=&quot;-300&quot;]&#37;a &#37;d &#37;b &#37;Y &#37;H:&#37;M:&#37;S &#37;Z&#91;/time]<br>
+</span>
+</td>
+</tr>
+<tr>
+<td class="hr">
+<span class="fixedwidth">
+1. Mon 01 Jan 2001 11:29:03 EST<br>
+2. Mon 01 Jan 2001 07:59:03 EST<br>
+3. Mon 01 Jan 2001 08:29:03 EST
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+If you want to force the number to be just a number of hours then
+add the &quot;<span class="fixedwidth"><a href="#hours" title="&quot;hours&quot; heading on this page">hours</a></span>&quot; parameter:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+1. &#91;time]&#37;a &#37;d &#37;b &#37;Y &#37;H:&#37;M:&#37;S &#37;Z&#91;/time]<br>
+2. &#91;time adjust=&quot;100&quot; hours=1]&#37;a &#37;d &#37;b &#37;Y &#37;H:&#37;M:&#37;S &#37;Z&#91;/time]<br>
+</span>
+</td>
+</tr>
+<tr>
+<td class="hr">
+<span class="fixedwidth">
+1. Mon 01 Jan 2001 11:29:03 EST<br>
+2. Fri 05 Jan 2001 15:29:03 EST
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+If <span class="fixedwidth"><a href="#adjust" title="&quot;adjust&quot; heading on this page">adjust</a></span> is an Interchange time duration with a suffix of
+sec, min, hrs, days, weeks, months or years then that will be used:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+1. &#91;time]&#37;a &#37;d &#37;b &#37;Y &#37;H:&#37;M:&#37;S &#37;Z&#91;/time]<br>
+2. &#91;time adjust=&quot;2 days&quot;]&#37;a &#37;d &#37;b &#37;Y &#37;H:&#37;M:&#37;S &#37;Z&#91;/time]<br>
+</span>
+</td>
+</tr>
+<tr>
+<td class="hr">
+<span class="fixedwidth">
+1. Mon 01 Jan 2001 11:29:03 EST<br>
+2. Wed 03 Jan 2001 11:29:03 EST
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_availability.gif" width="32" height="32" border="0" alt="Availability">
+</td>
+<td width="100%">
+<p class="title">Availability</p>
+<p style="margin-bottom: 0px">
+Prior to Interchange 5.7.2 only sec, min, hours, days or weeks were valid suffixes.&nbsp;
+months and years were added in 5.7.2.
+</p>
+</td>
+</tr>
+</table>
+
+<br>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+The timezone will not be changed in line with the selected time adjustment.&nbsp;
+You should either use a format that doesn't display the timezone,
+use the &quot;<span class="fixedwidth"><a href="#tz" title="&quot;tz&quot; heading on this page">tz</a></span>&quot; parameter or display the timezone string
+yourself.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="Global_Interchange_timezone_setup"></a>
+<h4>Global Interchange timezone setup</h4>
+<p>
+You can adjust time globally for an Interchange installation by
+setting the <span class="fixedwidth">TZ</span> environment variable.&nbsp;
+On many systems,
+this can be done as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+<span class="comment">bash, ksh and sh etc.</span><br><br>
+&#36; export TZ=Europe/London<br>
+&#36; /path/to/bin/interchange --restart<br>
+</span>
+</td>
+</tr>
+<tr>
+<td class="hr">
+<span class="fixedwidth">
+<span class="comment">csh and tcsh etc.</span><br><br>
+&#37; setenv TZ Europe/London<br>
+&#37; /path/to/bin/interchange --restart
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+On most modern UNIX systems,
+the above will cause all dates and times to be adjusted and displayed
+using the PST timezone.
+</p>
+<a name="gmt"></a>
+<h3>gmt</h3>
+<p>
+If you want to display time as GMT/UTC then use this parameter,
+as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+1. &#91;time]&#37;a &#37;d &#37;b &#37;Y &#37;H:&#37;M:&#37;S &#37;Z&#91;/time]<br>
+2. &#91;time gmt=1]&#37;a &#37;d &#37;b &#37;Y &#37;H:&#37;M:&#37;S &#37;Z&#91;/time]<br>
+</span>
+</td>
+</tr>
+<tr>
+<td class="hr">
+<span class="fixedwidth">
+1. Mon 01 Jan 2001 11:33:26 EST<br>
+2. Mon 01 Jan 2001 16:33:26 EST
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+<br>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+Although the time itself will be correct,
+the timezone will not be set to GMT/UTC.&nbsp;
+You should use the &quot;<span class="fixedwidth"><a href="#tz" title="&quot;tz&quot; heading on this page">tz</a></span>&quot; parameter if
+you want to set the timezone.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="hours"></a>
+<h3>hours</h3>
+<p>
+Forces the <span class="fixedwidth"><a href="#adjust" title="&quot;adjust&quot; heading on this page">adjust</a></span> parameter value to be treated as a number of hours.&nbsp;
+For example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+1. &#91;time]&#37;a &#37;d &#37;b &#37;Y &#37;H:&#37;M:&#37;S&#91;/time]<br>
+2. &#91;time adjust=&quot;100&quot; hours=1]&#37;a &#37;d &#37;b &#37;Y &#37;H:&#37;M:&#37;S&#91;/time]<br>
+</span>
+</td>
+</tr>
+<tr>
+<td class="hr">
+<span class="fixedwidth">
+1. Mon Jan 01 2001 11:29:03<br>
+2. Fri Jan 05 2001 15:29:03
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<a name="sortable"></a>
+<h3>sortable</h3>
+<p>
+Overrides the tag body with <span class="fixedwidth">&#37;Y&#37;m&#37;d</span> so that a sortable date value
+will be generated.
+</p>
+<a name="tz"></a>
+<h3>tz</h3>
+<p>
+Use the passed timezone to display the time.&nbsp;
+Will adjust for hours difference.&nbsp;
+For example:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+1. &#91;time tz=GMT0BST]&#37;a &#37;d &#37;b &#37;Y &#37;H:&#37;M:&#37;S &#37;Z&#91;/time]<br>
+2. &#91;time tz=CST6CDT]&#37;a &#37;d &#37;b &#37;Y &#37;H:&#37;M:&#37;S &#37;Z&#91;/time]<br>
+3. &#91;time tz=PST8PDT]&#37;a &#37;d &#37;b &#37;Y &#37;H:&#37;M:&#37;S &#37;Z&#91;/time]<br>
+</span>
+</td>
+</tr>
+<tr>
+<td class="hr">
+<span class="fixedwidth">
+1. Mon 01 Jan 04:43:02 GMT<br>
+2. Mon 31 Dec 22:43:02 CST<br>
+3. Mon 31 Dec 20:43:02 PST
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The first alphabetical string,
+in the timezone specification,
+is the timezone name when not in
+daylight savings time,
+the digit is the number of hours displacement from GMT/UTC and the second
+alphabetical string is the timezone name when in daylight savings time.
+</p>
+<p>
+On modern UNIX-based systems,
+you can also pass POSIX timezone names as follows:
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+1. &#91;time tz=&quot;Europe/London&quot;]&#37;a &#37;d &#37;b &#37;Y &#37;H:&#37;M:&#37;S &#37;Z&#91;/time]<br>
+2. &#91;time tz=&quot;America/Chicago&quot;]&#37;a &#37;d &#37;b &#37;Y &#37;H:&#37;M:&#37;S &#37;Z&#91;/time]<br>
+3. &#91;time tz=&quot;America/Los_Angeles&quot;]&#37;a &#37;d &#37;b &#37;Y &#37;H:&#37;M:&#37;S &#37;Z&#91;/time]<br>
+</span>
+</td>
+</tr>
+<tr>
+<td class="hr">
+<span class="fixedwidth">
+1. Mon 01 Jan 04:43:02 GMT<br>
+2. Mon 31 Dec 22:43:02 CST<br>
+3. Mon 31 Dec 20:43:02 PST
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+The POSIX timezone names are considered to be easier to understand
+and more accurate than the older timezone specifications,
+described above.
+</p>
+
+<table class="note">
+<tr>
+<td class="icon">
+<img src="/decor/images/wiki/note_note.gif" width="32" height="32" border="0" alt="Note">
+</td>
+<td width="100%">
+<p class="title">Note</p>
+<p style="margin-bottom: 0px">
+The &quot;<span class="fixedwidth">tz</span>&quot; parameter may not work at all on non-UNIX and
+non-POSIX operating systems.&nbsp;
+If this is a problem then upgrade to a decent operating system.
+</p>
+</td>
+</tr>
+</table>
+
+<a name="zerofix"></a>
+<h3>zerofix</h3>
+<p>
+Strips leading zeros from numbers
+</p>
+<!-- start of code block -->
+<div class="code">
+<table>
+<tr>
+<td class="code">
+<span class="fixedwidth">
+&#91;time zerofix=1]&#37;d &#37;B &#37;Y &#37;H:&#37;M&#91;/time]<br>
+</span>
+</td>
+</tr>
+<tr>
+<td class="hr">
+<span class="fixedwidth">
+1 January 2001 4:43
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of code block -->
+<p>
+</div>
+
+<!-- start of modification notice -->
+<div class="wikitext">
+    <table class="pageinfo" cellpadding="0" cellspacing="0">
+	<tr>
+	    <td>
+Category:&nbsp; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a>
+	    </td>
+	</tr>
+
+
+	<tr>
+	    <td>
+		
+		Last modified by: <a href="http://interchange-rtfm.pullingshots.ca/account/profile.html?user=pj">Peter Ajamian</a><br>
+		Modification date: Sunday 24 May 2009 at 12:36 PM (BST)
+	    </td>
+	</tr>
+    </table>
+</div>
+<!-- end of modification notice -->
+
+
+
+<!-- end page: wiki/display (tags/time) -->
+
+
+
+<!-- end of page text -->
+	    </td>
+
+	</tr>
+    </table>
+<!-- START VAR: FOOTER -->
+
+<table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+	<td>
+	    <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	</td>
+
+    </tr>
+</table>
+
+<!-- END VAR: FOOTER -->
+
+<!-- START VAR: COPYRIGHT -->
+
+
+    <div class="copyright">
+	Copyright &copy; 2001-2012
+	<a href="http://cursor.biz/index.html">Cursor Software Limited</a>.&nbsp;
+	All Rights Reserved.
+    </div>
+
+<!-- END VAR: COPYRIGHT -->
+
+</body>
+</html>

@@ -1,0 +1,268 @@
+<HTML>
+<HEAD>
+<TITLE>Remote Procedure Calls with SOAP</TITLE>
+<LINK REV="made" HREF="mailto:root@bill.minivend.com">
+</HEAD>
+
+<BODY>
+
+<A NAME="__index__"></A>
+<!-- INDEX BEGIN -->
+
+<UL>
+
+	<LI><A HREF="#remote procedure calls with soap">Remote Procedure Calls with SOAP</A></LI>
+	<UL>
+
+		<LI><A HREF="#interchange soap features">Interchange SOAP features</A></LI>
+		<LI><A HREF="#soap interchange.cfg global directives">SOAP interchange.cfg global directives</A></LI>
+		<LI><A HREF="#soap catalog.cfg directives">SOAP catalog.cfg directives</A></LI>
+	</UL>
+
+</UL>
+<!-- INDEX END -->
+
+<HR>
+<P>
+<H1><A NAME="remote procedure calls with soap">Remote Procedure Calls with SOAP</A></H1>
+<P>Interchange has built-in support for SOAP, the Simple Object Access Protocol
+defined originally by Microsoft and embraced and extended in an open fashion
+by the W3 standards organzation. It is based on XML and is the leading e-commerce
+communication mechanism, supported by every major company involved in e-commerce.</P>
+<P>SOAP allows you to write programs in any language which can directly access
+functions on Interchange. It is possible to order an item, enter address/shipping
+information, and trigger an order via remote procedure call. And much more.</P>
+<P>In addition, Interchange provides a SOAP client that allows you to do the
+same with other XML-based SOAP servers.</P>
+<P>It is beyond the scope of this document to describe exactly how SOAP works.
+For more information about SOAP, see the following:</P>
+<PRE>
+        <A HREF="http://www.w3.org/TR/SOAP/">http://www.w3.org/TR/SOAP/</A></PRE>
+<P>All of Interchange's SOAP functions are based on Paul Kulchenko's excellent
+SOAP::Lite module set for Perl. See information about it at:</P>
+<PRE>
+        <A HREF="http://www.soaplite.com/">http://www.soaplite.com/</A></PRE>
+<P>There are many other sources of information about SOAP. Check your neighborhood
+search engine.</P>
+<P><STRONG>WARNING</STRONG>: The SOAP server is in an alpha state. This means that the interface
+may change at any time, and that all features are not fully tested.</P>
+<P>
+<H2><A NAME="interchange soap features">Interchange SOAP features</A></H2>
+<UL>
+<LI>
+Catalog and session ID are embedded in proxy call. This avoids
+having to do fancy gyrations with the SOAP envelope.
+<P></P>
+<LI>
+Allows most any tag to be called, with nearly the same syntax as with
+embedded perl on Interchange. For instance:
+<PRE>
+    use SOAP::Lite;
+    my $cat = 'found';
+    my $id = 'ABCDEFGH:soap';
+</PRE>
+<PRE>
+
+    my $Tag = SOAP::Lite
+            -&gt; uri('<A HREF="http://www.icdevgroup.org/Vend/SOAP">http://www.icdevgroup.org/Vend/SOAP</A>')
+            -&gt; proxy(&quot;<A HREF="http://localhost:7780/">http://localhost:7780/</A>$cat/$id&quot;);</PRE>
+<PRE>
+
+    my $login_opt = {
+                        username =&gt; 'test',
+                        password =&gt; 'test',
+                        function =&gt; 'login'
+                    };
+    my $ok = $Tag-&gt;userdb( $login_opt )-&gt;result;</PRE>
+<PRE>
+
+    if($ok) {
+        print &quot;Successful login.\n&quot;;
+    }
+    else {
+        print &quot;FAILED login.\n&quot;;
+    }</PRE>
+<PRE>
+
+    print &quot;First name is &quot; . $Tag-&gt;value('fname')-&gt;result;</PRE>
+<P>The set of allowed tags can be set in the catalog directive SOAP_Enable.</P>
+<P></P>
+<LI>
+Embedded Perl (and variants like [item-calc] and [item-exec]
+are not allowed by default, but can be enabled with SOAP_Enable.
+<P></P>
+<LI>
+Can specify the ID, or accept one from Interchange.
+<PRE>
+    use SOAP::Lite;
+</PRE>
+<PRE>
+
+    my $cat = 'found';</PRE>
+<PRE>
+
+    my $ic = SOAP::Lite
+            -&gt; uri('<A HREF="http://bill.minivend.com/Vend/SOAP">http://bill.minivend.com/Vend/SOAP</A>')
+            -&gt; proxy(&quot;<A HREF="http://localhost:7780/">http://localhost:7780/</A>$cat&quot;);
+    my $id = $ic -&gt; session_name ()-&gt;result;</PRE>
+<PRE>
+
+    my $proxy = &quot;<A HREF="http://localhost:7780/">http://localhost:7780/</A>$cat/$id&quot;;
+    $ic-&gt;proxy($proxy);</PRE>
+<PRE>
+
+    $id = $ic-&gt;session_name()-&gt;result();
+    $id = defined $id ? $id : 'undef';
+    print &quot;id=$id\n&quot;;</PRE>
+<P></P>
+<LI>
+Can get and put entire Values, Scratch, and Session structures
+with the appropriate calls. Here is an example of using the Values
+procedure to get/set all user form values:
+<PRE>
+    use SOAP::Lite;
+    use Data::Dumper;
+    my $id = 'ABCDEFGH';
+</PRE>
+<PRE>
+
+    my $cat = 'found';</PRE>
+<PRE>
+
+    my $ic = SOAP::Lite
+            -&gt; uri('<A HREF="http://bill.minivend.com/Vend/SOAP">http://bill.minivend.com/Vend/SOAP</A>')
+            -&gt; proxy(&quot;<A HREF="http://localhost:7780/">http://localhost:7780/</A>$cat/$id&quot;);</PRE>
+<PRE>
+
+    my $vref = $ic -&gt; Values ()-&gt;result;</PRE>
+<PRE>
+
+    print &quot;Original name is '$vref-&gt;{fname}' '$vref-&gt;{lname}'\n&quot;;</PRE>
+<PRE>
+
+    # Set first name and last name
+    $vref-&gt;{fname} = 'Foo';
+    $vref-&gt;{lname} = 'Bar';</PRE>
+<PRE>
+
+    print &quot;Local name is $vref-&gt;{fname} $vref-&gt;{lname}\n&quot;;</PRE>
+<PRE>
+
+    # Save entire Values hash, which returns new structure
+    my $nref = $ic -&gt; Values ($vref)-&gt;result;</PRE>
+<PRE>
+
+    my $fname = $ic-&gt;value('fname')-&gt;result;
+    my $lname = $ic-&gt;value('lname')-&gt;result;
+    print   &quot;Interchange name is $fname $lname\n&quot;;</PRE>
+<PRE>
+
+    print &quot;Name returned from save is $nref-&gt;{fname} $nref-&gt;{lname}\n&quot;;</PRE>
+<P></P>
+<DT><STRONG><A NAME="item_Integrated_client_tag">Integrated client tag</A></STRONG><BR>
+<DD>
+You can make SOAP RPC calls to other servers. That includes other
+catalogs on the same Interchange server, of course!
+
+<PRE>
+
+    [calc]
+    my $next_order = q{[soap
+                        uri=&quot;<A HREF="http://localhost/Vend/SOAP&quot">http://localhost/Vend/SOAP&quot</A>;
+                        proxy=&quot;<A HREF="http://localhost:7780/other_cat&quot">http://localhost:7780/other_cat&quot</A>;
+                        call=&quot;counter&quot;
+                        param.file=&quot;etc/order.number&quot;
+                    ]};
+        if(! $next_order) {
+                # Alternatively you could die if this was in an order profile
+                Log(&quot;Failed to get order number from SOAP! Using temporary number.&quot;);
+                $next_order = q{[counter file=etc/emergency.number]};
+        }
+    $Session-&gt;{mv_order_number} = $next_order;
+    return;
+    [/calc]</PRE>
+<P></P></UL>
+<P>
+<H2><A NAME="soap interchange.cfg global directives">SOAP interchange.cfg global directives</A></H2>
+<DL>
+<DT><STRONG><A NAME="item_SOAP">SOAP</A></STRONG><BR>
+<DD>
+Whether SOAP is enabled on this server. A yes/no directive.
+<PRE>
+        SOAP    Yes</PRE>
+<P>Default is <CODE>No</CODE>.</P>
+<P></P>
+<DT><STRONG><A NAME="item_SOAP_StartServers">SOAP_StartServers</A></STRONG><BR>
+<DD>
+How many SOAP RPC servers should be started in initial operation.
+More may be started if traffic gets heavy. A positive integer.
+<PRE>
+        SOAP_StartServers  5</PRE>
+<P>Default is 1.</P>
+<P></P>
+<DT><STRONG><A NAME="item_SOAP_Socket">SOAP_Socket</A></STRONG><BR>
+<DD>
+The <CODE>socket(s)</CODE> that should be enabled to receive SOAP calls. This
+is an array -- if you wish to have multiple sockets monitored specify
+them.
+<PRE>
+        SOAP_Socket 7780 7781</PRE>
+<P>Default is 7780. If you want to monitor only a certain IP address,
+instead of all attached interfaces (the default), specify the
+port like:</P>
+<PRE>
+        SOAP_Socket  127.0.0.1:7780 127.0.0.1:7781</PRE>
+<P>If your transport software supports it, you may use UNIX-domain sockets
+by specifying them as an absolute file path:</P>
+<PRE>
+        SOAP_Socket  7780 /var/run/interchange/socket.soap</PRE>
+<P>As shown above, you can monitor both INET and UNIX domain sockets.</P>
+<P></P>
+<DT><STRONG><A NAME="item_SOAP_Perms">SOAP_Perms</A></STRONG><BR>
+<DD>
+The permissions that are applied to any UNIX domain sockets and
+files listing current socket connections. If they are world
+writable, a warning will be issued on startup.
+<PRE>
+        SOAP_Perms   0660</PRE>
+<P>Default is <CODE>0600</CODE>.</P>
+<P></P>
+<DT><STRONG><A NAME="item_SOAP_MaxRequests">SOAP_MaxRequests</A></STRONG><BR>
+<DD>
+Because SOAP servers process requests in the foreground, there is a possibility
+for memory consumption growth. To prevent this, every so often the SOAP 
+server will ``die'' and a new one is spawned to replace it. This directive
+determines how many transactions a SOAP server will serve before dying.
+<PRE>
+        SOAP_MaxRequests 100</PRE>
+<P>Default is <CODE>50</CODE>.</P>
+<P></P>
+<DT><STRONG><A NAME="item_SOAP_Host">SOAP_Host</A></STRONG><BR>
+<DD>
+This is the list of hosts that are allowed to connect to the SOAP server.
+<PRE>
+        SOAP_Host  127.0.0.1 10.* 205.133.134.19</PRE>
+<P>Wildcards can be used. Default is <CODE>localhost 127.0.0.1</CODE>.</P>
+<P></P></DL>
+<P>
+<H2><A NAME="soap catalog.cfg directives">SOAP catalog.cfg directives</A></H2>
+<DL>
+<DT><STRONG>SOAP</STRONG><BR>
+<DD>
+Whether SOAP calls can be used to access this catalog. A yes/no directive.
+<PRE>
+        SOAP  Yes</PRE>
+<P>Default is <CODE>No</CODE>.</P>
+<P></P>
+<DT><STRONG><A NAME="item_SOAP_Enable">SOAP_Enable</A></STRONG><BR>
+<DD>
+Enabling of certain parameters. (Not fully implemented yet.)
+<PRE>
+        SOAP_Enable   interpolate 1</PRE>
+<P>The above would allow embedded Perl code to be interpreted as a part
+of a SOAP RPC call.</P>
+<P></P></DL>
+
+</BODY>
+
+</HTML>

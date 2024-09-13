@@ -1,0 +1,94 @@
+From: Mike Heins <mheins@redhat.com>
+To: interchange-users@interchange.redhat.com
+Subject: Re: [ic] softgoods
+Message-ID: <20020227190327.A18130@bill.heins.net>
+Date: Wed, 27 Feb 2002 19:03:27 -0500
+
+
+Quoting Paul Jordan (paul@gishnetwork.com):
+> Is anyone out the an expert on IC regarding downloadable goods. Our store is
+> fully functional, and you can shop, purchase and download goods, (with the
+> test CC of course). A friend and I have been talking and he has been saying
+> I may want to change my delivery method. He said IC may give you problems
+> when multiple people start buying/downloading these .zip files.
+
+This is true. 
+
+If you expect to sell lots of softgoods, the best thing to do is make
+your enabling procedure provide a symlinked directory for a separate
+HTTP download. 
+
+It can be as simple as:
+
+UserTag enable-download Order resource
+UserTag enable-download addAttr
+UserTag enable-download Routine <<EOR
+sub {
+	my ($resource, $opt) = @_;
+
+	my $docroot = $opt->{document_root} || $::Variable->{DOCROOT};
+	my $dl_dir  = $opt->{base_dir} || 'tmp_download';
+	my $server  = $opt->{server}   || $::Variable->{SERVER_NAME};
+
+	## Routine comes from Vend::Util
+	## We will use session ID, but this would make totally random
+	#my $random = random_string();
+
+	my $random = $Vend::Session->{id};
+
+	require File::Path;
+
+	my $dir = "$docroot/$dl_dir/$random";
+
+	if(-d $dir) {
+		# Must have been made previously
+	}
+	elsif ( File::Path::mkpath($dir) ) {
+		## Need to ensure readable for HTTP download
+		chmod 0755, $dir;
+	}
+	else {
+		logError("Unable to make user download directory %s", $dir);
+		return undef;
+	}
+	
+	# Routine comes from Vend::Util
+	unless ( file_name_is_absolute($resource) ) {
+	    $resource = "$Vend::Cfg->{VendRoot}/$resource";
+	}
+
+	# Get the base file name
+	my $filebase = $resource;
+	$filebase =~ s,.*/,,;
+
+	## Now do the symlink
+	symlink $resource, "$dir/$filebase"
+		or do {
+			logError("Unable to symlink %s to %s", $resource, $dir);
+			return undef;
+		};
+	
+	## Return the URL of the now-symlinked resource
+	return "http://$server/$dl_dir/$random/$filebase";
+}
+EOR
+
+This should be accompanied by a cron job which runs every half hour
+or so:
+
+	## Wherever that temporary base is
+	BASEDIR=/var/www/html/tmp_download
+	find $BASEDIR -type l -mmin +60 -exec rm '{}' ';'
+	find $BASEDIR -type d -depth -mindepth 1 -empty -exec rmdir '{}' ';'
+
+-- 
+Red Hat, Inc., 3005 Nichols Rd., Hamilton, OH  45013
+phone +1.513.523.7621      <mheins@redhat.com>
+
+I don't want to get to the end of my life and find I have just
+lived the length of it. I want to have lived the width of it as
+well. -- Diane Ackerman
+_______________________________________________
+interchange-users mailing list
+interchange-users@interchange.redhat.com
+http://interchange.redhat.com/mailman/listinfo/interchange-users

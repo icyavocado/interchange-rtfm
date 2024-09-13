@@ -1,0 +1,48 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange + CVS HOWTO: Workstation Interchange installation</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ic_howto_cvs_39.html">Parent Topic</A> | <A HREF="ic_howto_cvs_39.html">Previous Topic</A> | <A HREF="ic_howto_cvs_41.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>6.1. Workstation Interchange installation</H2>
+<P>Not all developers work on Linux workstations, many use Apples (graphics designers and HTML gurus tend to, I've found), and many use Windows.  This means that many developers have the extra step of uploading their changes to a Unix server where Interchange is running in order to see their changes.</P>
+<P>The remedy to that is to setup an Interchange server on your workstation, or any location that has direct access to the CVS source files.  I'll explain:</P>
+<P>The Interchange server that runs where the CVS server is (that we setup earlier) can be seen as the gathering point for all the developers.  However, each developer may run as many Interchange daemons as he/she requires in a local context for the purpose of seeing the changes made before uploading them via CVS.</P>
+<P>For example, Bob could setup another Interchange catalog on the same server as the CVS, (e.g. foundation-bob).  To get direct access to those files (rather than FTP), Bob could use NFS mounts (if Bob's workstation is Linux) or SMB mounts using Samba if his workstation is a Windows variant.  Any way that Bob can get direct access to the files will save him some time (by cutting out the &quot;upload&quot; from the &quot;edit-&gt;upload-&gt;test&quot; development cycle).  One could even use VMware to run a Linux server on your Windows workstation.</P>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>You can now use the cygwin compatibility confirmed in Interchange versions 4.7.6 and above to run Interchange right on your Windows workstation.
+<HR WIDTH="80%" ALIGN="Left"></P>
+<P>The result will be that you can modify the files with your favorite text editor and see the results immediately through your local catalog.  Setting up the catalog initially is quite easy.  Just follow the same steps used to setup the CVS catalog.  Which is:</P>
+<UL>
+<LI>Stop Interchange.
+<LI>bin/makecat a new catalog.
+<LI>Checkout from CVS into a new CVS catalog directory and link the images/ directory.
+<LI>Move any needed files back into the CVS catalog directory.
+<LI>Make modifications to products/variable.txt and catalog.cfg (e.g. CGI_URL, HOSTNAME, DBI_USER, DBI_PASSWORD).
+<LI>Restart Interchange.</UL>
+<P>One aspect of this local configuration is managing the differences between the main Interchange daemon which runs on the CVS server and the local Interchange daemon.  The differences are probably hostname, database information, etc.  That will all need to be managed (usually through catalog.cfg entries) and database exports &amp; imports (i.e. the postgres pg_dump command).</P>
+<P>Another thing that you might have noticed at this point is all the files that are modified locally by the Interchange daemon will report ? or M when you run an update.  This can be handled with <TT>CVSROOT/cvsignore</TT> and <TT>$CVSIGNORE</TT>, which are beyond the scope of this document.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ic_howto_cvs_39.html">Parent Topic</A> | <A HREF="ic_howto_cvs_39.html">Previous Topic</A> | <A HREF="ic_howto_cvs_41.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

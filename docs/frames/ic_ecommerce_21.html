@@ -1,0 +1,239 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Ecommerce Functions: Advanced Multi-level Order Pages</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ic_ecommerce_20.html">Parent Topic</A> | <A HREF="ic_ecommerce_20.html">Previous Topic</A> | <A HREF="ic_ecommerce_22.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.1. Advanced Multi-level Order Pages</H2>
+<P>An unlimited number of order checking profiles can be defined with the <I>OrderProfile</I> directive, or by defining order profiles in scratch variables. This allows a multi-level ordering process, with checking for format and validity at every stage.</P>
+<P>To custom-configure the error message, place it after the format check requirement.</P>
+<P>Specifications take the form of an order page variable (like name or address), followed by an equals sign and one of five check types:</P>
+<P><B>required</B></P>
+<UL>
+A non-blank value is required</UL>
+<P><B>mandatory</B></P>
+<UL>
+Must be non-blank, and must have been specified on this form, not a saved value from a previous form</UL>
+<P><B>phone</B></P>
+<UL>
+The field must look like a phone number, by a very loose specification allowing numbers from all countries</UL>
+<P><B>phone_us</B></P>
+<UL>
+Must have US phone number formatting, with area code</UL>
+<P><B>state</B></P>
+<UL>
+Must be a US state, including DC and Puerto Rico.</UL>
+<P><B>province</B></P>
+<UL>
+Must be a Canadian province or pre-1997 territory.</UL>
+<P><B>state_province</B></P>
+<UL>
+Must be a US state or Canadian province.</UL>
+<P><B>zip</B></P>
+<UL>
+Must have US postal code formatting, with optional ZIP+4. Also called by the alias <TT>us_postcode</TT>.</UL>
+<P><B>ca_postcode</B></P>
+<UL>
+Must have Canadian postal code formatting. Checks for a valid first letter.</UL>
+<P><B>postcode</B></P>
+<UL>
+Must have Canadian or US postal code formatting.</UL>
+<P><B>true</B></P>
+<UL>
+Field begins with <B>y</B>, <B>1</B>, or <B>t</B> (Yes, 1, or True) - not case sensitive</UL>
+<P><B>false</B></P>
+<UL>
+Field begins with <B>n</B>, <B>0</B>, or <B>f</B> (No, 0, or False) - not case sensitive</UL>
+<P><B>email</B></P>
+<UL>
+Rudimentary email address check, must have an '@' sign, a name, and a minimal domain</UL>
+<P><B>regex</B></P>
+<UL>
+A regular expression to check against. To check that all submissions of the &quot;foo&quot; variable have &quot;bar&quot; at the beginning, do:</UL>
+<PRE>
+            foo=regex ^bar
+</PRE>
+<UL>
+You can add an error message by putting it in quotes at the end:</UL>
+<PRE>
+       foo=regex ^bar &quot;You must have bar at the beginning of this&quot;
+</PRE>
+<UL>
+If you want to use a backslash to introduce a Perl literal like <TT>\w</TT>, you must double the backslash, i.e.</UL>
+<PRE>
+            foo=regex ^bar\\w+$ &quot;You must have 'bar' followed by only word characters&quot;
+</PRE>
+<P><B>length</B></P>
+<UL>
+A range of lengths you want the input to be:</UL>
+<PRE>
+       foo=length 4-10
+</PRE>
+<UL>
+That will require <TT>foo</TT> be from 4 to 10 characters long.</UL>
+<P><B>unique</B></P>
+<UL>
+Tests to see that the value would be a unique key in a table:</UL>
+<PRE>
+       foo=unique userdb Sorry, that username is already taken
+</PRE>
+<P><B>filter</B></P>
+<UL>
+Runs the value through an Interchange filter and checks that the returned value is equal to the original value.</UL>
+<PRE>
+       foo=filter entities Sorry, no HTML allowed
+</PRE>
+<UL>
+To check for all lower-case characters:</UL>
+<PRE>
+            foo=filter lower Sorry, no uppercase characters
+</PRE>
+<P>Also, there are pragmas that can be used to change behavior:</P>
+<P><B>&amp;charge</B></P>
+<UL>
+Perform a real-time charge operation. If set to any value but &quot;custom&quot;, it will use Interchange's CyberCash routines. To set to something else, use the value &quot;custom ROUTINE&quot;. The ROUTINE should be a GlobalSub which will cause the charge operation to occur -- if it returns non-blank, non-zero the profile will have succeeded. If it returns 0 or undef or blank, the profile will return failure.</UL>
+<P><B>&amp;credit_card</B></P>
+<UL>
+Checks the mv_credit_card_* variables for validity. If set to &quot;standard&quot;, it will use Interchange's <TT>encrypt_standard_cc</TT> routines. This destroys the CGI value of mv_credit_card_number -- if you don't want that to happen (perhaps to save it for sending to CyberCash) then add the word <TT>keep</TT> on the end.
+<BR>
+Example:</UL>
+<PRE>
+        # Checks credit card number and destroys number after encryption
+        # The charge operation can never work
+    
+        &amp;credit_card=standard
+        &amp;charge=custom authorizenet
+    
+        # Checks credit card number and keeps number after encryption
+        # The charge operation can now work
+    
+        &amp;credit_card=standard keep
+        &amp;charge=custom authorizenet
+</PRE>
+<UL>
+You can supply your own check routine with a GlobalSub:</UL>
+<PRE>
+        &amp;credit_card=check_cc
+</PRE>
+<UL>
+The <TT>GlobalSub</TT> check_cc will be used to check and encrypt the credit card number, and its return value will be used to determine profile success.</UL>
+<P><B><TT>&amp;</TT>fail</B></P>
+<UL>
+Sets the mv_failpage value.</UL>
+<PRE>
+        &amp;fail=page4
+</PRE>
+<UL>
+If the submit process succeeds, the user will be sent to the page <TT>page4</TT>.</UL>
+<P><B><TT>&amp;</TT>fatal</B></P>
+<UL>
+Set to '&amp;fatal=yes' if an error should generate the error page.</UL>
+<P><B><TT>&amp;</TT>final</B></P>
+<UL>
+Set to '&amp;final=yes' if a successful check should cause the order to be placed.</UL>
+<P><B><TT>&amp;</TT>update</B></P>
+<UL>
+Set to '&amp;update=yes' if a successful check should cause the variable to be copied from the CGI space to the Values space. This is like [update values] except only for that variable.
+<BR>
+This is typically used when using a <TT>mv_form_profile</TT> check so that a failing check will not cause all values to be reset to their former state upon returning to the form.</UL>
+<P><B><TT>&amp;</TT>return</B></P>
+<UL>
+Causes profile processing to terminate with either a success or failure depending on what follows. If it is non-blank and non-zero, the profile succeeds.</UL>
+<PRE>
+        # Success :)
+        &amp;return 1
+    
+        # Failure :\
+        &amp;return 0
+</PRE>
+<UL>
+Will ignore the &amp;fatal pragma, but &amp;final is still in effect if set.</UL>
+<P><B><TT>&amp;</TT>set</B></P>
+<UL>
+Set a user session variable to a value, i.e. <TT>&amp;set=mv_email [value email]</TT>. This will not cause failure if blank or zero.</UL>
+<P><B><TT>&amp;</TT>setcheck</B></P>
+<UL>
+Set a user session variable to a value, i.e. <TT>&amp;set=mv_email [value email]</TT>.  This <B>will</B> cause failure if set to a blank or zero. It is usually placed at the end after a &amp;fatal pragma would have caused the process to stop if there was an error -- can also be used to determine pass/fail based on a derived value, as it will cause failure if it evaluates to zero or a blank value.</UL>
+<P><B><TT>&amp;</TT>success</B></P>
+<UL>
+Sets the mv_successpage value. Example:</UL>
+<PRE>
+        &amp;success=page5
+</PRE>
+<UL>
+If the submit process succeeds, the user will be sent to the page <TT>page5</TT>.</UL>
+<P>As an added measure of control, the specification is evaluated for the special Interchange tags to provide conditional setting of order parameters. With the <TT>[perl]</TT> <TT>[/perl]</TT> capability, quite complex checks can be done. Also, the name of the page to be displayed on an error can be set in the <TT>mv_failpage</TT> variable.</P>
+<P>The following file specifies a simple check of formatted parameters:</P>
+<PRE>
+ name=required You must give us your name.
+ address=required Oops! No address.
+ city=required
+ state=required
+ zip=required
+ email=required
+ phone_day=phone_us XXX-XXX-XXXX phone-number for US or Canada
+ &amp;fatal=yes
+ email=email Email address missing the domain?
+ &amp;set=mv_email [value email]
+ &amp;set=mv_successpage ord/shipping
+</PRE>
+<P>The profile above only performs the &amp;set directives if all of the previous checks have passed -- the &amp;fatal=yes will stop processing after the check of the email address if any of the previous checks failed.</P>
+<P>If you want to place multiple order profiles in the same file, separate them with __END__, which must be on a line by itself.</P>
+<P>User-defined check routines can be defined in a GlobalSub:</P>
+<PRE>
+    GlobalSub &lt;&lt;EOF
+    sub set_up_extra_check {
+        BEGIN {
+            package Vend::Order;
+            sub _pt_postcode {
+                # $ref is to Vend::Session-&gt;{'values'} hash
+                # $var is the passed name of the variable
+                # $val is current value of checked variable
+                my($ref, $var, $val) = @_;
+
+                if ($ref-&gt;{country} =~ /^(PT|portugal)$/i) {
+                    return $val =~ /^\d\d\d\d$/ ?
+                        (1, $var, '') : (undef, $var, &quot;not a Portugese postal code&quot;);
+                }
+                else {
+                    return (1, $var, '');
+                }
+            }
+        }
+    }
+    EOF
+</PRE>
+<P>Now you can specify in an order profile:</P>
+<PRE>
+  postcode=pt_postcode
+</PRE>
+<P>Very elaborate checks are possible. There must be an underscore preceding the routine name. The return value of the subroutine should be a three-element array, consisting of:</P>
+<OL>
+<LI>the pass/fail ('1' or 'undef') status of the check;
+<LI>the name of the variable which was checked;
+<LI>a standard error message for the failure, in case a custom one has not been specified in the order profile.</OL>
+<P>The latter two elements are used by the <TT>[error]</TT> tag for on-screen display of form errors. The checkout page of the Foundation demo includes examples of this.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ic_ecommerce_20.html">Parent Topic</A> | <A HREF="ic_ecommerce_20.html">Previous Topic</A> | <A HREF="ic_ecommerce_22.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

@@ -1,0 +1,182 @@
+Interchange AuthorizeNet Support
+       Vend::Payment::AuthorizeNet $Revision: 2.5 $
+
+SYNOPSIS
+           &charge=authorizenet
+
+               or
+
+           [charge mode=authorizenet param1=value1 param2=value2]
+
+
+PREREQUISITES
+         Net::SSLeay
+
+           or
+
+         LWP::UserAgent and Crypt::SSLeay
+
+       Only one of these need be present and working.
+
+DESCRIPTION
+       The Vend::Payment::AuthorizeNet module implements the
+       authorizenet() routine for use with Interchange. It is
+       compatible on a call level with the other Interchange
+       payment modules -- in theory (and even usually in
+       practice) you could switch from CyberCash to Authorize.net
+       with a few configuration file changes.
+
+       To enable this module, place this directive in
+       interchange.cfg:
+
+           Require module Vend::Payment::AuthorizeNet
+
+       This must be in interchange.cfg or a file included from
+       it.
+
+       Make sure CreditCardAuto is off (default in Interchange
+       demos).
+
+       The mode can be named anything, but the gateway parameter
+       must be set to authorizenet. To make it the default
+       payment gateway for all credit card transactions in a
+       specific catalog, you can set in catalog.cfg:
+
+           Variable   MV_PAYMENT_MODE  authorizenet
+
+       It uses several of the standard settings from Interchange
+       payment. Any time we speak of a setting, it is obtained
+       either first from the tag/call options, then from an
+       Interchange order Route named for the mode, then finally a
+       default global payment variable, For example, the id
+       parameter would be specified by:
+
+           [charge mode=authorizenet id=YourAuthorizeNetID]
+
+       or
+
+           Route authorizenet id YourAuthorizeNetID
+
+       or
+
+           Variable MV_PAYMENT_ID      YourAuthorizeNetID
+
+       The active settings are:
+
+       id  Your Authorize.net account ID, supplied by
+           Authorize.net when you sign up.  Global parameter is
+           MV_PAYMENT_ID.
+
+       secret
+           Your Authorize.net account password, supplied by
+           Authorize.net when you sign up.  Global parameter is
+           MV_PAYMENT_SECRET. This may not be needed for actual
+           charges.
+
+       referer
+           A valid referering url (match this with your setting
+           on secure.authorize.net).  Global parameter is
+           MV_PAYMENT_REFERER.
+
+       transaction
+           The type of transaction to be run. Valid values are:
+
+               Interchange         AuthorizeNet
+               ----------------    -----------------
+                   auth            AUTH_ONLY
+                   return          CREDIT
+                   reverse         PRIOR_AUTH_CAPTURE
+                   sale            AUTH_CAPTURE
+                   settle          CAPTURE_ONLY
+                   void            VOID
+
+
+       remap
+           This remaps the form variable names to the ones needed
+           by Authorize.net. See the Payment Settings heading in
+           the Interchange documentation for use.
+
+       test
+           Set this to TRUE if you wish to operate in test mode,
+           i.e. set the Authorize.net x_Test_Request query
+           paramter to TRUE.i
+
+           Examples:
+
+               Route    authorizenet  test  TRUE
+                   or
+               Variable   MV_PAYMENT_TEST   TRUE
+                   or
+               [charge mode=authorizenet test=TRUE]
+
+
+       Troubleshooting
+
+       Try the instructions above, then enable test mode. A test
+       order should complete.
+
+       Disable test mode, then test in various Authorize.net
+       error modes by using the credit card number 4222 2222 2222
+       2222.
+
+       Then try a sale with the card number 4111 1111 1111 1111
+       and a valid expiration date. The sale should be denied,
+       and the reason should be in [data session payment_error].
+
+       If nothing works:
+
+       o   Make sure you "Require"d the module in
+           interchange.cfg:
+
+               Require module Vend::Payment::AuthorizeNet
+
+
+       o   Make sure either Net::SSLeay or Crypt::SSLeay and
+           LWP::UserAgent are installed and working. You can test
+           to see whether your Perl thinks they are:
+
+               perl -MNet::SSLeay -e 'print "It works\n"'
+
+           or
+
+               perl -MLWP::UserAgent -MCrypt::SSLeay -e 'print "It works\n"'
+
+           If either one prints "It works." and returns to the
+           prompt you should be OK (presuming they are in working
+           order otherwise).
+
+       o   Check the error logs, both catalog and global.
+
+       o   Make sure you set your payment parameters properly.
+
+       o   Try an order, then put this code in a page:
+
+               <XMP>
+               [calc]
+                   my $string = $Tag->uneval( { ref => $Session->{payment_result} });
+                   $string =~ s/{/{\n/;
+                   $string =~ s/,/,\n/g;
+                   return $string;
+               [/calc]
+               </XMP>
+
+           That should show what happened.
+
+       o   If all else fails, Red Hat and other consultants are
+           available to help with integration for a fee.
+
+BUGS
+       There is actually nothing *in*
+       Vend::Payment::AuthorizeNet. It changes packages to
+       Vend::Payment and places things there.
+
+AUTHORS
+       Mark Stosberg <mark@summersault.com>, based on original
+       code by Mike Heins <mheins@redhat.com>.
+
+CREDITS
+           Jeff Nappi <brage@cyberhighway.net>
+           Paul Delys <paul@gi.alaska.edu>
+           webmaster@nameastar.net
+           Ray Desjardins <ray@dfwmicrotech.com>
+           Nelson H. Ferrari <nferrari@ccsc.com>

@@ -1,0 +1,151 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: title_bar</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_133.html">Parent Topic</A> | <A HREF="ictags_153.html">Previous Topic</A> | <A HREF="ictags_155.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>6.21. title_bar</H2>
+<P>Creates a quick title bar.</P>
+<H3><A NAME="Summary">6.21.1. Summary</A></H3>
+<PRE>
+    [<B>title-bar</B> width size color]My title[/title-bar]
+    [<B>title-bar</B> width=600 size=5 color=&quot;#ff0000&quot;]My title[/title-bar]
+</PRE>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Positional parameters: </STRONG>The first line shows the usage with positional parameters (given in order). The second line shows usage with named parameters.</P>
+<P><HR WIDTH="80%" ALIGN="Left"></P>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_154.html#title_bar_color">color</A>
+</TD>
+<TD VALIGN='Top'>
+Background color the bar.
+<UL>
+Defaults to<UL>
+<LI>variable HEADERBG or
+<LI>#444444</UL></UL>
+</TD>
+<TD VALIGN='Top'>
+HEADERBG or #444444
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_154.html#title_bar_size">size</A>
+</TD>
+<TD VALIGN='Top'>
+Font size
+</TD>
+<TD VALIGN='Top'>
+6
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_154.html#title_bar_width">width</A>
+</TD>
+<TD VALIGN='Top'>
+Width of the title bar
+</TD>
+<TD VALIGN='Top'>
+500
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD>
+Invalidates cache
+</TD>
+<TD>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD>
+Macro
+</TD>
+<TD>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD>
+Has end tag
+</TD>
+<TD>
+[/title-bar]
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+    [title-bar 600 5 red]My title[/title-bar]
+    [title-bar width=600 size=5 color=&quot;#ff0000&quot;]My title[/title-bar]
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+    $Tag-&gt;title_bar( { body =&gt; <TT>&quot;My Title&quot;</TT>, } );
+
+    $Tag-&gt;title_bar( { width =&gt; 400,
+                       color =&gt; <TT>&quot;#0000ff&quot;</TT>,
+                        body =&gt; <TT>&quot;My title&quot;</TT>, } );
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;title_bar( 600, 5, <TT>&quot;red&quot;</TT>, <TT>&quot;My title&quot;</TT> );
+</PRE>
+<H3><A NAME="Description">6.21.2. Description</A></H3>
+<P>Quickly adds a title bar to your pages without having to type the html each time. Background color, width of the bar and size of the text can be customized by setting the appropriate parameter. The text color defaults to variable HEADERTEXT or when its not present to white.</P>
+<H4><A NAME="title_bar_color"> </A>6.21.2.1. <A NAME="title_bar_color">color</A></H4>
+<P>Sets the background color of the bar. You can set the color as 'red', '#ff0000', or 'bgcolor=&quot;#ff0000&quot;'.</P>
+<H4><A NAME="title_bar_size"> </A>6.21.2.2. <A NAME="title_bar_size">size</A></H4>
+<P>Determines the size of the text. Parameter should be set to a value accepted by the HTML &lt;font&gt; tag size attribute.</P>
+<H4><A NAME="title_bar_width"> </A>6.21.2.3. <A NAME="title_bar_width">width</A></H4>
+<P>Sets the width of the bar.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_133.html">Parent Topic</A> | <A HREF="ictags_153.html">Previous Topic</A> | <A HREF="ictags_155.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

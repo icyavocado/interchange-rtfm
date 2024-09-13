@@ -1,0 +1,94 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Template Guide: price, description, accessories</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_18.html">Parent Topic</A> | <A HREF="ictemplates_23.html">Previous Topic</A> | <A HREF="ictemplates_25.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>6.6. price, description, accessories</H2>
+<P><B>[price code quantity* database* noformat*]</B></P>
+<UL>
+named attributes: <TT>[price code=&quot;code&quot; quantity=&quot;N&quot; base=&quot;database&quot; noformat=1* optionX=&quot;value&quot;]</TT>
+<BR>
+Expands into the price of the product identified by code as found in the products database. If there is more than one products file defined, they will be searched in order unless constrained by the optional argument base. The optional argument quantity selects an entry from the quantity price list. To receive a raw number, with no currency formatting, use the option <TT>noformat=1</TT>.
+<BR>
+If an named attribute corresponding to a product option is passed, and that option would cause a change in the price, the appropriate price will be displayed.
+<BR>
+Demo example: The T-Shirt (product code 99-102), with a base price of $10.00, can vary in price depending on size and color. <TT>S</TT>, the small size, is 50 cents less; <TT>XL</TT>, the extra large size, is $1.00 more and the color <TT>RED</TT> is 0.75 extra. There are also quantity pricing breaks (see the demo <TT>pricing</TT> database. So the following will be true:</UL>
+<PRE>
+            [price  code=99-102
+                    size=L]              is $10.00
+        
+            [price  code=99-102
+                    size=XL]             is $11.00
+        
+            [price  code=99-102
+                    color=RED
+                    size=XL]             is $11.75
+        
+            [price  code=99-102
+                    size=XL
+                    quantity=10]         is $10.00
+        
+            [price  code=99-102
+                    size=S]              is $9.50
+</PRE>
+<UL>
+An illustration of this is on the simple <TT>flypage</TT> template when passed that item code.</UL>
+<P><B>[description code table*]</B></P>
+<UL>
+named attributes: <TT>[description code=&quot;code&quot; base=&quot;database&quot;]</TT>
+<BR>
+Expands into the description of the product identified by code as found in the products database. If there is more than one products file defined, they will be searched in order unless constrained by the optional argument table.</UL>
+<P><B>[accessories code attribute*, type*, field*, database*, name*, outboard*]</B></P>
+<UL>
+named attributes: <TT>[accessories code=&quot;code&quot;</TT> <TT>arg=&quot;attribute*, type*, field*, database*, name*, outboard*&quot;]</TT>
+<BR>
+Initiates special processing of item attributes based on entries in the product database. See Item Attributes for a complete description of the arguments.
+<BR>
+When called with an attribute, the database is consulted and looks for a comma-separated list of attribute options. They take the form:</UL>
+<PRE>
+            name=Label Text, name=Label Text*
+</PRE>
+<UL>
+The label text is optional. If none is given, the <B>name</B> will be used.
+<BR>
+If an asterisk is the last character of the label text, the item is the default selection. If no default is specified, the first will be the default. An example:</UL>
+<PRE>
+            [accessories TK112 color]
+</PRE>
+<UL>
+This will search the product database for a field named &quot;color.&quot; If an entry &quot;beige=Almond, gold=Harvest Gold, White*, green=Avocado&quot; is found, a select box like this will be built:</UL>
+<PRE>
+            &lt;SELECT NAME=&quot;mv_order_color&quot;&gt;
+            &lt;OPTION VALUE=&quot;beige&quot;&gt;Almond
+            &lt;OPTION VALUE=&quot;gold&quot;&gt;Harvest Gold
+            &lt;OPTION SELECTED&gt;White
+            &lt;OPTION VALUE=&quot;green&quot;&gt;Avocado
+            &lt;/SELECT&gt;
+</PRE>
+<UL>
+In combination with the <TT>mv_order_item</TT> and <TT>mv_order_quantity</TT> variables, this can be used to allow entry of an attribute at time of order.</UL>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_18.html">Parent Topic</A> | <A HREF="ictemplates_23.html">Previous Topic</A> | <A HREF="ictemplates_25.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

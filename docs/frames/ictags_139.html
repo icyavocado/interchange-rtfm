@@ -1,0 +1,182 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: email</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_133.html">Parent Topic</A> | <A HREF="ictags_138.html">Previous Topic</A> | <A HREF="ictags_140.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>6.6. email</H2>
+<P>This tag takes a recipient address and a body text and uses the SendmailProgram with -t option to send email.</P>
+<H3><A NAME="Summary">6.6.1. Summary</A></H3>
+<PRE>
+    [<B>email</B> to subject* reply* from* extra*]Your message[/email]
+    [<B>email</B> to=to_address subject=subject reply=reply_address
+        from=from_address extra=extra_headers]Your message[/email]
+</PRE>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Positional parameters: </STRONG>The first line shows the usage with positional parameters (given in order). The second line shows usage with named parameters.</P>
+<P><HR WIDTH="80%" ALIGN="Left"></P>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+to
+</TD>
+<TD VALIGN='Top'>
+Email address of recipient
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+subject
+</TD>
+<TD VALIGN='Top'>
+Subject line
+</TD>
+<TD VALIGN='Top'>
+String: &lt;no subject&gt;
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+reply
+</TD>
+<TD VALIGN='Top'>
+Email address to be used for the reply-to header
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+from
+</TD>
+<TD VALIGN='Top'>
+Senders email address
+</TD>
+<TD VALIGN='Top'>
+First address in MailOrderTo configuration variable
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+extra
+</TD>
+<TD VALIGN='Top'>
+Additional headers to be included
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD>
+Invalidates cache
+</TD>
+<TD>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD>
+Macro
+</TD>
+<TD>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD>
+Has end tag
+</TD>
+<TD>
+[/email]
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+    [email
+           to=&quot;foo@bar.com&quot;
+      subject=&quot;Greetings&quot;
+         from=&quot;bar@foo.com&quot;
+    ]
+    Hello World
+    [/email]
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+    $Tag-&gt;email(  { to =&gt; $to,
+                  from =&gt; $from,
+               subject =&gt; $subject,
+                 reply =&gt; $reply,
+                 extra =&gt; $extra,
+                  body =&gt; $body }  );
+</PRE>
+<P>or similarly,</P>
+<PRE>
+    $Tag-&gt;email($to, $subject, $reply, $from, $extra, $body);
+</PRE>
+<H4><A NAME="See Also">6.6.1.1. See Also</A></H4>
+<P><A HREF="ictags_140.html#email_raw">email_raw</A> and etc/mail_receipt, pages/process_return.html, pages/stock-alert-added.html for examples.</P>
+<H3><A NAME="Description">6.6.2. Description</A></H3>
+<P>Will send the content between the [email][/email] tags as an email to the recipient (to) using the SendmailProgram with -t option.</P>
+<H4><A NAME="extra">6.6.2.1. extra</A></H4>
+<P>Extra headers to be included. Example: Errors-To: errors@yourdomain.com</P>
+<H4><A NAME="from">6.6.2.2. from</A></H4>
+<P>Email address identifying the sender of the message. Will use the first email address of the MailOrderTo configuration variable if it is not supplied.</P>
+<H4><A NAME="reply">6.6.2.3. reply</A></H4>
+<P>Email address to be used for the Reply-to header. No Reply-to header will be present if this parameter is omitted.</P>
+<H4><A NAME="subject">6.6.2.4. subject</A></H4>
+<P>Short text describing the content of the message. The Subject line of an email message. The string &lt;no subject&gt; will be substituted if this parameter is omitted.</P>
+<H4><A NAME="to">6.6.2.5. to</A></H4>
+<P>Valid email address(es) of the recipient(s). This parameter is required.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_133.html">Parent Topic</A> | <A HREF="ictags_138.html">Previous Topic</A> | <A HREF="ictags_140.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

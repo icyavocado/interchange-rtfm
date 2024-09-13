@@ -1,0 +1,286 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>News index - RTFM</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-Soup-Of-The-Day" content="Tomato">
+
+    <meta name="author" content="Kevin Walsh">
+    <meta name="publisher" content="Cursor Software Limited">
+    <meta name="copyright" content="2001-2008, Cursor Software Limited">
+    <meta name="generator" content="Interchange 5.5.2 -- www.icdevgroup.org">
+    <meta name="robots" content="index,follow,noarchive">
+    <meta name="keywords" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="description" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+
+    <meta name="verify-v1" content="KqlU/bxZj9Y2ZdZ/3RwuzgVSMIrZ8XM2wqbjSaEo3O4=">
+
+    <meta name="y_key" content="e2dd60be5777fbc8">
+
+    <link rel="SHORTCUT ICON" href="/favicon.ico">
+    <link rel="icon" href="/favicon.ico" type="image/ico">
+    <link rel="search" type="application/opensearchdescription+xml" href="http://www.interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="stylesheet" href="/decor/css/website.css">
+
+    <script type="text/javascript" language="JavaScript">
+    <!--
+	if (top != self){
+	    top.location = location;
+	}
+
+    -->
+    </script>
+</head>
+<body>
+<!-- START VAR: LOGOBAR -->
+<table id="rtfmheader" cellpadding="0" cellspacing="0">
+    <tr>
+	<td><a href="http://www.interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+
+	<td width="100%" style="text-align: right; padding: 10px">
+
+	    <form action="http://www.interchange-rtfm.pullingshots.ca/search.html" method="POST">
+		<input type="hidden" name="mv_session_id" value="nsession">
+		<input type="hidden" name="mv_profile" value="cms_search">
+		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
+		<input type="submit" class="button" value="Search">
+	    </form>
+
+	</td>
+    </tr>
+</table>
+<table id="breadcrumbs" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+	<td>
+	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <span class="current">News index</span></span>
+	</td>
+
+    </tr>
+</table>
+<!-- END VAR: LOGOBAR -->
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+
+	    <td id="leftside">
+<!-- START COMPONENT: navigation -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th>NAVIGATION</th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+
+<!-- END COMPONENT: navigation -->
+<!-- START COMPONENT: account -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+
+    <tr>
+	<th>ACCOUNT LOGIN</th>
+    </tr>
+
+    <tr>
+	<td class="first">
+	    <p>You are not logged in</p>
+	</td>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+	    </ul>
+	</td>
+    </tr>
+
+</table>
+
+
+
+<!-- END COMPONENT: account -->
+<!-- START COMPONENT: icpowered -->
+
+<div style="text-align: center; margin: 10px; margin-top: 0px">
+    <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.5.2"><img src="/decor/images/iclogo_button.gif" width="136" height="43" alt="Powered by Interchange version 5.5.2"></a>
+</div>
+
+
+
+<!-- START COMPONENT: icpowered -->
+<!-- START COMPONENT: icpowered -->
+
+<div style="text-align: center; margin: 10px; margin-top: 0px">
+    <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.5.2"><img src="/decor/images/iclogo_button.gif" width="136" height="43" alt="Powered by Interchange version 5.5.2"></a>
+</div>
+
+
+
+<!-- START COMPONENT: icpowered -->
+
+	    </td>
+
+	    <td id="bodytext">
+<!-- start of page text -->
+
+<h1>News index</h1>
+
+<!-- START COMPONENT: filelist -->
+
+<div class="filelist">
+<h2>Typefaces</h2>
+<table class="list" width="100%" cellpadding="2" cellspacing="5" border="0">
+    <tr>
+	<th colspan="2">
+	    Description
+	</th>
+	<th class="numeric">
+	    Size
+	</th>
+	<th>
+	    Download
+	</th>
+    </tr>
+    <tr valign="top">
+	<td>
+	    <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" vspace="3" alt="*">
+	</td>
+	<td width="100%">
+<strong>Interchange Sans (TrueType)</strong>
+<br>
+<div class="wikitext">
+<p style="margin-bottom: 0px">
+The new &quot;Interchange Sans&quot; typeface in TTF format.&nbsp;
+This typeface started life as &quot;Bitstream Vera Sans&quot;.&nbsp;
+Although the typeface has been heavily modified from the original, the relatively free Bitstream Vera licence still applies.&nbsp;
+The Bitstream Vera file archive contains a &quot;COPYRIGHT.TXT&quot; file which explains the terms of use.
+</p>
+</div>
+<p class="author">Author: Kevin Walsh.</p>
+<p class="version">Version: 2.7.</p>
+<p class="update">Last update: 11 October 2007.</p>
+
+	</td>
+	<td class="numeric nowrap">
+	    41,104
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/graphics/InterchangeSans.ttf" rel="nofollow">InterchangeSans.ttf</a>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td>
+	    <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" vspace="3" alt="*">
+	</td>
+	<td>
+<strong>Bitstream Vera (TrueType)</strong>
+<br>
+<div class="wikitext">
+<p style="margin-bottom: 0px">
+The original &quot;Bitstream Vera&quot; typeface in TTF format (tarred and gzipped).&nbsp;
+See the &quot;COPYRIGHT.TXT&quot; file in the archive.
+</p>
+</div>
+<p class="author">Author: Bitstream.</p>
+<p class="version">Version: 1.10.</p>
+<p class="update">Last update: 09 May 2007.</p>
+
+	</td>
+	<td class="numeric nowrap">
+	    350,465
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/graphics/ttf-bitstream-vera-1.10.tar.gz" rel="nofollow">ttf-bitstream-vera</a>
+	</td>
+    </tr>
+</table>
+</div>
+
+<!-- START COMPONENT: filelist -->
+<!-- START COMPONENT: textblock -->
+
+<div class="textblock">
+    <h2>Licence</h2>
+<div class="wikitext">
+<p>
+Except where stated otherwise, all of the graphics and typefaces offered for
+download on this page are published under the terms of the
+<a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2egnu%2eorg%2flicenses%2fold%2dlicenses%2fgpl%2d2%2e0%2ehtml" rel="nofollow">GNU General Public Licence</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+version 2 or, at your option, any later version.
+</p>
+<p>
+The &quot;BitStream Vera&quot; typeface,
+available for download on this page,
+is not GPL-licenced.&nbsp;
+See the &quot;COPYRIGHT.TXT&quot; file in the archive.
+</p>
+<p style="margin-bottom: 0px">
+For the purpose of applying the
+<a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2egnu%2eorg%2flicenses%2fold%2dlicenses%2fgpl%2d2%2e0%2ehtml" rel="nofollow">GNU General Public Licence</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+the graphics,
+we consider &quot;source code&quot; to refer to the SVG files, and &quot;object code&quot; to refer to processed PNG and EPS files.
+</p>
+</div>
+</div>
+
+
+<!-- START COMPONENT: textblock -->
+
+
+<!-- end of page text -->
+	    </td>
+
+	</tr>
+    </table>
+<!-- START VAR: FOOTER -->
+
+<table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+	<td>
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	</td>
+
+    </tr>
+</table>
+
+<!-- END VAR: FOOTER -->
+
+<!-- START VAR: COPYRIGHT -->
+
+
+    <div class="copyright">
+	Copyright &copy; 2001-2008
+	<a href="http://www.cursor.biz/index.html">Cursor Software Limited</a>.&nbsp;
+	All Rights Reserved.
+    </div>
+
+<!-- END VAR: COPYRIGHT -->
+
+</body>
+</html>

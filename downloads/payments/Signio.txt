@@ -1,0 +1,234 @@
+NAME
+       Vend::Payment::Signio - Interchange support for Signio/Verisign Payflow
+       Pro
+
+SYNOPSIS
+           &charge=signio
+
+               or
+
+           [charge mode=signio param1=value1 param2=value2]
+
+PREREQUISITES
+       Verisign/Signio Payflow Pro, Version 2.10 or higher
+
+VERISIGN SOFTWARE SETUP
+       Verisign's interface requires a proprietary binary-only shared library;
+       thus you must download the appropriate package for your platform from
+       Verisign.  On Linux, the archive you download is pfpro_linux.tar.gz. It
+       includes documentation you should consult. Here's a brief installation
+       guide for someone using Linux with root access:
+
+       o   Copy the payflowpro/linux/certs directory to VENDROOT, your Inter-
+           change root directory (perhaps /usr/lib/interchange or
+           /usr/local/interchange). This contains a single file with the
+           client SSL certificate required to authenticate with Verisign's
+           https server.
+
+       o   Install payflowpro/linux/lib/libpfpro.so somewhere on your system
+           fit for shared libraries, such as /usr/lib, or else in VEND-
+           ROOT/lib.
+
+       o   Build the PFProAPI.pm Perl module:
+
+           o   cd payflowpro/linux/perl
+
+           o   If you installed libpfpro.so somewhere other than in a standard
+               location for shared libraries on your system, edit line 6 of
+               Makefile.PL, so that "-L." instead reads "-L/path/to/libpf-
+               pro.so" with the correct path.
+
+           o   perl Makefile.PL && make && make test
+
+           o   As root, make install
+
+       Using PFProAPI.pm is the best way to interact with Payflow Pro. How-
+       ever, if you can't get it to work for whatever reason, you may also use
+       either of two small wrapper binaries, pfpro and pfpro-file, designed to
+       be called from the shell. Interchange must fork and execute the binary,
+       then retrieve the Verisign response from a temporary file. This module
+       will automatically fall back to using one of them if it can't find
+       PFProAPI.pm when Interchange is started.
+
+DESCRIPTION
+       The Vend::Payment::Signio module implements the signio() payment rou-
+       tine for use with Interchange. It is compatible on a call level with
+       the other Interchange payment modules -- in theory (and even usually in
+       practice) you could switch from CyberCash to Signio with a few configu-
+       ration file changes.
+
+       To enable this module, place this directive in interchange.cfg:
+
+           Require module Vend::Payment::Signio
+
+       This must be in interchange.cfg or a file included from it.
+
+       NOTE: Make sure CreditCardAuto is off (default in Interchange demos).
+
+       The mode can be named anything, but the "gateway" parameter must be set
+       to "signio". To make it the default payment gateway for all credit card
+       transactions in a specific catalog, you can set in catalog.cfg:
+
+           Variable   MV_PAYMENT_MODE  signio
+
+       It uses several of the standard settings from Interchange payment. Any
+       time we speak of a setting, it is obtained either first from the
+       tag/call options, then from an Interchange order Route named for the
+       mode, then finally a default global payment variable. For example, the
+       "id" parameter would be specified by:
+
+           [charge mode=signio id=YourPayflowProID]
+
+       or
+
+           Route signio id YourPayflowProID
+
+       or with only PayflowPro as a payment provider
+
+           Variable MV_PAYMENT_ID      YourPayflowProID
+
+       The active settings are:
+
+       id  Your account ID, supplied by VeriSign when you sign up.  Global
+           parameter is MV_PAYMENT_ID.
+
+       secret
+           Your account password, selected by you or provided by Verisign when
+           you sign up.  Global parameter is MV_PAYMENT_SECRET.
+
+       partner
+           Your account partner, selected by you or provided by Verisign when
+           you sign up. Global parameter is MV_PAYMENT_PARTNER.
+
+       vendor
+           Your account vendor, selected by you or provided by Verisign when
+           you sign up. Global parameter is MV_PAYMENT_VENDOR.
+
+       transaction
+           The type of transaction to be run. Valid values are:
+
+               Interchange         Payflow Pro
+               ----------------    -----------------
+                   sale                S
+                   auth                A
+                   credit              C
+                   void                V
+                   settle              D (from previous A trans)
+
+           Default is "sale".
+
+       The following should rarely be used, as the supplied defaults are usu-
+       ally correct.
+
+       remap
+           This remaps the form variable names to the ones needed by Verisign.
+           See the "Payment Settings" heading in the Interchange documentation
+           for use.
+
+       host
+           The payment gateway host to use. Default is "payflow.verisign.com",
+           and "test-payflow.verisign.com" when in test mode.
+
+       check_sub
+           Name of a Sub or GlobalSub to be called after the result hash has
+           been received from Verisign. A reference to the modifiable result
+           hash is passed into the subroutine, and it should return true (in
+           the Perl truth sense) if its checks were successful, or false if
+           not.
+
+           This can come in handy since, strangely, Verisign has no option to
+           decline a charge when AVS or CSC data come back negative. See
+           Verisign knowledge base articles vs2365, vs7779, vs12717, and
+           vs22810 for more details.
+
+           If you want to fail based on a bad AVS check, make sure you're only
+           doing an auth -- not a sale, or your customers would get charged on
+           orders that fail the AVS check and never get logged in your system!
+
+           Add the parameters like this:
+
+                   Route  signio  check_sub  avs_check
+
+           This is a matching sample subroutine you could put in inter-
+           change.cfg:
+
+                   GlobalSub <<EOR
+                   sub avs_check {
+                           my ($result) = @_;
+                           my ($addr, $zip) = @{$result}{qw( AVSADDR AVSZIP )};
+                           return 1 if $addr eq 'Y' or $zip eq 'Y';
+                           return 1 if $addr eq 'X' and $zip eq 'X';
+                           return 1 if $addr !~ /\S/ and $zip !~ /\S/;
+                           $result->{RESULT} = 112;
+                           $result->{RESPMSG} = "The billing address you entered does not match the cardholder's billing address";
+                           return 0;
+                   }
+                   EOR
+
+           That would work equally well as a Sub in catalog.cfg. It will suc-
+           ceed if either the address or zip is 'Y', or if both are unknown.
+           If it fails, it sets the result code and error message in the
+           result hash using Verisign's own (otherwise unused) 112 result
+           code, meaning "Failed AVS check".
+
+           Of course you can use this sub to do any other post-processing you
+           want as well.
+
+       Troubleshooting
+
+       Try the instructions above, then enable test mode. A test order should
+       complete.
+
+       Then move to live mode and try a sale with the card number "4111 1111
+       1111 1111" and a valid future expiration date. The sale should be
+       denied, and the reason should be in [data session payment_error].
+
+       If it doesn't work:
+
+       o   Make sure you "Require"d the module in interchange.cfg:
+
+               Require module Vend::Payment::Signio
+
+       o   Make sure the Verisign "libpfpro.so" shared library was available
+           to PFProAPI.xs when you built and installed the PFProAPI.pm module,
+           and that you haven't moved "libpfpro.so" since then.
+
+           If you're not using the PFProAPI Perl interface, make sure the
+           Verisign "pfpro" or "pfpro-file" executable is available either in
+           your path or in /path_to_interchange/lib.
+
+       o   Check the error logs, both catalog and global.
+
+       o   Make sure you set your account ID and secret properly.
+
+       o   Try an order, then put this code in a page:
+
+               <XMP>
+               [calc]
+                   my $string = $Tag->uneval( { ref => $Session->{payment_result} });
+                   $string =~ s/{/{\n/;
+                   $string =~ s/,/,\n/g;
+                   return $string;
+               [/calc]
+               </XMP>
+
+           That should show what happened.
+
+       o   If all else fails, consultants are available to help with integra-
+           tion for a fee. You can find consultants by asking on the "inter-
+           change-biz@icdevgroup.org" mailing list.
+
+SECURITY CONSIDERATIONS
+       Because this library may call an executable, you should ensure that no
+       untrusted users have write permission on any of the system directories
+       or Interchange software directories.
+
+BUGS
+       There is actually nothing *in* Vend::Payment::Signio. It changes pack-
+       ages to Vend::Payment and places things there.
+
+AUTHORS
+               Cameron Prince <cameronbprince@yahoo.com>
+               Mark Johnson <mark@endpoint.com>
+               Mike Heins <mike@perusion.com>
+               Jon Jensen <jon@icdevgroup.org>

@@ -1,0 +1,45 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Configuration Reference: GlobalSub *global*</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_3.html">Parent Topic</A> | <A HREF="icconfig_26.html">Previous Topic</A> | <A HREF="icconfig_28.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>2.24. GlobalSub *global*</H2>
+<P>Defines a <TT>global</TT> subroutine for use by the <TT>[perl sub] subname arg /perl]</TT> construct. Use the &quot;here document&quot; capability of Interchange configuration files to make it easy to define:</P>
+<PRE>
+   GlobalSub &lt;&lt;EOF
+
+   sub count_orders {
+       my $counter = new File::CounterFile &quot;/tmp/count_orders&quot;, '1';
+       my $number = $counter-&gt;inc();
+       return &quot;There have been $number orders placed.\n&quot;;
+   }
+   EOF
+</PRE>
+<P>As with Perl &quot;here documents,&quot; the EOF (or other end marker) must be the ONLY thing on the line, with no leading or trailing white space. Do not append a semicolon to the marker. (The above marker appears indented. It should not be that way in the file!)</P>
+<P>IMPORTANT NOTE: These global subroutines are not subject to security checks. They can do most anything! For most purposes, scratch subroutines or catalog subroutines (also Sub) are better.</P>
+<P><TT>GlobalSub</TT> routines are subject to full Perl use strict checking, so errors are possible if lexical variables or complete package qualifications are not used for the variables.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_3.html">Parent Topic</A> | <A HREF="icconfig_26.html">Previous Topic</A> | <A HREF="icconfig_28.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

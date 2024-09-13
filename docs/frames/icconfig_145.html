@@ -1,0 +1,55 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Configuration Reference: SearchProfile</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_70.html">Parent Topic</A> | <A HREF="icconfig_144.html">Previous Topic</A> | <A HREF="icconfig_146.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>3.75. SearchProfile</H2>
+<P>Allows an unlimited number of search profiles to be set up, specifying complex searches based on a single click. The directive accepts a file name based in the catalog directory if the path is relative:</P>
+<PRE>
+   SearchProfile    etc/search.profiles
+</PRE>
+<P>As an added measure of control, the specification is evaluated with the special Interchange tag syntax to provide conditional setting of search parameters. The following file specifies a dictionary-based search in the file 'dict.product':</P>
+<PRE>
+ __NAME__ dict_search
+ mv_search_file=dict.product
+ mv_return_fields=1
+ [if value fast_search]
+   mv_dict_limit=-1
+   mv_last=1
+ [/if]
+ __END__
+</PRE>
+<P>The <TT>__NAME__</TT> is the value to be specified in the <TT>mv_profile</TT> variable on the search form, as in</P>
+<PRE>
+ &lt;INPUT TYPE=hidden NAME=mv_profile VALUE=&quot;dict_search&quot;&gt;
+</PRE>
+<P>or with mp=profile in the one-click search.</P>
+<PRE>
+ [page scan se=Renaissance/mp=dict_search]Renaissance Art&lt;/a&gt;
+</PRE>
+<P>Multiple profiles can reside in the same file, if separated by <TT>__END__</TT> tokens. <TT>__NAME__</TT> tokens should be left-aligned, and <TT>__END__</TT> must be on a line by itself with no leading or trailing whitespace.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icconfig_70.html">Parent Topic</A> | <A HREF="icconfig_144.html">Previous Topic</A> | <A HREF="icconfig_146.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

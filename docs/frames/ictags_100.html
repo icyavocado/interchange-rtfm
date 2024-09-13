@@ -1,0 +1,231 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: selected</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_99.html">Previous Topic</A> | <A HREF="ictags_101.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.66. selected</H2>
+<H3><A NAME="Summary">4.66.1. Summary</A></H3>
+<P>Parameters: <B>name value</B></P>
+<P>Positional parameters in same order.</P>
+<P><B>The attribute hash reference is passed</B> to the subroutine after the parameters as the last argument. <B>This may mean that there are parameters not shown here.</B></P>
+<P>Must pass named parameter interpolate=1 to cause interpolation.</P>
+<P>Invalidates cache: <B>YES</B></P>
+<P>Called Routine:</P>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+    $Tag-&gt;selected(
+        {
+         name =&gt; VALUE,
+         value =&gt; VALUE,
+        }
+    )
+
+ OR
+
+    $Tag-&gt;selected($name, $value, $ATTRHASH);
+    [<B>selected</B> name value <I>other_named_attributes</I>]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_100.html#selected_case">case</A>
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_100.html#selected_cgi">cgi</A>
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_100.html#selected_default">default</A>
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_100.html#selected_name">name</A>
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_100.html#selected_multiple">multiple</A>
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_100.html#selected_value">value</A>
+</TD>
+<TD VALIGN='Top'>
+&nbsp;
+</TD>
+<TD VALIGN='Top'>
+DEFAULT_VALUE
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_interpolate">interpolate (reparse)</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>YES</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Container tag
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Has Subtags
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Nests
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+    [value name=example set=neato]
+    &lt;OPTION[selected example neato]&gt;Neato
+    &lt;OPTION[selected example silly]&gt;Silly
+---
+    &lt;OPTION SELECTED&gt;Neato
+    &lt;OPTION&gt;Silly
+</PRE>
+<H3><A NAME="Description">4.66.2. Description</A></H3>
+<P>You can provide a &quot;memory&quot; for drop-down menus, radio buttons, and checkboxes with the [checked] and [selected] tags.</P>
+<P>This will output SELECTED if the variable <TT>var_name</TT> is equal to <TT>value</TT>. If the optional MULTIPLE argument is present, it will look for any of a variety of values. Not case sensitive unless the optional <TT>case=1</TT> parameter is used.</P>
+<P>Here is a drop-down menu that remembers an item-modifier color selection:</P>
+<PRE>
+    &lt;SELECT NAME=&quot;color&quot;&gt;
+    &lt;OPTION [selected color blue]&gt; Blue
+    &lt;OPTION [selected color green]&gt; Green
+    &lt;OPTION [selected color red]&gt; Red
+    &lt;/SELECT&gt;
+</PRE>
+<P>Here is the same thing, but for a shopping-basket color selection:</P>
+<PRE>
+    &lt;SELECT NAME=&quot;[modifier-name color]&quot;&gt;
+    &lt;OPTION [selected [modifier-name color] blue]&gt; Blue
+    &lt;OPTION [selected [modifier-name color] green]&gt; Green
+    &lt;OPTION [selected [modifier-name color] red]&gt; Red
+    &lt;/SELECT&gt;
+</PRE>
+<P>By default, the Values space (i.e. [value foo]) is checked&nbsp;-- if you want to use the volatile CGI space (i.e. [cgi foo]) use the parameter <TT>cgi=1</TT>.</P>
+<P>Use the parameter <TT>default=1</TT> to specify the option that should be marked SELECTED if the value/CGI variable has never been set.</P>
+<P>If the parameter <TT>multiple=1</TT> is set, the <TT>value</TT> parameter can contain multiple (stacked) values that should be selected, separated by ASCII null characters (&quot;\0&quot; in Perl).</P>
+<H4><A NAME="selected_case"> </A>4.66.2.1. <A NAME="selected_case">case</A></H4>
+<H4><A NAME="selected_cgi"> </A>4.66.2.2. <A NAME="selected_cgi">cgi</A></H4>
+<H4><A NAME="selected_default"> </A>4.66.2.3. <A NAME="selected_default">default</A></H4>
+<H4><A NAME="selected_name"> </A>4.66.2.4. <A NAME="selected_name">name</A></H4>
+<H4><A NAME="selected_multiple"> </A>4.66.2.5. <A NAME="selected_multiple">multiple</A></H4>
+<H4><A NAME="selected_value"> </A>4.66.2.6. <A NAME="selected_value">value</A></H4>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_99.html">Previous Topic</A> | <A HREF="ictags_101.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

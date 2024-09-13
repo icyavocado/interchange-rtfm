@@ -1,0 +1,52 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Databases: Dictionary Indexing With INDEX</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_1.html">Parent Topic</A> | <A HREF="icdatabase_7.html">Previous Topic</A> | <A HREF="icdatabase_9.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>1.7. Dictionary Indexing With INDEX</H2>
+<P>Interchange will automatically build index files for a fast binary search of an individual field. This type of search is useful for looking up the author of a book based on the beginning of their last name, a book title based on its beginning, or other similar situations.</P>
+<P>Such a search requires a dictionary ordered index with the field to be searched contained in the first field and the database key (product code) in the second field. If the <TT>INDEX field</TT> modifier is specified, Interchange will build the index upon database import:</P>
+<PRE>
+  Database  products  products.txt   TAB
+  Database  products  INDEX          title
+</PRE>
+<P>If the <TT>title</TT> field is the fourth column in the <TT>products</TT> database table, a file <TT>products.txt.4</TT> will be built, containing two tab-separated fields something like:</P>
+<PRE>
+   American Gothic   19-202
+   Mona Lisa         00-0011
+   Sunflowers        00-342
+   The Starry Night  00-343
+</PRE>
+<P>Options can be appended to the field name after a colon (:). The most useful will be <TT>f</TT>, which does a case-insensitive sort. The <TT>mv_dict_fold</TT> option must be added to the search in this case.</P>
+<P>Another option is <TT>c</TT>, which stands for &quot;comma index.&quot; To index on comma-separated sub-fields within a field, use the :c option:</P>
+<PRE>
+  Database  products  products.txt   TAB
+  Database  products  INDEX          category:c
+</PRE>
+<P>This can get slow for larger databases and fields. Interchange will split the field on a comma (stripping surrounding whitespace) and make index entries for each one. This allows multiple categories in one field while retaining the fast category search mechanism. It might also be useful for a <TT>keywords</TT> field.</P>
+<P>The fast binary search is described in greater detail in THE SEARCH ENGINE below.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_1.html">Parent Topic</A> | <A HREF="icdatabase_7.html">Previous Topic</A> | <A HREF="icdatabase_9.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

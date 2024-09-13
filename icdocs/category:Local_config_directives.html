@@ -1,0 +1,460 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>Local config directives (Category) - RTFM</title>
+
+    <meta http-equiv="Content-Language" content="en-GB">
+    <meta http-equiv="Window-target" content="_top">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <meta http-equiv="X-Soup-Of-The-Day" content="Tomato">
+
+    <meta name="author" content="Kevin Walsh">
+    <meta name="publisher" content="Cursor Software Limited">
+    <meta name="copyright" content="2001-2020, Cursor Software Limited">
+    <meta name="licence" content="GPLv2+ (Unknown licence)">
+    <meta name="generator" content="Interchange 5.7.0 -- www.icdevgroup.org">
+    <meta name="robots" content="index,follow,noarchive,noimageindex">
+    <meta name="keywords" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="description" content="List of directives that, when configured into a website's local catalog.cfg file, will only affect that one website">
+    <meta name="MSSmartTagsPreventParsing" content="TRUE">
+
+    <meta name="verify-v1" content="KqlU/bxZj9Y2ZdZ/3RwuzgVSMIrZ8XM2wqbjSaEo3O4=">
+
+    <meta name="y_key" content="e2dd60be5777fbc8">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
+    <link rel="search" type="application/opensearchdescription+xml" href="http://interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="stylesheet" href="/decor/css/website.css">
+    <link rel="stylesheet" href="/decor/css/wiki.css">
+    <link rel="stylesheet" href="/decor/css/neo.css">
+
+
+    <script type="text/javascript" language="JavaScript">
+    <!--
+	if (top != self){
+	    top.location = location;
+	}
+
+    // -->
+    </script>
+</head>
+<body>
+<!-- START VAR: LOGOBAR -->
+<table id="rtfmheader" cellpadding="0" cellspacing="0">
+    <tr>
+	<td><a href="http://interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+
+	<td width="100%" style="text-align: right; padding: 10px">
+
+	    <form action="http://interchange-rtfm.pullingshots.ca/search.html" method="POST">
+		<input type="hidden" name="mv_session_id" value="nsession">
+		<input type="hidden" name="mv_profile" value="cms_search">
+		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
+		<input type="submit" class="button" value="Search">
+	    </form>
+
+	</td>
+    </tr>
+</table>
+<table id="breadcrumbs" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+	<td>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_configuration.html">Interchange configuration</a></span>
+	    <span class="nowrap">&gt; <span class="current">Local config directives</span></span>
+	</td>
+
+    </tr>
+</table>
+<!-- END VAR: LOGOBAR -->
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+
+	    <td id="leftside">
+<!-- START COMPONENT: navigation -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th>NAVIGATION</th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+
+<!-- END COMPONENT: navigation -->
+<!-- START COMPONENT: wiki_recent -->
+
+
+
+<!-- END COMPONENT: wiki_recent -->
+<!-- START COMPONENT: wiki_backlinks -->
+
+
+
+<!-- END COMPONENT: wiki_backlinks -->
+<!-- START COMPONENT: account -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+
+    <tr>
+	<th>ACCOUNT LOGIN</th>
+    </tr>
+
+    <tr>
+	<td class="first">
+	    <p>You are not logged in</p>
+	</td>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
+		<li><a href="http://interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+	    </ul>
+	</td>
+    </tr>
+
+</table>
+
+
+
+<!-- END COMPONENT: account -->
+<!-- START COMPONENT: icpowered -->
+
+<div style="text-align: center; margin: 10px; margin-top: 0px">
+    <a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+</div>
+
+
+
+<!-- START COMPONENT: icpowered -->
+
+	    </td>
+
+	    <td id="bodytext">
+<!-- start of page text -->
+
+<!-- start page: wiki/category (category:Local_config_directives) -->
+
+
+<div class="wikitext">
+<a name="Local_config_directives"></a>
+<h1>Local config directives</h1>
+<p>
+This is a list of directives that, when configured into a website's <em>local</em>
+&quot;<span class="fixedwidth">catalog.cfg</span>&quot; file, will only affect that one website.
+</p>
+<p>
+All directives,
+except <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/MailOrderTo.html" title="MailOrderTo (config)">MailOrderTo</a></span> and <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/VendURL.html" title="VendURL (config)">VendURL</a></span>,
+have reasonable default values and are optional.
+</p>
+<a name="Pages_in_the_Local_config_directives_category"></a>
+<h2>Pages in the &quot;Local config directives&quot; category</h2>
+<p>
+<!-- start of toc --><table class="categorytoc" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="33%">
+<span class="index">A</span>
+<ul>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ActionMap.html" title="ActionMap (config)">ActionMap</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/AliasTable.html" title="AliasTable (config)">AliasTable</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/AlwaysSecure.html" title="AlwaysSecure (config)">AlwaysSecure</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/AsciiTrack.html" title="AsciiTrack (config)">AsciiTrack</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/AutoEnd.html" title="AutoEnd (config)">AutoEnd</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Autoload.html" title="Autoload (config)">Autoload</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/AutoModifier.html" title="AutoModifier (config)">AutoModifier</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/AutoVariable.html" title="AutoVariable (config)">AutoVariable</a></li>
+</ul>
+<span class="index">B</span>
+<ul>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/BounceReferrals.html" title="BounceReferrals (config)">BounceReferrals</a></li>
+</ul>
+<span class="index">C</span>
+<ul>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/CartTrigger.html" title="CartTrigger (config)">CartTrigger</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/CartTriggerQuantity.html" title="CartTriggerQuantity (config)">CartTriggerQuantity</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/CategoryField.html" title="CategoryField (config)">CategoryField</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/CodeDef.html" title="CodeDef (config)">CodeDef</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/CommonAdjust.html" title="CommonAdjust (config)">CommonAdjust</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ConfDir.html" title="ConfDir (config)">ConfDir</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ConfigDir.html" title="ConfigDir (config)">ConfigDir</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/CookieDomain.html" title="CookieDomain (config)">CookieDomain</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/CookieLogin.html" title="CookieLogin (config)">CookieLogin</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Cookies.html" title="Cookies (config)">Cookies</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/CreditCardAuto.html" title="CreditCardAuto (config)">CreditCardAuto</a></li>
+</ul>
+<span class="index">D</span>
+<ul>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Database.html" title="Database (config)">Database</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DatabaseAuto.html" title="DatabaseAuto (config)">DatabaseAuto</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DatabaseAutoIgnore.html" title="DatabaseAutoIgnore (config)">DatabaseAutoIgnore</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DatabaseDefault.html" title="DatabaseDefault (config)">DatabaseDefault</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DataDir.html" title="DataDir (config)">DataDir</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DebugHost.html" title="DebugHost (config)">DebugHost</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DefaultShipping.html" title="DefaultShipping (config)">DefaultShipping</a>&nbsp; (Deprecated)</li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DeliverImage.html" title="DeliverImage (config)">DeliverImage</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DescriptionField.html" title="DescriptionField (config)">DescriptionField</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DirConfig.html" title="DirConfig (config)">DirConfig</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DirectoryIndex.html" title="DirectoryIndex (config)">DirectoryIndex</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DiscountSpacesOn.html" title="DiscountSpacesOn (config)">DiscountSpacesOn</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DiscountSpaceVar.html" title="DiscountSpaceVar (config)">DiscountSpaceVar</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DisplayErrors.html" title="DisplayErrors (config)">DisplayErrors</a></li>
+</ul>
+<span class="index">E</span>
+<ul>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/EncryptKey.html" title="EncryptKey (config)">EncryptKey</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/EncryptProgram.html" title="EncryptProgram (config)">EncryptProgram</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ErrorDestination.html" title="ErrorDestination (config)">ErrorDestination</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ErrorFile.html" title="ErrorFile (config)">ErrorFile</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ExtraSecure.html" title="ExtraSecure (config)">ExtraSecure</a></li>
+</ul>
+<span class="index">F</span>
+<ul>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/FileControl.html" title="FileControl (config)">FileControl</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/FileDatabase.html" title="FileDatabase (config)">FileDatabase</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Filter.html" title="Filter (config)">Filter</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/FormAction.html" title="FormAction (config)">FormAction</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/FormIgnore.html" title="FormIgnore (config)">FormIgnore</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/FractionalItems.html" title="FractionalItems (config)">FractionalItems</a></li>
+</ul>
+<span class="index">G</span>
+<ul>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Glimpse.html" title="Glimpse (config)">Glimpse</a></li>
+</ul>
+</td>
+<td width="33%">
+<span class="index">H</span>
+<ul>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/History.html" title="History (config)">History</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/HTMLsuffix.html" title="HTMLsuffix (config)">HTMLsuffix</a></li>
+</ul>
+<span class="index">I</span>
+<ul>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ImageAlias.html" title="ImageAlias (config)">ImageAlias</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ImageDir.html" title="ImageDir (config)">ImageDir</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ImageDirSecure.html" title="ImageDirSecure (config)">ImageDirSecure</a></li>
+</ul>
+<span class="index">J</span>
+<ul>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Jobs.html" title="Jobs (config)">Jobs</a></li>
+</ul>
+<span class="index">L</span>
+<ul>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Limit.html" title="Limit (config)">Limit</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/LocaleDatabase.html" title="LocaleDatabase (config)">LocaleDatabase</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/LogFile.html" title="LogFile (config)">LogFile</a></li>
+</ul>
+<span class="index">M</span>
+<ul>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/MailOrderTo.html" title="MailOrderTo (config)">MailOrderTo</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/MasterHost.html" title="MasterHost (config)">MasterHost</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/MaxQuantityField.html" title="MaxQuantityField (config)">MaxQuantityField</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Message.html" title="Message (config)">Message</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/MinQuantityField.html" title="MinQuantityField (config)">MinQuantityField</a></li>
+</ul>
+<span class="index">N</span>
+<ul>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/NoImport.html" title="NoImport (config)">NoImport</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/NoImportExternal.html" title="NoImportExternal (config)">NoImportExternal</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/NonTaxableField.html" title="NonTaxableField (config)">NonTaxableField</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/NoSearch.html" title="NoSearch (config)">NoSearch</a></li>
+</ul>
+<span class="index">O</span>
+<ul>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/OnFly.html" title="OnFly (config)">OnFly</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/OrderCounter.html" title="OrderCounter (config)">OrderCounter</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/OrderLineLimit.html" title="OrderLineLimit (config)">OrderLineLimit</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/OrderProfile.html" title="OrderProfile (config)">OrderProfile</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/OrderReport.html" title="OrderReport (config)">OrderReport</a></li>
+</ul>
+<span class="index">P</span>
+<ul>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/PageDir.html" title="PageDir (config)">PageDir</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/PageSelectField.html" title="PageSelectField (config)">PageSelectField</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/PageTableMap.html" title="PageTableMap (config)">PageTableMap</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/PageTables.html" title="PageTables (config)">PageTables</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ParseVariables.html" title="ParseVariables (config)">ParseVariables</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Password.html" title="Password (config)">Password</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Pragma.html" title="Pragma (config)">Pragma</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Preload.html" title="Preload (config)">Preload</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/PriceCommas.html" title="PriceCommas (config)">PriceCommas</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/PriceDivide.html" title="PriceDivide (config)">PriceDivide</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/PriceField.html" title="PriceField (config)">PriceField</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProcessPage.html" title="ProcessPage (config)">ProcessPage</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductDir.html" title="ProductDir (config)">ProductDir</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Profile.html" title="Profile (config)">Profile</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Promiscuous.html" title="Promiscuous (config)">Promiscuous</a></li>
+</ul>
+<span class="index">R</span>
+<ul>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ReadPermission.html" title="ReadPermission (config)">ReadPermission</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/RemoteUser.html" title="RemoteUser (config)">RemoteUser</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Replace.html" title="Replace (config)">Replace</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Require.html" title="Require (config)">Require</a></li>
+</ul>
+</td>
+<td width="33%">
+<span class="index">R (continued)</span>
+<ul>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/RobotLimit.html" title="RobotLimit (config)">RobotLimit</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Route.html" title="Route (config)">Route</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/RunDir.html" title="RunDir (config)">RunDir</a></li>
+</ul>
+<span class="index">S</span>
+<ul>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SalesTax.html" title="SalesTax (config)">SalesTax</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SalesTaxFunction.html" title="SalesTaxFunction (config)">SalesTaxFunction</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SaveExpire.html" title="SaveExpire (config)">SaveExpire</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ScratchDefault.html" title="ScratchDefault (config)">ScratchDefault</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ScratchDir.html" title="ScratchDir (config)">ScratchDir</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SearchProfile.html" title="SearchProfile (config)">SearchProfile</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SecureURL.html" title="SecureURL (config)">SecureURL</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SendMailProgram.html" title="SendMailProgram (config)">SendMailProgram</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SeparateItems.html" title="SeparateItems (config)">SeparateItems</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SessionDatabase.html" title="SessionDatabase (config)">SessionDatabase</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SessionDB.html" title="SessionDB (config)">SessionDB</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SessionExpire.html" title="SessionExpire (config)">SessionExpire</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SessionType.html" title="SessionType (config)">SessionType</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SetGroup.html" title="SetGroup (config)">SetGroup</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SourceCookie.html" title="SourceCookie (config)">SourceCookie</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SourcePriority.html" title="SourcePriority (config)">SourcePriority</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SpecialPage.html" title="SpecialPage (config)">SpecialPage</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SpecialPageDir.html" title="SpecialPageDir (config)">SpecialPageDir</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SpecialSub.html" title="SpecialSub (config)">SpecialSub</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Sub.html" title="Sub (config)">Sub</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Suggest.html" title="Suggest (config)">Suggest</a></li>
+</ul>
+<span class="index">T</span>
+<ul>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/TableRestrict.html" title="TableRestrict (config)">TableRestrict</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/TaxInclusive.html" title="TaxInclusive (config)">TaxInclusive</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/TaxShipping.html" title="TaxShipping (config)">TaxShipping</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/TemplateDir.html" title="TemplateDir (config)">TemplateDir</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/TrackDateFormat.html" title="TrackDateFormat (config)">TrackDateFormat</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/TrackFile.html" title="TrackFile (config)">TrackFile</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/TrackPageParam.html" title="TrackPageParam (config)">TrackPageParam</a></li>
+</ul>
+<span class="index">U</span>
+<ul>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UpsZoneFile.html" title="UpsZoneFile (config)">UpsZoneFile</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UseModifier.html" title="UseModifier (config)">UseModifier</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserDB.html" title="UserDB (config)">UserDB</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserTag.html" title="UserTag (config)">UserTag</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserTrack.html" title="UserTrack (config)">UserTrack</a></li>
+</ul>
+<span class="index">V</span>
+<ul>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ValuesDefault.html" title="ValuesDefault (config)">ValuesDefault</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">Variable</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/VariableDatabase.html" title="VariableDatabase (config)">VariableDatabase</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/VarName.html" title="VarName (config)">VarName</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/VendURL.html" title="VendURL (config)">VendURL</a></li>
+</ul>
+<span class="index">W</span>
+<ul>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/WideOpen.html" title="WideOpen (config)">WideOpen</a></li>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/WritePermission.html" title="WritePermission (config)">WritePermission</a></li>
+</ul>
+<span class="index">X</span>
+<ul>
+<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/XHTML.html" title="XHTML (config)">XHTML</a></li>
+</ul>
+</td>
+</tr>
+</table><!-- end of toc -->
+</div>
+
+
+
+<!-- start of modification notice -->
+<div class="wikitext">
+    <table class="pageinfo" cellpadding="0" cellspacing="0">
+	<tr>
+	    <td>
+Category:&nbsp; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_configuration.html">Interchange configuration</a>
+	    </td>
+	</tr>
+
+
+
+	<tr>
+	    <td>
+		
+		Last modified by: <a href="http://interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin">Kevin Walsh</a><br>
+		Modification date: Friday 16 February 2007 at 4:04 PM (EST)
+	    </td>
+	</tr>
+
+    </table>
+</div>
+<!-- end of modification notice -->
+
+
+
+<!-- end page: wiki/category (category:Local_config_directives) -->
+
+
+
+<!-- end of page text -->
+	    </td>
+
+	</tr>
+    </table>
+<!-- START VAR: FOOTER -->
+
+<table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+	<td>
+	    <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/donations.html">Donations</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	</td>
+
+    </tr>
+</table>
+
+<!-- END VAR: FOOTER -->
+
+<!-- START VAR: COPYRIGHT -->
+
+
+    <div class="copyright">
+	Copyright &copy; 2001-2020
+	<a href="http://cursor.biz/index.html">Cursor Software Limited</a>.&nbsp;
+	All Rights Reserved.
+    </div>
+
+<!-- END VAR: COPYRIGHT -->
+
+</body>
+</html>

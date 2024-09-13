@@ -1,0 +1,144 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Databases: How Shipping is Calculated</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_38.html">Parent Topic</A> | <A HREF="icdatabase_41.html">Previous Topic</A> | <A HREF="icdatabase_43.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>7.4. How Shipping is Calculated</H2>
+<OL>
+<LI>The base code is selected by reading the value of <TT>mv_shipmode</TT> in the user session. If it has not been explicitly set, either by means of the DefaultShipping directive or by setting the variable on a form (or in an order profile), it will be <TT>default</TT>.
+<BR>
+The mv_shipmode must be in the character class [A-Za-z0-9_]. If there are spaces, commas, or nulls in the value, they will be read as multiple shipping modes.
+<LI>The modes are selected from the d<UL>
+The criterion field is found. If it is quantity, it is the total quantity of items on the order form. If it is any other name, the criterion is calculated by multiplying the return value from the product database field for each item in the shopping cart, multiplied by its quantity. If the lookup fails due to the column or row not existing, a zero cost will be returned and an error is sent to the catalog error log. If a number is returned from an Interchange tag, that number is used directly.
+<BR>
+Entries in the shipping database that begin with the same string as the shipping mode are examined. If none is found, a zero cost is returned and an error is sent to the catalog error log.</UL></OL>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>The same mode name may be used for all lines in the same group, but the first one will contain the main criteria.
+<HR WIDTH="80%" ALIGN="Left"></P>
+<OL>
+<LI>The value of the accumulated criteria is examined. If it falls within the minimum and maximum, the cost is applied.
+<LI>If the cost is fixed, it is simply added.
+<LI>If the cost field begins with an <TT>x</TT>, the cost is multiplied by the accumulated criterion, i.e., price, weight, etc.
+<LI>If the cost field begins with <TT>f</TT>, the formula following is applied. Use @@TOTAL@@ as the value of the accumulated criterion.
+<LI>If the cost field begins with <TT>u</TT> or a single letter from A-Z, a UPS-style lookup is done.
+<LI>If the cost field begins with <TT>s</TT>, a Perl subroutine call is made.
+<LI>If the cost field begins with <TT>e</TT>, zero cost is returned and an error placed in the session <B>ship_message</B> field, available as <TT>[data session ship_message]</TT>.</OL>
+<P>Here is an example shipping file using all of the methods of determining shipping cost.</P>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>The columns are lined up for reading convenience. The actual entries should have <B>one</B> tab between fields.
+<HR WIDTH="80%" ALIGN="Left"></P>
+<PRE>
+global Option   n/a               0   0      g PriceDivide
+
+rpsg   RPS      quantity          0   0      R RPS products/rps.csv
+rpsg   RPS      quantity          0   5      7.00
+rpsg   RPS      quantity          6   10     10.00
+rpsg   RPS      quantity          11  150    x .95
+
+usps   US Post  price             0   0      0
+usps   US Post  price             0   50     f 7 + (1 * @@TOTAL@@ / 10)
+usps   US Post  price             50  100    f 12 + (.90 * @@TOTAL@@ / 10)
+usps   US Post  price             100 99999  f @@TOTAL@@ * .05
+
+upsg   UPS      weight [value state]  0   0    e Nothing to ship.
+upsg   UPS      AK HI             0   150    u upsg [default zip 980] 12.00 round
+upsg   UPS                        0   150    u Ground [default zip 980] 2.00 round
+upsg   UPS                        150 9999   e @@TOTAL@@ lb too heavy for UPS
+
+upsca  UPS/CA   weight            0   0      c C UPS_Canada products/can.csv
+upsca  UPS/CA   weight            -1   -1    o PriceDivide=0
+upsca  UPS/CA   weight            0   150    C upsca [default zip A7G] 5.00
+upsca  UPS/CA   weight            150 99999  e @@TOTAL@@ lb too heavy for UPS
+</PRE>
+<P><B>global</B></P>
+<UL>
+This is a global option setting, called out by the <TT>g</TT> at the beginning. PriceDivide tells the shipping routines to multiply all shipping settings by the PriceDivide factor, except those explicitly set differently with the <TT>o</TT> individual modifier. This allows currency conversion. (Currently the only option is PriceDivide.)</UL>
+<P><B>rpsg</B></P>
+<UL>
+If the user selected RPS, (code rpsg) and the quantity on the order was 3, the cost of 7.00 from the second rpsg line would be applied. If the quantity were 7, the next entry from the third rpsg line would be selected for a cost of 10.00. If the quantity were 15, the last rpsg would be selected and the quantity of 15 multiplied by 0.95, for a total cost of 14.25.</UL>
+<P><B>usps</B></P>
+<UL>
+The next mode, <TT>usps</TT>, is a more complicated formula using price as the criteria. If the total price of all items in the shopping cart (same as <TT>[subtotal]</TT> without quantity price breaks in place) is from 1 to 50, the cost will be 7.00 plus 10 percent of the order. If the total is from 50.01 to 100, the cost will be 12.00 plus 9 percent of the order total. If the cost is 100.01 or greater, 5 percent of the order total will be used as the shipping cost.</UL>
+<P><B>upsg</B></P>
+<UL>
+The next, <TT>upsg</TT>, is a special case. It specifies a UPS lookup based on the store's UPS zone and two required values (and two optional arguments):</UL>
+<PRE>
+            1. Weight
+            2. The zip/postal code of the recipient of which only
+               the first three digits are used.
+            3. A fixed amount to add to the cost found in the UPS
+               tables (use 0 as a placeholder if specifying roundup)
+            4. If set to 'round,' will round the cost up to the next
+               integer monetary unit.
+</PRE>
+<UL>
+If the cost returned is zero, the reason will be placed as an error message in the session variable ship_message (available as <TT>[data session ship_message]</TT>).
+<BR>
+UPS weights are always rounded up if any fraction is present.
+<BR>
+The routines use standard UPS lookup tables. First, the UPS Zone file must be present. That is a standard UPS document specific to the retailer's area that must be obtained from UPS. It is entered into and made available to Interchange in TAB-delimited format. (As of March 1997, use the standard .csv file distributed by UPS on their Web site at <TT>www.ups.com</TT>.) Specify it with the UpsZoneFile directive. It is usually named something like <TT>NNN.csv</TT>, where NNN is the first three digits of the originating zip code. If placed in the products directory, the directive would look like:</UL>
+<PRE>
+            UPSZoneFile  products/450.csv
+</PRE>
+<UL>
+Second, obtain the cost tables from UPS (again, get them from <TT>www.ups.com</TT>) and place them into an Interchange database. That database, its identifier specified with the first argument (Ground in the example) of the cost specification, is consulted to determine the UPS cost for that weight and rate schedule.
+<BR>
+In the example below, use a database specification like:</UL>
+<PRE>
+            Database  Ground  Ground.csv  CSV
+</PRE>
+<UL>
+A simple shipping cost qualification can be appended to a UPS lookup. If any additional parameters are present after the five usual ones used for UPS lookup, they will be interpreted as a Perl subroutine call. The syntax is the same as if it was encased in the tag <TT>[perl sub] [/perl]</TT>, but the following substitutions are made prior to the call:</UL>
+<PRE>
+            @@COST@@  is replaced with whatever the UPS lookup returned
+            @@GEO@@   is replaced with the zip (or other geo code)
+            @@ADDER@@ is replaced with the defined adder
+            @@TYPE@@  is replaced with the UPS shipping type
+            @@TOTAL@@ is replaced with the total weight
+</PRE>
+<UL>
+The example above also illustrates geographic qualification. If the value of the form variable state on the checkout form is AK or HI, the U.S. states Alaska and Hawaii, a $10.00 additional charge (over and above the normal $2.00 handling charge) is made.  This can also be used to select on country, product type, or any other qualification that can be encoded in the file.</UL>
+<P><B>upsca</B></P>
+<UL>
+The next entry is just like the UPS definition except it defines a different lookup zone file (<TT>products/can.csv</TT>) and uses a different database, <TT>upsca</TT>. It also disables the global PriceDivide option for itself only, not allowing currency conversion. Otherwise, the process is the same.
+<BR>
+Up to 27 different lookup zones can be defined in the same fashion. If one of the cost lines (the last field) in the <TT>shipping.asc</TT> file begins with a <TT>c</TT>, it configures another lookup zone which must be lettered from <TT>A to Z</TT>.  It takes the format:</UL>
+<PRE>
+            c X name file* length* multiplier*
+</PRE>
+<UL>
+where X is the letter from <TT>A-Z</TT>. The name is used internally as an identifier and must be present. The optional <TT>file</TT> is relative to the catalog root (like <TT>UpsZoneFile</TT> is). If it is not present, the file equal to <TT>name</TT> in the products directory (ProductDir) will be used as the zone file. If the optional digit <TT>length</TT> is present, that determines the number of significant digits in the passed postal/geo code.
+<BR>
+When the optional <TT>multiplier</TT> is present, the weight is multiplied by it before doing the table lookup. This allows shipping weights in pounds or kilograms to be adapted to a table using the opposite as the key. Remember, the match on weight must be exact, and Interchange rounds the weight up to the next even unit.
+<BR>
+To define the exact equivalent of the UPS lookup zone, do the following:</UL>
+<PRE>
+            c U UPS products/450.csv 3 1
+</PRE>
+<UL>
+The only difference is that the beginning code to call the lookup is upper-case <TT>U</TT> instead of lower-case <TT>u</TT>.</UL>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_38.html">Parent Topic</A> | <A HREF="icdatabase_41.html">Previous Topic</A> | <A HREF="icdatabase_43.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

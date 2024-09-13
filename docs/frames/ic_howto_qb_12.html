@@ -1,0 +1,38 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange + QuickBooks HOWTO: Additional database fields -- inventory</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ic_howto_qb_8.html">Parent Topic</A> | <A HREF="ic_howto_qb_11.html">Previous Topic</A> | <A HREF="ic_howto_qb_13.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.4. Additional database fields -- inventory</H2>
+<P>Quicken also needs an account to debit for the split transactions it uses to track item sales. If you don't create these fields to relate to each SKU, the account &quot;Other Income&quot; will be used in the exports.</P>
+<P>Add the following fields to the &quot;inventory&quot; table:</P>
+<P>account cogs_account</P>
+<P>To add the fields in MySQL, you can issue the following queries at the mysql prompt:</P>
+<P>alter table inventory add column account char(20); alter table inventory add column cogs_account char(20);</P>
+<P>Other SQL databases will have similar facilities.</P>
+<P>If you are using Interchange DBM files, just export the inventory database, stop the Interchange server (to prevent corruption), add the fields on the first line by editing the <TT>inventory.txt</TT> file, then restart Interchange.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ic_howto_qb_8.html">Parent Topic</A> | <A HREF="ic_howto_qb_11.html">Previous Topic</A> | <A HREF="ic_howto_qb_13.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

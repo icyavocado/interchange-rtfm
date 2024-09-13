@@ -1,0 +1,209 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: value</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_119.html">Previous Topic</A> | <A HREF="ictags_121.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.86. value</H2>
+<P>Returns the the current value of the named form input field. HTML-escapes Interchange tags in the result for security.</P>
+<P>Can also set a new value within the current page.</P>
+<H3><A NAME="Summary">4.86.1. Summary</A></H3>
+<PRE>
+    [<B>value</B> name]
+    [<B>value</B> name=<I>form_var_name</I> <I>other_named_attributes</I>]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_120.html#value_name">name</A>
+</TD>
+<TD VALIGN='Top'>
+This is the name of the form variable whose value you want.
+</TD>
+<TD VALIGN='Top'>
+<I>None</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_120.html#value_set">set</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_120.html#value_hide">hide</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_120.html#value_filter">filter</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_120.html#value_keep">keep</A> (with filter)
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_120.html#value_scratch">scratch</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_120.html#value_default">default</A>
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_120.html#value_enable_html">enable_html</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_interpolate">interpolate (reparse)</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<P>Assuming form variable 'foo' = 'bar',</P>
+<PRE>
+    [value foo]
+---
+    bar
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+    $Tag-&gt;value( { name =&gt; var_name } );
+
+    <I># or if you simply want the value:</I>
+    $Values-&gt;{var_name};
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;value($name, $attribute_hash_reference);
+</PRE>
+<H3><A NAME="Description">4.86.2. Description</A></H3>
+<P>Usage example:</P>
+<PRE>
+   &lt;INPUT TYPE=&quot;text&quot; NAME=&quot;name&quot; VALUE=&quot;[value name]&quot;&gt;
+   &lt;INPUT TYPE=&quot;text&quot; NAME=&quot;name&quot; VALUE=&quot;[value name=name]&quot;&gt;
+</PRE>
+<P>Expands into the current value of the <A HREF="ictags_120.html#value_name">named</A> customer/form input field. When the value is returned, any Interchange tags present in the value will be escaped. This prevents users from entering Interchange tags in form values, which would be a serious security risk.</P>
+<H4><A NAME="value_name"> </A>4.86.2.1. <A NAME="value_name">name</A></H4>
+<P>This is the name of the form variable whose value you want.</P>
+<H4><A NAME="value_set"> </A>4.86.2.2. <A NAME="value_set">set</A></H4>
+<P>You can change a value with '<TT>set</TT>=<I>new_value</I>'. The tag will return the value you set unless you also set the <A HREF="ictags_120.html#value_hide">hide</A>=1 attribute.</P>
+<P>Use this to &quot;uncheck&quot; a checkbox or set other form variable values to defaults. If you simply want a place to store your own data, use the <A HREF="ictags_101.html#set">set</A> and <A HREF="ictags_96.html#scratch">scratch</A> tags instead.</P>
+<P>Note that this is only available in new-style tags, for safety reasons.</P>
+<H4><A NAME="value_hide"> </A>4.86.2.3. <A NAME="value_hide">hide</A></H4>
+<P>Setting <TT>hide</TT>=1 suppresses the tag's return value, which can be useful with the <A HREF="ictags_120.html#value_set">set</A> attribute.</P>
+<H4><A NAME="value_filter"> </A>4.86.2.4. <A NAME="value_filter">filter</A></H4>
+<P>See the <A HREF="ictags_63.html#filter">filter</A> tag for a list of filters.</P>
+<P>Setting '<TT>filter</TT>=&quot;<I>filter</I>&quot;' modifies the named value with the specified filter.</P>
+<H4><A NAME="value_keep (with filter)"> </A>4.86.2.5. <A NAME="value_keep">keep</A> (with filter)</H4>
+<P>Set <TT>keep</TT>=1 if you want the tag to return a filtered result but do not want the filter to modify the form value itself in the $::Values hash.</P>
+<H4><A NAME="value_scratch"> </A>4.86.2.6. <A NAME="value_scratch">scratch</A></H4>
+<P>Setting '<TT>scratch</TT>=1' places a copy of the value in the $::Scratch hash. An illustrative example:</P>
+<PRE>
+   foo is [value name=foo scratch=1] in the Values hash
+   foo is now also [scratch foo] in the Scratch hash
+</PRE>
+<H4><A NAME="value_default"> </A>4.86.2.7. <A NAME="value_default">default</A></H4>
+<P>This sets a return value in case the named value is missing or otherwise false. The following will expand to &quot;Using default&quot;:</P>
+<PRE>
+    [value name=myname set=0 hide=1]
+    [value name=myname default=&quot;Using default&quot;]
+</PRE>
+<H4><A NAME="value_enable_html"> </A>4.86.2.8. <A NAME="value_enable_html">enable_html</A></H4>
+<P>Any '&lt;' characters will normally be converted into '&amp;lt;' for safety reasons. This conversion can be disabled using '<TT>enable_html</TT>=1'.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_119.html">Previous Topic</A> | <A HREF="ictags_121.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

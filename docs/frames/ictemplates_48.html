@@ -1,0 +1,120 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Template Guide: Dynamic Locale Directive Changes</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_43.html">Parent Topic</A> | <A HREF="ictemplates_47.html">Previous Topic</A> | <A HREF="ictemplates_49.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>9.5. Dynamic Locale Directive Changes</H2>
+<P>If a Locale key is set to correspond to an Interchange <TT>catalog.cfg</TT> directive, that value will be set when the locale is set.</P>
+<P><B>PageDir</B></P>
+<UL>
+To use a different page directory for different locales, set the <TT>PageDir</TT> key. For example, to have two separate language page sets, French and English, set:</UL>
+<PRE>
+            # Establish the default at startup
+            PageDir   english
+            Locale fr_FR  PageDir  francais
+            Locale en_US  PageDir  english
+</PRE>
+<P><B>ImageDir</B></P>
+<UL>
+To use a different image directory for different locales, set the <TT>ImageDir</TT> key. To have two separate language button sets, French and English, set:</UL>
+<PRE>
+            # Establish the default at startup
+            ImageDir   /images/english/
+            Locale fr_FR  ImageDir   /images/francais/
+            Locale en_US  ImageDir   /images/english/
+</PRE>
+<P><B>ImageDirSecure</B></P>
+<UL>
+See ImageDir.</UL>
+<P><B>PriceField</B></P>
+<UL>
+To use a different field in the products database for pricing based on locale, set the <TT>PriceField</TT> locale setting. For example:</UL>
+<PRE>
+            # Establish the default at startup
+            PriceField    price
+            Locale fr_FR  PriceField  prix
+</PRE>
+<UL>
+The default will always be <TT>price</TT>, but if the locale <TT>fr_FR</TT> is set, the <TT>PriceField</TT> directive will change to <TT>prix</TT> to give prices in francs instead of dollars.
+<BR>
+If <TT>PriceBreaks</TT> is enabled, the <TT>prix</TT> field from the <TT>pricing</TT> database will be used to develop the quantity pricing.</UL>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>If no <TT>Locale</TT> settings are present, the display will always be <TT>price</TT>, regardless of what was set in <TT>PriceField</TT>. Otherwise, it will match <TT>PriceField</TT>.
+<HR WIDTH="80%" ALIGN="Left"></P>
+<P><B>PriceDivide</B></P>
+<UL>
+Normally used to enable penny pricing with a setting of 100, <TT>PriceField</TT> can be used to do an automatic conversion calculation factor based on locale.</UL>
+<PRE>
+            # Default at startup is 1 if not set
+            # Franc is strong these days!
+            Locale fr_FR  PriceDivide  .20
+</PRE>
+<UL>
+The price will now be divided by <TT>.20</TT>, making the franc price five times higher than the dollar.</UL>
+<P><B>PriceCommas</B></P>
+<UL>
+This controls whether the <TT>mon_thousands_sep</TT> will be used for standard currency formatting. This setting will be ignored if you are using <TT>price_picture</TT>. Set the value to 1 or 0, to enable or disable it. Do not use yes or no.</UL>
+<PRE>
+            # Default at startup is Yes if not set
+            PriceCommas  Yes
+            Locale fr_FR  PriceCommas  0
+            Locale en_US  PriceCommas  1
+</PRE>
+<P><B>UseModifier</B></P>
+<UL>
+Changes the fields from the set shopping cart options.</UL>
+<PRE>
+            # Default at startup is 1 if not set
+            # Franc is strong these days!
+            UseModifier format
+            Locale fr_FR  UseModifier formats
+</PRE>
+<UL>
+If a previous setting was made for an item based on another locale, it will be maintained.</UL>
+<P><B>PriceAdjustment</B></P>
+<UL>
+Changes the fields set by <TT>UseModifier</TT> that will be used to adjust pricing for an automatic conversion factor based on locale. For example:</UL>
+<PRE>
+            # Default at startup
+            PriceAdjustment  format
+            Locale fr_FR  PriceAdjustment  formats
+</PRE>
+<P><B>TaxShipping,SalesTax</B></P>
+<UL>
+Same as the standard directives.</UL>
+<P><B>DescriptionField</B></P>
+<UL>
+This changes the field accessed by default with the <TT>[item-description]</TT> and <TT>[description code]</TT> tags. For example</UL>
+<PRE>
+            # Establish the default at startup
+            DescriptionField    description
+            Locale fr_FR  DescriptionField desc_fr
+</PRE>
+<P><B>The [locale] tag</B></P>
+<UL>
+Standard error messages can be set based on Locale settings. Make sure not to use any of the predefined keys. It is safest to begin a key with msg_ . The default message is set between the <TT>[locale key]</TT> and <TT>[/locale]</TT> tags. See the example above.</UL>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_43.html">Parent Topic</A> | <A HREF="ictemplates_47.html">Previous Topic</A> | <A HREF="ictemplates_49.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

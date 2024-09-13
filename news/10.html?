@@ -1,0 +1,2255 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>Interchange user location map - RTFM</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-Soup-Of-The-Day" content="Tomato">
+
+    <meta name="author" content="Kevin Walsh">
+    <meta name="publisher" content="Cursor Software Limited">
+    <meta name="copyright" content="2001-2008, Cursor Software Limited">
+    <meta name="generator" content="Interchange 5.5.2 -- www.icdevgroup.org">
+    <meta name="robots" content="index,follow,noarchive">
+    <meta name="keywords" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+    <meta name="description" content="Interchange, Interchange Help, Interchange Support, Interchange Documentation, Interchange Downloads, Interchange Resources">
+
+    <meta name="verify-v1" content="KqlU/bxZj9Y2ZdZ/3RwuzgVSMIrZ8XM2wqbjSaEo3O4=">
+
+    <meta name="y_key" content="e2dd60be5777fbc8">
+
+    <link rel="SHORTCUT ICON" href="/favicon.ico">
+    <link rel="icon" href="/favicon.ico" type="image/ico">
+    <link rel="search" type="application/opensearchdescription+xml" href="http://www.interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="stylesheet" href="/decor/css/website.css">
+    <link rel="stylesheet" href="/decor/css/wiki.css">
+    <link rel="stylesheet" href="/decor/css/neo.css">
+
+
+    <script type="text/javascript" language="JavaScript">
+    <!--
+	if (top != self){
+	    top.location = location;
+	}
+
+    -->
+    </script>
+</head>
+<body>
+<!-- START VAR: LOGOBAR -->
+<table id="rtfmheader" cellpadding="0" cellspacing="0">
+    <tr>
+	<td><a href="http://www.interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+
+	<td width="100%" style="text-align: right; padding: 10px">
+
+	    <form action="http://www.interchange-rtfm.pullingshots.ca/search.html" method="POST">
+		<input type="hidden" name="mv_session_id" value="nsession">
+		<input type="hidden" name="mv_profile" value="cms_search">
+		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
+		<input type="submit" class="button" value="Search">
+	    </form>
+
+	</td>
+    </tr>
+</table>
+<table id="breadcrumbs" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+	<td>
+	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/news/rtfm.html">RTFM website news</a></span>
+	    <span class="nowrap">&gt; <span class="current">Interchange user location map</span></span>
+	</td>
+
+    </tr>
+</table>
+<!-- END VAR: LOGOBAR -->
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+
+	    <td id="leftside">
+<!-- START COMPONENT: navigation -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+    <tr>
+	<th>NAVIGATION</th>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+	    </ul>
+	</td>
+    </tr>
+</table>
+
+
+
+<!-- END COMPONENT: navigation -->
+<!-- START COMPONENT: account -->
+
+<table class="component" cellpadding="0" cellspacing="0">
+
+    <tr>
+	<th>ACCOUNT LOGIN</th>
+    </tr>
+
+    <tr>
+	<td class="first">
+	    <p>You are not logged in</p>
+	</td>
+    </tr>
+    <tr>
+	<td>
+	    <ul class="navigation">
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
+		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+	    </ul>
+	</td>
+    </tr>
+
+</table>
+
+
+
+<!-- END COMPONENT: account -->
+<!-- START COMPONENT: icpowered -->
+
+<div style="text-align: center; margin: 10px; margin-top: 0px">
+    <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.5.2"><img src="/decor/images/iclogo_button.gif" width="136" height="43" alt="Powered by Interchange version 5.5.2"></a>
+</div>
+
+
+
+<!-- START COMPONENT: icpowered -->
+<!-- START COMPONENT: icpowered -->
+
+<div style="text-align: center; margin: 10px; margin-top: 0px">
+    <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.5.2"><img src="/decor/images/iclogo_button.gif" width="136" height="43" alt="Powered by Interchange version 5.5.2"></a>
+</div>
+
+
+
+<!-- START COMPONENT: icpowered -->
+
+	    </td>
+
+	    <td id="bodytext">
+<!-- start of page text -->
+
+<div class="news">
+
+<!-- start of nosearch block -->
+    <table class="information" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+	    <td width="100%"><h1>Interchange user location map</h1></td>
+	    <td><a href="http://www.interchange-rtfm.pullingshots.ca/news/rtfm.html" title="RTFM website news"><img src="/decor/images/icons/rtfm.gif" width="40" height="40" align="right" alt="RTFM website news" class="headline"></a></td>
+	</tr>
+	<tr valign="top">
+	    <td class="author_date border_top"><a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin"><span class="nowrap">Kevin Walsh</span></a> - <span class="nowrap">13 February 2008 - 5:15 AM (PST)</span></td>
+	    <td class="area border_top"><a href="http://www.interchange-rtfm.pullingshots.ca/news/rtfm.html">RTFM website news</a></td>
+	</tr>
+    </table>
+<!-- end of nosearch block -->
+<div class="wikitext">
+Just for fun,
+this website now allows registered users to plot their location on a map.&nbsp;
+A link to the map can be found in the navigation menu shown on the top-left
+of every page.&nbsp;
+If you go to your account information page then you'll see a new
+&quot;show me on the user map&quot; option.&nbsp;
+You can leave that set to &quot;no&quot;,
+or you can set it to &quot;yes&quot; and plot your location on the map.&nbsp;
+You can modify your location,
+or remove yourself from the map altogether,
+any time you like.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<a name="update"></a>
+<a name="comment"></a>
+<h2>This article has one comment</h2>
+    <table class="comment" cellpadding="0" cellspacing="0">
+	<tr>
+	    <td class="author"><a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=marco">Marco Mescoli</a> - 13 February 2008 7:22 AM (PST)</td>
+	    
+	</tr>
+	<tr>
+	    <td colspan = "2">
+<!-- start of formatted and stripped text block -->
+<div class="wikitext">
+It is very simple and works fine.&nbsp;
+Thanks Kevin.&nbsp;
+Marco Mescoli
+</div>
+<!-- end of formatted and stripped text block -->
+	    </td>
+	</tr>
+    </table>
+
+
+
+<!-- start of nosearch block -->
+<a name="comment_form"></a>
+
+    <h2 style="margin-top: 25px">Only logged-in users may post comments</h2>
+    Please <a href="http://www.interchange-rtfm.pullingshots.ca/account/login.html">log in</a> if you would like to post a comment.
+
+<!-- end of nosearch block -->
+
+</div>
+
+
+<!-- START COMPONENT: archivefiles -->
+
+<div class="filelist">
+<h2>Interchange</h2>
+<table class="list" width="100%" cellpadding="2" cellspacing="5" border="0">
+    <tr>
+	<th>
+	    Date
+	</th>
+	<th class="numeric">
+	    Size
+	</th>
+	<th>
+	    Filename
+	</th>
+	<th width="100%">
+	    Notes
+	</th>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    21 August 2007
+	</td>
+	<td class="numeric nowrap">
+	    2,354,051
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-5.5.1.tar.gz" rel="nofollow">interchange-5.5.1.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Beta test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    06 February 2007
+	</td>
+	<td class="numeric nowrap">
+	    2,309,068
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-5.4.2.tar.gz" rel="nofollow">interchange-5.4.2.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+<strong>Latest stable version (security update)</strong>
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    26 May 2006
+	</td>
+	<td class="numeric nowrap">
+	    2,306,398
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-5.4.1.tar.gz" rel="nofollow">interchange-5.4.1.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    23 December 2005
+	</td>
+	<td class="numeric nowrap">
+	    2,295,141
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-5.4.0.tar.gz" rel="nofollow">interchange-5.4.0.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    13 December 2005
+	</td>
+	<td class="numeric nowrap">
+	    2,294,084
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-5.3.3.tar.gz" rel="nofollow">interchange-5.3.3.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Beta test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    11 November 2005
+	</td>
+	<td class="numeric nowrap">
+	    2,290,729
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-5.3.2.tar.gz" rel="nofollow">interchange-5.3.2.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Beta test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    22 September 2005
+	</td>
+	<td class="numeric nowrap">
+	    2,041,473
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-5.2.1.tar.gz" rel="nofollow">interchange-5.2.1.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Security update
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    05 May 2004
+	</td>
+	<td class="numeric nowrap">
+	    2,007,576
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-5.2.0.tar.gz" rel="nofollow">interchange-5.2.0.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    20 April 2004
+	</td>
+	<td class="numeric nowrap">
+	    2,001,346
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-5.1.1.tar.gz" rel="nofollow">interchange-5.1.1.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Beta test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    28 March 2003
+	</td>
+	<td class="numeric nowrap">
+	    1,997,579
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-5.1.0.tar.gz" rel="nofollow">interchange-5.1.0.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Beta test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    22 September 2005
+	</td>
+	<td class="numeric nowrap">
+	    1,989,695
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-5.0.2.tar.gz" rel="nofollow">interchange-5.0.2.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Security update
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    07 April 2004
+	</td>
+	<td class="numeric nowrap">
+	    1,956,411
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-5.0.1.tar.gz" rel="nofollow">interchange-5.0.1.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Security update
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    14 December 2003
+	</td>
+	<td class="numeric nowrap">
+	    1,995,023
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-5.0.0.tar.gz" rel="nofollow">interchange-5.0.0.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    30 October 2003
+	</td>
+	<td class="numeric nowrap">
+	    1,984,839
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.9.9.tar.gz" rel="nofollow">interchange-4.9.9.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Beta test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    17 June 2003
+	</td>
+	<td class="numeric nowrap">
+	    1,971,227
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.9.8.tar.gz" rel="nofollow">interchange-4.9.8.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    07 January 2003
+	</td>
+	<td class="numeric nowrap">
+	    1,883,255
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.9.6.tar.gz" rel="nofollow">interchange-4.9.6.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    12 December 2002
+	</td>
+	<td class="numeric nowrap">
+	    1,878,201
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.9.5.tar.gz" rel="nofollow">interchange-4.9.5.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    02 December 2002
+	</td>
+	<td class="numeric nowrap">
+	    1,870,818
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.9.4.tar.gz" rel="nofollow">interchange-4.9.4.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+There was no official 4.9.3 release
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    12 August 2002
+	</td>
+	<td class="numeric nowrap">
+	    1,667,931
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.9.2.tar.gz" rel="nofollow">interchange-4.9.2.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    22 July 2002
+	</td>
+	<td class="numeric nowrap">
+	    1,636,808
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.9.1.tar.gz" rel="nofollow">interchange-4.9.1.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    29 March 2004
+	</td>
+	<td class="numeric nowrap">
+	    1,886,618
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.8.9.tar.gz" rel="nofollow">interchange-4.8.9.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+<strong>Latest 4.8 version (security update)</strong>
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    15 December 2003
+	</td>
+	<td class="numeric nowrap">
+	    1,876,810
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.8.8.tar.gz" rel="nofollow">interchange-4.8.8.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Security update
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    30 January 2003
+	</td>
+	<td class="numeric nowrap">
+	    1,898,969
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.8.7.tar.gz" rel="nofollow">interchange-4.8.7.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    12 August 2002
+	</td>
+	<td class="numeric nowrap">
+	    1,885,402
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.8.6.tar.gz" rel="nofollow">interchange-4.8.6.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    07 May 2002
+	</td>
+	<td class="numeric nowrap">
+	    1,860,850
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.8.5.tar.gz" rel="nofollow">interchange-4.8.5.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    29 April 2002
+	</td>
+	<td class="numeric nowrap">
+	    1,860,041
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.8.4.tar.gz" rel="nofollow">interchange-4.8.4.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    26 November 2001
+	</td>
+	<td class="numeric nowrap">
+	    1,846,655
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.8.3.tar.gz" rel="nofollow">interchange-4.8.3.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    03 October 2001
+	</td>
+	<td class="numeric nowrap">
+	    1,695,269
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.8.2.tar.gz" rel="nofollow">interchange-4.8.2.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    13 August 2001
+	</td>
+	<td class="numeric nowrap">
+	    1,684,170
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.8.1.tar.gz" rel="nofollow">interchange-4.8.1.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    25 July 2001
+	</td>
+	<td class="numeric nowrap">
+	    1,651,900
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.7.7.tar.gz" rel="nofollow">interchange-4.7.7.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Beta test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    18 July 2001
+	</td>
+	<td class="numeric nowrap">
+	    1,647,564
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.7.6.tar.gz" rel="nofollow">interchange-4.7.6.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Beta test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    02 July 2001
+	</td>
+	<td class="numeric nowrap">
+	    1,827,877
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.7.5.tar.gz" rel="nofollow">interchange-4.7.5.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Alpha test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    15 June 2001
+	</td>
+	<td class="numeric nowrap">
+	    1,642,327
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.7.4.tar.gz" rel="nofollow">interchange-4.7.4.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Alpha test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    11 June 2001
+	</td>
+	<td class="numeric nowrap">
+	    1,610,594
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.7.3.tar.gz" rel="nofollow">interchange-4.7.3.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Alpha test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    10 May 2001
+	</td>
+	<td class="numeric nowrap">
+	    1,860,719
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.7.2.tar.gz" rel="nofollow">interchange-4.7.2.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Alpha test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    27 March 2001
+	</td>
+	<td class="numeric nowrap">
+	    2,477,216
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.7.1.tar.gz" rel="nofollow">interchange-4.7.1.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Alpha test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    16 April 2001
+	</td>
+	<td class="numeric nowrap">
+	    2,003,892
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.6.5.tar.gz" rel="nofollow">interchange-4.6.5.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    20 March 2001
+	</td>
+	<td class="numeric nowrap">
+	    2,003,188
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.6.4.tar.gz" rel="nofollow">interchange-4.6.4.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    08 February 2001
+	</td>
+	<td class="numeric nowrap">
+	    1,990,020
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.6.3.tar.gz" rel="nofollow">interchange-4.6.3.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    07 February 2001
+	</td>
+	<td class="numeric nowrap">
+	    1,989,897
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.6.2.tar.gz" rel="nofollow">interchange-4.6.2.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    02 December 2000
+	</td>
+	<td class="numeric nowrap">
+	    1,916,447
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.6.1.tar.gz" rel="nofollow">interchange-4.6.1.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    26 October 2000
+	</td>
+	<td class="numeric nowrap">
+	    1,991,220
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.6.0.tar.gz" rel="nofollow">interchange-4.6.0.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    19 October 2000
+	</td>
+	<td class="numeric nowrap">
+	    1,995,749
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.5.8.tar.gz" rel="nofollow">interchange-4.5.8.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Beta test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    05 October 2000
+	</td>
+	<td class="numeric nowrap">
+	    1,572,246
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.5.7.tar.gz" rel="nofollow">interchange-4.5.7.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Beta test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    25 September 2000
+	</td>
+	<td class="numeric nowrap">
+	    1,574,493
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.5.6.tar.gz" rel="nofollow">interchange-4.5.6.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Beta test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    06 August 2000
+	</td>
+	<td class="numeric nowrap">
+	    1,785,165
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.5.5.tar.gz" rel="nofollow">interchange-4.5.5.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Beta test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    12 July 2000
+	</td>
+	<td class="numeric nowrap">
+	    1,747,980
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-4.5.3.tar.gz" rel="nofollow">interchange-4.5.3.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Beta test
+</div>
+	</td>
+    </tr>
+</table>
+</div>
+
+<!-- START COMPONENT: archivefiles -->
+<!-- START COMPONENT: archivefiles -->
+
+<div class="filelist">
+<h2>MiniVend</h2>
+<table class="list" width="100%" cellpadding="2" cellspacing="5" border="0">
+    <tr>
+	<th>
+	    Date
+	</th>
+	<th class="numeric">
+	    Size
+	</th>
+	<th>
+	    Filename
+	</th>
+	<th width="100%">
+	    Notes
+	</th>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    13 August 2002
+	</td>
+	<td class="numeric nowrap">
+	    883,759
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-4.05.tar.gz" rel="nofollow">minivend-4.05.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+<strong>Latest MiniVend 4 version (security update)</strong>
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    15 April 2000
+	</td>
+	<td class="numeric nowrap">
+	    883,594
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-4.04a.tar.gz" rel="nofollow">minivend-4.04a.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    14 April 2000
+	</td>
+	<td class="numeric nowrap">
+	    890,276
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-4.04.tar.gz" rel="nofollow">minivend-4.04.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    27 March 2000
+	</td>
+	<td class="numeric nowrap">
+	    889,360
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-4.03.tar.gz" rel="nofollow">minivend-4.03.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    08 March 2000
+	</td>
+	<td class="numeric nowrap">
+	    1,003,123
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-4.02.tar.gz" rel="nofollow">minivend-4.02.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    01 March 2000
+	</td>
+	<td class="numeric nowrap">
+	    997,589
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-4.01.tar.gz" rel="nofollow">minivend-4.01.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    26 February 2000
+	</td>
+	<td class="numeric nowrap">
+	    992,510
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-4.00.tar.gz" rel="nofollow">minivend-4.00.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    <em>Unknown</em>
+	</td>
+	<td class="numeric nowrap">
+	    854,568
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-3.15-beta6.tar.gz" rel="nofollow">minivend-3.15-beta6.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Beta test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    <em>Unknown</em>
+	</td>
+	<td class="numeric nowrap">
+	    851,455
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-3.15-beta5.tar.gz" rel="nofollow">minivend-3.15-beta5.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Beta test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    <em>Unknown</em>
+	</td>
+	<td class="numeric nowrap">
+	    862,030
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-3.15-beta4.tar.gz" rel="nofollow">minivend-3.15-beta4.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Beta test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    <em>Unknown</em>
+	</td>
+	<td class="numeric nowrap">
+	    854,338
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-3.15-beta3.tar.gz" rel="nofollow">minivend-3.15-beta3.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Beta test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    <em>Unknown</em>
+	</td>
+	<td class="numeric nowrap">
+	    806,971
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-3.15-beta2.tar.gz" rel="nofollow">minivend-3.15-beta2.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Beta test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    <em>Unknown</em>
+	</td>
+	<td class="numeric nowrap">
+	    803,981
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-3.15-beta1.tar.gz" rel="nofollow">minivend-3.15-beta1.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Beta test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    12 August 2002
+	</td>
+	<td class="numeric nowrap">
+	    755,399
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-3.14-7.tar.gz" rel="nofollow">minivend-3.14-7.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+<strong>Latest MiniVend 3 version (security update)</strong>
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    01 August 2000
+	</td>
+	<td class="numeric nowrap">
+	    754,942
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-3.14-6.tar.gz" rel="nofollow">minivend-3.14-6.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    26 January 2000
+	</td>
+	<td class="numeric nowrap">
+	    755,156
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-3.14-5.tar.gz" rel="nofollow">minivend-3.14-5.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    15 November 1999
+	</td>
+	<td class="numeric nowrap">
+	    754,827
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-3.14-4.tar.gz" rel="nofollow">minivend-3.14-4.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    <em>Unknown</em>
+	</td>
+	<td class="numeric nowrap">
+	    436,940
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-3.14-2.tar.gz" rel="nofollow">minivend-3.14-2.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    <em>Unknown</em>
+	</td>
+	<td class="numeric nowrap">
+	    791,150
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-3.14.tar.gz" rel="nofollow">minivend-3.14.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    13 March 1999
+	</td>
+	<td class="numeric nowrap">
+	    783,999
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-3.12.tar.gz" rel="nofollow">minivend-3.12.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    08 July 1999
+	</td>
+	<td class="numeric nowrap">
+	    699,044
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-3.11.tar.gz" rel="nofollow">minivend-3.11.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    04 July 1999
+	</td>
+	<td class="numeric nowrap">
+	    607,287
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-3.10.tar.gz" rel="nofollow">minivend-3.10.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    05 June 1998
+	</td>
+	<td class="numeric nowrap">
+	    599,873
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-3.09.tar.gz" rel="nofollow">minivend-3.09.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    28 February 1998
+	</td>
+	<td class="numeric nowrap">
+	    542,464
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-3.07.tar.gz" rel="nofollow">minivend-3.07.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    01 February 1998
+	</td>
+	<td class="numeric nowrap">
+	    556,944
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-3.06.tar.gz" rel="nofollow">minivend-3.06.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    13 December 1997
+	</td>
+	<td class="numeric nowrap">
+	    542,413
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-3.05.tar.gz" rel="nofollow">minivend-3.05.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    07 November 1997
+	</td>
+	<td class="numeric nowrap">
+	    570,823
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-3.04.tar.gz" rel="nofollow">minivend-3.04.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    02 November 1997
+	</td>
+	<td class="numeric nowrap">
+	    578,225
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-3.03.tar.gz" rel="nofollow">minivend-3.03.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    04 September 1997
+	</td>
+	<td class="numeric nowrap">
+	    564,257
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-3.02.tar.gz" rel="nofollow">minivend-3.02.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    24 August 1997
+	</td>
+	<td class="numeric nowrap">
+	    543,815
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-3.01.tar.gz" rel="nofollow">minivend-3.01.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    <em>Unknown</em>
+	</td>
+	<td class="numeric nowrap">
+	    528,636
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-3.00-beta6.tar.gz" rel="nofollow">minivend-3.00-beta6.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Beta test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    04 May 1997
+	</td>
+	<td class="numeric nowrap">
+	    526,670
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-3.00-beta4.tar.gz" rel="nofollow">minivend-3.00-beta4.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Beta test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    <em>Unknown</em>
+	</td>
+	<td class="numeric nowrap">
+	    519,421
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-3.00-beta3.tar.gz" rel="nofollow">minivend-3.00-beta3.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Beta test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    17 August 1997
+	</td>
+	<td class="numeric nowrap">
+	    542,160
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-3.00.tar.gz" rel="nofollow">minivend-3.00.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    <em>Unknown</em>
+	</td>
+	<td class="numeric nowrap">
+	    535,907
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-2.03d.tar.gz" rel="nofollow">minivend-2.03d.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    <em>Unknown</em>
+	</td>
+	<td class="numeric nowrap">
+	    448,262
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-2.03c.tar.gz" rel="nofollow">minivend-2.03c.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    <em>Unknown</em>
+	</td>
+	<td class="numeric nowrap">
+	    448,255
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-2.03b.tar.gz" rel="nofollow">minivend-2.03b.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    <em>Unknown</em>
+	</td>
+	<td class="numeric nowrap">
+	    447,574
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-2.03.tar.gz" rel="nofollow">minivend-2.03.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    02 November 1996
+	</td>
+	<td class="numeric nowrap">
+	    462,813
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-2.02.tar.gz" rel="nofollow">minivend-2.02.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    <em>Unknown</em>
+	</td>
+	<td class="numeric nowrap">
+	    419,365
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-2.01.tar.gz" rel="nofollow">minivend-2.01.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    <em>Unknown</em>
+	</td>
+	<td class="numeric nowrap">
+	    620,340
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-2.00.tar.gz" rel="nofollow">minivend-2.00.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    <em>Unknown</em>
+	</td>
+	<td class="numeric nowrap">
+	    320,989
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-1.03.tar.gz" rel="nofollow">minivend-1.03.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    <em>Unknown</em>
+	</td>
+	<td class="numeric nowrap">
+	    233,962
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-1.02.tar.gz" rel="nofollow">minivend-1.02.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    <em>Unknown</em>
+	</td>
+	<td class="numeric nowrap">
+	    185,588
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minivend/minivend-1.01.tar.gz" rel="nofollow">minivend-1.01.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+</table>
+</div>
+
+<!-- START COMPONENT: archivefiles -->
+<!-- START COMPONENT: archivefiles -->
+
+<div class="filelist">
+<h2>MiniVend Documentation</h2>
+<table class="list" width="100%" cellpadding="2" cellspacing="5" border="0">
+    <tr>
+	<th>
+	    Date
+	</th>
+	<th class="numeric">
+	    Size
+	</th>
+	<th>
+	    Filename
+	</th>
+	<th width="100%">
+	    Notes
+	</th>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    15 April 2000
+	</td>
+	<td class="numeric nowrap">
+	    391,156
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/mvdocs/mvdocs-4.04.tar.gz" rel="nofollow">mvdocs-4.04.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    27 March 2000
+	</td>
+	<td class="numeric nowrap">
+	    392,287
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/mvdocs/mvdocs-4.03.tar.gz" rel="nofollow">mvdocs-4.03.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    01 March 2000
+	</td>
+	<td class="numeric nowrap">
+	    389,979
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/mvdocs/mvdocs-4.01.tar.gz" rel="nofollow">mvdocs-4.01.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    26 February 2000
+	</td>
+	<td class="numeric nowrap">
+	    632,848
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/mvdocs/mvdocs-4.0.tar.gz" rel="nofollow">mvdocs-4.0.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    06 June 1999
+	</td>
+	<td class="numeric nowrap">
+	    612,163
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/mvdocs/mvdocs-3.14.tar.gz" rel="nofollow">mvdocs-3.14.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+</table>
+</div>
+
+<!-- START COMPONENT: archivefiles -->
+<!-- START COMPONENT: archivefiles -->
+
+<div class="filelist">
+<h2>MiniMate (MiniVend Administration)</h2>
+<table class="list" width="100%" cellpadding="2" cellspacing="5" border="0">
+    <tr>
+	<th>
+	    Date
+	</th>
+	<th class="numeric">
+	    Size
+	</th>
+	<th>
+	    Filename
+	</th>
+	<th width="100%">
+	    Notes
+	</th>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    08 March 2000
+	</td>
+	<td class="numeric nowrap">
+	    82,169
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minimate/MiniMate-4.0.0.1m.tar.gz" rel="nofollow">MiniMate-4.0.0.1m.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    27 February 2000
+	</td>
+	<td class="numeric nowrap">
+	    74,975
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minimate/MiniMate-4.0.0.1.tar.gz" rel="nofollow">MiniMate-4.0.0.1.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    23 February 2000
+	</td>
+	<td class="numeric nowrap">
+	    74,994
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minimate/MiniMate-4.0beta2.0.1.tar.gz" rel="nofollow">MiniMate-4.0beta2.0.1.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Beta test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    15 December 1999
+	</td>
+	<td class="numeric nowrap">
+	    131,850
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minimate/MiniMate-4.0alpha8.0.1m_b2.tar.gz" rel="nofollow">MiniMate-4.0alpha8.0.1m_b2.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Alpha test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    15 December 1999
+	</td>
+	<td class="numeric nowrap">
+	    108,287
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minimate/MiniMate-4.0alpha8.0.1.tar.gz" rel="nofollow">MiniMate-4.0alpha8.0.1.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Alpha test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    11 December 1999
+	</td>
+	<td class="numeric nowrap">
+	    117,133
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minimate/MiniMate-4.0alpha6.0.3.tar.gz" rel="nofollow">MiniMate-4.0alpha6.0.3.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Alpha test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    11 December 1999
+	</td>
+	<td class="numeric nowrap">
+	    106,182
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minimate/MiniMate-4.0alpha6.0.2.tar.gz" rel="nofollow">MiniMate-4.0alpha6.0.2.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Alpha test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    09 December 1999
+	</td>
+	<td class="numeric nowrap">
+	    106,037
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minimate/MiniMate-4.0alpha6.0.1.tar.gz" rel="nofollow">MiniMate-4.0alpha6.0.1.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Alpha test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    07 December 1999
+	</td>
+	<td class="numeric nowrap">
+	    102,457
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minimate/MiniMate-4.0alpha5.0.1.tar.gz" rel="nofollow">MiniMate-4.0alpha5.0.1.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Alpha test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    05 December 1999
+	</td>
+	<td class="numeric nowrap">
+	    94,834
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minimate/MiniMate-4.0alpha4.0.1.tar.gz" rel="nofollow">MiniMate-4.0alpha4.0.1.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Alpha test
+</div>
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    03 November 1999
+	</td>
+	<td class="numeric nowrap">
+	    93,653
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minimate/MiniMate-3.14.0.3.1999110417.tar.gz" rel="nofollow">MiniMate-3.14.0.3.1999110417.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    04 August 1999
+	</td>
+	<td class="numeric nowrap">
+	    86,027
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minimate/MiniMate-3.14.0.3.1999080521.tar.gz" rel="nofollow">MiniMate-3.14.0.3.1999080521.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    11 July 1999
+	</td>
+	<td class="numeric nowrap">
+	    76,855
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minimate/MiniMate-3.14.0.3.tar.gz" rel="nofollow">MiniMate-3.14.0.3.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    28 June 1999
+	</td>
+	<td class="numeric nowrap">
+	    74,418
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minimate/MiniMate-3.14.0.2.tar.gz" rel="nofollow">MiniMate-3.14.0.2.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    28 June 1999
+	</td>
+	<td class="numeric nowrap">
+	    74,125
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/minimate/MiniMate-3.14.0.1.tar.gz" rel="nofollow">MiniMate-3.14.0.1.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+</table>
+</div>
+
+<!-- START COMPONENT: archivefiles -->
+<!-- START COMPONENT: archivefiles -->
+
+<div class="filelist">
+<h2>Vend (MiniVend's Predecessor)</h2>
+<table class="list" width="100%" cellpadding="2" cellspacing="5" border="0">
+    <tr>
+	<th>
+	    Date
+	</th>
+	<th class="numeric">
+	    Size
+	</th>
+	<th>
+	    Filename
+	</th>
+	<th width="100%">
+	    Notes
+	</th>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    13 March 1996
+	</td>
+	<td class="numeric nowrap">
+	    79,973
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/vend/vend-0.3.8.tar.gz" rel="nofollow">vend-0.3.8.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    11 March 1996
+	</td>
+	<td class="numeric nowrap">
+	    79,942
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/vend/vend-0.3.7.tar.gz" rel="nofollow">vend-0.3.7.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    25 February 1996
+	</td>
+	<td class="numeric nowrap">
+	    73,217
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/vend/vend-0.3.6.tar.gz" rel="nofollow">vend-0.3.6.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    31 January 1996
+	</td>
+	<td class="numeric nowrap">
+	    68,518
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/vend/vend-0.3.5.tar.gz" rel="nofollow">vend-0.3.5.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    31 January 1996
+	</td>
+	<td class="numeric nowrap">
+	    68,370
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/vend/vend-0.3.4.tar.gz" rel="nofollow">vend-0.3.4.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    14 December 1995
+	</td>
+	<td class="numeric nowrap">
+	    66,773
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/vend/vend-0.3.3.tar.gz" rel="nofollow">vend-0.3.3.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    04 December 1995
+	</td>
+	<td class="numeric nowrap">
+	    57,561
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/vend/vend-0.3.2.tar.gz" rel="nofollow">vend-0.3.2.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    03 December 1995
+	</td>
+	<td class="numeric nowrap">
+	    57,221
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/vend/vend-0.3.1.tar.gz" rel="nofollow">vend-0.3.1.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    27 November 1995
+	</td>
+	<td class="numeric nowrap">
+	    56,979
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/vend/vend-0.3.0.tar.gz" rel="nofollow">vend-0.3.0.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    22 February 1995
+	</td>
+	<td class="numeric nowrap">
+	    30,261
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/vend/vend-0.2.1.tar.gz" rel="nofollow">vend-0.2.1.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    21 February 1995
+	</td>
+	<td class="numeric nowrap">
+	    31,014
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/vend/vend-0.2.tar.gz" rel="nofollow">vend-0.2.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    01 February 1995
+	</td>
+	<td class="numeric nowrap">
+	    30,807
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/vend/vend-0.1.tar.gz" rel="nofollow">vend-0.1.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+</table>
+</div>
+
+<!-- START COMPONENT: archivefiles -->
+<!-- START COMPONENT: archivefiles -->
+
+<div class="filelist">
+<h2>Akopia Tallyman</h2>
+<table class="list" width="100%" cellpadding="2" cellspacing="5" border="0">
+    <tr>
+	<th>
+	    Date
+	</th>
+	<th class="numeric">
+	    Size
+	</th>
+	<th>
+	    Filename
+	</th>
+	<th width="100%">
+	    Notes
+	</th>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    13 June 2000
+	</td>
+	<td class="numeric nowrap">
+	    1,311,818
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/tallyman/tallyman-2.0.7.tar.gz" rel="nofollow">tallyman-2.0.7.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    21 February 2000
+	</td>
+	<td class="numeric nowrap">
+	    1,499,470
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/tallyman/tallyman-2.0.6.tar.gz" rel="nofollow">tallyman-2.0.6.tar.gz</a>
+	</td>
+	<td>
+
+	</td>
+    </tr>
+    <tr valign="top">
+	<td class="nowrap">
+	    01 February 2000
+	</td>
+	<td class="numeric nowrap">
+	    1,498,039
+	</td>
+	<td class="nowrap">
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/tallyman/tallyman-2.0b5.tar.gz" rel="nofollow">tallyman-2.0b5.tar.gz</a>
+	</td>
+	<td>
+<div class="wikitext">
+Beta test
+</div>
+	</td>
+    </tr>
+</table>
+</div>
+
+<!-- START COMPONENT: archivefiles -->
+
+
+<!-- end of page text -->
+	    </td>
+
+	</tr>
+    </table>
+<!-- START VAR: FOOTER -->
+
+<table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+	<td>
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    &nbsp;|&nbsp;
+	    <a href="http://www.interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	</td>
+
+    </tr>
+</table>
+
+<!-- END VAR: FOOTER -->
+
+<!-- START VAR: COPYRIGHT -->
+
+
+    <div class="copyright">
+	Copyright &copy; 2001-2008
+	<a href="http://www.cursor.biz/index.html">Cursor Software Limited</a>.&nbsp;
+	All Rights Reserved.
+    </div>
+
+<!-- END VAR: COPYRIGHT -->
+
+</body>
+</html>

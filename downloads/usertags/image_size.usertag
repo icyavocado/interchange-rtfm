@@ -1,0 +1,29 @@
+# [image-size] global usertag by jonc@webmaint.com
+#
+# gets the values width,height to the size of the image file..
+# and puts it into scratch vars 'imgheight' and 'imgwidth'
+#
+# Requires perl module Image::Size
+#
+# example:
+#
+#   [image-size file='/path/to/file.gif']
+#
+# adding show=1 will output a line of text which may be
+# useful for debugging.
+#
+UserTag image_size Order file show
+UserTag image_size Routine <<EOR
+sub {
+	use Image::Size;
+
+	my ($file,$show) = @_;
+	my ($width,$height) = imgsize($file);
+
+	$Scratch->{imgwidth} = $width;
+	$Scratch->{imgheight} = $height;
+
+	return "size of file ($file) w=$width h=$height" if $show;
+	undef;
+}
+EOR

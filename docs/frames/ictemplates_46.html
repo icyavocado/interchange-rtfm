@@ -1,0 +1,75 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Template Guide: Interchange Locale Settings</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_43.html">Parent Topic</A> | <A HREF="ictemplates_45.html">Previous Topic</A> | <A HREF="ictemplates_47.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>9.3. Interchange Locale Settings</H2>
+<P>The <TT>Locale</TT> directive has many possible settings that allow complete internationalization of page sets and currencies. The <TT>Locale</TT> directive is defined in a series of key/value pairs with a key that contains word characters only being followed by a value. The value must be enclosed in double quotes if it contains whitespace. In this example, the key is <TT>Value setting</TT>.</P>
+<PRE>
+   Locale fr_FR &quot;Value setting&quot; &quot;Configuration de valeur&quot;
+   Locale de_DE &quot;Value setting&quot; Werteinstellung
+</PRE>
+<P>When accessed using the special tag <TT>[L]Value setting[/L]</TT>, the value <TT>Configuration de valeur</TT> will be displayed <B>only</B> if the locale is set to <TT>fr_FR</TT>. If the locale is set to <TT>de_DE</TT>, the string <TT>Werteinstellung</TT> will be displayed. If it is neither, the default value of <TT>Value setting</TT> will be displayed.</P>
+<P>The <TT>[L]</TT> and <TT>[/L]</TT> must be capitalized. This is done for speed of processing as well as easy differentiation in text.</P>
+<P>Another, way to do this is right in the page. The <TT>[LC]</TT> ... <TT>[/LC]</TT> pragma pair permits specification of locale-dependent text.</P>
+<PRE>
+ [LC]
+           This is the default text.
+   [fr_FR] Text for the fr_FR locale. [/fr_FR]
+   [de_DE] Text for the de_DE locale. [/de_DE]
+ [/LC]
+</PRE>
+<P>You can also place an entirely new page in place of the default one if the locale key is defined. When a locale is in force, and a key named <TT>HTMLsuffix</TT> is set to that locale, Interchange first looks for a page with a suffix corresponding to the locale. For example:</P>
+<P>&lt;A HREF=&quot;[area index]&quot;&gt;Catalog home page&lt;/A&gt;</P>
+<P>If a page index.html exists, it will be the default. If the current locale is <TT>fr_FR</TT>, a page &quot;index.fr_FR&quot; exists and <TT>Locale</TT> looks like this:</P>
+<PRE>
+   Locale fr_FR HTMLsuffix  .fr_FR
+</PRE>
+<P>Then, the <TT>.fr_FR</TT> page will be used instead of the <TT>.html</TT> page. For a longer series of strings, the configuration file recognizes:</P>
+<PRE>
+   Locale fr_FR &lt;&lt;EOF
+   {
+       &quot;Value setting&quot;,
+       &quot;Configuration de valeur&quot;,
+
+       &quot;Search&quot;,
+       &quot;Recherche&quot;
+   }
+   EOF
+</PRE>
+<P>This example sets two string substitutions. As long as this is a valid Perl syntax describing a series of settings, the text will be matched. It can contain any arbitrary set of characters that don't contain <TT>[L]</TT> and <TT>[/L]</TT>. If using double quotes, string literals like \n and \t are recognized.</P>
+<P>A database can also be used to set locale information. Locale information can be added to any database in the <TT>catalog.cfg</TT> file, and the values in it will overwrite previous settings. For more information, see LocaleDatabase. The <TT>[L]default text[/L]</TT> is set before any other page processing takes place. It is equivalent to the characters &quot;default text&quot; or the appropriate <TT>Locale</TT> translation for all intents and purposes. Interchange tags and Variable values can be embedded.</P>
+<P>Because the <TT>[L] message [/L]</TT> substitution is done before any tag processing, the command <TT>[L][item-data table field][/L]</TT> will fail. There is an additional <TT>[loc] message [/loc]</TT> <I>UserTag</I> supplied with the distribution. It does the same thing as <TT>[L] [/L]</TT> except it is programmed after all tag substitution is done. See the interchange.cfg.dist file for the definition.</P>
+<P><HR WIDTH="80%" ALIGN="Left">
+<STRONG>Note: </STRONG>Be careful when editing pages containing localization information. Even changing one character of the message can  change the key value and invalidate the message for other languages. To prevent this, use:
+<HR WIDTH="80%" ALIGN="Left"></P>
+<PRE>
+   [L key]The default.[/L]
+</PRE>
+<P>The key <TT>msg_key</TT> will then be used to index the message. This may be preferable for many applications.</P>
+<P>A <TT>localize</TT> script is included with Interchange. It will parse files included on the command line and produce output that can be easily edited to produce localized information. Given an existing file, it will merge new information where appropriate.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_43.html">Parent Topic</A> | <A HREF="ictemplates_45.html">Previous Topic</A> | <A HREF="ictemplates_47.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

@@ -1,0 +1,74 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Databases: Specifying a Text-Based Search with SQL Syntax</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_25.html">Parent Topic</A> | <A HREF="icdatabase_29.html">Previous Topic</A> | <A HREF="icdatabase_31.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>5.5. Specifying a Text-Based Search with SQL Syntax</H2>
+<P>If the Perl <TT>SQL::Statement</TT> module is installed, SQL syntax can be specified for the text-based search. This is not the same as the external SQL database search, treated below separately. This works on the ASCII text source file, not on the actual database.</P>
+<P>This syntax allows this form setup:</P>
+<PRE>
+   Artist: &lt;INPUT NAME=&quot;artist&quot;&gt;
+   Title:  &lt;INPUT NAME=&quot;title&quot;&gt;
+   &lt;INPUT TYPE=hidden NAME=&quot;mv_sql_query&quot;
+           VALUE=&quot;
+               SELECT code FROM products
+               WHERE artist LIKE artist
+               AND    title LIKE title&quot;&gt;
+</PRE>
+<P>If the right hand side of an expression looks like a column, i.e., is not quoted, the appropriate form variable is substituted. (If used in a one-click, the corresponding scratch variable is used instead.) The assumption is reversed for the left-hand side. If it is a quoted string, the column name is read from the passed values. Otherwise, the column name is literal.</P>
+<PRE>
+   Search for: &lt;INPUT NAME=&quot;searchstring&quot;&gt;&lt;BR&gt;
+   Search in   &lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;column&quot; VALUE=&quot;title&quot;&gt; title
+       &lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;column&quot; VALUE=&quot;artist&quot;&gt; artist
+       &lt;INPUT TYPE=hidden NAME=&quot;mv_sql_query&quot;
+         VALUE=&quot;SELECT code FROM products WHERE 'column' LIKE searchstring&quot;&gt;
+</PRE>
+<P>Once again, this does not conduct a search on an SQL database, but formats a corresponding text-based search. Parentheses will have no effect, and an OR condition will cause all conditions to be OR. The searches above would be similar to:</P>
+<PRE>
+   [page search=&quot;
+               co=yes
+               sf=artist
+               op=rm
+               se=[value artist]
+               sf=title
+               op=rm
+               se=[value title]
+           &quot;  ]
+       Search for [value artist], [value title]
+   &lt;/a&gt;
+
+   [page search=&quot;
+               co=yes
+               sf=[value column]
+               op=rm
+               se=[value searchstring]
+           &quot;  ]
+   Search for [value searchstring]
+          in  [value column]
+   &lt;/a&gt;
+</PRE>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_25.html">Parent Topic</A> | <A HREF="icdatabase_29.html">Previous Topic</A> | <A HREF="icdatabase_31.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

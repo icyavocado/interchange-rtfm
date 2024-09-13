@@ -1,0 +1,66 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: PREFIX-param</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_9.html">Parent Topic</A> | <A HREF="ictags_24.html">Previous Topic</A> | <A HREF="ictags_26.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>3.16. PREFIX-param</H2>
+<PRE>
+   [PREFIX-param name]
+</PRE>
+<P>Returns the value of the column name associated with the looping tag row. Each looping list returns an array of <TT>return fields</TT>, set in searches with <TT>mv_return_field</TT> or <TT>rf</TT>. The default is only to return the code of the search result, but by setting those parameters you can return whichever columns you wish.</P>
+<P>In a [<A HREF="ictags_91.html#query">query</A>] ITL tag you can select multiple return fields with something like:</P>
+<PRE>
+    [query prefix=prefix sql=&quot;select foo, bar from baz where foo='buz'&quot;]
+        [prefix-code]  [prefix-param foo]  [prefix-param bar]
+    [/query]
+</PRE>
+<P>In this case, [<A HREF="ictags_14.html#PREFIX-code">prefix-code</A>] and [prefix-param foo] are synonyms, as <TT>foo</TT> is the first returned parameter and becomes the code for this row. Another synonym is [<A HREF="ictags_26.html#PREFIX-pos">prefix-pos</A> 0].</P>
+<P>Note that the following code is invalid:</P>
+<PRE>
+    [query prefix=prefix sql=|
+        SELECT  table1.foo,
+                table2.bar
+        FROM    table1, table2
+        WHERE   table1.code = table2.code
+        AND     table1.foo = 'buz'
+    |]
+        [prefix-param table1.foo] [prefix-param table2.bar]
+    [/query]
+</PRE>
+<P>The problem with the above code is that DBI doesn't support column names such as <TT>table1.foo</TT> in its resultsets.  The following query syntax is fully supported by DBI and therefore by Interchange:</P>
+<PRE>
+    [query prefix=prefix sql=|
+        SELECT  table1.foo AS foo,
+                table2.bar AS bar
+        FROM    table1, table2
+        WHERE   table1.code = table2.code
+        AND     table1.foo = 'buz'
+    |]
+        [prefix-param foo] [prefix-param bar]
+    [/query]
+</PRE>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_9.html">Parent Topic</A> | <A HREF="ictags_24.html">Previous Topic</A> | <A HREF="ictags_26.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

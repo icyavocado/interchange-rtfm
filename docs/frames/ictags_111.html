@@ -1,0 +1,309 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: time</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_110.html">Previous Topic</A> | <A HREF="ictags_112.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.77. time</H2>
+<H3><A NAME="Summary">4.77.1. Summary</A></H3>
+<P>Parameters: <B>locale</B></P>
+<P>Positional parameters in same order.</P>
+<P><B>The attribute hash reference is passed</B> after the parameters but before the container text argument. <B>This may mean that there are parameters not shown here.</B></P>
+<P>Must pass named parameter interpolate=1 to cause interpolation.</P>
+<P>This is a container tag, i.e. [time] FOO [/time]. Nesting: NO</P>
+<P>Invalidates cache: <B>no</B></P>
+<P>Called Routine:</P>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+    $Tag-&gt;time(
+        {
+         locale =&gt; VALUE,
+        },
+        BODY
+    )
+
+ OR
+
+    $Tag-&gt;time($locale, $ATTRHASH, $BODY);
+    [<B>time</B> locale <I>other_named_attributes</I>]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_111.html#time_adjust">adjust</A>
+</TD>
+<TD VALIGN='Top'>
+Temporarily adjust the time for display purposes.
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_111.html#time_gmt">gmt</A>
+</TD>
+<TD VALIGN='Top'>
+Display time as GMT.
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_111.html#time_locale">locale</A>
+</TD>
+<TD VALIGN='Top'>
+Format the time according to the named locale.
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_111.html#time_tz">tz</A>
+</TD>
+<TD VALIGN='Top'>
+Use the passed timezone to display the time.
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_111.html#time_zerofix">zerofix</A>
+</TD>
+<TD VALIGN='Top'>
+Strips leading zeroes from numbers.
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_interpolate">interpolate</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_reparse">reparse</A>
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>no</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Container tag
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Has Subtags
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Nests
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+    [time locale]
+---
+    TODO: (tag result)
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+   $Tag-&gt;time(  { locale =&gt; VALUE_locale
+}, $body  );
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;time(locale, $attribute_hash_reference, $body);
+</PRE>
+<H3><A NAME="Description">4.77.2. Description</A></H3>
+<P>Formats the current time according to POSIX strftime arguments. The following is the string for Monday, January 1, 2001.</P>
+<PRE>
+    [time]%A, %B %d, %Y[/tag]
+</PRE>
+<P>See the <TT>strftime</TT> man page for information on the arguments (which are the same as modern UNIX date commands).</P>
+<P>Accepts the following options:</P>
+<H4><A NAME="time_adjust"> </A>4.77.2.1. <A NAME="time_adjust">adjust</A></H4>
+<P>If you wish to temporarily adjust the time for display purposes, you can pass an <TT>adjust</TT> parameter with the number of hours (plus or minus).</P>
+<PRE>
+        [time]%c[/time]
+        [time adjust=&quot;-3&quot;]%c[/time]
+</PRE>
+<P>Will display:</P>
+<PRE>
+ Mon 01 Jan 2001 11:29:03 AM EST
+ Mon 01 Jan 2001 08:29:03 AM EST
+</PRE>
+<P>If the number ends in zero and has 3 digits or more, it is assumed that the number is in timezone format (i.e +500) the local time or from GMT:</P>
+<PRE>
+        [time]%c[/time]
+        [time adjust=&quot;-330&quot;]%c[/time]
+        [time adjust=&quot;-300&quot;]%c[/time]
+</PRE>
+<P>Will display:</P>
+<PRE>
+ Mon 01 Jan 2001 11:29:03 AM EST
+ Mon 01 Jan 2001 07:59:03 AM EST
+ Mon 01 Jan 2001 08:29:03 AM EST
+</PRE>
+<P>If you want to force the number to be just a number of hours, add the <TT>hours</TT> parameter:</P>
+<PRE>
+        [time]%c[/time]
+        [time adjust=&quot;100&quot; hours=1]%c[/time]
+</PRE>
+<P>Will display:</P>
+<PRE>
+ Mon 01 Jan 2001 11:29:03 AM EST
+ Fri 05 Jan 2001 15:29:03 PM EST
+</PRE>
+<P>If <TT>adjust</TT> is an Interchange time duration with a suffix of <TT>sec</TT>, <TT>min</TT>, <TT>hrs</TT>, <TT>days</TT>, or <TT>weeks</TT>, that will be used.</P>
+<PRE>
+        [time]%c[/time]
+        [time adjust=&quot;2 days&quot;]%c[/time]
+</PRE>
+<P>Will display:</P>
+<PRE>
+ Mon 01 Jan 2001 11:29:03 AM EST
+ Wed 03 Jan 2001 11:29:03 AM EST
+</PRE>
+<P>Note that the time zone does not change&nbsp;-- you should either pick a format which doesn't display zone, use the <TT>tz</TT> parameter, or manage it yourself.</P>
+<P>NOTE: You can adjust time globally for an Interchange installation by setting the $ENV{TZ} variable on many systems. Set TZ in your environment and then restart Interchange:</P>
+<PRE>
+        ## bash/ksh/sh
+        TZ=PST7PDT; export TZ
+        interchange -restart
+
+        ## csh/tcsh
+        setenv TZ PST7PDT
+        interchange -restart
+</PRE>
+<P>On most modern UNIX systems, all times will now be in the PST zone.</P>
+<H4><A NAME="time_gmt"> </A>4.77.2.2. <A NAME="time_gmt">gmt</A></H4>
+<P>If you want to display time as GMT, use the <TT>gmt</TT> parameter:</P>
+<PRE>
+        [time]%c[/time]
+        [time gmt=1]%c[/time]
+</PRE>
+<P>will display:</P>
+<PRE>
+        Mon 01 Jan 2001 11:33:26 AM EST
+        Mon 01 Jan 2001 04:33:26 PM EST
+</PRE>
+<P>Once again, the zone will not be set to GMT, so you should pick a format string which doesn't use zone, use the <TT>tz</TT> parameter, or manage it yourself.</P>
+<H4><A NAME="time_locale"> </A>4.77.2.3. <A NAME="time_locale">locale</A></H4>
+<P>Format the time according to the named <TT>locale</TT>, assuming that locale is available on your operating system. For example, the following:</P>
+<PRE>
+        [time locale=en_US]%B %d, %Y[/time]
+        [time locale=fr_FR]%B %d, %Y[/time]
+</PRE>
+<P>should display:</P>
+<PRE>
+        January 01, 2001
+        janvier 01, 2001
+</PRE>
+<H4><A NAME="time_tz"> </A>4.77.2.4. <A NAME="time_tz">tz</A></H4>
+<P>Use the passed timezone to display the time. Will adjust for hours difference.</P>
+<P>Example:</P>
+<PRE>
+        [time tz=GMT0]
+        [time tz=CST6CDT]
+        [time tz=PST8PDT]
+</PRE>
+<P>will display:</P>
+<PRE>
+        Mon 01 Jan 2001 04:43:02 PM GMT
+        Mon 01 Jan 2001 10:43:02 AM CST
+        Mon 01 Jan 2001 08:43:02 AM PST
+</PRE>
+<P>Note that the first alphabetical string is the zone name when not under daylight savings time, the digit is the number of hours displacement from GMT, and the second alphabetical string is the zone name when in daylight savings time. NOTE: This may not work on all operating systems.</P>
+<H4><A NAME="time_zerofix"> </A>4.77.2.5. <A NAME="time_zerofix">zerofix</A></H4>
+<P>Strips leading zeroes from numbers.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_110.html">Previous Topic</A> | <A HREF="ictags_112.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

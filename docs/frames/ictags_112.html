@@ -1,0 +1,249 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: timed-build</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_111.html">Previous Topic</A> | <A HREF="ictags_113.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.78. timed-build</H2>
+<H3><A NAME="Summary">4.78.1. Summary</A></H3>
+<P>Parameters: <B>file</B></P>
+<P>Positional parameters in same order.</P>
+<P><B>The attribute hash reference is passed</B> after the parameters but before the container text argument. <B>This may mean that there are parameters not shown here.</B></P>
+<P>Must pass named parameter interpolate=1 to cause interpolation.</P>
+<P>This is a container tag, i.e. [timed-build] FOO [/timed-build]. Nesting: NO</P>
+<P>Invalidates cache: <B>no</B></P>
+<P>Called Routine:</P>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+    $Tag-&gt;timed_build(
+        {
+         file =&gt; VALUE,
+        },
+        BODY
+    )
+
+ OR
+
+    $Tag-&gt;timed_build($file, $ATTRHASH, $BODY);
+    [timed-build file <I>other_named_attributes</I>]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_112.html#timed_build_auto">auto</A>
+</TD>
+<TD VALIGN='Top'>
+Turn on automatic region processing.
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_112.html#timed_build_file">file</A>
+</TD>
+<TD VALIGN='Top'>
+Name of the cache file.
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_112.html#timed_build_if">if</A>
+</TD>
+<TD VALIGN='Top'>
+Conditional display of the cached region.
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_112.html#timed_build_minutes">minutes</A>
+</TD>
+<TD VALIGN='Top'>
+Number of minutes after which the timed build should be repeated.
+</TD>
+<TD VALIGN='Top'>
+60
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_112.html#timed_build_period">period</A>
+</TD>
+<TD VALIGN='Top'>
+Alternative way of expressing time.
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_interpolate">interpolate</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_reparse">reparse</A>
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>no</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Container tag
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Has Subtags
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Nests
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+    [timed-build file]
+---
+    TODO: (tag result)
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+   $Tag-&gt;timed_build(  { file =&gt; VALUE_file
+}, $body  );
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;timed_build(file, $attribute_hash_reference, $body);
+</PRE>
+<H3><A NAME="Description">4.78.2. Description</A></H3>
+<P>Allows you to build CPU-intensive regions of ITL tags on a timed basis.</P>
+<P>In the simplest case, surround a region of ITL with [<A HREF="ictags_112.html#timed-build">timed-build</A>] and <TT>[/timed-build]</TT>:</P>
+<PRE>
+        [timed-build]
+                Built at [time]%c[/time].
+        [/timed-build]
+</PRE>
+<P>If a <TT>file</TT> parameter is not passed, saves to the directory <I>timed</I> in catalog root, with the file name of the current page. If the <TT>minutes</TT> parameter is not passed specifying how often the page should be rebuilt, then it will not be rebuilt until the output file is removed.</P>
+<P>Accepts the following parameters:</P>
+<H4><A NAME="timed_build_auto"> </A>4.78.2.1. <A NAME="timed_build_auto">auto</A></H4>
+<P>Turns on automatic region processing. The text of the timed-build region is processed to determine a unique checksum or digest (using MD5), and that file name is checked in the directory tmp/auto-timed (assuming <TT>ScratchDir</TT> is set to <TT>tmp</TT>). If no number of minutes is supplied, <TT>60</TT> is assumed.</P>
+<P>This is designed to automatically build regions of commonly used areas without having to manage the file name yourself.</P>
+<P>Implies <TT>login=1</TT>, but will still abort if no session ID cookie has been sent. Use <TT>force=1</TT> to ignore cookie status.</P>
+<H4><A NAME="timed_build_file"> </A>4.78.2.2. <A NAME="timed_build_file">file</A></H4>
+<P>Name of the file to save the results in. Relative to catalog root. The directory must exist.</P>
+<H4><A NAME="timed_build_if"> </A>4.78.2.3. <A NAME="timed_build_if">if</A></H4>
+<P>Allows you to to only display the cached region when the <TT>if</TT> parameter is true. For example, you can do:</P>
+<PRE>
+        [timed-build if=&quot;[value timed]&quot;]
+        ITL tags....
+        [/timed-build]
+</PRE>
+<P>The cached region will only be displayed if the variable <TT>timed</TT> is set to a non-zero, non-blank value. Otherwise, the ITL tags will be re-interpreted every time.</P>
+<H4><A NAME="timed_build_minutes"> </A>4.78.2.4. <A NAME="timed_build_minutes">minutes</A></H4>
+<P>The number of minutes after which the timed build should be repeated. If set to 0, it will be built once and then not rebuilt until the output file is removed.</P>
+<H4><A NAME="timed_build_period"> </A>4.78.2.5. <A NAME="timed_build_period">period</A></H4>
+<P>Alternative way of expressing time. You can pass a string describing the rebuild time period:</P>
+<PRE>
+        [timed-build period=&quot;4 hours&quot;]
+        ITL tags....
+        [/timed-build]
+</PRE>
+<P>This is really the same as <TT>minutes=240</TT>. Useful for passing seconds:</P>
+<PRE>
+        [timed-build period=&quot;5 seconds&quot;]
+        ITL tags....
+        [/timed-build]
+</PRE>
+<P>The region will be rebuilt every 5 seconds.</P>
+<P>Performance Tip: use minutes of .08 instead; avoids having to parse the period string.</P>
+<P>If you have the StaticDir catalog.cfg parameter set to a writable path, you can build a cached static version of your catalog over time. Simply place a [timed-build] tag at the top of pages you wish to build statically. Assuming the catalog is not busy and write lock can be obtained, the StaticDBM database will be updated to mark the page as static and the next time a link is made for that page the static version will be presented.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_111.html">Previous Topic</A> | <A HREF="ictags_113.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

@@ -1,0 +1,57 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Databases: Write Control</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_1.html">Parent Topic</A> | <A HREF="icdatabase_12.html">Previous Topic</A> | <A HREF="icdatabase_14.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>1.12. Write Control</H2>
+<P>Interchange databases can be written in the normal course of events, either using the <TT>[import ...]</TT> tag or with a tag like <TT>[data table=table column=field key=code value=new-value]</TT>. To control writing of a global database, or to a certain catalog within a series of subcatalogs, or make one read only, see the following:</P>
+<P>To enable write control:</P>
+<PRE>
+   Database   products  WRITE_CONTROL  1
+</PRE>
+<P>Once this is done, to make a database read only, which won't allow writing even if <TT>[tag flag write]products[/tag]</TT> is specified:</P>
+<PRE>
+   Database   products  READ_ONLY  1
+</PRE>
+<P>To have control with <TT>[tag flag write]products[/tag]</TT>:</P>
+<PRE>
+   Database   products  WRITE_TAGGED  1
+</PRE>
+<P>To limit write to certain catalogs, set:</P>
+<PRE>
+   Database   products  WRITE_CATALOG  simple=0, sample=1
+</PRE>
+<P>The &quot;simple&quot; catalog will not be able to write, while &quot;sample&quot; will if <TT>[tag flag write]products[/tag]</TT> is enabled. If a database is to always be writable, without having to specify <TT>[tag flag write] ... [/tag]</TT>, then define:</P>
+<PRE>
+   Database   products  WRITE_ALWAYS  1
+</PRE>
+<P>The default behavior of SQL databases is equivalent to WRITE_ALWAYS, while the default for GDBM_File, DB_File, and Memory databases is equivalent to:</P>
+<PRE>
+   Database   products  WRITE_CONTROL 1
+   Database   products  WRITE_TAGGED  1
+</PRE>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="icdatabase_1.html">Parent Topic</A> | <A HREF="icdatabase_12.html">Previous Topic</A> | <A HREF="icdatabase_14.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

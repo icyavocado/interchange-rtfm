@@ -1,0 +1,45 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Template Guide: Updating Interchange Database Tables with a Form</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_32.html">Previous Topic</A> | <A HREF="ictemplates_34.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H1>8. Forms and Interchange</H1>
+<P>Interchange uses HTML forms for many of its functions, including ordering, searching, updating account information and maintaining databases. Order operations possibly include ordering an item, selecting item size or other attributes and reading user information for payment and shipment. Search operations may also be triggered by a form.</P>
+<P>Interchange supports file upload with the <TT>multipart/form-data</TT> type. The file is placed in memory and discarded if not accessed with the <TT>[value-extended name=filevar file_contents=1]</TT> tag or written with <TT>[value-extended name=filevar outfile=your_file_name]</TT>. See Extended Value Access and File Upload.</P>
+<P>Interchange passes variables from page to page automatically. Every user session that is started by Interchange automatically creates a variable set for the user. As long as the user session is maintained, and does not expire, any variables you set on a form will be &quot;remembered&quot; in future sessions.</P>
+<P>Don't use the prefix mv_ for your own variables. Interchange treats these specially and they may not behave as you wish. Use the mv_ variables only as they are documented.</P>
+<P>Interchange does not unset variables it does not find on the current form. That means you can't expect a checkbox to become unchecked unless you explicitly reset it.</P>
+<P><A HREF="ictemplates_34.html">Special Form Fields</A></P>
+<P><A HREF="ictemplates_35.html">Form Actions</A></P>
+<P><A HREF="ictemplates_36.html">One-click Multiple Variables</A></P>
+<P><A HREF="ictemplates_37.html">Checks and Selections</A></P>
+<P><A HREF="ictemplates_38.html">Integrated Image Maps</A></P>
+<P><A HREF="ictemplates_39.html">Setting Form Security</A></P>
+<P><A HREF="ictemplates_40.html">Stacking Variables on the Form</A></P>
+<P><A HREF="ictemplates_41.html">Extended Value Access and File Upload</A></P>
+<P><A HREF="ictemplates_42.html">Updating Interchange Database Tables with a Form</A></P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictemplates_32.html">Previous Topic</A> | <A HREF="ictemplates_34.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

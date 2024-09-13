@@ -1,0 +1,214 @@
+<!doctype html public "-//W30//DTD W3 HTML 2.0//EN">
+
+<HTML>
+
+<!-- This file was generated using SDF 2.001 by
+     Ian Clatworthy (ianc@mincom.com). SDF is freely
+     available from http://www.mincom.com/mtr/sdf. -->
+
+<HEAD>
+<TITLE>Interchange Tags Reference: try</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="docs.css">
+</HEAD>
+<BODY BGCOLOR="ffffff" LINK="993333">
+
+<DIV CLASS="header">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_116.html">Previous Topic</A> | <A HREF="ictags_118.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+<DIV CLASS="main">
+<H2>4.83. try</H2>
+<P>Allows you to trap errors. Interchange processes the body text of the [<TT>try</TT>][<TT>/try</TT>] block and returns it normally if it does not generate an error. If it does generate an error, Interchange executes the [<TT>catch</TT>][<TT>/catch</TT>] block.</P>
+<P>See also '<A HREF="ictags_45.html#catch">catch</A>'.</P>
+<H3><A NAME="Summary">4.83.1. Summary</A></H3>
+<PRE>
+    [<B>try</B> label=<I>my_label</I> <I>other_named_attributes</I>]
+        <I>Body text to return if no error</I>
+    [<B>/try</B>]
+    .
+    .
+    .
+    [<B>catch</B> <I>my_label</I>]
+        <I>Body text to return if try block caused an error</I>
+    [<B>/catch</B>]
+</PRE>
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Parameters</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_117.html#try_label">label</A>
+</TD>
+<TD VALIGN='Top'>
+The label shared by the paired <TT>try</TT> and <A HREF="ictags_45.html#catch">catch</A> blocks
+</TD>
+<TD VALIGN='Top'>
+'default'
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Attributes</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Description</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>Default</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_117.html#try_status">status</A>
+</TD>
+<TD VALIGN='Top'>
+Returns 0 (failed) or 1 (succeeded) instead of page output
+</TD>
+<TD VALIGN='Top'>
+<I>none</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_117.html#try_hide">hide</A>
+</TD>
+<TD VALIGN='Top'>
+Suppresses page output
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_117.html#try_clean">clean</A>
+</TD>
+<TD VALIGN='Top'>
+Suppress <TT>try</TT> block output if it has an error
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_interpolate">interpolate</A>
+</TD>
+<TD VALIGN='Top'>
+See <A HREF="ictags_6.html#attr_interpolate">Interpolating Parameters</A>
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+<A HREF="ictags_6.html#attr_reparse">reparse</A>
+</TD>
+<TD VALIGN='Top'>
+See <A HREF="ictags_6.html#attr_reparse">Interpolating Parameters</A>
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS="columns" BORDER>
+<TR CLASS="heading">
+<TD VALIGN='Top'>
+<STRONG>Other_Characteristics</STRONG>
+</TD>
+<TD VALIGN='Top'>
+<STRONG>&nbsp;</STRONG>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Invalidates cache
+</TD>
+<TD VALIGN='Top'>
+<I>No</I>
+</TD>
+</TR>
+<TR>
+<TD VALIGN='Top'>
+Container tag
+</TD>
+<TD VALIGN='Top'>
+<I>Yes</I>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Tag expansion example:</B></P>
+<PRE>
+    [set divisor]0[/set]
+    [try label=div]
+        [calc] 1 / [scratch divisor] [/calc]
+    [/try]
+    [catch div]Division error[/catch]
+---
+    Division Error
+</PRE>
+<P><B>ASP-like Perl call:</B></P>
+<PRE>
+    $Tag-&gt;try(    { label  =&gt; I&lt;'try_catch_label'&gt;,
+                    status =&gt; 1, },
+                  $try_body  );
+
+    $Tag-&gt;catch(  { label  =&gt; I&lt;'try_catch_label'&gt;, },
+                  $catch_body )
+</PRE>
+<P>or similarly with positional parameters,</P>
+<PRE>
+    $Tag-&gt;try($label, $attribute_hash_reference, $try_body);
+    $Tag-&gt;catch($label, $attribute_hash_reference, $catch_body);
+</PRE>
+<H4><A NAME="See Also">4.83.1.1. See Also</A></H4>
+<P><A HREF="ictags_45.html#catch">catch</A></P>
+<H3><A NAME="Description">4.83.2. Description</A></H3>
+<P>Allows you to trap errors. Interchange processes the body text of the [<TT>try</TT>][<TT>/try</TT>] block and returns it normally if it does not generate an error. If it does generate an error, interchange executes the [<TT>catch</TT>][<TT>/catch</TT>] block. The catch block executes where it is on the page (<I>i.e.</I>, it does not replace the output of the try block).</P>
+<P>Note that the <TT>catch</TT> block must occur after the [try] block in the document.</P>
+<H4><A NAME="try_label"> </A>4.83.2.1. <A NAME="try_label">label</A></H4>
+<P>The try and catch blocks are matched by this label.</P>
+<P>Technical note:</P>
+<P>The try tag will also place a result in the $Session object.  For example, the following returns the 'Illegal division by zero...' error message if it occurs:</P>
+<PRE>
+    [try label=divide][calc] 1 / [scratch divisor] [/calc][/try]
+
+    [catch divide]
+        [calc]$Session-&gt;{try}{divide}[/calc]
+    [/catch]
+</PRE>
+<P>The $Session-&gt;{try}{divide} object will be set to the empty string ('') if there was no error, or it will contain the error message if there was an error.</P>
+<P>The [<A HREF="ictags_87.html#perl">perl</A>] and [<A HREF="ictags_42.html#calc">calc</A>] tags also set $Session-&gt;{try}-&gt;{<I>active_label</I>} on errors.</P>
+<H4><A NAME="try_status"> </A>4.83.2.2. <A NAME="try_status">status</A></H4>
+<P>Suppresses <TT>try</TT> block output and returns 1 if no error or 0 if an error occurred instead.  Executes the <TT>catch</TT> block as usual in case of an error.</P>
+<H4><A NAME="try_hide"> </A>4.83.2.3. <A NAME="try_hide">hide</A></H4>
+<P>Suppresses <TT>try</TT> block output (regardless of success or failure).  Executes the <TT>catch</TT> block as usual in case of an error.</P>
+<H4><A NAME="try_clean"> </A>4.83.2.4. <A NAME="try_clean">clean</A></H4>
+<P>Setting '<TT>clean=1</TT>' will cause the <TT>try</TT> block to suppress its output only if it has an error. Otherwise (<TT>clean=0</TT> or not set), the <TT>try</TT> block will return whatever partial output it has completed before the error.  The <A HREF="ictags_45.html#catch">catch</A> block will work as usual.</P>
+</DIV>
+<DIV CLASS="footer">
+<DIV CLASS="navigate">
+<P ALIGN="Center"><A HREF="ictags_34.html">Parent Topic</A> | <A HREF="ictags_116.html">Previous Topic</A> | <A HREF="ictags_118.html">Next Topic</A> <BR><A HREF="../index.html" TARGET="_top">Documentation Index</A></P>
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>
