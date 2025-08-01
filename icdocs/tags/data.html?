@@ -27,7 +27,7 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
-    <link rel="search" type="application/opensearchdescription+xml" href="http://interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="search" type="application/opensearchdescription+xml" href="/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
     <link rel="stylesheet" href="/decor/css/website.css">
     <link rel="stylesheet" href="/decor/css/wiki.css">
     <link rel="stylesheet" href="/decor/css/neo.css">
@@ -46,11 +46,11 @@
 <!-- START VAR: LOGOBAR -->
 <table id="rtfmheader" cellpadding="0" cellspacing="0">
     <tr>
-	<td><a href="http://interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+	<td><a href="/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
 
 	<td width="100%" style="text-align: right; padding: 10px">
 
-	    <form action="http://interchange-rtfm.pullingshots.ca/search.html" method="POST">
+	    <form action="/search.html" method="POST">
 		<input type="hidden" name="mv_session_id" value="nsession">
 		<input type="hidden" name="mv_profile" value="cms_search">
 		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
@@ -63,10 +63,10 @@
 <table id="breadcrumbs" cellpadding="0" cellspacing="0">
     <tr valign="top">
 	<td>
-	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
-	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
-	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
-	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a></span>
+	    <span class="nowrap">&gt; <a href="/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="/icdocs/category:Interchange_tags.html">Interchange tags</a></span>
 	    <span class="nowrap">&gt; <span class="current">data</span></span>
 	</td>
 
@@ -87,13 +87,13 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+		<li><a href="/index.html">Home</a></li>
+		<li><a href="/documentation.html">Documentation</a></li>
+		<li><a href="/downloads.html">Downloads</a></li>
+		<li><a href="/community.html">Mail lists and IRC</a></li>
+		<li><a href="/links.html">External websites</a></li>
+		<li><a href="/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="/account/usermap.html">User location map</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -116,16 +116,16 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/area.html">area</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/payments/AuthorizeNet.html">AuthorizeNet</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/payments/BoA.html">BoA</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Creating_custom_Interchange_tags.html">Creating custom Interchange tags</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Database_reference_guide.html">Database reference guide</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/payments/ECHO.html">ECHO</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/payments/Ezic.html">Ezic</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/field.html">field</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/filter.html">filter</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/links:tags/data.html">(27 pages in total)</a></li>
+		<li><a href="/icdocs/tags/area.html">area</a></li>
+		<li><a href="/icdocs/payments/AuthorizeNet.html">AuthorizeNet</a></li>
+		<li><a href="/icdocs/payments/BoA.html">BoA</a></li>
+		<li><a href="/icdocs/Creating_custom_Interchange_tags.html">Creating custom Interchange tags</a></li>
+		<li><a href="/icdocs/Database_reference_guide.html">Database reference guide</a></li>
+		<li><a href="/icdocs/payments/ECHO.html">ECHO</a></li>
+		<li><a href="/icdocs/payments/Ezic.html">Ezic</a></li>
+		<li><a href="/icdocs/tags/field.html">field</a></li>
+		<li><a href="/icdocs/tags/filter.html">filter</a></li>
+		<li><a href="/icdocs/links:tags/data.html">(27 pages in total)</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -149,9 +149,9 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+		<li><a href="/account/login.html">Log in</a></li>
+		<li><a href="/account/create.html">Create an account</a></li>
+		<li><a href="/account/reminder.html">Password reminder</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -164,7 +164,7 @@
 <!-- START COMPONENT: icpowered -->
 
 <div style="text-align: center; margin: 10px; margin-top: 0px">
-    <a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+    <a href="/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
 </div>
 
 
@@ -255,7 +255,7 @@ Returns the value of the field in a database table, or from the session namespac
 </tr>
 <tr valign="top">
 <td class="grid"><a href="#filter" title="&quot;filter&quot; heading on this page">filter</a></td>
-<td class="grid">Run the output through one or more <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Filters.html" title="Category - filters">text filters</a>.</td>
+<td class="grid">Run the output through one or more <a href="/icdocs/category:Filters.html" title="Category - filters">text filters</a>.</td>
 <td class="grid"><em>None</em></td>
 </tr>
 <tr valign="top">
@@ -286,14 +286,14 @@ Returns the value of the field in a database table, or from the session namespac
 <td class="grid"><em>None</em></td>
 </tr>
 <tr valign="top">
-<td class="grid"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Universal_tag_attributes.html#hide" title="&quot;hide&quot; heading on the &quot;Universal tag attributes&quot; page">hide</a></td>
+<td class="grid"><a href="/icdocs/Universal_tag_attributes.html#hide" title="&quot;hide&quot; heading on the &quot;Universal tag attributes&quot; page">hide</a></td>
 <td class="grid">Suppress any output text that would ordinarily be returned from this tag.&nbsp;
 (This universal parameter was introduced with Interchange version 5.5.2.)</td>
 <td class="grid">No
 </td>
 </tr>
 <tr valign="top">
-<td class="grid"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Universal_tag_attributes.html#interpolate" title="&quot;interpolate&quot; heading on the &quot;Universal tag attributes&quot; page">interpolate</a></td>
+<td class="grid"><a href="/icdocs/Universal_tag_attributes.html#interpolate" title="&quot;interpolate&quot; heading on the &quot;Universal tag attributes&quot; page">interpolate</a></td>
 <td class="grid">Process any Interchange tags found in the text output from this tag.</td>
 <td class="grid">Yes
 </td>
@@ -352,7 +352,7 @@ this tag will return the value read from the specified column.
 </p>
 <p>
 This tag can also be used to gain access to the following keys in the Interchange
-<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Interchange_Perl_objects.html#Session" title="&quot;Session&quot; heading on the &quot;Interchange Perl objects&quot; page">&#36;Session</a></span> hash reference:
+<span class="fixedwidth"><a href="/icdocs/Interchange_Perl_objects.html#Session" title="&quot;Session&quot; heading on the &quot;Interchange Perl objects&quot; page">&#36;Session</a></span> hash reference:
 </p>
 <table class="border">
 <tr valign="top">
@@ -370,7 +370,7 @@ the last 30 seconds.</td>
 <tr valign="top">
 <td class="grid">arg
 </td>
-<td class="grid">The argument passed in an <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/area.html" title="area (tags)">area</a>]</span> tag.</td>
+<td class="grid">The argument passed in an <span class="fixedwidth">[<a href="/icdocs/tags/area.html" title="area (tags)">area</a>]</span> tag.</td>
 </tr>
 <tr valign="top">
 <td class="grid">browser
@@ -381,16 +381,16 @@ the last 30 seconds.</td>
 <td class="grid">carts
 </td>
 <td class="grid">A reference to a Perl hash containing shopping carts.&nbsp;
-See <a href="http://interchange-rtfm.pullingshots.ca/icdocs/Interchange_Perl_objects.html#Carts" title="&quot;Carts&quot; heading on the &quot;Interchange Perl objects&quot; page">&#36;Carts</a> for
+See <a href="/icdocs/Interchange_Perl_objects.html#Carts" title="&quot;Carts&quot; heading on the &quot;Interchange Perl objects&quot; page">&#36;Carts</a> for
 more information.</td>
 </tr>
 <tr valign="top">
 <td class="grid">host
 </td>
 <td class="grid">Interchange's note of the visitor's hostname
-(possibly modified by <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DomainTail.html" title="DomainTail (config)">DomainTail</a></span>).&nbsp;
+(possibly modified by <span class="fixedwidth"><a href="/icdocs/config/DomainTail.html" title="DomainTail (config)">DomainTail</a></span>).&nbsp;
 If the hostname could not be looked up
-(<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/HostnameLookups.html" title="HostnameLookups (config)">HostnameLookups</a></span> switched off or
+(<span class="fixedwidth"><a href="/icdocs/config/HostnameLookups.html" title="HostnameLookups (config)">HostnameLookups</a></span> switched off or
 DNS error etc.) then the visitor's IP address will be
 stored here instead.</td>
 </tr>
@@ -437,7 +437,7 @@ Also see <span class="fixedwidth">shost</span>.</td>
 <td class="grid">A hash of result messages from payment module
 transaction attempts.&nbsp;
 See examples in the
-<a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_payment_modules.html" title="Category - interchange payment modules">Interchange payment modules</a> documentation.</td>
+<a href="/icdocs/category:Interchange_payment_modules.html" title="Category - interchange payment modules">Interchange payment modules</a> documentation.</td>
 </tr>
 <tr valign="top">
 <td class="grid">prev_url
@@ -475,7 +475,7 @@ Also see <span class="fixedwidth">ohost</span>.</td>
 <td class="grid">teleport
 </td>
 <td class="grid">Date and time (in
-&quot;<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/time.html#Time_format_tokens" title="&quot;Time format tokens&quot; heading on the &quot;time (tags)&quot; page">&#37;Y&#37;m&#37;d&#37;H&#37;M&#37;S</a></span>&quot; format) for use with the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/PageTables.html" title="PageTables (config)">PageTables</a></span>
+&quot;<span class="fixedwidth"><a href="/icdocs/tags/time.html#Time_format_tokens" title="&quot;Time format tokens&quot; heading on the &quot;time (tags)&quot; page">&#37;Y&#37;m&#37;d&#37;H&#37;M&#37;S</a></span>&quot; format) for use with the <span class="fixedwidth"><a href="/icdocs/config/PageTables.html" title="PageTables (config)">PageTables</a></span>
 directive.</td>
 </tr>
 <tr valign="top">
@@ -492,7 +492,7 @@ directive.</td>
 <td class="grid">username
 </td>
 <td class="grid">Logged-in username.&nbsp;
-See the <a href="http://interchange-rtfm.pullingshots.ca/icdocs/Interchange_user_database.html" title="Interchange user database">Interchange user database</a> page.</td>
+See the <a href="/icdocs/Interchange_user_database.html" title="Interchange user database">Interchange user database</a> page.</td>
 </tr>
 </table>
 <br>
@@ -532,8 +532,8 @@ The name of the database table that should be read or updated.
 <p class="title">Note</p>
 <p style="margin-bottom: 0px">
 If a DBM-based database is to be modified, it must be flagged
-writable on the page calling the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/flag.html" title="flag (tags)">flag</a>]</span> tag.&nbsp;
-For example, use <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/flag.html" title="flag (tags)">flag</a> write]products&#91;/tag]</span> to mark the
+writable on the page calling the <span class="fixedwidth">[<a href="/icdocs/tags/flag.html" title="flag (tags)">flag</a>]</span> tag.&nbsp;
+For example, use <span class="fixedwidth">[<a href="/icdocs/tags/flag.html" title="flag (tags)">flag</a> write]products&#91;/tag]</span> to mark the
 <span class="fixedwidth">products</span> table writable.&nbsp;
 This must be done before <strong>any</strong> access to that table.
 </p>
@@ -571,7 +571,7 @@ filters that are applied to the data either:&nbsp;
 <li>before it is placed in the table.</li>
 </ol>
 
-See the <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Filters.html" title="Category - filters">filters</a> category for a list of filters.
+See the <a href="/icdocs/category:Filters.html" title="Category - filters">filters</a> category for a list of filters.
 </p>
 <a name="foreign"></a>
 <h3>foreign</h3>
@@ -896,7 +896,7 @@ You should not use &quot;<span class="fixedwidth">safe_data</span>&quot; unless 
 and know what you are doing.
 </p>
 <p style="margin-bottom: 0px">
-Read more about the philosophy behind <a href="http://interchange-rtfm.pullingshots.ca/icdocs/pragma/safe_data.html" title="safe data (pragma)">safe_data</a>
+Read more about the philosophy behind <a href="/icdocs/pragma/safe_data.html" title="safe data (pragma)">safe_data</a>
 </p>
 </td>
 </tr>
@@ -908,7 +908,7 @@ Read more about the philosophy behind <a href="http://interchange-rtfm.pullingsh
     <table class="pageinfo" cellpadding="0" cellspacing="0">
 	<tr>
 	    <td>
-Category:&nbsp; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a>
+Category:&nbsp; <a href="/icdocs/category:Interchange_tags.html">Interchange tags</a>
 	    </td>
 	</tr>
 
@@ -916,7 +916,7 @@ Category:&nbsp; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category
 	<tr>
 	    <td>
 		
-		Last modified by: <a href="http://interchange-rtfm.pullingshots.ca/account/profile.html?user=thunder">Gert van der Spoel</a><br>
+		Last modified by: <a href="/account/profile.html?user=thunder">Gert van der Spoel</a><br>
 		Modification date: Friday 19 June 2009 at 11:40 PM (BST)
 	    </td>
 	</tr>
@@ -940,15 +940,15 @@ Category:&nbsp; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category
 <table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
     <tr>
 	<td>
-	    <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    <a href="/index.html">Home</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    <a href="/legal/legal.html">Legal nonsense</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    <a href="/legal/privacy.html">Privacy policy</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://interchange-rtfm.pullingshots.ca/donations.html">Donations</a>
+	    <a href="/donations.html">Donations</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	    <a href="/contact.html">Contact us</a>
 	</td>
 
     </tr>

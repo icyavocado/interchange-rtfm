@@ -27,7 +27,7 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
-    <link rel="search" type="application/opensearchdescription+xml" href="http://interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="search" type="application/opensearchdescription+xml" href="/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
     <link rel="stylesheet" href="/decor/css/website.css">
     <link rel="stylesheet" href="/decor/css/wiki.css">
     <link rel="stylesheet" href="/decor/css/neo.css">
@@ -46,11 +46,11 @@
 <!-- START VAR: LOGOBAR -->
 <table id="rtfmheader" cellpadding="0" cellspacing="0">
     <tr>
-	<td><a href="http://interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM! - Merry Christmas"><img src="/decor/images/rtfm_banner_christmas.gif" width="528" height="60" border="0" alt="For more information... RTFM! - Merry Christmas"></a></td>
+	<td><a href="/index.html" title="For more information... RTFM! - Merry Christmas"><img src="/decor/images/rtfm_banner_christmas.gif" width="528" height="60" border="0" alt="For more information... RTFM! - Merry Christmas"></a></td>
 
 	<td width="100%" style="text-align: right; padding: 10px; background-image: url(/decor/images/rtfm_banner_christmas_background.gif)">
 
-	    <form action="http://interchange-rtfm.pullingshots.ca/search.html" method="POST">
+	    <form action="/search.html" method="POST">
 		<input type="hidden" name="mv_session_id" value="nsession">
 		<input type="hidden" name="mv_profile" value="cms_search">
 		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
@@ -63,10 +63,10 @@
 <table id="breadcrumbs" cellpadding="0" cellspacing="0">
     <tr valign="top">
 	<td>
-	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
-	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
-	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
-	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a></span>
+	    <span class="nowrap">&gt; <a href="/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="/icdocs/category:Interchange_tags.html">Interchange tags</a></span>
 	    <span class="nowrap">&gt; <span class="current">area</span></span>
 	</td>
 
@@ -87,13 +87,13 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+		<li><a href="/index.html">Home</a></li>
+		<li><a href="/documentation.html">Documentation</a></li>
+		<li><a href="/downloads.html">Downloads</a></li>
+		<li><a href="/community.html">Mail lists and IRC</a></li>
+		<li><a href="/links.html">External websites</a></li>
+		<li><a href="/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="/account/usermap.html">User location map</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -116,16 +116,16 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/accessories.html">accessories</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/AlwaysSecure.html">AlwaysSecure</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/bounce.html">bounce</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/How_to_set_up_an_on-the-fly_item.html">How to set up an on-the-fly item</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/href.html">href</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Interchange_tag_introduction.html">Interchange tag introduction</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/filters/linkdecode.html">linkdecode</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/page.html">page</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/pragma/safe_data.html">safe_data</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html">Special form variables</a></li>
+		<li><a href="/icdocs/tags/accessories.html">accessories</a></li>
+		<li><a href="/icdocs/config/AlwaysSecure.html">AlwaysSecure</a></li>
+		<li><a href="/icdocs/tags/bounce.html">bounce</a></li>
+		<li><a href="/icdocs/How_to_set_up_an_on-the-fly_item.html">How to set up an on-the-fly item</a></li>
+		<li><a href="/icdocs/tags/href.html">href</a></li>
+		<li><a href="/icdocs/Interchange_tag_introduction.html">Interchange tag introduction</a></li>
+		<li><a href="/icdocs/filters/linkdecode.html">linkdecode</a></li>
+		<li><a href="/icdocs/tags/page.html">page</a></li>
+		<li><a href="/icdocs/pragma/safe_data.html">safe_data</a></li>
+		<li><a href="/icdocs/Special_form_variables.html">Special form variables</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -149,9 +149,9 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+		<li><a href="/account/login.html">Log in</a></li>
+		<li><a href="/account/create.html">Create an account</a></li>
+		<li><a href="/account/reminder.html">Password reminder</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -164,7 +164,7 @@
 <!-- START COMPONENT: icpowered -->
 
 <div style="text-align: center; margin: 10px; margin-top: 0px">
-    <a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+    <a href="/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
 </div>
 
 
@@ -286,7 +286,7 @@ Returns a URI for an Interchange page or form action, including the Interchange 
 </tr>
 <tr valign="top">
 <td class="grid"><a href="#secure" title="&quot;secure&quot; heading on this page">secure</a></td>
-<td class="grid">to create a &quot;secure&quot; internal URI using <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SecureURL.html" title="SecureURL (config)">SecureURL</a></span>.</td>
+<td class="grid">to create a &quot;secure&quot; internal URI using <span class="fixedwidth"><a href="/icdocs/config/SecureURL.html" title="SecureURL (config)">SecureURL</a></span>.</td>
 <td class="grid">No
 </td>
 </tr>
@@ -387,7 +387,7 @@ so following three links are identical in operation:
 <td width="100%">
 <p class="title">Note</p>
 <p style="margin-bottom: 0px">
-Use of the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/page.html" title="page (tags)">page</a>]</span> and <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/href.html" title="href (tags)">href</a>]</span>
+Use of the <span class="fixedwidth">[<a href="/icdocs/tags/page.html" title="page (tags)">page</a>]</span> and <span class="fixedwidth">[<a href="/icdocs/tags/href.html" title="href (tags)">href</a>]</span>
 tags is discouraged;&nbsp;
 You are advised to use this <span class="fixedwidth">&#91;area]</span> tag instead.
 </p>
@@ -402,12 +402,12 @@ You are advised to use this <span class="fixedwidth">&#91;area]</span> tag inste
 <p>
 The Interchange page name you would like to create a URI for,
 relative to the &quot;<span class="fixedwidth">pages</span>&quot; directory.&nbsp;
-See the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/PageDir.html" title="PageDir (config)">PageDir</a></span>
+See the <span class="fixedwidth"><a href="/icdocs/config/PageDir.html" title="PageDir (config)">PageDir</a></span>
 <em>local</em> (<span class="fixedwidth">catalog.cfg</span>) configuration directive.
 </p>
 <p>
 If the <span class="fixedwidth"><a href="#form" title="&quot;form&quot; heading on this page">form</a></span> parameter is used then the <span class="fixedwidth">href</span> will
-default to &quot;<span class="fixedwidth">process</span>&quot; (see <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProcessPage.html" title="ProcessPage (config)">ProcessPage</a></span>),
+default to &quot;<span class="fixedwidth">process</span>&quot; (see <span class="fixedwidth"><a href="/icdocs/config/ProcessPage.html" title="ProcessPage (config)">ProcessPage</a></span>),
 if not specified otherwise.
 </p>
 <a name="Special_href_values"></a>
@@ -442,8 +442,8 @@ following tags:
 </p>
 
 <ul>
-<li><span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/data.html" title="data (tags)">data</a> session arg]</span></li>
-<li><span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/cgi.html" title="cgi (tags)">cgi</a> mv_arg]</span></li>
+<li><span class="fixedwidth">[<a href="/icdocs/tags/data.html" title="data (tags)">data</a> session arg]</span></li>
+<li><span class="fixedwidth">[<a href="/icdocs/tags/cgi.html" title="cgi (tags)">cgi</a> mv_arg]</span></li>
 </ul>
 
 <p>
@@ -492,12 +492,12 @@ component of the generated URI.
 </p>
 <p>
 If this parameter is not specified then the value of the
-<span class="fixedwidth">mv_add_dot_html</span> <a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variable will be
+<span class="fixedwidth">mv_add_dot_html</span> <a href="/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variable will be
 used.
 </p>
 <p>
 The default is to not add &quot;<span class="fixedwidth">.html</span>&quot; to the end of the page name,
-although this default can be overridden by setting the &quot;<span class="fixedwidth">mv_add_dot_hmtl</span>&quot; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variable <em>true</em>.
+although this default can be overridden by setting the &quot;<span class="fixedwidth">mv_add_dot_hmtl</span>&quot; <a href="/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variable <em>true</em>.
 </p>
 <a name="add_source"></a>
 <h3>add_source</h3>
@@ -507,7 +507,7 @@ along with the current &quot;<span class="fixedwidth">mv_source</span>&quot; val
 </p>
 <p>
 The default is to not add a &quot;<span class="fixedwidth">mv_source</span>&quot; parameter to the URI,
-although this default can be overridden by setting the &quot;<span class="fixedwidth">mv_add_source</span>&quot; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variable <em>true</em>.
+although this default can be overridden by setting the &quot;<span class="fixedwidth">mv_add_source</span>&quot; <a href="/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variable <em>true</em>.
 </p>
 <a name="alias"></a>
 <h3>alias</h3>
@@ -539,16 +539,16 @@ For example:
 The above would generate a URI that, when followed,
 would order one of item number &quot;<span class="fixedwidth">os28044</span>&quot;,
 with a size of &quot;<span class="fixedwidth">15oz</span>&quot;.&nbsp;
-As <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html#mv_separate_items" title="&quot;mv separate items&quot; heading on the &quot;Special form variables&quot; page">mv_separate_items</a></span>
+As <span class="fixedwidth"><a href="/icdocs/Special_form_variables.html#mv_separate_items" title="&quot;mv separate items&quot; heading on the &quot;Special form variables&quot; page">mv_separate_items</a></span>
 is <em>true</em>,
 the item would appear on a separate line in the shopping cart.&nbsp;
-No <span class="fixedwidth"><a href="#href" title="&quot;href&quot; heading on this page">href</a></span> was specified, so &quot;<span class="fixedwidth">process</span>&quot; (see <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProcessPage.html" title="ProcessPage (config)">ProcessPage</a></span>) would be used as the link target.&nbsp;
-No <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html#mv_orderpage" title="&quot;mv orderpage&quot; heading on the &quot;Special form variables&quot; page">mv_orderpage</a></span> was specified,
+No <span class="fixedwidth"><a href="#href" title="&quot;href&quot; heading on this page">href</a></span> was specified, so &quot;<span class="fixedwidth">process</span>&quot; (see <span class="fixedwidth"><a href="/icdocs/config/ProcessPage.html" title="ProcessPage (config)">ProcessPage</a></span>) would be used as the link target.&nbsp;
+No <span class="fixedwidth"><a href="/icdocs/Special_form_variables.html#mv_orderpage" title="&quot;mv orderpage&quot; heading on the &quot;Special form variables&quot; page">mv_orderpage</a></span> was specified,
 so Interchange would use the website's default shopping cart page.&nbsp;
-If &quot;<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html#mv_orderpage" title="&quot;mv orderpage&quot; heading on the &quot;Special form variables&quot; page">mv_orderpage</a>=somepage</span>&quot; was specified then the next page shown, after the order submission,
+If &quot;<span class="fixedwidth"><a href="/icdocs/Special_form_variables.html#mv_orderpage" title="&quot;mv orderpage&quot; heading on the &quot;Special form variables&quot; page">mv_orderpage</a>=somepage</span>&quot; was specified then the next page shown, after the order submission,
 would be &quot;<span class="fixedwidth">somepage</span>&quot;.&nbsp;
-The <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html#mv_session_id" title="&quot;mv session id&quot; heading on the &quot;Special form variables&quot; page">mv_session_id</a></span>
-and <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html#mv_arg" title="&quot;mv arg&quot; heading on the &quot;Special form variables&quot; page">mv_arg</a></span> form values will
+The <span class="fixedwidth"><a href="/icdocs/Special_form_variables.html#mv_session_id" title="&quot;mv session id&quot; heading on the &quot;Special form variables&quot; page">mv_session_id</a></span>
+and <span class="fixedwidth"><a href="/icdocs/Special_form_variables.html#mv_arg" title="&quot;mv arg&quot; heading on the &quot;Special form variables&quot; page">mv_arg</a></span> form values will
 be automatically added,
 whenever Interchange deems it appropriate to do so.
 </p>
@@ -562,14 +562,14 @@ Theoretically, you can submit any form using the method shown above,
 though none of the included values can have newlines or trailing
 whitespace.&nbsp;
 If you want to do something like that you will need to create a custom
-<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UserTag.html" title="UserTag (config)">UserTag</a></span>.
+<span class="fixedwidth"><a href="/icdocs/config/UserTag.html" title="UserTag (config)">UserTag</a></span>.
 </p>
 <p>
 Once on the target page,
 this tag's &quot;<span class="fixedwidth"><a href="#arg" title="&quot;arg&quot; heading on this page">arg</a></span>&quot; parameter value can be retrieved
 using either
-<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/data.html" title="data (tags)">data</a>&nbsp;session&nbsp;arg]</span> or
-<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/cgi.html" title="cgi (tags)">cgi</a>&nbsp;mv_arg]</span>.
+<span class="fixedwidth">[<a href="/icdocs/tags/data.html" title="data (tags)">data</a>&nbsp;session&nbsp;arg]</span> or
+<span class="fixedwidth">[<a href="/icdocs/tags/cgi.html" title="cgi (tags)">cgi</a>&nbsp;mv_arg]</span>.
 </p>
 <p>
 If the &quot;<span class="fixedwidth"><a href="#href" title="&quot;href&quot; heading on this page">href</a></span>&quot; points at a URI that starts with a protocol
@@ -581,8 +581,8 @@ with no further Interchange processing taking place.&nbsp;
 The URI,
 in this case,
 will not include
-<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html#mv_session_id" title="&quot;mv session id&quot; heading on the &quot;Special form variables&quot; page">mv_session_id</a></span> and
-<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html#mv_pc" title="&quot;mv pc&quot; heading on the &quot;Special form variables&quot; page">mv_pc</a></span> parameters.&nbsp;
+<span class="fixedwidth"><a href="/icdocs/Special_form_variables.html#mv_session_id" title="&quot;mv session id&quot; heading on the &quot;Special form variables&quot; page">mv_session_id</a></span> and
+<span class="fixedwidth"><a href="/icdocs/Special_form_variables.html#mv_pc" title="&quot;mv pc&quot; heading on the &quot;Special form variables&quot; page">mv_pc</a></span> parameters.&nbsp;
 For example:
 </p>
 <!-- start of code block -->
@@ -623,14 +623,14 @@ further modification.
 The URI, in this case, will include
 any values supplied with the &quot;<span class="fixedwidth">form</span>&quot; or
 &quot;<span class="fixedwidth"><a href="#arg" title="&quot;arg&quot; heading on this page">arg</a></span>&quot; parameters, but will not include
-<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html#mv_session_id" title="&quot;mv session id&quot; heading on the &quot;Special form variables&quot; page">mv_session_id</a></span> and
-<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html#mv_pc" title="&quot;mv pc&quot; heading on the &quot;Special form variables&quot; page">mv_pc</a></span> parameters even if
+<span class="fixedwidth"><a href="/icdocs/Special_form_variables.html#mv_session_id" title="&quot;mv session id&quot; heading on the &quot;Special form variables&quot; page">mv_session_id</a></span> and
+<span class="fixedwidth"><a href="/icdocs/Special_form_variables.html#mv_pc" title="&quot;mv pc&quot; heading on the &quot;Special form variables&quot; page">mv_pc</a></span> parameters even if
 the <a href="#no_session" title="&quot;no session&quot; heading on this page">no_session</a> or <a href="#no_count" title="&quot;no count&quot; heading on this page">no_count</a> attributes
 are explicitly unset to allow it.&nbsp;
 Also the <a href="#add_dot_html" title="&quot;add dot html&quot; heading on this page">add_dot_html</a>
 and <a href="#secure" title="&quot;secure&quot; heading on this page">secure</a> attributes will be ignored and .html will not
 be appended to the path name nor will the protocol be changed to https://
-or the <a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SecureURL.html" title="SecureURL (config)">SecureURL</a> configuration parameter used.
+or the <a href="/icdocs/config/SecureURL.html" title="SecureURL (config)">SecureURL</a> configuration parameter used.
 </p>
 <p>
 For example:
@@ -671,7 +671,7 @@ For example:
 <p class="title">Availability</p>
 <p>
 In Interchange versions prior to 5.10.0 the path will be extracted and a new URI will
-be built using the website's <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/VendUrl.html" title="VendUrl (config)">VendUrl</a></span> instead:
+be built using the website's <span class="fixedwidth"><a href="/icdocs/config/VendUrl.html" title="VendUrl (config)">VendUrl</a></span> instead:
 </p>
 <!-- start of code block -->
 <div class="code">
@@ -749,13 +749,13 @@ Don't encode a &quot;<span class="fixedwidth">mv_pc</span>&quot; argument into t
 </p>
 <p>
 If this parameter is not specified then the value of the
-<span class="fixedwidth">mv_no_count</span> <a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variable will be
+<span class="fixedwidth">mv_no_count</span> <a href="/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variable will be
 used.
 </p>
 <p>
 The default is to always add a &quot;<span class="fixedwidth">mv_pc</span>&quot; argument into the
 generated URI,
-although this default can be overridden by setting the &quot;<span class="fixedwidth">mv_no_count</span>&quot; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variable <em>true</em>.
+although this default can be overridden by setting the &quot;<span class="fixedwidth">mv_no_count</span>&quot; <a href="/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variable <em>true</em>.
 </p>
 <a name="no_session"></a>
 <h3>no_session</h3>
@@ -772,7 +772,7 @@ Never encode &quot;<span class="fixedwidth">mv_session_id</span>&quot; nor &quot
 <p class="title">Warning</p>
 <p style="margin-bottom: 0px">
 This parameter will also override the <span class="fixedwidth"><a href="#no_count" title="&quot;no count&quot; heading on this page">no_count</a></span>
-parameter and its associated <a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variable value,
+parameter and its associated <a href="/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variable value,
 if set.
 </p>
 </td>
@@ -788,7 +788,7 @@ generated URI.
 <p>
 This tag will always add a &quot;<span class="fixedwidth">mv_session_id</span>&quot; argument to the
 generated URI,
-unless the &quot;<span class="fixedwidth">mv_no_session_id</span>&quot; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variable
+unless the &quot;<span class="fixedwidth">mv_no_session_id</span>&quot; <a href="/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variable
 is set <em>true</em> and a &quot;<span class="fixedwidth">MV_SESSION_ID</span>&quot; <em>session cookie</em> was
 provided with the request for the current page.
 </p>
@@ -802,7 +802,7 @@ provided with the request for the current page.
 <p class="title">Warning</p>
 <p>
 Do not confuse the similarly-named &quot;<span class="fixedwidth">mv_no_session</span>&quot; and
-&quot;<span class="fixedwidth">mv_no_session_id</span>&quot; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variables
+&quot;<span class="fixedwidth">mv_no_session_id</span>&quot; <a href="/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variables
 with one another.
 </p>
 <p style="margin-bottom: 0px">
@@ -878,11 +878,11 @@ These characters can be specified using hex-encoded notation,
 i.e. &quot;<span class="fixedwidth">&#37;20</span>&quot; is a space and &quot;<span class="fixedwidth">&#37;2F</span>&quot; is a slash etc.
 </p>
 <p>
-See the <a href="http://interchange-rtfm.pullingshots.ca/icdocs/Interchange_search_engine.html#One-click_searches" title="&quot;One-click searches&quot; heading on the &quot;Interchange search engine&quot; page">one-click searches</a> section of the
-page <a href="http://interchange-rtfm.pullingshots.ca/icdocs/Interchange_search_engine.html" title="Interchange search engine">Interchange search engine</a> for more information.
+See the <a href="/icdocs/Interchange_search_engine.html#One-click_searches" title="&quot;One-click searches&quot; heading on the &quot;Interchange search engine&quot; page">one-click searches</a> section of the
+page <a href="/icdocs/Interchange_search_engine.html" title="Interchange search engine">Interchange search engine</a> for more information.
 </p>
 <p>
-See the <a href="http://interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html" title="Search parameters">search parameters</a> page for a list of the search variables,
+See the <a href="/icdocs/Search_parameters.html" title="Search parameters">search parameters</a> page for a list of the search variables,
 along with the two-letter abbreviations that can be used.
 </p>
 <a name="search"></a>
@@ -893,11 +893,11 @@ See the <span class="fixedwidth"><a href="#scan" title="&quot;scan&quot; heading
 <a name="secure"></a>
 <h3>secure</h3>
 <p>
-Makes use of the website's <a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SecureURL.html" title="SecureURL (config)">SecureURL</a>,
-instead of the <a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/VendURL.html" title="VendURL (config)">VendURL</a>, to create a &quot;secure&quot; internal URI.
+Makes use of the website's <a href="/icdocs/config/SecureURL.html" title="SecureURL (config)">SecureURL</a>,
+instead of the <a href="/icdocs/config/VendURL.html" title="VendURL (config)">VendURL</a>, to create a &quot;secure&quot; internal URI.
 </p>
 <p>
-If the <span class="fixedwidth"><a href="#href" title="&quot;href&quot; heading on this page">href</a></span> is in the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/AlwaysSecure.html" title="AlwaysSecure (config)">AlwaysSecure</a></span>
+If the <span class="fixedwidth"><a href="#href" title="&quot;href&quot; heading on this page">href</a></span> is in the <span class="fixedwidth"><a href="/icdocs/config/AlwaysSecure.html" title="AlwaysSecure (config)">AlwaysSecure</a></span>
 list then this parameter will be always be <em>true</em>.
 </div>
 
@@ -906,7 +906,7 @@ list then this parameter will be always be <em>true</em>.
     <table class="pageinfo" cellpadding="0" cellspacing="0">
 	<tr>
 	    <td>
-Category:&nbsp; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a>
+Category:&nbsp; <a href="/icdocs/category:Interchange_tags.html">Interchange tags</a>
 	    </td>
 	</tr>
 
@@ -914,7 +914,7 @@ Category:&nbsp; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category
 	<tr>
 	    <td>
 		
-		Last modified by: <a href="http://interchange-rtfm.pullingshots.ca/account/profile.html?user=pj">Peter Ajamian</a><br>
+		Last modified by: <a href="/account/profile.html?user=pj">Peter Ajamian</a><br>
 		Modification date: Thursday 9 February 2017 at 11:16 PM (EST)
 	    </td>
 	</tr>
@@ -938,15 +938,15 @@ Category:&nbsp; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category
 <table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
     <tr>
 	<td>
-	    <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    <a href="/index.html">Home</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    <a href="/legal/legal.html">Legal nonsense</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    <a href="/legal/privacy.html">Privacy policy</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://interchange-rtfm.pullingshots.ca/donations.html">Donations</a>
+	    <a href="/donations.html">Donations</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	    <a href="/contact.html">Contact us</a>
 	</td>
 
     </tr>

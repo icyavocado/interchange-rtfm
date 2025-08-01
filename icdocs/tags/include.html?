@@ -27,7 +27,7 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
-    <link rel="search" type="application/opensearchdescription+xml" href="http://interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="search" type="application/opensearchdescription+xml" href="/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
     <link rel="stylesheet" href="/decor/css/website.css">
     <link rel="stylesheet" href="/decor/css/wiki.css">
     <link rel="stylesheet" href="/decor/css/neo.css">
@@ -46,11 +46,11 @@
 <!-- START VAR: LOGOBAR -->
 <table id="rtfmheader" cellpadding="0" cellspacing="0">
     <tr>
-	<td><a href="http://interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+	<td><a href="/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
 
 	<td width="100%" style="text-align: right; padding: 10px">
 
-	    <form action="http://interchange-rtfm.pullingshots.ca/search.html" method="POST">
+	    <form action="/search.html" method="POST">
 		<input type="hidden" name="mv_session_id" value="nsession">
 		<input type="hidden" name="mv_profile" value="cms_search">
 		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
@@ -63,10 +63,10 @@
 <table id="breadcrumbs" cellpadding="0" cellspacing="0">
     <tr valign="top">
 	<td>
-	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
-	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
-	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
-	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a></span>
+	    <span class="nowrap">&gt; <a href="/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="/icdocs/category:Interchange_tags.html">Interchange tags</a></span>
 	    <span class="nowrap">&gt; <span class="current">include</span></span>
 	</td>
 
@@ -87,13 +87,13 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+		<li><a href="/index.html">Home</a></li>
+		<li><a href="/documentation.html">Documentation</a></li>
+		<li><a href="/downloads.html">Downloads</a></li>
+		<li><a href="/community.html">Mail lists and IRC</a></li>
+		<li><a href="/links.html">External websites</a></li>
+		<li><a href="/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="/account/usermap.html">User location map</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -116,16 +116,16 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Configuration_file_and_directive_syntax.html">Configuration file and directive syntax</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Creating_custom_Interchange_tags.html">Creating custom Interchange tags</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/DirConfig.html">DirConfig</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/file.html">file</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Interchange_tag_introduction.html">Interchange tag introduction</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Limit.html">Limit</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/NoAbsolute.html">NoAbsolute</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-include.html">PREFIX-include</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/TemplateDir.html">TemplateDir</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Universal_tag_attributes.html">Universal tag attributes</a></li>
+		<li><a href="/icdocs/Configuration_file_and_directive_syntax.html">Configuration file and directive syntax</a></li>
+		<li><a href="/icdocs/Creating_custom_Interchange_tags.html">Creating custom Interchange tags</a></li>
+		<li><a href="/icdocs/config/DirConfig.html">DirConfig</a></li>
+		<li><a href="/icdocs/tags/file.html">file</a></li>
+		<li><a href="/icdocs/Interchange_tag_introduction.html">Interchange tag introduction</a></li>
+		<li><a href="/icdocs/config/Limit.html">Limit</a></li>
+		<li><a href="/icdocs/config/NoAbsolute.html">NoAbsolute</a></li>
+		<li><a href="/icdocs/tags/PREFIX-include.html">PREFIX-include</a></li>
+		<li><a href="/icdocs/config/TemplateDir.html">TemplateDir</a></li>
+		<li><a href="/icdocs/Universal_tag_attributes.html">Universal tag attributes</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -149,9 +149,9 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+		<li><a href="/account/login.html">Log in</a></li>
+		<li><a href="/account/create.html">Create an account</a></li>
+		<li><a href="/account/reminder.html">Password reminder</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -164,7 +164,7 @@
 <!-- START COMPONENT: icpowered -->
 
 <div style="text-align: center; margin: 10px; margin-top: 0px">
-    <a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+    <a href="/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
 </div>
 
 
@@ -257,19 +257,19 @@ or similarly with positional parameters:
 <p>
 Reads the named file and returns its content to the caller.&nbsp;
 The file should normally be relative to the website's home directory,
-as set up using the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Catalog.html" title="Catalog (config)">Catalog</a></span> <em>global</em> configuration
+as set up using the <span class="fixedwidth"><a href="/icdocs/config/Catalog.html" title="Catalog (config)">Catalog</a></span> <em>global</em> configuration
 directive.&nbsp;
-If <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/TemplateDir.html" title="TemplateDir (config)">TemplateDir</a></span> directive is in use,
+If <span class="fixedwidth"><a href="/icdocs/config/TemplateDir.html" title="TemplateDir (config)">TemplateDir</a></span> directive is in use,
 and the file was not found relative to the website's home directory,
-then the directories in the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/templateDir.html" title="templateDir (config)">templateDir</a></span> list will
+then the directories in the <span class="fixedwidth"><a href="/icdocs/config/templateDir.html" title="templateDir (config)">templateDir</a></span> list will
 be tried.
 </p>
 <p>
-This tag <a href="http://interchange-rtfm.pullingshots.ca/icdocs/Universal_tag_attributes.html#interpolate" title="&quot;interpolate&quot; heading on the &quot;Universal tag attributes&quot; page">interpolates</a>
+This tag <a href="/icdocs/Universal_tag_attributes.html#interpolate" title="&quot;interpolate&quot; heading on the &quot;Universal tag attributes&quot; page">interpolates</a>
 any Interchange tags found in the named file,
 and returns the resulting text.&nbsp;
 If you want the file's content to be returned
-verbatim then use the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/file.html" title="file (tags)">file</a>]</span> tag instead.
+verbatim then use the <span class="fixedwidth">[<a href="/icdocs/tags/file.html" title="file (tags)">file</a>]</span> tag instead.
 </p>
 
 <table class="note">
@@ -282,7 +282,7 @@ verbatim then use the <span class="fixedwidth">[<a href="http://interchange-rtfm
 <p style="margin-bottom: 0px">
 File names beginning with &quot;<span class="fixedwidth">/</span>&quot; or &quot;<span class="fixedwidth">..</span>&quot; are not
 allowed if the Interchange server administrator has set the
-<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/NoAbsolute.html" title="NoAbsolute (config)">NoAbsolute</a></span> configuration directive to &quot;<span class="fixedwidth">Yes</span>&quot;.
+<span class="fixedwidth"><a href="/icdocs/config/NoAbsolute.html" title="NoAbsolute (config)">NoAbsolute</a></span> configuration directive to &quot;<span class="fixedwidth">Yes</span>&quot;.
 </p>
 </td>
 </tr>
@@ -297,10 +297,10 @@ allowed if the Interchange server administrator has set the
 <td width="100%">
 <p class="title">Warning</p>
 <p style="margin-bottom: 0px">
-If the file contains <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Looping_tags_and_sub-tags.html" title="Category - looping tags and sub-tags">Loop sub-tags</a>
+If the file contains <a href="/icdocs/category:Looping_tags_and_sub-tags.html" title="Category - looping tags and sub-tags">Loop sub-tags</a>
 then they will be output verbatim,
 and not parsed as you might have expected.&nbsp;
-Interchange 5.5.2 introduced a new <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-include.html" title="PREFIX-include (tags)">PREFIX-include</a>]</span>
+Interchange 5.5.2 introduced a new <span class="fixedwidth">[<a href="/icdocs/tags/PREFIX-include.html" title="PREFIX-include (tags)">PREFIX-include</a>]</span>
 loop sub-tag for this purpose.
 </p>
 </td>
@@ -318,7 +318,7 @@ loop sub-tag for this purpose.
 <p style="margin-bottom: 0px">
 Files can include other files.&nbsp;
 The maximum number of nested inclusions can
-be controlled by the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Limit.html" title="Limit (config)">Limit</a></span> directive's
+be controlled by the <span class="fixedwidth"><a href="/icdocs/config/Limit.html" title="Limit (config)">Limit</a></span> directive's
 &quot;<span class="fixedwidth">include_depth</span>&quot; setting.
 </p>
 </td>
@@ -341,8 +341,8 @@ Make use of locales when parsing the included file.
 Tries to use POSIX <span class="fixedwidth">setlocale()</span> along with the definitions
 of &quot;<span class="fixedwidth">decimal_point</span>&quot;,  &quot;<span class="fixedwidth">mon_thousands_sep</span>&quot; and
 &quot;<span class="fixedwidth">frac_digits</span>&quot; etc.,
-as declared using the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Locale.html" class="nopage" title="Locale (config)">Locale</a></span> and/or
-<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/LocaleDatabase.html" title="LocaleDatabase (config)">LocaleDatabase</a></span> <em>local</em> configuration
+as declared using the <span class="fixedwidth"><a href="/icdocs/config/Locale.html" class="nopage" title="Locale (config)">Locale</a></span> and/or
+<span class="fixedwidth"><a href="/icdocs/config/LocaleDatabase.html" title="LocaleDatabase (config)">LocaleDatabase</a></span> <em>local</em> configuration
 directives.
 </p>
 <p>
@@ -354,7 +354,7 @@ If this parameter is <em>false</em> then the value of the current locale's &quot
     <table class="pageinfo" cellpadding="0" cellspacing="0">
 	<tr>
 	    <td>
-Category:&nbsp; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a>
+Category:&nbsp; <a href="/icdocs/category:Interchange_tags.html">Interchange tags</a>
 	    </td>
 	</tr>
 
@@ -362,7 +362,7 @@ Category:&nbsp; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category
 	<tr>
 	    <td>
 		
-		Last modified by: <a href="http://interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin">Kevin Walsh</a><br>
+		Last modified by: <a href="/account/profile.html?user=kevin">Kevin Walsh</a><br>
 		Modification date: Wednesday 15 December 2010 at 2:11 AM (EST)
 	    </td>
 	</tr>
@@ -386,15 +386,15 @@ Category:&nbsp; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category
 <table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
     <tr>
 	<td>
-	    <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    <a href="/index.html">Home</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    <a href="/legal/legal.html">Legal nonsense</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    <a href="/legal/privacy.html">Privacy policy</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://interchange-rtfm.pullingshots.ca/donations.html">Donations</a>
+	    <a href="/donations.html">Donations</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	    <a href="/contact.html">Contact us</a>
 	</td>
 
     </tr>

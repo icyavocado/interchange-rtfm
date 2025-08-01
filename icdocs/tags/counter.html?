@@ -23,7 +23,7 @@
 
     <link rel="SHORTCUT ICON" href="/favicon.ico">
     <link rel="icon" href="/favicon.ico" type="image/ico">
-    <link rel="search" type="application/opensearchdescription+xml" href="http://www.interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="search" type="application/opensearchdescription+xml" href="/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
     <link rel="stylesheet" href="/decor/css/website.css">
     <link rel="stylesheet" href="/decor/css/wiki.css">
     <link rel="stylesheet" href="/decor/css/neo.css">
@@ -42,11 +42,11 @@
 <!-- START VAR: LOGOBAR -->
 <table id="rtfmheader" cellpadding="0" cellspacing="0">
     <tr>
-	<td><a href="http://www.interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+	<td><a href="/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
 
 	<td width="100%" style="text-align: right; padding: 10px">
 
-	    <form action="http://www.interchange-rtfm.pullingshots.ca/search.html" method="POST">
+	    <form action="/search.html" method="POST">
 		<input type="hidden" name="mv_session_id" value="nsession">
 		<input type="hidden" name="mv_profile" value="cms_search">
 		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
@@ -59,10 +59,10 @@
 <table id="breadcrumbs" cellpadding="0" cellspacing="0">
     <tr valign="top">
 	<td>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a></span>
+	    <span class="nowrap">&gt; <a href="/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="/icdocs/category:Interchange_tags.html">Interchange tags</a></span>
 	    <span class="nowrap">&gt; <span class="current">counter</span></span>
 	</td>
 
@@ -83,13 +83,13 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+		<li><a href="/index.html">Home</a></li>
+		<li><a href="/documentation.html">Documentation</a></li>
+		<li><a href="/downloads.html">Downloads</a></li>
+		<li><a href="/community.html">Mail lists and IRC</a></li>
+		<li><a href="/links.html">External websites</a></li>
+		<li><a href="/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="/account/usermap.html">User location map</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -107,7 +107,7 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/counter.html">counter</a></li>
+		<li><a href="/icdocs/tags/counter.html">counter</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -136,9 +136,9 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+		<li><a href="/account/login.html">Log in</a></li>
+		<li><a href="/account/create.html">Create an account</a></li>
+		<li><a href="/account/reminder.html">Password reminder</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -151,7 +151,7 @@
 <!-- START COMPONENT: icpowered -->
 
 <div style="text-align: center; margin: 10px; margin-top: 0px">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+    <a href="/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
 </div>
 
 
@@ -228,7 +228,7 @@ Manipulates a persistent counter, by default incrementing it and returning the n
 <td class="grid"><em>None</em></td>
 </tr>
 <tr valign="top">
-<td class="grid"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Universal_tag_attributes.html#hide" title="&quot;hide&quot; heading on the &quot;Universal tag attributes&quot; page">hide</a></td>
+<td class="grid"><a href="/icdocs/Universal_tag_attributes.html#hide" title="&quot;hide&quot; heading on the &quot;Universal tag attributes&quot; page">hide</a></td>
 <td class="grid"><p>
 Suppress any output text that would ordinarily be returned from this tag.&nbsp;
 (This universal parameter was introduced with Interchange version 5.5.2.)</td>
@@ -285,7 +285,7 @@ returning the new value.
 The counter value is stored in the specified file.&nbsp;
 If the file name begins with a &quot;<span class="fixedwidth">/</span>&quot; then it is an absolute path.&nbsp;
 Otherwise, it is relative to website's home directory,
-as specified using the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Catalog.html" title="Catalog (config)">Catalog</a></span> <em>global</em>
+as specified using the <span class="fixedwidth"><a href="/icdocs/config/Catalog.html" title="Catalog (config)">Catalog</a></span> <em>global</em>
 configuration directive.&nbsp;
 The default file is etc/counter.&nbsp;
 If the file does not exist, it is created and initialised to the value
@@ -318,9 +318,9 @@ the beginning start value.
 <td width="100%">
 <p class="title">Warning</p>
 <p>
-This tag may not work when called from within <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/perl.html" title="perl (tags)">embedded Perl</a>,
+This tag may not work when called from within <a href="/icdocs/tags/perl.html" title="perl (tags)">embedded Perl</a>,
 because of <p style="margin-bottom: 0px">
-<a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fsearch%2ecpan%2eorg%2f%7ergarcia%2fSafe%2d2%2e11%2fSafe%2epm" title="http://search.cpan.org/~rgarcia/Safe-2.11/Safe.pm" rel="nofollow">Safe</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page"> restrictions.
+<a href="/bouncer.html?target=http%3a%2f%2fsearch%2ecpan%2eorg%2f%7ergarcia%2fSafe%2d2%2e11%2fSafe%2epm" title="http://search.cpan.org/~rgarcia/Safe-2.11/Safe.pm" rel="nofollow">Safe</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page"> restrictions.
 </p>
 </td>
 </tr>
@@ -534,7 +534,7 @@ This parameter can have one of two values, as follows:
 
 <p>
 Either way,
-the counter will be formatted as &quot;<span class="fixedwidth">&#37;Y&#37;m&#37;d</span>&quot; (see the list of <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/time.html#Time_format_tokens" title="&quot;Time format tokens&quot; heading on the &quot;time (tags)&quot; page">time format tokens</a>),
+the counter will be formatted as &quot;<span class="fixedwidth">&#37;Y&#37;m&#37;d</span>&quot; (see the list of <a href="/icdocs/tags/time.html#Time_format_tokens" title="&quot;Time format tokens&quot; heading on the &quot;time (tags)&quot; page">time format tokens</a>),
 followed by a four-digit number.&nbsp;
 By default, the number starts counting from &quot;<span class="fixedwidth">0001</span>&quot;,
 but can be overridden with the use of the <span class="fixedwidth"><a href="#start" title="&quot;start&quot; heading on this page">start</a></span> parameter,
@@ -546,7 +546,7 @@ as usual.
     <table class="pageinfo" cellpadding="0" cellspacing="0">
 	<tr>
 	    <td>
-Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a>
+Category:&nbsp; <a href="/icdocs/category:Interchange_tags.html">Interchange tags</a>
 	    </td>
 	</tr>
 
@@ -554,7 +554,7 @@ Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/cate
 	<tr>
 	    <td>
 		
-		Last modified by: <a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin">Kevin Walsh</a><br>
+		Last modified by: <a href="/account/profile.html?user=kevin">Kevin Walsh</a><br>
 		Modification date: Monday 9 October 2006 at 6:51 AM (PDT)
 	    </td>
 	</tr>
@@ -578,13 +578,13 @@ Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/cate
 <table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
     <tr>
 	<td>
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    <a href="/index.html">Home</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    <a href="/legal/legal.html">Legal nonsense</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    <a href="/legal/privacy.html">Privacy policy</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	    <a href="/contact.html">Contact us</a>
 	</td>
 
     </tr>

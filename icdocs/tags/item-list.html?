@@ -27,7 +27,7 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
-    <link rel="search" type="application/opensearchdescription+xml" href="http://interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="search" type="application/opensearchdescription+xml" href="/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
     <link rel="stylesheet" href="/decor/css/website.css">
     <link rel="stylesheet" href="/decor/css/wiki.css">
     <link rel="stylesheet" href="/decor/css/neo.css">
@@ -46,11 +46,11 @@
 <!-- START VAR: LOGOBAR -->
 <table id="rtfmheader" cellpadding="0" cellspacing="0">
     <tr>
-	<td><a href="http://interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+	<td><a href="/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
 
 	<td width="100%" style="text-align: right; padding: 10px">
 
-	    <form action="http://interchange-rtfm.pullingshots.ca/search.html" method="POST">
+	    <form action="/search.html" method="POST">
 		<input type="hidden" name="mv_session_id" value="nsession">
 		<input type="hidden" name="mv_profile" value="cms_search">
 		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
@@ -63,10 +63,10 @@
 <table id="breadcrumbs" cellpadding="0" cellspacing="0">
     <tr valign="top">
 	<td>
-	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
-	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
-	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
-	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a></span>
+	    <span class="nowrap">&gt; <a href="/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="/icdocs/category:Interchange_tags.html">Interchange tags</a></span>
 	    <span class="nowrap">&gt; <span class="current">item-list</span></span>
 	</td>
 
@@ -87,13 +87,13 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+		<li><a href="/index.html">Home</a></li>
+		<li><a href="/documentation.html">Documentation</a></li>
+		<li><a href="/downloads.html">Downloads</a></li>
+		<li><a href="/community.html">Mail lists and IRC</a></li>
+		<li><a href="/links.html">External websites</a></li>
+		<li><a href="/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="/account/usermap.html">User location map</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -116,16 +116,16 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/accessories.html">accessories</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/How_to_set_up_an_on-the-fly_item.html">How to set up an on-the-fly item</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/if-PREFIX-modifier.html">if-PREFIX-modifier</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Interchange_tag_introduction.html">Interchange tag introduction</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Item_attributes.html">Item attributes</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/loop.html">loop</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Looping_tags_and_sub-tags.html">Looping tags and sub-tags</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Looping_tags_introduction.html">Looping tags introduction</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/more-list.html">more-list</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/links:tags/item-list.html">(18 pages in total)</a></li>
+		<li><a href="/icdocs/tags/accessories.html">accessories</a></li>
+		<li><a href="/icdocs/How_to_set_up_an_on-the-fly_item.html">How to set up an on-the-fly item</a></li>
+		<li><a href="/icdocs/tags/if-PREFIX-modifier.html">if-PREFIX-modifier</a></li>
+		<li><a href="/icdocs/Interchange_tag_introduction.html">Interchange tag introduction</a></li>
+		<li><a href="/icdocs/Item_attributes.html">Item attributes</a></li>
+		<li><a href="/icdocs/tags/loop.html">loop</a></li>
+		<li><a href="/icdocs/category:Looping_tags_and_sub-tags.html">Looping tags and sub-tags</a></li>
+		<li><a href="/icdocs/Looping_tags_introduction.html">Looping tags introduction</a></li>
+		<li><a href="/icdocs/tags/more-list.html">more-list</a></li>
+		<li><a href="/icdocs/links:tags/item-list.html">(18 pages in total)</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -149,9 +149,9 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+		<li><a href="/account/login.html">Log in</a></li>
+		<li><a href="/account/create.html">Create an account</a></li>
+		<li><a href="/account/reminder.html">Password reminder</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -164,7 +164,7 @@
 <!-- START COMPONENT: icpowered -->
 
 <div style="text-align: center; margin: 10px; margin-top: 0px">
-    <a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+    <a href="/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
 </div>
 
 
@@ -227,7 +227,7 @@ Get a list of all of the items that are in the visitor's shopping cart.
 <td class="grid"><em>None</em></td>
 </tr>
 <tr valign="top">
-<td class="grid"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Universal_tag_attributes.html#hide" title="&quot;hide&quot; heading on the &quot;Universal tag attributes&quot; page">hide</a></td>
+<td class="grid"><a href="/icdocs/Universal_tag_attributes.html#hide" title="&quot;hide&quot; heading on the &quot;Universal tag attributes&quot; page">hide</a></td>
 <td class="grid"><p>
 Suppress any output text that would ordinarily be returned from this tag.&nbsp;
 (This universal parameter was introduced with Interchange version 5.5.2.)</td>
@@ -235,14 +235,14 @@ Suppress any output text that would ordinarily be returned from this tag.&nbsp;
 </td>
 </tr>
 <tr valign="top">
-<td class="grid"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Universal_tag_attributes.html#interpolate" title="&quot;interpolate&quot; heading on the &quot;Universal tag attributes&quot; page">interpolate</a></td>
+<td class="grid"><a href="/icdocs/Universal_tag_attributes.html#interpolate" title="&quot;interpolate&quot; heading on the &quot;Universal tag attributes&quot; page">interpolate</a></td>
 <td class="grid"><p>
 Parse Interchange tags, included in the body text, before this container tag executes.</td>
 <td class="grid">No
 </td>
 </tr>
 <tr valign="top">
-<td class="grid"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Universal_tag_attributes.html#reparse" title="&quot;reparse&quot; heading on the &quot;Universal tag attributes&quot; page">reparse</a></td>
+<td class="grid"><a href="/icdocs/Universal_tag_attributes.html#reparse" title="&quot;reparse&quot; heading on the &quot;Universal tag attributes&quot; page">reparse</a></td>
 <td class="grid"><p>
 Process any Interchange tags found in the text output from this tag.</td>
 <td class="grid">No
@@ -264,7 +264,7 @@ The following parameters are also available to this tag:
 </tr>
 <tr valign="top">
 <td class="grid"><a href="#form" title="&quot;form&quot; heading on this page">form</a></td>
-<td class="grid">Arguments for use in <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/more-list.html" title="more-list (tags)">more-list</a>]</span> URIs.</td>
+<td class="grid">Arguments for use in <span class="fixedwidth">[<a href="/icdocs/tags/more-list.html" title="more-list (tags)">more-list</a>]</span> URIs.</td>
 <td class="grid"><em>None</em></td>
 </tr>
 <tr valign="top">
@@ -274,12 +274,12 @@ The following parameters are also available to this tag:
 </tr>
 <tr valign="top">
 <td class="grid"><a href="#more_template" title="&quot;more template&quot; heading on this page">more_template</a></td>
-<td class="grid">Override the default <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/more-list.html" title="more-list (tags)">more-list</a>]</span> display template.</td>
+<td class="grid">Override the default <span class="fixedwidth">[<a href="/icdocs/tags/more-list.html" title="more-list (tags)">more-list</a>]</span> display template.</td>
 <td class="grid">&nbsp;</td>
 </tr>
 <tr valign="top">
 <td class="grid"><a href="#prefix" title="&quot;prefix&quot; heading on this page">prefix</a></td>
-<td class="grid">Override the &quot;PREFIX&quot; used by the various <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Looping_tags_and_sub-tags.html" title="Category - looping tags and sub-tags">PREFIX-*</a>]</span> sub-tags.</td>
+<td class="grid">Override the &quot;PREFIX&quot; used by the various <span class="fixedwidth">[<a href="/icdocs/category:Looping_tags_and_sub-tags.html" title="Category - looping tags and sub-tags">PREFIX-*</a>]</span> sub-tags.</td>
 <td class="grid"><span class="fixedwidth">item</span></td>
 </tr>
 <tr valign="top">
@@ -290,7 +290,7 @@ The following parameters are also available to this tag:
 </tr>
 </table>
 <p>
-See the <a href="http://interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html" title="Search parameters">search parameters</a> page for more parameters.&nbsp;
+See the <a href="/icdocs/Search_parameters.html" title="Search parameters">search parameters</a> page for more parameters.&nbsp;
 Note that you must use the two-character short code,
 rather than the full name,
 with parameters listed on that page.&nbsp;
@@ -307,27 +307,27 @@ this context:
 </th>
 </tr>
 <tr valign="top">
-<td class="grid"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_first_match_fm" title="&quot;mv first match fm&quot; heading on the &quot;Search parameters&quot; page">fm</a></td>
+<td class="grid"><a href="/icdocs/Search_parameters.html#mv_first_match_fm" title="&quot;mv first match fm&quot; heading on the &quot;Search parameters&quot; page">fm</a></td>
 <td class="grid">Return results starting from the specified row number.</td>
 <td class="grid"><span class="fixedwidth">0</span></td>
 </tr>
 <tr valign="top">
-<td class="grid"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_matchlimit_ml" title="&quot;mv matchlimit ml&quot; heading on the &quot;Search parameters&quot; page">ml</a></td>
+<td class="grid"><a href="/icdocs/Search_parameters.html#mv_matchlimit_ml" title="&quot;mv matchlimit ml&quot; heading on the &quot;Search parameters&quot; page">ml</a></td>
 <td class="grid">Number of results to display on each page.</td>
 <td class="grid"><span class="fixedwidth">50</span></td>
 </tr>
 <tr valign="top">
-<td class="grid"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_max_matches_mm" title="&quot;mv max matches mm&quot; heading on the &quot;Search parameters&quot; page">mm</a></td>
+<td class="grid"><a href="/icdocs/Search_parameters.html#mv_max_matches_mm" title="&quot;mv max matches mm&quot; heading on the &quot;Search parameters&quot; page">mm</a></td>
 <td class="grid">Maximum number of results to display.</td>
 <td class="grid"><em>None</em></td>
 </tr>
 <tr valign="top">
-<td class="grid"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_search_page_sp" title="&quot;mv search page sp&quot; heading on the &quot;Search parameters&quot; page">sp</a></td>
+<td class="grid"><a href="/icdocs/Search_parameters.html#mv_search_page_sp" title="&quot;mv search page sp&quot; heading on the &quot;Search parameters&quot; page">sp</a></td>
 <td class="grid">Page that should be used to display the results.</td>
 <td class="grid"><span class="fixedwidth">results</span></td>
 </tr>
 <tr valign="top">
-<td class="grid"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_searchtype_st" title="&quot;mv searchtype st&quot; heading on the &quot;Search parameters&quot; page">st</a></td>
+<td class="grid"><a href="/icdocs/Search_parameters.html#mv_searchtype_st" title="&quot;mv searchtype st&quot; heading on the &quot;Search parameters&quot; page">st</a></td>
 <td class="grid">Set to &quot;<span class="fixedwidth">db</span>&quot; for a database search or &quot;<span class="fixedwidth">text</span>&quot; for a text file search.</td>
 <td class="grid"><em>None</em></td>
 </tr>
@@ -370,15 +370,15 @@ This tag is usually used to format basket display pages and mini-basket
 components.
 </p>
 <p>
-You may use any of the <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Looping_tags_and_sub-tags.html" title="Category - looping tags and sub-tags">loop sub-tags</a>
+You may use any of the <a href="/icdocs/category:Looping_tags_and_sub-tags.html" title="Category - looping tags and sub-tags">loop sub-tags</a>
 in this container tag's body text.&nbsp;
-The default <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Looping_tags_introduction.html#PREFIX" title="&quot;PREFIX&quot; heading on the &quot;Looping tags introduction&quot; page">PREFIX</a></span> for this
+The default <span class="fixedwidth"><a href="/icdocs/Looping_tags_introduction.html#PREFIX" title="&quot;PREFIX&quot; heading on the &quot;Looping tags introduction&quot; page">PREFIX</a></span> for this
 container tag is &quot;<span class="fixedwidth">item</span>&quot;.
 </p>
 <p>
 The order in which the cart items are displayed can be influenced by
 either the <span class="fixedwidth"><a href="#reverse" title="&quot;reverse&quot; heading on this page">reverse</a></span> or the <span class="fixedwidth"><a href="#sort" title="&quot;sort&quot; heading on this page">sort</a></span> parameter,
-or by using the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/Looping_tags_introduction.html#Sorting_the_resultset" title="&quot;Sorting the resultset&quot; heading on the &quot;Looping tags introduction&quot; page">sort</a>]</span>
+or by using the <span class="fixedwidth">[<a href="/icdocs/Looping_tags_introduction.html#Sorting_the_resultset" title="&quot;Sorting the resultset&quot; heading on the &quot;Looping tags introduction&quot; page">sort</a>]</span>
 pseudo-tag.
 </p>
 <a name="Parameters"></a>
@@ -403,13 +403,13 @@ top of the display.
 <p>
 The cart items can be sorted into a specific order using this parameter.&nbsp;
 This parameter expects sort options to be specified in a specific
-manner, <a href="http://interchange-rtfm.pullingshots.ca/icdocs/Looping_tags_introduction.html#Sort_options" title="&quot;Sort options&quot; heading on the &quot;Looping tags introduction&quot; page">as explained here</a>.
+manner, <a href="/icdocs/Looping_tags_introduction.html#Sort_options" title="&quot;Sort options&quot; heading on the &quot;Looping tags introduction&quot; page">as explained here</a>.
 </p>
 <a name="form"></a>
 <h3>form</h3>
 <p>
 You can use this to pass one or more form variables in the pagination links
-of a <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/more-list.html" title="more-list (tags)">more-list</a>]</span>.&nbsp;
+of a <span class="fixedwidth">[<a href="/icdocs/tags/more-list.html" title="more-list (tags)">more-list</a>]</span>.&nbsp;
 For example, use <span class="fixedwidth">form=&quot;foo=bar&quot;</span> to include &quot;<span class="fixedwidth">foo=bar</span>&quot;,
 as a URI argument in each of the pagination links.
 </p>
@@ -424,7 +424,7 @@ as a URI argument in each of the pagination links.
 <p style="margin-bottom: 0px">
 Form variables,
 specified using this parameter,
-will not be available to the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/cgi.html" title="cgi (tags)">cgi</a>]</span> tag in
+will not be available to the <span class="fixedwidth">[<a href="/icdocs/tags/cgi.html" title="cgi (tags)">cgi</a>]</span> tag in
 the initial result set.&nbsp;
 This is because the query returns the first page directly and
 no pagination link will have been followed.
@@ -446,14 +446,14 @@ Most people will not need this.
 <h3>more_template</h3>
 <p>
 Override the default
-<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/more-list.html#Display_template" title="&quot;Display template&quot; heading on the &quot;more-list (tags)&quot; page">display template</a> value,
-used by the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/more-list.html" title="more-list (tags)">more-list</a>]</span> sub-tag.
+<a href="/icdocs/tags/more-list.html#Display_template" title="&quot;Display template&quot; heading on the &quot;more-list (tags)&quot; page">display template</a> value,
+used by the <span class="fixedwidth">[<a href="/icdocs/tags/more-list.html" title="more-list (tags)">more-list</a>]</span> sub-tag.
 </p>
 <a name="prefix"></a>
 <h3>prefix</h3>
 <p>
 Setting &quot;<span class="fixedwidth">prefix=foo</span>&quot; overrides the &quot;PREFIX&quot; used by the various
-<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Looping_tags_and_sub-tags.html" title="Category - looping tags and sub-tags">PREFIX-*</a>]</span> sub-tags,
+<span class="fixedwidth">[<a href="/icdocs/category:Looping_tags_and_sub-tags.html" title="Category - looping tags and sub-tags">PREFIX-*</a>]</span> sub-tags,
 and also by the <span class="fixedwidth">[<a href="#PREFIX-quote" title="&quot;PREFIX-quote&quot; heading on this page">PREFIX-quote</a>]</span> container.
 </p>
 <p>
@@ -463,8 +463,8 @@ The default &quot;<span class="fixedwidth">prefix</span>&quot; is &quot;<span cl
 <h3>safe_data</h3>
 <p>
 Setting &quot;<span class="fixedwidth">safe_data=1</span>&quot; allows the
-<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-data.html" title="PREFIX-data (tags)">sql-data</a>]</span> and
-<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-param.html" title="PREFIX-param (tags)">sql-param</a>]</span> sub-tag (etc.) to
+<span class="fixedwidth">[<a href="/icdocs/tags/PREFIX-data.html" title="PREFIX-data (tags)">sql-data</a>]</span> and
+<span class="fixedwidth">[<a href="/icdocs/tags/PREFIX-param.html" title="PREFIX-param (tags)">sql-param</a>]</span> sub-tag (etc.) to
 return values containing the &quot;<span class="fixedwidth">&#91;</span>&quot; character.
 </p>
 
@@ -488,8 +488,8 @@ and you know what you're doing.
 <h2>See also</h2>
 <p>
 <ul>
-<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Looping_tags_introduction.html" title="Looping tags introduction">Looping tags introduction</a></li>
-<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Looping_tags_and_sub-tags.html" title="Category - looping tags and sub-tags">Looping tags and sub-tags</a></li>
+<li><a href="/icdocs/Looping_tags_introduction.html" title="Looping tags introduction">Looping tags introduction</a></li>
+<li><a href="/icdocs/category:Looping_tags_and_sub-tags.html" title="Category - looping tags and sub-tags">Looping tags and sub-tags</a></li>
 </ul>
 </div>
 
@@ -498,7 +498,7 @@ and you know what you're doing.
     <table class="pageinfo" cellpadding="0" cellspacing="0">
 	<tr>
 	    <td>
-Category:&nbsp; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a>
+Category:&nbsp; <a href="/icdocs/category:Interchange_tags.html">Interchange tags</a>
 	    </td>
 	</tr>
 
@@ -506,7 +506,7 @@ Category:&nbsp; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category
 	<tr>
 	    <td>
 		
-		Last modified by: <a href="http://interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin">Kevin Walsh</a><br>
+		Last modified by: <a href="/account/profile.html?user=kevin">Kevin Walsh</a><br>
 		Modification date: Saturday 3 March 2007 at 9:48 AM (GMT)
 	    </td>
 	</tr>
@@ -530,15 +530,15 @@ Category:&nbsp; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category
 <table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
     <tr>
 	<td>
-	    <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    <a href="/index.html">Home</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    <a href="/legal/legal.html">Legal nonsense</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    <a href="/legal/privacy.html">Privacy policy</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://interchange-rtfm.pullingshots.ca/donations.html">Donations</a>
+	    <a href="/donations.html">Donations</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	    <a href="/contact.html">Contact us</a>
 	</td>
 
     </tr>

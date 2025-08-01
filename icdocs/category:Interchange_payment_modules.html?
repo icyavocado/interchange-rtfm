@@ -23,7 +23,7 @@
 
     <link rel="SHORTCUT ICON" href="/favicon.ico">
     <link rel="icon" href="/favicon.ico" type="image/ico">
-    <link rel="search" type="application/opensearchdescription+xml" href="http://www.interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="search" type="application/opensearchdescription+xml" href="/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
     <link rel="stylesheet" href="/decor/css/website.css">
     <link rel="stylesheet" href="/decor/css/wiki.css">
     <link rel="stylesheet" href="/decor/css/neo.css">
@@ -42,11 +42,11 @@
 <!-- START VAR: LOGOBAR -->
 <table id="rtfmheader" cellpadding="0" cellspacing="0">
     <tr>
-	<td><a href="http://www.interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+	<td><a href="/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
 
 	<td width="100%" style="text-align: right; padding: 10px">
 
-	    <form action="http://www.interchange-rtfm.pullingshots.ca/search.html" method="POST">
+	    <form action="/search.html" method="POST">
 		<input type="hidden" name="mv_session_id" value="nsession">
 		<input type="hidden" name="mv_profile" value="cms_search">
 		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
@@ -59,9 +59,9 @@
 <table id="breadcrumbs" cellpadding="0" cellspacing="0">
     <tr valign="top">
 	<td>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="/icdocs/index.html">Latest documentation</a></span>
 	    <span class="nowrap">&gt; <span class="current">Interchange payment modules</span></span>
 	</td>
 
@@ -82,13 +82,13 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+		<li><a href="/index.html">Home</a></li>
+		<li><a href="/documentation.html">Documentation</a></li>
+		<li><a href="/downloads.html">Downloads</a></li>
+		<li><a href="/community.html">Mail lists and IRC</a></li>
+		<li><a href="/links.html">External websites</a></li>
+		<li><a href="/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="/account/usermap.html">User location map</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -106,7 +106,7 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_payment_modules.html">Interchange payment modules</a></li>
+		<li><a href="/icdocs/category:Interchange_payment_modules.html">Interchange payment modules</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -123,7 +123,7 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Route.html">Route</a></li>
+		<li><a href="/icdocs/config/Route.html">Route</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -147,9 +147,9 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+		<li><a href="/account/login.html">Log in</a></li>
+		<li><a href="/account/create.html">Create an account</a></li>
+		<li><a href="/account/reminder.html">Password reminder</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -162,7 +162,7 @@
 <!-- START COMPONENT: icpowered -->
 
 <div style="text-align: center; margin: 10px; margin-top: 0px">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+    <a href="/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
 </div>
 
 
@@ -184,7 +184,7 @@
 This category contains all of the locally-held Interchange
 <span class="fixedwidth">Vend::Payment</span> module document.&nbsp;
 The actual modules are avalable for download on the
-<a href="http://www.interchange-rtfm.pullingshots.ca/downloads/payments.html" title="payments (downloads) (RTFM website)">payment module download</a> page.
+<a href="/downloads/payments.html" title="payments (downloads) (RTFM website)">payment module download</a> page.
 </p>
 <a name="Pages_in_the_Interchange_payment_modules_category"></a>
 <h2>Pages in the &quot;Interchange payment modules&quot; category</h2>
@@ -193,33 +193,33 @@ The actual modules are avalable for download on the
 <tr valign="top">
 <td width="50%">
 <ul>
-<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/payments/AuthorizeNet.html" title="AuthorizeNet (payments)">AuthorizeNet</a></li>
-<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/payments/BoA.html" title="BoA (payments)">BoA</a></li>
-<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/payments/BusinessOnlinePayment.html" title="BusinessOnlinePayment (payments)">BusinessOnlinePayment</a></li>
-<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/payments/ECHO.html" title="ECHO (payments)">ECHO</a></li>
-<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/payments/EFSNet.html" title="EFSNet (payments)">EFSNet</a></li>
-<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/payments/Ezic.html" title="Ezic (payments)">Ezic</a></li>
-<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/payments/ICS.html" title="ICS (payments)">ICS</a></li>
-<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/payments/ICS2.html" title="ICS2 (payments)">ICS2</a></li>
-<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/payments/iTransact.html" title="iTransact (payments)">iTransact</a></li>
-<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/payments/Linkpoint.html" title="Linkpoint (payments)">Linkpoint</a></li>
-<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/payments/MCVE.html" title="MCVE (payments)">MCVE</a></li>
-<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/payments/NetBilling.html" title="NetBilling (payments)">NetBilling</a></li>
+<li><a href="/icdocs/payments/AuthorizeNet.html" title="AuthorizeNet (payments)">AuthorizeNet</a></li>
+<li><a href="/icdocs/payments/BoA.html" title="BoA (payments)">BoA</a></li>
+<li><a href="/icdocs/payments/BusinessOnlinePayment.html" title="BusinessOnlinePayment (payments)">BusinessOnlinePayment</a></li>
+<li><a href="/icdocs/payments/ECHO.html" title="ECHO (payments)">ECHO</a></li>
+<li><a href="/icdocs/payments/EFSNet.html" title="EFSNet (payments)">EFSNet</a></li>
+<li><a href="/icdocs/payments/Ezic.html" title="Ezic (payments)">Ezic</a></li>
+<li><a href="/icdocs/payments/ICS.html" title="ICS (payments)">ICS</a></li>
+<li><a href="/icdocs/payments/ICS2.html" title="ICS2 (payments)">ICS2</a></li>
+<li><a href="/icdocs/payments/iTransact.html" title="iTransact (payments)">iTransact</a></li>
+<li><a href="/icdocs/payments/Linkpoint.html" title="Linkpoint (payments)">Linkpoint</a></li>
+<li><a href="/icdocs/payments/MCVE.html" title="MCVE (payments)">MCVE</a></li>
+<li><a href="/icdocs/payments/NetBilling.html" title="NetBilling (payments)">NetBilling</a></li>
 </ul>
 </td>
 <td width="50%">
 <ul>
-<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/payments/PaypalExpress.html" title="PaypalExpress (payments)">PaypalExpress</a></li>
-<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/payments/PaypalPro.html" title="PaypalPro (payments)">PaypalPro</a></li>
-<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/payments/PRI.html" title="PRI (payments)">PRI</a></li>
-<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/payments/ProcessNet.html" title="ProcessNet (payments)">ProcessNet</a></li>
-<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/payments/ProxyPay.html" title="ProxyPay (payments)">ProxyPay</a></li>
-<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/payments/PsiGate.html" title="PsiGate (payments)">PsiGate</a></li>
-<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/payments/Signio.html" title="Signio (payments)">Signio</a></li>
-<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/payments/Skipjack.html" title="Skipjack (payments)">Skipjack</a></li>
-<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/payments/TCLink.html" title="TCLink (payments)">TCLink</a></li>
-<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/payments/TestPayment.html" title="TestPayment (payments)">TestPayment</a></li>
-<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/payments/WellsFargo.html" title="WellsFargo (payments)">WellsFargo</a>&nbsp; (Old)</li>
+<li><a href="/icdocs/payments/PaypalExpress.html" title="PaypalExpress (payments)">PaypalExpress</a></li>
+<li><a href="/icdocs/payments/PaypalPro.html" title="PaypalPro (payments)">PaypalPro</a></li>
+<li><a href="/icdocs/payments/PRI.html" title="PRI (payments)">PRI</a></li>
+<li><a href="/icdocs/payments/ProcessNet.html" title="ProcessNet (payments)">ProcessNet</a></li>
+<li><a href="/icdocs/payments/ProxyPay.html" title="ProxyPay (payments)">ProxyPay</a></li>
+<li><a href="/icdocs/payments/PsiGate.html" title="PsiGate (payments)">PsiGate</a></li>
+<li><a href="/icdocs/payments/Signio.html" title="Signio (payments)">Signio</a></li>
+<li><a href="/icdocs/payments/Skipjack.html" title="Skipjack (payments)">Skipjack</a></li>
+<li><a href="/icdocs/payments/TCLink.html" title="TCLink (payments)">TCLink</a></li>
+<li><a href="/icdocs/payments/TestPayment.html" title="TestPayment (payments)">TestPayment</a></li>
+<li><a href="/icdocs/payments/WellsFargo.html" title="WellsFargo (payments)">WellsFargo</a>&nbsp; (Old)</li>
 </ul>
 </td>
 </tr>
@@ -237,7 +237,7 @@ The actual modules are avalable for download on the
 	<tr>
 	    <td>
 		
-		Last modified by: <a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin">Kevin Walsh</a><br>
+		Last modified by: <a href="/account/profile.html?user=kevin">Kevin Walsh</a><br>
 		Modification date: Tuesday 18 July 2006 at 2:58 PM (PDT)
 	    </td>
 	</tr>
@@ -262,13 +262,13 @@ The actual modules are avalable for download on the
 <table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
     <tr>
 	<td>
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    <a href="/index.html">Home</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    <a href="/legal/legal.html">Legal nonsense</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    <a href="/legal/privacy.html">Privacy policy</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	    <a href="/contact.html">Contact us</a>
 	</td>
 
     </tr>

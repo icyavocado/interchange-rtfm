@@ -28,7 +28,7 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
-    <link rel="search" type="application/opensearchdescription+xml" href="http://www.interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="search" type="application/opensearchdescription+xml" href="/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
     <link rel="stylesheet" href="/decor/css/website.css">
     <link rel="stylesheet" href="/decor/css/wiki.css">
     <link rel="stylesheet" href="/decor/css/neo.css">
@@ -47,11 +47,11 @@
 <!-- START VAR: LOGOBAR -->
 <table id="rtfmheader" cellpadding="0" cellspacing="0">
     <tr>
-	<td><a href="http://www.interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+	<td><a href="/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
 
 	<td width="100%" style="text-align: right; padding: 10px">
 
-	    <form action="http://www.interchange-rtfm.pullingshots.ca/search.html" method="POST">
+	    <form action="/search.html" method="POST">
 		<input type="hidden" name="mv_session_id" value="nsession">
 		<input type="hidden" name="mv_profile" value="cms_search">
 		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
@@ -64,10 +64,10 @@
 <table id="breadcrumbs" cellpadding="0" cellspacing="0">
     <tr valign="top">
 	<td>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_database.html">Interchange database</a></span>
+	    <span class="nowrap">&gt; <a href="/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="/icdocs/category:Interchange_database.html">Interchange database</a></span>
 	    <span class="nowrap">&gt; <span class="current">Interchange search engine</span></span>
 	</td>
 
@@ -88,13 +88,13 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+		<li><a href="/index.html">Home</a></li>
+		<li><a href="/documentation.html">Documentation</a></li>
+		<li><a href="/downloads.html">Downloads</a></li>
+		<li><a href="/community.html">Mail lists and IRC</a></li>
+		<li><a href="/links.html">External websites</a></li>
+		<li><a href="/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="/account/usermap.html">User location map</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -112,7 +112,7 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Interchange_search_engine.html">Interchange search engine</a></li>
+		<li><a href="/icdocs/Interchange_search_engine.html">Interchange search engine</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -129,12 +129,12 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/area.html">area</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Interchange_tag_introduction.html">Interchange tag introduction</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/loop.html">loop</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/more-list.html">more-list</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html">Search parameters</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/SearchProfile.html">SearchProfile</a></li>
+		<li><a href="/icdocs/tags/area.html">area</a></li>
+		<li><a href="/icdocs/Interchange_tag_introduction.html">Interchange tag introduction</a></li>
+		<li><a href="/icdocs/tags/loop.html">loop</a></li>
+		<li><a href="/icdocs/tags/more-list.html">more-list</a></li>
+		<li><a href="/icdocs/Search_parameters.html">Search parameters</a></li>
+		<li><a href="/icdocs/config/SearchProfile.html">SearchProfile</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -158,9 +158,9 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+		<li><a href="/account/login.html">Log in</a></li>
+		<li><a href="/account/create.html">Create an account</a></li>
+		<li><a href="/account/reminder.html">Password reminder</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -173,7 +173,7 @@
 <!-- START COMPONENT: icpowered -->
 
 <div style="text-align: center; margin: 10px; margin-top: 0px">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+    <a href="/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
 </div>
 
 
@@ -219,10 +219,10 @@
 <h2>Introduction</h2>
 <p>
 Interchange implements a search engine which will search the
-<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span>, or any other table, for items based
+<span class="fixedwidth"><a href="/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span>, or any other table, for items based
 upon user input.&nbsp;
 It uses either forms or link-based searches which are invoked using the
-&quot;<span class="fixedwidth">scan</span>&quot; <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/ActionMap.html" title="ActionMap (config)">ActionMap</a></span>.&nbsp;
+&quot;<span class="fixedwidth">scan</span>&quot; <span class="fixedwidth"><a href="/icdocs/config/ActionMap.html" title="ActionMap (config)">ActionMap</a></span>.&nbsp;
 The search engine provides several Interchange tags and makes use of
 many variables.
 </p>
@@ -230,16 +230,16 @@ many variables.
 If the search is implemented in a link or in a form,
 it will always display formatted results on a separate results page,
 which is an Interchange page that uses some combination of the
-<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/search-region.html" title="search-region (tags)">search-region</a>]</span> tag, along with the
-<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/search-region.html" title="search-region (tags)">search-list</a>]</span>,
-<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/more-list.html" title="more-list (tags)">more-list</a>]</span>,
-<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/more-list.html#more" title="&quot;more&quot; heading on the &quot;more-list (tags)&quot; page">more</a>]</span> and other sub-tags,
+<span class="fixedwidth">[<a href="/icdocs/tags/search-region.html" title="search-region (tags)">search-region</a>]</span> tag, along with the
+<span class="fixedwidth">[<a href="/icdocs/tags/search-region.html" title="search-region (tags)">search-list</a>]</span>,
+<span class="fixedwidth">[<a href="/icdocs/tags/more-list.html" title="more-list (tags)">more-list</a>]</span>,
+<span class="fixedwidth">[<a href="/icdocs/tags/more-list.html#more" title="&quot;more&quot; heading on the &quot;more-list (tags)&quot; page">more</a>]</span> and other sub-tags,
 to format and display the results.
 </p>
 <p>
 A full list of <a href="#One-click_searches" title="&quot;One-click searches&quot; heading on this page">one-click search</a> variables,
 and their two-letter abbreviations, can be found on the
-<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html" title="Search parameters">Search parameters</a> page.
+<a href="/icdocs/Search_parameters.html" title="Search parameters">Search parameters</a> page.
 </p>
 <a name="The_search_form"></a>
 <h2>The search form</h2>
@@ -269,8 +269,8 @@ Here is a simple search form:
 <!-- end of code block -->
 <p>
 When the &quot;Search&quot; button is pressed, Interchange will search the
-<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table(s) for the string entered into the
-&quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_searchspec_se" title="&quot;mv searchspec se&quot; heading on the &quot;Search parameters&quot; page">mv_searchspec</a></span>&quot; text field,
+<span class="fixedwidth"><a href="/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table(s) for the string entered into the
+&quot;<span class="fixedwidth"><a href="/icdocs/Search_parameters.html#mv_searchspec_se" title="&quot;mv searchspec se&quot; heading on the &quot;Search parameters&quot; page">mv_searchspec</a></span>&quot; text field,
 and will make the results available
 for display on a <em>results</em> page.
 </p>
@@ -363,8 +363,8 @@ be searched.
 Interchange can perform a complete range of tests on individual columns in
 the target table.&nbsp;
 To use this function,
-set &quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_coordinate_co" title="&quot;mv coordinate co&quot; heading on the &quot;Search parameters&quot; page">mv_coordinate</a></span>&quot; to
-&quot;<span class="fixedwidth">Yes</span>&quot; (or &quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_coordinate_co" title="&quot;mv coordinate co&quot; heading on the &quot;Search parameters&quot; page">co</a>=yes</span>&quot; in the <em>one-click</em> syntax).&nbsp;
+set &quot;<span class="fixedwidth"><a href="/icdocs/Search_parameters.html#mv_coordinate_co" title="&quot;mv coordinate co&quot; heading on the &quot;Search parameters&quot; page">mv_coordinate</a></span>&quot; to
+&quot;<span class="fixedwidth">Yes</span>&quot; (or &quot;<span class="fixedwidth"><a href="/icdocs/Search_parameters.html#mv_coordinate_co" title="&quot;mv coordinate co&quot; heading on the &quot;Search parameters&quot; page">co</a>=yes</span>&quot; in the <em>one-click</em> syntax).&nbsp;
 In order to use <em>coordinated</em> searching,
 the number of search fields must equal the number of search strings.
 </p>
@@ -407,7 +407,7 @@ for convenience.
 </p>
 <p>
 Coordinated searches may be joined with the output of another table if
-one of the &quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_search_field_sf" title="&quot;mv search field sf&quot; heading on the &quot;Search parameters&quot; page">mv_search_field</a></span>&quot; values is set to a &quot;<span class="fixedwidth">table:column</span>&quot; pair.
+one of the &quot;<span class="fixedwidth"><a href="/icdocs/Search_parameters.html#mv_search_field_sf" title="&quot;mv search field sf&quot; heading on the &quot;Search parameters&quot; page">mv_search_field</a></span>&quot; values is set to a &quot;<span class="fixedwidth">table:column</span>&quot; pair.
 </p>
 
 <table class="note">
@@ -427,7 +427,7 @@ of the primary table.
 If there is a search field that qualifies for a regular expression search
 function,
 or you are conducting a binary search with
-<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_dict_look_dl" title="&quot;mv dict look dl&quot; heading on the &quot;Search parameters&quot; page">mv_dict_look</a></span>,
+<span class="fixedwidth"><a href="/icdocs/Search_parameters.html#mv_dict_look_dl" title="&quot;mv dict look dl&quot; heading on the &quot;Search parameters&quot; page">mv_dict_look</a></span>,
 or are not doing an <em>or search</em>,
 the penalty should not be too great,
 as only matching rows will trigger a table lookup.
@@ -438,7 +438,7 @@ as only matching rows will trigger a table lookup.
 
 <p>
 Individual column operations can be specified with the
-&quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_column_op_op" title="&quot;mv column op op&quot; heading on the &quot;Search parameters&quot; page">mv_column_op</a></span>&quot; (aka &quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_column_op_op" title="&quot;mv column op op&quot; heading on the &quot;Search parameters&quot; page">op</a></span>&quot;) parameter.&nbsp;
+&quot;<span class="fixedwidth"><a href="/icdocs/Search_parameters.html#mv_column_op_op" title="&quot;mv column op op&quot; heading on the &quot;Search parameters&quot; page">mv_column_op</a></span>&quot; (aka &quot;<span class="fixedwidth"><a href="/icdocs/Search_parameters.html#mv_column_op_op" title="&quot;mv column op op&quot; heading on the &quot;Search parameters&quot; page">op</a></span>&quot;) parameter.&nbsp;
 The operations include the following:
 </p>
 <table class="border">
@@ -532,7 +532,7 @@ The operations include the following:
 <p>
 The special &quot;<span class="fixedwidth">aq</span>&quot; and &quot;<span class="fixedwidth">tq</span>&quot; query operators only work if the
 <p>
-<a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fsearch%2ecpan%2eorg%2f%7eebohlman%2fText%2dQuery%2d0%2e07%2flib%2fText%2fQuery%2epm" title="http://search.cpan.org/~ebohlman/Text-Query-0.07/lib/Text/Query.pm" rel="nofollow">Text::Query</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page"> Perl module is installed.&nbsp;
+<a href="/bouncer.html?target=http%3a%2f%2fsearch%2ecpan%2eorg%2f%7eebohlman%2fText%2dQuery%2d0%2e07%2flib%2fText%2fQuery%2epm" title="http://search.cpan.org/~ebohlman/Text-Query-0.07/lib/Text/Query.pm" rel="nofollow">Text::Query</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page"> Perl module is installed.&nbsp;
 This allows <em>Altavista</em>-style searches on columns, using &quot;<span class="fixedwidth">AND</span>&quot;,
 &quot;<span class="fixedwidth">OR</span>&quot;, &quot;<span class="fixedwidth">NOT</span>&quot; and &quot;<span class="fixedwidth">NEAR</span>&quot;, with arbitrarily complex
 parentheses.
@@ -568,9 +568,9 @@ could be written as follows:
 </div>
 <!-- end of code block -->
 <p>
-This searches the &quot;<span class="fixedwidth">sku</span>&quot;, &quot;<span class="fixedwidth">description</span>&quot;, &quot;<span class="fixedwidth">comment</span>&quot; and &quot;<span class="fixedwidth">category</span>&quot; columns in the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span>
+This searches the &quot;<span class="fixedwidth">sku</span>&quot;, &quot;<span class="fixedwidth">description</span>&quot;, &quot;<span class="fixedwidth">comment</span>&quot; and &quot;<span class="fixedwidth">category</span>&quot; columns in the <span class="fixedwidth"><a href="/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span>
 table(s) using the <p>
-<a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fsearch%2ecpan%2eorg%2f%7eebohlman%2fText%2dQuery%2d0%2e07%2flib%2fText%2fQuery%2epm" title="http://search.cpan.org/~ebohlman/Text-Query-0.07/lib/Text/Query.pm" rel="nofollow">Text::Query</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page"> syntax.&nbsp;
+<a href="/bouncer.html?target=http%3a%2f%2fsearch%2ecpan%2eorg%2f%7eebohlman%2fText%2dQuery%2d0%2e07%2flib%2fText%2fQuery%2epm" title="http://search.cpan.org/~ebohlman/Text-Query-0.07/lib/Text/Query.pm" rel="nofollow">Text::Query</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page"> syntax.&nbsp;
 A valid search string could be &quot;<span class="fixedwidth">painters NEAR set</span>&quot;.
 </p>
 <a name="Single_table_coordinated_search_example"></a>
@@ -637,7 +637,7 @@ Note that,
 &quot;<span class="fixedwidth">nu=0</span>&quot; must be specified in the joined search example,
 even though that is the default.&nbsp;
 To avoid having to do this, use the
-<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Interchange_tag_introduction.html#Attribute_arrays_and_hashes" title="&quot;Attribute arrays and hashes&quot; heading on the &quot;Interchange tag introduction&quot; page">attribute array</a>
+<a href="/icdocs/Interchange_tag_introduction.html#Attribute_arrays_and_hashes" title="&quot;Attribute arrays and hashes&quot; heading on the &quot;Interchange tag introduction&quot; page">attribute array</a>
 feature.&nbsp;
 For example:
 </p>
@@ -670,7 +670,7 @@ For example:
 <!-- end of code block -->
 <p>
 The &quot;<span class="fixedwidth">co=yes</span>&quot; is assumed when using an
-<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Interchange_tag_introduction.html#Attribute_arrays_and_hashes" title="&quot;Attribute arrays and hashes&quot; heading on the &quot;Interchange tag introduction&quot; page">attribute array</a>
+<a href="/icdocs/Interchange_tag_introduction.html#Attribute_arrays_and_hashes" title="&quot;Attribute arrays and hashes&quot; heading on the &quot;Interchange tag introduction&quot; page">attribute array</a>
 to create a search specification.
 </p>
 <p>
@@ -682,7 +682,7 @@ greater than or equal to 1 then the product will be selected,
 otherwise the product will be deemed to be out of stock and therefore
 not selected.&nbsp;
 The tables will be joined using their
-<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Database_reference_guide.html#KEY" title="&quot;KEY&quot; heading on the &quot;Database reference guide&quot; page">KEY</a></span> column.
+<span class="fixedwidth"><a href="/icdocs/Database_reference_guide.html#KEY" title="&quot;KEY&quot; heading on the &quot;Database reference guide&quot; page">KEY</a></span> column.
 </p>
 <p>
 It always helps to have a &quot;<span class="fixedwidth">rm</span>&quot; type included in the search.&nbsp;
@@ -694,7 +694,7 @@ If accesses must be made for every row, large searches could be quite slow.
 <h2>Custom search operators (using SearchOp)</h2>
 <p>
 You can write your own search operator (known as a <span class="fixedwidth">SearchOp</span>)
-with Interchange's <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/CodeDef.html" title="CodeDef (config)">CodeDef</a></span> configuration directive.&nbsp;
+with Interchange's <span class="fixedwidth"><a href="/icdocs/config/CodeDef.html" title="CodeDef (config)">CodeDef</a></span> configuration directive.&nbsp;
 For example:
 </p>
 <!-- start of code block -->
@@ -739,7 +739,7 @@ The parameters passed to the custom code are as follows:
 </ol>
 
 <p>
-The <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/CodeDef.html" title="CodeDef (config)">CodeDef</a></span> routine must return a reference to
+The <span class="fixedwidth"><a href="/icdocs/config/CodeDef.html" title="CodeDef (config)">CodeDef</a></span> routine must return a reference to
 a Perl subroutine.&nbsp;
 The subroutine will be passed the string to match against,
 and must return <em>true</em> if a match is found, or <em>false</em>
@@ -754,7 +754,7 @@ if no match is found.
 <td width="100%">
 <p class="title">Note</p>
 <p style="margin-bottom: 0px">
-Custom search operators do not honour the &quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_negate_ne" title="&quot;mv negate ne&quot; heading on the &quot;Search parameters&quot; page">mv_negate</a></span>&quot; specification
+Custom search operators do not honour the &quot;<span class="fixedwidth"><a href="/icdocs/Search_parameters.html#mv_negate_ne" title="&quot;mv negate ne&quot; heading on the &quot;Search parameters&quot; page">mv_negate</a></span>&quot; specification
 unless you code them to do so.
 </p>
 </td>
@@ -828,7 +828,7 @@ Title:&nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_Paramete
 <p>
 If the right hand side of an expression looks like a column (it is not quoted),
 then the appropriate form variable is substituted.&nbsp;
-If used in a <em>one-click</em>, the corresponding <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a>
+If used in a <em>one-click</em>, the corresponding <a href="/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a>
 variable is used instead.&nbsp;
 The assumption is reversed for the left-hand side;&nbsp;
 If it is a quoted string then the column name is read from the passed values.&nbsp;
@@ -938,7 +938,7 @@ This is another way to do the same thing:
 </div>
 <!-- end of code block -->
 <p>
-Assuming your <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/VendURL.html" title="VendURL (config)">VendURL</a></span> is
+Assuming your <span class="fixedwidth"><a href="/icdocs/config/VendURL.html" title="VendURL (config)">VendURL</a></span> is
 &quot;<span class="fixedwidth">www.example.com/cgi-bin/vlink</span>&quot;,
 those links would translate to the following:
 </p>
@@ -958,8 +958,8 @@ those links would translate to the following:
 <p>
 Each of the search specification variables long name and an abbreviated name.&nbsp;
 For example, both
-&quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_searchspec_se" title="&quot;mv searchspec se&quot; heading on the &quot;Search parameters&quot; page">mv_searchspec</a></span>&quot; and
-&quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_searchspec_se" title="&quot;mv searchspec se&quot; heading on the &quot;Search parameters&quot; page">se</a></span>&quot; are equivalent.&nbsp;
+&quot;<span class="fixedwidth"><a href="/icdocs/Search_parameters.html#mv_searchspec_se" title="&quot;mv searchspec se&quot; heading on the &quot;Search parameters&quot; page">mv_searchspec</a></span>&quot; and
+&quot;<span class="fixedwidth"><a href="/icdocs/Search_parameters.html#mv_searchspec_se" title="&quot;mv searchspec se&quot; heading on the &quot;Search parameters&quot; page">se</a></span>&quot; are equivalent.&nbsp;
 The abbreviations help to keep the length of one-click search URIs down,
 while the full names are easier to read in HTML forms.
 </p>
@@ -973,7 +973,7 @@ while the full names are easier to read in HTML forms.
 <p class="title">Note</p>
 <p style="margin-bottom: 0px">
 A full list of search variables, and their two-letter abbreviations,
-can be found on the <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html" title="Search parameters">Search parameters</a> page.
+can be found on the <a href="/icdocs/Search_parameters.html" title="Search parameters">Search parameters</a> page.
 </p>
 </td>
 </tr>
@@ -1067,7 +1067,7 @@ You may not search for trailing spaces using this method.
 <h2>Joined Searches</h2>
 <p>
 You can create a <em>joined</em> search using a
-<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Interchange_tag_introduction.html#Attribute_arrays_and_hashes" title="&quot;Attribute arrays and hashes&quot; heading on the &quot;Interchange tag introduction&quot; page">parameter array</a>.
+<a href="/icdocs/Interchange_tag_introduction.html#Attribute_arrays_and_hashes" title="&quot;Attribute arrays and hashes&quot; heading on the &quot;Interchange tag introduction&quot; page">parameter array</a>.
 </p>
 <!-- start of code block -->
 <div class="code">
@@ -1105,21 +1105,21 @@ as appropriate.
 <a name="Setting_display_options_with_mv_value"></a>
 <h2>Setting display options with mv_value</h2>
 <p>
-You can encode an arbitrary <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/value.html" title="value (tags)">value</a></span> into the search URI,
+You can encode an arbitrary <span class="fixedwidth"><a href="/icdocs/tags/value.html" title="value (tags)">value</a></span> into the search URI,
 without having to use URI arguments, by making use of the
-&quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_value_va" title="&quot;mv value va&quot; heading on the &quot;Search parameters&quot; page">mv_value</a></span>&quot; search parameter.&nbsp;
-The &quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_value_va" title="&quot;mv value va&quot; heading on the &quot;Search parameters&quot; page">mv_value</a></span>&quot; search
+&quot;<span class="fixedwidth"><a href="/icdocs/Search_parameters.html#mv_value_va" title="&quot;mv value va&quot; heading on the &quot;Search parameters&quot; page">mv_value</a></span>&quot; search parameter.&nbsp;
+The &quot;<span class="fixedwidth"><a href="/icdocs/Search_parameters.html#mv_value_va" title="&quot;mv value va&quot; heading on the &quot;Search parameters&quot; page">mv_value</a></span>&quot; search
 specification takes an argument of &quot;<span class="fixedwidth">var=value</span>&quot;.
 </p>
 <p>
-Actually &quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_value_va" title="&quot;mv value va&quot; heading on the &quot;Search parameters&quot; page">mv_value</a></span>&quot; is a misnomer,
+Actually &quot;<span class="fixedwidth"><a href="/icdocs/Search_parameters.html#mv_value_va" title="&quot;mv value va&quot; heading on the &quot;Search parameters&quot; page">mv_value</a></span>&quot; is a misnomer,
 as it will almost never be used in a <span class="fixedwidth">&lt;form&gt;</span> where
 variable values can be set.&nbsp;
 It's a lot more useful in a <a href="#One-click_searches" title="&quot;One-click searches&quot; heading on this page">One-click search</a>.
 </p>
 <p>
 For example, the following will set a variable that can be displayed on
-the search results page using <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/value.html" title="value (tags)">value</a> category_name]</span>:
+the search results page using <span class="fixedwidth">[<a href="/icdocs/tags/value.html" title="value (tags)">value</a> category_name]</span>:
 </p>
 <!-- start of code block -->
 <div class="code">
@@ -1145,9 +1145,9 @@ As well as creating search links and forms, you may also create a search
 from within a page, and display the results of that search on the same page.
 </p>
 <p>
-The <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/loop.html" title="loop (tags)">loop</a>]</span> tag accepts search parameters and allows you
+The <span class="fixedwidth">[<a href="/icdocs/tags/loop.html" title="loop (tags)">loop</a>]</span> tag accepts search parameters and allows you
 to loop through the results,
-using <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Looping_tags_and_sub-tags.html" title="Category - looping tags and sub-tags">PREFIX-*</a>]</span>
+using <span class="fixedwidth">[<a href="/icdocs/category:Looping_tags_and_sub-tags.html" title="Category - looping tags and sub-tags">PREFIX-*</a>]</span>
 tags to display the results.&nbsp;
 For example, to search for all products in the &quot;Americana&quot; and &quot;Contemporary&quot; categories:
 </p>
@@ -1182,12 +1182,12 @@ from any external website.
 </p>
 <p>
 To place an in-page search with the full range of display in a normal
-results page, you can use the <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/search-region.html" title="search-region (tags)">search-region</a>]</span> tag.&nbsp;
-This works in the same way as the <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/loop.html" title="loop (tags)">loop</a>]</span> tag, above,
+results page, you can use the <span class="fixedwidth">[<a href="/icdocs/tags/search-region.html" title="search-region (tags)">search-region</a>]</span> tag.&nbsp;
+This works in the same way as the <span class="fixedwidth">[<a href="/icdocs/tags/loop.html" title="loop (tags)">loop</a>]</span> tag, above,
 except that sub-tags such as
-<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/search-region.html" title="search-region (tags)">search-list</a>]</span>,
-<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/more-list.html" title="more-list (tags)">more-list</a>]</span> and
-<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/more-list.html#more" title="&quot;more&quot; heading on the &quot;more-list (tags)&quot; page">more</a>]</span> can be placed within the tag's results template.&nbsp;
+<span class="fixedwidth">[<a href="/icdocs/tags/search-region.html" title="search-region (tags)">search-list</a>]</span>,
+<span class="fixedwidth">[<a href="/icdocs/tags/more-list.html" title="more-list (tags)">more-list</a>]</span> and
+<span class="fixedwidth">[<a href="/icdocs/tags/more-list.html#more" title="&quot;more&quot; heading on the &quot;more-list (tags)&quot; page">more</a>]</span> can be placed within the tag's results template.&nbsp;
 For example:
 </p>
 <!-- start of code block -->
@@ -1230,12 +1230,12 @@ For example:
 <h2>Search profiles</h2>
 <p>
 An unlimited number of <em>search profiles</em> can be predefined that
-either reside in <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variables, or in
-files declared using the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/SearchProfile.html" title="SearchProfile (config)">SearchProfile</a></span> <em>local</em>
+either reside in <a href="/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variables, or in
+files declared using the <span class="fixedwidth"><a href="/icdocs/config/SearchProfile.html" title="SearchProfile (config)">SearchProfile</a></span> <em>local</em>
 configuration directive.
 </p>
 <p>
-A search profile can be created in a <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variable,
+A search profile can be created in a <a href="/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variable,
 as follows:
 </p>
 <!-- start of code block -->
@@ -1289,8 +1289,8 @@ or use the &quot;<span class="fixedwidth">mp</span>&quot; modifier in a one-clic
 </div>
 <!-- end of code block -->
 <p>
-As well as (or instead of) using <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variables,
-you can use the <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/SearchProfile.html" title="SearchProfile (config)">SearchProfile</a>]</span> directive to name
+As well as (or instead of) using <a href="/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variables,
+you can use the <span class="fixedwidth">[<a href="/icdocs/config/SearchProfile.html" title="SearchProfile (config)">SearchProfile</a>]</span> directive to name
 files that will hold search profiles.
 </p>
 <p>
@@ -1306,8 +1306,8 @@ the Interchange tag syntax to provide conditional setting of search parameters.
 <p>
 The special &quot;<span class="fixedwidth">mv_last</span>&quot; variable stops interpretation of any further
 search variables in the current profile, except for the
-&quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_dict_look_dl" title="&quot;mv dict look dl&quot; heading on the &quot;Search parameters&quot; page">mv_dict_look</a></span>&quot; and
-&quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html#mv_searchspec_se" title="&quot;mv searchspec se&quot; heading on the &quot;Search parameters&quot; page">mv_searchspec</a></span>&quot; variables,
+&quot;<span class="fixedwidth"><a href="/icdocs/Search_parameters.html#mv_dict_look_dl" title="&quot;mv dict look dl&quot; heading on the &quot;Search parameters&quot; page">mv_dict_look</a></span>&quot; and
+&quot;<span class="fixedwidth"><a href="/icdocs/Search_parameters.html#mv_searchspec_se" title="&quot;mv searchspec se&quot; heading on the &quot;Search parameters&quot; page">mv_searchspec</a></span>&quot; variables,
 which are interpreted in any event.
 </div>
 
@@ -1316,7 +1316,7 @@ which are interpreted in any event.
     <table class="pageinfo" cellpadding="0" cellspacing="0">
 	<tr>
 	    <td>
-Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_database.html">Interchange database</a>
+Category:&nbsp; <a href="/icdocs/category:Interchange_database.html">Interchange database</a>
 	    </td>
 	</tr>
 
@@ -1324,7 +1324,7 @@ Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/cate
 	<tr>
 	    <td>
 		
-		Last modified by: <a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin">Kevin Walsh</a><br>
+		Last modified by: <a href="/account/profile.html?user=kevin">Kevin Walsh</a><br>
 		Modification date: Wednesday 19 September 2007 at 9:53 PM (BST)
 	    </td>
 	</tr>
@@ -1348,13 +1348,13 @@ Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/cate
 <table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
     <tr>
 	<td>
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    <a href="/index.html">Home</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    <a href="/legal/legal.html">Legal nonsense</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    <a href="/legal/privacy.html">Privacy policy</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	    <a href="/contact.html">Contact us</a>
 	</td>
 
     </tr>

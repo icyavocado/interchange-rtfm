@@ -23,7 +23,7 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
-    <link rel="search" type="application/opensearchdescription+xml" href="http://www.interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="search" type="application/opensearchdescription+xml" href="/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
     <link rel="stylesheet" href="/decor/css/website.css">
     <link rel="stylesheet" href="/decor/css/wiki.css">
     <link rel="stylesheet" href="/decor/css/neo.css">
@@ -42,11 +42,11 @@
 <!-- START VAR: LOGOBAR -->
 <table id="rtfmheader" cellpadding="0" cellspacing="0">
     <tr>
-	<td><a href="http://www.interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+	<td><a href="/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
 
 	<td width="100%" style="text-align: right; padding: 10px">
 
-	    <form action="http://www.interchange-rtfm.pullingshots.ca/search.html" method="POST">
+	    <form action="/search.html" method="POST">
 		<input type="hidden" name="mv_session_id" value="nsession">
 		<input type="hidden" name="mv_profile" value="cms_search">
 		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
@@ -59,10 +59,10 @@
 <table id="breadcrumbs" cellpadding="0" cellspacing="0">
     <tr valign="top">
 	<td>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a></span>
+	    <span class="nowrap">&gt; <a href="/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="/icdocs/category:Interchange_tags.html">Interchange tags</a></span>
 	    <span class="nowrap">&gt; <span class="current">if</span></span>
 	</td>
 
@@ -83,13 +83,13 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+		<li><a href="/index.html">Home</a></li>
+		<li><a href="/documentation.html">Documentation</a></li>
+		<li><a href="/downloads.html">Downloads</a></li>
+		<li><a href="/community.html">Mail lists and IRC</a></li>
+		<li><a href="/links.html">External websites</a></li>
+		<li><a href="/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="/account/usermap.html">User location map</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -107,7 +107,7 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/if.html">if</a></li>
+		<li><a href="/icdocs/tags/if.html">if</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -124,10 +124,10 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/bounce.html">bounce</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/error.html">error</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Form_callback_functions.html">Form callback functions</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/NoAbsolute.html">NoAbsolute</a></li>
+		<li><a href="/icdocs/tags/bounce.html">bounce</a></li>
+		<li><a href="/icdocs/tags/error.html">error</a></li>
+		<li><a href="/icdocs/Form_callback_functions.html">Form callback functions</a></li>
+		<li><a href="/icdocs/config/NoAbsolute.html">NoAbsolute</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -151,9 +151,9 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+		<li><a href="/account/login.html">Log in</a></li>
+		<li><a href="/account/create.html">Create an account</a></li>
+		<li><a href="/account/reminder.html">Password reminder</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -166,7 +166,7 @@
 <!-- START COMPONENT: icpowered -->
 
 <div style="text-align: center; margin: 10px; margin-top: 0px">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+    <a href="/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
 </div>
 
 
@@ -304,20 +304,20 @@ session and database values.
 <td class="grid"><em>None</em></td>
 </tr>
 <tr valign="top">
-<td class="grid"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Universal_tag_attributes.html#hide" title="&quot;hide&quot; heading on the &quot;Universal tag attributes&quot; page">hide</a></td>
+<td class="grid"><a href="/icdocs/Universal_tag_attributes.html#hide" title="&quot;hide&quot; heading on the &quot;Universal tag attributes&quot; page">hide</a></td>
 <td class="grid">Suppress any output text that would ordinarily be returned from this tag.&nbsp;
 (This universal parameter was introduced with Interchange version 5.5.2.)</td>
 <td class="grid">No
 </td>
 </tr>
 <tr valign="top">
-<td class="grid"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Universal_tag_attributes.html#interpolate" title="&quot;interpolate&quot; heading on the &quot;Universal tag attributes&quot; page">interpolate</a></td>
+<td class="grid"><a href="/icdocs/Universal_tag_attributes.html#interpolate" title="&quot;interpolate&quot; heading on the &quot;Universal tag attributes&quot; page">interpolate</a></td>
 <td class="grid">Parse Interchange tags, included in the body text, before this container tag executes.</td>
 <td class="grid">No
 </td>
 </tr>
 <tr valign="top">
-<td class="grid"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Universal_tag_attributes.html#reparse" title="&quot;reparse&quot; heading on the &quot;Universal tag attributes&quot; page">reparse</a></td>
+<td class="grid"><a href="/icdocs/Universal_tag_attributes.html#reparse" title="&quot;reparse&quot; heading on the &quot;Universal tag attributes&quot; page">reparse</a></td>
 <td class="grid">Process any Interchange tags found in the text output from this tag.</td>
 <td class="grid">Yes
 </td>
@@ -740,7 +740,7 @@ as the same effect could be accomplished with the following:
 but you will run into many situations where it is useful.
 </p>
 <p>
-This will work for <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span> values:
+This will work for <span class="fixedwidth"><a href="/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span> values:
 </p>
 <!-- start of code block -->
 <div class="code">
@@ -828,7 +828,7 @@ A safer way to check is:
 <p>
 Although, in that case, your data must not contain a &quot;<span class="fixedwidth">}</span>&quot;.&nbsp;
 To be extra safe you can surround your interpolated data with a
-<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/filter.html" title="filter (tags)">filter</a>]</span> that's appropriate for the quoting method you've chosen.
+<span class="fixedwidth">[<a href="/icdocs/tags/filter.html" title="filter (tags)">filter</a>]</span> that's appropriate for the quoting method you've chosen.
 </p>
 <p>
 This code can be useful on a form submission page,
@@ -854,7 +854,7 @@ especially if the user is sent back to the form to correct errors:
 </div>
 <!-- end of code block -->
 <p>
-See the <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/error.html" title="error (tags)">error</a>]</span> tag for more information.&nbsp;
+See the <span class="fixedwidth">[<a href="/icdocs/tags/error.html" title="error (tags)">error</a>]</span> tag for more information.&nbsp;
 Also see the <span class="fixedwidth"><a href="#errors" title="&quot;errors&quot; heading on this page">errors</a></span> test, above.
 </p>
 <a name="field"></a>
@@ -862,7 +862,7 @@ Also see the <span class="fixedwidth"><a href="#errors" title="&quot;errors&quot
 <p>
 This is much like the <span class="fixedwidth"><a href="#data" title="&quot;data&quot; heading on this page">data</a></span> test type, listed above,
 except that it works on the the table(s) listed in the
-<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> <em>local</em> configuration directive.
+<span class="fixedwidth"><a href="/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> <em>local</em> configuration directive.
 </p>
 <!-- start of code block -->
 <div class="code">
@@ -1233,7 +1233,7 @@ This is the same as Perl's <span class="fixedwidth">-x</span> test.
 <h3>global</h3>
 <p>
 Configuration variables set using a <em>global</em>
-<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span> directive.
+<span class="fixedwidth"><a href="/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span> directive.
 </p>
 <!-- start of code block -->
 <div class="code">
@@ -1255,8 +1255,8 @@ Configuration variables set using a <em>global</em>
 </div>
 <!-- end of code block -->
 <p>
-If you want to test a <em>local</em> <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span>,
-or a variable set using the <em>local</em> <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/VariableDatabase.html" title="VariableDatabase (config)">VariableDatabase</a></span>
+If you want to test a <em>local</em> <span class="fixedwidth"><a href="/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span>,
+or a variable set using the <em>local</em> <span class="fixedwidth"><a href="/icdocs/config/VariableDatabase.html" title="VariableDatabase (config)">VariableDatabase</a></span>
 configuration directive,
 then use this tag's <span class="fixedwidth"><a href="#variable" title="&quot;variable&quot; heading on this page">variable</a></span> parameter.
 </p>
@@ -1389,9 +1389,9 @@ To make sure it is exactly &quot;large&quot;, you could use:
 <a name="pragma"></a>
 <h3>pragma</h3>
 <p>
-Test a page <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Pragma.html" title="Pragma (config)">Pragma</a></span> value,
-set with the the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Pragma.html" title="Pragma (config)">Pragma</a></span> directive in the <span class="fixedwidth">catalog.cfg</span>
-file, or with the <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/pragma.html" title="pragma (tags)">pragma</a>]</span> tag.
+Test a page <span class="fixedwidth"><a href="/icdocs/config/Pragma.html" title="Pragma (config)">Pragma</a></span> value,
+set with the the <span class="fixedwidth"><a href="/icdocs/config/Pragma.html" title="Pragma (config)">Pragma</a></span> directive in the <span class="fixedwidth">catalog.cfg</span>
+file, or with the <span class="fixedwidth">[<a href="/icdocs/tags/pragma.html" title="pragma (tags)">pragma</a>]</span> tag.
 </p>
 <!-- start of code block -->
 <div class="code">
@@ -1416,10 +1416,10 @@ file, or with the <span class="fixedwidth">[<a href="http://www.interchange-rtfm
 <p>
 Test a scratchpad variables,
 previously set with
-[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/set.html" title="set (tags)">set</a>],
-[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/seti.html" title="seti (tags)">seti</a>],
-[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/tmp.html" title="tmp (tags)">tmp</a>] and
-[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/tmpn.html" title="tmpn (tags)">tmpn</a>]
+[<a href="/icdocs/tags/set.html" title="set (tags)">set</a>],
+[<a href="/icdocs/tags/seti.html" title="seti (tags)">seti</a>],
+[<a href="/icdocs/tags/tmp.html" title="tmp (tags)">tmp</a>] and
+[<a href="/icdocs/tags/tmpn.html" title="tmpn (tags)">tmpn</a>]
 (or not set, as the case may be).
 </p>
 <!-- start of code block -->
@@ -1507,7 +1507,7 @@ the last 30 seconds.</td>
 <tr valign="top">
 <td class="grid">arg
 </td>
-<td class="grid">The argument passed in an <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/area.html" title="area (tags)">area</a>]</span> tag.</td>
+<td class="grid">The argument passed in an <span class="fixedwidth">[<a href="/icdocs/tags/area.html" title="area (tags)">area</a>]</span> tag.</td>
 </tr>
 <tr valign="top">
 <td class="grid">browser
@@ -1518,16 +1518,16 @@ the last 30 seconds.</td>
 <td class="grid">carts
 </td>
 <td class="grid">A reference to a Perl hash containing shopping carts.&nbsp;
-See <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Interchange_Perl_objects.html#Carts" title="&quot;Carts&quot; heading on the &quot;Interchange Perl objects&quot; page">&#36;Carts</a> for
+See <a href="/icdocs/Interchange_Perl_objects.html#Carts" title="&quot;Carts&quot; heading on the &quot;Interchange Perl objects&quot; page">&#36;Carts</a> for
 more information.</td>
 </tr>
 <tr valign="top">
 <td class="grid">host
 </td>
 <td class="grid">Interchange's note of the visitor's hostname
-(possibly modified by <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/DomainTail.html" title="DomainTail (config)">DomainTail</a></span>).&nbsp;
+(possibly modified by <span class="fixedwidth"><a href="/icdocs/config/DomainTail.html" title="DomainTail (config)">DomainTail</a></span>).&nbsp;
 If the hostname could not be looked up
-(<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/HostnameLookups.html" title="HostnameLookups (config)">HostnameLookups</a></span> switched off or
+(<span class="fixedwidth"><a href="/icdocs/config/HostnameLookups.html" title="HostnameLookups (config)">HostnameLookups</a></span> switched off or
 DNS error etc.) then the visitor's IP address will be
 stored here instead.</td>
 </tr>
@@ -1574,7 +1574,7 @@ Also see <span class="fixedwidth">shost</span>.</td>
 <td class="grid">A hash of result messages from payment module
 transaction attempts.&nbsp;
 See examples in the
-<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_payment_modules.html" title="Category - interchange payment modules">Interchange payment modules</a> documentation.</td>
+<a href="/icdocs/category:Interchange_payment_modules.html" title="Category - interchange payment modules">Interchange payment modules</a> documentation.</td>
 </tr>
 <tr valign="top">
 <td class="grid">prev_url
@@ -1612,7 +1612,7 @@ Also see <span class="fixedwidth">ohost</span>.</td>
 <td class="grid">teleport
 </td>
 <td class="grid">Date and time (in
-&quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/time.html#Time_format_tokens" title="&quot;Time format tokens&quot; heading on the &quot;time (tags)&quot; page">&#37;Y&#37;m&#37;d&#37;H&#37;M&#37;S</a></span>&quot; format) for use with the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/PageTables.html" title="PageTables (config)">PageTables</a></span>
+&quot;<span class="fixedwidth"><a href="/icdocs/tags/time.html#Time_format_tokens" title="&quot;Time format tokens&quot; heading on the &quot;time (tags)&quot; page">&#37;Y&#37;m&#37;d&#37;H&#37;M&#37;S</a></span>&quot; format) for use with the <span class="fixedwidth"><a href="/icdocs/config/PageTables.html" title="PageTables (config)">PageTables</a></span>
 directive.</td>
 </tr>
 <tr valign="top">
@@ -1629,7 +1629,7 @@ directive.</td>
 <td class="grid">username
 </td>
 <td class="grid">Logged-in username.&nbsp;
-See the <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Interchange_user_database.html" title="Interchange user database">Interchange user database</a> page.</td>
+See the <a href="/icdocs/Interchange_user_database.html" title="Interchange user database">Interchange user database</a> page.</td>
 </tr>
 </table>
 <a name="validcc"></a>
@@ -1639,19 +1639,19 @@ A special case which takes the form <span class="fixedwidth">&#91;if validcc no 
 Evaluates to true if the supplied credit card number,
 type of card and expiration date pass a validity test.&nbsp;
 does a <em>LUHN-10</em> calculation to weed out typos or phony card numbers.&nbsp;
-Uses the standard <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/CreditCardAuto.html" title="CreditCardAuto (config)">CreditCardAuto</a></span> values for targets if
+Uses the standard <span class="fixedwidth"><a href="/icdocs/config/CreditCardAuto.html" title="CreditCardAuto (config)">CreditCardAuto</a></span> values for targets if
 nothing else is specified.
 </p>
 <a name="value"></a>
 <h3>value</h3>
 <p>
 Test a form value,
-previously set with <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/value.html" title="value (tags)">value</a>]</span>
+previously set with <span class="fixedwidth">[<a href="/icdocs/tags/value.html" title="value (tags)">value</a>]</span>
 or via a previous HTML form post.
 </p>
 <p>
 An example might be the when search matches are displayed.&nbsp;
-If you use the string &quot;<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/value.html" title="value (tags)">value</a> mv_match_count]</span> titles found&quot;,
+If you use the string &quot;<span class="fixedwidth">[<a href="/icdocs/tags/value.html" title="value (tags)">value</a> mv_match_count]</span> titles found&quot;,
 the following will display a different message if only one match was found:
 </p>
 <!-- start of code block -->
@@ -1676,7 +1676,7 @@ the following will display a different message if only one match was found:
 <h3>variable</h3>
 <p>
 Configuration variables set using a <em>local</em>
-<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span> or <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/VariableDatabase.html" title="VariableDatabase (config)">VariableDatabase</a></span>
+<span class="fixedwidth"><a href="/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span> or <span class="fixedwidth"><a href="/icdocs/config/VariableDatabase.html" title="VariableDatabase (config)">VariableDatabase</a></span>
 directive.
 </p>
 <!-- start of code block -->
@@ -1699,7 +1699,7 @@ directive.
 </div>
 <!-- end of code block -->
 <p>
-If you want to test a <em>global</em> <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span>
+If you want to test a <em>global</em> <span class="fixedwidth"><a href="/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span>
 then use this tag's <span class="fixedwidth"><a href="#global" title="&quot;global&quot; heading on this page">global</a></span> parameter.
 </p>
 <a name="Sub-tags"></a>
@@ -1901,7 +1901,7 @@ This value will be compared with the value referenced by the
     <table class="pageinfo" cellpadding="0" cellspacing="0">
 	<tr>
 	    <td>
-Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a>
+Category:&nbsp; <a href="/icdocs/category:Interchange_tags.html">Interchange tags</a>
 	    </td>
 	</tr>
 
@@ -1909,7 +1909,7 @@ Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/cate
 	<tr>
 	    <td>
 		
-		Last modified by: <a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=pj">Peter Ajamian</a><br>
+		Last modified by: <a href="/account/profile.html?user=pj">Peter Ajamian</a><br>
 		Modification date: Monday 24 November 2008 at 10:13 PM (PST)
 	    </td>
 	</tr>
@@ -1933,13 +1933,13 @@ Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/cate
 <table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
     <tr>
 	<td>
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    <a href="/index.html">Home</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    <a href="/legal/legal.html">Legal nonsense</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    <a href="/legal/privacy.html">Privacy policy</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	    <a href="/contact.html">Contact us</a>
 	</td>
 
     </tr>

@@ -28,7 +28,7 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
-    <link rel="search" type="application/opensearchdescription+xml" href="http://www.interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="search" type="application/opensearchdescription+xml" href="/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
     <link rel="stylesheet" href="/decor/css/website.css">
     <link rel="stylesheet" href="/decor/css/wiki.css">
     <link rel="stylesheet" href="/decor/css/neo.css">
@@ -47,11 +47,11 @@
 <!-- START VAR: LOGOBAR -->
 <table id="rtfmheader" cellpadding="0" cellspacing="0">
     <tr>
-	<td><a href="http://www.interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+	<td><a href="/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
 
 	<td width="100%" style="text-align: right; padding: 10px">
 
-	    <form action="http://www.interchange-rtfm.pullingshots.ca/search.html" method="POST">
+	    <form action="/search.html" method="POST">
 		<input type="hidden" name="mv_session_id" value="nsession">
 		<input type="hidden" name="mv_profile" value="cms_search">
 		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
@@ -64,10 +64,10 @@
 <table id="breadcrumbs" cellpadding="0" cellspacing="0">
     <tr valign="top">
 	<td>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_pragmas.html">Interchange pragmas</a></span>
+	    <span class="nowrap">&gt; <a href="/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="/icdocs/category:Interchange_pragmas.html">Interchange pragmas</a></span>
 	    <span class="nowrap">&gt; <span class="current">safe_data</span></span>
 	</td>
 
@@ -88,13 +88,13 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+		<li><a href="/index.html">Home</a></li>
+		<li><a href="/documentation.html">Documentation</a></li>
+		<li><a href="/downloads.html">Downloads</a></li>
+		<li><a href="/community.html">Mail lists and IRC</a></li>
+		<li><a href="/links.html">External websites</a></li>
+		<li><a href="/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="/account/usermap.html">User location map</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -112,7 +112,7 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/pragma/safe_data.html">safe_data</a></li>
+		<li><a href="/icdocs/pragma/safe_data.html">safe_data</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -129,7 +129,7 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/data.html">data</a></li>
+		<li><a href="/icdocs/tags/data.html">data</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -153,9 +153,9 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+		<li><a href="/account/login.html">Log in</a></li>
+		<li><a href="/account/create.html">Create an account</a></li>
+		<li><a href="/account/reminder.html">Password reminder</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -168,7 +168,7 @@
 <!-- START COMPONENT: icpowered -->
 
 <div style="text-align: center; margin: 10px; margin-top: 0px">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+    <a href="/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
 </div>
 
 
@@ -200,30 +200,30 @@ The default is <span class="fixedwidth">0</span>.
 By default, Interchange does not allow data returned from the database
 to be interpolated (all &quot;<span class="fixedwidth">&#91;</span>&quot; characters are converted to the
 &quot;<span class="fixedwidth">&amp;#91;</span>&quot; HTML entity and displayed literally).&nbsp;
-Setting this <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/pragma.html" title="pragma (tags)">pragma</a> lifts this restriction,
+Setting this <a href="/icdocs/tags/pragma.html" title="pragma (tags)">pragma</a> lifts this restriction,
 allowing tags to return &quot;<span class="fixedwidth">&#91;</span>&quot; characters verbatim.
 </p>
 <p>
 If you want to have Interchange tags in your database and display them in
-Interchange pages (perhaps to use the [<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/area.html" title="area (tags)">area</a>] tag to generate
+Interchange pages (perhaps to use the [<a href="/icdocs/tags/area.html" title="area (tags)">area</a>] tag to generate
 internal URIs for use in links inside product description text),
 then you need to enable this pragma.
 </p>
 <p>
 It is always better to use the <span class="fixedwidth">safe_data</span> attribute,
 available to certain tags,
-or perhaps the <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/pragma.html" title="pragma (tags)">pragma</a>&nbsp;safe_data]</span>
+or perhaps the <span class="fixedwidth">[<a href="/icdocs/tags/pragma.html" title="pragma (tags)">pragma</a>&nbsp;safe_data]</span>
 (for a whole page),
-or even <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/tag.html" class="nopage" rel="nofollow" title="tag (tags)">tag</a> pragma safe_data]...&#91;/tag]</span>
+or even <span class="fixedwidth">[<a href="/icdocs/tags/tag.html" class="nopage" rel="nofollow" title="tag (tags)">tag</a> pragma safe_data]...&#91;/tag]</span>
 (for a small block of Interchange tag code on a page),
-rather than setting a website-wide <span class="fixedwidth">safe_data</span> <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Pragma.html" title="Pragma (config)">Pragma</a></span>.
+rather than setting a website-wide <span class="fixedwidth">safe_data</span> <span class="fixedwidth"><a href="/icdocs/config/Pragma.html" title="Pragma (config)">Pragma</a></span>.
 </p>
 <p>
 It is strongly recommended that you surround affected code with a
-<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/restrict.html" title="restrict (tags)">restrict</a>]</span> tag to only allow specific ICML tags to
+<span class="fixedwidth">[<a href="/icdocs/tags/restrict.html" title="restrict (tags)">restrict</a>]</span> tag to only allow specific ICML tags to
 be interpolated.&nbsp;
-You risk security compromises if you allow <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/calc.html" title="calc (tags)">calc</a>]</span>,
-<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/perl.html" title="perl (tags)">perl</a>]</span> or any other similarly powerful tags.
+You risk security compromises if you allow <span class="fixedwidth">[<a href="/icdocs/tags/calc.html" title="calc (tags)">calc</a>]</span>,
+<span class="fixedwidth">[<a href="/icdocs/tags/perl.html" title="perl (tags)">perl</a>]</span> or any other similarly powerful tags.
 </p>
 <p>
 Be certain that you absolutely know how the data got into your databases,
@@ -234,7 +234,7 @@ Consider the following:
 <ul>
 <li>Will it always be possible to interpolate?</li>
 <li>What about e-mailed plain-text receipts?&nbsp;
-Will literal <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/area.html" title="area (tags)">area</a>]</span> tags show up in product descriptions in the receipt?</li>
+Will literal <span class="fixedwidth">[<a href="/icdocs/tags/area.html" title="area (tags)">area</a>]</span> tags show up in product descriptions in the receipt?</li>
 <li>Would the desired output of <span class="fixedwidth">&lt;a href=&quot;...&quot;&gt;</span> be any better than a simple plain text?</li>
 <li>What if you access your database from applications other than Interchange?&nbsp;
 You'd then have to decide what to do with such tags.&nbsp;
@@ -251,17 +251,17 @@ Perhaps you could simply strip them, but will the missing output cause trouble?<
 <td width="100%">
 <p class="title">Warning</p>
 <p>
-Watch out for parse order with <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/tag.html" class="nopage" rel="nofollow" title="tag (tags)">tag</a> pragma]</span> or
-<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/restrict.html" title="restrict (tags)">restrict</a>]</span>, when used with lists that retrieve data from
-the database, such as <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Looping_tags_and_sub-tags.html" title="Category - looping tags and sub-tags">PREFIX-*</a>]</span>
+Watch out for parse order with <span class="fixedwidth">[<a href="/icdocs/tags/tag.html" class="nopage" rel="nofollow" title="tag (tags)">tag</a> pragma]</span> or
+<span class="fixedwidth">[<a href="/icdocs/tags/restrict.html" title="restrict (tags)">restrict</a>]</span>, when used with lists that retrieve data from
+the database, such as <span class="fixedwidth">[<a href="/icdocs/category:Looping_tags_and_sub-tags.html" title="Category - looping tags and sub-tags">PREFIX-*</a>]</span>
 and the <span class="fixedwidth">flypage</span>.&nbsp;
-Loops parse before ordinary tags, such as <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/tag.html" class="nopage" rel="nofollow" title="tag (tags)">tag</a>]</span> and
-<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/restrict.html" title="restrict (tags)">restrict</a>]</span>, and are therefore not affected by them.&nbsp;
+Loops parse before ordinary tags, such as <span class="fixedwidth">[<a href="/icdocs/tags/tag.html" class="nopage" rel="nofollow" title="tag (tags)">tag</a>]</span> and
+<span class="fixedwidth">[<a href="/icdocs/tags/restrict.html" title="restrict (tags)">restrict</a>]</span>, and are therefore not affected by them.&nbsp;
 You can resolve this by enclosing the entire loop tag with
-<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/tag.html" class="nopage" rel="nofollow" title="tag (tags)">tag</a>]</span> or <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/restrict.html" title="restrict (tags)">restrict</a>]</span> etc.
+<span class="fixedwidth">[<a href="/icdocs/tags/tag.html" class="nopage" rel="nofollow" title="tag (tags)">tag</a>]</span> or <span class="fixedwidth">[<a href="/icdocs/tags/restrict.html" title="restrict (tags)">restrict</a>]</span> etc.
 </p>
 <p style="margin-bottom: 0px">
-See the <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Interchange_tag_introduction.html#Interchange_tag_parsing_order" title="&quot;Interchange tag parsing order&quot; heading on the &quot;Interchange tag introduction&quot; page">Interchange tag parsing order</a>
+See the <a href="/icdocs/Interchange_tag_introduction.html#Interchange_tag_parsing_order" title="&quot;Interchange tag parsing order&quot; heading on the &quot;Interchange tag introduction&quot; page">Interchange tag parsing order</a>
 documentation for more information.
 </p>
 </td>
@@ -289,7 +289,7 @@ You should be very careful if you decide to enable it.
     <table class="pageinfo" cellpadding="0" cellspacing="0">
 	<tr>
 	    <td>
-Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_pragmas.html">Interchange pragmas</a>
+Category:&nbsp; <a href="/icdocs/category:Interchange_pragmas.html">Interchange pragmas</a>
 	    </td>
 	</tr>
 
@@ -297,7 +297,7 @@ Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/cate
 	<tr>
 	    <td>
 		
-		Last modified by: <a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin">Kevin Walsh</a><br>
+		Last modified by: <a href="/account/profile.html?user=kevin">Kevin Walsh</a><br>
 		Modification date: Tuesday 3 July 2007 at 4:46 AM (BST)
 	    </td>
 	</tr>
@@ -321,13 +321,13 @@ Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/cate
 <table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
     <tr>
 	<td>
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    <a href="/index.html">Home</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    <a href="/legal/legal.html">Legal nonsense</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    <a href="/legal/privacy.html">Privacy policy</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	    <a href="/contact.html">Contact us</a>
 	</td>
 
     </tr>

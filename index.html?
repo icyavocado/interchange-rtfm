@@ -27,9 +27,9 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
-    <link rel="search" type="application/opensearchdescription+xml" href="http://www.interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="search" type="application/opensearchdescription+xml" href="/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
     <link rel="stylesheet" href="/decor/css/website.css">
-    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.interchange-rtfm.pullingshots.ca/news/feed/index/rss.xml?bookmark=1">
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/news/feed/index/rss.xml?bookmark=1">
 
     <script type="text/javascript" language="JavaScript">
     <!--
@@ -44,11 +44,11 @@
 <!-- START VAR: LOGOBAR -->
 <table id="rtfmheader" cellpadding="0" cellspacing="0">
     <tr>
-	<td><a href="http://www.interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+	<td><a href="/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
 
 	<td width="100%" style="text-align: right; padding: 10px">
 
-	    <form action="http://www.interchange-rtfm.pullingshots.ca/search.html" method="POST">
+	    <form action="/search.html" method="POST">
 		<input type="hidden" name="mv_session_id" value="nsession">
 		<input type="hidden" name="mv_profile" value="cms_search">
 		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
@@ -61,7 +61,7 @@
 <table id="breadcrumbs" cellpadding="0" cellspacing="0">
     <tr valign="top">
 	<td>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="/index.html">Home</a></span>
 	</td>
 
     </tr>
@@ -81,13 +81,13 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+		<li><a href="/index.html">Home</a></li>
+		<li><a href="/documentation.html">Documentation</a></li>
+		<li><a href="/downloads.html">Downloads</a></li>
+		<li><a href="/community.html">Mail lists and IRC</a></li>
+		<li><a href="/links.html">External websites</a></li>
+		<li><a href="/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="/account/usermap.html">User location map</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -112,9 +112,9 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+		<li><a href="/account/login.html">Log in</a></li>
+		<li><a href="/account/create.html">Create an account</a></li>
+		<li><a href="/account/reminder.html">Password reminder</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -127,7 +127,7 @@
 <!-- START COMPONENT: icpowered -->
 
 <div style="text-align: center; margin: 10px; margin-top: 0px">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+    <a href="/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
 </div>
 
 
@@ -144,7 +144,7 @@
 <table width="100%" cellpadding="0" cellspacing="0">
     <tr valign="top">
 	<td width="100%"><h1 style="margin-bottom: 0px">Interchange documentation, support, downloads and other resources</h1></td>
-	<td style="padding-left: 10px"><a href="http://www.interchange-rtfm.pullingshots.ca/news/feed/index/rss.xml" title="RSS 2.0 feed for &quot;Interchange RTFM news index&quot;"><img src="/decor/images/icons/rss.gif" width="16" height="16" border="0" align="top" alt="RSS 2.0 feed for &quot;Interchange RTFM news index&quot;"></a></td>
+	<td style="padding-left: 10px"><a href="/news/feed/index/rss.xml" title="RSS 2.0 feed for &quot;Interchange RTFM news index&quot;"><img src="/decor/images/icons/rss.gif" width="16" height="16" border="0" align="top" alt="RSS 2.0 feed for &quot;Interchange RTFM news index&quot;"></a></td>
     </tr>
 </table>
 
@@ -164,9 +164,9 @@
     <h2 style="margin-bottom: 0px">Interchange 5.6.0 (stable) released</h2>
     <table class="information" cellpadding="0" cellspacing="0">
 	<tr valign="top">
-	    <td width="100%" class="author_date"><a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin"><span class="nowrap">Kevin Walsh</span></a> - <span class="nowrap">22 May 2008 - 12:17 AM (BST)</span></td>
+	    <td width="100%" class="author_date"><a href="/account/profile.html?user=kevin"><span class="nowrap">Kevin Walsh</span></a> - <span class="nowrap">22 May 2008 - 12:17 AM (BST)</span></td>
 
-	    <td class="area"><a href="http://www.interchange-rtfm.pullingshots.ca/news/interchange.html">Interchange news</a></td>
+	    <td class="area"><a href="/news/interchange.html">Interchange news</a></td>
 
 	</tr>
     </table>
@@ -187,19 +187,19 @@ which included a list of the major changes since the 5.4 (stable) series.
     <br>
 
     <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" alt="*">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/news/14.html" class="bullet">Read more</a>
+    <a href="/news/14.html" class="bullet">Read more</a>
 &nbsp;&nbsp;
 
     <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" alt="*">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/news/14.html#comment_form" class="bullet">0 comments</a>
+    <a href="/news/14.html#comment_form" class="bullet">0 comments</a>
 
 
     <h2 style="margin-bottom: 0px">Interchange 5.5.3 (beta) released</h2>
     <table class="information" cellpadding="0" cellspacing="0">
 	<tr valign="top">
-	    <td width="100%" class="author_date"><a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin"><span class="nowrap">Kevin Walsh</span></a> - <span class="nowrap">18 May 2008 - 4:16 AM (BST)</span></td>
+	    <td width="100%" class="author_date"><a href="/account/profile.html?user=kevin"><span class="nowrap">Kevin Walsh</span></a> - <span class="nowrap">18 May 2008 - 4:16 AM (BST)</span></td>
 
-	    <td class="area"><a href="http://www.interchange-rtfm.pullingshots.ca/news/interchange.html">Interchange news</a></td>
+	    <td class="area"><a href="/news/interchange.html">Interchange news</a></td>
 
 	</tr>
     </table>
@@ -223,19 +223,19 @@ to the <em>interchange-users</em> mail list.
     <br>
 
     <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" alt="*">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/news/13.html" class="bullet">Read more</a>
+    <a href="/news/13.html" class="bullet">Read more</a>
 &nbsp;&nbsp;
 
     <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" alt="*">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/news/13.html#comment_form" class="bullet">0 comments</a>
+    <a href="/news/13.html#comment_form" class="bullet">0 comments</a>
 
 
     <h2 style="margin-bottom: 0px">Interchange 5.5.2 (beta) released</h2>
     <table class="information" cellpadding="0" cellspacing="0">
 	<tr valign="top">
-	    <td width="100%" class="author_date"><a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin"><span class="nowrap">Kevin Walsh</span></a> - <span class="nowrap">30 April 2008 - 12:58 PM (BST)</span></td>
+	    <td width="100%" class="author_date"><a href="/account/profile.html?user=kevin"><span class="nowrap">Kevin Walsh</span></a> - <span class="nowrap">30 April 2008 - 12:58 PM (BST)</span></td>
 
-	    <td class="area"><a href="http://www.interchange-rtfm.pullingshots.ca/news/interchange.html">Interchange news</a></td>
+	    <td class="area"><a href="/news/interchange.html">Interchange news</a></td>
 
 	</tr>
     </table>
@@ -260,19 +260,19 @@ to the <em>interchange-users</em> mail list.
     <br>
 
     <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" alt="*">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/news/12.html" class="bullet">Read more</a>
+    <a href="/news/12.html" class="bullet">Read more</a>
 &nbsp;&nbsp;
 
     <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" alt="*">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/news/12.html#comment_form" class="bullet">0 comments</a>
+    <a href="/news/12.html#comment_form" class="bullet">0 comments</a>
 
 
     <h2 style="margin-bottom: 0px">Interchange returns to LinuxTag</h2>
     <table class="information" cellpadding="0" cellspacing="0">
 	<tr valign="top">
-	    <td width="100%" class="author_date"><a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin"><span class="nowrap">Kevin Walsh</span></a> - <span class="nowrap">24 April 2008 - 2:50 AM (BST)</span></td>
+	    <td width="100%" class="author_date"><a href="/account/profile.html?user=kevin"><span class="nowrap">Kevin Walsh</span></a> - <span class="nowrap">24 April 2008 - 2:50 AM (BST)</span></td>
 
-	    <td class="area"><a href="http://www.interchange-rtfm.pullingshots.ca/news/interchange.html">Interchange news</a></td>
+	    <td class="area"><a href="/news/interchange.html">Interchange news</a></td>
 
 	</tr>
     </table>
@@ -293,19 +293,19 @@ and will run from the 28th May through until the 31st May 2008.
     <br>
 
     <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" alt="*">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/news/11.html" class="bullet">Read more</a>
+    <a href="/news/11.html" class="bullet">Read more</a>
 &nbsp;&nbsp;
 
     <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" alt="*">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/news/11.html#comment_form" class="bullet">0 comments</a>
+    <a href="/news/11.html#comment_form" class="bullet">0 comments</a>
 
 
     <h2 style="margin-bottom: 0px">Interchange user location map</h2>
     <table class="information" cellpadding="0" cellspacing="0">
 	<tr valign="top">
-	    <td width="100%" class="author_date"><a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin"><span class="nowrap">Kevin Walsh</span></a> - <span class="nowrap">13 February 2008 - 1:15 PM (GMT)</span></td>
+	    <td width="100%" class="author_date"><a href="/account/profile.html?user=kevin"><span class="nowrap">Kevin Walsh</span></a> - <span class="nowrap">13 February 2008 - 1:15 PM (GMT)</span></td>
 
-	    <td class="area"><a href="http://www.interchange-rtfm.pullingshots.ca/news/rtfm.html">RTFM website news</a></td>
+	    <td class="area"><a href="/news/rtfm.html">RTFM website news</a></td>
 
 	</tr>
     </table>
@@ -330,15 +330,15 @@ any time you like.
     <br>
 
     <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" alt="*">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/news/10.html#comment" class="bullet">1 comment</a>
+    <a href="/news/10.html#comment" class="bullet">1 comment</a>
 
 
     <h2 style="margin-bottom: 0px">Interchange security announcement</h2>
     <table class="information" cellpadding="0" cellspacing="0">
 	<tr valign="top">
-	    <td width="100%" class="author_date"><a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin"><span class="nowrap">Kevin Walsh</span></a> - <span class="nowrap">07 February 2008 - 3:07 AM (GMT)</span></td>
+	    <td width="100%" class="author_date"><a href="/account/profile.html?user=kevin"><span class="nowrap">Kevin Walsh</span></a> - <span class="nowrap">07 February 2008 - 3:07 AM (GMT)</span></td>
 
-	    <td class="area"><a href="http://www.interchange-rtfm.pullingshots.ca/news/security.html">Security news</a></td>
+	    <td class="area"><a href="/news/security.html">Security news</a></td>
 
 	</tr>
     </table>
@@ -360,19 +360,19 @@ Interchange-driven websites under their control.
     <br>
 
     <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" alt="*">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/news/9.html" class="bullet">Read more</a>
+    <a href="/news/9.html" class="bullet">Read more</a>
 &nbsp;&nbsp;
 
     <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" alt="*">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/news/9.html#comment" class="bullet">1 comment</a>
+    <a href="/news/9.html#comment" class="bullet">1 comment</a>
 
 
     <h2 style="margin-bottom: 0px">Interchange 5.5.1 (beta) released</h2>
     <table class="information" cellpadding="0" cellspacing="0">
 	<tr valign="top">
-	    <td width="100%" class="author_date"><a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin"><span class="nowrap">Kevin Walsh</span></a> - <span class="nowrap">21 August 2007 - 2:21 PM (BST)</span></td>
+	    <td width="100%" class="author_date"><a href="/account/profile.html?user=kevin"><span class="nowrap">Kevin Walsh</span></a> - <span class="nowrap">21 August 2007 - 2:21 PM (BST)</span></td>
 
-	    <td class="area"><a href="http://www.interchange-rtfm.pullingshots.ca/news/interchange.html">Interchange news</a></td>
+	    <td class="area"><a href="/news/interchange.html">Interchange news</a></td>
 
 	</tr>
     </table>
@@ -394,19 +394,19 @@ to the <em>interchange-users</em> mail list.
     <br>
 
     <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" alt="*">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/news/8.html" class="bullet">Read more</a>
+    <a href="/news/8.html" class="bullet">Read more</a>
 &nbsp;&nbsp;
 
     <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" alt="*">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/news/8.html#comment" class="bullet">1 comment</a>
+    <a href="/news/8.html#comment" class="bullet">1 comment</a>
 
 
     <h2 style="margin-bottom: 0px">Interchange logos and a new typeface released</h2>
     <table class="information" cellpadding="0" cellspacing="0">
 	<tr valign="top">
-	    <td width="100%" class="author_date"><a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin"><span class="nowrap">Kevin Walsh</span></a> - <span class="nowrap">10 May 2007 - 5:40 AM (BST)</span></td>
+	    <td width="100%" class="author_date"><a href="/account/profile.html?user=kevin"><span class="nowrap">Kevin Walsh</span></a> - <span class="nowrap">10 May 2007 - 5:40 AM (BST)</span></td>
 
-	    <td class="area"><a href="http://www.interchange-rtfm.pullingshots.ca/news/interchange.html">Interchange news</a></td>
+	    <td class="area"><a href="/news/interchange.html">Interchange news</a></td>
 
 	</tr>
     </table>
@@ -427,19 +427,19 @@ Enjoy!
     <br>
 
     <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" alt="*">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/news/7.html" class="bullet">Read more</a>
+    <a href="/news/7.html" class="bullet">Read more</a>
 &nbsp;&nbsp;
 
     <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" alt="*">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/news/7.html#comment_form" class="bullet">0 comments</a>
+    <a href="/news/7.html#comment_form" class="bullet">0 comments</a>
 
 
     <h2 style="margin-bottom: 0px">Search plugin for Mozilla-based browsers</h2>
     <table class="information" cellpadding="0" cellspacing="0">
 	<tr valign="top">
-	    <td width="100%" class="author_date"><a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin"><span class="nowrap">Kevin Walsh</span></a> - <span class="nowrap">19 April 2007 - 11:53 AM (BST)</span></td>
+	    <td width="100%" class="author_date"><a href="/account/profile.html?user=kevin"><span class="nowrap">Kevin Walsh</span></a> - <span class="nowrap">19 April 2007 - 11:53 AM (BST)</span></td>
 
-	    <td class="area"><a href="http://www.interchange-rtfm.pullingshots.ca/news/rtfm.html">RTFM website news</a></td>
+	    <td class="area"><a href="/news/rtfm.html">RTFM website news</a></td>
 
 	</tr>
     </table>
@@ -459,19 +459,19 @@ Google search facility you're probably used to by now.
     <br>
 
     <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" alt="*">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/news/6.html" class="bullet">Read more</a>
+    <a href="/news/6.html" class="bullet">Read more</a>
 &nbsp;&nbsp;
 
     <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" alt="*">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/news/6.html#comment" class="bullet">3 comments</a>
+    <a href="/news/6.html#comment" class="bullet">3 comments</a>
 
 
     <h2 style="margin-bottom: 0px">Interchange invades LinuxTag 2007</h2>
     <table class="information" cellpadding="0" cellspacing="0">
 	<tr valign="top">
-	    <td width="100%" class="author_date"><a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin"><span class="nowrap">Kevin Walsh</span></a> - <span class="nowrap">05 April 2007 - 5:12 PM (BST)</span></td>
+	    <td width="100%" class="author_date"><a href="/account/profile.html?user=kevin"><span class="nowrap">Kevin Walsh</span></a> - <span class="nowrap">05 April 2007 - 5:12 PM (BST)</span></td>
 
-	    <td class="area"><a href="http://www.interchange-rtfm.pullingshots.ca/news/interchange.html">Interchange news</a></td>
+	    <td class="area"><a href="/news/interchange.html">Interchange news</a></td>
 
 	</tr>
     </table>
@@ -490,21 +490,21 @@ and will run from the 30th May 2007 through until the 2nd June 2007.
     <br>
 
     <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" alt="*">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/news/5.html" class="bullet">Read more</a>
+    <a href="/news/5.html" class="bullet">Read more</a>
 &nbsp;&nbsp;
 
     <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" alt="*">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/news/5.html#update" class="bullet">1 update</a>
+    <a href="/news/5.html#update" class="bullet">1 update</a>
 	&nbsp;&nbsp;    <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" alt="*">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/news/5.html#comment_form" class="bullet">0 comments</a>
+    <a href="/news/5.html#comment_form" class="bullet">0 comments</a>
 
 
     <h2 style="margin-bottom: 0px">Ron Phipps joins the Interchange core team</h2>
     <table class="information" cellpadding="0" cellspacing="0">
 	<tr valign="top">
-	    <td width="100%" class="author_date"><a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin"><span class="nowrap">Kevin Walsh</span></a> - <span class="nowrap">27 February 2007 - 9:24 AM (GMT)</span></td>
+	    <td width="100%" class="author_date"><a href="/account/profile.html?user=kevin"><span class="nowrap">Kevin Walsh</span></a> - <span class="nowrap">27 February 2007 - 9:24 AM (GMT)</span></td>
 
-	    <td class="area"><a href="http://www.interchange-rtfm.pullingshots.ca/news/interchange.html">Interchange news</a></td>
+	    <td class="area"><a href="/news/interchange.html">Interchange news</a></td>
 
 	</tr>
     </table>
@@ -524,15 +524,15 @@ No pressure, but we're expecting great things from you, Ron.
     <br>
 
     <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" alt="*">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/news/4.html#comment" class="bullet">2 comments</a>
+    <a href="/news/4.html#comment" class="bullet">2 comments</a>
 
 
     <h2 style="margin-bottom: 0px">Interchange 5.4.2 released</h2>
     <table class="information" cellpadding="0" cellspacing="0">
 	<tr valign="top">
-	    <td width="100%" class="author_date"><a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin"><span class="nowrap">Kevin Walsh</span></a> - <span class="nowrap">07 February 2007 - 5:10 AM (GMT)</span></td>
+	    <td width="100%" class="author_date"><a href="/account/profile.html?user=kevin"><span class="nowrap">Kevin Walsh</span></a> - <span class="nowrap">07 February 2007 - 5:10 AM (GMT)</span></td>
 
-	    <td class="area"><a href="http://www.interchange-rtfm.pullingshots.ca/news/interchange.html">Interchange news</a></td>
+	    <td class="area"><a href="/news/interchange.html">Interchange news</a></td>
 
 	</tr>
     </table>
@@ -553,19 +553,19 @@ rather than be left behind.
     <br>
 
     <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" alt="*">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/news/3.html" class="bullet">Read more</a>
+    <a href="/news/3.html" class="bullet">Read more</a>
 &nbsp;&nbsp;
 
     <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" alt="*">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/news/3.html#comment_form" class="bullet">0 comments</a>
+    <a href="/news/3.html#comment_form" class="bullet">0 comments</a>
 
 
     <h2 style="margin-bottom: 0px">Two new Interchange core team members</h2>
     <table class="information" cellpadding="0" cellspacing="0">
 	<tr valign="top">
-	    <td width="100%" class="author_date"><a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin"><span class="nowrap">Kevin Walsh</span></a> - <span class="nowrap">28 August 2006 - 2:38 PM (BST)</span></td>
+	    <td width="100%" class="author_date"><a href="/account/profile.html?user=kevin"><span class="nowrap">Kevin Walsh</span></a> - <span class="nowrap">28 August 2006 - 2:38 PM (BST)</span></td>
 
-	    <td class="area"><a href="http://www.interchange-rtfm.pullingshots.ca/news/interchange.html">Interchange news</a></td>
+	    <td class="area"><a href="/news/interchange.html">Interchange news</a></td>
 
 	</tr>
     </table>
@@ -585,19 +585,19 @@ admin UI.
     <br>
 
     <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" alt="*">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/news/2.html" class="bullet">Read more</a>
+    <a href="/news/2.html" class="bullet">Read more</a>
 &nbsp;&nbsp;
 
     <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" alt="*">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/news/2.html#comment" class="bullet">1 comment</a>
+    <a href="/news/2.html#comment" class="bullet">1 comment</a>
 
 
     <h2 style="margin-bottom: 0px">New Interchange RTFM website unleashed</h2>
     <table class="information" cellpadding="0" cellspacing="0">
 	<tr valign="top">
-	    <td width="100%" class="author_date"><a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin"><span class="nowrap">Kevin Walsh</span></a> - <span class="nowrap">31 July 2006 - 10:45 PM (BST)</span></td>
+	    <td width="100%" class="author_date"><a href="/account/profile.html?user=kevin"><span class="nowrap">Kevin Walsh</span></a> - <span class="nowrap">31 July 2006 - 10:45 PM (BST)</span></td>
 
-	    <td class="area"><a href="http://www.interchange-rtfm.pullingshots.ca/news/rtfm.html">RTFM website news</a></td>
+	    <td class="area"><a href="/news/rtfm.html">RTFM website news</a></td>
 
 	</tr>
     </table>
@@ -620,11 +620,11 @@ including polls and RSS/Atom feeds.
     <br>
 
     <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" alt="*">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/news/1.html" class="bullet">Read more</a>
+    <a href="/news/1.html" class="bullet">Read more</a>
 &nbsp;&nbsp;
 
     <img src="/decor/images/icons/bullet.gif" height="11" width="8" border="0" alt="*">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/news/1.html#comment" class="bullet">8 comments</a>
+    <a href="/news/1.html#comment" class="bullet">8 comments</a>
 
 
 
@@ -652,7 +652,7 @@ including polls and RSS/Atom feeds.
 
     <tr>
 	<td class="first">
-	    <div class="bullet"><a href="http://www.interchange-rtfm.pullingshots.ca/mirror/archive/interchange/interchange-5.6.1.tar.gz" rel="nofollow">Stable (5.6.1)</a><br>11 November 2008</div>
+	    <div class="bullet"><a href="/mirror/archive/interchange/interchange-5.6.1.tar.gz" rel="nofollow">Stable (5.6.1)</a><br>11 November 2008</div>
 	</td>
     </tr>
 
@@ -660,7 +660,7 @@ including polls and RSS/Atom feeds.
 
     <tr>
 	<td>
-	    <div class="bullet"><a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fftp%2eicdevgroup%2eorg%2finterchange%2fnightly_build%2f" rel="nofollow">Development Snapshots (5.7.1)</a><!--&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">--></div>
+	    <div class="bullet"><a href="/bouncer.html?target=http%3a%2f%2fftp%2eicdevgroup%2eorg%2finterchange%2fnightly_build%2f" rel="nofollow">Development Snapshots (5.7.1)</a><!--&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">--></div>
 	</td>
     </tr>
 
@@ -681,7 +681,7 @@ including polls and RSS/Atom feeds.
     <tr><td class="sponsor"><a href="http://www.webmaint.net/interchange/hosting.html" title="Webmaint.net: UK Interchange business hosting"><img src="/decor/images/sponsor_logos/ukicbizhost.gif" width="140" height="56" alt="Webmaint.net: UK Interchange business hosting"></a></td></tr>
 
 
-    <tr><td class="first"><div class="bullet"><a href="http://www.interchange-rtfm.pullingshots.ca/donations.html">Donations and sponsorship</a></div></td></tr>
+    <tr><td class="first"><div class="bullet"><a href="/donations.html">Donations and sponsorship</a></div></td></tr>
 </table>
 
 <!-- END COMPONENT: sponsors -->
@@ -695,13 +695,13 @@ including polls and RSS/Atom feeds.
 <table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
     <tr>
 	<td>
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    <a href="/index.html">Home</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    <a href="/legal/legal.html">Legal nonsense</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    <a href="/legal/privacy.html">Privacy policy</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	    <a href="/contact.html">Contact us</a>
 	</td>
 
     </tr>

@@ -26,7 +26,7 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
-    <link rel="search" type="application/opensearchdescription+xml" href="http://www.interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="search" type="application/opensearchdescription+xml" href="/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
     <link rel="stylesheet" href="/decor/css/website.css">
     <link rel="stylesheet" href="/decor/css/wiki.css">
     <link rel="stylesheet" href="/decor/css/neo.css">
@@ -45,11 +45,11 @@
 <!-- START VAR: LOGOBAR -->
 <table id="rtfmheader" cellpadding="0" cellspacing="0">
     <tr>
-	<td><a href="http://www.interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+	<td><a href="/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
 
 	<td width="100%" style="text-align: right; padding: 10px">
 
-	    <form action="http://www.interchange-rtfm.pullingshots.ca/search.html" method="POST">
+	    <form action="/search.html" method="POST">
 		<input type="hidden" name="mv_session_id" value="nsession">
 		<input type="hidden" name="mv_profile" value="cms_search">
 		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
@@ -62,10 +62,10 @@
 <table id="breadcrumbs" cellpadding="0" cellspacing="0">
     <tr valign="top">
 	<td>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a></span>
+	    <span class="nowrap">&gt; <a href="/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="/icdocs/category:Interchange_tags.html">Interchange tags</a></span>
 	    <span class="nowrap">&gt; <span class="current">image</span></span>
 	</td>
 
@@ -86,13 +86,13 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+		<li><a href="/index.html">Home</a></li>
+		<li><a href="/documentation.html">Documentation</a></li>
+		<li><a href="/downloads.html">Downloads</a></li>
+		<li><a href="/community.html">Mail lists and IRC</a></li>
+		<li><a href="/links.html">External websites</a></li>
+		<li><a href="/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="/account/usermap.html">User location map</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -110,7 +110,7 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/image.html">image</a></li>
+		<li><a href="/icdocs/tags/image.html">image</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -139,9 +139,9 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+		<li><a href="/account/login.html">Log in</a></li>
+		<li><a href="/account/create.html">Create an account</a></li>
+		<li><a href="/account/reminder.html">Password reminder</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -154,7 +154,7 @@
 <!-- START COMPONENT: icpowered -->
 
 <div style="text-align: center; margin: 10px; margin-top: 0px">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+    <a href="/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
 </div>
 
 
@@ -163,7 +163,7 @@
 <!-- START COMPONENT: icpowered -->
 
 <div style="text-align: center; margin: 10px; margin-top: 0px">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+    <a href="/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
 </div>
 
 
@@ -224,7 +224,7 @@ Wrapper for the generation of <span class="fixedwidth">&lt;img&gt;</span> HTML t
 </tr>
 <tr valign="top">
 <td class="grid"><a href="#descriptionfields" title="&quot;descriptionfields&quot; heading on this page">descriptionfields</a></td>
-<td class="grid">Column(s) in the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table(s) that contain a description.</td>
+<td class="grid">Column(s) in the <span class="fixedwidth"><a href="/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table(s) that contain a description.</td>
 <td class="grid"><a href="#descriptionfields" title="&quot;descriptionfields&quot; heading on this page">See parameter description</a></td>
 </tr>
 <tr valign="top">
@@ -258,7 +258,7 @@ Wrapper for the generation of <span class="fixedwidth">&lt;img&gt;</span> HTML t
 </tr>
 <tr valign="top">
 <td class="grid"><a href="#imagefields" title="&quot;imagefields&quot; heading on this page">imagefields</a></td>
-<td class="grid">Column(s) in the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table(s) that could contain an image filename or URI.</td>
+<td class="grid">Column(s) in the <span class="fixedwidth"><a href="/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table(s) that could contain an image filename or URI.</td>
 <td class="grid"><a href="#imagefields" title="&quot;imagefields&quot; heading on this page">See parameter description</a></td>
 </tr>
 <tr valign="top">
@@ -291,12 +291,12 @@ Wrapper for the generation of <span class="fixedwidth">&lt;img&gt;</span> HTML t
 </tr>
 <tr valign="top">
 <td class="grid"><a href="#size_scratch_prefix" title="&quot;size scratch prefix&quot; heading on this page">size_scratch_prefix</a></td>
-<td class="grid">Save image size, determined using <span class="fixedwidth"><a href="#getsize" title="&quot;getsize&quot; heading on this page">getsize</a></span> into <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variables.</td>
+<td class="grid">Save image size, determined using <span class="fixedwidth"><a href="#getsize" title="&quot;getsize&quot; heading on this page">getsize</a></span> into <a href="/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variables.</td>
 <td class="grid">&nbsp;</td>
 </tr>
 <tr valign="top">
 <td class="grid"><a href="#sku" title="&quot;sku&quot; heading on this page">sku</a></td>
-<td class="grid">Specify a value that should be used to look up the <span class="fixedwidth"><a href="#alt" title="&quot;alt&quot; heading on this page">alt</a></span> text in the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table(s).</td>
+<td class="grid">Specify a value that should be used to look up the <span class="fixedwidth"><a href="#alt" title="&quot;alt&quot; heading on this page">alt</a></span> text in the <span class="fixedwidth"><a href="/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table(s).</td>
 <td class="grid"><em>None</em></td>
 </tr>
 <tr valign="top">
@@ -394,15 +394,15 @@ with the ability to do the following and more:
 <ul>
 <li>Test whether an image exists.</li>
 <li>Predetermine its pixel dimensions.</li>
-<li>Retrieve the image name from a table in the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> list.</li>
-<li>Automatically pull descriptions from a table in the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> list for use in the <span class="fixedwidth">&lt;img&gt;</span> tag's &quot;<span class="fixedwidth">alt</span>&quot; and &quot;<span class="fixedwidth">title</span>&quot; attributes.</li>
+<li>Retrieve the image name from a table in the <span class="fixedwidth"><a href="/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> list.</li>
+<li>Automatically pull descriptions from a table in the <span class="fixedwidth"><a href="/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> list for use in the <span class="fixedwidth">&lt;img&gt;</span> tag's &quot;<span class="fixedwidth">alt</span>&quot; and &quot;<span class="fixedwidth">title</span>&quot; attributes.</li>
 </ul>
 
 <p>
 A convenient use is for displaying product images on an ecommerce
 website.&nbsp;
 For example,
-on the <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/SpecialPage.html" title="SpecialPage (config)">flypage</a>:
+on the <a href="/icdocs/config/SpecialPage.html" title="SpecialPage (config)">flypage</a>:
 </p>
 <!-- start of code block -->
 <div class="code">
@@ -419,7 +419,7 @@ on the <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Specia
 <!-- end of code block -->
 <p>
 Assuming that the SKU is &quot;<span class="fixedwidth">ABC123</span>,
-and assuming the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table specifies
+and assuming the <span class="fixedwidth"><a href="/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table specifies
 &quot;<span class="fixedwidth">ABC123.gif</span>&quot; in its &quot;<span class="fixedwidth">image</span>&quot; column for the
 &quot;<span class="fixedwidth">ABC123</span>&quot; row,
 this tag will return HTML code along the lines of the following:
@@ -439,7 +439,7 @@ this tag will return HTML code along the lines of the following:
 <!-- end of code block -->
 <p>
 If there is no <span class="fixedwidth">ABC123.gif</span>,
-or the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table's &quot;<span class="fixedwidth">image</span>&quot; column for the &quot;<span class="fixedwidth">ABC123</span>&quot; row was empty,
+or the <span class="fixedwidth"><a href="/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table's &quot;<span class="fixedwidth">image</span>&quot; column for the &quot;<span class="fixedwidth">ABC123</span>&quot; row was empty,
 this tag would check for files called &quot;<span class="fixedwidth">ABC123.jpg</span> and
 this tag  check for files called &quot;<span class="fixedwidth">ABC123.jpg</span>&quot; and
 &quot;<span class="fixedwidth">ABC123.png</span>&quot; etc.
@@ -491,13 +491,13 @@ an image file, on the local filesystem.
 If this parameter starts with a &quot;<span class="fixedwidth">/</span>&quot; then it will be
 used verbatim in the resulting HTML <span class="fixedwidth">&lt;img&gt;</span> tag.&nbsp;
 The path used for existance and <span class="fixedwidth"><a href="#getsize" title="&quot;getsize&quot; heading on this page">getsize</a></span> checks etc. will be relative from the website's home directory,
-as specified using the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Catalog.html" title="Catalog (config)">Catalog</a></span> <em>global</em>
+as specified using the <span class="fixedwidth"><a href="/icdocs/config/Catalog.html" title="Catalog (config)">Catalog</a></span> <em>global</em>
 configuration directive.
 </p>
 <p>
 If this parameter does not start with a &quot;<span class="fixedwidth">/</span>&quot; then
-the value of either the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/ImageDir.html" title="ImageDir (config)">ImageDir</a></span> or the
-<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/ImageDirSecure.html" title="ImageDirSecure (config)">ImageDirSecure</a></span> <em>local</em> configuration directive
+the value of either the <span class="fixedwidth"><a href="/icdocs/config/ImageDir.html" title="ImageDir (config)">ImageDir</a></span> or the
+<span class="fixedwidth"><a href="/icdocs/config/ImageDirSecure.html" title="ImageDirSecure (config)">ImageDirSecure</a></span> <em>local</em> configuration directive
 will be prepended,
 depending upon whether or not the current page was requested via a
 HTTPS/SSL link.&nbsp;
@@ -518,10 +518,10 @@ in an attempt to find the image,
 <p>
 If the image cannot be found on the local filesystem then
 the <span class="fixedwidth">src</span> value will be looked up in the
-<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table(s).&nbsp;
+<span class="fixedwidth"><a href="/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table(s).&nbsp;
 If it still can't be found then the <span class="fixedwidth"><a href="#sku" title="&quot;sku&quot; heading on this page">sku</a></span> parameter's
 value will be looked up in the
-<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table(s).
+<span class="fixedwidth"><a href="/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table(s).
 </p>
 <p>
 If no image file can be found then the <span class="fixedwidth"><a href="#default" title="&quot;default&quot; heading on this page">default</a></span>
@@ -539,7 +539,7 @@ If no <span class="fixedwidth">alt</span> parameter is provided,
 and the <span class="fixedwidth"><a href="#src" title="&quot;src&quot; heading on this page">src</a></span> parameter's value does not start
 with &quot;<span class="fixedwidth">http://</span>&quot; or &quot;<span class="fixedwidth">https://</span>&quot;,
 then the <span class="fixedwidth"><a href="#src" title="&quot;src&quot; heading on this page">src</a></span> will be looked up in the
-<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table(s).&nbsp;
+<span class="fixedwidth"><a href="/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table(s).&nbsp;
 If a row is found then the columns named in the
 <span class="fixedwidth"><a href="#descriptionfields" title="&quot;descriptionfields&quot; heading on this page">descriptionfields</a></span> parameter will be searched
 for a value instead.
@@ -567,7 +567,7 @@ that will be used if no image file that matches the
 </p>
 <p>
 If no <span class="fixedwidth">default</span> parameter is specified then the
-<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/scratch.html" title="scratch (tags)">scratch</a>&nbsp;mv_imagedefault]</span>
+<span class="fixedwidth">[<a href="/icdocs/tags/scratch.html" title="scratch (tags)">scratch</a>&nbsp;mv_imagedefault]</span>
 value will be used,
 if set.
 </p>
@@ -575,14 +575,14 @@ if set.
 <h3>descriptionfields</h3>
 <p>
 Whitespace-separated list of columns in the
-<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table(s) to be scanned for a
+<span class="fixedwidth"><a href="/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table(s) to be scanned for a
 default <em>alternate text</em> value.
 </p>
 <p>
 If this parameter is not provided then the <span class="fixedwidth">DESCRIPTIONFIELDS</span>
-<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span> will be used.&nbsp;
-If that <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span> is not set then the
-value of the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/DescriptionField.html" title="DescriptionField (config)">DescriptionField</a></span> <em>local</em>
+<span class="fixedwidth"><a href="/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span> will be used.&nbsp;
+If that <span class="fixedwidth"><a href="/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span> is not set then the
+value of the <span class="fixedwidth"><a href="/icdocs/config/DescriptionField.html" title="DescriptionField (config)">DescriptionField</a></span> <em>local</em>
 configuration directive will be used.&nbsp;
 The ultimate default value is &quot;<span class="fixedwidth">description</span>&quot;.
 </p>
@@ -590,8 +590,8 @@ The ultimate default value is &quot;<span class="fixedwidth">description</span>&
 <h3>dir_only</h3>
 <p>
 If this parameter is set <em>true</em> then this tag will simply return
-the value of either the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/ImageDir.html" title="ImageDir (config)">ImageDir</a></span> or the
-<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/ImageDirSecure.html" title="ImageDirSecure (config)">ImageDirSecure</a></span> <em>local</em> configuration directive,
+the value of either the <span class="fixedwidth"><a href="/icdocs/config/ImageDir.html" title="ImageDir (config)">ImageDir</a></span> or the
+<span class="fixedwidth"><a href="/icdocs/config/ImageDirSecure.html" title="ImageDirSecure (config)">ImageDirSecure</a></span> <em>local</em> configuration directive,
 depending upon whether or not the current page was requested via a
 HTTPS/SSL link.&nbsp;
 Also see the <span class="fixedwidth"><a href="#ui" title="&quot;ui&quot; heading on this page">ui</a></span> parameter,
@@ -618,7 +618,7 @@ Skip any checks on image file's existence.
 <h3>getsize</h3>
 <p>
 If this parameter is set <em>true</em>,
-and the <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fsearch%2ecpan%2eorg%2f%7erjray%2fImage%2dSize%2d3%2e01%2flib%2fImage%2fSize%2epm" title="http://search.cpan.org/~rjray/Image-Size-3.01/lib/Image/Size.pm" rel="nofollow">Image::Size</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page"> Perl module is installed,
+and the <a href="/bouncer.html?target=http%3a%2f%2fsearch%2ecpan%2eorg%2f%7erjray%2fImage%2dSize%2d3%2e01%2flib%2fImage%2fSize%2epm" title="http://search.cpan.org/~rjray/Image-Size-3.01/lib/Image/Size.pm" rel="nofollow">Image::Size</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page"> Perl module is installed,
 then this tag will use it to determine the image's <span class="fixedwidth"><a href="#height" title="&quot;height&quot; heading on this page">height</a></span>
 and <span class="fixedwidth"><a href="#width" title="&quot;width&quot; heading on this page">width</a></span>,
 so that they can be added to the resulting HTML
@@ -640,7 +640,7 @@ This parameter will override the values specified using the
 If you call this tag from local <a href="#Perl_example" title="&quot;Perl example&quot; heading on this page">embedded Perl</a>
 then you will not be able to use this parameter without also
 untrapping the &quot;<span class="fixedwidth">require</span>&quot; opcode.&nbsp;
-See the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/SafeUntrap.html" title="SafeUntrap (config)">SafeUntrap</a></span> <em>global</em>
+See the <span class="fixedwidth"><a href="/icdocs/config/SafeUntrap.html" title="SafeUntrap (config)">SafeUntrap</a></span> <em>global</em>
 configuration directive.
 </p>
 </td>
@@ -659,12 +659,12 @@ parameter.
 <h3>imagefields</h3>
 <p>
 Whitespace-separated list of columns in the
-<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table(s) to be scanned for an
+<span class="fixedwidth"><a href="/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table(s) to be scanned for an
 image filename or URI.
 </p>
 <p>
 If this parameter is not provided then the <span class="fixedwidth">IMAGEFIELDS</span>
-<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span> will be used.&nbsp;
+<span class="fixedwidth"><a href="/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span> will be used.&nbsp;
 The default value is &quot;<span class="fixedwidth">image</span>&quot;.
 </p>
 
@@ -687,13 +687,13 @@ and is therefore not available for use with any earlier Interchange version.
 <h3>imagesubdir</h3>
 <p>
 Look for the image file in the named subdirectory of the
-<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/ImageDir.html" title="ImageDir (config)">ImageDir</a></span> (or <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/ImageDirSecure.html" title="ImageDirSecure (config)">ImageDirSecure</a></span>)
+<span class="fixedwidth"><a href="/icdocs/config/ImageDir.html" title="ImageDir (config)">ImageDir</a></span> (or <span class="fixedwidth"><a href="/icdocs/config/ImageDirSecure.html" title="ImageDirSecure (config)">ImageDirSecure</a></span>)
 directory.
 </p>
 <a name="makesize"></a>
 <h3>makesize</h3>
 <p>
-If <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eimagemagick%2eorg%2fscript%2findex%2ephp" title="http://www.imagemagick.org/script/index.php" rel="nofollow">ImageMagick</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+If <a href="/bouncer.html?target=http%3a%2f%2fwww%2eimagemagick%2eorg%2fscript%2findex%2ephp" title="http://www.imagemagick.org/script/index.php" rel="nofollow">ImageMagick</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
 is installed then you can request an arbitrary size for your image.&nbsp;
 This tag will either create the resized image as a new file,
 in a subdirectory corresponding to the selected size
@@ -773,7 +773,7 @@ at the end of the parameter.
 <p>
 This tag resizes images by copying the original into a size-named
 subdirectory and then running
-<a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eimagemagick%2eorg%2fscript%2findex%2ephp" title="http://www.imagemagick.org/script/index.php" rel="nofollow">ImageMagick's</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+<a href="/bouncer.html?target=http%3a%2f%2fwww%2eimagemagick%2eorg%2fscript%2findex%2ephp" title="http://www.imagemagick.org/script/index.php" rel="nofollow">ImageMagick's</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
 &quot;<span class="fixedwidth">mogrify</span>&quot; command.
 </p>
 
@@ -788,7 +788,7 @@ subdirectory and then running
 The &quot;<span class="fixedwidth">mogrify</span>&quot; command must be present in one of the
 directories listed in the Interchange user's <span class="fixedwidth">&#36;{PATH}</span>
 environment variable,
-or in the location specified by the &quot;<span class="fixedwidth">IMAGE_MOGRIFY</span>&quot; <em>global</em> (not <em>local</em>) <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span>.
+or in the location specified by the &quot;<span class="fixedwidth">IMAGE_MOGRIFY</span>&quot; <em>global</em> (not <em>local</em>) <span class="fixedwidth"><a href="/icdocs/config/Variable.html" title="Variable (config)">Variable</a></span>.
 </p>
 </td>
 </tr>
@@ -799,17 +799,17 @@ or in the location specified by the &quot;<span class="fixedwidth">IMAGE_MOGRIFY
 <p>
 Passing &quot;<span class="fixedwidth">0</span>&quot; to this parameter will force this tag to act as
 if the page request was made over a HTTP link.&nbsp;
-Either the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/ImageDir.html" title="ImageDir (config)">ImageDir</a></span> <em>local</em>
+Either the <span class="fixedwidth"><a href="/icdocs/config/ImageDir.html" title="ImageDir (config)">ImageDir</a></span> <em>local</em>
 configuration directive,
-or the <span class="fixedwidth">UI_IMAGE_DIR</span> <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">variable</a></span>
+or the <span class="fixedwidth">UI_IMAGE_DIR</span> <span class="fixedwidth"><a href="/icdocs/config/Variable.html" title="Variable (config)">variable</a></span>
 will be used as the default image directory.
 </p>
 <p>
 Passing &quot;<span class="fixedwidth">1</span>&quot; to this parameter will force this tag to act as
 if the page request was made over a HTTPS/SSL link.&nbsp;
-Either the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/ImageDirSecure.html" title="ImageDirSecure (config)">ImageDirSecure</a></span> <em>local</em>
+Either the <span class="fixedwidth"><a href="/icdocs/config/ImageDirSecure.html" title="ImageDirSecure (config)">ImageDirSecure</a></span> <em>local</em>
 configuration directive,
-or the <span class="fixedwidth">UI_IMAGE_DIR_SECURE</span> <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">variable</a></span>
+or the <span class="fixedwidth">UI_IMAGE_DIR_SECURE</span> <span class="fixedwidth"><a href="/icdocs/config/Variable.html" title="Variable (config)">variable</a></span>
 will be used as the default image directory.
 </p>
 <p>
@@ -820,13 +820,13 @@ tag will work out for itself whether a HTTP or HTTPS/SSL link is in use.
 <h3>size_scratch_prefix</h3>
 <p>
 If <span class="fixedwidth"><a href="#getsize" title="&quot;getsize&quot; heading on this page">getsize</a></span> is <em>true</em> and this parameter has a value,
-then the determined image size will be saved into <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a>
+then the determined image size will be saved into <a href="/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a>
 variables.
 </p>
 <p>
 For example,
 if this parameter is set to &quot;<span class="fixedwidth">foobar</span>&quot; then two
-<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variables will be created,
+<a href="/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variables will be created,
 named &quot;<span class="fixedwidth">foobar_width</span>&quot; and &quot;<span class="fixedwidth">foobar_height</span>&quot;,
 each with a corresponding image size value.
 </p>
@@ -835,7 +835,7 @@ each with a corresponding image size value.
 <p>
 This parameter allows you to specify a value that should be used
 to look up the <span class="fixedwidth"><a href="#alt" title="&quot;alt&quot; heading on this page">alt</a></span> text in the
-<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table(s),
+<span class="fixedwidth"><a href="/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table(s),
 instead of using the <span class="fixedwidth"><a href="#src" title="&quot;src&quot; heading on this page">src</a></span> value for this purpose.
 </p>
 <p>
@@ -843,11 +843,11 @@ If no <span class="fixedwidth"><a href="#src" title="&quot;src&quot; heading on 
 or the supplied <span class="fixedwidth"><a href="#src" title="&quot;src&quot; heading on this page">src</a></span> parameter doesn't point to an
 existing file,
 then the <span class="fixedwidth">sku</span> will also be used to try to find an image in the
-<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table(s).
+<span class="fixedwidth"><a href="/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table(s).
 </p>
 <p>
 If the provided <span class="fixedwidth">sku</span> doesn't yield a row in the
-<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table(s),
+<span class="fixedwidth"><a href="/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table(s),
 then the <span class="fixedwidth"><a href="#src" title="&quot;src&quot; heading on this page">src</a></span> parameter's value will be tried.
 </p>
 <a name="src_only"></a>
@@ -872,8 +872,8 @@ will be used.
 <p>
 If this parameter is set <em>true</em> then this tag will use the
 <span class="fixedwidth">UI_IMAGE_DIR</span> and <span class="fixedwidth">UI_IMAGE_DIR_SECURE</span>
-<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">variables</a></span> instead of the
-<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/ImageDir.html" title="ImageDir (config)">ImageDir</a></span> the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/ImageDirSecure.html" title="ImageDirSecure (config)">ImageDirSecure</a></span>
+<span class="fixedwidth"><a href="/icdocs/config/Variable.html" title="Variable (config)">variables</a></span> instead of the
+<span class="fixedwidth"><a href="/icdocs/config/ImageDir.html" title="ImageDir (config)">ImageDir</a></span> the <span class="fixedwidth"><a href="/icdocs/config/ImageDirSecure.html" title="ImageDirSecure (config)">ImageDirSecure</a></span>
 <em>local</em> configuration directives to determine the image
 directory.
 </div>
@@ -883,7 +883,7 @@ directory.
     <table class="pageinfo" cellpadding="0" cellspacing="0">
 	<tr>
 	    <td>
-Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a>
+Category:&nbsp; <a href="/icdocs/category:Interchange_tags.html">Interchange tags</a>
 	    </td>
 	</tr>
 
@@ -891,7 +891,7 @@ Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/cate
 	<tr>
 	    <td>
 		
-		Last modified by: <a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin">Kevin Walsh</a><br>
+		Last modified by: <a href="/account/profile.html?user=kevin">Kevin Walsh</a><br>
 		Modification date: Tuesday 29 April 2008 at 4:14 PM (PDT)
 	    </td>
 	</tr>
@@ -921,8 +921,8 @@ Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/cate
 <p style="margin-bottom: 0px">
 If you would like to become an interchange.RTFM.info sponsor,
 and get your logo into our list,
-then please <a href="http://www.interchange-rtfm.pullingshots.ca/contact.html?subject=Interchange%20RTFM%20sponsorship">contact us</a>.&nbsp;
-The sponsorship logo list is also displayed on our <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">home page</a>.
+then please <a href="/contact.html?subject=Interchange%20RTFM%20sponsorship">contact us</a>.&nbsp;
+The sponsorship logo list is also displayed on our <a href="/index.html">home page</a>.
 </p>
 </div>
 </div>
@@ -941,13 +941,13 @@ The sponsorship logo list is also displayed on our <a href="http://www.interchan
 <table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
     <tr>
 	<td>
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    <a href="/index.html">Home</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    <a href="/legal/legal.html">Legal nonsense</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    <a href="/legal/privacy.html">Privacy policy</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	    <a href="/contact.html">Contact us</a>
 	</td>
 
     </tr>

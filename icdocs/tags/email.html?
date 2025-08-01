@@ -28,7 +28,7 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
-    <link rel="search" type="application/opensearchdescription+xml" href="http://www.interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="search" type="application/opensearchdescription+xml" href="/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
     <link rel="stylesheet" href="/decor/css/website.css">
     <link rel="stylesheet" href="/decor/css/wiki.css">
     <link rel="stylesheet" href="/decor/css/neo.css">
@@ -47,11 +47,11 @@
 <!-- START VAR: LOGOBAR -->
 <table id="rtfmheader" cellpadding="0" cellspacing="0">
     <tr>
-	<td><a href="http://www.interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+	<td><a href="/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
 
 	<td width="100%" style="text-align: right; padding: 10px">
 
-	    <form action="http://www.interchange-rtfm.pullingshots.ca/search.html" method="POST">
+	    <form action="/search.html" method="POST">
 		<input type="hidden" name="mv_session_id" value="nsession">
 		<input type="hidden" name="mv_profile" value="cms_search">
 		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
@@ -64,10 +64,10 @@
 <table id="breadcrumbs" cellpadding="0" cellspacing="0">
     <tr valign="top">
 	<td>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a></span>
+	    <span class="nowrap">&gt; <a href="/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="/icdocs/category:Interchange_tags.html">Interchange tags</a></span>
 	    <span class="nowrap">&gt; <span class="current">email</span></span>
 	</td>
 
@@ -88,13 +88,13 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+		<li><a href="/index.html">Home</a></li>
+		<li><a href="/documentation.html">Documentation</a></li>
+		<li><a href="/downloads.html">Downloads</a></li>
+		<li><a href="/community.html">Mail lists and IRC</a></li>
+		<li><a href="/links.html">External websites</a></li>
+		<li><a href="/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="/account/usermap.html">User location map</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -112,7 +112,7 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/email.html">email</a></li>
+		<li><a href="/icdocs/tags/email.html">email</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -141,9 +141,9 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+		<li><a href="/account/login.html">Log in</a></li>
+		<li><a href="/account/create.html">Create an account</a></li>
+		<li><a href="/account/reminder.html">Password reminder</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -156,7 +156,7 @@
 <!-- START COMPONENT: icpowered -->
 
 <div style="text-align: center; margin: 10px; margin-top: 0px">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+    <a href="/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
 </div>
 
 
@@ -165,7 +165,7 @@
 <!-- START COMPONENT: icpowered -->
 
 <div style="text-align: center; margin: 10px; margin-top: 0px">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+    <a href="/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
 </div>
 
 
@@ -212,7 +212,7 @@ This parameter is required.</td>
 <tr valign="top">
 <td class="grid"><a href="#from" title="&quot;from&quot; heading on this page">from</a></td>
 <td class="grid">Email address identifying the sender of the message.</td>
-<td class="grid">First <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/MailOrderTo.html" title="MailOrderTo (config)">MailOrderTo</a></span> address</td>
+<td class="grid">First <span class="fixedwidth"><a href="/icdocs/config/MailOrderTo.html" title="MailOrderTo (config)">MailOrderTo</a></span> address</td>
 </tr>
 <tr valign="top">
 <td class="grid"><a href="#subject" title="&quot;subject&quot; heading on this page">subject</a></td>
@@ -247,7 +247,7 @@ This parameter is required.</td>
 <td class="grid"><em>None</em></td>
 </tr>
 <tr valign="top">
-<td class="grid"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Universal_tag_attributes.html#interpolate" title="&quot;interpolate&quot; heading on the &quot;Universal tag attributes&quot; page">interpolate</a></td>
+<td class="grid"><a href="/icdocs/Universal_tag_attributes.html#interpolate" title="&quot;interpolate&quot; heading on the &quot;Universal tag attributes&quot; page">interpolate</a></td>
 <td class="grid"><p>
 Parse Interchange tags, included in the body text, before this container tag executes.</td>
 <td class="grid">Yes
@@ -329,14 +329,14 @@ or similarly with positional parameters:
 <p>
 This tag generates and sends an email article,
 and sends it out via the method specified with the
-<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/SendMailProgram.html" title="SendMailProgram (config)">SendMailProgram</a></span> configuration directive.
+<span class="fixedwidth"><a href="/icdocs/config/SendMailProgram.html" title="SendMailProgram (config)">SendMailProgram</a></span> configuration directive.
 </p>
 <p>
-The <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/SendMailProgram.html" title="SendMailProgram (config)">SendMailProgram</a></span> should either be set up to
+The <span class="fixedwidth"><a href="/icdocs/config/SendMailProgram.html" title="SendMailProgram (config)">SendMailProgram</a></span> should either be set up to
 send mail via a Sendmail-style executable,
 should (preferably) be set up to make use of the
 <p>
-<a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fsearch%2ecpan%2eorg%2f%7egbarr%2flibnet%2d1%2e19%2fNet%2fSMTP%2epm" title="http://search.cpan.org/~gbarr/libnet-1.19/Net/SMTP.pm" rel="nofollow">Net::SMTP</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page"> Perl module.
+<a href="/bouncer.html?target=http%3a%2f%2fsearch%2ecpan%2eorg%2f%7egbarr%2flibnet%2d1%2e19%2fNet%2fSMTP%2epm" title="http://search.cpan.org/~gbarr/libnet-1.19/Net/SMTP.pm" rel="nofollow">Net::SMTP</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page"> Perl module.
 </p>
 
 <table class="note">
@@ -347,9 +347,9 @@ should (preferably) be set up to make use of the
 <td width="100%">
 <p class="title">Note</p>
 <p style="margin-bottom: 0px">
-If <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/SendMailProgram.html" title="SendMailProgram (config)">SendMailProgram</a></span> is set to &quot;<span class="fixedwidth">none</span>&quot; then your email will not be sent,
+If <span class="fixedwidth"><a href="/icdocs/config/SendMailProgram.html" title="SendMailProgram (config)">SendMailProgram</a></span> is set to &quot;<span class="fixedwidth">none</span>&quot; then your email will not be sent,
 and an error will be logged to the website's
-<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/ErrorFile.html" title="ErrorFile (config)">error log file</a>.
+<a href="/icdocs/config/ErrorFile.html" title="ErrorFile (config)">error log file</a>.
 </p>
 </td>
 </tr>
@@ -366,7 +366,7 @@ as listed below:
 </p>
 <p>
 If the <p>
-<a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fsearch%2ecpan%2eorg%2f%7eyves%2fMIME%2dLite%2d3%2e01%2flib%2fMIME%2fLite%2epm" title="http://search.cpan.org/~yves/MIME-Lite-3.01/lib/MIME/Lite.pm" rel="nofollow">Mime::Lite</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page"> Perl module is installed
+<a href="/bouncer.html?target=http%3a%2f%2fsearch%2ecpan%2eorg%2f%7eyves%2fMIME%2dLite%2d3%2e01%2flib%2fMIME%2fLite%2epm" title="http://search.cpan.org/~yves/MIME-Lite-3.01/lib/MIME/Lite.pm" rel="nofollow">Mime::Lite</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page"> Perl module is installed
 and operational then email attachments may be specified using this
 tag's &quot;<span class="fixedwidth"><a href="#attach" title="&quot;attach&quot; heading on this page">attach</a></span>&quot; and &quot;<span class="fixedwidth"><a href="#html" title="&quot;html&quot; heading on this page">html</a></span>&quot; parameters.
 </p>
@@ -415,7 +415,7 @@ or as a name and an email address
 </p>
 <p>
 If this parameter is not supplied then the first email address set up
-using the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/MailOrderTo.html" title="MailOrderTo (config)">MailOrderTo</a></span> <em>local</em> configuration
+using the <span class="fixedwidth"><a href="/icdocs/config/MailOrderTo.html" title="MailOrderTo (config)">MailOrderTo</a></span> <em>local</em> configuration
 directive will be used.
 </p>
 <a name="subject"></a>
@@ -464,7 +464,7 @@ and a valid multipart email will be sent.
 <p class="title">Note</p>
 <p>
 This parameter requires that the <p style="margin-bottom: 0px">
-<a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fsearch%2ecpan%2eorg%2f%7eyves%2fMIME%2dLite%2d3%2e01%2flib%2fMIME%2fLite%2epm" title="http://search.cpan.org/~yves/MIME-Lite-3.01/lib/MIME/Lite.pm" rel="nofollow">Mime::Lite</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page"> Perl module is
+<a href="/bouncer.html?target=http%3a%2f%2fsearch%2ecpan%2eorg%2f%7eyves%2fMIME%2dLite%2d3%2e01%2flib%2fMIME%2fLite%2epm" title="http://search.cpan.org/~yves/MIME-Lite-3.01/lib/MIME/Lite.pm" rel="nofollow">Mime::Lite</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page"> Perl module is
 installed and operational.
 </p>
 </td>
@@ -688,7 +688,7 @@ For example:
 <p class="title">Note</p>
 <p>
 This parameter requires that the <p style="margin-bottom: 0px">
-<a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fsearch%2ecpan%2eorg%2f%7eyves%2fMIME%2dLite%2d3%2e01%2flib%2fMIME%2fLite%2epm" title="http://search.cpan.org/~yves/MIME-Lite-3.01/lib/MIME/Lite.pm" rel="nofollow">Mime::Lite</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+<a href="/bouncer.html?target=http%3a%2f%2fsearch%2ecpan%2eorg%2f%7eyves%2fMIME%2dLite%2d3%2e01%2flib%2fMIME%2fLite%2epm" title="http://search.cpan.org/~yves/MIME-Lite-3.01/lib/MIME/Lite.pm" rel="nofollow">Mime::Lite</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
 Perl module is installed and operational.
 </p>
 </td>
@@ -717,7 +717,7 @@ and is therefore not available for use with any earlier Interchange version.
     <table class="pageinfo" cellpadding="0" cellspacing="0">
 	<tr>
 	    <td>
-Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a>
+Category:&nbsp; <a href="/icdocs/category:Interchange_tags.html">Interchange tags</a>
 	    </td>
 	</tr>
 
@@ -725,7 +725,7 @@ Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/cate
 	<tr>
 	    <td>
 		
-		Last modified by: <a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin">Kevin Walsh</a><br>
+		Last modified by: <a href="/account/profile.html?user=kevin">Kevin Walsh</a><br>
 		Modification date: Friday 4 May 2007 at 3:28 PM (BST)
 	    </td>
 	</tr>
@@ -754,7 +754,7 @@ Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/cate
     <tr><td class="sponsor"><a href="http://www.webmaint.net/interchange/hosting.html" title="Webmaint.net: UK Interchange business hosting"><img src="/decor/images/sponsor_logos/ukicbizhost.gif" width="140" height="56" alt="Webmaint.net: UK Interchange business hosting"></a></td></tr>
 
 
-    <tr><td class="first"><div class="bullet"><a href="http://www.interchange-rtfm.pullingshots.ca/donations.html">Donations and sponsorship</a></div></td></tr>
+    <tr><td class="first"><div class="bullet"><a href="/donations.html">Donations and sponsorship</a></div></td></tr>
 </table>
 
 <!-- END COMPONENT: sponsors -->
@@ -768,13 +768,13 @@ Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/cate
 <table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
     <tr>
 	<td>
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    <a href="/index.html">Home</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    <a href="/legal/legal.html">Legal nonsense</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    <a href="/legal/privacy.html">Privacy policy</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	    <a href="/contact.html">Contact us</a>
 	</td>
 
     </tr>

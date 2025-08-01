@@ -23,7 +23,7 @@
     <link rel="SHORTCUT ICON" href="/favicon.ico">
     <link rel="icon" href="/favicon.ico" type="image/ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="search" type="application/opensearchdescription+xml" href="http://www.interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="search" type="application/opensearchdescription+xml" href="/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
     <link rel="stylesheet" href="/decor/css/website.css">
     <link rel="stylesheet" href="/decor/css/wiki.css">
     <link rel="stylesheet" href="/decor/css/neo.css">
@@ -42,11 +42,11 @@
 <!-- START VAR: LOGOBAR -->
 <table id="rtfmheader" cellpadding="0" cellspacing="0">
     <tr>
-	<td><a href="http://www.interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+	<td><a href="/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
 
 	<td width="100%" style="text-align: right; padding: 10px">
 
-	    <form action="http://www.interchange-rtfm.pullingshots.ca/search.html" method="POST">
+	    <form action="/search.html" method="POST">
 		<input type="hidden" name="mv_session_id" value="nsession">
 		<input type="hidden" name="mv_profile" value="cms_search">
 		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
@@ -59,10 +59,10 @@
 <table id="breadcrumbs" cellpadding="0" cellspacing="0">
     <tr valign="top">
 	<td>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_database.html">Interchange database</a></span>
+	    <span class="nowrap">&gt; <a href="/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="/icdocs/category:Interchange_database.html">Interchange database</a></span>
 	    <span class="nowrap">&gt; <span class="current">Search parameters</span></span>
 	</td>
 
@@ -83,13 +83,13 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+		<li><a href="/index.html">Home</a></li>
+		<li><a href="/documentation.html">Documentation</a></li>
+		<li><a href="/downloads.html">Downloads</a></li>
+		<li><a href="/community.html">Mail lists and IRC</a></li>
+		<li><a href="/links.html">External websites</a></li>
+		<li><a href="/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="/account/usermap.html">User location map</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -107,7 +107,7 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Search_parameters.html">Search parameters</a></li>
+		<li><a href="/icdocs/Search_parameters.html">Search parameters</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -124,16 +124,16 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/area.html">area</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Form_callback_functions.html">Form callback functions</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/if-PREFIX-param.html">if-PREFIX-param</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/if-PREFIX-pos.html">if-PREFIX-pos</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Interchange_form_actions.html">Interchange form actions</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Interchange_Perl_objects.html">Interchange Perl objects</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Interchange_search_engine.html">Interchange search engine</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/more-list.html">more-list</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-code.html">PREFIX-code</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/links:Search_parameters.html">(14 pages in total)</a></li>
+		<li><a href="/icdocs/tags/area.html">area</a></li>
+		<li><a href="/icdocs/Form_callback_functions.html">Form callback functions</a></li>
+		<li><a href="/icdocs/tags/if-PREFIX-param.html">if-PREFIX-param</a></li>
+		<li><a href="/icdocs/tags/if-PREFIX-pos.html">if-PREFIX-pos</a></li>
+		<li><a href="/icdocs/Interchange_form_actions.html">Interchange form actions</a></li>
+		<li><a href="/icdocs/Interchange_Perl_objects.html">Interchange Perl objects</a></li>
+		<li><a href="/icdocs/Interchange_search_engine.html">Interchange search engine</a></li>
+		<li><a href="/icdocs/tags/more-list.html">more-list</a></li>
+		<li><a href="/icdocs/tags/PREFIX-code.html">PREFIX-code</a></li>
+		<li><a href="/icdocs/links:Search_parameters.html">(14 pages in total)</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -157,9 +157,9 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
-		<li><a href="http://www.interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+		<li><a href="/account/login.html">Log in</a></li>
+		<li><a href="/account/create.html">Create an account</a></li>
+		<li><a href="/account/reminder.html">Password reminder</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -172,7 +172,7 @@
 <!-- START COMPONENT: icpowered -->
 
 <div style="text-align: center; margin: 10px; margin-top: 0px">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+    <a href="/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
 </div>
 
 
@@ -181,7 +181,7 @@
 <!-- START COMPONENT: icpowered -->
 
 <div style="text-align: center; margin: 10px; margin-top: 0px">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+    <a href="/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
 </div>
 
 
@@ -205,7 +205,7 @@ are listed in this section.
 </p>
 <p>
 Note that this list does not include any of the
-<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html" title="Special form variables">special form variables</a>, which also happen to be
+<a href="/icdocs/Special_form_variables.html" title="Special form variables">special form variables</a>, which also happen to be
 prefixed with &quot;<span class="fixedwidth">mv_</span>&quot;.
 </p>
 <!-- start of toc --><div class="toc">
@@ -302,7 +302,7 @@ The &quot;<span class="fixedwidth">()&#91;]&#36;^</span>&quot; characters are in
 In a text file search, set to the directory in which to files should be found.&nbsp;
 File names without leading / characters will be looked for in the specified
 directory.&nbsp;
-The default is <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/DataDir.html" title="DataDir (config)">DataDir</a></span>.&nbsp;
+The default is <span class="fixedwidth"><a href="/icdocs/config/DataDir.html" title="DataDir (config)">DataDir</a></span>.&nbsp;
 For security, absolute path directory can only be specified if the
 following is set in the user's session:
 </p>
@@ -364,8 +364,8 @@ If <span class="fixedwidth"><a href="#mv_coordinate_co" title="&quot;mv coordina
 this specifies the operation that will be performed to check the column
 for a search match.&nbsp;
 A list of the supported search options can be found in the
-<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Interchange_search_engine.html#Coordinated_and_joined_searches" title="&quot;Coordinated and joined searches&quot; heading on the &quot;Interchange search engine&quot; page">Coordinated and joined searches</a>
-section of the <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Interchange_search_engine.html" title="Interchange search engine">Interchange search engine</a> page.
+<a href="/icdocs/Interchange_search_engine.html#Coordinated_and_joined_searches" title="&quot;Coordinated and joined searches&quot; heading on the &quot;Interchange search engine&quot; page">Coordinated and joined searches</a>
+section of the <a href="/icdocs/Interchange_search_engine.html" title="Interchange search engine">Interchange search engine</a> page.
 </p>
 <p>
 If <em>stacked</em> to match the
@@ -529,7 +529,7 @@ beginning with:<br>
 <!-- end of code block -->
 <p>
 The above would allow automatic binary search file selection.&nbsp;
-Combined with the <span class="fixedwidth">INDEX</span> attribute to the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Database.html" title="Database (config)">Database</a></span>
+Combined with the <span class="fixedwidth">INDEX</span> attribute to the <span class="fixedwidth"><a href="/icdocs/config/Database.html" title="Database (config)">Database</a></span>
 directive, this allows fast binary search qualification combined with
 ordinary <span class="fixedwidth"><a href="#mv_searchspec_se" title="&quot;mv searchspec se&quot; heading on this page">mv_searchspec</a></span> text searches.
 </p>
@@ -648,16 +648,16 @@ This function depends upon its context.
 </p>
 <p>
 When the search results display is handled by one of the mechanisms which
-works with <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/more-list.html" title="more-list (tags)">more-list</a>]</span> sub-tags
-(such as the <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/search-region.html" title="search-region (tags)">search-region</a>]</span> tag),
+works with <span class="fixedwidth">[<a href="/icdocs/tags/more-list.html" title="more-list (tags)">more-list</a>]</span> sub-tags
+(such as the <span class="fixedwidth">[<a href="/icdocs/tags/search-region.html" title="search-region (tags)">search-region</a>]</span> tag),
 <span class="fixedwidth">mv_matchlimit</span> determines the number of results per page.&nbsp;
 If more matches than <span class="fixedwidth">mv_matchlimit</span> are found then the search paging
-mechanism will be employed as long as the proper <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/more-list.html" title="more-list (tags)">more-list</a>]</span>
+mechanism will be employed as long as the proper <span class="fixedwidth">[<a href="/icdocs/tags/more-list.html" title="more-list (tags)">more-list</a>]</span>
 loop sub-tag is present.
 </p>
 <p>
 When the search results are displayed as one continuous list
-(such as with <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/loop.html" title="loop (tags)">loop</a> search=&quot;...&quot;]</span>),
+(such as with <span class="fixedwidth">[<a href="/icdocs/tags/loop.html" title="loop (tags)">loop</a> search=&quot;...&quot;]</span>),
 <span class="fixedwidth">mv_matchlimit</span> is equivalent, in function, to
 <span class="fixedwidth"><a href="#mv_max_matches_mm" title="&quot;mv max matches mm&quot; heading on this page">mv_max_matches</a></span>.
 </p>
@@ -669,7 +669,7 @@ of describing having no match limit.
 <p>
 If no matchlimit is provided, or an invalid setting is given
 (some other string or <span class="fixedwidth">0</span>) the default is taken from the
-<span class="fixedwidth">MV_DEFAULT_MATCHLIMIT</span> <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Variable.html" title="Variable (config)">variable</a>.&nbsp;
+<span class="fixedwidth">MV_DEFAULT_MATCHLIMIT</span> <a href="/icdocs/config/Variable.html" title="Variable (config)">variable</a>.&nbsp;
 If there is still no value,
 then a default value of <span class="fixedwidth">50</span> will be used.
 </p>
@@ -678,7 +678,7 @@ then a default value of <span class="fixedwidth">50</span> will be used.
 <p>
 The maximum number of rows that will be returned from a search.&nbsp;
 The default is <em>unlimited</em>.&nbsp;
-If search results paging with <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/more-list.html" title="more-list (tags)">more-list</a>]</span> is to
+If search results paging with <span class="fixedwidth">[<a href="/icdocs/tags/more-list.html" title="more-list (tags)">more-list</a>]</span> is to
 be employed.&nbsp;
 Use <span class="fixedwidth"><a href="#mv_matchlimit_ml" title="&quot;mv matchlimit ml&quot; heading on this page">mv_matchlimit</a></span> to set the number
 of results per page.
@@ -692,7 +692,7 @@ The default is <span class="fixedwidth">1</span> for the text-file-based searche
 <a name="mv_more_alpha_ma"></a>
 <h2>mv_more_alpha (ma)</h2>
 <p>
-If <em>true</em> then <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/more-list.html" title="more-list (tags)">more-list</a>]</span> will group results
+If <em>true</em> then <span class="fixedwidth">[<a href="/icdocs/tags/more-list.html" title="more-list (tags)">more-list</a>]</span> will group results
 by letter, instead of by page number.&nbsp;
 For instance &quot;<span class="fixedwidth">A B C</span>&quot; instead of &quot;<span class="fixedwidth">1 2 3</span>&quot;.
 </p>
@@ -714,7 +714,7 @@ parameter is specified.
 <p>
 Combined with the <span class="fixedwidth"><a href="#mv_more_alpha_ma" title="&quot;mv more alpha ma&quot; heading on this page">mv_more_alpha</a></span> switch,
 listed above, this value determines the number of letters in each
-<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/more-list.html" title="more-list (tags)">more-list</a>]</span> page link label.&nbsp;
+<span class="fixedwidth">[<a href="/icdocs/tags/more-list.html" title="more-list (tags)">more-list</a>]</span> page link label.&nbsp;
 For instance, if this value is 2 then page links could be listed as
 &quot;<span class="fixedwidth">AA AB AC</span>&quot;.&nbsp;
 The default is 3.
@@ -846,7 +846,7 @@ If more than one column is specified then they should be separated from one
 another with a comma (<span class="fixedwidth">,</span>).&nbsp;
 Do not list the same column more than once.&nbsp;
 You should always return the key column first, so that it can be used
-with the <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-code.html" title="PREFIX-code (tags)">PREFIX-code</a>]</span> loop sub-tag.
+with the <span class="fixedwidth">[<a href="/icdocs/tags/PREFIX-code.html" title="PREFIX-code (tags)">PREFIX-code</a>]</span> loop sub-tag.
 </p>
 <p>
 As with SQL queries, you can use the '<span class="fixedwidth">*</span>' shortcut to return all
@@ -998,7 +998,7 @@ then each <span class="fixedwidth">mv_search_field</span> will be matched with e
 <p>
 Set this parameter to the table(s) and/or text file(s) to be scanned.&nbsp;
 If not specified otherwise,
-the default is to scan all of the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table(s).
+the default is to scan all of the <span class="fixedwidth"><a href="/icdocs/config/DefaultTables.html" title="DefaultTables (config)">DefaultTables</a></span> table(s).
 </p>
 <a name="mv_search_immediate_si"></a>
 <h2>mv_search_immediate (si)</h2>
@@ -1064,7 +1064,7 @@ the results of a some previous search
 <p class="title">Note</p>
 <p style="margin-bottom: 0px">
 If this parameter is set to &quot;<span class="fixedwidth">db</span>&quot; or &quot;<span class="fixedwidth">sql</span>&quot; then
-returned rows may be affected by the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/TableRestrict.html" title="TableRestrict (config)">TableRestrict</a></span>
+returned rows may be affected by the <span class="fixedwidth"><a href="/icdocs/config/TableRestrict.html" title="TableRestrict (config)">TableRestrict</a></span>
 <em>local</em> configuration directive.
 </p>
 </td>
@@ -1156,20 +1156,20 @@ Title:&nbsp; <span class="html_htmlUnknowParam def_ParameterUnknown def_Paramete
 <p>
 If the right-most side of a <span class="fixedwidth">WHERE</span>/<span class="fixedwidth">AND</span>/<span class="fixedwidth">OR</span> clause
 is found to be an alphanumeric, unquoted word then it will be replaced
-with the same-named <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/value.html" title="value (tags)">form value</a>,
-or the same-named <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variable if
+with the same-named <a href="/icdocs/tags/value.html" title="value (tags)">form value</a>,
+or the same-named <a href="/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variable if
 <span class="fixedwidth">mv_sql_query</span> is used in a
-<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Interchange_search_engine.html#One-click_searches" title="&quot;One-click searches&quot; heading on the &quot;Interchange search engine&quot; page">one-click search</a>.&nbsp;
+<a href="/icdocs/Interchange_search_engine.html#One-click_searches" title="&quot;One-click searches&quot; heading on the &quot;Interchange search engine&quot; page">one-click search</a>.&nbsp;
 Quoted right-most values, and values that contain non-alphanumeric
 characters, are taken literally.
 </p>
 <p>
 If the left-most side of a <span class="fixedwidth">WHERE</span>/<span class="fixedwidth">AND</span>/<span class="fixedwidth">OR</span> clause
 is a quoted word then the behaviour is reversed,
-so the word will be replaced with the same-named <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/value.html" title="value (tags)">form value</a>,
-or the same-named <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variable if
+so the word will be replaced with the same-named <a href="/icdocs/tags/value.html" title="value (tags)">form value</a>,
+or the same-named <a href="/icdocs/tags/scratch.html" title="scratch (tags)">scratchpad</a> variable if
 <span class="fixedwidth">mv_sql_query</span> is used in a
-<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Interchange_search_engine.html#One-click_searches" title="&quot;One-click searches&quot; heading on the &quot;Interchange search engine&quot; page">one-click search</a>.
+<a href="/icdocs/Interchange_search_engine.html#One-click_searches" title="&quot;One-click searches&quot; heading on the &quot;Interchange search engine&quot; page">one-click search</a>.
 </p>
 <p>
 In the following example,
@@ -1222,10 +1222,10 @@ search parameter.
 <a name="mv_value_va"></a>
 <h2>mv_value (va)</h2>
 <p>
-This is normally only used in <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Interchange_search_engine.html#One-click_searches" title="&quot;One-click searches&quot; heading on the &quot;Interchange search engine&quot; page">One-click searches</a>.&nbsp;
-It allows setting of a session <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/value.html" title="value (tags)">form value</a> based upon the clicked
+This is normally only used in <a href="/icdocs/Interchange_search_engine.html#One-click_searches" title="&quot;One-click searches&quot; heading on the &quot;Interchange search engine&quot; page">One-click searches</a>.&nbsp;
+It allows setting of a session <a href="/icdocs/tags/value.html" title="value (tags)">form value</a> based upon the clicked
 link.&nbsp;
-See the &quot;<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Interchange_search_engine.html#Setting_display_options_with_mv_value" title="&quot;Setting display options with mv value&quot; heading on the &quot;Interchange search engine&quot; page">setting display options with mv_value</a>&quot; page.
+See the &quot;<a href="/icdocs/Interchange_search_engine.html#Setting_display_options_with_mv_value" title="&quot;Setting display options with mv value&quot; heading on the &quot;Interchange search engine&quot; page">setting display options with mv_value</a>&quot; page.
 </div>
 
 <!-- start of modification notice -->
@@ -1233,7 +1233,7 @@ See the &quot;<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Interc
     <table class="pageinfo" cellpadding="0" cellspacing="0">
 	<tr>
 	    <td>
-Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_database.html">Interchange database</a>
+Category:&nbsp; <a href="/icdocs/category:Interchange_database.html">Interchange database</a>
 	    </td>
 	</tr>
 
@@ -1241,7 +1241,7 @@ Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/cate
 	<tr>
 	    <td>
 		
-		Last modified by: <a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin">Kevin Walsh</a><br>
+		Last modified by: <a href="/account/profile.html?user=kevin">Kevin Walsh</a><br>
 		Modification date: Saturday 19 April 2008 at 12:22 PM (PDT)
 	    </td>
 	</tr>
@@ -1270,7 +1270,7 @@ Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/cate
     <tr><td class="sponsors"><a href="http://www.webmaint.net/interchange/hosting.html" title="Webmaint.net: UK Interchange business hosting"><img src="/decor/images/sponsor_logos/ukicbizhost.gif" width="140" height="56" alt="Webmaint.net: UK Interchange business hosting"></a></td></tr>
 
 
-    <tr><td class="first"><div class="bullet"><a href="http://www.interchange-rtfm.pullingshots.ca/donations.html">Donations and sponsorship</a></div></td></tr>
+    <tr><td class="first"><div class="bullet"><a href="/donations.html">Donations and sponsorship</a></div></td></tr>
 </table>
 
 <!-- END COMPONENT: sponsors -->
@@ -1284,13 +1284,13 @@ Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/cate
 <table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
     <tr>
 	<td>
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    <a href="/index.html">Home</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    <a href="/legal/legal.html">Legal nonsense</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    <a href="/legal/privacy.html">Privacy policy</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	    <a href="/contact.html">Contact us</a>
 	</td>
 
     </tr>

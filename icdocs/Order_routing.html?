@@ -18,7 +18,7 @@
 
     <link rel="SHORTCUT ICON" href="/favicon.ico">
     <link rel="icon" href="/favicon.ico" type="image/ico">
-    <link rel="search" type="application/opensearchdescription+xml" href="http://www.interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="search" type="application/opensearchdescription+xml" href="/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
     <link rel="stylesheet" href="/decor/css/website.css">
     <link rel="stylesheet" href="/decor/css/wiki.css">
     <link rel="stylesheet" href="/decor/css/neo.css">
@@ -37,11 +37,11 @@
 <!-- START VAR: LOGOBAR -->
 <table id="rtfmheader" cellpadding="0" cellspacing="0">
     <tr>
-	<td><a href="http://www.interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+	<td><a href="/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
 
 	<td width="100%" style="text-align: right; padding: 10px">
 
-	    <form action="http://www.interchange-rtfm.pullingshots.ca/search.html" method="POST">
+	    <form action="/search.html" method="POST">
 		<input type="hidden" name="mv_session_id" value="nsession">
 		<input type="hidden" name="mv_profile" value="cms_search">
 		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
@@ -54,10 +54,10 @@
 <table id="breadcrumbs" cellpadding="0" cellspacing="0">
     <tr valign="top">
 	<td>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
-	    <span class="nowrap">&gt; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_ecommerce_functions.html">Interchange ecommerce functions</a></span>
+	    <span class="nowrap">&gt; <a href="/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="/icdocs/category:Interchange_ecommerce_functions.html">Interchange ecommerce functions</a></span>
 	    <span class="nowrap">&gt; <span class="current">Order Routing</span></span>
 	</td>
 
@@ -75,12 +75,12 @@
     <tr>
 	<th>NAVIGATION</th>
     </tr>
-    <tr><td class="first"><div id="bullet"><a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a></div></td></tr>
-    <tr><td><div id="bullet"><a href="http://www.interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></div></td></tr>
-    <tr><td><div id="bullet"><a href="http://www.interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></div></td></tr>
-    <tr><td><div id="bullet"><a href="http://www.interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></div></td></tr>
-    <tr><td><div id="bullet"><a href="http://www.interchange-rtfm.pullingshots.ca/links.html">External websites</a></div></td></tr>
-    <tr><td><div id="bullet"><a href="http://www.interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></div></td></tr>
+    <tr><td class="first"><div id="bullet"><a href="/index.html">Home</a></div></td></tr>
+    <tr><td><div id="bullet"><a href="/documentation.html">Documentation</a></div></td></tr>
+    <tr><td><div id="bullet"><a href="/downloads.html">Downloads</a></div></td></tr>
+    <tr><td><div id="bullet"><a href="/community.html">Mail lists and IRC</a></div></td></tr>
+    <tr><td><div id="bullet"><a href="/links.html">External websites</a></div></td></tr>
+    <tr><td><div id="bullet"><a href="/contributions.html">Suggestions and contributions</a></div></td></tr>
 </table>
 
 
@@ -92,7 +92,7 @@
     <tr>
 	<th><span class="nowrap">RECENTLY VIEWED</span></th>
     </tr>
-    <tr><td class="first"><div id="bullet"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Order_routing.html">Order Routing</a></div></td></tr>
+    <tr><td class="first"><div id="bullet"><a href="/icdocs/Order_routing.html">Order Routing</a></div></td></tr>
 </table>
 
 
@@ -103,9 +103,9 @@
     <tr>
 	<th><span class="nowrap">PAGES THAT LINK HERE</span></th>
     </tr>
-    <tr><td class="first"><div id="bullet"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/AsciiTrack.html">AsciiTrack</a></div></td></tr>
-    <tr><td><div id="bullet"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/OrderCounter.html">OrderCounter</a></div></td></tr>
-    <tr><td><div id="bullet"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Route.html">Route</a></div></td></tr>
+    <tr><td class="first"><div id="bullet"><a href="/icdocs/config/AsciiTrack.html">AsciiTrack</a></div></td></tr>
+    <tr><td><div id="bullet"><a href="/icdocs/config/OrderCounter.html">OrderCounter</a></div></td></tr>
+    <tr><td><div id="bullet"><a href="/icdocs/config/Route.html">Route</a></div></td></tr>
 </table>
 
 
@@ -125,17 +125,17 @@
     </tr>
     <tr>
 	<td class="first">
-	    <div id="bullet" class="nowrap"><a href="http://www.interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></div>
+	    <div id="bullet" class="nowrap"><a href="/account/login.html">Log in</a></div>
 	</td>
     </tr>
     <tr>
 	<td>
-	    <div id="bullet" class="nowrap"><a href="http://www.interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></div>
+	    <div id="bullet" class="nowrap"><a href="/account/create.html">Create an account</a></div>
 	</td>
     </tr>
     <tr>
 	<td>
-	    <div id="bullet" class="nowrap"><a href="http://www.interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></div>
+	    <div id="bullet" class="nowrap"><a href="/account/reminder.html">Password reminder</a></div>
 	</td>
     </tr>
 
@@ -147,7 +147,7 @@
 <!-- START COMPONENT: icpowered -->
 
 <div style="text-align: center; margin-bottom: 10px">
-    <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.5.1"><img src="/decor/images/iclogo_button.gif" width="136" height="43" alt="Powered by Interchange version 5.5.1"></a>
+    <a href="/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.5.1"><img src="/decor/images/iclogo_button.gif" width="136" height="43" alt="Powered by Interchange version 5.5.1"></a>
 </div>
 
 
@@ -223,9 +223,9 @@
 <p>
 Interchange can send order emails, and perform custom credit card charges
 and/or logging for each item ordered.&nbsp;
-The <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Route.html" title="Route (config)">Route</a></span> directive is used to control this behaviour,
+The <span class="fixedwidth"><a href="/icdocs/config/Route.html" title="Route (config)">Route</a></span> directive is used to control this behaviour,
 along with the
-<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html#mv_order_route" title="&quot;mv order route&quot; heading on the &quot;Special form variables&quot; page">mv_order_route</a></span>
+<span class="fixedwidth"><a href="/icdocs/Special_form_variables.html#mv_order_route" title="&quot;mv order route&quot; heading on the &quot;Special form variables&quot; page">mv_order_route</a></span>
 item attribute.
 </p>
 <p>
@@ -233,7 +233,7 @@ If no <span class="fixedwidth">Route</span> is set up then Interchange will use 
 default &quot;mail out the order and show a receipt&quot; model.
 </p>
 <p>
-Here is an example <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Route.html" title="Route (config)">Route</a></span> definition:
+Here is an example <span class="fixedwidth"><a href="/icdocs/config/Route.html" title="Route (config)">Route</a></span> definition:
 </p>
 <!-- start of code block -->
 <div id="code">
@@ -317,7 +317,7 @@ These routes treat the order as a whole.
 <h3>Route specified in an item</h3>
 <p>
 If an item in the shopping cart has its
-&quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html#mv_order_route" title="&quot;mv order route&quot; heading on the &quot;Special form variables&quot; page">mv_order_route</a></span>&quot; attribute set to &quot;<span class="fixedwidth">mail</span>&quot; then it will be added to a group of
+&quot;<span class="fixedwidth"><a href="/icdocs/Special_form_variables.html#mv_order_route" title="&quot;mv order route&quot; heading on the &quot;Special form variables&quot; page">mv_order_route</a></span>&quot; attribute set to &quot;<span class="fixedwidth">mail</span>&quot; then it will be added to a group of
 one or more items that will be sent via that route.&nbsp;
 See the <a href="#Individual_item_routing" title="&quot;Individual item routing&quot; heading on this page">Individual item routing</a> section, below.
 </p>
@@ -325,7 +325,7 @@ See the <a href="#Individual_item_routing" title="&quot;Individual item routing&
 <h3>Route set in the mv_order_route form field</h3>
 <p>
 By setting a value in a
-&quot;<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html#mv_order_route" title="&quot;mv order route&quot; heading on the &quot;Special form variables&quot; page">mv_order_route</a></span>&quot; <span class="fixedwidth">&lt;form&gt;</span>
+&quot;<span class="fixedwidth"><a href="/icdocs/Special_form_variables.html#mv_order_route" title="&quot;mv order route&quot; heading on the &quot;Special form variables&quot; page">mv_order_route</a></span>&quot; <span class="fixedwidth">&lt;form&gt;</span>
 variable, you can specify one or more routes to run.&nbsp;
 This is the deprecated method used in earlier Interchange 4.6.x and
 Minivend 4 routes, although it will still work fine for the time being.
@@ -382,7 +382,7 @@ Also see the <span class="fixedwidth"><a href="#rollback_tables" title="&quot;ro
 <h3>counter</h3>
 <p>
 The location of a <em>counter file</em> which should be used instead of
-<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/OrderCounter.html" title="OrderCounter (config)">OrderCounter</a></span> for this route.&nbsp;
+<span class="fixedwidth"><a href="/icdocs/config/OrderCounter.html" title="OrderCounter (config)">OrderCounter</a></span> for this route.&nbsp;
 This is expected to generate a unique value for <span class="fixedwidth">mv_order_number</span>
 for the route.&nbsp;
 This is normally used to obtain unique order references for multi-vendor
@@ -398,8 +398,8 @@ Either this or <span class="fixedwidth"><a href="#encrypt" title="&quot;encrypt&
 <h3>dynamic_routes</h3>
 <p>
 If set in the the <em>master</em> route,
-this will cause the the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/RouteDatabase.html" class="nopage" title="RouteDatabase (config)">RouteDatabase</a></span>
-to be checked for a <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Route.html" title="Route (config)">Route</a></span>.&nbsp;
+this will cause the the <span class="fixedwidth"><a href="/icdocs/config/RouteDatabase.html" class="nopage" title="RouteDatabase (config)">RouteDatabase</a></span>
+to be checked for a <span class="fixedwidth"><a href="/icdocs/config/Route.html" title="Route (config)">Route</a></span>.&nbsp;
 If it exists, it will be read in and the database copy will be used instead
 of the static copy built when the website was (re)started.&nbsp;
 If set in a <span class="fixedwidth">subsidiary</span> route,
@@ -410,7 +410,7 @@ and <span class="fixedwidth"><a href="#dynamic_routes" title="&quot;dynamic rout
 <h3>email</h3>
 <p>
 The email address(es) where the order should be sent.&nbsp;
-This is set just like the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/MailOrderTo.html" title="MailOrderTo (config)">MailOrderTo</a></span> directive,
+This is set just like the <span class="fixedwidth"><a href="/icdocs/config/MailOrderTo.html" title="MailOrderTo (config)">MailOrderTo</a></span> directive,
 which provides the default value for this attribute.
 </p>
 <a name="empty"></a>
@@ -431,7 +431,7 @@ will be encrypted first followed by the whole of the rest of the order.
 <h3>encrypt_program</h3>
 <p>
 The encryption program incantation that should be used.&nbsp;
-Set identically to the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/EncryptProgram.html" title="EncryptProgram (config)">EncryptProgram</a></span> directive,
+Set identically to the <span class="fixedwidth"><a href="/icdocs/config/EncryptProgram.html" title="EncryptProgram (config)">EncryptProgram</a></span> directive,
 except that &quot;<span class="fixedwidth">&#37;s</span>&quot; will be replaced with the <span class="fixedwidth">pgp_key</span>.&nbsp;
 There is no default value.
 </p>
@@ -440,7 +440,7 @@ There is no default value.
 <p>
 Sets the &quot;<span class="fixedwidth">Errors-To:</span>&quot; e-mail header so that <em>bounced</em>
 order receipt emails will go to the specified address.&nbsp;
-The default is the same as <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/MailOrderTo.html" title="MailOrderTo (config)">MailOrderTo</a></span>.
+The default is the same as <span class="fixedwidth"><a href="/icdocs/config/MailOrderTo.html" title="MailOrderTo (config)">MailOrderTo</a></span>.
 </p>
 <a name="expandable"></a>
 <h3>expandable</h3>
@@ -545,7 +545,7 @@ It should be the first route in a cascade.
 <h3>payment_mode</h3>
 <p>
 If this is set, it enables a payment mode for the route.&nbsp;
-(Payment modes are also set using the <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Route.html" title="Route (config)">Route</a> directive.)
+(Payment modes are also set using the <a href="/icdocs/config/Route.html" title="Route (config)">Route</a> directive.)
 </p>
 <a name="pgp_cc_key"></a>
 <h3>pgp_cc_key</h3>
@@ -577,10 +577,10 @@ Defaults to the value of the <span class="fixedwidth"><a href="#pgp_key" title="
 <h3>profile</h3>
 <p>
 The custom order profile which should be performed to check the order
-prior to actually running the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/Route.html" title="Route (config)">Route</a></span>.&nbsp;
+prior to actually running the <span class="fixedwidth"><a href="/icdocs/config/Route.html" title="Route (config)">Route</a></span>.&nbsp;
 If it fails then the route will not be used.&nbsp;
-See <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/OrderProfile.html" title="OrderProfile (config)">OrderProfile</a></span> and
-<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html#mv_order_profile" title="&quot;mv order profile&quot; heading on the &quot;Special form variables&quot; page">mv_order_profile</a></span>.
+See <span class="fixedwidth"><a href="/icdocs/config/OrderProfile.html" title="OrderProfile (config)">OrderProfile</a></span> and
+<span class="fixedwidth"><a href="/icdocs/Special_form_variables.html#mv_order_profile" title="&quot;mv order profile&quot; heading on the &quot;Special form variables&quot; page">mv_order_profile</a></span>.
 </p>
 <a name="receipt"></a>
 <h3>receipt</h3>
@@ -602,7 +602,7 @@ be sent as a MIME attachment to the main order report.
 The &quot;<span class="fixedwidth">Reply-To:</span>&quot; email header that should be set.&nbsp;
 Default is the same as the <span class="fixedwidth"><a href="#email" title="&quot;email&quot; heading on this page">email</a></span> attribute.&nbsp;
 If there are only word characters (A-Za-z0-9 and underscore),
-it describes an Interchange <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/value.html" title="value (tags)">value</a></span> name where the
+it describes an Interchange <span class="fixedwidth"><a href="/icdocs/tags/value.html" title="value (tags)">value</a></span> name where the
 email address can be found.
 </p>
 <a name="rollback"></a>
@@ -623,7 +623,7 @@ Also see the <span class="fixedwidth"><a href="#commit_tables" title="&quot;comm
 <p>
 Specify whether the <em>master</em> route should <em>supplant</em> the
 <span class="fixedwidth">main</span> order report.&nbsp;
-If set, the <span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/config/AsciiTrack.html" title="AsciiTrack (config)">AsciiTrack</a></span> operation will use this route
+If set, the <span class="fixedwidth"><a href="/icdocs/config/AsciiTrack.html" title="AsciiTrack (config)">AsciiTrack</a></span> operation will use this route
 and the normal Interchange order e-mail sequence will not be used.&nbsp;
 This is normally set in the <em>master</em> route.
 </p>
@@ -768,18 +768,18 @@ They will get their &quot;<span class="fixedwidth">encrypt_program</span>&quot; 
 <p>
 Individual item routing causes all items labelled with that route to be
 placed in a special sub-cart that will be used for the order report.&nbsp;
-This means that the <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>] ...
+This means that the <span class="fixedwidth">[<a href="/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>] ...
 &#91;/item-list]</span> will only
 contain those items,
 allowing operations to be performed on subsets of the complete order.&nbsp;
-The <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/subtotal.html" title="subtotal (tags)">subtotal</a>]</span>, <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/salestax.html" title="salestax (tags)">salestax</a>]</span>,
-<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/shipping.html" title="shipping (tags)">shipping</a>]</span>, <span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/handling.html" title="handling (tags)">handling</a>]</span> and
-<span class="fixedwidth">[<a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/tags/total-cost.html" title="total-cost (tags)">total-cost</a>]</span> tags are also affected.
+The <span class="fixedwidth">[<a href="/icdocs/tags/subtotal.html" title="subtotal (tags)">subtotal</a>]</span>, <span class="fixedwidth">[<a href="/icdocs/tags/salestax.html" title="salestax (tags)">salestax</a>]</span>,
+<span class="fixedwidth">[<a href="/icdocs/tags/shipping.html" title="shipping (tags)">shipping</a>]</span>, <span class="fixedwidth">[<a href="/icdocs/tags/handling.html" title="handling (tags)">handling</a>]</span> and
+<span class="fixedwidth">[<a href="/icdocs/tags/total-cost.html" title="total-cost (tags)">total-cost</a>]</span> tags are also affected.
 </p>
 <p>
 Some method of determining their status must be made,
 and the
-<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html#mv_order_route" title="&quot;mv order route&quot; heading on the &quot;Special form variables&quot; page">mv_order_route</a></span>
+<span class="fixedwidth"><a href="/icdocs/Special_form_variables.html#mv_order_route" title="&quot;mv order route&quot; heading on the &quot;Special form variables&quot; page">mv_order_route</a></span>
 attribute must be set for each item.&nbsp;
 This could be set when item is placed in the basket,
 or there could be a database column called <span class="fixedwidth">goods_type</span> (for instance)
@@ -814,7 +814,7 @@ for every item in the current cart:
 <!-- end of code block -->
 <p>
 After the above is run, the individual items will be labelled with a
-<span class="fixedwidth"><a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html#mv_order_route" title="&quot;mv order route&quot; heading on the &quot;Special form variables&quot; page">mv_order_route</a></span> value,
+<span class="fixedwidth"><a href="/icdocs/Special_form_variables.html#mv_order_route" title="&quot;mv order route&quot; heading on the &quot;Special form variables&quot; page">mv_order_route</a></span> value,
 which causes their inclusion in the appropriate order route.
 </p>
 <p>
@@ -839,7 +839,7 @@ in this example.
     <table id="pageinfo" cellpadding="0" cellspacing="0">
 	<tr>
 	    <td>
-Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_ecommerce_functions.html">Interchange ecommerce functions</a>
+Category:&nbsp; <a href="/icdocs/category:Interchange_ecommerce_functions.html">Interchange ecommerce functions</a>
 	    </td>
 	</tr>
 
@@ -847,7 +847,7 @@ Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/cate
 	<tr>
 	    <td>
 		
-		Last modified by: <a href="http://www.interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin">Kevin Walsh</a><br>
+		Last modified by: <a href="/account/profile.html?user=kevin">Kevin Walsh</a><br>
 		Modification date: Wednesday 6 September 2006 at 12:14 PM (PDT)
 	    </td>
 	</tr>
@@ -872,13 +872,13 @@ Category:&nbsp; <a href="http://www.interchange-rtfm.pullingshots.ca/icdocs/cate
 <table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
     <tr>
 	<td>
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    <a href="/index.html">Home</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    <a href="/legal/legal.html">Legal nonsense</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    <a href="/legal/privacy.html">Privacy policy</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://www.interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	    <a href="/contact.html">Contact us</a>
 	</td>
 
     </tr>

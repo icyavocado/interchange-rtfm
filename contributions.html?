@@ -27,7 +27,7 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
-    <link rel="search" type="application/opensearchdescription+xml" href="http://interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="search" type="application/opensearchdescription+xml" href="/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
     <link rel="stylesheet" href="/decor/css/website.css">
 
     <script type="text/javascript" language="JavaScript">
@@ -43,11 +43,11 @@
 <!-- START VAR: LOGOBAR -->
 <table id="rtfmheader" cellpadding="0" cellspacing="0">
     <tr>
-	<td><a href="http://interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+	<td><a href="/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
 
 	<td width="100%" style="text-align: right; padding: 10px">
 
-	    <form action="http://interchange-rtfm.pullingshots.ca/search.html" method="POST">
+	    <form action="/search.html" method="POST">
 		<input type="hidden" name="mv_session_id" value="nsession">
 		<input type="hidden" name="mv_profile" value="cms_search">
 		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
@@ -60,7 +60,7 @@
 <table id="breadcrumbs" cellpadding="0" cellspacing="0">
     <tr valign="top">
 	<td>
-	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="/index.html">Home</a></span>
 	    <span class="nowrap">&gt; <span class="current">Suggestions and contributions</span></span>
 	</td>
 
@@ -81,13 +81,13 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+		<li><a href="/index.html">Home</a></li>
+		<li><a href="/documentation.html">Documentation</a></li>
+		<li><a href="/downloads.html">Downloads</a></li>
+		<li><a href="/community.html">Mail lists and IRC</a></li>
+		<li><a href="/links.html">External websites</a></li>
+		<li><a href="/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="/account/usermap.html">User location map</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -112,9 +112,9 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+		<li><a href="/account/login.html">Log in</a></li>
+		<li><a href="/account/create.html">Create an account</a></li>
+		<li><a href="/account/reminder.html">Password reminder</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -127,7 +127,7 @@
 <!-- START COMPONENT: icpowered -->
 
 <div style="text-align: center; margin: 10px; margin-top: 0px">
-    <a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+    <a href="/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
 </div>
 
 
@@ -159,7 +159,7 @@ website design for some reason.
 <p>
 If you have any suggestions on how this new site should be arranged or run,
 or would like to contribute then please
-<a href="http://interchange-rtfm.pullingshots.ca/contact.html?subject=Suggestion%20or%20contribution">contact us</a>.&nbsp;
+<a href="/contact.html?subject=Suggestion%20or%20contribution">contact us</a>.&nbsp;
 We are trying to collect demo websites, Perl snippets, UserTags,
 payment gateway modules, HOWTO-style documents and other useful Interchange-related goodies.&nbsp;
 Please submit anything you can.&nbsp;
@@ -167,7 +167,7 @@ The author will retain the copyright over any contributions made,
 and will be fully acknowledged on this website.
 </p>
 <p>
-Please ensure that any contributions are submitted under the terms of the <a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2egnu%2eorg%2flicenses%2fgpl%2ehtml" rel="nofollow">GNU General Public licence</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
+Please ensure that any contributions are submitted under the terms of the <a href="/bouncer.html?target=http%3a%2f%2fwww%2egnu%2eorg%2flicenses%2fgpl%2ehtml" rel="nofollow">GNU General Public licence</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page">
 or another genuinely free licence.&nbsp;
 We will not accept contributions that are crippled by restrictions placed on
 their free redistribution or use.
@@ -181,7 +181,7 @@ contributions and we're starting to look unwell.
 <p>
 If any of the information on this website is out of date,
 or complete and utter nonsense,
-then please <a href="http://interchange-rtfm.pullingshots.ca/contact.html?subject=Out%20of%20date%20information">let us know</a>.&nbsp;
+then please <a href="/contact.html?subject=Out%20of%20date%20information">let us know</a>.&nbsp;
 You will have a warm inner glow for the rest of the day.
 </p>
 <p style="margin-bottom: 0px">
@@ -189,7 +189,7 @@ If you find this website useful then please send whatever you consider this
 site's continued existence is worth to you.&nbsp;
 All donations will go towards the cost of keeping this site alive,
 hosted and regularly updated.&nbsp;
-<a href="http://interchange-rtfm.pullingshots.ca/donations.html">Please click here to go to our donations page</a>.
+<a href="/donations.html">Please click here to go to our donations page</a>.
 </p>
 </div>
 </div>
@@ -213,8 +213,8 @@ hosted and regularly updated.&nbsp;
 <p style="margin-bottom: 0px">
 If you would like to become an interchange.RTFM.info sponsor,
 and get your logo into our list,
-then please <a href="http://interchange-rtfm.pullingshots.ca/contact.html?subject=Interchange%20RTFM%20sponsorship">contact us</a>.&nbsp;
-The sponsorship logo list will also be displayed on our <a href="http://interchange-rtfm.pullingshots.ca/index.html">home page</a>.
+then please <a href="/contact.html?subject=Interchange%20RTFM%20sponsorship">contact us</a>.&nbsp;
+The sponsorship logo list will also be displayed on our <a href="/index.html">home page</a>.
 </p>
 </div>
 </div>
@@ -233,13 +233,13 @@ The sponsorship logo list will also be displayed on our <a href="http://intercha
 <table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
     <tr>
 	<td>
-	    <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    <a href="/index.html">Home</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    <a href="/legal/legal.html">Legal nonsense</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    <a href="/legal/privacy.html">Privacy policy</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	    <a href="/contact.html">Contact us</a>
 	</td>
 
     </tr>

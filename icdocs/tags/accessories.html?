@@ -27,7 +27,7 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
-    <link rel="search" type="application/opensearchdescription+xml" href="http://interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="search" type="application/opensearchdescription+xml" href="/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
     <link rel="stylesheet" href="/decor/css/website.css">
     <link rel="stylesheet" href="/decor/css/wiki.css">
     <link rel="stylesheet" href="/decor/css/neo.css">
@@ -46,11 +46,11 @@
 <!-- START VAR: LOGOBAR -->
 <table id="rtfmheader" cellpadding="0" cellspacing="0">
     <tr>
-	<td><a href="http://interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+	<td><a href="/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
 
 	<td width="100%" style="text-align: right; padding: 10px">
 
-	    <form action="http://interchange-rtfm.pullingshots.ca/search.html" method="POST">
+	    <form action="/search.html" method="POST">
 		<input type="hidden" name="mv_session_id" value="nsession">
 		<input type="hidden" name="mv_profile" value="cms_search">
 		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
@@ -63,10 +63,10 @@
 <table id="breadcrumbs" cellpadding="0" cellspacing="0">
     <tr valign="top">
 	<td>
-	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
-	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
-	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/index.html">Latest documentation</a></span>
-	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a></span>
+	    <span class="nowrap">&gt; <a href="/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="/icdocs/index.html">Latest documentation</a></span>
+	    <span class="nowrap">&gt; <a href="/icdocs/category:Interchange_tags.html">Interchange tags</a></span>
 	    <span class="nowrap">&gt; <span class="current">accessories</span></span>
 	</td>
 
@@ -87,13 +87,13 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+		<li><a href="/index.html">Home</a></li>
+		<li><a href="/documentation.html">Documentation</a></li>
+		<li><a href="/downloads.html">Downloads</a></li>
+		<li><a href="/community.html">Mail lists and IRC</a></li>
+		<li><a href="/links.html">External websites</a></li>
+		<li><a href="/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="/account/usermap.html">User location map</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -116,12 +116,12 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/AutoModifier.html">AutoModifier</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Item_attributes.html">Item attributes</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/loop.html">loop</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/perl.html">perl</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-accessories.html">PREFIX-accessories</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UseModifier.html">UseModifier</a></li>
+		<li><a href="/icdocs/config/AutoModifier.html">AutoModifier</a></li>
+		<li><a href="/icdocs/Item_attributes.html">Item attributes</a></li>
+		<li><a href="/icdocs/tags/loop.html">loop</a></li>
+		<li><a href="/icdocs/tags/perl.html">perl</a></li>
+		<li><a href="/icdocs/tags/PREFIX-accessories.html">PREFIX-accessories</a></li>
+		<li><a href="/icdocs/config/UseModifier.html">UseModifier</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -145,9 +145,9 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+		<li><a href="/account/login.html">Log in</a></li>
+		<li><a href="/account/create.html">Create an account</a></li>
+		<li><a href="/account/reminder.html">Password reminder</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -160,7 +160,7 @@
 <!-- START COMPONENT: icpowered -->
 
 <div style="text-align: center; margin: 10px; margin-top: 0px">
-    <a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+    <a href="/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
 </div>
 
 
@@ -210,7 +210,7 @@ or can simply return a value.
 </tr>
 <tr valign="top">
 <td class="grid"><a href="#code" title="&quot;code&quot; heading on this page">code</a></td>
-<td class="grid">Value of the SKU code in the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span>
+<td class="grid">Value of the SKU code in the <span class="fixedwidth"><a href="/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span>
 (or specified other) <a href="#table" title="&quot;table&quot; heading on this page">table</a>.</td>
 <td class="grid"><em>None</em></td>
 </tr>
@@ -320,7 +320,7 @@ attribute, type, column, table, name, outboard, passed.&nbsp;
 </tr>
 <tr valign="top">
 <td class="grid"><a href="#outboard" title="&quot;outboard&quot; heading on this page">outboard</a></td>
-<td class="grid">Used with the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a>]</span>
+<td class="grid">Used with the <span class="fixedwidth">[<a href="/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a>]</span>
 tag to specify the <a href="#table" title="&quot;table&quot; heading on this page">table</a> lookup value.</td>
 <td class="grid"><em>None</em></td>
 </tr>
@@ -360,22 +360,22 @@ tag to specify the <a href="#table" title="&quot;table&quot; heading on this pag
 <td class="grid"><a href="#table" title="&quot;table&quot; heading on this page">table</a></td>
 <td class="grid">Specifies database table that contains the item's attribute values
 </td>
-<td class="grid">See <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span></td>
+<td class="grid">See <span class="fixedwidth"><a href="/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span></td>
 </tr>
 <tr valign="top">
 <td class="grid"><a href="#table" title="&quot;table&quot; heading on this page">base</a></td>
 <td class="grid">Alias for <a href="#table" title="&quot;table&quot; heading on this page">table</a>.</td>
-<td class="grid">See <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span></td>
+<td class="grid">See <span class="fixedwidth"><a href="/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span></td>
 </tr>
 <tr valign="top">
 <td class="grid"><a href="#table" title="&quot;table&quot; heading on this page">database</a></td>
 <td class="grid">Alias for <a href="#table" title="&quot;table&quot; heading on this page">table</a>.</td>
-<td class="grid">See <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span></td>
+<td class="grid">See <span class="fixedwidth"><a href="/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span></td>
 </tr>
 <tr valign="top">
 <td class="grid"><a href="#table" title="&quot;table&quot; heading on this page">db</a></td>
 <td class="grid">Alias for <a href="#table" title="&quot;table&quot; heading on this page">table</a>.</td>
-<td class="grid">See <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span></td>
+<td class="grid">See <span class="fixedwidth"><a href="/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span></td>
 </tr>
 <tr valign="top">
 <td class="grid"><a href="#template" title="&quot;template&quot; heading on this page">template</a></td>
@@ -473,7 +473,7 @@ shopping cart.&nbsp;
 You can also resubmit previous attribute values via <em>hidden</em> form fields.
 </p>
 <p>
-The <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UseModifier.html" title="UseModifier (config)">UseModifier</a></span> <em>local</em> configuration directive
+The <span class="fixedwidth"><a href="/icdocs/config/UseModifier.html" title="UseModifier (config)">UseModifier</a></span> <em>local</em> configuration directive
 is used to set the name of the modifier(s).&nbsp;
 For example:
 </p>
@@ -516,7 +516,7 @@ You may not use the following names for attributes:&nbsp;
 </table>
 
 <p>
-You can also set modifier names with the &quot;<span class="fixedwidth">mv_UseModifier</span>&quot; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/set.html" title="set (tags)">scratchpad</a> variable, as follows:
+You can also set modifier names with the &quot;<span class="fixedwidth">mv_UseModifier</span>&quot; <a href="/icdocs/tags/set.html" title="set (tags)">scratchpad</a> variable, as follows:
 </p>
 <!-- start of code block -->
 <div class="code">
@@ -539,18 +539,18 @@ This allows multiple options to be set for products.&nbsp;
 Whichever one is in effect at order time will be used.&nbsp;
 Be careful:&nbsp;
 You cannot set it more than once on the same page.&nbsp;
-Setting the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html#mv_separate_items" title="&quot;mv separate items&quot; heading on the &quot;Special form variables&quot; page">mv_separate_items</a></span>
-or the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SeparateItems.html" title="SeparateItems (config)">SeparateItems</a></span> directive places each ordered
+Setting the <span class="fixedwidth"><a href="/icdocs/Special_form_variables.html#mv_separate_items" title="&quot;mv separate items&quot; heading on the &quot;Special form variables&quot; page">mv_separate_items</a></span>
+or the <span class="fixedwidth"><a href="/icdocs/config/SeparateItems.html" title="SeparateItems (config)">SeparateItems</a></span> directive places each ordered
 item on a separate line,
 simplifying attribute handling.&nbsp;
-The <a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/set.html" title="set (tags)">scratchpad</a> setting for
-<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html#mv_separate_items" title="&quot;mv separate items&quot; heading on the &quot;Special form variables&quot; page">mv_separate_items</a></span>
+The <a href="/icdocs/tags/set.html" title="set (tags)">scratchpad</a> setting for
+<span class="fixedwidth"><a href="/icdocs/Special_form_variables.html#mv_separate_items" title="&quot;mv separate items&quot; heading on the &quot;Special form variables&quot; page">mv_separate_items</a></span>
 has the same effect.
 </p>
 <p>
-The modifier value is accessed in the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span> loop,
-with the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-param.html" title="PREFIX-param (tags)">item-param</a> attribute]</span> tag,
-and form input fields are placed with the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-modifier-name.html" title="PREFIX-modifier-name (tags)">modifier-name</a> attribute]</span> tag.&nbsp;
+The modifier value is accessed in the <span class="fixedwidth">[<a href="/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span> loop,
+with the <span class="fixedwidth">[<a href="/icdocs/tags/PREFIX-param.html" title="PREFIX-param (tags)">item-param</a> attribute]</span> tag,
+and form input fields are placed with the <span class="fixedwidth">[<a href="/icdocs/tags/PREFIX-modifier-name.html" title="PREFIX-modifier-name (tags)">modifier-name</a> attribute]</span> tag.&nbsp;
 This is similar to the way quantities are handled.
 </p>
 
@@ -565,7 +565,7 @@ This is similar to the way quantities are handled.
 You must be sure that none of the fields in your forms have digits appended
 to their name if the variable is the same name as the attribute name you select.&nbsp;
 This is because the
-<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-modifier-name.html" title="PREFIX-modifier-name (tags)">modifier-name</a> size]</span> variables will
+<span class="fixedwidth">[<a href="/icdocs/tags/PREFIX-modifier-name.html" title="PREFIX-modifier-name (tags)">modifier-name</a> size]</span> variables will
 be placed in the user session with names like <span class="fixedwidth">size0</span>,
 <span class="fixedwidth">size1</span> and <span class="fixedwidth">size2</span> etc.
 </p>
@@ -576,7 +576,7 @@ be placed in the user session with names like <span class="fixedwidth">size0</sp
 <p>
 Interchange will automatically generate the <em>select</em> widgets
 when the
-<span class="fixedwidth">&#91;accessories code=&quot;os28044&quot; attribute=&quot;size&quot;]</span> or <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a> size]</span> tags are called.&nbsp;
+<span class="fixedwidth">&#91;accessories code=&quot;os28044&quot; attribute=&quot;size&quot;]</span> or <span class="fixedwidth">[<a href="/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a> size]</span> tags are called.&nbsp;
 They have the following syntax:
 </p>
 <!-- start of code block -->
@@ -663,7 +663,7 @@ For example:
 </div>
 <!-- end of code block -->
 <p>
-This will search the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span> table(s)
+This will search the <span class="fixedwidth"><a href="/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span> table(s)
 for a column named &quot;<span class="fixedwidth">colours</span>&quot;.&nbsp;
 If an entry such as
 &quot;<span class="fixedwidth">beige=Almond, gold=Harvest Gold, White*, green=Avocado</span>&quot; is found then a <em>select</em> widget like the following will be built:
@@ -688,20 +688,20 @@ If an entry such as
 <!-- end of code block -->
 <p>
 You can use this in combination with the
-<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html#mv_order_item" title="&quot;mv order item&quot; heading on the &quot;Special form variables&quot; page">mv_order_item</a></span> and
-<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Special_form_variables.html#mv_order_quantity" title="&quot;mv order quantity&quot; heading on the &quot;Special form variables&quot; page">mv_order_quantity</a></span>
+<span class="fixedwidth"><a href="/icdocs/Special_form_variables.html#mv_order_item" title="&quot;mv order item&quot; heading on the &quot;Special form variables&quot; page">mv_order_item</a></span> and
+<span class="fixedwidth"><a href="/icdocs/Special_form_variables.html#mv_order_quantity" title="&quot;mv order quantity&quot; heading on the &quot;Special form variables&quot; page">mv_order_quantity</a></span>
 session variables to allow a customer
 to enter an item attribute during an order.
 </p>
 <p>
-If used in an <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span>,
+If used in an <span class="fixedwidth">[<a href="/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span>,
 and the user has changed the value,
 the generated <em>select</em> widget will automatically retain its
 current value&lt;/i&gt;,
 as selected by the user.&nbsp;
 The value can then be displayed with
-<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-modifier.html" title="PREFIX-modifier (tags)">item-modifier</a> colour]</span> on the order report,
-order receipt or any other page containing an <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span>
+<span class="fixedwidth">[<a href="/icdocs/tags/PREFIX-modifier.html" title="PREFIX-modifier (tags)">item-modifier</a> colour]</span> on the order report,
+order receipt or any other page containing an <span class="fixedwidth">[<a href="/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span>
 tag.
 </p>
 <a name="Emulating_with_a_loop"></a>
@@ -714,7 +714,7 @@ the tag offers.&nbsp;
 The following is a fragment from a shopping basket display form,
 which shows a selectable size with <em>sticky</em> setting,
 and a price that changes based upon the modifier setting.&nbsp;
-Note that this example would normally be contained within the <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]&#91;/item-list]</span> pair.
+Note that this example would normally be contained within the <span class="fixedwidth">[<a href="/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]&#91;/item-list]</span> pair.
 </p>
 <!-- start of code block -->
 <div class="code">
@@ -734,8 +734,8 @@ Note that this example would normally be contained within the <span class="fixed
 </div>
 <!-- end of code block -->
 <p>
-The output of the above would be similar to the output of <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">item-accessories</a> size select]</span>
-if the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span> table's <span class="fixedwidth">size</span> column
+The output of the above would be similar to the output of <span class="fixedwidth">[<a href="/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">item-accessories</a> size select]</span>
+if the <span class="fixedwidth"><a href="/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span> table's <span class="fixedwidth">size</span> column
 contained the value &quot;<span class="fixedwidth">S, M, L, XL</span>&quot;.&nbsp;
 The difference is that the options in the loop emulation show the
 adjusted price in addition to the size within each option value.
@@ -747,25 +747,25 @@ As a technical note, some of the features of this tag work differently
 depending upon whether it was called with a <span class="fixedwidth">&#36;Vend::Interpolate::item</span>
 hash reference.&nbsp;
 For example, when called as
-<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">item-accessories</a>]</span> within an
-<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span> container.
+<span class="fixedwidth">[<a href="/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">item-accessories</a>]</span> within an
+<span class="fixedwidth">[<a href="/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span> container.
 </p>
 <p>
 In this context,
 the tag will have access to ancillary data from the item
 (including, perhaps, a user's chosen item attribute value).&nbsp;
 For example,
-if building a <em>textarea</em> widget within an [<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>],
+if building a <em>textarea</em> widget within an [<a href="/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>],
 the widget will show the chosen item attribute value.&nbsp;
 On the other hand,
 within an array list such as a <span class="fixedwidth">&#91;search-list]</span> block in a
-<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/search-region.html" title="search-region (tags)">search-region</a>]</span>,
+<span class="fixedwidth">[<a href="/icdocs/tags/search-region.html" title="search-region (tags)">search-region</a>]</span>,
 the widget would be empty.
 </p>
 <p>
 If you really know what you're doing,
 you can pass an <em>item</em> hash reference,
-within a <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/perl.html" title="perl (tags)">perl</a>]</span> tag,
+within a <span class="fixedwidth">[<a href="/icdocs/tags/perl.html" title="perl (tags)">perl</a>]</span> tag,
 like this:
 </p>
 <!-- start of code block -->
@@ -787,7 +787,7 @@ like this:
 </div>
 <!-- end of code block -->
 <p>
-Also see the <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Looping_tags_and_sub-tags.html" title="Category - looping tags and sub-tags">Looping tags and sub-tags</a> category for
+Also see the <a href="/icdocs/category:Looping_tags_and_sub-tags.html" title="Category - looping tags and sub-tags">Looping tags and sub-tags</a> category for
 information about hash-context and array-context in looping tags.
 </p>
 <a name="Parameters"></a>
@@ -798,14 +798,14 @@ information about hash-context and array-context in looping tags.
 This is the primary key in the specified <span class="fixedwidth"><a href="#table" title="&quot;table&quot; heading on this page">table</a></span>
 (commonly named &quot;<span class="fixedwidth">sku</span>&quot; in a <em>products</em> table).&nbsp;
 If no <span class="fixedwidth"><a href="#table" title="&quot;table&quot; heading on this page">table</a></span> is specified then this tag defaults to the table(s)
-defined with the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span> <em>local</em> configuration
+defined with the <span class="fixedwidth"><a href="/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span> <em>local</em> configuration
 directive which,
 in turn,
 defaults to &quot;<span class="fixedwidth">products</span>&quot;.
 </p>
 <p>
 You should not specify a <span class="fixedwidth">code</span> parameter when looping on
-<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a>]</span>,
+<span class="fixedwidth">[<a href="/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a>]</span>,
 as it internally sets the &quot;<span class="fixedwidth">code</span>&quot; to the key for the current
 item in the loop.&nbsp;
 See the <span class="fixedwidth"><a href="#outboard" title="&quot;outboard&quot; heading on this page">outboard</a></span> parameter.
@@ -834,7 +834,7 @@ at any time.
 This parameter allows you to pass values for some of the more commonly
 used attributes,
 in the manner of the
-<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a>]</span> tag,
+<span class="fixedwidth">[<a href="/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a>]</span> tag,
 as a comma-delimited positional list.&nbsp;
 For instance:
 </p>
@@ -901,7 +901,7 @@ the following:
 <p class="title">Note</p>
 <p style="margin-bottom: 0px">
 Although you must use such a comma-delimited list to pass attributes to the
-<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a>]</span> tag,
+<span class="fixedwidth">[<a href="/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a>]</span> tag,
 please use named attributes instead for the <span class="fixedwidth">&#91;accessories]</span> tag.
 </p>
 </td>
@@ -920,7 +920,7 @@ which is treated within the tag.
 <p>
 You can set attributes for items in a <span class="fixedwidth"><a href="#table" title="&quot;table&quot; heading on this page">table</a></span>,
 usually the &quot;<span class="fixedwidth">products</span>&quot; table,
-with the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UseModifier.html" title="UseModifier (config)">UseModifier</a></span> configuration directive.&nbsp;
+with the <span class="fixedwidth"><a href="/icdocs/config/UseModifier.html" title="UseModifier (config)">UseModifier</a></span> configuration directive.&nbsp;
 Typical attributes are &quot;<span class="fixedwidth">size</span>&quot; and &quot;<span class="fixedwidth">colour</span>&quot;.
 </p>
 <p>
@@ -1323,7 +1323,7 @@ will be named &quot;<span class="fixedwidth">mv_order_size</span>&quot;.
 <p>
 If the variable is set in the user's session
 then the widget will retain its previous setting.&nbsp;
-In other words, <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/value.html" title="value (tags)">value</a> name]</span> will contain the
+In other words, <span class="fixedwidth">[<a href="/icdocs/tags/value.html" title="value (tags)">value</a> name]</span> will contain the
 previous setting and the widget will use it as its default setting.&nbsp;
 Also see the <span class="fixedwidth"><a href="#default" title="&quot;default&quot; heading on this page">default</a></span> parameter.
 </p>
@@ -1336,7 +1336,7 @@ then you can use this parameter to pass the key value that should
 can be used to find the accessory data.
 </p>
 <p>
-This is especially useful when using <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a>]</span>,
+This is especially useful when using <span class="fixedwidth">[<a href="/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a>]</span>,
 as that loop sub-tag cannot be passed a <span class="fixedwidth"><a href="#code" title="&quot;code&quot; heading on this page">code</a></span> parameter.
 </p>
 <a name="passed"></a>
@@ -1507,7 +1507,7 @@ a <span class="fixedwidth">&lt;textarea&gt;</span> widget with &quot;<span class
 &quot;<span class="fixedwidth">cols=33</span>&quot; and &quot;<span class="fixedwidth">wrap=virtual</span>&quot;.&nbsp;
 You should resort to this only when you cannot use the named parameters,
 for example within the
-<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a>]</span> tag.
+<span class="fixedwidth">[<a href="/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a>]</span> tag.
 </p>
 <p>
 The result of setting conflicting values in the type string and the
@@ -1524,13 +1524,13 @@ Requires <a href="#type" title="&quot;type&quot; heading on this page">type</a> 
 <p>
 Setting this parameter <em>true</em> will cause the generated link(s)
 to point to your <em>secure</em> (HTTPS/SSL) Interchange URI.&nbsp;
-See the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/SecureURL.html" title="SecureURL (config)">SecureURL</a></span> <em>local</em> configuration directive.
+See the <span class="fixedwidth"><a href="/icdocs/config/SecureURL.html" title="SecureURL (config)">SecureURL</a></span> <em>local</em> configuration directive.
 </p>
 <a name="table"></a>
 <h3>table</h3>
 <p>
 This is the database table containing the item's attribute values.&nbsp;
-It defaults to the first of the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span>
+It defaults to the first of the <span class="fixedwidth"><a href="/icdocs/config/ProductFiles.html" title="ProductFiles (config)">ProductFiles</a></span>
 tables,
 found to contain a matching SKU.
 </p>
@@ -1539,7 +1539,7 @@ If you have configured your database so that the attributes are kept in a differ
 table from other item data,
 then the primary key should be named &quot;<span class="fixedwidth">code</span>&quot; and contain product SKUs.&nbsp;
 If you're using
-&quot;<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a>]</span>&quot; and cannot
+&quot;<span class="fixedwidth">[<a href="/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a>]</span>&quot; and cannot
 Specify &quot;<span class="fixedwidth">code=key</span>&quot; then use the <a href="#outboard" title="&quot;outboard&quot; heading on this page">outboard</a> parameter instead.
 </p>
 <a name="template"></a>
@@ -1583,7 +1583,7 @@ a <span class="fixedwidth"><a href="#type" title="&quot;type&quot; heading on th
 </td>
 <td class="grid">Shows the <em>label text</em> for <strong>only the selected option</strong>
 if called in <em>hash list</em> context,
-such as within an <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span>.&nbsp;
+such as within an <span class="fixedwidth">[<a href="/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span>.&nbsp;
 This parameter is ignored otherwise,
 and the tag will build the default &lt;select&gt; menu.</td>
 <td class="grid">All
@@ -1854,7 +1854,7 @@ where <em>X</em> is in the range of -9 through 9.</td>
 </td>
 <td class="grid">Builds a <em>textarea</em> with the selected item attribute
 value if used in Hash List context,
-such as within an <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span> tag.&nbsp;
+such as within an <span class="fixedwidth">[<a href="/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span> tag.&nbsp;
 <br><br>
 the <em>textarea</em> will be built with 4 rows and 40 columns,
 unless you specify a <span class="fixedwidth"><a href="#rows" title="&quot;rows&quot; heading on this page">rows</a></span> or <span class="fixedwidth"><a href="#cols" title="&quot;cols&quot; heading on this page">cols</a></span>
@@ -1868,7 +1868,7 @@ parameter.</td>
 <em>Y</em> rows and <em>X</em> columns.&nbsp;
 The <em>textarea</em> will contain the selected item attribute value
 if used in Hash List context,
-such as within an <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span> tag.</td>
+such as within an <span class="fixedwidth">[<a href="/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span> tag.</td>
 <td class="grid">All
 </td>
 </tr>
@@ -1878,7 +1878,7 @@ such as within an <span class="fixedwidth">[<a href="http://interchange-rtfm.pul
 <td class="grid">Builds a <em>text input</em> widget.&nbsp;
 The widget's value will be set to the selected item attribute
 value if used in Hash List context,
-such as within an <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span> tag.&nbsp;
+such as within an <span class="fixedwidth">[<a href="/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span> tag.&nbsp;
 <br><br>
 The <em>text input</em> widget will be built to be 60 characters
 wide unless you specify a <span class="fixedwidth"><a href="#cols" title="&quot;cols&quot; heading on this page">cols</a></span> parameter.</td>
@@ -1891,7 +1891,7 @@ wide unless you specify a <span class="fixedwidth"><a href="#cols" title="&quot;
 <em>X</em> characters wide.&nbsp;
 The widget's value will be set to the selected item attribute
 value if used in Hash List context,
-such as within an <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span> tag.</td>
+such as within an <span class="fixedwidth">[<a href="/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span> tag.</td>
 <td class="grid">All
 </td>
 </tr>
@@ -1908,7 +1908,7 @@ for selecting from a list or inputting a new value.</td>
 <td class="grid">reverse_combo
 </td>
 <td class="grid">Special type,
-used with the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/filters/last_non_null.html" title="last non null (filters)">last_non_null</a></span> filter,
+used with the <span class="fixedwidth"><a href="/icdocs/filters/last_non_null.html" title="last non null (filters)">last_non_null</a></span> filter,
 for selecting from a list or inputting a new value.&nbsp;
 This differs from <span class="fixedwidth">combo</span> in the order of presentation.</td>
 <td class="grid">All
@@ -1918,8 +1918,8 @@ This differs from <span class="fixedwidth">combo</span> in the order of presenta
 <td class="grid">move_combo
 </td>
 <td class="grid">Special type,
-used with <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/filters/null_to_space.html" title="null to space (filters)">null_to_space</a></span>
-or <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/filters/null_to_comma.html" title="null to comma (filters)">null_to_comma</a></span> filters,
+used with <span class="fixedwidth"><a href="/icdocs/filters/null_to_space.html" title="null to space (filters)">null_to_space</a></span>
+or <span class="fixedwidth"><a href="/icdocs/filters/null_to_comma.html" title="null to comma (filters)">null_to_comma</a></span> filters,
 for selecting multiple non-ordered values from a list,
 or inputting into a <em>textarea</em>.</td>
 <td class="grid">All
@@ -1930,7 +1930,7 @@ or inputting into a <em>textarea</em>.</td>
 </td>
 <td class="grid">Produces a series of links based upon the option values.&nbsp;
 The base form value is passed via the <span class="fixedwidth"><a href="#form" title="&quot;form&quot; heading on this page">form</a></span> parameter,
-just like in an <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/area.html" title="area (tags)">area</a>]</span> or <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/page.html" title="page (tags)">page</a>]</span> tag,
+just like in an <span class="fixedwidth">[<a href="/icdocs/tags/area.html" title="area (tags)">area</a>]</span> or <span class="fixedwidth">[<a href="/icdocs/tags/page.html" title="page (tags)">page</a>]</span> tag,
 and the value is named with the passed <span class="fixedwidth"><a href="#name" title="&quot;name&quot; heading on this page">name</a></span> attribute.</td>
 <td class="grid">All
 </td>
@@ -1940,7 +1940,7 @@ and the value is named with the passed <span class="fixedwidth"><a href="#name" 
 </td>
 <td class="grid">Returns the selected value if called in hash list
 context,
-such as within an <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span> tag.&nbsp;
+such as within an <span class="fixedwidth">[<a href="/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span> tag.&nbsp;
 Otherwise it returns nothing at all.</td>
 <td class="grid">All
 </td>
@@ -1951,7 +1951,7 @@ Otherwise it returns nothing at all.</td>
 <td class="grid">Creates a <em>hidden</em> form field.&nbsp;
 The <em>hidden</em> field's value will be set to the selected item
 attribute's value if used in hash list context,
-such as within an <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span> tag.</td>
+such as within an <span class="fixedwidth">[<a href="/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span> tag.</td>
 <td class="grid">All
 </td>
 </tr>
@@ -1961,7 +1961,7 @@ such as within an <span class="fixedwidth">[<a href="http://interchange-rtfm.pul
 <td class="grid">A <em>password input</em> widget.&nbsp;
 The widget's value will be set to the selected item attribute
 value if used in Hash List context,
-such as within an <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span> tag.&nbsp;
+such as within an <span class="fixedwidth">[<a href="/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span> tag.&nbsp;
 <br><br>
 The <em>password input</em> widget will be built to be 12 characters
 wide unless you specify a <span class="fixedwidth"><a href="#cols" title="&quot;cols&quot; heading on this page">cols</a></span> parameter.</td>
@@ -1974,7 +1974,7 @@ wide unless you specify a <span class="fixedwidth"><a href="#cols" title="&quot;
 <em>X</em> characters wide.&nbsp;
 The widget's value will be set to the selected item attribute
 value if used in Hash List context,
-such as within an <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span> tag.</td>
+such as within an <span class="fixedwidth">[<a href="/icdocs/tags/item-list.html" title="item-list (tags)">item-list</a>]</span> tag.</td>
 <td class="grid">All
 </td>
 </tr>
@@ -2014,7 +2014,7 @@ For example, <span class="fixedwidth">type=&quot;textarea_6_33_wrap=virtual&quot
 specifies a <span class="fixedwidth">&lt;textarea&gt;</span> widget with &quot;<span class="fixedwidth">rows=6</span>&quot;,
 &quot;<span class="fixedwidth">cols=33</span>&quot; and &quot;<span class="fixedwidth">wrap=virtual</span>&quot;.&nbsp;
 You should resort to this only when you cannot use the named parameters.&nbsp;
-For example within an <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a>]</span>
+For example within an <span class="fixedwidth">[<a href="/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a>]</span>
 tag.&nbsp;
 Otherwise pass the <span class="fixedwidth"><a href="#rows" title="&quot;rows&quot; heading on this page">rows</a>=Y</span> and <span class="fixedwidth"><a href="#cols" title="&quot;cols&quot; heading on this page">cols</a>=X</span> parameters
 to this tag instead.
@@ -2121,7 +2121,7 @@ The above applies to any of the option building types:&nbsp;
 <span class="fixedwidth">multiple</span>, <span class="fixedwidth">options</span>, <span class="fixedwidth">radio</span>,
 <span class="fixedwidth">reverse_combo</span> and <span class="fixedwidth">select</span>.&nbsp;
 It will refuse to produce more than 5000 options, by default,
-but that limit can be changed using &quot;<span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Limit.html" title="Limit (config)">Limit</a> option_list <em>N</em></span>&quot; in the <em>local</em> (<span class="fixedwidth">catalog.cfg</span>) configuration,
+but that limit can be changed using &quot;<span class="fixedwidth"><a href="/icdocs/config/Limit.html" title="Limit (config)">Limit</a> option_list <em>N</em></span>&quot; in the <em>local</em> (<span class="fixedwidth">catalog.cfg</span>) configuration,
 where <em>N</em> is an integer greater than 0.
 </p>
 <a name="width"></a>
@@ -2135,11 +2135,11 @@ Use the &quot;<span class="fixedwidth"><a href="#cols" title="&quot;cols&quot; h
 <h2>See also</h2>
 <p>
 <ul>
-<li>The <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/AutoModifier.html" title="AutoModifier (config)">AutoModifier</a></span> <em>local</em> configuration directive</li>
-<li>The <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/UseModifier.html" title="UseModifier (config)">UseModifier</a></span> <em>local</em> configuration directive</li>
-<li>The <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a>]</span> loop sub-tag</li>
-<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/Item_attributes.html" title="Item attributes">Item attributes</a></li>
-<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Looping_tags_and_sub-tags.html" title="Category - looping tags and sub-tags">Looping tags and sub-tags</a></li>
+<li>The <span class="fixedwidth"><a href="/icdocs/config/AutoModifier.html" title="AutoModifier (config)">AutoModifier</a></span> <em>local</em> configuration directive</li>
+<li>The <span class="fixedwidth"><a href="/icdocs/config/UseModifier.html" title="UseModifier (config)">UseModifier</a></span> <em>local</em> configuration directive</li>
+<li>The <span class="fixedwidth">[<a href="/icdocs/tags/PREFIX-accessories.html" title="PREFIX-accessories (tags)">PREFIX-accessories</a>]</span> loop sub-tag</li>
+<li><a href="/icdocs/Item_attributes.html" title="Item attributes">Item attributes</a></li>
+<li><a href="/icdocs/category:Looping_tags_and_sub-tags.html" title="Category - looping tags and sub-tags">Looping tags and sub-tags</a></li>
 </ul>
 </div>
 
@@ -2148,7 +2148,7 @@ Use the &quot;<span class="fixedwidth"><a href="#cols" title="&quot;cols&quot; h
     <table class="pageinfo" cellpadding="0" cellspacing="0">
 	<tr>
 	    <td>
-Category:&nbsp; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html">Interchange tags</a>
+Category:&nbsp; <a href="/icdocs/category:Interchange_tags.html">Interchange tags</a>
 	    </td>
 	</tr>
 
@@ -2156,7 +2156,7 @@ Category:&nbsp; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category
 	<tr>
 	    <td>
 		
-		Last modified by: <a href="http://interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin">Kevin Walsh</a><br>
+		Last modified by: <a href="/account/profile.html?user=kevin">Kevin Walsh</a><br>
 		Modification date: Tuesday 14 August 2007 at 4:27 PM (BST)
 	    </td>
 	</tr>
@@ -2180,15 +2180,15 @@ Category:&nbsp; <a href="http://interchange-rtfm.pullingshots.ca/icdocs/category
 <table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
     <tr>
 	<td>
-	    <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    <a href="/index.html">Home</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    <a href="/legal/legal.html">Legal nonsense</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    <a href="/legal/privacy.html">Privacy policy</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://interchange-rtfm.pullingshots.ca/donations.html">Donations</a>
+	    <a href="/donations.html">Donations</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	    <a href="/contact.html">Contact us</a>
 	</td>
 
     </tr>

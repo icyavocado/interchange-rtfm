@@ -27,7 +27,7 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
-    <link rel="search" type="application/opensearchdescription+xml" href="http://interchange-rtfm.pullingshots.ca/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
+    <link rel="search" type="application/opensearchdescription+xml" href="/cms/mozilla_search_plugin.xml" title="Interchange RTFM website">
     <link rel="stylesheet" href="/decor/css/website.css">
     <link rel="stylesheet" href="/decor/css/wiki.css">
     <link rel="stylesheet" href="/decor/css/neo.css">
@@ -46,11 +46,11 @@
 <!-- START VAR: LOGOBAR -->
 <table id="rtfmheader" cellpadding="0" cellspacing="0">
     <tr>
-	<td><a href="http://interchange-rtfm.pullingshots.ca/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
+	<td><a href="/index.html" title="For more information... RTFM!"><img src="/decor/images/rtfm_banner.gif" width="500" height="60" border="0" alt="For more information... RTFM!"></a></td>
 
 	<td width="100%" style="text-align: right; padding: 10px">
 
-	    <form action="http://interchange-rtfm.pullingshots.ca/search.html" method="POST">
+	    <form action="/search.html" method="POST">
 		<input type="hidden" name="mv_session_id" value="nsession">
 		<input type="hidden" name="mv_profile" value="cms_search">
 		<input name="mv_searchspec" value="" type="text" size="15" maxlength="100" class="search">
@@ -63,8 +63,8 @@
 <table id="breadcrumbs" cellpadding="0" cellspacing="0">
     <tr valign="top">
 	<td>
-	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></span>
-	    <span class="nowrap">&gt; <a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></span>
+	    <span class="nowrap">&gt; <a href="/index.html">Home</a></span>
+	    <span class="nowrap">&gt; <a href="/documentation.html">Documentation</a></span>
 	    <span class="nowrap">&gt; <span class="current">Latest documentation</span></span>
 	</td>
 
@@ -85,13 +85,13 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/documentation.html">Documentation</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/downloads.html">Downloads</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/community.html">Mail lists and IRC</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/links.html">External websites</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/contributions.html">Suggestions and contributions</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/account/usermap.html">User location map</a></li>
+		<li><a href="/index.html">Home</a></li>
+		<li><a href="/documentation.html">Documentation</a></li>
+		<li><a href="/downloads.html">Downloads</a></li>
+		<li><a href="/community.html">Mail lists and IRC</a></li>
+		<li><a href="/links.html">External websites</a></li>
+		<li><a href="/contributions.html">Suggestions and contributions</a></li>
+		<li><a href="/account/usermap.html">User location map</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -126,9 +126,9 @@
     <tr>
 	<td>
 	    <ul class="navigation">
-		<li><a href="http://interchange-rtfm.pullingshots.ca/account/login.html">Log in</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/account/create.html">Create an account</a></li>
-		<li><a href="http://interchange-rtfm.pullingshots.ca/account/reminder.html">Password reminder</a></li>
+		<li><a href="/account/login.html">Log in</a></li>
+		<li><a href="/account/create.html">Create an account</a></li>
+		<li><a href="/account/reminder.html">Password reminder</a></li>
 	    </ul>
 	</td>
     </tr>
@@ -141,7 +141,7 @@
 <!-- START COMPONENT: icpowered -->
 
 <div style="text-align: center; margin: 10px; margin-top: 0px">
-    <a href="http://interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
+    <a href="/bouncer.html?target=http%3a%2f%2fwww%2eicdevgroup%2eorg%2f" title="Powered by Interchange version 5.7.0"><img src="/decor/images/iclogo_button.gif" width="136" height="44" alt="Powered by Interchange version 5.7.0"></a>
 </div>
 
 
@@ -172,19 +172,19 @@ extensively cross-referenced to help you quickly find the information
 you need
 In fact,
 the documentation is so good,
-this website even has its own <a href="http://interchange-rtfm.pullingshots.ca/awards.html" title="awards (RTFM website)">awards section</a>.
+this website even has its own <a href="/awards.html" title="awards (RTFM website)">awards section</a>.
 </p>
 <p>
 The Interchange documentation presented here is by no means complete.&nbsp;
 If you discover some information that is present elsewhere,
 but missing from this website,
-then please <a href="http://interchange-rtfm.pullingshots.ca/contact.html?subject=Documentation%20suggestion" title="contact (RTFM website)">let us know</a>
+then please <a href="/contact.html?subject=Documentation%20suggestion" title="contact (RTFM website)">let us know</a>
 so that we can improve this resource for the benefit of all Interchange
 users.&nbsp;
 Likewise,
 if you have any suggestions,
 or would like to contribute some text,
-then please <a href="http://interchange-rtfm.pullingshots.ca/contact.html?subject=Documentation%20suggestion" title="contact (RTFM website)">get in touch</a>.
+then please <a href="/contact.html?subject=Documentation%20suggestion" title="contact (RTFM website)">get in touch</a>.
 </p>
 <p>
 I'm sure you'll find it refreshing to discover that contributed text
@@ -218,41 +218,41 @@ then it probably won't be documented here.
 
 <p>
 <ul>
-<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_tags.html" title="Category - interchange tags">Interchange tags</a>
+<li><a href="/icdocs/category:Interchange_tags.html" title="Category - interchange tags">Interchange tags</a>
 <br>
 Documentation for the Interchange markup language tags and their calling parameters.&nbsp;
 <br><br></li>
-<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_configuration.html" title="Category - interchange configuration">Interchange configuration</a>
+<li><a href="/icdocs/category:Interchange_configuration.html" title="Category - interchange configuration">Interchange configuration</a>
 <br>
 Directives for use in the <em>global</em> (<span class="fixedwidth">interchange.cfg</span>) and/or
 <em>local</em> (<span class="fixedwidth">catalog.cfg</span>) configuration files,
-and in any files <a href="http://interchange-rtfm.pullingshots.ca/icdocs/Configuration_file_and_directive_syntax.html#include" title="&quot;include&quot; heading on the &quot;Configuration file and directive syntax&quot; page">included</a>
+and in any files <a href="/icdocs/Configuration_file_and_directive_syntax.html#include" title="&quot;include&quot; heading on the &quot;Configuration file and directive syntax&quot; page">included</a>
 from them.&nbsp;
 <br><br></li>
-<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_database.html" title="Category - interchange database">Interchange database</a>
+<li><a href="/icdocs/category:Interchange_database.html" title="Category - interchange database">Interchange database</a>
 <br>
 Documentation for Interchange's database access facilities.&nbsp;
 <br><br></li>
-<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_forms.html" title="Category - interchange forms">Interchange forms</a>
+<li><a href="/icdocs/category:Interchange_forms.html" title="Category - interchange forms">Interchange forms</a>
 <br>
 Documentation for Interchange's form processing facilities.&nbsp;
 <br><br></li>
-<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_ecommerce_functions.html" title="Category - interchange ecommerce functions">Interchange ecommerce functions</a>
+<li><a href="/icdocs/category:Interchange_ecommerce_functions.html" title="Category - interchange ecommerce functions">Interchange ecommerce functions</a>
 <br>
 Documentation for the ecommerce-related functionality provided
 by Interchange.&nbsp;
 <br><br></li>
-<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Interchange_Perl_usage.html" title="Category - interchange perl usage">Interchange Perl usage</a>
+<li><a href="/icdocs/category:Interchange_Perl_usage.html" title="Category - interchange perl usage">Interchange Perl usage</a>
 <br>
 Pages associated with the use of Perl within Interchange.&nbsp;
 <br><br></li>
-<li><a href="http://interchange-rtfm.pullingshots.ca/icdocs/category:Filters.html" title="Category - filters">Data/text filters</a>
+<li><a href="/icdocs/category:Filters.html" title="Category - filters">Data/text filters</a>
 <br>
 Data/text filters that can be used within Interchange pages
 and elsewhere.&nbsp;
-See the <span class="fixedwidth"><a href="http://interchange-rtfm.pullingshots.ca/icdocs/config/Filter.html" title="Filter (config)">Filter</a></span> directive,
-and ICML tags such as <span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/filter.html" title="filter (tags)">filter</a>]</span> and
-<span class="fixedwidth">[<a href="http://interchange-rtfm.pullingshots.ca/icdocs/tags/PREFIX-filter.html" title="PREFIX-filter (tags)">PREFIX-filter</a>]</span> tags etc. <br></li>
+See the <span class="fixedwidth"><a href="/icdocs/config/Filter.html" title="Filter (config)">Filter</a></span> directive,
+and ICML tags such as <span class="fixedwidth">[<a href="/icdocs/tags/filter.html" title="filter (tags)">filter</a>]</span> and
+<span class="fixedwidth">[<a href="/icdocs/tags/PREFIX-filter.html" title="PREFIX-filter (tags)">PREFIX-filter</a>]</span> tags etc. <br></li>
 </ul>
 
 <a name="Copyright_and_licence"></a>
@@ -279,12 +279,12 @@ A proportion of the Interchange documentation is derived from text with the foll
 <p>
 Interchange and all of its documentation,
 including all of the documentation in this website,
-is published under the terms of the <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2egnu%2eorg%2fcopyleft%2fgpl%2ehtml" title="http://www.gnu.org/copyleft/gpl.html" rel="nofollow">GNU General Public Licence</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page"> version 3 or,
+is published under the terms of the <a href="/bouncer.html?target=http%3a%2f%2fwww%2egnu%2eorg%2fcopyleft%2fgpl%2ehtml" title="http://www.gnu.org/copyleft/gpl.html" rel="nofollow">GNU General Public Licence</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page"> version 3 or,
 at your option,
 any later version.
 </p>
 <p>
-For the purpose of applying the <a href="http://www.interchange-rtfm.pullingshots.ca/bouncer.html?target=http%3a%2f%2fwww%2egnu%2eorg%2fcopyleft%2fgpl%2ehtml" title="http://www.gnu.org/copyleft/gpl.html" rel="nofollow">GNU General Public Licence</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page"> to this
+For the purpose of applying the <a href="/bouncer.html?target=http%3a%2f%2fwww%2egnu%2eorg%2fcopyleft%2fgpl%2ehtml" title="http://www.gnu.org/copyleft/gpl.html" rel="nofollow">GNU General Public Licence</a>&nbsp;<img src="/decor/images/external_link.gif" width="10" height="10" border="0" alt="Link to an external page"> to this
 Interchange documentation,
 we consider &quot;source code&quot; to refer to the unprocessed plain text,
 with or without the Wikitext markup,
@@ -306,7 +306,7 @@ material published on external websites.
 	<tr>
 	    <td>
 		
-		Last modified by: <a href="http://interchange-rtfm.pullingshots.ca/account/profile.html?user=kevin">Kevin Walsh</a><br>
+		Last modified by: <a href="/account/profile.html?user=kevin">Kevin Walsh</a><br>
 		Modification date: Saturday 15 September 2007 at 4:54 PM (BST)
 	    </td>
 	</tr>
@@ -330,13 +330,13 @@ material published on external websites.
 <table id="rtfmfooter" width="100%" cellpadding="0" cellspacing="0">
     <tr>
 	<td>
-	    <a href="http://interchange-rtfm.pullingshots.ca/index.html">Home</a>
+	    <a href="/index.html">Home</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://interchange-rtfm.pullingshots.ca/legal/legal.html">Legal nonsense</a>
+	    <a href="/legal/legal.html">Legal nonsense</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://interchange-rtfm.pullingshots.ca/legal/privacy.html">Privacy policy</a>
+	    <a href="/legal/privacy.html">Privacy policy</a>
 	    &nbsp;|&nbsp;
-	    <a href="http://interchange-rtfm.pullingshots.ca/contact.html">Contact us</a>
+	    <a href="/contact.html">Contact us</a>
 	</td>
 
     </tr>
